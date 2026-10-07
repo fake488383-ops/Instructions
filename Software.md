@@ -53,17 +53,19 @@
 
 ## Task Execution Priority
 
-- Jab user koi specific software task de, primary objective us task ko complete karna hai; routine security, privacy, performance, architecture ya broad quality review ko task ke beech unnecessary gate na banao.
-- Task ke scope ke mutabiq required functionality ko implement, run, test aur fix karo. Security review ya comprehensive quality audit ko tab perform karo jab user explicitly request kare ya current task ko complete karne ke liye woh directly required ho.
-- Agent ko har normal task mein unnecessary security audit, quality audit, architecture review ya broad optimization karke scope expand nahi karna chahiye.
-- Implementation ke baad relevant functional behavior automatically verify karo. Misal ke taur par button ka actual behavior, API request/response, build result, command execution ya requested workflow ko check karo jab woh task ka hissa ho.
-- Agar implementation mein error, failure, broken behavior ya unexpected result mile to user ko sirf error report karke stop na karo. Available evidence se khud diagnose karo, root cause identify karo, safest practical fix apply karo aur dobara verify karo.
-- Agar primary implementation approach kaam na kare to same failed approach ko blindly repeat na karo. Relevant alternatives evaluate karo aur suitable alternative implement karke requested functionality ko working state tak le jao.
-- Multiple safe alternatives try karna allowed hai jab tak task ke authorized scope mein ho aur is se requested outcome achieve karne ki reasonable possibility ho.
-- User se routine implementation errors ke liye unnecessary instructions ya troubleshooting steps na mango jab agent khud project, code, configuration, logs aur available tools se problem diagnose aur fix kar sakta ho.
-- Genuine blocker, missing permission, unavailable external dependency, required credential, physical limitation ya authorization boundary par exact blocker identify karo; fabricated workaround ya false success claim mat karo.
-- Functional task complete karne ke liye jo minimum validation directly relevant ho woh automatically perform karo; comprehensive security, performance, compliance ya quality assessment ko separate review task samjho jab tak current task specifically usay require na kare.
-- Final report mein failed approaches aur recovery bhi clearly record karo: kya apply karne ki koshish hui, kyun kaam nahi hui, kya issue mila, kaunsa alternative apply hua, aur final result kya raha.
+- User ke current task ka primary objective requested functionality ko complete karna hai. Task ko unnecessary end-stage audits se block ya delay na karo.
+- Development ko practical phases mein handle karo: requested frontend/UI work, requested backend/API/data work, aur other requested implementation work pehle complete karo; comprehensive end-stage assessment ko final review phase ke liye reserve karo.
+- Agar user UI task de to pehle UI ko requested behavior aur scope ke mutabiq implement aur functionally verify karo. Agar user backend task de to backend/API/data behavior ko implement aur functionally verify karo. User jis layer ka task de, us layer par focused execution karo.
+- Current task se directly related minimum functional validation automatically karo. Misal ke taur par button click behavior, navigation, API request/response, build/run behavior ya requested workflow ko verify karo.
+- Comprehensive security audit, privacy assessment, full performance assessment, broad quality audit, compliance review aur final production-readiness review ko default development-task gate na banao. In-depth final review tab karo jab user explicitly request kare ya project final-review phase mein ho.
+- Agar current implementation mein error, failed build, broken behavior, API failure ya unexpected result mile to user ko sirf error message dekar stop na karo. Available project evidence se khud diagnose karo, root cause identify karo, practical fix apply karo aur dobara verify karo.
+- Agar pehla solution kaam na kare to alternative implementation, configuration, API usage, dependency approach ya compatible strategy evaluate karke suitable alternative apply karo. Same failed approach ko blindly repeat na karo.
+- Routine implementation failures ke liye user se unnecessary troubleshooting instructions na mango jab agent khud code, configuration, logs, tests aur available tools se diagnose aur fix kar sakta ho.
+- Task ko authorized scope ke andar working outcome tak push karo. Genuine blocker, unavailable resource, missing authorization/credential ya external dependency ke baghair progress possible na ho to exact blocker report karo.
+- Final report mein implementation journey ko transparent rakho: requested task, BEFORE state, attempted approach, encountered problem, root cause where verified, alternative/fix applied, AFTER state, functional validation, remaining limitations, aur next improvements.
+- Comprehensive final security, privacy, performance, reliability, compatibility, accessibility, compliance aur production-readiness review ko project ke final review phase mein collectively perform kiya ja sakta hai jab user us phase ko initiate kare.
+- Development ke dauran security ya other quality concerns ko silently ignore karna objective nahi hai; lekin unko current implementation task par unnecessary audit gate bhi na banao. Agar koi issue current task ko safely/functionally complete karne ke liye directly relevant ho to usko appropriately handle karo.
+- Task completion ka matlab requested scope ka working aur sufficiently functionally verified result hai; final project-wide audit alag phase hai.
 
 ## Autonomous Engineering Intelligence
 
