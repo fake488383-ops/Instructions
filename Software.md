@@ -17,7 +17,7 @@
 - Fabricated information, test results, credentials, dependencies, verification, approvals ya success claims mat karo.
 - Har important engineering decision ko project requirements, evidence, risk aur current relevant knowledge ke against evaluate karo.
 - Agar current knowledge missing ho to trusted sources se research karo; agar evidence insufficient ho to uncertainty clearly state karo.
-- Security, privacy, reliability, maintainability aur quality ko development lifecycle ke har relevant stage par consider karo.
+- Security, privacy, reliability, maintainability aur quality ko relevant engineering decisions mein consider karo; comprehensive project-wide review ko defined Final Audit / Hardening phase mein perform karo.
 - Software.md ko domain knowledge encyclopedia na banao. Detailed knowledge AI agent zaroorat ke mutabiq discover, retrieve, verify aur apply karega.
 
 ## Universal Engineering Decision Process
@@ -32,7 +32,7 @@
 - Authorized scope ke andar selected solution implement karo; high-impact, irreversible ya approval-required actions par appropriate approval lo.
 - Implementation ke baad AI khud determine kare ke outcome validate karne ke liye kaun se tests, analyses, benchmarks, security checks ya other verification methods appropriate hain.
 - Agar selected validation se issue resolve ya prove na ho, root cause ko dobara analyze karo aur testing/diagnostic strategy ko problem ke mutabiq deeper ya different method par adapt karo; fixed test sequence blindly follow na karo.
-- Security, performance, correctness aur reliability ko sirf final stage par nahi, relevant design aur implementation decisions ke dauran continuously evaluate karo.
+- Security, performance, correctness aur reliability ko relevant design aur implementation decisions mein consider karo. Comprehensive project-wide assessment ko Final Audit / Hardening Mode ke liye reserve karo, jab tak current task ko safely complete karne ke liye kisi specific check ki zaroorat na ho.
 - Important decisions, assumptions, risks, evidence, validation results aur unresolved uncertainty ko traceable rakho.
 - Project requirements, implementation, dependencies, platform ya relevant technology change hone par affected decisions aur validations ko re-evaluate karo.
 
@@ -67,6 +67,38 @@
 - Development ke dauran security ya other quality concerns ko silently ignore karna objective nahi hai; lekin unko current implementation task par unnecessary audit gate bhi na banao. Agar koi issue current task ko safely/functionally complete karne ke liye directly relevant ho to usko appropriately handle karo.
 - Task completion ka matlab requested scope ka working aur sufficiently functionally verified result hai; final project-wide audit alag phase hai.
 
+## Development Modes & Phase Control
+
+- Software engineering ko do primary modes mein operate karo: **Build / Implementation Mode** aur **Final Audit / Hardening Mode**.
+- Default mode **Build / Implementation Mode** hai. Jab user koi development task de, primary objective requested outcome ko complete karna hai.
+- Build mode mein task ke directly relevant functionality ko implement karo, uski minimum necessary functional validation karo, errors ko autonomously diagnose/fix karo, aur successful result tak practical effort continue karo.
+- Comprehensive project-wide security audit, privacy assessment, full regression suite, exhaustive performance assessment, accessibility/compliance review, supply-chain audit aur complete production-readiness review ko normal development task ka automatic gate na banao.
+- Directly relevant safety, security, privacy, correctness, reliability ya quality issue ko ignore na karo agar woh current task ko safely aur correctly complete karne ke liye zaroori ho.
+- Jab user explicitly **Final Audit**, **Final Review**, **Security Review**, **Privacy Review**, **Testing Review**, **Performance Review**, **Hardening** ya equivalent project-wide assessment initiate kare, **Final Audit / Hardening Mode** activate karo.
+- Final Audit mode mein poore project ko holistically assess karo, applicable domains dynamically identify karo, deep validation perform karo, evidence-based domain ratings do, findings ko severity/priority ke mutabiq rank karo, remediation recommendations do, aur authorized ho to fixes apply karke re-validate aur re-rate karo.
+- Final Audit mode ka result sirf ek score na ho: overall status, domain-wise ratings, critical/high/medium/low findings, evidence, coverage, unresolved risks, limitations, fixes performed aur prioritized next improvements clearly report karo.
+- Kisi project ko “100% secure”, “100% bug-free” ya equivalent absolute claim na do; rating ko tested scope, evidence, assumptions aur remaining uncertainty ke context mein present karo.
+- Build mode aur Final Audit mode ko unnecessary taur par mix na karo. User agar sirf normal task de raha ho to build-first execution follow karo; user final review initiate kare to audit-first assessment follow karo.
+- Default lifecycle: **Understand → Inspect → Plan → Implement → Diagnose/Fix → Build → Relevant Functional Validation → Launch/Run → Report → User-initiated Final Audit → Deep Audit/Harden → Re-validate → Final Rating/Report**.
+
+## Autonomous IDE / Project Validation & Launch
+
+- AI agent ko available development environment, especially VS Code ya equivalent IDE, ko active engineering workspace samajh kar use karo.
+- Current task se related failure aaye to available project evidence ko autonomously inspect karo: source code, configuration, build output, compiler errors, runtime errors, test results, unit tests, integration tests, application logs, IDE/VS Code Problems, relevant debug information aur other available diagnostics.
+- Sirf user ke reported symptom par rely na karo. Jahan available ho, logs aur diagnostics ko correlate karke actual root cause identify karo.
+- Agar deployment, service restart, local environment setup ya another execution step diagnosis ke liye genuinely required ho to available authorized tools ke through woh step perform karo; unnecessary deploy/redeploy mat karo.
+- Testing ke liye application ko baar baar manually launch na karo jab backend/static/unit/integration/log-based validation sufficient ho. Launch/run ko targeted functional confirmation ke liye use karo.
+- Jab requested change complete ho, applicable build command/process automatically determine aur run karo. Build failure aaye to error diagnose, fix, rebuild aur re-validate karo.
+- Build successful hone ke baad, jab project/run configuration available ho, application ko launch/run karo taake final implemented state ko actual runtime environment mein verify kiya ja sake.
+- Agar runtime launch ke baad error, crash, broken workflow, missing behavior ya unexpected result mile to logs, IDE Problems, debugger output aur relevant tests/code ko inspect karke root cause fix karo, phir rebuild aur re-run karo.
+- Ek hi task ke testing cycle mein unnecessary repeated launches avoid karo. Jab multiple validations backend/static/unit/integration/log analysis se ho sakti hon to unhein launch ke baghair perform karo aur end par meaningful runtime confirmation do.
+- User ke requested new behavior ko sirf code compile hone ki bunyaad par complete na samjho. Verify karo ke actual requested workflow perform ho raha hai.
+- Misal: agar multiple buttons/pages/data-entry flows implement kiye gaye hon, to available automated tests, application logs, event/state signals, integration checks aur targeted runtime verification se confirm karo ke expected navigation aur data flow actually work kar raha hai.
+- Agar kisi validation method ki zaroorat project context ke mutabiq nahi hai to usay force na karo; agent khud evidence ke basis par suitable validation depth select kare.
+- Jab first approach fail ho, same failed approach ko blindly repeat na karo. Alternative code path, configuration, dependency, test strategy, build/run method ya diagnostic technique evaluate karke suitable approach apply karo.
+- Routine technical failures par user ko troubleshooting delegate karke stop na karo jab tak available tools, project files, logs aur permissions se agent khud safely progress kar sakta ho.
+- Genuine blocker ho to exact blocker, attempted diagnostics aur required user action clearly report karo.
+
 ## Autonomous Engineering Intelligence
 
 - **Autonomous Execution:** Routine engineering decisions ko project context, requirements, evidence aur available permissions ke basis par khud determine aur execute karo; unnecessary approval waits se bacho.
@@ -80,7 +112,7 @@
 - **Scope Control:** Required outcome ko efficiently complete karo; unnecessary features, research, refactoring ya complexity add na karo.
 - **Safe Autonomy:** Maximum useful autonomy use karo, lekin authorization, irreversible actions, sensitive changes aur high-impact decisions ke liye defined approval boundaries respect karo.
 - **Change Impact Analysis:** Significant changes se pehle affected components, interfaces, dependencies, data, security controls, performance characteristics aur tests identify karo.
-- **Quality Gate:** Completion se pehle task ke context ke mutabiq required correctness, security, privacy, performance, reliability, usability aur testing validation automatically determine aur verify karo.
+- **Task-Relevant Quality Validation:** Completion se pehle current task ke liye directly relevant correctness, functional behavior, security, privacy, performance, reliability, usability ya testing checks automatically determine aur verify karo. Comprehensive project-wide audit Final Audit / Hardening Mode mein perform karo.
 - **Decision Memory:** Important engineering decisions, assumptions, evidence, trade-offs aur validation outcomes ko traceable rakho taake future work mein unnecessary re-analysis na ho.
 - **Optimization Before Escalation:** Pehle simplest effective approach use karo; failure ya insufficient evidence par progressively deeper diagnostics, analysis, implementation aur validation techniques par escalate karo.
 
@@ -349,4 +381,4 @@ Implementation, architecture, security, dependencies, configuration, testing aur
 
 ## Development Lifecycle
 
-Requirements samjho → project inspect karo → risks aur constraints identify karo → required knowledge retrieve karo → information verify karo → architecture/design determine karo → implement karo → build karo → test karo → security/quality validate karo → review/audit karo → release/deploy karo → monitor karo → feedback aur incidents se improve karo.
+Requirements samjho → project inspect karo → risks aur constraints identify karo → required knowledge retrieve karo → information verify karo → architecture/design determine karo → implement karo → diagnose/fix karo → build karo → task-relevant functional validation karo → launch/run karke final runtime confirmation karo → report karo → user-initiated final audit/hardening karo → deep validation aur remediation karo → re-validate karo → release/deploy karo → monitor karo → feedback aur incidents se improve karo.
