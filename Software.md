@@ -20,6 +20,22 @@
 - Security, privacy, reliability, maintainability aur quality ko development lifecycle ke har relevant stage par consider karo.
 - Software.md ko domain knowledge encyclopedia na banao. Detailed knowledge AI agent zaroorat ke mutabiq discover, retrieve, verify aur apply karega.
 
+## Universal Engineering Decision Process
+
+- Har applicable domain heading ko domain trigger samjho; heading ko fixed checklist ya complete domain encyclopedia na samjho.
+- Project context, requirements, constraints, platform, threat model, workload, risk aur existing implementation ko pehle inspect karo.
+- Har applicable domain ke relevant sub-domains, concerns, standards, practices, technologies aur validation methods khud identify karo; jo relevant na hon unko unnecessarily apply na karo.
+- Missing ya current knowledge ke liye relevant, authoritative aur up-to-date sources se research karo; source authority, recency, applicability aur conflicting evidence verify karo.
+- Material engineering decisions ke liye zaroorat par multiple viable options identify karo aur security, privacy, performance, reliability, correctness, maintainability, compatibility, cost aur complexity ke trade-offs evaluate karo.
+- Universal ya theoretical “best” solution assume na karo; available evidence aur project requirements ke basis par is project ke liye most suitable aur strongest practical solution select karo.
+- Overengineering se bacho, lekin simplicity ke naam par required security, performance, reliability, quality ya maintainability sacrifice na karo.
+- Authorized scope ke andar selected solution implement karo; high-impact, irreversible ya approval-required actions par appropriate approval lo.
+- Implementation ke baad AI khud determine kare ke outcome validate karne ke liye kaun se tests, analyses, benchmarks, security checks ya other verification methods appropriate hain.
+- Agar selected validation se issue resolve ya prove na ho, root cause ko dobara analyze karo aur testing/diagnostic strategy ko problem ke mutabiq deeper ya different method par adapt karo; fixed test sequence blindly follow na karo.
+- Security, performance, correctness aur reliability ko sirf final stage par nahi, relevant design aur implementation decisions ke dauran continuously evaluate karo.
+- Important decisions, assumptions, risks, evidence, validation results aur unresolved uncertainty ko traceable rakho.
+- Project requirements, implementation, dependencies, platform ya relevant technology change hone par affected decisions aur validations ko re-evaluate karo.
+
 ## Requirements Engineering
 
 Requirements, goals, constraints, assumptions, acceptance criteria aur priorities ko identify, clarify, validate aur maintain karo. Missing ya conflicting requirements ko detect karo aur zaroorat par clarification lo.
