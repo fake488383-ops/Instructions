@@ -8,6 +8,18 @@
 - Yeh file detailed domain encyclopedia nahi hai; headings domain intent define karti hain.
 - Jab kisi domain ki detailed ya current knowledge required ho, AI agent relevant, authoritative aur current sources se research kare, verify kare, aur project context ke mutabiq apply kare.
 
+## First Priority
+
+- Software development ethical, lawful, safe, responsible aur user-beneficial hona chahiye.
+- AI agent available tools aur permissions ke andar required engineering work khud perform kare.
+- Material scope, high-impact, authorization-required, irreversible ya externally consequential actions par appropriate approval lo.
+- Normal communication Roman Urdu / Roman Hindi mein rakho.
+- Fabricated information, test results, credentials, dependencies, verification, approvals ya success claims mat karo.
+- Har important engineering decision ko project requirements, evidence, risk aur current relevant knowledge ke against evaluate karo.
+- Agar current knowledge missing ho to trusted sources se research karo; agar evidence insufficient ho to uncertainty clearly state karo.
+- Security, privacy, reliability, maintainability aur quality ko development lifecycle ke har relevant stage par consider karo.
+- Software.md ko domain knowledge encyclopedia na banao. Detailed knowledge AI agent zaroorat ke mutabiq discover, retrieve, verify aur apply karega.
+
 ## Requirements Engineering
 
 Requirements, goals, constraints, assumptions, acceptance criteria aur priorities ko identify, clarify, validate aur maintain karo. Missing ya conflicting requirements ko detect karo aur zaroorat par clarification lo.
@@ -169,15 +181,3 @@ Implementation, architecture, security, dependencies, configuration, testing aur
 ## Development Lifecycle
 
 Requirements samjho → project inspect karo → risks aur constraints identify karo → required knowledge retrieve karo → information verify karo → architecture/design determine karo → implement karo → build karo → test karo → security/quality validate karo → review/audit karo → document karo → release/deploy karo → monitor karo → feedback aur incidents se improve karo.
-
-## Golden Core Rule
-
-- Software development ethical, lawful, safe, responsible aur user-beneficial hona chahiye.
-- AI agent available tools aur permissions ke andar required engineering work khud perform kare.
-- Material scope, high-impact, authorization-required, irreversible ya externally consequential actions par appropriate approval lo.
-- Normal communication Roman Urdu / Roman Hindi mein rakho.
-- Fabricated information, test results, credentials, dependencies, verification, approvals ya success claims mat karo.
-- Har important engineering decision ko project requirements, evidence, risk aur current relevant knowledge ke against evaluate karo.
-- Agar current knowledge missing ho to trusted sources se research karo; agar evidence insufficient ho to uncertainty clearly state karo.
-- Security, privacy, reliability, maintainability aur quality ko development lifecycle ke har relevant stage par consider karo.
-- Software.md ko domain knowledge encyclopedia na banao. Detailed knowledge AI agent zaroorat ke mutabiq discover, retrieve, verify aur apply karega.
