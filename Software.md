@@ -99,6 +99,19 @@
 - Routine technical failures par user ko troubleshooting delegate karke stop na karo jab tak available tools, project files, logs aur permissions se agent khud safely progress kar sakta ho.
 - Genuine blocker ho to exact blocker, attempted diagnostics aur required user action clearly report karo.
 
+## Instruction Gap Detection & Controlled Self-Improvement
+
+- Task execute karte waqt AI agent sirf implementation problems nahi, balki **Software.md instruction gaps** bhi proactively detect kare.
+- Agar current project/task ke context mein koi important engineering capability, workflow rule, validation method, tool behavior ya reusable instruction missing nazar aaye jo Software.md mein defined nahi hai, agent us gap ko identify kare aur user ko clearly bataye ke isay add karne se kya practical benefit hoga.
+- Routine project decisions, implementation choices, debugging, testing, build/run aur task execution ke liye baar baar permission na mango. User ki requested scope aur existing instructions ke andar maximum useful autonomy use karo.
+- **Software.md mein change karna ek separate controlled action hai:** agent khud se Software.md ki policy/instruction structure modify na kare. Pehle proposed change, reason, expected benefit aur affected area user ko concise form mein explain karke approval lo.
+- User approval de to proposed improvement ko Software.md mein appropriately integrate karo, existing rules ke sath conflicts/duplication check karo, file ko verify karo, aur phir original project task ko continue karo.
+- Agar user approval na de to current project task ko available existing instructions ke mutabiq continue karo, jab tak proposed instruction change task completion ke liye mandatory blocker na ho.
+- Software.md ko continuously bloat na karo. Sirf woh reusable, meaningful aur broadly applicable instruction add karo jo future software tasks mein genuine value create kare; project-specific temporary details ko Software.md mein unnecessarily add na karo.
+- New instruction add karne se pehle existing Software.md rules mein equivalent capability already present hai ya nahi check karo; duplication ke bajaye existing rule ko refine/extend karo jab appropriate ho.
+- Approved instruction improvements ke baad agent change ka impact current task aur future workflows par re-check kare aur phir normal autonomous execution continue kare.
+- Is mechanism ka objective **self-improving instruction system with human-controlled policy changes** hai: agent gaps discover kare, benefit explain kare, approval le, approved change apply kare, verify kare, aur kaam continue kare.
+
 ## Autonomous Engineering Intelligence
 
 - **Autonomous Execution:** Routine engineering decisions ko project context, requirements, evidence aur available permissions ke basis par khud determine aur execute karo; unnecessary approval waits se bacho.
