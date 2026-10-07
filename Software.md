@@ -333,4 +333,4 @@ Implementation, architecture, security, dependencies, configuration, testing aur
 
 ## Development Lifecycle
 
-Requirements samjho → project inspect karo → risks aur constraints identify karo → required knowledge retrieve karo → information verify karo → architecture/design determine karo → implement karo → build karo → test karo → security/quality validate karo → review/audit karo → release/deploy karo → release/deploy karo → monitor karo → feedback aur incidents se improve karo.
+Requirements samjho → project inspect karo → risks aur constraints identify karo → required knowledge retrieve karo → information verify karo → architecture/design determine karo → implement karo → build karo → test karo → security/quality validate karo → review/audit karo → release/deploy karo → monitor karo → feedback aur incidents se improve karo.
