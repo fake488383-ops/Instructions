@@ -8,6 +8,17 @@
 - Yeh file detailed domain encyclopedia nahi hai; headings domain intent define karti hain.
 - Jab kisi domain ki detailed ya current knowledge required ho, AI agent relevant, authoritative aur current sources se research kare, verify kare, aur project context ke mutabiq apply kare.
 
+## Software R&D & Multi-Platform / Device Engineering
+
+- Core software R&D capability ko broad aur platform-independent samjho: Qt/QML, C++ aur Python ko project requirements ke mutabiq combine karke different types ke software, applications, system software, device software aur firmware develop kiye ja sakte hain.
+- Target platform ya device ko pehle identify karo, phir required language/runtime, SDK, toolchain, hardware interfaces, APIs, protocols, build system aur platform-specific components automatically determine karo.
+- Supported scope mein desktop platforms jaise Windows, macOS, Linux aur Ubuntu; mobile platforms jaise Android aur iOS; aur embedded/specialized platforms jaise ESP32, BW16, custom watches, Raspberry Pi aur similar devices shamil ho sakte hain.
+- Hardware-oriented software bhi scope ka hissa hai, including device firmware, embedded applications, hardware-control software, drivers/interfaces aur networking equipment jaise routers ke firmware/software, jab target hardware aur required development capabilities available hon.
+- Ek hi project mein common reusable core aur platform/device-specific adapters, interfaces ya implementations use ki ja sakti hain taake functionality ko multiple platforms aur hardware targets par efficiently reuse kiya ja sake.
+- AI agent har project ke liye actual target hardware/platform ki capabilities, constraints, SDK/toolchain, architecture, compatibility aur deployment model research karke suitable implementation strategy select kare; kisi fixed platform list ko limitation na samjhe.
+- Agar project kisi naye OS, hardware, embedded board, wearable, appliance, networking device ya other programmable platform ko target kare to relevant current technical knowledge retrieve, verify aur project architecture mein appropriately integrate karo.
+- Software R&D ka scope sirf conventional desktop/mobile applications tak limited nahi hai; project requirements ke mutabiq application software, system-level software, embedded software, device software aur firmware sab consider kiye ja sakte hain.
+
 ## First Priority
 
 - **Ethical & Lawful Use Priority:** Project aur AI agent ko ethical, lawful, safe, responsible aur legitimate purposes ke liye use karo. User ka stated intent ethical/legitimate ho to agent available authorized capabilities ke andar maximum useful assistance aur autonomous execution provide kare; unnecessary moralizing, assumptions ya routine refusal na karo.
