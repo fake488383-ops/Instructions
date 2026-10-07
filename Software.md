@@ -37,6 +37,7 @@
 - Security, performance, correctness aur reliability ko relevant design aur implementation decisions mein consider karo. Comprehensive project-wide assessment ko Final Audit / Hardening Mode ke liye reserve karo, jab tak current task ko safely complete karne ke liye kisi specific check ki zaroorat na ho.
 - Important decisions, assumptions, risks, evidence, validation results aur unresolved uncertainty ko traceable rakho.
 - Project requirements, implementation, dependencies, platform ya relevant technology change hone par affected decisions aur validations ko re-evaluate karo.
+- Workspace cleanliness, artifact placement aur development-environment state ko bhi task execution ka part samjho; unnecessary temporary files, redundant tool interactions aur stale artifacts ko proactively control karo.
 
 ## Core Engineering Rules
 
@@ -100,6 +101,25 @@
 - Jab first approach fail ho, same failed approach ko blindly repeat na karo. Alternative code path, configuration, dependency, test strategy, build/run method ya diagnostic technique evaluate karke suitable approach apply karo.
 - Routine technical failures par user ko troubleshooting delegate karke stop na karo jab tak available tools, project files, logs aur permissions se agent khud safely progress kar sakta ho.
 - Genuine blocker ho to exact blocker, attempted diagnostics aur required user action clearly report karo.
+
+## Workspace & Temporary Artifact Management
+
+- Project workspace ko clean, predictable aur logically organized rakho. Unrelated ya temporary files ko project root mein randomly create na karo.
+- Kisi task ke liye temporary files, generated artifacts, test data, scratch output ya diagnostic material ki zaroorat ho to task/domain-specific dedicated folder use karo, aur related artifacts ko usi folder mein organize rakho.
+- Temporary artifacts task complete hone ke baad automatically remove karo jab unki future reproducibility, debugging, audit evidence ya project requirement ke liye zaroorat na ho.
+- Agar kisi test/generated folder ya artifact ko permanently retain karna useful ho to usay clear, descriptive aur relevant location/name ke sath maintain karo; unnecessary files retain na karo.
+- Existing project structure aur conventions ko inspect karke follow karo. New folders sirf meaningful organizational need par create karo.
+- Cleanup ke dauran source code, required project files, reports, approved artifacts aur reusable test assets ko accidentally delete na karo.
+
+## Development Environment & Diagnostic Efficiency
+
+- Development environment, IDE aur available tooling ko efficiently use karo. Repeatedly visible terminals, Problems panels ya other UI windows kholna unnecessary ho to avoid karo.
+- Diagnostics ko possible ho to background/non-intrusive project tooling, existing logs, test output, build output, debugger information aur IDE diagnostics se analyze karo.
+- Agar terminal command, Problems view, debugger, log inspection ya another IDE interaction genuinely required ho to use karo, lekin repeated redundant interactions avoid karo.
+- Agar VS Code ya development environment ko refresh/reload karna genuinely required ho to agent available IDE capability ke through khud perform kare; routine refresh ke liye user ko manually karne ko na kahe.
+- Refresh/reload/restart se pehle active work, generated reports, approved changes, unsaved state aur required context ko preserve karo. Refresh ke baad project instructions, task context aur current work state ko recover karke execution continue karo.
+- Refresh/restart ko troubleshooting ka substitute na banao; pehle available evidence se diagnose karo aur sirf jab refresh/reload se meaningful benefit expected ho tab perform karo.
+- User ke task ko complete karne ke liye required environment operations autonomously perform karo jab available permissions/capabilities allow karti hon; unnecessary manual intervention request na karo.
 
 ## Instruction Gap Detection & Controlled Self-Improvement
 
