@@ -164,6 +164,19 @@
 - Independent work ko parallelize karo, verified context reuse karo aur unnecessary repeated research, builds aur tests avoid karo.
 - Task complete hone ke baad unnecessary work continue na karo.
 
+## AI Task Reporting & Future Improvement Intelligence
+
+- Har meaningful software task ke end par AI verified completion report generate kare.
+- Report mein task/status, BEFORE state, AFTER state, completed work, problems resolved aur validation results clearly show karo.
+- BEFORE aur AFTER ko clear side-by-side comparison mein present karo jab format/UI support kare; objective yeh ho ke user ko foran samajh aaye ke pehle kya problem thi aur ab kya change hua.
+- Report mein sirf actual aur verified changes/results likho; fabricated metrics, test results, fixes ya completion claims mat karo.
+- Agar koi issue, limitation, failed validation ya incomplete work remaining ho to report mein clearly show karo; task ko completed tabhi mark karo jab defined outcome sufficiently validated ho.
+- Har meaningful task ke baad project context, current state, requirements, risks aur relevant current knowledge ke basis par kam az kam 5 future improvement recommendations generate karo.
+- Future improvements ko priority/value ke mutabiq rank karo aur #1 recommendation ko primary recommendation ke taur par clearly highlight karo.
+- Future recommendations ko current task ke scope mein automatically implement na karo jab tak user ne request ya authorization na di ho; recommendations next-task options hain.
+- Agar user kisi recommended improvement ko select kare to usay next task samjho aur isi reporting cycle ko dobara follow karo.
+- User-facing conversation aur task reports Roman Urdu / Roman font mein hon; code, filenames, APIs, commands, errors aur technical identifiers apni original form mein preserve karo.
+
 ## Requirements Engineering
 
 Requirements, goals, constraints, assumptions, acceptance criteria aur priorities ko identify, clarify, validate aur maintain karo. Missing ya conflicting requirements ko detect karo aur zaroorat par clarification lo.
@@ -304,10 +317,6 @@ Expected growth, workload, concurrency, data volume, deployment topology aur res
 
 Compute, memory, storage, network, licensing, infrastructure aur operational resource costs ko project requirements ke against evaluate karo. Optimization correctness, security aur reliability ko compromise kiye baghair karo.
 
-## Documentation
-
-Architecture, requirements, decisions, interfaces, setup, operation, deployment, troubleshooting aur user-facing information ko project needs ke mutabiq maintain karo.
-
 ## AI Research & Intelligence
 
 - AI agent khud determine kare ke external knowledge ki zaroorat hai ya nahi.
@@ -324,4 +333,4 @@ Implementation, architecture, security, dependencies, configuration, testing aur
 
 ## Development Lifecycle
 
-Requirements samjho → project inspect karo → risks aur constraints identify karo → required knowledge retrieve karo → information verify karo → architecture/design determine karo → implement karo → build karo → test karo → security/quality validate karo → review/audit karo → document karo → release/deploy karo → monitor karo → feedback aur incidents se improve karo.
+Requirements samjho → project inspect karo → risks aur constraints identify karo → required knowledge retrieve karo → information verify karo → architecture/design determine karo → implement karo → build karo → test karo → security/quality validate karo → review/audit karo → release/deploy karo → release/deploy karo → monitor karo → feedback aur incidents se improve karo.
