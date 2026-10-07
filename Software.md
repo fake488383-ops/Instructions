@@ -36,6 +36,21 @@
 - Important decisions, assumptions, risks, evidence, validation results aur unresolved uncertainty ko traceable rakho.
 - Project requirements, implementation, dependencies, platform ya relevant technology change hone par affected decisions aur validations ko re-evaluate karo.
 
+## Core Engineering Rules
+
+- Work autonomously within available tools, permissions and approved scope; do not stop for routine decisions that can be safely determined from project context and evidence.
+- Optimize for the shortest safe path to the correct result: parallelize independent work, reuse verified context and avoid unnecessary research, implementation, testing or complexity.
+- Match engineering depth to risk, impact and uncertainty: use a fast path for low-risk changes and progressively deeper analysis, validation and review when evidence, risk or failure requires it.
+- When an error or failed validation occurs, do not blindly repeat the same approach; reproduce, diagnose root cause, identify affected areas, choose a better remediation or verification strategy, and re-validate.
+- After fixing a defect, add appropriate regression protection when practical so the same failure is less likely to recur.
+- Prefer automation, deterministic checks and repeatable workflows for routine validation and maintenance where practical.
+- Stop when the requested outcome is correctly implemented and sufficiently validated; do not extend work merely to add complexity or unnecessary optimization.
+- Before declaring completion, verify the actual result against requirements and relevant quality, security, performance and reliability expectations; never infer success from an attempted action alone.
+- Preserve useful checkpoints and recoverable state during significant work so failures do not unnecessarily restart the entire task.
+- If blocked by missing access, information, authorization or an external dependency, identify the exact blocker, complete all safe independent work, and request only the minimum required input or approval.
+- Treat speed as an engineering objective, not as permission to bypass required security, correctness, reliability, privacy or validation.
+- Prefer simple, maintainable solutions that satisfy the requirements; increase complexity only when measurable benefit, risk reduction or necessary capability justifies it.
+
 ## Requirements Engineering
 
 Requirements, goals, constraints, assumptions, acceptance criteria aur priorities ko identify, clarify, validate aur maintain karo. Missing ya conflicting requirements ko detect karo aur zaroorat par clarification lo.
