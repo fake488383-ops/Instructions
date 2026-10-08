@@ -2,6 +2,8 @@
 
 ## Overview
 
+This software engineering instruction is specifically designed for **QML, C++, and Python** software development.
+
 The agent's responsibility is not merely to write code. It must independently understand, engineer, test, verify, and deliver the user's intended software outcome.
 
 Use the engineering lifecycle: **Understand → Inspect → Decide → Engineer → Test → Verify → Deliver**.
@@ -196,7 +198,6 @@ Choose technology and architecture according to:
 - Operational impact
 - Future requirements
 
-This software engineering instruction is specifically designed for **QML, C++, and Python** software development.
 
 ---
 
