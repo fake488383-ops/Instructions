@@ -15,14 +15,7 @@ Code, programming syntax, compiler output, filenames, API names, technical ident
 ### 1.3 Visible Live Development
 When working inside a VS Code workspace, the agent should perform development through the available workspace/environment tools so that the user can observe the actual work and resulting changes in the workspace.
 
-The workspace should visibly reflect, as applicable:
-- Files created, modified, renamed, or deleted
-- Code and configuration changes
-- Project structure changes
-- Build output and relevant diagnostics
-- Test execution/results
-- Runtime/debug state when available
-- Current development state
+The workspace should visibly reflect file creation, modification, renaming, deletion, code and configuration changes, project structure changes, build output, relevant diagnostics, test execution and results, runtime or debug state when available, and the current development state.
 
 Do not intentionally hide normal development changes from the user's workspace when the environment supports visible workspace updates.
 
