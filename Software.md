@@ -24,6 +24,15 @@
 - Software, system software, embedded software, device software, and firmware are within scope when required.
 - Do not perform platform/device research unless the current task requires it.
 
+## Instruction Deduplication & Consistency
+
+- Before adding or applying a rule, check whether the same requirement already exists elsewhere in Software.md.
+- Do not keep duplicate or near-duplicate rules when one clear rule can cover the requirement.
+- If duplicate rules exist, merge them into the clearest single rule and remove unnecessary repetition without weakening the intended requirement.
+- If two rules overlap but serve different scopes, keep both only when the distinction is explicit and useful.
+- When updating Software.md, check the affected section and nearby related sections for duplication, contradiction, or conflicting wording.
+- Prefer one authoritative rule over repeated copies of the same instruction.
+
 ## First Priority
 
 - **Ethical & Lawful Use Priority:** Project aur AI agent ko ethical, lawful, safe, responsible aur legitimate purposes ke liye use karo. User ka stated intent ethical/legitimate ho to agent available authorized capabilities ke andar maximum useful assistance aur autonomous execution provide kare; unnecessary moralizing, assumptions ya routine refusal na karo.
@@ -77,7 +86,7 @@
 - Never claim 100% secure, 100% bug-free, or another absolute guarantee.
 - Do not mix Build and Final Audit unnecessarily.
 
-## Autonomous IDE / Project Validation & Launch
+## Autonomous IDE / Project Validation, Debugging & Launch
 
 - AI agent ko available development environment, especially VS Code ya equivalent IDE, ko active engineering workspace samajh kar use karo.
 - Current task se related failure aaye to available project evidence ko autonomously inspect karo: source code, configuration, build output, compiler errors, runtime errors, test results, unit tests, integration tests, application logs, IDE/VS Code Problems, relevant debug information aur other available diagnostics.
@@ -86,6 +95,14 @@
 - Testing ke liye application ko baar baar manually launch na karo jab backend/static/unit/integration/log-based validation sufficient ho. Launch/run ko targeted functional confirmation ke liye use karo.
 - Jab requested change complete ho, applicable build command/process automatically determine aur run karo. Build failure aaye to error diagnose, fix, rebuild aur re-validate karo.
 - Build successful hone ke baad, jab project/run configuration available ho, application ko launch/run karo taake final implemented state ko actual runtime environment mein verify kiya ja sake.
+- Debugging aur validation ko maximum possible extent tak background/non-intrusive IDE capabilities, debugger sessions, task runners, test runners aur programmatic tooling ke through perform karo; visible VS Code terminal ko automatically open karna default behavior na ho.
+- Debug-mode execution ko authorized engineering workflow ka normal hissa samjho jab runtime behavior, UI interaction, events, signals, voice, input/output, state changes ya crashes ko verify karna required ho.
+- Debug session ke logs, stack traces, exceptions, breakpoints, runtime diagnostics, event/state transitions aur available telemetry ko inspect karo. Jahan tooling allow kare, expected UI interactions aur workflows ko automated/targeted validation se verify karo.
+- Agar requested workflow ka koi part work na kare, agent ko user ke dobara report karne ka intezar nahi karna chahiye: diagnose → fix → rebuild → debug/run → revalidate cycle khud continue karo jab tak requested behavior sufficiently verified ho ya genuine blocker ho.
+- Dependency, import, include, package, SDK, build configuration aur compatibility errors ko proactively detect aur fix karo jab woh current task/build/runtime ko affect karte hon. Relevant compiler errors, IDE diagnostics aur warning/error indicators ko resolve karo; unrelated noise ko task ke scope ke mutabiq handle karo.
+- Debug/build/test logs ko user-facing terminal window mein dump karne ke bajaye available backend/background diagnostics mein consume karo. Sirf jab user explicitly terminal output maange ya tooling ki hard limitation ho tab visible terminal use karo.
+- Final verification ke baad requested executable/application entry point ko launch karo. Agar user ne ECS file/entry point specify ki ho, to successful build aur validation ke baad usay final launch target samjho.
+- Final user report se pehle ensure karo ke build, relevant tests, debug/runtime checks, dependency diagnostics aur requested workflow verification complete ho chuki ho, ya jo blocker remaining hai woh clearly identified ho.
 - Agar runtime launch ke baad error, crash, broken workflow, missing behavior ya unexpected result mile to logs, IDE Problems, debugger output aur relevant tests/code ko inspect karke root cause fix karo, phir rebuild aur re-run karo.
 - Ek hi task ke testing cycle mein unnecessary repeated launches avoid karo. Jab multiple validations backend/static/unit/integration/log analysis se ho sakti hon to unhein launch ke baghair perform karo aur end par meaningful runtime confirmation do.
 - User ke requested new behavior ko sirf code compile hone ki bunyaad par complete na samjho. Verify karo ke actual requested workflow perform ho raha hai.
@@ -104,9 +121,13 @@
 - Existing project structure aur conventions ko inspect karke follow karo. New folders sirf meaningful organizational need par create karo.
 - Cleanup ke dauran source code, required project files, reports, approved artifacts aur reusable test assets ko accidentally delete na karo.
 
-## Development Environment & Diagnostic Efficiency
+## Development Environment, Background Diagnostics & Live Development
 
 - Development environment, IDE aur available tooling ko efficiently use karo. Repeatedly visible terminals, Problems panels ya other UI windows kholna unnecessary ho to avoid karo.
+- VS Code terminal ko default workflow mein hidden/non-intrusive rakho. Background tasks, debugger, build system, test runner aur available IDE APIs/tooling se required output consume karo bina terminal ko automatically foreground/open kiye.
+- Live development mode ko support karo: jab project/tooling live preview, hot reload, live reload, runtime refresh ya equivalent capability provide kare, to relevant changes ko live development view mein reflect karo.
+- Jab supported ho, jis file/component par agent actively kaam kar raha ho uski current state ko IDE/editor aur available live preview/development view mein visibly reflect karo. Live preview actual verification ka substitute nahi hai; required runtime/debug validation phir bhi perform karo.
+- Live view available na ho to unsupported capability ko fabricate na karo; available preview/build/run mechanism use karo aur limitation report karo.
 - Diagnostics ko possible ho to background/non-intrusive project tooling, existing logs, test output, build output, debugger information aur IDE diagnostics se analyze karo.
 - Agar terminal command, Problems view, debugger, log inspection ya another IDE interaction genuinely required ho to use karo, lekin repeated redundant interactions avoid karo.
 - Agar VS Code ya development environment ko refresh/reload karna genuinely required ho to agent available IDE capability ke through khud perform kare; routine refresh ke liye user ko manually karne ko na kahe.
