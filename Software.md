@@ -252,26 +252,115 @@ Prefer the smallest safe change that correctly solves the requested problem whil
 
 ## 9. Engineering Report and Improvement Suggestions
 
-After completing a task, provide a clear engineering report in **Roman Urdu**.
+After completing a task, provide the final engineering report in **Roman Urdu** using the following visual structure whenever applicable.
 
-The report should include, when applicable:
+### Report Header
+Start with:
 
-- **What changed** — files, components, features, fixes, architecture, or configuration affected.
-- **Why it changed** — the engineering reason and intended outcome.
-- **Verification performed** — builds, tests, debug runtime checks, UI interactions, diagnostics, logs, and relevant validation.
-- **Result** — what passed, what failed, and the actual current status.
-- **Issues or limitations** — known remaining problems, risks, or constraints.
-- **Improvements made** — meaningful improvements to quality, security, performance, reliability, usability, maintainability, or architecture that were part of the task.
-- **Recommended improvements** — useful improvements that were not required for the current task but could make the software better.
+**SOFTWARE REPORT**
 
-When useful, provide up to **three prioritized improvement suggestions**, each with:
+Then briefly state the task or requested work.
+
+### Before → After
+Present the main changes in a two-column comparison:
+
+| BEFORE | AFTER |
+|---|---|
+| Problems, errors, warnings, missing functionality, failed behavior, or previous state | Changes, resolved behavior, successful results, or new state |
+
+Use clear status indicators such as **❌**, **⚠**, and **✅** when useful.
+
+This section must clearly show what changed, including relevant failures or warnings that existed before the work.
+
+### Fixes
+Below the Before/After comparison, list the actual fixes performed by the agent.
+
+Only include work that was actually implemented.
+
+Examples:
+- Fixed UI behavior.
+- Fixed dependency/import issue.
+- Corrected configuration.
+- Fixed API or backend logic.
+- Resolved build/runtime error.
+
+### Improvements
+List meaningful improvements that were actually made as part of the task.
+
+Examples:
+- Improved error handling.
+- Improved dependency integrity.
+- Improved reliability or maintainability.
+- Improved validation or performance.
+
+Do not describe a suggestion as an improvement unless it was actually implemented and verified.
+
+### Suggestions
+Provide useful future improvements separately from completed work.
+
+When useful, provide up to **three prioritized suggestions**. Each suggestion should state:
 1. The suggested improvement.
 2. The expected benefit.
-3. Why it is relevant to the current software.
+3. Why it is relevant.
 
-Do not suggest changes merely to increase complexity. Suggestions must be practical, relevant, and justified by the project's actual state.
+Suggestions must not be presented as completed work.
 
-Suggestions must not be presented as completed work unless they were actually implemented and verified.
+### Verification
+Show the validation actually performed, such as:
+
+- Build
+- Tests
+- Debug runtime
+- UI interaction
+- Dependency/import validation
+- Diagnostics/log verification
+- Final behavior
+
+Use **✅**, **⚠**, or **❌** according to the actual result.
+
+### Final Status
+End the report with a clear status such as:
+
+**STATUS: 🟢 COMPLETED**
+
+or, when appropriate:
+
+**STATUS: 🟡 PARTIALLY COMPLETED**
+
+**STATUS: 🔴 FAILED**
+
+The report must never claim completion, testing, verification, or a successful result that has not actually been established.
+
+A representative layout is:
+
+| BEFORE | AFTER |
+|---|---|
+| ❌ Previous problem | ✅ Resolved behavior |
+| ⚠ Missing dependency/import | ✅ Dependency properly configured |
+| ❌ Failed functionality | ✅ Working functionality |
+
+**FIXES**
+- ✓ Actual fix 1
+- ✓ Actual fix 2
+- ✓ Actual fix 3
+
+**IMPROVEMENTS**
+- ✓ Improvement actually implemented
+- ✓ Improvement actually verified
+
+**SUGGESTIONS**
+- 💡 Future improvement + benefit + relevance
+- 💡 Future improvement + benefit + relevance
+
+**VERIFICATION**
+- ✓ Build
+- ✓ Tests
+- ✓ Debug Runtime
+- ✓ Final Behavior
+
+**STATUS: 🟢 COMPLETED**
+
+The exact items must be generated dynamically according to the actual task. Do not add empty sections or invent results merely to match the template.
 
 ---
 
