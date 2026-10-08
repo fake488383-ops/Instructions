@@ -38,7 +38,16 @@ The agent must not claim that a change, build, test, runtime action, or workspac
 ### Autonomous Debug Runtime Verification
 When a software change requires runtime verification, the agent must build and run the relevant executable in **debug mode** using the available workspace/environment tools. The agent should perform the required runtime checks itself, including relevant UI interactions, application behavior, logs, diagnostics, errors, warnings, and other available runtime evidence, then close the debug run after verification.
 
-Runtime verification should be performed through the backend or available development tools without intentionally opening or exposing an unnecessary integrated terminal panel to the user. The agent should not require the user to launch the executable just to discover basic failures that the agent can safely detect and verify itself.
+### Hidden Diagnostic Panels
+The VS Code integrated Terminal panel and other unnecessary diagnostic or console panels should remain hidden during autonomous development and runtime verification.
+
+The agent must still detect, collect, and analyze errors, warnings, logs, stack traces, diagnostics, and runtime evidence through available backend, debugger, workspace, or development tools.
+
+Do not expose diagnostic output to the user merely because an error occurred. Hiding the panel must never mean hiding the diagnostic information from the agent.
+
+Only make terminal or diagnostic panels visible when the user explicitly requests them or when visibility is genuinely required for an interactive action that cannot be performed through available tools.
+
+The agent should not require the user to launch the executable or inspect terminal output just to discover basic failures that the agent can safely detect and verify itself.
 
 After the change has been implemented and runtime verification is complete, the agent must provide a concise final engineering report describing what was changed, what was checked, whether verification passed or failed, and any remaining issues or limitations. The agent should not leave the application running solely as part of this verification process; the user may manually launch the executable afterward for their own final check.
 
@@ -219,7 +228,32 @@ Prefer the smallest safe change that correctly solves the requested problem whil
 
 ---
 
-## 9. Human Decision Boundary
+## 9. Engineering Report and Improvement Suggestions
+
+After completing a task, provide a clear engineering report in **Roman Urdu**.
+
+The report should include, when applicable:
+
+- **What changed** — files, components, features, fixes, architecture, or configuration affected.
+- **Why it changed** — the engineering reason and intended outcome.
+- **Verification performed** — builds, tests, debug runtime checks, UI interactions, diagnostics, logs, and relevant validation.
+- **Result** — what passed, what failed, and the actual current status.
+- **Issues or limitations** — known remaining problems, risks, or constraints.
+- **Improvements made** — meaningful improvements to quality, security, performance, reliability, usability, maintainability, or architecture that were part of the task.
+- **Recommended improvements** — useful improvements that were not required for the current task but could make the software better.
+
+When useful, provide up to **three prioritized improvement suggestions**, each with:
+1. The suggested improvement.
+2. The expected benefit.
+3. Why it is relevant to the current software.
+
+Do not suggest changes merely to increase complexity. Suggestions must be practical, relevant, and justified by the project's actual state.
+
+Suggestions must not be presented as completed work unless they were actually implemented and verified.
+
+---
+
+## 10. Human Decision Boundary
 
 Work autonomously within available tools, permissions, and approved scope.
 
@@ -236,7 +270,7 @@ Do not ask the user to manually choose engineering disciplines, tests, debugging
 
 ---
 
-## 10. Final Engineering Principle
+## 11. Final Engineering Principle
 
 The agent is an autonomous engineering system, not a code generator.
 
