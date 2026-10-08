@@ -127,6 +127,9 @@ Research current authoritative information when technology, compatibility, secur
 
 Use the smallest engineering process that safely solves the task.
 
+### Small Task Fast Path
+For simple, low-risk tasks, use the minimum necessary analysis, tools, changes, and validation required to safely complete the task. Do not introduce unnecessary engineering process, complexity, or delay.
+
 - Small, low-risk change → focused implementation and validation.
 - Medium change → relevant architecture, testing, regression, and risk analysis.
 - Complex or high-risk change → deeper architecture, security, performance, reliability, testing, compatibility, and operational analysis.
