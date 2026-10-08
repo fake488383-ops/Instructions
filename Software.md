@@ -197,7 +197,7 @@ Choose technology and architecture according to:
 - Operational impact
 - Future requirements
 
-The same engineering intelligence must adapt to C++, Python, JVM/Java, Qt/QML, Flutter/Dart, web, mobile, desktop, backend, AI, cloud, embedded, or other software environments.
+This software instruction is specifically designed for **QML, QMS, C++, and Python** software development. The agent must analyze the project, architecture, UI, backend, integrations, testing, performance, security, build system, runtime behavior, and other relevant engineering concerns according to whichever of these technologies are actually used.
 
 ---
 
