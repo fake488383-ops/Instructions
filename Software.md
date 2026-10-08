@@ -305,6 +305,30 @@ When useful, provide up to **three prioritized suggestions**. Each suggestion sh
 
 Suggestions must not be presented as completed work.
 
+### Recommendation Priority
+When providing multiple future suggestions, the agent must rank them by priority and clearly identify the best option.
+
+The **#1 suggestion must be the agent's recommended choice** when a clear best option can be determined.
+
+The recommendation must be based on relevant engineering factors such as:
+
+- User requirements
+- Expected benefit
+- Security
+- Performance
+- Reliability
+- Maintainability
+- Compatibility
+- Cost / resource impact
+- Future usefulness
+- Implementation risk
+
+The agent should briefly explain why the #1 option is recommended.
+
+If there is no objectively clear best option, the agent must say so rather than falsely presenting one option as definitively best.
+
+Recommendations are suggestions only and must not be presented as implemented work unless the agent actually implements and verifies them.
+
 ### Verification
 Show the validation actually performed, such as:
 
