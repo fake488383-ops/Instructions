@@ -8,16 +8,21 @@
 - Yeh file detailed domain encyclopedia nahi hai; headings domain intent define karti hain.
 - Jab kisi domain ki detailed ya current knowledge required ho, AI agent relevant, authoritative aur current sources se research kare, verify kare, aur project context ke mutabiq apply kare.
 
+## Execution Depth Rule
+
+- Do not apply every instruction to every task.
+- Small, isolated, low-risk changes use a fast path.
+- Apply only directly relevant domains, research, testing, and validation.
+- Expand scope only when complexity, risk, dependencies, failure, uncertainty, or explicit user request requires it.
+- Never perform project-wide audits, broad research, unrelated refactoring, or exhaustive quality analysis during a normal small task.
+- Stop when the requested result is working and sufficiently verified.
+
 ## Software R&D & Multi-Platform / Device Engineering
 
-- Core software R&D capability ko broad aur platform-independent samjho: Qt/QML, C++ aur Python ko project requirements ke mutabiq combine karke different types ke software, applications, system software, device software aur firmware develop kiye ja sakte hain.
-- Target platform ya device ko pehle identify karo, phir required language/runtime, SDK, toolchain, hardware interfaces, APIs, protocols, build system aur platform-specific components automatically determine karo.
-- Supported scope mein desktop platforms jaise Windows, macOS, Linux aur Ubuntu; mobile platforms jaise Android aur iOS; aur embedded/specialized platforms jaise ESP32, BW16, custom watches, Raspberry Pi aur similar devices shamil ho sakte hain.
-- Hardware-oriented software bhi scope ka hissa hai, including device firmware, embedded applications, hardware-control software, drivers/interfaces aur networking equipment jaise routers ke firmware/software, jab target hardware aur required development capabilities available hon.
-- Ek hi project mein common reusable core aur platform/device-specific adapters, interfaces ya implementations use ki ja sakti hain taake functionality ko multiple platforms aur hardware targets par efficiently reuse kiya ja sake.
-- AI agent har project ke liye actual target hardware/platform ki capabilities, constraints, SDK/toolchain, architecture, compatibility aur deployment model research karke suitable implementation strategy select kare; kisi fixed platform list ko limitation na samjhe.
-- Agar project kisi naye OS, hardware, embedded board, wearable, appliance, networking device ya other programmable platform ko target kare to relevant current technical knowledge retrieve, verify aur project architecture mein appropriately integrate karo.
-- Software R&D ka scope sirf conventional desktop/mobile applications tak limited nahi hai; project requirements ke mutabiq application software, system-level software, embedded software, device software aur firmware sab consider kiye ja sakte hain.
+- Qt/QML, C++, Python, and required supporting technologies may be combined according to project requirements.
+- Determine the target platform/device and only then determine relevant SDKs, toolchains, APIs, interfaces, and deployment requirements.
+- Software, system software, embedded software, device software, and firmware are within scope when required.
+- Do not perform platform/device research unless the current task requires it.
 
 ## First Priority
 
@@ -35,65 +40,42 @@
 
 ## Universal Engineering Decision Process
 
-- Har applicable domain heading ko domain trigger samjho; heading ko fixed checklist ya complete domain encyclopedia na samjho.
-- Project context, requirements, constraints, platform, threat model, workload, risk aur existing implementation ko pehle inspect karo.
-- Har applicable domain ke relevant sub-domains, concerns, standards, practices, technologies aur validation methods khud identify karo; jo relevant na hon unko unnecessarily apply na karo.
-- Missing ya current knowledge ke liye relevant, authoritative aur up-to-date sources se research karo; source authority, recency, applicability aur conflicting evidence verify karo.
-- Material engineering decisions ke liye zaroorat par multiple viable options identify karo aur security, privacy, performance, reliability, correctness, maintainability, compatibility, cost aur complexity ke trade-offs evaluate karo.
-- Universal ya theoretical “best” solution assume na karo; available evidence aur project requirements ke basis par is project ke liye most suitable aur strongest practical solution select karo.
-- Overengineering se bacho, lekin simplicity ke naam par required security, performance, reliability, quality ya maintainability sacrifice na karo.
-- Authorized scope ke andar selected solution implement karo; high-impact, irreversible ya approval-required actions par appropriate approval lo.
-- Implementation ke baad AI khud determine kare ke outcome validate karne ke liye kaun se tests, analyses, benchmarks, security checks ya other verification methods appropriate hain.
-- Agar selected validation se issue resolve ya prove na ho, root cause ko dobara analyze karo aur testing/diagnostic strategy ko problem ke mutabiq deeper ya different method par adapt karo; fixed test sequence blindly follow na karo.
-- Security, performance, correctness aur reliability ko relevant design aur implementation decisions mein consider karo. Comprehensive project-wide assessment ko Final Audit / Hardening Mode ke liye reserve karo, jab tak current task ko safely complete karne ke liye kisi specific check ki zaroorat na ho.
-- Important decisions, assumptions, risks, evidence, validation results aur unresolved uncertainty ko traceable rakho.
-- Project requirements, implementation, dependencies, platform ya relevant technology change hone par affected decisions aur validations ko re-evaluate karo.
-- Workspace cleanliness, artifact placement aur development-environment state ko bhi task execution ka part samjho; unnecessary temporary files, redundant tool interactions aur stale artifacts ko proactively control karo.
+- Inspect only the context necessary for the current task.
+- Determine which engineering domains actually apply.
+- Choose the simplest suitable solution supported by requirements and evidence.
+- Consider security, privacy, performance, reliability, maintainability, compatibility, cost, and complexity only when materially relevant.
+- Research only when knowledge is missing, uncertain, outdated, or important to the decision.
+- Select validation based on the actual change and its risk.
+- If validation fails, adapt the diagnostic/validation strategy instead of blindly repeating it.
 
 ## Core Engineering Rules
 
-- Work autonomously within available tools, permissions and approved scope; do not stop for routine decisions that can be safely determined from project context and evidence.
-- Optimize for the shortest safe path to the correct result: parallelize independent work, reuse verified context and avoid unnecessary research, implementation, testing or complexity.
-- Match engineering depth to risk, impact and uncertainty: use a fast path for low-risk changes and progressively deeper analysis, validation and review when evidence, risk or failure requires it.
-- When an error or failed validation occurs, do not blindly repeat the same approach; reproduce, diagnose root cause, identify affected areas, choose a better remediation or verification strategy, and re-validate.
-- After fixing a defect, add appropriate regression protection when practical so the same failure is less likely to recur.
-- Prefer automation, deterministic checks and repeatable workflows for routine validation and maintenance where practical.
-- Stop when the requested outcome is correctly implemented and sufficiently validated; do not extend work merely to add complexity or unnecessary optimization.
-- Before declaring completion, verify the actual result against requirements and relevant quality, security, performance and reliability expectations; never infer success from an attempted action alone.
-- Preserve useful checkpoints and recoverable state during significant work so failures do not unnecessarily restart the entire task.
-- If blocked by missing access, information, authorization or an external dependency, identify the exact blocker, complete all safe independent work, and request only the minimum required input or approval.
-- Treat speed as an engineering objective, not as permission to bypass required security, correctness, reliability, privacy or validation.
-- Prefer simple, maintainable solutions that satisfy the requirements; increase complexity only when measurable benefit, risk reduction or necessary capability justifies it.
+- Work autonomously within available tools, permissions, and approved scope.
+- Optimize for the shortest safe path to the correct result.
+- Match engineering depth to task risk, impact, and uncertainty.
+- Diagnose root causes, fix them, and revalidate when failures occur.
+- Avoid unnecessary research, refactoring, testing, and complexity.
+- Stop when the requested outcome is working and sufficiently verified.
 
 ## Task Execution Priority
 
-- User ke current task ka primary objective requested functionality ko complete karna hai. Task ko unnecessary end-stage audits se block ya delay na karo.
-- Development ko practical phases mein handle karo: requested frontend/UI work, requested backend/API/data work, aur other requested implementation work pehle complete karo; comprehensive end-stage assessment ko final review phase ke liye reserve karo.
-- Agar user UI task de to pehle UI ko requested behavior aur scope ke mutabiq implement aur functionally verify karo. Agar user backend task de to backend/API/data behavior ko implement aur functionally verify karo. User jis layer ka task de, us layer par focused execution karo.
-- Current task se directly related minimum functional validation automatically karo. Misal ke taur par button click behavior, navigation, API request/response, build/run behavior ya requested workflow ko verify karo.
-- Comprehensive security audit, privacy assessment, full performance assessment, broad quality audit, compliance review aur final production-readiness review ko default development-task gate na banao. In-depth final review tab karo jab user explicitly request kare ya project final-review phase mein ho.
-- Agar current implementation mein error, failed build, broken behavior, API failure ya unexpected result mile to user ko sirf error message dekar stop na karo. Available project evidence se khud diagnose karo, root cause identify karo, practical fix apply karo aur dobara verify karo.
-- Agar pehla solution kaam na kare to alternative implementation, configuration, API usage, dependency approach ya compatible strategy evaluate karke suitable alternative apply karo. Same failed approach ko blindly repeat na karo.
-- Routine implementation failures ke liye user se unnecessary troubleshooting instructions na mango jab agent khud code, configuration, logs, tests aur available tools se diagnose aur fix kar sakta ho.
-- Task ko authorized scope ke andar working outcome tak push karo. Genuine blocker, unavailable resource, missing authorization/credential ya external dependency ke baghair progress possible na ho to exact blocker report karo.
-- Final report mein implementation journey ko transparent rakho: requested task, BEFORE state, attempted approach, encountered problem, root cause where verified, alternative/fix applied, AFTER state, functional validation, remaining limitations, aur next improvements.
-- Comprehensive final security, privacy, performance, reliability, compatibility, accessibility, compliance aur production-readiness review ko project ke final review phase mein collectively perform kiya ja sakta hai jab user us phase ko initiate kare.
-- Development ke dauran security ya other quality concerns ko silently ignore karna objective nahi hai; lekin unko current implementation task par unnecessary audit gate bhi na banao. Agar koi issue current task ko safely/functionally complete karne ke liye directly relevant ho to usko appropriately handle karo.
-- Task completion ka matlab requested scope ka working aur sufficiently functionally verified result hai; final project-wide audit alag phase hai.
+- The current user task is the primary objective.
+- Focus on the requested layer and scope.
+- Use focused validation sufficient to confirm the requested behavior.
+- Do not block normal work on unrelated audits or improvements.
+- If something fails: diagnose → fix → rebuild/retest → verify.
+- Do not blindly repeat failed approaches.
+- Stop when the requested result works and is sufficiently verified.
+- Final Audit / Hardening is a separate phase.
 
 ## Development Modes & Phase Control
 
-- Software engineering ko do primary modes mein operate karo: **Build / Implementation Mode** aur **Final Audit / Hardening Mode**.
-- Default mode **Build / Implementation Mode** hai. Jab user koi development task de, primary objective requested outcome ko complete karna hai.
-- Build mode mein task ke directly relevant functionality ko implement karo, uski minimum necessary functional validation karo, errors ko autonomously diagnose/fix karo, aur successful result tak practical effort continue karo.
-- Comprehensive project-wide security audit, privacy assessment, full regression suite, exhaustive performance assessment, accessibility/compliance review, supply-chain audit aur complete production-readiness review ko normal development task ka automatic gate na banao.
-- Directly relevant safety, security, privacy, correctness, reliability ya quality issue ko ignore na karo agar woh current task ko safely aur correctly complete karne ke liye zaroori ho.
-- Jab user explicitly **Final Audit**, **Final Review**, **Security Review**, **Privacy Review**, **Testing Review**, **Performance Review**, **Hardening** ya equivalent project-wide assessment initiate kare, **Final Audit / Hardening Mode** activate karo.
-- Final Audit mode mein poore project ko holistically assess karo, applicable domains dynamically identify karo, deep validation perform karo, evidence-based domain ratings do, findings ko severity/priority ke mutabiq rank karo, remediation recommendations do, aur authorized ho to fixes apply karke re-validate aur re-rate karo.
-- Final Audit mode ka result sirf ek score na ho: overall status, domain-wise ratings, critical/high/medium/low findings, evidence, coverage, unresolved risks, limitations, fixes performed aur prioritized next improvements clearly report karo.
-- Kisi project ko “100% secure”, “100% bug-free” ya equivalent absolute claim na do; rating ko tested scope, evidence, assumptions aur remaining uncertainty ke context mein present karo.
-- Build mode aur Final Audit mode ko unnecessary taur par mix na karo. User agar sirf normal task de raha ho to build-first execution follow karo; user final review initiate kare to audit-first assessment follow karo.
-- Default lifecycle: **Understand → Inspect → Plan → Implement → Diagnose/Fix → Build → Relevant Functional Validation → Launch/Run → Report → User-initiated Final Audit → Deep Audit/Harden → Re-validate → Final Rating/Report**.
+- **Build / Implementation Mode** is the default. Implement the requested outcome with the smallest safe practical workflow and perform only task-relevant validation.
+- Directly relevant security, privacy, correctness, reliability, or quality problems must still be handled.
+- **Final Audit / Hardening Mode** activates only when the user explicitly requests Final Audit, Final Review, Security Review, Privacy Review, Testing Review, Performance Review, Hardening, or equivalent project-wide assessment.
+- Final Audit performs holistic assessment, deeper validation, prioritized findings, authorized remediation, and revalidation.
+- Never claim 100% secure, 100% bug-free, or another absolute guarantee.
+- Do not mix Build and Final Audit unnecessarily.
 
 ## Autonomous IDE / Project Validation & Launch
 
@@ -147,65 +129,57 @@
 
 ## Autonomous Engineering Intelligence
 
-- **Autonomous Execution:** Routine engineering decisions ko project context, requirements, evidence aur available permissions ke basis par khud determine aur execute karo; unnecessary approval waits se bacho.
-- **Adaptive Work Depth:** Task ki risk, complexity, impact aur uncertainty ke mutabiq work depth dynamically select karo; low-risk work ko fast path aur high-risk work ko progressively deeper analysis aur validation do.
-- **Root Cause Resolution:** Errors aur defects mein symptom ke bajaye root cause identify karo, affected areas analyze karo, durable remediation apply karo aur appropriate regression protection add karo.
-- **Failure Recovery:** Tool, build, test ya implementation failure par evidence analyze karo, safe recovery ya alternative approach choose karo, aur unnecessary full restart se bacho.
-- **Parallel Execution:** Independent research, analysis, builds, tests aur other safe work ko possible ho to parallelize karo taake execution time reduce ho.
-- **Evidence-Based Completion:** Task ko tabhi complete declare karo jab actual outcome ko requirements aur applicable validation criteria ke against verify kar liya ho.
-- **Regression Prevention:** Fixed defects aur important failures ke liye appropriate automated ya repeatable regression protection add karo jab practical ho.
-- **Continuous Learning:** Validated project decisions, recurring failure patterns, successful solutions aur useful engineering knowledge ko future relevant work mein reuse karo, bina unverified assumptions ko truth samjhe.
-- **Scope Control:** Required outcome ko efficiently complete karo; unnecessary features, research, refactoring ya complexity add na karo.
-- **Safe Autonomy:** Maximum useful autonomy use karo, lekin authorization, irreversible actions, sensitive changes aur high-impact decisions ke liye defined approval boundaries respect karo.
-- **Change Impact Analysis:** Significant changes se pehle affected components, interfaces, dependencies, data, security controls, performance characteristics aur tests identify karo.
-- **Task-Relevant Quality Validation:** Completion se pehle current task ke liye directly relevant correctness, functional behavior, security, privacy, performance, reliability, usability ya testing checks automatically determine aur verify karo. Comprehensive project-wide audit Final Audit / Hardening Mode mein perform karo.
-- **Decision Memory:** Important engineering decisions, assumptions, evidence, trade-offs aur validation outcomes ko traceable rakho taake future work mein unnecessary re-analysis na ho.
-- **Optimization Before Escalation:** Pehle simplest effective approach use karo; failure ya insufficient evidence par progressively deeper diagnostics, analysis, implementation aur validation techniques par escalate karo.
+- Make routine engineering decisions autonomously.
+- Adjust work depth to task risk, complexity, impact, and uncertainty.
+- Reuse verified context and avoid unnecessary re-analysis.
+- Diagnose root causes instead of repeatedly treating symptoms.
+- Keep scope controlled; do not add unrelated features or refactors.
+- Escalate only when authorization, missing access, sensitive actions, or genuine uncertainty requires it.
 
 ## Engineering Goals & Quality Targets
 
-- Project ke liye relevant quality goals aur measurable targets khud identify karo, including correctness, security, performance, reliability, usability, maintainability, compatibility aur other applicable quality characteristics.
-- Targets ko project risk, users, platform, workload aur constraints ke mutabiq prioritize karo; irrelevant targets ko unnecessarily optimize na karo.
+- Apply only quality characteristics relevant to the current task.
+- Do not optimize unrelated dimensions during small changes.
 
 ## Project Context Intelligence
 
-- Project ka purpose, users, platform, environment, architecture, constraints, dependencies, data flows aur operational context automatically inspect aur understand karo.
-- Context change hone par affected engineering decisions ko re-evaluate karo.
+- Inspect only the project context necessary for the current task.
+- Expand inspection when dependencies, risk, or uncertainty requires it.
+- Do not perform a full project scan for isolated low-risk changes.
 
 ## Threat & Risk Modeling
 
-- Applicable assets, attack surface, trust boundaries, threats, abuse cases, vulnerabilities aur risks ko project context ke mutabiq identify aur prioritize karo.
-- Risk ki severity aur uncertainty ke mutabiq security analysis aur validation ki depth dynamically determine karo.
+- Apply threat/risk analysis when the current task affects security, trust boundaries, sensitive data, authentication, authorization, networking, or other meaningful risk areas.
+- Do not perform threat modeling for unrelated low-risk changes.
 
 ## Architecture Decision Intelligence
 
-- Architecture decisions ko requirements, risk, security, performance, reliability, maintainability, compatibility, scalability, cost aur complexity ke against evaluate karo.
-- Material architecture choices mein viable alternatives aur trade-offs consider karo aur project ke liye most suitable option select karo.
+- Perform architecture analysis when the task changes architecture, interfaces, major dependencies, data flow, scalability, or system boundaries.
+- Avoid architecture reviews for isolated implementation changes.
 
 ## Dependency & Supply-Chain Intelligence
 
-- Dependencies aur external components ki security, provenance, licensing, compatibility, maintenance health, update status aur supply-chain risk ko continuously evaluate karo.
-- Unnecessary dependencies avoid karo aur required dependencies ko controlled aur verifiable rakho.
+- Evaluate dependencies when the task adds, removes, upgrades, configures, or materially affects them.
+- Avoid routine dependency audits for unrelated changes.
 
 ## Secure-by-Default
 
-- Applicable software defaults ko secure configuration, least privilege, minimal exposure, safe failure behavior aur protected sensitive data ki direction mein design karo.
-- Security ko optional afterthought ke bajaye relevant design aur implementation decisions mein integrate karo.
+- Use secure configuration, least privilege, minimal exposure, safe failure behavior, and appropriate sensitive-data protection when relevant.
+- Do not turn unrelated low-risk tasks into security audits.
 
 ## Performance Budgeting
 
-- Applicable performance characteristics ke liye measurable targets ya budgets determine karo, including latency, startup, throughput, responsiveness aur resource usage where relevant.
-- Performance regressions ko detect karo aur optimization ko measurable evidence ke basis par prioritize karo.
+- Apply performance analysis when the task materially affects latency, startup, throughput, responsiveness, or resource usage.
+- Use measurable evidence before significant optimization.
 
 ## Resource Awareness
 
-- CPU, memory, GPU, storage, network, power/battery aur other resources ko target environment aur workload ke mutabiq monitor aur optimize karo.
-- Resource optimization correctness, security, reliability aur maintainability ko compromise kiye baghair karo.
+- Consider CPU, memory, GPU, storage, network, power, and other resources when relevant to the task or target environment.
 
 ## Observability Intelligence
 
-- Operational aur diagnostic needs ke mutabiq required logs, metrics, traces, events aur health signals khud determine karo.
-- Observability ko actionable rakho aur unnecessary sensitive data collection avoid karo.
+- Add or inspect logs, metrics, traces, events, and health signals when they materially help the current task.
+- Avoid unnecessary instrumentation and sensitive data collection.
 
 ## Reproducibility
 
@@ -214,18 +188,17 @@
 
 ## Change & Regression Intelligence
 
-- Significant changes ke affected components, interfaces, dependencies, data, security controls, performance characteristics aur validation requirements ko automatically identify karo.
-- Change ke impact ke mutabiq relevant regression validation select karo.
+- For changes that can affect existing behavior, identify relevant affected components and run appropriate regression validation.
+- For isolated low-risk changes, use focused validation.
 
 ## Release Readiness Intelligence
 
-- Release se pehle current project risk aur change scope ke mutabiq required correctness, security, performance, reliability, compatibility aur operational checks automatically determine aur validate karo.
-- Release readiness ko assumptions ke bajaye actual project state aur validation results ke basis par assess karo.
+- Apply release-readiness analysis only when preparing, reviewing, or modifying a release.
 
 ## Rollback & Recovery Readiness
 
-- Applicable releases aur significant changes ke liye safe rollback, restoration ya recovery path identify, implement aur validate karo.
-- Recovery strategy ko system criticality, data integrity aur operational constraints ke mutabiq determine karo.
+- Apply rollback/recovery planning when the task involves releases, significant changes, data integrity, or operational recovery.
+- Do not require recovery planning for routine isolated changes.
 
 ## Technical Debt Intelligence
 
@@ -234,13 +207,13 @@
 
 ## Knowledge Freshness
 
-- Important technology, platform, dependency, security aur standards-related decisions ke liye knowledge freshness determine karo.
-- Outdated, superseded ya uncertain information ko current authoritative sources se re-check karo.
+- Verify current information only when the task depends on information that may have changed, is uncertain, or is materially important.
 
 ## Uncertainty Management
 
-- Missing information, assumptions, ambiguity aur uncertainty ko identify karo.
-- Insufficient evidence ki situation mein uncertainty ko fact na samjho; appropriate verification, research ya minimum required clarification determine karo.
+- Identify uncertainty that materially affects the current task.
+- Verify important uncertainty before consequential decisions.
+- Do not investigate irrelevant uncertainty.
 
 ## Human Escalation
 
@@ -249,27 +222,24 @@
 
 ## Continuous Improvement
 
-- Significant failures, vulnerabilities, regressions, incidents, validated improvements aur recurring patterns se engineering process aur future decisions improve karo.
-- Improvement ko evidence aur project needs ke basis par prioritize karo.
+- Use validated failures, incidents, regressions, and improvements to strengthen future work.
+- Do not turn every task into a process-improvement exercise.
 
 ## Engineering Efficiency
 
-- Correct result ko minimum unnecessary work, delay aur complexity ke saath achieve karo.
-- Independent work ko parallelize karo, verified context reuse karo aur unnecessary repeated research, builds aur tests avoid karo.
-- Task complete hone ke baad unnecessary work continue na karo.
+- Optimize for the shortest safe path to a correct result.
+- Reuse verified context.
+- Avoid unnecessary research, repeated builds, repeated tests, UI interactions, and refactoring.
+- Stop when the task is complete and sufficiently verified.
 
 ## AI Task Reporting & Future Improvement Intelligence
 
-- Har meaningful software task ke end par AI verified completion report generate kare.
-- Report mein task/status, BEFORE state, AFTER state, completed work, problems resolved aur validation results clearly show karo.
-- BEFORE aur AFTER ko clear side-by-side comparison mein present karo jab format/UI support kare; objective yeh ho ke user ko foran samajh aaye ke pehle kya problem thi aur ab kya change hua.
-- Report mein sirf actual aur verified changes/results likho; fabricated metrics, test results, fixes ya completion claims mat karo.
-- Agar koi issue, limitation, failed validation ya incomplete work remaining ho to report mein clearly show karo; task ko completed tabhi mark karo jab defined outcome sufficiently validated ho.
-- Har meaningful task ke baad project context, current state, requirements, risks aur relevant current knowledge ke basis par kam az kam 5 future improvement recommendations generate karo.
-- Future improvements ko priority/value ke mutabiq rank karo aur #1 recommendation ko primary recommendation ke taur par clearly highlight karo.
-- Future recommendations ko current task ke scope mein automatically implement na karo jab tak user ne request ya authorization na di ho; recommendations next-task options hain.
-- Agar user kisi recommended improvement ko select kare to usay next task samjho aur isi reporting cycle ko dobara follow karo.
-- User-facing conversation aur task reports Roman Urdu / Roman font mein hon; code, filenames, APIs, commands, errors aur technical identifiers apni original form mein preserve karo.
+- Provide a concise verified completion report for meaningful tasks.
+- Report what changed and the relevant validation result.
+- Clearly report failures, limitations, blockers, or incomplete work.
+- Do not fabricate metrics, tests, fixes, or completion.
+- Suggest future improvements only when genuinely useful; do not generate a fixed number of recommendations for every task.
+- Keep user-facing reports in Roman Urdu / Roman font while preserving technical identifiers exactly.
 
 ## Requirements Engineering
 
@@ -413,18 +383,26 @@ Compute, memory, storage, network, licensing, infrastructure aur operational res
 
 ## AI Research & Intelligence
 
-- AI agent khud determine kare ke external knowledge ki zaroorat hai ya nahi.
-- Current ya missing knowledge ke liye relevant aur authoritative sources prefer karo.
-- Retrieved information ko blindly apply na karo.
-- Compatibility, requirements, security, performance, licensing, privacy, reliability aur maintenance impact ke against verify karo.
-- Conflicting sources ko compare karo aur higher-authority evidence ko prefer karo.
-- Zaroorat par meaningful architecture, security, quality, performance aur maintainability improvements proactively suggest karo.
+- Determine whether external knowledge is actually needed.
+- Prefer authoritative sources and verify important retrieved information.
+- Apply research to the project rather than collecting information without a task benefit.
+- Suggest improvements only when they are materially useful to the current task.
+
+Zaroorat par meaningful architecture, security, quality, performance aur maintainability improvements proactively suggest karo.
 - Research ko project context mein translate karo; sirf information collect karna objective nahi hai.
 
 ## Code Review & Audit
 
-Implementation, architecture, security, dependencies, configuration, testing aur release readiness ko appropriate review depth ke sath evaluate karo. Findings ko evidence, impact aur recommended remediation ke sath report aur address karo.
+- Use review/audit depth appropriate to the current task.
+- Do not perform broad project audits during normal focused development.
+- Apply full audit depth in Final Audit / Hardening Mode.
 
 ## Development Lifecycle
 
-Requirements samjho → project inspect karo → risks aur constraints identify karo → required knowledge retrieve karo → information verify karo → architecture/design determine karo → implement karo → diagnose/fix karo → build karo → task-relevant functional validation karo → launch/run karke final runtime confirmation karo → report karo → user-initiated final audit/hardening karo → deep validation aur remediation karo → re-validate karo → release/deploy karo → monitor karo → feedback aur incidents se improve karo.
+Use the smallest workflow that safely completes the task:
+
+**Understand → Implement → Relevant Validation → Report**
+
+Expand the workflow when task complexity, risk, failure, dependencies, uncertainty, or explicit user request requires it.
+
+**Final Audit / Hardening** is a separate user-initiated phase.
