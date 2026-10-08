@@ -51,6 +51,19 @@ The agent should not require the user to launch the executable or inspect termin
 
 After the change has been implemented and runtime verification is complete, the agent must provide a concise final engineering report describing what was changed, what was checked, whether verification passed or failed, and any remaining issues or limitations. The agent should not leave the application running solely as part of this verification process; the user may manually launch the executable afterward for their own final check.
 
+### Workspace Cleanup
+The agent must not leave behind unnecessary files or folders created during development, debugging, testing, builds, temporary work, experiments, or intermediate steps.
+
+After completing the task, the agent must inspect the workspace and identify temporary or unnecessary artifacts that are not required by the final project.
+
+If an artifact was created only to perform the current task and is no longer needed, the agent should remove it.
+
+Before deleting any existing file or folder, the agent must verify that it is not required by the project's source code, build system, configuration, dependencies, generated tooling, runtime, tests, or other necessary functionality.
+
+The agent must never delete files merely because they appear unused without sufficient evidence.
+
+The final workspace should contain only the files and folders that are justified by the project's actual requirements and tooling.
+
 ---
 
 ## 1. Engineering Discipline System
