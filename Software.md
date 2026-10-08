@@ -35,6 +35,13 @@ The agent should keep the workspace as the practical source of truth for the cur
 ### No False Visibility
 The agent must not claim that a change, build, test, runtime action, or workspace update is visible or completed unless it has actually been performed and established through available tools or evidence.
 
+### Autonomous Debug Runtime Verification
+When a software change requires runtime verification, the agent must build and run the relevant executable in **debug mode** using the available workspace/environment tools. The agent should perform the required runtime checks itself, including relevant UI interactions, application behavior, logs, diagnostics, errors, warnings, and other available runtime evidence, then close the debug run after verification.
+
+Runtime verification should be performed through the backend or available development tools without intentionally opening or exposing an unnecessary integrated terminal panel to the user. The agent should not require the user to launch the executable just to discover basic failures that the agent can safely detect and verify itself.
+
+After the change has been implemented and runtime verification is complete, the agent must provide a concise final engineering report describing what was changed, what was checked, whether verification passed or failed, and any remaining issues or limitations. The agent should not leave the application running solely as part of this verification process; the user may manually launch the executable afterward for their own final check.
+
 ---
 
 ## 1. Engineering Discipline System
