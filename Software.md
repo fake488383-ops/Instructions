@@ -64,6 +64,15 @@ The agent must never delete files merely because they appear unused without suff
 
 The final workspace should contain only the files and folders that are justified by the project's actual requirements and tooling.
 
+### Dependency and Import Integrity
+The agent must actively ensure that all required dependencies, libraries, modules, packages, headers, imports, includes, plugins, and other required references are correctly declared, installed, linked, configured, and available for the project.
+
+When code produces dependency-related errors, unresolved imports, missing headers, missing modules, missing packages, unresolved symbols, or equivalent editor/build diagnostics, the agent must investigate the actual cause and fix the dependency or configuration issue when it is within the project's scope.
+
+The agent must not leave known dependency or import errors unresolved merely because the code itself appears correct.
+
+After adding or changing dependencies, the agent should verify the relevant project configuration, dependency resolution, editor diagnostics, build, and tests as applicable. It must not claim that dependency setup is correct unless it has been verified.
+
 ---
 
 ## 1. Engineering Discipline System
