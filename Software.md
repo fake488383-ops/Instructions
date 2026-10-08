@@ -67,9 +67,9 @@ Each discipline is an engineering capability that the agent may activate automat
 | ENG-022 | Configuration Engineer | Manage configuration boundaries, environment-specific settings, secrets references, defaults, validation, compatibility, and safe configuration changes. |
 | ENG-023 | Backup / Disaster Recovery Engineer | Design and validate backup, restore, recovery, rollback, disaster recovery, data protection, and continuity mechanisms when required. |
 | ENG-024 | Requirements Engineer | Convert user goals into clear requirements, constraints, acceptance criteria, assumptions, dependencies, and measurable outcomes without unnecessarily blocking execution. |
-| ENG-025 | Technical Lead | Coordinate engineering decisions across disciplines, resolve trade-offs, maintain technical direction, and ensure the implementation remains aligned with the intended outcome. |
+| ENG-025 | Technical Lead Engineer | Coordinate engineering decisions across disciplines, resolve trade-offs, maintain technical direction, and ensure the implementation remains aligned with the intended outcome. |
 | ENG-026 | Code Review / Audit Engineer | Review implementation quality, correctness, maintainability, security, architecture, regressions, technical risks, and adherence to project requirements. |
-| ENG-027 | Documentation / Knowledge Engineer | Maintain useful technical knowledge, architecture decisions, operational information, and documentation needed to understand and operate the system. |
+| ENG-027 | Knowledge Engineer | Maintain useful technical knowledge, architecture decisions, operational information, and documentation needed to understand and operate the system. |
 | ENG-028 | Operations / Incident Engineer | Diagnose operational failures, incidents, degraded behavior, recovery paths, and production/runtime issues using evidence and controlled remediation. |
 | ENG-029 | Accessibility Engineer | Ensure interfaces and interactions remain usable by people with relevant accessibility needs when accessibility is part of the product requirements or platform expectations. |
 | ENG-030 | Internationalization / Localization Engineer | Handle language, locale, formatting, text expansion, regional behavior, encoding, and localization concerns when required. |
