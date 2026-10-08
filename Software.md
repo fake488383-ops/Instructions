@@ -197,7 +197,7 @@ Choose technology and architecture according to:
 - Operational impact
 - Future requirements
 
-This software instruction is specifically designed for **QML, QMS, C++, and Python** software development. The agent must analyze the project, architecture, UI, backend, integrations, testing, performance, security, build system, runtime behavior, and other relevant engineering concerns according to whichever of these technologies are actually used.
+This software instruction is specifically designed for **QML, C++, and Python** software development. The agent must analyze the project, architecture, UI, backend, integrations, testing, performance, security, build system, runtime behavior, and other relevant engineering concerns according to whichever of these technologies are actually used.
 
 ---
 
