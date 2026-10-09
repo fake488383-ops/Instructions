@@ -229,8 +229,41 @@ Never promise absolute bug-free or 100% secure software.
 
 ---
 
+## 8. Final Report Generation
 
-## 8. Final Engineering Principle
+Whenever the agent makes or reviews software changes, generate a concise **Final Report** for the completed task. The report must describe actual project changes and show relevant visual behavior—not just generic prose.
+
+### Required Report Layout
+
+Use this order and keep each section in a clearly separated, outlined panel/card:
+
+1. **Final Report** — page heading at the top.
+2. **Before / After** — one main comparison panel with both headings centered. Place **Before on the left** and **After on the right**. Use red indicators for Before and green indicators for After. Keep descriptions short and limited to the main points.
+3. **Performance** — a compact list/table-style view, visually consistent with Testing & Verification. Include relevant measurable metrics such as CPU usage, memory, FPS/frame time, response/latency time, and startup time when applicable. Show Before, After, and Change/Improvement when comparable measurements exist.
+4. **Testing & Verification** — a simple vertical list of relevant checks and their actual statuses. Select checks based on the project and change, such as build, unit tests, UI launch, buttons/interactions, voice listener, AI response, animation behavior, integration, and regression tests.
+5. **Improvement Suggestions** — at the bottom, provide five specific, prioritized, selectable improvement suggestions and a sixth **Apply All Improvements** option that selects all five. Keep suggestions separate from completed work. Applying them must follow normal scope, safety, and authorization rules.
+
+### Animation and Visual-Change Evidence
+
+- **Any animation or animated UI behavior displayed by the software that is relevant to the task must be represented in the Final Report.** Do not omit animations merely because they are visual or difficult to describe.
+- In Before / After, identify each relevant animation or visual interaction by its actual component/feature name and compare its previous behavior with its updated behavior—for example, particle/orb movement, rotation direction or speed, listening waveform, transitions, loading indicators, or other project-specific animations.
+- When evidence is available, embed or show an actual relevant UI preview, screenshot, frame sequence, or animation recording in the report so the user can see the behavior. Prefer real captures from the project/runtime. Do not substitute an invented mockup for real application evidence or claim a static screenshot proves an animation works.
+- If a prior-state capture is unavailable, state that the Before comparison is based on inspected prior code, logs, or other available evidence; do not fabricate a screenshot, animation, defect, or prior behavior.
+- If the task changes no animation, do not invent one. Include only animations relevant to the change or report scope.
+
+### Evidence and Status Rules
+
+- Report only actual changes and checks relevant to the current task. Use concise, factual main points rather than filler.
+- Mark an item **Passed/Working** only after the corresponding check was actually run and passed. Use **Failed**, **Blocked**, **Not run**, or **Not verified** accurately when appropriate. A green icon must never imply success if behavior was not verified.
+- Never fabricate Before / After values, test results, FPS, CPU or memory improvements, response times, or percentage gains. Use an unavailable marker such as “—” / “Not measured” when measurements do not exist.
+- For performance comparisons, collect comparable measurements under reasonably equivalent conditions where practical, and explain material differences in test conditions.
+- Testing should verify actual behavior where tools permit, not merely confirm that code exists or compiles. For UI work, test relevant buttons and interactions; for voice features, test listening and response behavior; for animations, verify actual motion/rendering; for backend-connected features, verify the relevant integration as appropriate.
+- Keep the report dark/black with white text and subtle white/grey outlines when the application's design supports this style. Use red for Before and green for After, with accessible contrast.
+- Generate the report as part of task delivery after implementation and available verification. Clearly distinguish completed changes, measured performance, verified tests, and optional suggestions. If the environment cannot capture an animation, execute a test, or measure a metric, state the limitation instead of claiming success.
+
+---
+
+## 9. Final Engineering Principle
 
 The agent is an autonomous, coordinated engineering system—not a code generator or a collection of isolated specialists.
 
