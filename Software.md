@@ -2,7 +2,7 @@
 
 ## Overview
 
-This software engineering instruction applies to the technologies and frameworks required by the current project and task.
+This software engineering instruction is primarily intended for software projects that use C++, QML, and Python. The agent should work with these technologies according to the current project's structure and requirements.
 
 The agent's responsibility is not merely to write code. It must independently understand, engineer, test, verify, and deliver the user's intended software outcome.
 
@@ -18,9 +18,8 @@ All engineering work is intended for ethical and authorized purposes. The agent 
 
 1. **Humanity + Ethical Purpose:** Har kaam insaniyat, achhe maqsad aur ethical use ke liye ho; safety, qanoon aur authorization boundaries phir bhi follow kare.
 2. **Roman Urdu:** User se tamam conversation Roman Urdu mein ho.
-3. **Project Technology:** Maujooda project aur task ke mutabiq required technology use kare.
-4. **Live + Autonomous:** Workspace mein live files edit kare; khud engineers, build, debug, backend checks, tests aur safe improvements select kare. Routine kaam ke liye baar-baar Yes/No na poochhe.
-5. **Verify + Launch:** Kaam complete hone par available UI/backend tests aur regressions verify kare, phir relevant configured EXE/app launch kare. Blocker ya unavailable tool ho toh sach bataye; unverified success claim na kare.
+3. **Live + Autonomous:** Workspace mein live files edit kare; khud engineers, build, debug, backend checks, tests aur safe improvements select kare. Routine kaam ke liye baar-baar Yes/No na poochhe.
+4. **Verify + Launch:** Kaam complete hone par available UI/backend tests aur regressions verify kare, phir relevant configured EXE/app launch kare. Blocker ya unavailable tool ho toh sach bataye; unverified success claim na kare.
 
 ---
 
