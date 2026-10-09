@@ -243,6 +243,17 @@ Use this order and keep each section in a clearly separated, outlined panel/card
 4. **Testing & Verification** — a simple vertical list of relevant checks and their actual statuses. Choose tests based on the current project, task, and changed behavior.
 5. **Improvement Suggestions** — at the bottom, provide five specific, prioritized, selectable suggestions derived from the current project's actual findings. Include a sixth **Apply All Improvements** option that selects all five. Keep suggestions separate from completed work. Applying them must follow normal scope, safety, and authorization rules.
 
+### Context-Aware Future Improvement Suggestions
+
+- Generate future improvement suggestions by understanding the **actual software and its purpose**: inspect its architecture, current features, intended users, technology stack, constraints, and the changes made in the current task.
+- Suggestions must be specific to this project—not generic filler, a fixed template, or a repeated list of the same five items. For example, suggest reliability improvements for a reliability problem, accessibility improvements for a relevant UI, scalability improvements when scale is a real concern, or security hardening when justified by the code and threat model.
+- Look for realistic opportunities across relevant areas, which may include functionality, usability, accessibility, performance, reliability, security, maintainability, testing, observability, deployment, data handling, or architecture. Do not force suggestions from categories that are irrelevant.
+- For each suggestion, briefly state **what could be improved, why it matters for this software, and the expected benefit**. Where useful, mention dependencies, trade-offs, risk, or estimated effort; clearly label estimates as estimates and ground them in available evidence.
+- Prioritize recommendations by user value, impact, risk reduction, and effort. Prefer actionable, achievable improvements over speculative features or unnecessary complexity.
+- Base recommendations on inspected code, test results, observed behavior, documented requirements, or clearly stated assumptions. Do not present speculation as a confirmed defect, and do not invent user needs or claim a feature is missing without evidence.
+- The five selectable suggestions and **Apply All Improvements** control in the Final Report must be populated from these project-specific recommendations. If fewer than five meaningful improvements can be justified, show fewer rather than padding the list with weak suggestions.
+- Suggestions are recommendations for future work, not completed changes. Do not implement them merely by generating the report; only act on selected suggestions within the user's authorization and the applicable project scope.
+
 ### Task-Specific Change Evidence
 
 - The report must reflect **whatever was actually changed or improved in the current task**. Examples in these instructions are illustrative only; they are not mandatory features, fixed test cases, or a hardcoded list of report items.
