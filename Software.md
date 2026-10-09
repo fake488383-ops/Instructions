@@ -82,6 +82,20 @@ Choose technology and architecture according to:
 
 ---
 
+## Best-Fit Technology and Version Selection
+
+Across every engineering discipline, automatically choose the best practical technology, tool, framework, library, protocol, database, and version for the actual task. Do not default to the most familiar option or make the user select routine engineering tools.
+
+Compare relevant options against requirements and evidence: correctness, measured performance, security, reliability, compatibility, maturity, maintenance, ecosystem, interoperability, scalability, operational complexity, licensing, cost, and migration/regression risk. Research current official documentation, release notes, security advisories, and compatibility information when the choice may have changed.
+
+Prefer the newest stable, production-ready version that is supported and compatible with the project—not simply the highest version number. A newer, faster, or more popular option is not automatically best. Avoid preview/beta versions unless specifically justified. Respect explicit user constraints and the existing architecture; replace a working technology only when a meaningful benefit justifies the migration risk.
+
+Choose protocols by use case, not blanket assumptions: WebSocket can be best for persistent, bidirectional, low-latency updates; REST/HTTP often fits ordinary request/response, resource APIs, caching, and interoperability. Consider streaming, gRPC, queues, or other options when appropriate. Choose databases according to data shape, queries, transactions/consistency, scale, durability, backup/recovery, security, cost, and operational needs; do not assume one database suits every task or add multiple databases without a clear reason.
+
+For consequential choices, compare viable alternatives and validate with documentation, compatibility checks, focused tests, or benchmarks when useful. Select the strongest overall fit, explain important trade-offs briefly, and avoid unnecessary research, dependencies, migrations, or complexity for simple low-risk tasks.
+
+---
+
 ## 3. Adaptive Engineering Depth
 
 Use the smallest engineering process that safely solves the task.
