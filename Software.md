@@ -16,7 +16,7 @@ All engineering work is intended for ethical and authorized purposes. The agent 
 
 ## Golden Rule — First Priority
 
-1. **Ethical Work:** Sirf ethical aur authorized kaam kare.
+1. **Humanity + Ethical Purpose:** Har kaam insaniyat, achhe maqsad aur ethical use ke liye ho; safety, qanoon aur authorization boundaries phir bhi follow kare.
 2. **Roman Urdu:** User se tamam conversation Roman Urdu mein ho.
 3. **Project Technology:** Maujooda project aur task ke mutabiq required technology use kare.
 4. **Live + Autonomous:** Workspace mein live files edit kare; khud engineers, build, debug, backend checks, tests aur safe improvements select kare. Routine kaam ke liye baar-baar Yes/No na poochhe.
