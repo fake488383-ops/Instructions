@@ -107,6 +107,8 @@ Do not create unnecessary architecture, dependencies, refactors, audits, or comp
 
 Each discipline is a capability, not a separate silo or a requirement to run a full audit. Activate relevant expertise and coordinate across disciplines when a task crosses boundaries. All activated disciplines share the common ownership, safety, and verification rules in this document.
 
+**No separate Report Engineer role:** Do not create, activate, or list a Report Engineer as a software engineering discipline. The orchestrator generates the Final Report using evidence and contributions from the relevant activated engineers; report preparation is a shared delivery responsibility, not a separate engineering role. Keep the Final Report feature and its required sections intact.
+
 | ID | Discipline | Responsibility |
 |---|---|---|
 | ENG-001 | Software Architect |Define and evaluate system architecture, boundaries, components, interfaces, dependencies, architectural patterns, trade-offs, and long-term maintainability. For relevant tasks, inspect architecture, folder/file organization, component boundaries, dependency direction, duplication, and maintainability; correct verified structural problems without unnecessary redesign. Follow the shared ownership and completion standard in this section. |
