@@ -231,35 +231,36 @@ Never promise absolute bug-free or 100% secure software.
 
 ## 8. Final Report Generation
 
-Whenever the agent makes or reviews software changes, generate a concise **Final Report** for the completed task. The report must describe actual project changes and show relevant visual behavior—not just generic prose.
+Whenever the agent makes or reviews software changes, generate a concise **Final Report** for the completed task. The report must summarize the actual changes made for the current task and show relevant evidence—not generic or pre-filled examples.
 
 ### Required Report Layout
 
 Use this order and keep each section in a clearly separated, outlined panel/card:
 
 1. **Final Report** — page heading at the top.
-2. **Before / After** — one main comparison panel with both headings centered. Place **Before on the left** and **After on the right**. Use red indicators for Before and green indicators for After. Keep descriptions short and limited to the main points.
-3. **Performance** — a compact list/table-style view, visually consistent with Testing & Verification. Include relevant measurable metrics such as CPU usage, memory, FPS/frame time, response/latency time, and startup time when applicable. Show Before, After, and Change/Improvement when comparable measurements exist.
-4. **Testing & Verification** — a simple vertical list of relevant checks and their actual statuses. Select checks based on the project and change, such as build, unit tests, UI launch, buttons/interactions, voice listener, AI response, animation behavior, integration, and regression tests.
-5. **Improvement Suggestions** — at the bottom, provide five specific, prioritized, selectable improvement suggestions and a sixth **Apply All Improvements** option that selects all five. Keep suggestions separate from completed work. Applying them must follow normal scope, safety, and authorization rules.
+2. **Before / After** — one comparison panel with both headings centered. Place **Before on the left** and **After on the right**. Use red indicators for Before and green indicators for After. Keep descriptions short and limited to the main points of the actual changes.
+3. **Performance** — a compact list/table-style view, visually consistent with Testing & Verification. Include only metrics relevant to the project and change, such as CPU usage, memory, frame rate, response/latency time, or startup time when applicable. Show Before, After, and Change/Improvement when comparable measurements exist.
+4. **Testing & Verification** — a simple vertical list of relevant checks and their actual statuses. Choose tests based on the current project, task, and changed behavior.
+5. **Improvement Suggestions** — at the bottom, provide five specific, prioritized, selectable suggestions derived from the current project's actual findings. Include a sixth **Apply All Improvements** option that selects all five. Keep suggestions separate from completed work. Applying them must follow normal scope, safety, and authorization rules.
 
-### Animation and Visual-Change Evidence
+### Task-Specific Change Evidence
 
-- **Any animation or animated UI behavior displayed by the software that is relevant to the task must be represented in the Final Report.** Do not omit animations merely because they are visual or difficult to describe.
-- In Before / After, identify each relevant animation or visual interaction by its actual component/feature name and compare its previous behavior with its updated behavior—for example, particle/orb movement, rotation direction or speed, listening waveform, transitions, loading indicators, or other project-specific animations.
-- When evidence is available, embed or show an actual relevant UI preview, screenshot, frame sequence, or animation recording in the report so the user can see the behavior. Prefer real captures from the project/runtime. Do not substitute an invented mockup for real application evidence or claim a static screenshot proves an animation works.
-- If a prior-state capture is unavailable, state that the Before comparison is based on inspected prior code, logs, or other available evidence; do not fabricate a screenshot, animation, defect, or prior behavior.
-- If the task changes no animation, do not invent one. Include only animations relevant to the change or report scope.
+- The report must reflect **whatever was actually changed or improved in the current task**. Examples in these instructions are illustrative only; they are not mandatory features, fixed test cases, or a hardcoded list of report items.
+- Inspect the actual project, user request, code changes, test output, and available runtime evidence. Automatically identify the relevant components, features, defects, fixes, enhancements, and future improvement opportunities for that specific task.
+- Do not hardcode or always display particular feature names (for example, a listener, voice response, particle animation, button, or any other example) unless that feature genuinely exists and is relevant to the current task.
+- Do not assume that every task involves UI, animation, voice, AI, or performance work. For a UI task, report relevant UI changes; for a backend task, report relevant backend/API/data changes; for a build task, report relevant build/toolchain changes; for another kind of task, report the actual work for that task.
+- Show screenshots, previews, animation recordings, logs, or other evidence only when relevant and actually available. Use genuine project/runtime evidence where possible; do not invent screenshots, visual states, features, defects, or previous behavior.
+- If prior-state evidence is unavailable, explain the basis for the Before comparison using the available source changes, code, logs, or other evidence. If an item is not relevant to the task, omit it rather than forcing it into the report.
 
 ### Evidence and Status Rules
 
-- Report only actual changes and checks relevant to the current task. Use concise, factual main points rather than filler.
-- Mark an item **Passed/Working** only after the corresponding check was actually run and passed. Use **Failed**, **Blocked**, **Not run**, or **Not verified** accurately when appropriate. A green icon must never imply success if behavior was not verified.
-- Never fabricate Before / After values, test results, FPS, CPU or memory improvements, response times, or percentage gains. Use an unavailable marker such as “—” / “Not measured” when measurements do not exist.
-- For performance comparisons, collect comparable measurements under reasonably equivalent conditions where practical, and explain material differences in test conditions.
-- Testing should verify actual behavior where tools permit, not merely confirm that code exists or compiles. For UI work, test relevant buttons and interactions; for voice features, test listening and response behavior; for animations, verify actual motion/rendering; for backend-connected features, verify the relevant integration as appropriate.
+- Report only actual changes, checks, measurements, and improvement opportunities relevant to the current task. Use concise main points, not filler or hardcoded sample content.
+- Mark an item **Passed/Working** only after its corresponding check was actually run and passed. Use **Failed**, **Blocked**, **Not run**, or **Not verified** accurately when appropriate. A green icon must never imply success if behavior was not verified.
+- Never fabricate Before / After values, test results, performance improvements, response times, or percentage gains. Use “—” / “Not measured” when measurements do not exist.
+- For performance comparisons, collect comparable measurements under reasonably equivalent conditions where practical and note material differences in test conditions.
+- Verify the behavior actually affected by the task, not merely that code exists or compiles. Select relevant tests automatically based on the changed features and acceptance criteria.
 - Keep the report dark/black with white text and subtle white/grey outlines when the application's design supports this style. Use red for Before and green for After, with accessible contrast.
-- Generate the report as part of task delivery after implementation and available verification. Clearly distinguish completed changes, measured performance, verified tests, and optional suggestions. If the environment cannot capture an animation, execute a test, or measure a metric, state the limitation instead of claiming success.
+- Generate the report as part of task delivery after implementation and available verification. Clearly distinguish completed changes, measured results, verified tests, and optional suggestions. If the environment cannot execute a test, inspect behavior, capture evidence, or measure a metric, state that limitation instead of claiming success.
 
 ---
 
