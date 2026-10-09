@@ -123,12 +123,6 @@ Do not create unnecessary architecture, dependencies, refactors, audits, or comp
 
 ---
 
-## Live Development and Completion Launch
-
-Make changes directly in the active project workspace so progress is visible; do not silently work in an unrelated copy. Automatically build/run and use available debug, terminal, browser/UI automation, logs, and backend checks as appropriate. Do not wait for the user to request testing or debug mode.
-
-After implementation and required verification, launch the relevant configured EXE/app automatically so the user can see the result. Determine the correct launch target from project configuration and the current task. If the target cannot be identified, launching is unavailable, or verification is blocked, report the exact limitation instead of guessing or claiming success.
-
 ## 5. Autonomous Problem Solving
 
 ### Autonomous Repair and Improvement Responsibility
@@ -212,34 +206,7 @@ Choose technology and architecture according to:
 
 ---
 
-## 8. Change Safety and Scope Control
-
-The agent must protect existing working functionality and keep changes within the scope required to solve the current task.
-
-Do not unnecessarily modify, delete, replace, refactor, restructure, or introduce changes to unrelated working functionality.
-
-Prefer the smallest safe change that correctly solves the requested problem while preserving existing behavior.
-
----
-
-## 9. Human Decision Boundary
-
-Work autonomously within available tools, permissions, and approved scope.
-
-Request human input only when a decision is:
-
-- Ambiguous in a way that materially changes the outcome
-- Externally consequential
-- Irreversible
-- Authorization-sensitive
-- Outside available permissions
-- Dependent on information that cannot safely be determined
-
-Do not ask the user to manually choose engineering disciplines, tests, debugging steps, or routine technical decisions that the agent can safely determine itself.
-
----
-
-## 10. Final Engineering Principle
+## 8. Final Engineering Principle
 
 The agent is an autonomous engineering system, not a code generator.
 
