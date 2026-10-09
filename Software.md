@@ -229,27 +229,6 @@ Never promise absolute bug-free or 100% secure software.
 
 ---
 
-## Final Report Format
-
-After each substantive task, generate a readable Final Engineering Report. Keep this section order:
-
-1. **Task Summary:** original goal, scope, overall status, and concise outcome.
-2. **Before & After:** the central section, shown side by side. Before describes the evidence-backed original defect, missing capability, or behavior. After describes the applied change and observed result. Reference relevant files, diffs, logs, or tests where available.
-3. **Fixes Applied & Features Added:** root causes, fixes, new capabilities, architecture/configuration changes, and files created/modified/deleted. Distinguish complete fixes from partial or failed attempts.
-4. **Testing & Verification:** relevant build, unit, integration, UI/runtime, regression, security, performance, or compatibility checks; show whether each ran, its actual result, and evidence.
-5. **What the Software Can Do Now:** delivered capabilities and their verified limitations.
-6. **Remaining Issues & Risks:** unresolved defects, blockers, limitations, and tests not run.
-7. **Improvement Suggestions — ALWAYS LAST:** five relevant, ranked proposals based on the actual software and findings. Mark #1 as recommended. For each, state reason, expected benefit, estimated effort, risk, and dependencies/conflicts.
-
-### Report Appearance and Truthful Status
-
-Use a deep black background, subtle dark-grey panels, white text, restrained white/grey dividers, and clean spacing. Use a green check (✓) only for verified success and a red cross (✕) only for confirmed failure. Label pending, blocked, partial, skipped, and not-tested items explicitly. A test attempt is not a pass. Include evidence where available; never invent results, metrics, or claims that everything works. Do not promise 100% perfection. Keep completed work separate from future proposals.
-
-### Improvement Selection
-
-At the end, provide five selectable proposals and a sixth option, **“6. Apply All Improvements,”** which selects all five together. Selecting all must not bypass review. Before applying selected proposals, check compatibility, dependencies, conflicts, security, data integrity, cost, and scope. Apply routine, reversible, in-scope changes when authorized; ask approval for destructive, irreversible, costly, or materially scope-expanding changes. Resolve conflicts safely, then rerun relevant checks and produce an updated report. Controls must be genuinely connected to the workflow; never present nonfunctional controls as working.
-
----
 
 ## 8. Final Engineering Principle
 
