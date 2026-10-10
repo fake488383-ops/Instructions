@@ -162,3 +162,83 @@ Before delivering the report, verify that:
 - Improvement Suggestions is last and includes the five categories plus the sixth **Apply for All** option and the four execution modes.
 - None of the excluded sections appears.
 - No example, assumption, planned task, or unverified behavior is presented as completed work.
+
+---
+
+## Final Engineering Report — Exact Visual Layout Blueprint
+
+This mandatory blueprint defines the report's visual shape. Implement or render this layout in the project's existing UI framework; do not treat it as optional guidance. Keep the report project-agnostic and populate it from actual task data and evidence, never from illustrative placeholders.
+
+### Theme
+- Background: black or near-black (#000000 / #0B0B0B).
+- Main text: white (#FFFFFF); supporting text: light gray (#BBBBBB); dividers and neutral borders: gray (#444444 to #666666).
+- Before and failure accents: red (#FF5555). After and verified-success accents: green (#40D879). Not-run or blocked accents: neutral gray or amber.
+- Use subtle 1px borders, rounded cards, consistent spacing and padding, readable typography, and matching icon-plus-text status indicators.
+- Report title must use the actual current project name, followed by "— Final Engineering Report". Never hardcode OmnixXX, Jarvis, or another example project name.
+
+### Exact page shape
+
+```text
+┌──────────────────────────────────────────────────────────────────┐
+│ [CURRENT PROJECT NAME] — Final Engineering Report                │
+├──────────────────────────────────────────────────────────────────┤
+│ 1. Before / After Comparison                                     │
+│                                                                  │
+│ ┌────────────────────────────┐  ┌─────────────────────────────┐  │
+│ │ ✕ Before                   │  │ ✓ After                     │  │
+│ │ RED BORDER / ACCENT         │  │ GREEN BORDER / ACCENT       │  │
+│ ├────────────────────────────┤  ├─────────────────────────────┤  │
+│ │ ✕ Previous missing/broken  │  │ ✓ Actual addition/fix      │  │
+│ │   state                    │  │   or improvement           │  │
+│ │ ✕ Previous defect          │  │ ✓ Corresponding resolution │  │
+│ └────────────────────────────┘  └─────────────────────────────┘  │
+├──────────────────────────────────────────────────────────────────┤
+│ 2. Engineering Work Summary                                      │
+│ ┌──────────────────────────────────────────────────────────────┐ │
+│ │ [Exact Engineer Role]                                        │ │
+│ │ Short description of actual work performed.                  │ │
+│ └──────────────────────────────────────────────────────────────┘ │
+│ [Repeat as always-visible cards for actual contributors only.]  │
+├──────────────────────────────────────────────────────────────────┤
+│ 3. QA Testing & Verification                                     │
+│ ┌──────────────────────────────────────────────────────────────┐ │
+│ │ ✓ Test name                                      PASS         │ │
+│ │   Short result/evidence                                     │ │
+│ ├──────────────────────────────────────────────────────────────┤ │
+│ │ ✕ Test name                                      FAIL         │ │
+│ │   Actual failure/evidence                                   │ │
+│ ├──────────────────────────────────────────────────────────────┤ │
+│ │ ◷ Test name                         NOT RUN / NOT VERIFIED   │ │
+│ │   Reason or limitation                                      │ │
+│ └──────────────────────────────────────────────────────────────┘ │
+├──────────────────────────────────────────────────────────────────┤
+│ 4. Improvement Suggestions                                       │
+│ [ ] UI / Components                                              │
+│ [ ] Backend / Architecture                                       │
+│ [ ] AI Brain / Intelligence                                      │
+│ [ ] Voice / Listening                                            │
+│ [ ] Security / Privacy                                           │
+│ [ ] Apply for All                                                │
+│                                                                  │
+│ Execution Mode:                                                  │
+│ ( ) Manual  ( ) Guided  ( ) Automation  ( ) Plan Only            │
+│                                                                  │
+│ [Continue with selected improvements]                            │
+└──────────────────────────────────────────────────────────────────┘
+```
+
+### Component and behavior rules
+1. The title is first. Immediately after it, render Before / After; do not insert Task Summary.
+2. On wide screens, Before and After must be equal-width cards in the same row, Before on the left and After on the right. Match their spacing, border radius, padding, typography, and internal structure. Stack only as a responsive fallback on genuinely narrow screens.
+3. Before describes the prior missing, broken, incomplete, or incorrect state. After describes the corresponding change actually implemented. Keep related entries aligned and concise. Do not invent defects or fixes.
+4. Engineering Work Summary follows directly after the comparison. Render each actual contributing engineer in an always-visible card with the exact discipline name and a short factual contribution. No dropdowns, accordions, or generic listing of all 32 roles.
+5. QA Testing & Verification follows. Every test row shows its name, icon, readable status label, and short result/evidence when available. PASS with a green tick requires a test actually run and passed. Use red cross for FAIL and neutral/amber status for NOT RUN, NOT VERIFIED, or BLOCKED. Build success alone is not proof of functional success.
+6. Improvement Suggestions is the final section. Display five selectable categories—UI / Components, Backend / Architecture, AI Brain / Intelligence, Voice / Listening, Security / Privacy—followed by the sixth choice, Apply for All. Apply for All selects all five categories and builds one dependency-aware roadmap. Selecting or deselecting individual choices updates selection state correctly.
+7. Show the four execution modes: Manual, Guided, Automation, and Plan Only, plus a clear Continue/Apply action wired to the selected categories and mode. A click is not proof that implementation has occurred. Automation stays within approved scope and does not bypass required approval for destructive or external-impact actions.
+8. Keep status understandable without color alone: use icons plus text labels, readable contrast, accessible control labels, and keyboard navigation/focus support where the platform allows.
+9. Populate the report from actual task changes, actual contributing engineers, and real test results. The wireframe is only a visual template; its example rows are not factual claims.
+10. If asked to implement this design in the project, build the actual UI in the existing framework and connect it to available change/test data. Do not substitute a plain-text wireframe for a requested working UI.
+11. Do not add Task Summary, Detect & Retest Tracking, Files, Changes & Evidence, or Final Completion Summary. The four sections shown above are the complete report.
+
+### Visual acceptance checklist
+Confirm: dark dashboard theme; dynamic project title; Before-left/After-right matching cards; visible engineer contribution cards; truthful QA icons and status labels; and Improvement Suggestions last with six choices, four modes, and a working continuation action.
