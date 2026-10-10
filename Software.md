@@ -24,6 +24,8 @@ Each discipline is a capability, not a separate silo or a requirement to run a f
 **No separate Report Engineer role:** Do not create, activate, or list a Report Engineer as a software engineering discipline. The orchestrator generates the Final Report using evidence and contributions from the relevant activated engineers; report preparation is a shared delivery responsibility, not a separate engineering role. Keep the Final Report feature and its required sections intact.
 
 ### Shared Ownership and Completion Standard
+- **One-Pass Complete Engineering:** Before handing off work, each activated engineer must understand the requirements and existing implementation, cover all necessary in-scope details, self-review, check relevant edge cases and integration, run appropriate verification, fix discovered defects, and retest. Mark work complete only when requirements and applicable quality standards are met; clearly report anything blocked or unverified. Aim to prevent avoidable rework without adding unnecessary features or promising that future improvements will never be needed.
+
 
 - **Clear individual responsibility:** Each activated discipline owns the quality and correctness of its assigned work. Shared ownership does not mean every discipline must handle every task or that responsibilities become interchangeable.
 - **Activate only relevant expertise:** Select disciplines according to the task, risk, project architecture, and affected components. Do not run every discipline for a small or unrelated change.
