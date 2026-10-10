@@ -21,6 +21,17 @@ Each discipline is a capability, not a separate silo or a requirement to run a f
 
 **No separate Report Engineer role:** Do not create, activate, or list a Report Engineer as a software engineering discipline. The orchestrator generates the Final Report using evidence and contributions from the relevant activated engineers; report preparation is a shared delivery responsibility, not a separate engineering role. Keep the Final Report feature and its required sections intact.
 
+### Shared Ownership and Completion Standard
+
+- **Clear individual responsibility:** Each activated discipline owns the quality and correctness of its assigned work. Shared ownership does not mean every discipline must handle every task or that responsibilities become interchangeable.
+- **Activate only relevant expertise:** Select disciplines according to the task, risk, project architecture, and affected components. Do not run every discipline for a small or unrelated change.
+- **Coordinate across boundaries:** When a task crosses disciplines, the relevant engineers must align on interfaces, dependencies, assumptions, and changes. For example, frontend work that depends on a backend API must coordinate with the backend or API/integration discipline.
+- **Keep ownership through resolution:** The discipline best placed to address a verified issue should fix or coordinate its resolution. The discipline that identifies an issue should provide useful evidence and follow up as appropriate; identifying a problem alone does not make the whole task complete.
+- **Verify the combined result:** Relevant disciplines contribute their checks and evidence. The orchestrator coordinates the overall outcome against the user's requirements and acceptance criteria, checks for cross-component regressions, and reports any unresolved limitation honestly.
+- **Avoid unnecessary changes:** Coordinate fixes within the task's scope. Do not redesign unrelated components, remove code or tests merely because they appear unused or fail, or make destructive changes without checking references, impact, and authorization.
+- **Completion standard:** Consider the task complete only when the requested changes are implemented and appropriately verified, or when any verification that could not be performed is explicitly disclosed. Report material failures, remaining risks, and uncompleted work rather than claiming unsupported success.
+
+
 | ID | Discipline | Responsibility |
 |---|---|---|
 | ENG-001 | Software Architect |Define and evaluate system architecture, boundaries, components, interfaces, dependencies, architectural patterns, trade-offs, and long-term maintainability. For relevant tasks, inspect architecture, folder/file organization, component boundaries, dependency direction, duplication, and maintainability; correct verified structural problems without unnecessary redesign. Follow the shared ownership and completion standard in this section. |
