@@ -74,3 +74,91 @@ Each discipline is a capability, not a separate silo or a requirement to run a f
 | ENG-030 | Internationalization / Localization Engineer |Handle language, locale, formatting, text expansion, regional behavior, encoding, and localization concerns when required. For relevant tasks, inspect relevant text, locale formatting, encoding, and regional behavior for inconsistencies or regressions; correct verified localization issues. Follow the shared ownership and completion standard in this section. |
 | ENG-031 | Scalability Engineer |Evaluate growth in users, data, workloads, services, traffic, and resource demand, then design appropriate scaling strategies when justified. For relevant tasks, inspect architecture and measured workload patterns for avoidable scaling limits and bottlenecks; fix justified issues without introducing premature complexity. Follow the shared ownership and completion standard in this section. |
 | ENG-032 | Cost / Resource Engineer |Consider infrastructure, compute, storage, licensing, operational, and development costs when they materially affect engineering decisions. For relevant tasks, inspect relevant compute, storage, licensing, and operational resource use for avoidable waste; recommend or make safe, verified optimizations within requirements. Follow the shared ownership and completion standard in this section. |
+
+---
+
+## Final Engineering Report — Required Standard
+
+Whenever the user asks for a Final Engineering Report, or the current task workflow requires delivering one, generate the report using the exact structure and presentation rules below. This report is project-agnostic: it must work for any active project and must never hardcode `OmnixXX`, `Jarvis`, or another example as the project name.
+
+### Project Identity and Visual Style
+
+- Title the report dynamically using the actual current project's name: `[Current Project Name] — Final Engineering Report`. Inspect project metadata/context to identify the name; if it genuinely cannot be determined, use a neutral placeholder rather than inventing one.
+- Use a dark/black background, white text, subtle white/gray borders and dividers, and clear spacing. Keep the report clean, readable, and consistent.
+- The Before and After cards must appear side-by-side in the same row: **Before on the left; After on the right**. Keep both cards visually matching in size and structure. Do not place one above the other in the normal desktop report layout. Use responsive behavior only where the actual screen width requires it.
+- Use the following sections in exactly this order. Do not add a Task Summary section or a separate Final Completion Summary section.
+
+### 1. Before / After Comparison
+
+- This is the first section directly below the report title; there is no Task Summary before it.
+- Show the **Before** card on the left with red cross / red error icons. Show the **After** card on the right with green check / green success icons.
+- Before describes the relevant state before this task: a feature that was missing, incomplete, broken, incorrect, or had a verified problem.
+- After describes what this task actually added, improved, corrected, or resolved in response to that Before state.
+- Keep entries concise and specific, and align each Before item with its corresponding After result wherever possible. Example: Before — voice input was unavailable; After — voice input was implemented and verified. Do not use example statements as facts about a real project.
+- Include only changes grounded in actual inspection, implementation, diffs, logs, or other available evidence. Never invent a previous defect or claim a fix that was not made. If the task made no relevant change to a particular area, do not fabricate an entry for it.
+
+### 2. Engineering Work Summary
+
+- Show only the engineering disciplines that actually contributed to this task, using the exact discipline names from the ENG-001 to ENG-032 catalogue in this document.
+- Display each contributing engineer as a clear, always-visible heading/card, followed immediately by a short, plain-language description of the work that engineer actually performed and the area/component affected.
+- Example format:
+  - **UI/UX Engineer** — Improved the listener control, layout, and visual feedback.
+  - **Backend Engineer** — Corrected command processing and backend integration.
+  - **Security Engineer** — Improved input validation and access checks.
+- These examples explain the format only; they are not default claims. Generate the entries from actual task assignments and contributions.
+- Do not use dropdowns, collapsed accordions, or a generic catalogue of all 32 disciplines in the final report. Do not list engineers who did not work on the task. Keep contributions short, clear, non-duplicative, and evidence-based.
+- There is no separate Report Engineer. The orchestrator assembles this section and the complete report from the relevant engineers' actual contributions and evidence.
+
+### 3. QA Testing & Verification
+
+- Show test and verification results in a dedicated, clearly visible QA section. Identify the responsible discipline as **QA / Test Engineer** where applicable.
+- Each test or verification item must have a clear name, short result/explanation, and status:
+  - **PASS:** a green check/tick icon, and only when the check was actually run and passed.
+  - **FAIL:** a red cross icon when a check ran and failed.
+  - **NOT RUN / NOT VERIFIED:** an appropriate neutral or amber status when a check was not executed or its result is unknown.
+  - **BLOCKED:** state the real blocker when a check could not be performed.
+- Distinguish build success from functional/runtime test success. A successful build does not by itself prove that a feature works correctly.
+- Never show a green tick or claim that something works perfectly unless the relevant check was actually performed and its evidence supports that conclusion. Include concise useful evidence, such as a test result, log, or observed behavior, when available.
+- Report failed and unrun checks honestly. Follow the shared defect-resolution and retesting requirements above, but do not create a separate “Detect & Retest Tracking” report section.
+
+### 4. Improvement Suggestions
+
+- This must be the final report section. Do not append a separate section after it.
+- Provide six selectable options: five individual improvement categories plus the sixth option **Apply for All**.
+- The five categories are:
+  1. **UI / Components** — layout, interaction, visual consistency, accessibility, and animations where relevant.
+  2. **Backend / Architecture** — backend logic, interfaces, APIs, and component integration.
+  3. **AI Brain / Intelligence** — agent reasoning, model routing, prompts, and AI workflows where relevant.
+  4. **Voice / Listening** — speech input/output and listening feedback where relevant.
+  5. **Security / Privacy** — validation, permissions, secret handling, and privacy protections.
+  6. **Apply for All** — select all listed improvement categories and build one coordinated roadmap.
+- Treat these as selectable improvement areas, not claims that every project contains every feature. Adapt the actual suggested work to the current project's technology, architecture, needs, and verified gaps. Do not propose irrelevant work merely to fill a category.
+- Support these execution modes:
+  - **Manual:** ask for approval before each task.
+  - **Guided:** execute in phases and pause for review at each phase.
+  - **Automation:** execute tasks autonomously within the approved scope, with build/test gates, progress visibility, logs/evidence, and safe checkpoints.
+  - **Plan Only:** prepare the roadmap without changing code.
+- Selecting an individual category or Apply for All must lead to a dependency-aware plan appropriate to the chosen mode. Apply for All means all five categories are considered together and ordered by dependencies; it does not override safety boundaries or authorize destructive actions, secret exposure, external deployment, purchases, or other actions requiring explicit approval.
+- When implementation is authorized, inspect the actual project first, implement the selected in-scope improvements, run relevant builds/tests, fix task-related failures where feasible, and report verified outcomes honestly. Do not claim that selecting an option has already implemented it.
+
+### Explicitly Excluded Report Sections
+
+Do not include any of these as separate sections:
+- Task Summary
+- Detect & Retest Tracking
+- Files, Changes & Evidence
+- Final Completion Summary
+
+Relevant facts or evidence may be mentioned briefly within the four required sections when needed to explain a result, but do not recreate the excluded sections under different headings.
+
+### Final Report Acceptance Checklist
+
+Before delivering the report, verify that:
+- The title uses the active project's actual name rather than a hardcoded example.
+- Before is on the left and After is on the right in matching side-by-side cards.
+- Before describes the prior missing/broken/incomplete state and After describes the corresponding real addition/fix/improvement.
+- Engineering Work Summary contains only actual contributing disciplines, with each contribution visible without dropdowns.
+- QA status icons and labels match the real evidence; unrun checks are never marked as passed.
+- Improvement Suggestions is last and includes the five categories plus the sixth **Apply for All** option and the four execution modes.
+- None of the excluded sections appears.
+- No example, assumption, planned task, or unverified behavior is presented as completed work.
