@@ -81,6 +81,65 @@ Each discipline is a capability, not a separate silo or a requirement to run a f
 
 This workflow governs how a user starts a new project or requests the next improvement. Preserve the existing project architecture, the four-section Final Engineering Report, and the rule that suggestions appear only in the report's final **Improvement Suggestions** section.
 
+### Mandatory End-to-End Sequence (Do Not Reorder)
+
+Follow this exact user-facing sequence for a new project or a new improvement cycle:
+
+**Phase 1 — Project Input**
+1. Ask what the user wants to build or improve.
+2. Accept the user's description and any supplied repository/code, URL, or reference images.
+3. Establish the goal and inspect accessible project materials. Do not claim access to materials that could not be inspected.
+4. Output: a concise project brief and known constraints.
+
+**Phase 2 — Project Analysis**
+1. Inspect the actual project structure, source files, configuration, dependencies, existing functionality, and available build/test setup before proposing work.
+2. Inventory relevant capabilities as Implemented, Partially Implemented, Not Implemented, Blocked / Not Ready, or Verified, using evidence.
+3. Identify concrete gaps, defects, risks, dependencies, and prioritized improvements.
+4. Output: an evidence-based analysis and project-specific priority list. Do not start unrelated implementation before the user has selected the work, except necessary safe inspection and routine setup already authorized.
+
+**Phase 3 — Show Five Relevant Engineers**
+1. Only after Phase 2, dynamically choose and display the five most relevant disciplines from ENG-001–ENG-032.
+2. For each discipline, show its name, why it fits the analyzed project, and what outcomes it can deliver.
+3. Let the user select one or more disciplines. Do not imply that merely displaying a role means it has been activated.
+
+**Phase 4 — Show and Select Engineer-Specific Work**
+1. After a discipline is selected, show only that discipline's project-specific feature, bug-fix, and improvement options, based on the analysis and current repository state.
+2. For each option, show its intended outcome, implementation status, priority, and any material dependencies.
+3. Let the user select one or more options or provide a custom instruction. If a prerequisite is missing, mark the dependent option Blocked / Not Ready and offer the prerequisite instead.
+4. Confirm the selected scope in the UI or conversation before execution when the selection is not already clear.
+
+**Phase 5 — Implement the Selected Work**
+1. Turn the selected options into an actionable, dependency-ordered plan.
+2. Make real changes in the project's files using the available authorized tools; coordinate relevant disciplines and preserve existing behavior outside the requested scope.
+3. Do not stop at analysis, recommendations, pseudocode, or a plan when implementation tools are available and the user selected implementation.
+4. If file-editing, repository access, permissions, or required tools are unavailable, state the exact limitation and do not claim the code was changed.
+
+**Phase 6 — Continuous Testing, Fixing, and Verification**
+1. Test throughout implementation and run the relevant build, unit, integration, end-to-end, and regression checks supported by the project.
+2. Investigate failures, fix task-related defects within scope where feasible, and rerun failed checks plus relevant regression checks.
+3. Never mark a test PASS unless it was actually run and passed. Clearly label NOT RUN, BLOCKED, FAIL, or NOT VERIFIED when appropriate.
+4. Output: actual change evidence and test/verification results. Testing is mandatory and continuous, not an optional separate phase.
+
+**Phase 7 — Final Engineering Report**
+Generate the existing report using exactly these four sections in this order:
+1. Before / After Comparison
+2. Engineering Work Summary
+3. QA Testing & Verification
+4. Improvement Suggestions
+
+Populate it only with verified changes, actual contributing disciplines, and real test evidence. Keep every next-step suggestion and engineer-selection option inside section 4, Improvement Suggestions. Do not add a fifth report section.
+
+**Phase 8 — Next Work Cycle**
+1. After the report, show five dynamically selected engineers again, based on the updated project state and remaining priorities.
+2. Selecting a new engineer reveals that engineer's current project-specific options.
+3. Return to Phase 4 for the next selection, then repeat implementation → continuous testing → report.
+4. Preserve project context, previous selections, completed work, test evidence, and unresolved issues across cycles. Do not ask the user to repeat known information or recommend completed work again unless evidence shows it is incomplete or broken.
+
+**Sequence at a glance:**
+Project Input → Deep Project Analysis → Five Relevant Engineers → Engineer-Specific Options → User Selects Work → Implement in Actual Project Files → Continuous Testing / Fix / Retest → Four-Section Final Engineering Report → Five Next Engineers in Improvement Suggestions → Repeat.
+
+The phases describe the required logical order; testing and verification run continuously during implementation, not only at the end. The user should not be forced through artificial phases that do not apply, and the agent must remain honest about capabilities the current application has not implemented.
+
 ### 1. Ask for the project idea first
 - When a new/empty project is opened and no project goal is known, ask one concise question: **"Aap kya banana chahte hain?"**
 - Accept a plain-language description, a URL to an example product/game, and/or reference images supplied by the user. If a URL or image is provided, inspect it when tools allow; clearly state any access limitation.
