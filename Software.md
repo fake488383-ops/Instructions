@@ -77,6 +77,43 @@ Each discipline is a capability, not a separate silo or a requirement to run a f
 
 ---
 
+## Interactive Project Discovery and Engineer Selection
+
+This workflow governs how a user starts a new project or requests the next improvement. Preserve the existing project architecture, the four-section Final Engineering Report, and the rule that suggestions appear only in the report's final **Improvement Suggestions** section.
+
+### 1. Ask for the project idea first
+- When a new/empty project is opened and no project goal is known, ask one concise question: **"Aap kya banana chahte hain?"**
+- Accept a plain-language description, a URL to an example product/game, and/or reference images supplied by the user. If a URL or image is provided, inspect it when tools allow; clearly state any access limitation.
+- Do not begin by asking about target platforms, technology choices, or a long requirements questionnaire when those details can be inspected or reasonably inferred from the existing project. Ask a follow-up only when a material ambiguity blocks safe, useful progress.
+- After receiving the idea, inspect the existing repository and relevant references, then produce a deep, evidence-based analysis of the product's purpose, core experience, current implementation, missing capabilities, dependencies, risks, and realistic future improvements. Do not claim to have inspected inaccessible links or files.
+
+### 2. Show five relevant engineers after analysis
+- After the initial analysis, show a selectable list of **five most relevant engineering disciplines** chosen dynamically from ENG-001–ENG-032 according to the idea, project state, dependencies, and risks. Five is the normal list size, not a requirement to activate exactly five.
+- Do not show the full 32-discipline catalogue. Do not use the same fixed five engineers for every project. Each entry must show the discipline name, why it matters to this project, and the main outcomes it can deliver.
+- These are choices for the user; listing a discipline does not mean it has already been activated or has contributed work. Activate the selected discipline only after the user selects it, except for routine internal orchestration and verification needed to safely fulfill an already authorized task.
+- The user may select one or more disciplines. Coordinate additional disciplines only when the selected work genuinely requires them, and make the dependency clear.
+
+### 3. Selecting an engineer opens that engineer's options
+- When the user clicks/selects a discipline, show a focused list of the useful features, fixes, and improvements owned by that discipline and relevant to the inspected project. Do not show unrelated options or generic filler.
+- Each option should briefly state the intended outcome, current status (Implemented, Partially Implemented, Not Implemented, Blocked / Not Ready, or Verified where evidence supports it), dependencies, and which other disciplines may need to coordinate.
+- Recommend a sensible order based on prerequisites and impact. The user can select an option, select multiple compatible options, provide a custom instruction, or go back to the engineer list.
+- On selection, implement the authorized in-scope work, coordinate required engineers, run appropriate tests automatically, fix and retest task-related defects where feasible, and verify the result. Testing is a continuous responsibility, not an optional engineer suggestion or a separate phase the user must request.
+
+### 4. Show engineer choices every time a report is generated
+- After each completed work cycle, generate the existing Final Engineering Report with its required four sections in their exact order.
+- In the report's final **Improvement Suggestions** section, always show the next relevant engineer-selection list again, containing five dynamically selected disciplines for the project's current state. This allows the user to choose who should work next after every report.
+- Within that same final section, selecting an engineer must reveal that engineer's project-specific improvement options. Keep all suggestions and next-step choices inside this report section; do not create a separate suggestions page, side panel, or standalone suggestions message.
+- Recalculate the list and options from the updated repository and report evidence every cycle. Do not repeat completed work unless evidence shows it remains incomplete or broken. Mark blocked options and explain the prerequisite instead of presenting them as ready.
+- Preserve the report's existing required order: Before / After Comparison; Engineering Work Summary; QA Testing & Verification; Improvement Suggestions. Do not add a separate Report Engineer or alter the report's existing structure.
+
+### 5. Actual UI and orchestration requirements
+- Treat this as a required interactive workflow, not merely text describing buttons. When implementing it in the application, connect engineer cards, feature choices, selected tasks, execution state, and report generation to the real orchestrator and persistent project state.
+- If the current environment only supports text and cannot render or wire clickable controls, present a clear text-based selection and do not claim that working UI controls exist.
+- Keep the user's project idea, prior selections, completed tasks, unresolved issues, and current phase available across report cycles when persistence is supported. Do not ask the user to repeat information already available.
+- Maintain the existing safety, authorization, domain ownership, evidence, and honest-verification rules. Do not silently modify unrelated files, run unauthorized destructive actions, or claim successful implementation without evidence.
+
+---
+
 ## Project Assessment, Suggestions, and Iteration Workflow
 
 - **Assess before suggesting:** At startup and after each completed task, inspect `Software.md`, the current project files, build configuration, dependencies, implemented features, available test/build tools, and recent task results where available. Base recommendations on observed project state, not a generic fixed roadmap.
