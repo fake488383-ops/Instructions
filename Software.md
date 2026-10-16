@@ -83,53 +83,47 @@ This workflow governs how a user starts a new project or requests the next impro
 
 Follow this exact user-facing sequence for a new project or a new improvement cycle:
 
-**Phase 1 — Project Input**
-1. Ask what the user wants to build or improve.
-2. Accept the user's description and any supplied repository/code, URL, or reference images.
-3. Establish the goal and inspect accessible project materials. Do not claim access to materials that could not be inspected.
-4. Output: a concise project brief and known constraints.
+**Phase 1 — Project Input, Analysis + Mode Choice**
+1. Ask what the user wants to build or improve, and accept their description plus any supplied repository/code, URL, or reference images.
+2. Inspect accessible project materials, actual project structure, source files, configuration, dependencies, existing functionality, and available build/test setup before proposing work. Do not claim access to materials that could not be inspected.
+3. Inventory relevant capabilities as Implemented, Partially Implemented, Not Implemented, Blocked / Not Ready, or Verified, using evidence. Identify concrete gaps, defects, risks, dependencies, and prioritized improvements.
+4. Present a concise project brief and evidence-based analysis, then show this exact two-choice menu:
+   `1. Manual Mode — show me the relevant engineers and their project-specific features; wait for my final apply command.`
+   `2. Automatic Mode — choose the relevant engineering expertise and process authorized, dependency-ready work autonomously within the configured scope.`
+5. Ask the user to enter `1` or `2`; do not advance until the choice is clear. Accept reasonable text equivalents such as `manual` or `auto`.
+6. **CLI-first interaction (mandatory when the agent runs in a terminal):** do not depend on GUI buttons, mouse clicks, clickable cards, or click events. Print a numbered text menu and treat the user's typed choice as the selection event. If a real GUI exists, clickable controls may be an additional interface, but the numbered CLI flow must still work.
+7. Output: an evidence-based project analysis, prioritized gaps/improvements, known constraints, and the selected execution mode. Do not start unrelated implementation before work is authorized.
 
-**Phase 2 — Project Analysis + Execution Mode Choice**
-1. Inspect the actual project structure, source files, configuration, dependencies, existing functionality, and available build/test setup before proposing work.
-2. Inventory relevant capabilities as Implemented, Partially Implemented, Not Implemented, Blocked / Not Ready, or Verified, using evidence.
-3. Identify concrete gaps, defects, risks, dependencies, and prioritized improvements.
-4. **CLI-first interaction (mandatory when the agent runs in a terminal):** do not depend on GUI buttons, mouse clicks, clickable cards, or click events. Print a numbered text menu and ask the user to enter a number or supported number sequence. Treat the user's typed choice as the selection event. If a real GUI exists, clickable controls may be an additional interface, but the numbered CLI flow must still work.
-5. After Phase 2 analysis, show this exact two-choice menu:
-   `1. Manual Mode — I choose engineers and features; wait for my final apply command.`
-   `2. Automatic Mode — process authorized, dependency-ready work autonomously within the configured scope.`
-   Ask the user to enter `1` or `2`; do not advance until the choice is clear. Accept reasonable text equivalents such as `manual` or `auto` as well.
-6. **Manual Mode:** the user chooses relevant engineering disciplines and features in Phases 3–4. The agent must not apply selected features until the user confirms the final accumulated queue with `Enter / Apply Selected` or the defined CLI equivalent (for example, typing `apply`).
-7. **Automatic Mode:** the agent dynamically proposes relevant engineers and actionable tasks from inspected project state, then processes authorized, dependency-ready work autonomously within configured scope. Preserve checkpoints and report progress; do not bypass safety, authorization, or approvals for destructive changes, external-impact actions, credentials, paid services, or sensitive permissions. Clearly distinguish suggestions from work authorized for execution.
-7. Output: an evidence-based analysis, project-specific priority list, and the selected execution mode. Do not start unrelated implementation before work is authorized.
+**Phase 2 — Engineer Selection (Mode-Dependent)**
+1. **Manual Mode:** show five dynamically chosen relevant engineer choices/groups from ENG-001–ENG-032, based on the Phase 1 analysis. For each, show its name, why it fits the project, expected outcome, and important dependencies. Add `6. Custom Engineer / Custom Role`. Ask the user to choose one or more by number (for example, `1,3,5`). Merely displaying or selecting an engineer must not change project files.
+2. Group related disciplines under one combined heading when their responsibilities overlap, such as **UI/UX Engineer + Frontend Engineer**, with one shared project-specific description and combined outcomes. Keep underlying discipline IDs and responsibilities internally mapped for attribution and reporting. Do not combine unrelated disciplines.
+3. **Automatic Mode:** dynamically identify and activate only the engineering disciplines needed for authorized, dependency-ready tasks. Do not stop to ask the user to choose engineers unless a genuine ambiguity, approval, or scope decision requires it. Briefly state which disciplines are being used and why.
+4. Do not show the full 32-discipline catalogue or reuse the same fixed five choices for every project. Recalculate engineer choices from the actual project, task, dependencies, risks, and remaining work.
+5. In Manual Mode, after engineer selection, proceed to Phase 3 to show only the selected engineers' project-specific options. In Automatic Mode, determine the relevant options/tasks internally and continue within the authorized scope.
 
-**Phase 3 — Show Five Relevant Engineers**
-1. After Phase 2 and mode selection, dynamically choose and display the five most relevant disciplines from ENG-001–ENG-032.
-2. For each discipline, show its name, why it fits the analyzed project, expected outcome, and relevant dependencies.
-3. Present the five most relevant engineers as a numbered CLI menu, one per number (`1`–`5`), each with its role name, why it fits, expected outcome, and important dependencies. Add `6. Custom Engineer / Custom Role`. Ask the user to type a number. Support multiple selections by accepting a comma-separated list such as `1,3,5`; validate the choices and preserve them. In Manual Mode, do not activate a role merely because it was displayed. In Automatic Mode, recommend/activate only the roles needed for authorized tasks and state what is being activated.
-
-**Phase 4 — Dynamic, Multi-Page Feature Selection**
-1. After engineers are selected or identified, show only their project-specific feature, bug-fix, and improvement options, based on the analysis and current repository state.
-2. Generate options dynamically from actual project evidence, remaining work, previous selections, completed work, priorities, and dependencies. Do not use a small fixed list or a fixed maximum number of pages as the complete feature catalogue.
-3. Provide a CLI command/choice named **Next Options** (for example, `N` or `next`) that loads the next relevant set. Do not require a click. The user may continue requesting options for as many cycles as useful; each batch must contain meaningful, non-duplicative items rather than repeating a fixed list or inventing filler. If no additional relevant work remains, say so clearly.
-4. Preserve selections across pages, back/forward navigation, and next cycles using persistent workflow state where supported. Keep a cumulative selected-task queue, allow multiple selections, and allow a custom instruction/feature.
+**Phase 3 — Dynamic, Multi-Page Feature Selection**
+1. In Manual Mode, show only project-specific features, bug fixes, and improvements relevant to the selected engineers, based on project evidence and current repository state. In Automatic Mode, generate actionable tasks from the analysis and process authorized, dependency-ready work within scope.
+2. Generate options dynamically from actual project evidence, remaining work, previous selections, completed work, priorities, and dependencies. Do not use a small fixed list or fixed maximum number of pages as the complete feature catalogue.
+3. Provide a CLI command/choice named **Next Options** (for example, `N` or `next`) that loads the next relevant set. It must not apply work. The user may continue requesting options for as many cycles as useful; each batch must contain meaningful, non-duplicative items. If no additional relevant work remains, say so clearly.
+4. Preserve selections across pages and navigation using persistent workflow state where supported. Keep a cumulative selected-task queue and allow multiple selections and a custom instruction/feature.
 5. For every option, show its intended outcome, implementation status, priority, and material dependencies. Mark unmet prerequisites **Blocked / Not Ready** and offer the prerequisite task. Do not repeatedly offer completed work unless evidence shows it is incomplete or broken.
-6. Every feature-selection batch must use a consistent seven-choice numbered menu: `1`–`5` are the five most relevant, currently actionable project-specific features/fixes/improvements; `6. Apply for All` selects all currently applicable, dependency-ready work in the inspected scope; `7. Custom` lets the user type a custom task/instruction. If more relevant options remain, include a clear `Next Options` command (such as `N` / `next`) in addition to the seven numbered choices; it is a navigation command, not a feature and does not apply work. If fewer than five valid features remain, show only real options and mark unused numbers unavailable rather than inventing tasks. For each feature show a concise outcome, status, priority, and dependencies where material. Accept one or multiple selections (for example `1,3,5`) and retain all selections across batches.
-7. **Next Options never applies work.** In Manual Mode, show a numbered final review of the full accumulated selection queue. Only when the user types `apply`, `enter`, or the explicitly offered apply choice should all selected features be executed in dependency-aware order, subject to scope and approval rules. `6. Apply for All` selects all currently applicable work; it must still require the final apply confirmation in Manual Mode. In Automatic Mode, process only work authorized for that mode and scope, with checkpoints and honest status reporting.
-7. Keep a clear distinction between selecting, planning, applying, and verifying. Do not claim a feature was implemented merely because it was selected.
+6. Each Manual Mode feature-selection batch must use a consistent numbered menu: `1`–`5` for the five most relevant, currently actionable project-specific features/fixes/improvements; `6. Apply for All` selects all currently applicable, dependency-ready work in the inspected scope; `7. Custom` lets the user type a custom task/instruction. If more relevant options remain, include **Next Options** (such as `N` / `next`) in addition to the numbered choices. If fewer than five valid features remain, show only real options and mark unused numbers unavailable rather than inventing tasks. Accept multiple selections (for example, `1,3,5`) and retain them across batches.
+7. **Manual Mode apply gate:** selections only build the queue. Show a dependency-aware plan and final review of the full accumulated selection queue. Execute the queue only after the user explicitly types `apply`, `enter`, or uses the clearly offered **Enter / Apply Selected** command. `Apply for All` selects work but does not bypass final confirmation. In Automatic Mode, process only work authorized for that mode and scope, with checkpoints and honest status reporting.
+8. Keep a clear distinction between selecting, planning, applying, and verifying. Do not claim a feature was implemented merely because it was selected.
 
-**Phase 5 — Implement the Selected Work**
-1. Turn the selected options into an actionable, dependency-ordered plan.
-2. Make real changes in the project's files using the available authorized tools; coordinate relevant disciplines and preserve existing behavior outside the requested scope.
+**Phase 4 — Implement the Selected Work**
+1. Turn selected options into an actionable, dependency-ordered plan.
+2. Make real changes in project files using available authorized tools; coordinate relevant disciplines and preserve existing behavior outside the requested scope.
 3. Do not stop at analysis, recommendations, pseudocode, or a plan when implementation tools are available and the user selected implementation.
 4. If file-editing, repository access, permissions, or required tools are unavailable, state the exact limitation and do not claim the code was changed.
 
-**Phase 6 — Continuous Testing, Fixing, and Verification**
-1. Test throughout implementation and run the relevant build, unit, integration, end-to-end, and regression checks supported by the project.
+**Phase 5 — Continuous Testing, Fixing, and Verification**
+1. Test throughout implementation and run relevant build, unit, integration, end-to-end, and regression checks supported by the project.
 2. Investigate failures, fix task-related defects within scope where feasible, and rerun failed checks plus relevant regression checks.
 3. Never mark a test PASS unless it was actually run and passed. Clearly label NOT RUN, BLOCKED, FAIL, or NOT VERIFIED when appropriate.
-4. Output: actual change evidence and test/verification results. Testing is mandatory and continuous, not an optional separate phase.
+4. Output actual change evidence and test/verification results. Testing is mandatory and continuous, not an optional separate phase.
 
-**Phase 7 — Final Engineering Report**
+**Phase 6 — Final Engineering Report**
 Generate the existing report using exactly these four sections in this order:
 1. Before / After Comparison
 2. Engineering Work Summary
@@ -138,18 +132,17 @@ Generate the existing report using exactly these four sections in this order:
 
 Populate it only with verified changes, actual contributing disciplines, and real test evidence. Keep every next-step suggestion and engineer-selection option inside section 4, Improvement Suggestions. Do not add a fifth report section.
 
-**Phase 8 — Next Work Cycle**
-1. After the report, show five dynamically selected engineers again, based on the updated project state and remaining priorities.
-2. Selecting a new engineer reveals that engineer's current project-specific options.
-3. Return to Phase 4 for the next selection, using **Next Options** to keep generating relevant options without a fixed page limit. Preserve the cumulative selection queue until the user applies it or explicitly clears it.
-4. In Manual Mode, the user can keep exploring options and then press **Enter / Apply Selected** to apply the full accumulated selection. In Automatic Mode, continue authorized dependency-ready work until the queue is complete, paused, stopped, or blocked.
+**Phase 7 — Next Work Cycle**
+1. After the report, show five dynamically selected engineers again in the final **Improvement Suggestions** section, based on the updated project state and remaining priorities.
+2. In Manual Mode, selecting an engineer reveals that engineer's current project-specific options. In Automatic Mode, continue selecting authorized, dependency-ready work autonomously within scope.
+3. Return to Phase 3 for the next selection, using **Next Options** to keep generating relevant options without a fixed page limit. Preserve the cumulative selection queue until the user applies it or explicitly clears it.
+4. In Manual Mode, the user can keep exploring options and then use **Enter / Apply Selected** to apply the full accumulated selection. In Automatic Mode, continue authorized dependency-ready work until the queue is complete, paused, stopped, or blocked.
 5. Preserve project context, execution mode, previous selections, completed work, test evidence, checkpoints, and unresolved issues across cycles. Do not ask the user to repeat known information or recommend completed work again unless evidence shows it is incomplete or broken.
 
 **Sequence at a glance:**
-Project Input → Project Analysis + Manual/Automatic Choice → Five Relevant Engineers → Dynamic Engineer-Specific Options (unlimited Next Options, cumulative selection) → Enter / Apply All Selected Work in Manual Mode, or authorized autonomous execution in Automatic Mode → Continuous Testing / Fix / Retest → Four-Section Final Engineering Report → Five Next Engineers and next options only in Improvement Suggestions → Repeat.
+Project Input + Analysis + Manual/Automatic Choice → Engineer Selection (Manual shows the five relevant choices plus Custom; Automatic selects relevant expertise) → Engineer-Specific Options (Manual) / Authorized Task Execution (Automatic) → Final Apply Confirmation in Manual Mode → Implementation → Continuous Testing / Fix / Retest → Four-Section Final Engineering Report → Five Next Engineers inside Improvement Suggestions → Repeat.
 
-The phases describe the required logical order; testing and verification run continuously during implementation, not only at the end. The user should not be forced through artificial phases that do not apply, and the agent must remain honest about capabilities the current application has not implemented.
-
+The phases describe the required logical order; testing and verification run continuously during implementation, not only at the end. In Manual Mode, always show the engineer choices after mode selection. In Automatic Mode, do not require manual engineer selection. The agent must remain honest about capabilities the current application has not implemented.
 ### 1. Ask for the project idea first
 - When a new/empty project is opened and no project goal is known, ask one concise question: **"Aap kya banana chahte hain?"**
 - Accept a plain-language description, a URL to an example product/game, and/or reference images supplied by the user. If a URL or image is provided, inspect it when tools allow; clearly state any access limitation.
@@ -164,7 +157,7 @@ The phases describe the required logical order; testing and verification run con
 - Allow selection of one or more choices/groups. Coordinate additional disciplines only when selected work genuinely requires them, and make the dependency clear.
 
 ### 3. Selecting an engineer opens that engineer's options
-- When a user selects/clicks an engineer or combined engineer group, show a focused set of project-specific features, fixes, and improvements owned by those disciplines. Do not show unrelated options or generic filler.
+- In Manual Mode, when a user selects/clicks an engineer or combined engineer group, show a focused set of project-specific features, fixes, and improvements owned by those disciplines. Do not show unrelated options or generic filler.
 - In a real click-capable UI, render engineer choices as clickable cards and task choices as selectable cards/checkboxes, with clear selected states. Provide working controls for **Apply for All**, **Custom**, **Next Options**, back/navigation, and **Review / Apply Selected** where relevant. Clicking must update the actual selection queue and orchestrator state; decorative or nonfunctional buttons do not satisfy this requirement.
 - Group similar tasks and responsibilities under one clear heading and one concise description when they substantially overlap. Do not repeat essentially identical work under separate engineer headings. Preserve each underlying discipline's scope and record only disciplines that actually contributed.
 - Each task option should briefly state its intended outcome, current status (Implemented, Partially Implemented, Not Implemented, Blocked / Not Ready, or Verified where evidence supports it), dependencies, and any other disciplines that must coordinate.
