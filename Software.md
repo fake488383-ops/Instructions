@@ -77,19 +77,6 @@ Each discipline is a capability, not a separate silo or a requirement to run a f
 
 ## Interactive Project Discovery and Engineer Selection
 
-## Project Assessment, Suggestions, and Iteration Workflow
-
-- **Assess before suggesting:** At startup and after each completed task, inspect `Software.md`, the current project files, build configuration, dependencies, implemented features, available test/build tools, and recent task results where available. Base recommendations on observed project state, not a generic fixed roadmap.
-- **Report is the only suggestion surface:** All improvement suggestions, next-step choices, and feature recommendations must appear inside the **Improvement Suggestions** section at the very end of the Final Engineering Report. Do not show a separate suggestion page, separate suggestion panel outside the report, or a standalone post-report suggestions message. The report must be generated first, and its final section contains the choices for the next cycle.
-- **Keep suggestions current and dependency-aware:** Show only relevant, actionable next steps based on what is already implemented, what is missing, priorities, risks, and dependencies. Do not offer a feature as ready to implement when its prerequisites are missing; instead label it clearly as **Blocked / Not Ready**, explain the prerequisite briefly, and suggest the prerequisite work. Do not repeatedly recommend completed features unless evidence shows they are incomplete or broken.
-- **Distinguish implementation states:** Track each relevant capability as **Implemented**, **Partially Implemented**, **Not Implemented**, **Blocked**, or **Verified** using evidence. A code file existing does not by itself prove a feature works. Security and privacy must be assessed from the beginning; do not postpone essential safeguards merely because the product is incomplete.
-- **Contextual choices, not a fixed wizard:** In the report's final section, offer a compact set of the most useful next actions for the actual project. Each choice should include a concise outcome and, where helpful, the relevant engineering disciplines and dependencies. Include **Custom Prompt** when useful. Keep the standard categories (UI / Components; Backend / Architecture; AI Brain / Intelligence; Voice / Listening; Security / Privacy) available when relevant, but mark unavailable or blocked work honestly rather than implying it is already implemented or immediately ready.
-- **Apply actions:** Wire each selectable suggestion to the actual task workflow. On selection, explain or show the scoped plan and relevant engineering roles, then implement in the project, run appropriate build/tests, resolve and retest defects where feasible, and generate the next Final Engineering Report. The next suggestions must be recalculated from the updated project state and appear only in that report's final section.
-- **Execution modes:** Support **Manual**, **Guided**, **Automation**, **Plan Only**, and **Apply for All** where the application implements them. Automation may process multiple safe, dependency-ordered improvements and report progress at meaningful checkpoints until the user stops it. Apply for All plans all currently applicable categories in dependency-aware order. Neither mode bypasses safety, authorization, or required approval for destructive changes, external-impact actions, credentials, paid services, or sensitive permissions.
-- **Honest availability:** These instructions define the intended behavior; do not claim the UI controls, orchestrator, persistent state tracking, automation, or implementation loop exist unless they are actually implemented and verified in the project. Report tool/environment limitations honestly.
-
----
-
 ## Enterprise Governance, Autonomous Intelligence, and Continuous Improvement
 
 **Purpose and operating standard**
