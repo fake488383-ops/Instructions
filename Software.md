@@ -159,16 +159,19 @@ The phases describe the required logical order; testing and verification run con
 - After receiving the idea, inspect the existing repository and relevant references, then produce a deep, evidence-based analysis of the product's purpose, core experience, current implementation, missing capabilities, dependencies, risks, and realistic future improvements. Do not claim to have inspected inaccessible links or files.
 
 ### 2. Show five relevant engineers after analysis
-- After the initial analysis, show a selectable list of **five most relevant engineering disciplines** chosen dynamically from ENG-001–ENG-032 according to the idea, project state, dependencies, and risks. Five is the normal list size, not a requirement to activate exactly five.
-- Do not show the full 32-discipline catalogue. Do not use the same fixed five engineers for every project. Each entry must show the discipline name, why it matters to this project, and the main outcomes it can deliver.
-- These are choices for the user; listing a discipline does not mean it has already been activated or has contributed work. Activate the selected discipline only after the user selects it, except for routine internal orchestration and verification needed to safely fulfill an already authorized task.
-- The user may select one or more disciplines. Coordinate additional disciplines only when the selected work genuinely requires them, and make the dependency clear.
+- After the initial analysis, show five dynamically chosen relevant engineering choices from ENG-001–ENG-032, based on the idea, project state, dependencies, and risks. Five is the normal list size, not a requirement to activate exactly five individual disciplines.
+- Group two or more disciplines under one combined heading when their responsibilities substantially overlap for the current project. For example, show **Frontend Engineer + UI/UX Engineer** as one selectable group with a single shared project-specific description and combined outcomes, rather than separate headings that repeat nearly the same work. Keep each discipline's distinct responsibility internally mapped and preserve the discipline IDs for attribution and reporting. Do not combine unrelated disciplines merely to save space.
+- Do not show the full 32-discipline catalogue or reuse the same fixed choices for every project. Each choice/group must explain why it matters to this project and the main outcomes it can deliver.
+- These are choices for the user; listing a discipline/group does not mean it has already been activated or contributed work. Activate the underlying disciplines only after selection, except for routine internal orchestration and verification needed to safely fulfill an already authorized task.
+- Allow selection of one or more choices/groups. Coordinate additional disciplines only when selected work genuinely requires them, and make the dependency clear.
 
 ### 3. Selecting an engineer opens that engineer's options
-- When the user clicks/selects a discipline, show a focused list of the useful features, fixes, and improvements owned by that discipline and relevant to the inspected project. Do not show unrelated options or generic filler.
-- Each option should briefly state the intended outcome, current status (Implemented, Partially Implemented, Not Implemented, Blocked / Not Ready, or Verified where evidence supports it), dependencies, and which other disciplines may need to coordinate.
-- Recommend a sensible order based on prerequisites and impact. The user can select an option, select multiple compatible options, provide a custom instruction, or go back to the engineer list.
-- On selection, implement the authorized in-scope work, coordinate required engineers, run appropriate tests automatically, fix and retest task-related defects where feasible, and verify the result. Testing is a continuous responsibility, not an optional engineer suggestion or a separate phase the user must request.
+- When a user selects/clicks an engineer or combined engineer group, show a focused set of project-specific features, fixes, and improvements owned by those disciplines. Do not show unrelated options or generic filler.
+- In a real click-capable UI, render engineer choices as clickable cards and task choices as selectable cards/checkboxes, with clear selected states. Provide working controls for **Apply for All**, **Custom**, **Next Options**, back/navigation, and **Review / Apply Selected** where relevant. Clicking must update the actual selection queue and orchestrator state; decorative or nonfunctional buttons do not satisfy this requirement.
+- Group similar tasks and responsibilities under one clear heading and one concise description when they substantially overlap. Do not repeat essentially identical work under separate engineer headings. Preserve each underlying discipline's scope and record only disciplines that actually contributed.
+- Each task option should briefly state its intended outcome, current status (Implemented, Partially Implemented, Not Implemented, Blocked / Not Ready, or Verified where evidence supports it), dependencies, and any other disciplines that must coordinate.
+- Recommend a sensible order based on prerequisites and impact. Allow one or multiple compatible selections, custom instructions, and returning to the engineer list. Preserve cumulative selections while browsing additional options.
+- In Manual Mode, selections only build the queue. Show the dependency-aware plan and wait for explicit final apply confirmation before changing files. On confirmation, implement authorized in-scope work, coordinate required disciplines, run appropriate tests, fix and retest task-related defects where feasible, and verify the result. Testing is continuous, not an optional engineer suggestion.
 
 ### 4. Show engineer choices every time a report is generated
 - After each completed work cycle, generate the existing Final Engineering Report with its required four sections in their exact order.
@@ -178,8 +181,8 @@ The phases describe the required logical order; testing and verification run con
 - Preserve the report's existing required order: Before / After Comparison; Engineering Work Summary; QA Testing & Verification; Improvement Suggestions. Do not add a separate Report Engineer or alter the report's existing structure.
 
 ### 5. Actual UI and orchestration requirements
-- Treat this as a required interactive workflow, not merely text describing buttons. When implementing it in the application, connect engineer cards, feature choices, selected tasks, execution state, and report generation to the real orchestrator and persistent project state.
-- If the current environment only supports text and cannot render or wire clickable controls, present a clear text-based selection and do not claim that working UI controls exist.
+- Treat this as a real interactive workflow, not merely text describing controls. When the host application supports a click-capable UI, use clickable engineer cards, grouped role cards, selectable task cards/checkboxes, and working actions connected to the real orchestrator and persistent project state. Keep the UI concise and consistent with the existing application design.
+- Prefer the graphical click workflow when it is actually available. Use numbered text menus as the fallback for CLI/text-only environments or when graphical controls cannot be rendered. Never tell users to click controls that do not exist, and never claim this instruction file alone creates a GUI; the host application must implement and wire the UI.
 - Keep the user's project idea, prior selections, completed tasks, unresolved issues, and current phase available across report cycles when persistence is supported. Do not ask the user to repeat information already available.
 - Maintain the existing safety, authorization, domain ownership, evidence, and honest-verification rules. Do not silently modify unrelated files, run unauthorized destructive actions, or claim successful implementation without evidence.
 
@@ -244,9 +247,9 @@ Use this report for any project. Set the title from the actual project name; nev
 
 ---
 
-### Required CLI Numbered-Menu Behavior — No Click Events Required
+### Interactive UI and CLI Fallback Behavior
 
-The primary interface for a CLI-based AI agent is text input, not a GUI. The agent must display numbered options and wait for the user to type a choice. Do not instruct the user to click buttons when no click-capable UI exists.
+Use clickable controls as the primary selection method when the host application actually provides a click-capable UI. Show engineer/group cards and feature/fix/improvement cards with clear selected states, and wire each click to the real cumulative selection queue and orchestrator. Use the numbered CLI menus below only for CLI/text-only environments or when working clickable controls are unavailable. Do not claim that changing Software.md alone creates a GUI.
 
 **Phase 2 — execution mode**
 ```text
@@ -257,7 +260,8 @@ Enter 1 or 2:
 ```
 
 **Phase 3 — engineers**
-- Dynamically list five relevant engineering disciplines as options `1` through `5`.
+- In CLI mode, dynamically list five relevant engineer choices/groups as options `1` through `5`.
+- When similar disciplines overlap, one choice may be a combined group such as **Frontend Engineer + UI/UX Engineer** with one shared description. Preserve the underlying discipline identities for execution and reporting.
 - Option `6` is **Custom Engineer / Custom Role**.
 - Allow a single number or a comma-separated selection such as `1,3,5`. Explain the selected roles and ask for clarification only for invalid/ambiguous input.
 
@@ -283,5 +287,5 @@ Enter option number(s), N, or a custom instruction:
 - Support multiple feature choices, e.g. `1,3,5`, and validate them. Show an updated cumulative selection summary after every selection.
 - After the user types `apply` / `enter`, execute all selected authorized work in dependency-aware order, run relevant tests, fix/retest where feasible, and produce the existing four-section Final Engineering Report. Do not claim changes or tests without evidence.
 - In Automatic Mode, explain the authorized scope and then process relevant dependency-ready tasks with checkpoints; retain all safety, approval, pause/stop, and honest-status requirements.
-- If a true GUI is also present, it may mirror these choices as clickable controls, but CLI numbered selection is the source of truth and must be fully usable without clicking.
+- If a true GUI is present, its clickable controls must be fully wired and are the primary interaction for that environment. CLI numbered selection remains a complete fallback for text-only environments.
 - This update changes only workflow instructions in `Software.md`; do not edit, replace, regenerate, or otherwise modify the existing report file during this instruction-file update.
