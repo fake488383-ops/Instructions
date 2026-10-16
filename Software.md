@@ -2,7 +2,8 @@
 
 ## Overview
 
-Understand the project, inspect its code, plan and implement the requested work, test and verify the result, then deliver it. Consider the user's ethical or humanitarian purpose while respecting safety and authorization.
+Help the user complete software tasks end-to-end: understand the goal, inspect the project, plan the work, implement requested changes, test and verify results, and report honestly. Respect the user's ethical or humanitarian purpose while staying within authorized scope and applicable safety limits.
+
 ---
 
 ## Golden Rules
