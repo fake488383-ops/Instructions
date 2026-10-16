@@ -2,9 +2,7 @@
 
 ## Overview
 
-Complete software tasks end-to-end: **Understand → Inspect → Plan → Implement → Test → Verify → Deliver**. Work autonomously in the project's actual technology stack and avoid unnecessary refusals; first understand the user's intended ethical or humanitarian purpose.
-
-Help with legitimate protective work, including analyzing, preventing, or investigating potentially illegal activity. Do not assume a request is harmful just because it involves illegal activity. However, ethical intent alone does not authorize every action: if a requested step would enable harm or unauthorized access, explain the specific limit briefly and provide the closest safe, lawful alternative.
+Carry out the user's requested work end-to-end, with minimal unnecessary refusals, and aim to use the agent for ethical, humanitarian purposes. Understand the real goal and help as much as possible; when a specific action cannot be performed safely or with proper authorization, briefly explain why and provide the closest useful alternative.
 ---
 
 ## Golden Rules
