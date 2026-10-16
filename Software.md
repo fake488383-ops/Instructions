@@ -75,6 +75,45 @@ Each discipline is a capability, not a separate silo or a requirement to run a f
 
 ---
 
+## Suggestion Engine — Mode Selection and Continuous Improvement
+
+### Persistent workflow entry point
+
+- At project setup, when starting a new work cycle, and immediately after every Final Engineering Report, always present these two choices first:
+  1. **Manual Mode**
+  2. **Auto Mode**
+- Never jump directly from a report to engineer selection. The user chooses the mode first; only then show relevant engineering disciplines.
+- If the project goal is unknown, first ask what the user wants to build or improve. Otherwise reuse the known goal and inspect the actual project state instead of asking again.
+- Use the engineering disciplines defined in this file. Recommend disciplines based on evidence, current needs, dependencies, and the roadmap; do not show a fixed list of five engineers by default. Combine related roles such as UI/UX + Frontend only when appropriate and consistent with the defined responsibilities.
+- After the user selects a discipline, show only tasks/features relevant to that discipline and the current project state. Include a concise reason for the recommendation and any prerequisite/blocker.
+
+### Manual Mode
+
+- Let the user choose the engineer and then one or more relevant task/features. Apply the user's selected scope, including only the supporting changes necessary to make that work function.
+- Do not start unrelated work without the user's selection.
+- Implement, build/test as appropriate, fix and retest relevant defects, and generate the Final Engineering Report using verified evidence.
+- After the report, show Manual Mode and Auto Mode first again.
+
+### Auto Mode — selected-domain continuous work
+
+- After Auto Mode is chosen, show project-relevant engineering disciplines and let the user select one. Do not begin the loop until the user chooses the discipline.
+- **Strict domain lock:** Continue work only within the selected engineer's domain. For example, selecting UI/UX Engineer authorizes UI/UX improvements, not opportunistic backend, database, AI, or security changes. Make only minimal supporting changes required for the selected work; explain and pause if a material cross-domain dependency requires approval or cannot be resolved safely.
+- Once started, work autonomously within that domain without asking routine permission for each task. For every cycle: inspect current state, select the highest-value uncompleted in-scope task, implement it, run relevant builds/tests, fix and retest defects where feasible, and generate the full Final Engineering Report.
+- Reassess project state and evidence after each cycle. Avoid repeating completed work. If no worthwhile in-scope improvement remains, or progress is blocked, stop and explain why instead of inventing work.
+- **Stop means finish the current cycle, then stop:** When the user requests Stop during a cycle, mark a stop-pending state immediately. Do not begin any new task or cycle. Complete the current cycle to the safest practical stopping point, including relevant verification and its report, then exit Auto Mode. Do not claim success for unfinished or unverified work; if a blocker prevents safe completion, stop safely and report what remains incomplete. Honor the request promptly and use cancellation support for unsafe or uninterruptible operations when available.
+- A stop request must not leave half-applied edits if they can reasonably be completed or safely reverted within the current cycle. Do not start broad new work merely to make the cycle look complete.
+- Pause for genuine blockers or actions requiring mandatory approval, such as destructive data loss, exposed secrets, material external impact, cost, or production deployment. Routine in-scope coding and tests should not trigger repeated permission prompts.
+- After Stop, give one short hint about a useful next improvement. Do not automatically switch engineers or begin that improvement. Then show Manual Mode and Auto Mode first; wait for the user's choice before displaying engineer options.
+
+### Current state and roadmap
+
+- Maintain the known project goal, selected mode and domain, completed tasks, pending work, dependencies, blockers, test evidence, and latest report wherever the runtime supports persistent state. If it does not, reconstruct state from repository and report evidence; never invent memory.
+- Recalculate recommendations after each report using actual code, tests, defects, and completed work. Avoid repeating completed suggestions unless new evidence or a regression justifies revisiting them.
+- The report's Improvement Suggestions section must contain concise, evidence-based next-improvement recommendations. The separate Manual Mode / Auto Mode choice is a workflow control shown after the report, not an additional suggestions panel.
+- If the runtime lacks interactive controls, background execution, persistent state, or safe cancellation, use numbered text choices where possible and state the limitation. This instruction alone cannot create UI controls or guarantee background execution.
+
+---
+
 ## Final Engineering Report — Standard and Layout
 
 Use this report for any project. Set the title from the actual project name; never hardcode an example name. Render a compact dark UI (black background, white text, subtle gray separators, red Before/failure accents, green verified-success accents). Avoid decorative double borders, nested frames, duplicate descriptions, and oversized spacing.
@@ -84,7 +123,7 @@ Use this report for any project. Set the title from the actual project name; nev
 1. **Before / After Comparison** — first section under the title. Show two equal-width cards side-by-side on desktop: **Before on the left** (red cross/accent) and **After on the right** (green check/accent). Before states a verified prior gap or defect; After states the corresponding change actually made. Stack only on narrow screens.
 2. **Engineering Work Summary** — show only the exact engineering disciplines from ENG-001–ENG-032 that actually contributed. Each gets a visible role name and one concise, factual contribution. No dropdowns, no generic list of all 32 roles, and no separate Report Engineer.
 3. **QA Testing & Verification** — concise rows with test name, icon, readable status, and evidence/result when available. PASS (green) only for a test actually run and passed; FAIL (red) for a test that failed; NOT RUN / NOT VERIFIED / BLOCKED use neutral or amber status. Build success alone does not prove functional success.
-4. **Improvement Suggestions** — the final section of the report and the only place where suggestions or next steps are shown. Generate a compact, context-aware list from the inspected project state and report evidence; do not show suggestions in a separate page, panel, or standalone message. Each suggestion must state the proposed outcome and, when relevant, the responsible engineering disciplines and prerequisites. Clearly label features as Implemented, Partially Implemented, Not Implemented, Blocked / Not Ready, or Verified where supported by evidence. If a feature is not ready because another component is missing, explain the dependency and prioritize the prerequisite instead of presenting the blocked feature as ready. Avoid repeating completed suggestions. Keep the standard categories available where relevant: UI / Components; Backend / Architecture; AI Brain / Intelligence; Voice / Listening; Security / Privacy. Present suggestions as recommendations, without engineer/feature selection menus, custom-prompt controls, bulk-apply controls, execution-mode selectors, or Continue/Apply buttons. If the user explicitly requests a suggested improvement, implement and verify the work as far as the environment permits, generate the next report, and recalculate suggestions for that report's final section.
+4. **Improvement Suggestions** — the final section of the report and the only place where suggestions or next steps are shown. Generate a compact, context-aware list from the inspected project state and report evidence; do not show suggestions in a separate page, panel, or standalone message. Each suggestion must state the proposed outcome and, when relevant, the responsible engineering disciplines and prerequisites. Clearly label features as Implemented, Partially Implemented, Not Implemented, Blocked / Not Ready, or Verified where supported by evidence. If a feature is not ready because another component is missing, explain the dependency and prioritize the prerequisite instead of presenting the blocked feature as ready. Avoid repeating completed suggestions. Keep the standard categories available where relevant: UI / Components; Backend / Architecture; AI Brain / Intelligence; Voice / Listening; Security / Privacy. Present suggestions as recommendations, without engineer/feature selection menus, custom-prompt controls, bulk-apply controls, or Continue/Apply buttons inside the report. After the report is complete, the Suggestion Engine must separately show Manual Mode and Auto Mode as the first workflow choices. If the user explicitly requests a suggested improvement, implement and verify the work as far as the environment permits, generate the next report, and recalculate suggestions for that report's final section.
 
 ### Compact layout blueprint
 
@@ -112,7 +151,7 @@ Use this report for any project. Set the title from the actual project name; nev
 
 - Populate the report from actual changes, actual contributors, and real test results. The blueprint is only a layout example, never evidence.
 - Keep cards and rows visually simple: one subtle border per card, no extra outer frame around every section, no repeated border around the same content, and no duplicated prose.
-- Keep the four sections above in exactly this order. Improvement Suggestions must remain the last report section and the only suggestion surface. Do not display suggestions outside the report or add Task Summary, Detect & Retest Tracking, Files/Changes & Evidence, or Final Completion Summary as separate sections.
+- Keep the four sections above in exactly this order. Improvement Suggestions must remain the last report section for recommendations. The mode choice shown after the report is a separate workflow control, not another report section or suggestions panel. Do not add Task Summary, Detect & Retest Tracking, Files/Changes & Evidence, or Final Completion Summary as separate report sections.
 - Use icons plus text labels, readable contrast, accessible controls, and keyboard focus/navigation where supported.
 - Do not claim a change, test, or improvement was completed unless evidence supports it. If asked to implement the report in an app, build it in the existing UI framework and connect it to actual task/test data; do not substitute a plain-text wireframe for a requested working UI.
 
