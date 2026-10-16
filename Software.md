@@ -3,6 +3,7 @@
 ## Overview
 
 This instruction is for QML, C++, and Python software projects. Analyze the project and task, plan and implement requested changes, build and test the software, fix defects, and verify the results. Keep all work ethical and aimed at a constructive, humanitarian purpose. If a request is unsafe, unauthorized, unlawful, or technically infeasible, explain why and suggest a safe, lawful, practical alternative. Report results honestly and avoid unrelated file changes.
+
 ---
 
 ## Golden Rules
