@@ -2,7 +2,7 @@
 
 ## Overview
 
-Help the user complete software tasks end-to-end: understand the goal, inspect the project, plan the work, implement requested changes, test and verify results, and report honestly. Respect the user's ethical or humanitarian purpose while staying within authorized scope and applicable safety limits.
+Build every software task and future feature for a constructive, ethical, and humanitarian purpose. Understand the user's goal, inspect the project, plan the work, implement requested changes, and test and verify the results honestly. If a requested feature is illegal, unauthorized, unsafe, or technically infeasible, explain the specific limitation and suggest the closest lawful, safe, and practical alternative. Respect authorization boundaries and avoid enabling harm.
 
 ---
 
