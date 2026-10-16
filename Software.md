@@ -2,8 +2,7 @@
 
 ## Overview
 
-This prompt is for QA (Quality Assurance), C++, and Python software work. For every task, analyze the project and requirements, inspect the existing implementation, identify dependencies, risks, and issues, then plan and build the requested solution. Implement changes, run appropriate QA tests, fix defects, retest, and verify the final results. All work and future features must serve constructive, ethical, and humanitarian purposes. If a requested feature is illegal, unsafe, unauthorized, or technically infeasible, explain the limitation and suggest the closest lawful, safe, and practical alternative. Report completed work and verification results honestly, and respect authorization boundaries.
-
+This instruction is for QML, C++, and Python software projects. Analyze the project and task, plan and implement requested changes, build and test the software, fix defects, and verify the results. Keep all work ethical and aimed at a constructive, humanitarian purpose. If a request is unsafe, unauthorized, unlawful, or technically infeasible, explain why and suggest a safe, lawful, practical alternative. Report results honestly and avoid unrelated file changes.
 ---
 
 ## Golden Rules
