@@ -75,8 +75,6 @@ Each discipline is a capability, not a separate silo or a requirement to run a f
 
 ---
 
-## Interactive Project Discovery and Engineer Selection
-
 ## Enterprise Governance, Autonomous Intelligence, and Continuous Improvement
 
 **Purpose and operating standard**
@@ -220,46 +218,3 @@ Use this report for any project. Set the title from the actual project name; nev
 - Do not claim a change, test, or improvement was completed unless evidence supports it. If asked to implement the report in an app, build it in the existing UI framework and connect it to actual task/test data; do not substitute a plain-text wireframe for a requested working UI.
 
 ---
-
-### Interactive UI and CLI Fallback Behavior
-
-Use clickable controls as the primary selection method when the host application actually provides a click-capable UI. Show engineer/group cards and feature/fix/improvement cards with clear selected states, and wire each click to the real cumulative selection queue and orchestrator. Use the numbered CLI menus below only for CLI/text-only environments or when working clickable controls are unavailable. Do not claim that changing Software.md alone creates a GUI.
-
-**Phase 2 — execution mode**
-```text
-Choose execution mode:
-1. Manual Mode — I select the work and explicitly apply it.
-2. Automatic Mode — process authorized, dependency-ready tasks autonomously.
-Enter 1 or 2:
-```
-
-**Phase 3 — engineers**
-- In CLI mode, dynamically list five relevant engineer choices/groups as options `1` through `5`.
-- When similar disciplines overlap, one choice may be a combined group such as **Frontend Engineer + UI/UX Engineer** with one shared description. Preserve the underlying discipline identities for execution and reporting.
-- Option `6` is **Custom Engineer / Custom Role**.
-- Allow a single number or a comma-separated selection such as `1,3,5`. Explain the selected roles and ask for clarification only for invalid/ambiguous input.
-
-**Phase 4 — feature batches**
-Every batch has up to five real, project-specific feature/fix/improvement options, plus:
-```text
-1. [Relevant feature / fix / improvement]
-2. [Relevant feature / fix / improvement]
-3. [Relevant feature / fix / improvement]
-4. [Relevant feature / fix / improvement]
-5. [Relevant feature / fix / improvement]
-6. Apply for All — select all currently applicable, dependency-ready work
-7. Custom — enter my own task/instruction
-N. Next Options — show the next relevant batch (when more work/options exist)
-Selected: [cumulative selections]
-Enter option number(s), N, or a custom instruction:
-```
-- The five feature choices must be dynamically generated from the current project state, selected engineer scopes, inspected files, remaining tasks, dependencies, prior results, and completed-work evidence. Do not use a fixed catalogue, fake filler, or duplicate completed items.
-- If fewer than five genuine options exist, show only those options and mark the unused numbered slots unavailable. The `6. Apply for All` and `7. Custom` meanings stay consistent.
-- `N` / `next` requests another batch and must not apply anything. Keep previous selections in a cumulative queue, including selections from earlier batches and custom tasks, until the user applies or explicitly clears them. Continue for as long as useful, without a fixed page or date limit; if no relevant work remains, say so.
-- `6. Apply for All` selects all currently applicable, dependency-ready work in the analyzed scope. In Manual Mode, it does not bypass the final confirmation: show the complete selection queue and wait for `apply` / `enter` before modifying files.
-- `7. Custom` asks the user to type a custom task, adds it to the queue, and returns to the menu without silently executing it.
-- Support multiple feature choices, e.g. `1,3,5`, and validate them. Show an updated cumulative selection summary after every selection.
-- After the user types `apply` / `enter`, execute all selected authorized work in dependency-aware order, run relevant tests, fix/retest where feasible, and produce the existing four-section Final Engineering Report. Do not claim changes or tests without evidence.
-- In Automatic Mode, explain the authorized scope and then process relevant dependency-ready tasks with checkpoints; retain all safety, approval, pause/stop, and honest-status requirements.
-- If a true GUI is present, its clickable controls must be fully wired and are the primary interaction for that environment. CLI numbered selection remains a complete fallback for text-only environments.
-- This update changes only workflow instructions in `Software.md`; do not edit, replace, regenerate, or otherwise modify the existing report file during this instruction-file update.
