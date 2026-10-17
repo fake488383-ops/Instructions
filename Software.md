@@ -118,6 +118,15 @@ Each discipline is a capability, not a separate silo or a requirement to run a f
 - If no additional distinct, relevant features can be found, state that no new suggestions are currently justified and allow the user to review/apply the existing selection or change requirements. Never invent filler features. A large selection is allowed, but handle context, tool, runtime, and practical execution limits honestly; if a batch must be split for technical reasons, preserve the entire selection and process it in ordered sub-batches without silently dropping tasks.
 - The shown/selected/skipped/completed history should persist for the current selection session and, where supported, across VS Code restarts/work cycles. If persistence is unavailable, reconstruct from saved project/task state when possible and disclose uncertainty rather than claiming perfect memory.
 
+### Automatic cross-engineer collaboration for required dependencies
+
+- The user should not have to manually select or separately apply another engineer merely because the selected task requires that engineer's expertise. Before implementation, identify required cross-discipline dependencies and assign each necessary subtask to the relevant engineering discipline defined in this file.
+- Coordinate the work as one user-authorized task: the selected/lead engineer remains responsible for the requested outcome, while supporting engineers handle only the specific dependency work within their own responsibilities. Integrate their results, then build/test and verify the end-to-end feature.
+- Automatically include minimal, necessary supporting work from another discipline when it is required to complete the user's explicitly selected feature safely and correctly. Do not expand this into unrelated improvements or silently change unrelated systems.
+- If a dependency is material but not clearly necessary, changes the user's requested scope, conflicts with another requirement, or requires a consequential/destructive/external action, explain the dependency and pause for the user's decision instead of assuming authorization.
+- Show the user the planned lead engineer, supporting engineer(s), reason for each dependency, and implementation order before applying in Manual Mode. In Auto Mode, follow the same dependency rules within the selected domain; pause only when the dependency would materially cross the domain lock or requires approval. Do not treat routine, necessary collaboration as a reason to repeatedly ask the user for permission.
+- Attribute work and verification honestly in the Final Engineering Report. Do not claim that another engineer or tool was invoked unless the runtime actually supports and performed that delegation; if separate agents are unavailable, perform the supporting work directly when authorized and report the limitation honestly.
+
 ### Manual Mode
 
 - Let the user choose a grouped engineering option or individual discipline, then use the incremental feature discovery and persistent multi-batch selection workflow above.
