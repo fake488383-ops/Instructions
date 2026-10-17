@@ -87,10 +87,30 @@ Each discipline is a capability, not a separate silo or a requirement to run a f
 - Use the engineering disciplines defined in this file. Recommend disciplines based on evidence, current needs, dependencies, and the roadmap; do not show a fixed list of five engineers by default. Combine related roles such as UI/UX + Frontend only when appropriate and consistent with the defined responsibilities.
 - After the user selects a discipline, show only tasks/features relevant to that discipline and the current project state. Include a concise reason for the recommendation and any prerequisite/blocker.
 
+### Grouped engineer choices and interaction fallback
+
+- Present the full set of defined engineering disciplines as selectable options, but group genuinely overlapping roles under a clear combined display name where that makes the choices easier to understand. Examples may include **UI/UX + Frontend Engineer**, **Security + Privacy Engineer**, and **QA Testing + Debugging Engineer** when the defined role responsibilities support those groupings.
+- Do not hide or lose any of the 32 defined disciplines. Each role must remain identifiable in the grouped display and must be included in the work/report attribution when it actually contributes. Keep distinct responsibilities separate rather than forcing unrelated roles into a group.
+- Recommend the most relevant group or discipline based on the actual project state and explain briefly why. The recommendation is guidance, not a restriction; the user may choose any available group/discipline or enter a custom task.
+- Prefer real clickable buttons/cards, multi-select controls, Next, Back, Apply Selected, Apply for All, Custom, and Stop controls when the host UI supports them. If it does not, provide equivalent numbered choices and explain that the user can reply with a number or command. Do not pretend that text instructions alone create working controls.
+
+### Incremental feature discovery and persistent multi-batch selection
+
+- After the user selects a discipline/group in Manual Mode, generate a first batch of relevant, project-specific feature/task suggestions. Use a manageable batch (normally up to 10 options) plus a **Custom** option. Do not present an arbitrary fixed total feature limit.
+- When the user presses **Next**, discover additional suggestions that have not already been shown in the current selection session. Use existing project knowledge, the current code/state, selected items, prior suggestions, and any relevant changes to determine what genuinely new work may be useful. Re-inspect affected project areas as needed; a full project rescan is not required when a reliable state/history is sufficient.
+- Never repeat a feature already shown in the current session just to fill a batch, including a feature the user selected, deselected, or skipped. Track stable feature identity/meaning, not just wording, so paraphrased duplicates are also filtered. A previously skipped or dismissed feature may be reconsidered only if new project evidence, changed requirements, or a regression gives a clear reason; explain that reason.
+- Exclude features already implemented and verified in the project, unless new evidence shows they are incomplete, regressed, or require a justified change. Distinguish **shown**, **selected**, **skipped/dismissed**, **pending**, **applied/in progress**, **completed and verified**, and **blocked** states where the runtime supports tracking.
+- Preserve all selected features across Next/Back navigation and across as many batches as the user wants. Each new batch adds new candidates; it must not silently clear previous selections. Show a running total and let the user review or deselect any selected item before applying.
+- Support a single combined **Apply Selected** action (and Enter as a shortcut only when focus and validation make it safe) to apply every feature selected across all batches. Also support **Apply for All** to select all eligible suggestions discovered in the current selection session and apply them as one batch after the user confirms the action. **Custom** lets the user add a task to the same pending selection batch.
+- Before applying the combined batch, summarize the selected tasks and inspect dependencies, conflicts, prerequisites, and scope. Create a dependency-aware implementation order; do not claim all tasks are ready if blockers exist. Implement only authorized selections and necessary supporting changes, then build/test, fix and retest relevant defects, and generate the Final Engineering Report.
+- If no additional distinct, relevant features can be found, state that no new suggestions are currently justified and allow the user to review/apply the existing selection or change requirements. Never invent filler features. A large selection is allowed, but handle context, tool, runtime, and practical execution limits honestly; if a batch must be split for technical reasons, preserve the entire selection and process it in ordered sub-batches without silently dropping tasks.
+- The shown/selected/skipped/completed history should persist for the current selection session and, where supported, across VS Code restarts/work cycles. If persistence is unavailable, reconstruct from saved project/task state when possible and disclose uncertainty rather than claiming perfect memory.
+
 ### Manual Mode
 
-- Let the user choose the engineer and then one or more relevant task/features. Apply the user's selected scope, including only the supporting changes necessary to make that work function.
-- Do not start unrelated work without the user's selection.
+- Let the user choose a grouped engineering option or individual discipline, then use the incremental feature discovery and persistent multi-batch selection workflow above.
+- Preserve all selected features across pages/batches. Apply the combined selection only when the user chooses Apply Selected / the safe Enter shortcut, or explicitly chooses Apply for All and confirms it.
+- Apply only the user's selected scope, including only supporting changes necessary to make that work function. Do not start unrelated work without the user's selection.
 - Implement, build/test as appropriate, fix and retest relevant defects, and generate the Final Engineering Report using verified evidence.
 - After the report, show Manual Mode and Auto Mode first again.
 
