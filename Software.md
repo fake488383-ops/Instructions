@@ -165,7 +165,6 @@ Use this report for any project. Set the title from the actual project name; nev
 1. **Before / After Comparison** — first section under the title. Show two equal-width cards side-by-side on desktop: **Before on the left** (red cross/accent) and **After on the right** (green check/accent). Before states a verified prior gap or defect; After states the corresponding change actually made. Stack only on narrow screens.
 2. **Engineering Work Summary** — show only the exact engineering disciplines from ENG-001–ENG-032 that actually contributed. Each gets a visible role name and one concise, factual contribution. No dropdowns, no generic list of all 32 roles, and no separate Report Engineer.
 3. **QA Testing & Verification** — concise rows with test name, icon, readable status, and evidence/result when available. PASS (green) only for a test actually run and passed; FAIL (red) for a test that failed; NOT RUN / NOT VERIFIED / BLOCKED use neutral or amber status. Build success alone does not prove functional success.
-4. **Improvement Suggestions** — the final section of the report and the only place where suggestions or next steps are shown. Generate a compact, context-aware list from the inspected project state and report evidence; do not show suggestions in a separate page, panel, or standalone message. Each suggestion must state the proposed outcome and, when relevant, the responsible engineering disciplines and prerequisites. Clearly label features as Implemented, Partially Implemented, Not Implemented, Blocked / Not Ready, or Verified where supported by evidence. If a feature is not ready because another component is missing, explain the dependency and prioritize the prerequisite instead of presenting the blocked feature as ready. Avoid repeating completed suggestions. Keep the standard categories available where relevant: UI / Components; Backend / Architecture; AI Brain / Intelligence; Voice / Listening; Security / Privacy. Present suggestions as recommendations, without engineer/feature selection menus, custom-prompt controls, bulk-apply controls, or Continue/Apply buttons inside the report. After the report is complete, the Suggestion Engine must separately show Manual Mode and Auto Mode as the first workflow choices. If the user explicitly requests a suggested improvement, implement and verify the work as far as the environment permits, generate the next report, and recalculate suggestions for that report's final section.
 
 ### Compact layout blueprint
 
@@ -184,16 +183,13 @@ Use this report for any project. Set the title from the actual project name; nev
    [ ✕ FAIL — test name — result/evidence ]
    [ ◷ NOT RUN / BLOCKED — reason, if known ]
 
-4. Improvement Suggestions
-   [ ] UI / Components        [ ] Backend / Architecture
-   [ ] AI Brain / Intelligence [ ] Voice / Listening
 ```
 
 ### Evidence and rendering rules
 
 - Populate the report from actual changes, actual contributors, and real test results. The blueprint is only a layout example, never evidence.
 - Keep cards and rows visually simple: one subtle border per card, no extra outer frame around every section, no repeated border around the same content, and no duplicated prose.
-- Keep the four sections above in exactly this order. Improvement Suggestions must remain the last report section for recommendations. The mode choice shown after the report is a separate workflow control, not another report section or suggestions panel. Do not add Task Summary, Detect & Retest Tracking, Files/Changes & Evidence, or Final Completion Summary as separate report sections.
+- Keep the remaining three report sections in exactly this order. Do not add Task Summary, Detect & Retest Tracking, Files/Changes & Evidence, or Final Completion Summary as separate report sections. The mode choice shown after the report is a separate workflow control, not another report section.
 - Use icons plus text labels, readable contrast, accessible controls, and keyboard focus/navigation where supported.
 - Do not claim a change, test, or improvement was completed unless evidence supports it. If asked to implement the report in an app, build it in the existing UI framework and connect it to actual task/test data; do not substitute a plain-text wireframe for a requested working UI.
 
