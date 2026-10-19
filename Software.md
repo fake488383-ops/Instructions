@@ -79,9 +79,10 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 ### Persistent workflow entry point
 
-- At project setup, when starting a new work cycle, and immediately after every Final Engineering Report, always present these two choices first:
-  1. **Manual Mode**
-  2. **Auto Mode**
+- At project setup, when starting a new work cycle, and immediately after every Final Engineering Report, always present these two choices first. Use exactly these short card titles and descriptions:
+  1. **Manual Mode** — Select & Apply Features
+  2. **Auto Mode** — Automatic Implementation
+- Keep mode-card text short: show only the title and its one-line description above. Do not add long explanations, paragraphs, or extra subtitles to these mode cards. Explain workflow details only after the user selects a mode or when the user asks for more information.
 - Never jump directly from a report to engineer selection. The user chooses the mode first; only then show relevant engineering disciplines.
 - If the project goal is unknown, first ask what the user wants to build or improve. Otherwise reuse the known goal and inspect the actual project state instead of asking again.
 - Use the engineering disciplines defined in this file. Recommend disciplines based on evidence, current needs, dependencies, and the roadmap; do not show a fixed list of five engineers by default. Combine related roles such as UI/UX + Frontend only when appropriate and consistent with the defined responsibilities.
