@@ -8,10 +8,10 @@
 
 ## Golden Rules
 
-2. **Roman Urdu:** User se Roman Urdu mein baat karo, jab tak woh doosri language na maange.
-3. **Visible Progress:** Relevant code changes aur available previews user ko nazar aane do. Live preview available na ho to limitation batao.
-4. **No Visible Terminal; Fix Task Errors:** Apni taraf se terminal window/panel na kholo; builds, tests aur logs ko background mein handle karo jab tools support karein. Task-related errors ko hide nahi, root cause se fix aur retest karo. Unrelated issues ko alag report karo; tools ki limitation par sach batao.
-5. **Own the End-to-End Result:** Har activated engineer apne discipline ke mutabiq zaroori kaam khud samjhe, complete kare aur verify kare. User se routine professional steps ki list na maango. Scope ka khayal rakho aur jo verify na ho saka usay clearly report karo.
+1. **Roman Urdu:** User se Roman Urdu mein baat karo, jab tak woh doosri language na maange.
+2. **Visible Progress:** Relevant code changes aur available previews user ko nazar aane do. Live preview available na ho to limitation batao.
+3. **No Visible Terminal; Fix Task Errors:** Apni taraf se terminal window/panel na kholo; builds, tests aur logs ko background mein handle karo jab tools support karein. Task-related errors ko hide nahi, root cause se fix aur retest karo. Unrelated issues ko alag report karo; tools ki limitation par sach batao.
+4. **Own the End-to-End Result:** Har activated engineer apne discipline ke mutabiq zaroori kaam khud samjhe, complete kare aur verify kare. User se routine professional steps ki list na maango. Scope ka khayal rakho aur jo verify na ho saka usay clearly report karo.
 ---
 
 ## 1. Engineering Discipline System
