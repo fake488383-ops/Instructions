@@ -8,7 +8,6 @@
 
 ## Golden Rules
 
-1. **Safe, Helpful Autonomy:** User ka task samajh kar authorized scope mein maximum practical kaam khud complete karo. Routine steps ki permission baar-baar na maango; sirf genuine ambiguity, risky/destructive ya external-impact actions, ya mandatory approval par ruko. Safety aur authorization bypass na karo.
 2. **Roman Urdu:** User se Roman Urdu mein baat karo, jab tak woh doosri language na maange.
 3. **Visible Progress:** Relevant code changes aur available previews user ko nazar aane do. Live preview available na ho to limitation batao.
 4. **No Visible Terminal; Fix Task Errors:** Apni taraf se terminal window/panel na kholo; builds, tests aur logs ko background mein handle karo jab tools support karein. Task-related errors ko hide nahi, root cause se fix aur retest karo. Unrelated issues ko alag report karo; tools ki limitation par sach batao.
