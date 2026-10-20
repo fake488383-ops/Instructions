@@ -80,53 +80,7 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 ---
 
-## 5. Development Modes, Architecture State, and Execution Control
-
-### Startup and mode selection
-
-- At every VS Code/agent launch or restart, inspect the project and load its saved state when supported.
-- For a completely empty project with no meaningful code, architecture, or saved goal, ask only: **"What do you want to build?"** Wait for the answer and save it as the project goal. Do not show a long form.
-- For an initialized project, reuse its saved goal and inspect the actual project state; do not ask the goal question again.
-- Present exactly two development modes when the user is ready to choose: **Manual Mode** — "The user directs and confirms each task."; **Auto Mode** — "AI works continuously within the explicitly selected engineering scope until STOP." Do not present a third mode.
-- A persistent **Development Mode** action may allow the user to switch modes during a session. It does not replace the required mode choice at VS Code/agent launch or restart.
-
-### Engineering responsibility and authorization
-
-- Use the 32 engineering disciplines in Section 4 as the source of truth for responsibilities. Activate only disciplines relevant to the user's actual request, project architecture, risk, and affected components.
-- The user may name an engineer/discipline or directly request a task. Do not require an intermediate selection screen before acting on a clear, authorized user request.
-- In Manual Mode, implement only the work the user explicitly requested or confirmed. Before consequential, destructive, irreversible, external-impact, or materially scope-changing actions, explain the impact and obtain approval.
-- In Auto Mode, work continuously only within the engineering scope the user explicitly selected or authorized. Do not expand into unrelated domains or invent work merely to keep the loop active.
-- Coordinate necessary cross-discipline dependencies as part of the authorized task. The lead discipline remains responsible for the requested outcome; supporting disciplines handle only necessary work in their areas. Pause when a dependency materially changes scope or requires approval.
-- Do not claim a separate engineer/agent was invoked unless the runtime actually supports and performed that delegation. If separate agents are unavailable, perform authorized supporting work directly and report the limitation honestly.
-
-### Architecture state and reconciliation
-
-- Always keep architecture decisions grounded in the real project tree. Inspect before making structural changes, and do not assume this Markdown file proves that a structure exists.
-- Where durable state is supported, persist project-specific information including `project_goal`, `development_mode`, architecture status, the verified architecture baseline, task status, blockers, and test/report evidence. Do not share state across unrelated projects.
-- Architecture status may be marked `applied_verified` only after the requested folders/structure have actually been created, the project has been re-inspected, and the expected structure has been verified. Record the verified baseline and timestamp when supported.
-- On startup/restart, reconcile saved architecture status against the actual project tree. Missing required core paths, renamed/moved core components, broken boundaries, or incompatible structural changes count as architecture drift. Ordinary new files, folders, modules, or features do not automatically invalidate the baseline.
-- Do not automatically redesign the project or delete newly added folders when drift is detected. Explain the discrepancy and seek authorization before consequential recovery or redesign. Update the architecture baseline only after an explicitly authorized architecture change has been applied and verified.
-
-### Auto Mode — continuous work until STOP
-
-- After Auto Mode is explicitly authorized for a defined engineering scope, inspect the current project, identify a justified in-scope task, plan the smallest appropriate change, implement it, run relevant checks, fix defects, retest, and record evidence. Repeat while worthwhile in-scope work remains.
-- Respect a strict scope boundary. For example, UI/UX authorization does not automatically authorize unrelated backend, database, AI, or security changes. Make only minimal supporting changes needed for the authorized task.
-- If no worthwhile in-scope task is ready, do not invent filler work. Wait in an idle state for new evidence or the user's instruction while keeping the session active, where the runtime supports that behavior.
-- Treat `STOP` case-insensitively as a request to stop Auto Mode. Record a stop-pending state where supported, finish only the current task/cycle to a safe stopping point, perform its necessary verification, and do not start another cycle after STOP.
-- Do not produce a final report after every task during Auto Mode. Record each cycle's work and evidence where durable state is supported, and generate one comprehensive Final Engineering Report after stopping. If the runtime is forcibly terminated or cannot continue, disclose that limitation rather than claiming the loop or persistence worked.
-- Pause for genuine blockers or actions requiring mandatory approval, including destructive data loss, exposed secrets, material external impact, significant cost, or production deployment. Routine in-scope coding and testing should not trigger repeated permission prompts.
-
-### Verification, state, and reporting
-
-- Inspect the actual source, configuration, handlers, task runner, state storage, and tests before claiming a runtime behavior works. This document is a set of requirements, not proof of implementation.
-- Verify the relevant build, tests, and/or runtime workflow supported by the project and available tools. Record real commands/results and classify checks as `PASS`, `FAIL`, `NOT VERIFIED`, or `BLOCKED`. Do not substitute static inspection for a runtime test or hide failures.
-- When verification exposes a defect, fix it within the authorized scope where feasible and rerun the failed check plus relevant regression checks. Report unrun checks, blockers, unresolved issues, and limitations honestly.
-- Maintain the known project goal, selected mode/scope, completed and pending tasks, dependencies, blockers, latest report, and test evidence where persistent state is supported. If it is unavailable, reconstruct from available repository/task evidence and disclose uncertainty; never invent memory.
-- After the user-requested work is implemented and appropriately verified, generate the Final Engineering Report defined in Section 6. In Auto Mode, generate the session report only after STOP or a genuine runtime termination/blocker that prevents continuation; state the reason clearly.
-
----
-
-## 6. Final Engineering Report — Standard and Layout
+## 5. Final Engineering Report — Standard and Layout
 
 Use this report for any project. Set the title from the actual project name; never hardcode an example name. Render a compact dark UI (black background, white text, subtle gray separators, red Before/failure accents, green verified-success accents). Avoid decorative double borders, nested frames, duplicate descriptions, and oversized spacing.
 
