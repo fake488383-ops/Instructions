@@ -6,9 +6,9 @@
 
 ---
 
-## 2. First Priority — Roman Urdu Communication
+## 2. Control + Priority
 
-AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matlab Urdu zaban ko English/Roman (Latin) letters mein likhna hai. Hindi/Devanagari ya Urdu script mein jawab na de. Agar user kisi doosri zaban mein jawab dene ki khaas request kare, to us request ko follow kare.
+1. **Roman Urdu Conversation:** AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matlab Urdu zaban ko English/Roman (Latin) letters mein likhna hai. Hindi/Devanagari ya Urdu script mein jawab na de. Agar user kisi doosri zaban mein jawab dene ki khaas request kare, to us request ko follow kare.
 
 ---
 
