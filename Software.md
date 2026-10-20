@@ -223,3 +223,15 @@ Use this report for any project. Set the title from the actual project name; nev
 - Do not claim a change, test, or improvement was completed unless evidence supports it. If asked to implement the report in an app, build it in the existing UI framework and connect it to actual task/test data; do not substitute a plain-text wireframe for a requested working UI.
 
 ---
+
+
+## Latest Suggestion Engine UI Clarification
+
+These rules override any conflicting earlier Suggestion Engine instructions in this file.
+
+- At every VS Code launch/restart (including after the laptop has been shut down), silently inspect the root instructions and project state, then show exactly two mode choices: **Manual Mode** and **Auto Mode**. There is no third mode.
+- After the user chooses a mode for that VS Code session, do not show the mode screen after each task or report. Show the engineer-selection screen instead.
+- After every completed task, place the Final Engineering Report first, including its short **Next Improvement Context**; immediately below the report show the engineer-selection screen again. Never insert the Manual/Auto screen between the report and engineer list.
+- The full engineer-selection screen contains the 10 defined main engineer cards (excluding a one-time task such as Architecture only when it has actually been completed and verified).
+- After an engineer is selected, show exactly **five** project-specific feature choices, numbered/cards 1–5, and no sixth, seventh, or other extra feature choice. Do not show a **Custom** feature card or **Apply for All** option. If the user wants a custom feature, accept the description through normal chat input.
+- Feature cards are genuinely clickable only when the host supports clickable controls. Otherwise present the same five choices as a numbered list. Preserve selected features across batches; a Next action may show another batch of five without clearing prior selections.
