@@ -84,23 +84,43 @@ Each discipline name defines a professional area of responsibility, not an exhau
 - Keep mode-card text short: show only the title and its one-line description above. Do not add long explanations, paragraphs, or extra subtitles to these mode cards. Explain workflow details only after the user selects a mode or when the user asks for more information.
 - Never jump directly from a report to engineer selection. The user chooses the mode first; only then show relevant engineering disciplines.
 - If the project goal is unknown, first ask what the user wants to build or improve. Otherwise reuse the known goal and inspect the actual project state instead of asking again.
-- Use the engineering disciplines defined in this file. Recommend disciplines based on evidence, current needs, dependencies, and the roadmap; do not show a fixed list of five engineers by default. Combine related roles such as UI/UX + Frontend only when appropriate and consistent with the defined responsibilities.
-- After the user selects a discipline, show only tasks/features relevant to that discipline and the current project state. Include a concise reason for the recommendation and any prerequisite/blocker.
+- Use the **10 Main Engineering Options** defined below as the standard user-facing engineer selection in Suggestion Engine. Show exactly these 10 options when the user is choosing from the full engineering menu; for a task-specific shortlist, show only relevant options and make clear it is a shortlist. The 32 original ENG-001–ENG-032 disciplines remain defined in this file as internal responsibilities/capabilities, mapped to the 10 main options for selection and traceability. Do not delete or renumber the original disciplines.
+- After the user selects one of the 10 main engineer cards, show only tasks/features relevant to that card's mapped responsibilities and the current project state. Include a concise reason for the recommendation and any prerequisite/blocker.
 
-### Grouped engineer choices, readable team cards, and interaction fallback
+### 10 Main Engineering Options — fixed user-facing architecture
 
-- When showing engineering options, use a clear heading **Choose an Engineering Team** and present relevant teams as separate readable cards/blocks. Each card must contain (1) a combined title in the format **Role A + Role B**, and (2) one short, plain-language description underneath explaining the team's work. Match this visual pattern:
-  - **UI/UX Engineer + Frontend Engineer** — Interface design, layout, QML/UI, buttons, animations, and screen functionality.
-  - **Security Engineer + Privacy / Compliance Engineer** — System protection, permissions, privacy controls, and user-data handling.
-  - **Backend Engineer + API / Integration Engineer** — Backend logic, services, API connections, and integrations.
-  - **Data Engineer + Database Engineer** — Data pipelines, database structure, storage, and data integrity.
-  - **AI/ML Engineer + Data Engineer** — AI/ML workflows and data pipelines, only when both are relevant.
-  - **QA / Test Engineer + Software Engineer / Developer** — Test planning, verification, debugging, implementation fixes, and retesting. Do not invent a separate underlying “Debugging Engineer” discipline when it is not defined in this file.
-  - **Performance Engineer + Reliability Engineer / SRE** — Performance optimization, resilience, and recovery.
-  - **DevOps Engineer + Build / Toolchain Engineer** — Build automation, development workflows, compilers, SDKs, and reproducible builds.
-- These are examples, not a mandatory fixed list. Show only the teams relevant to the user's goal and the inspected project state. Keep unrelated roles separate; default to two roles per team and do not combine five or six engineers into one title.
-- Do not show internal discipline IDs or numeric prefixes (such as ENG-001) in the user-facing selection cards. Keep all 32 original role definitions and IDs in this file for internal traceability. Grouping is a display/selection convenience only; preserve individual responsibilities and attribute work only to roles that actually contributed.
-- Under each card, show only a concise description, not a long paragraph. Keep the exact role names recognizable. Recommend the most relevant team with a clear **Recommended** label and a short reason, when appropriate. The user may still choose another team, an individual discipline, or a custom task.
+The Suggestion Engine must present the following **exactly 10 main engineer cards** when the user requests the full engineering menu. Use these display names and short descriptions. The 32 original disciplines in the table above remain intact; they are mapped into these main options as capabilities and responsibilities, not deleted. Do not display the internal ENG IDs to the user.
+
+1. **Architecture Engineer** — Project architecture, folder structure, requirements, and technical direction.
+   - Primary disciplines: ENG-001 Software Architect; ENG-024 Requirements Engineer; ENG-025 Technical Lead Engineer.
+2. **UI/UX Engineer** — User experience, interface design standards, accessibility, and localization.
+   - Primary disciplines: ENG-006 UI/UX Engineer; ENG-029 Accessibility Engineer; ENG-030 Internationalization / Localization Engineer.
+3. **Frontend Engineer** — QML/UI implementation, screens, buttons, navigation, rendering, and client-side behavior.
+   - Primary discipline: ENG-005 Frontend Engineer. Coordinates closely with UI/UX Engineer on interface changes.
+4. **Backend Engineer** — C++ backend services, business logic, APIs, integrations, and server-side behavior.
+   - Primary disciplines: ENG-004 Backend Engineer; ENG-010 API / Integration Engineer.
+5. **AI + Automation Engineer** — AI/ML features, agents, model workflows, Python AI logic, voice, vision, tools, and automation features.
+   - Primary discipline: ENG-007 AI/ML Engineer. Python/voice/vision/tool/automation work is a project implementation area, not a new numbered discipline unless separately defined.
+6. **Database + Storage Engineer** — Databases, data pipelines, memory/knowledge storage, data integrity, backups, and recovery of stored data.
+   - Primary disciplines: ENG-008 Data Engineer; ENG-009 Database Engineer; ENG-023 Backup / Disaster Recovery Engineer; ENG-027 Knowledge Engineer.
+7. **Security + Privacy Engineer** — Application security, identity/access control, secrets, data protection, privacy, and compliance.
+   - Primary disciplines: ENG-011 Security Engineer; ENG-012 Privacy / Compliance Engineer.
+8. **QA + Testing Engineer** — Manual/automated testing, regression checks, bug reproduction, verification, code review, and quality/requirements audit.
+   - Primary disciplines: ENG-015 QA / Test Engineer; ENG-026 Code Review / Audit Engineer. ENG-002 Software Engineer / Developer contributes implementation fixes with the relevant owning engineer; it is not an extra user-facing card.
+9. **Build + DevOps Engineer** — Compiler/SDK/toolchain, Qt/CMake build, build automation, configuration, release packaging, deployment, and infrastructure/cloud setup when applicable.
+   - Primary disciplines: ENG-016 DevOps Engineer; ENG-017 Build / Toolchain Engineer; ENG-018 Release Engineer; ENG-019 Infrastructure / Cloud Engineer; ENG-022 Configuration Engineer.
+10. **Performance + Reliability Engineer** — Performance profiling, CPU/RAM/resource use, scalability, system health, network behavior, monitoring, incident diagnosis, resilience, and recovery.
+    - Primary disciplines: ENG-003 Systems Engineer; ENG-013 Performance Engineer; ENG-014 Reliability Engineer / SRE; ENG-020 Network Engineer; ENG-021 Observability Engineer; ENG-028 Operations / Incident Engineer; ENG-031 Scalability Engineer; ENG-032 Cost / Resource Engineer.
+
+### Role mapping and shared implementation rules
+
+- Keep all 32 original discipline definitions and IDs (ENG-001–ENG-032) in this file for internal traceability. The mapping above is a user-facing grouping, not deletion, renaming, or loss of the original discipline.
+- ENG-002 Software Engineer / Developer is a shared implementation capability used by the relevant domain owner to implement, modify, refactor, debug, and maintain code. Do not show it as an additional generic main card because the other main engineers already own implementation within their domains.
+- Each discipline has one primary home in the mapping above. Where work overlaps, the mapped primary owner leads and coordinates with supporting disciplines; do not silently duplicate ownership.
+- UI/UX Engineer owns design decisions and experience quality; Frontend Engineer owns the QML/UI implementation. Keep them as separate selectable options in this 10-card architecture.
+- Backend Engineer owns backend services and integrations. AI + Automation Engineer owns AI/ML and AI-related Python features. Database + Storage Engineer owns persistence and data integrity. Security + Privacy Engineer owns security/privacy controls across relevant components. QA + Testing Engineer owns validation and review activities. Build + DevOps Engineer owns build/release/toolchain work. Performance + Reliability Engineer owns performance and operational reliability.
+- When a user asks for the full engineer menu, display exactly these 10 main options with the short descriptions above. When showing a task-specific shortlist, show only relevant options and label it as a shortlist; do not imply that the remaining options have been removed.
+- Do not invent an additional “Software Development Engineer” card or a separate “Report Engineer” role. Report preparation remains the orchestrator's responsibility under the Final Engineering Report rules.
 
 - **Detect the actual interaction capabilities first:** determine whether the current agent/client surface supports real clickable controls (buttons, cards, checkboxes, multi-select widgets, or equivalent interactive UI). Do not assume support merely because the agent is running in a chat panel, and do not assume lack of support without checking the available interface/tools.
 - **If clickable controls are supported, use them:** show each feature as a selectable checkbox/card so the user can click multiple features on the same page, select or deselect them independently, and see which items are selected. Provide a working **Next** button to show a new batch of distinct features, while preserving all previous selections and the running selected count. Provide **Back** where supported, plus **Apply Selected**, **Apply for All**, and **Custom** controls as specified below. Clicking a feature only changes its selection; it must not implement code until the user explicitly applies the selection.
