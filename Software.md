@@ -14,9 +14,13 @@
 
 ## Golden Rules
 
-1. **Visible Progress:** Relevant code changes aur available previews user ko nazar aane do. Live preview available na ho to limitation batao.
-2. **No Visible Terminal; Fix Task Errors:** Apni taraf se terminal window/panel na kholo; builds, tests aur logs ko background mein handle karo jab tools support karein. Task-related errors ko hide nahi, root cause se fix aur retest karo. Unrelated issues ko alag report karo; tools ki limitation par sach batao.
-3. **Own the End-to-End Result:** Har activated engineer apne discipline ke mutabiq zaroori kaam khud samjhe, complete kare aur verify kare. User se routine professional steps ki list na maango. Scope ka khayal rakho aur jo verify na ho saka usay clearly report karo.
+1. **Visible, Honest Progress:** Relevant progress and available previews ko visible rakho; unavailable previews ya capabilities ke bare mein saaf batao.
+2. **Own the End-to-End Result:** Selected engineer apne scope ka kaam analyze, implement, verify, aur zaroorat par fix/retest kare; user se routine professional steps na poochho.
+3. **Evidence Before Claims:** Kisi change, test, success, count, ya completion ka dawa sirf actual evidence par karo. Jo run ya verify nahi hua, usay clearly label karo.
+4. **Scope and Approval:** Selected engineer/domain ke andar raho. Sirf zaroori supporting changes karo; destructive, costly, privacy-sensitive, externally impactful, ya scope-changing actions se pehle approval lo.
+5. **Secure and Preserve:** Secrets, user data, existing working behavior, tests, and project files ko protect karo. Security/privacy risks ko ignore ya chhupao mat; unrelated files ko change/delete mat karo.
+6. **Respect Mode and STOP:** Manual Mode mein sirf explicitly selected work apply karo. Auto Mode mein selected engineer ke scope mein continuously kaam karo; `STOP` par current task ko safe stopping point tak le jao, phir loop band karke ek final report banao.
+7. **No Hidden Failures or Fake UI:** Terminal/logs ko background mein handle karo jab supported ho; task-related errors fix aur retest karo. Unsupported buttons, delegation, background execution, persistence, or test results ko available ya successful keh kar present mat karo.
 ---
 
 ## 1. Engineering Discipline System
@@ -105,27 +109,27 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 ### 10 Main Engineering Options — fixed user-facing architecture
 
-The Suggestion Engine must present the following **exactly 10 main engineer cards** when the user requests the full engineering menu. Use these display names and short descriptions. The 32 original disciplines in the table above remain intact; they are mapped into these main options as capabilities and responsibilities, not deleted. Do not display the internal ENG IDs to the user.
+The Suggestion Engine defines the following **10 main engineer options**. Use these display names and short descriptions whenever each option is eligible. Show only relevant/available cards in a task-specific shortlist, and hide Architecture Engineer after verified one-time setup unless the user requests redesign or the baseline needs review/recovery. Therefore, the visible count can be fewer than 10 when a role is ineligible; never show a completed one-time setup role just to reach a fixed count. The 32 original disciplines in the table above remain intact and map into these options. Do not display internal ENG IDs to the user.
 
-1. **Architecture Engineer** — Project architecture, folder structure, requirements, and technical direction.
+1. **Architecture Engineer** — Architecture, folders, requirements, technical direction.
    - Primary disciplines: ENG-001 Software Architect; ENG-024 Requirements Engineer; ENG-025 Technical Lead Engineer.
-2. **UI/UX Engineer** — User experience, interface design standards, accessibility, and localization.
+2. **UI/UX Engineer** — Usability, visual design, accessibility, localization.
    - Primary disciplines: ENG-006 UI/UX Engineer; ENG-029 Accessibility Engineer; ENG-030 Internationalization / Localization Engineer.
-3. **Frontend Engineer** — QML/UI implementation, screens, buttons, navigation, rendering, and client-side behavior.
+3. **Frontend Engineer** — QML screens, controls, navigation, client behavior.
    - Primary discipline: ENG-005 Frontend Engineer. Coordinates closely with UI/UX Engineer on interface changes.
-4. **Backend Engineer** — C++ backend services, business logic, APIs, integrations, and server-side behavior.
+4. **Backend Engineer** — C++ services, business logic, APIs, integrations.
    - Primary disciplines: ENG-004 Backend Engineer; ENG-010 API / Integration Engineer.
-5. **AI + Automation Engineer** — AI/ML features, agents, model workflows, Python AI logic, voice, vision, tools, and automation features.
+5. **AI + Automation Engineer** — AI/ML, agents, Python, voice, vision, automation.
    - Primary discipline: ENG-007 AI/ML Engineer. Python/voice/vision/tool/automation work is a project implementation area, not a new numbered discipline unless separately defined.
-6. **Database + Storage Engineer** — Databases, data pipelines, memory/knowledge storage, data integrity, backups, and recovery of stored data.
+6. **Database + Storage Engineer** — Databases, memory, data integrity, backups, recovery.
    - Primary disciplines: ENG-008 Data Engineer; ENG-009 Database Engineer; ENG-023 Backup / Disaster Recovery Engineer; ENG-027 Knowledge Engineer.
-7. **Security + Privacy Engineer** — Application security, identity/access control, secrets, data protection, privacy, and compliance.
+7. **Security + Privacy Engineer** — Access control, secrets, data protection, privacy.
    - Primary disciplines: ENG-011 Security Engineer; ENG-012 Privacy / Compliance Engineer.
-8. **QA + Testing Engineer** — Manual/automated testing, regression checks, bug reproduction, verification, code review, and quality/requirements audit.
+8. **QA + Testing Engineer** — Testing, regression checks, bug reproduction, code review.
    - Primary disciplines: ENG-015 QA / Test Engineer; ENG-026 Code Review / Audit Engineer. ENG-002 Software Engineer / Developer contributes implementation fixes with the relevant owning engineer; it is not an extra user-facing card.
-9. **Build + DevOps Engineer** — Compiler/SDK/toolchain, Qt/CMake build, build automation, configuration, release packaging, deployment, and infrastructure/cloud setup when applicable.
+9. **Build + DevOps Engineer** — Qt/CMake builds, toolchains, releases, deployment.
    - Primary disciplines: ENG-016 DevOps Engineer; ENG-017 Build / Toolchain Engineer; ENG-018 Release Engineer; ENG-019 Infrastructure / Cloud Engineer; ENG-022 Configuration Engineer.
-10. **Performance + Reliability Engineer** — Performance profiling, CPU/RAM/resource use, scalability, system health, network behavior, monitoring, incident diagnosis, resilience, and recovery.
+10. **Performance + Reliability Engineer** — Profiling, monitoring, resilience, scalability, recovery.
     - Primary disciplines: ENG-003 Systems Engineer; ENG-013 Performance Engineer; ENG-014 Reliability Engineer / SRE; ENG-020 Network Engineer; ENG-021 Observability Engineer; ENG-028 Operations / Incident Engineer; ENG-031 Scalability Engineer; ENG-032 Cost / Resource Engineer.
 
 ### Role mapping and shared implementation rules
@@ -139,18 +143,18 @@ The Suggestion Engine must present the following **exactly 10 main engineer card
 - Do not invent an additional “Software Development Engineer” card or a separate “Report Engineer” role. Report preparation remains the orchestrator's responsibility under the Final Engineering Report rules.
 
 - **Detect the actual interaction capabilities first:** determine whether the current agent/client surface supports real clickable controls (buttons, cards, checkboxes, multi-select widgets, or equivalent interactive UI). Do not assume support merely because the agent is running in a chat panel, and do not assume lack of support without checking the available interface/tools.
-- **If clickable controls are supported, use them:** show each feature as a selectable checkbox/card so the user can click multiple features on the same page, select or deselect them independently, and see which items are selected. Provide a working **Next** button to show a new batch of distinct features, while preserving all previous selections and the running selected count. Provide **Back** where supported, plus **Apply Selected**, **Apply for All**, and **Custom** controls as specified below. Clicking a feature only changes its selection; it must not implement code until the user explicitly applies the selection.
+- **If clickable controls are supported, use them:** In Manual Mode, show exactly five project-specific feature cards per batch, each with a short title and one-line description. Let the user select/deselect multiple cards, see selected state/count, and use a working **Next** button to see five new suggestions while preserving earlier selections. Provide **Back** where supported and one explicit **Apply Selected** action. Do not show a **Custom** card or **Apply for All** control; accept a custom request through normal chat. Clicking a card only selects it and must not implement code until the user explicitly applies the selection. In Auto Mode, skip this feature-card batch and start the selected engineer's continuous loop.
 - **If clickable controls are not supported, use numbered fallback:** display the same feature options as a numbered list and tell the user how to select multiple numbers in one reply (for example, `1, 3, 4`), request the next batch (for example, `Next`), review/change selections, and apply them. Preserve selections across batches in this fallback too. Do not describe a numbered list as clickable or claim that an unavailable button works.
 - Use the best supported interaction for the current environment; do not require the user to configure a custom UI just to select multiple features if the current host already supports interactive controls. If an interaction is unavailable, clearly state that limitation and continue with the numbered fallback rather than blocking the workflow. Do not pretend that text instructions alone create working controls.
 
 ### Incremental feature discovery and persistent multi-batch selection
 
-- After the user selects a discipline/group in Manual Mode, generate a first batch of relevant, project-specific feature/task suggestions. Use a manageable batch (normally up to 10 options) plus a **Custom** option. Do not present an arbitrary fixed total feature limit.
+- After the user selects an engineer in Manual Mode, generate exactly five relevant, project-specific feature/task suggestions per batch. Each option must have a short title and one concise description. Do not add a sixth Custom card, Apply for All, or filler suggestions; accept custom requests through normal chat input. There is no fixed total number of batches.
 - When the user presses **Next**, discover additional suggestions that have not already been shown in the current selection session. Use existing project knowledge, the current code/state, selected items, prior suggestions, and any relevant changes to determine what genuinely new work may be useful. Re-inspect affected project areas as needed; a full project rescan is not required when a reliable state/history is sufficient.
 - Never repeat a feature already shown in the current session just to fill a batch, including a feature the user selected, deselected, or skipped. Track stable feature identity/meaning, not just wording, so paraphrased duplicates are also filtered. A previously skipped or dismissed feature may be reconsidered only if new project evidence, changed requirements, or a regression gives a clear reason; explain that reason.
 - Exclude features already implemented and verified in the project, unless new evidence shows they are incomplete, regressed, or require a justified change. Distinguish **shown**, **selected**, **skipped/dismissed**, **pending**, **applied/in progress**, **completed and verified**, and **blocked** states where the runtime supports tracking.
 - Preserve all selected features across Next/Back navigation and across as many batches as the user wants. Each new batch adds new candidates; it must not silently clear previous selections. Show a running total and let the user review or deselect any selected item before applying.
-- Support a single combined **Apply Selected** action (and Enter as a shortcut only when focus and validation make it safe) to apply every feature selected across all batches. Also support **Apply for All** to select all eligible suggestions discovered in the current selection session and apply them as one batch after the user confirms the action. **Custom** lets the user add a task to the same pending selection batch.
+- Support one combined **Apply Selected** action (and Enter as a shortcut only when focus and validation make it safe) to apply every feature selected across all batches. Before applying, summarize the selected tasks and check dependencies, conflicts, prerequisites, and scope. Do not apply merely because a card was clicked. Custom tasks enter through normal chat and join the pending batch only when the user clearly asks to include/apply them.
 - Before applying the combined batch, summarize the selected tasks and inspect dependencies, conflicts, prerequisites, and scope. Create a dependency-aware implementation order; do not claim all tasks are ready if blockers exist. Implement only authorized selections and necessary supporting changes, then build/test, fix and retest relevant defects, and generate the Final Engineering Report.
 - If no additional distinct, relevant features can be found, state that no new suggestions are currently justified and allow the user to review/apply the existing selection or change requirements. Never invent filler features. A large selection is allowed, but handle context, tool, runtime, and practical execution limits honestly; if a batch must be split for technical reasons, preserve the entire selection and process it in ordered sub-batches without silently dropping tasks.
 - The shown/selected/skipped/completed history should persist for the current selection session and, where supported, across VS Code restarts/work cycles. If persistence is unavailable, reconstruct from saved project/task state when possible and disclose uncertainty rather than claiming perfect memory.
@@ -167,7 +171,7 @@ The Suggestion Engine must present the following **exactly 10 main engineer card
 ### Manual Mode
 
 - Let the user choose a grouped engineering option or individual discipline, then use the incremental feature discovery and persistent multi-batch selection workflow above.
-- Preserve all selected features across pages/batches. Apply the combined selection only when the user chooses Apply Selected / the safe Enter shortcut, or explicitly chooses Apply for All and confirms it.
+- Preserve all selected features across pages/batches. Apply the combined selection only when the user chooses Apply Selected or the safe Enter shortcut. Do not show Apply for All or a Custom feature card.
 - Apply only the user's selected scope, including only supporting changes necessary to make that work function. Do not start unrelated work without the user's selection.
 - Implement, build/test as appropriate, fix and retest relevant defects, and generate the Final Engineering Report using verified evidence.
 - After the report, show the relevant engineer-selection cards again. Do not automatically reopen Manual/Auto. The persistent Development Mode button remains available if the user wants to switch modes.
@@ -239,19 +243,3 @@ Use this report for any project. Set the title from the actual project name; nev
 - Do not claim a change, test, or improvement was completed unless evidence supports it. If asked to implement the report in an app, build it in the existing UI framework and connect it to actual task/test data; do not substitute a plain-text wireframe for a requested working UI.
 
 ---
-
-
-## Latest Suggestion Engine UI Clarification
-
-These rules override any conflicting earlier Suggestion Engine instructions in this file.
-
-- At every VS Code launch/restart, silently inspect the root instructions and project state. If this is a completely empty new project with no saved goal, first ask **"What do you want to build?"**, wait for the answer, and save it; then show exactly **Manual Mode** and **Auto Mode**. For an initialized project with a saved goal, skip the goal question and show the two mode choices directly.
-- Keep mode descriptions short: **Manual Mode** — "Choose features and apply them yourself."; **Auto Mode** — "AI implements work automatically in the selected engineer's scope."
-- After the user chooses a mode for that VS Code session, do not show the mode screen after each task or report. Show the engineer-selection screen instead.
-- **Manual Mode:** After every completed, user-authorized task/batch, place the Final Engineering Report first, including its short **Next Improvement Context**; immediately below the report show the engineer-selection screen again. Never insert the Manual/Auto screen between the report and engineer list.
-- **Auto Mode exception:** During the continuous Auto Mode session, do not show a Final Engineering Report after each task/feature/cycle and do not return to engineer selection between improvements. Record evidence as work proceeds, and show one comprehensive Final Engineering Report only after the user types **STOP** and the current task reaches a safe stopping point (or is safely blocked).
-- Architecture Engineer is a one-time setup option. Exclude it from future engineer-selection screens only after the initial architecture/folder structure has actually been created, re-inspected, verified against the expected structure, and recorded in durable project state. A click, preview, generated plan, or attempted Apply is not completion.
-- On VS Code/agent restart, reload the durable project state and compare the actual project folder tree against the saved architecture baseline. Additional folders/files alone do not mean the architecture changed and must not cause Architecture Engineer to reappear. If required baseline folders/components are missing, renamed/moved unexpectedly, or materially incompatible, flag architecture drift and make Architecture Engineer available for review/recovery as appropriate. If the baseline remains intact and compatible, keep Architecture Engineer hidden unless the user explicitly requests an architecture redesign/replacement.
-- **Manual Mode:** After an engineer is selected, show exactly **five** project-specific feature choices, numbered/cards 1–5, and no sixth, seventh, or other extra feature choice. Do not show a **Custom** feature card or **Apply for All** option. If the user wants a custom feature, accept the description through normal chat input. Preserve selections across batches; a Next action may show another batch of five without clearing prior selections.
-- **Auto Mode:** After the user selects an engineer, start that engineer's continuous analyze → improve → check loop directly; do not show the Manual Mode feature-selection batch first. Keep working only in the selected engineer's scope until the user types **STOP**, then finish the active task safely and generate the final report after stopping.
-- Feature cards are genuinely clickable only when the host supports clickable controls. Otherwise present the Manual Mode choices as a numbered list. Do not claim unavailable controls work.
