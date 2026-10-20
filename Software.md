@@ -76,14 +76,16 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 ## Suggestion Engine — Mode Selection and Continuous Improvement
 
-### Persistent workflow entry point
+### Persistent workflow entry point and startup behavior
 
-- At project setup, when starting a new work cycle, and immediately after every Final Engineering Report, always present these two choices first. Use exactly these short card titles and descriptions:
-  1. **Manual Mode** — Select & Apply Features
-  2. **Auto Mode** — Automatic Implementation
-- Keep mode-card text short: show only the title and its one-line description above. Do not add long explanations, paragraphs, or extra subtitles to these mode cards. Explain workflow details only after the user selects a mode or when the user asks for more information.
-- Never jump directly from a report to engineer selection. The user chooses the mode first; only then show relevant engineering disciplines.
-- If the project goal is unknown, first ask what the user wants to build or improve. Otherwise reuse the known goal and inspect the actual project state instead of asking again.
+- **New project, first setup only:** After the project has been created and the root instructions/project state have been inspected, show exactly two initial choices: **Manual Mode** and **Auto Mode**. Do not show a third mode. Save the chosen mode as project state.
+- **Existing project / VS Code restart / laptop restart:** Do not show the Manual/Auto choice screen automatically again. Resume from saved project state and show the relevant engineer-selection cards as the primary screen, with no unsolicited welcome, repeated analysis summary, mode prompt, or unrelated menu. Inspect/reconstruct project state silently in the background when supported.
+- **Always-accessible mode switch:** Provide a persistent, clearly named **Development Mode** button/action in the app/agent UI. When the user explicitly activates it, open the two-choice Manual/Auto screen. This is the normal way to change modes after initial setup; never force the screen on every restart or after each report.
+- **After every completed task and Final Engineering Report:** Show the report first, including the required next-improvement context described in the report rules. Immediately after the report, show the relevant engineer-selection cards again. Do not show Manual/Auto first after every report.
+- Keep the initial mode cards short: **Manual Mode** — Select & Apply Features; **Auto Mode** — Automatic Implementation. Do not add long explanations or extra subtitles to the cards.
+- If the project goal is unknown, ask what the user wants to build or improve only when needed. Otherwise reuse the known goal and inspect the actual project state instead of asking again.
+- Use the **10 Main Engineering Options** defined below as the standard user-facing engineer selection in Suggestion Engine. Show exactly these 10 options when the user is choosing from the full engineering menu; for a task-specific shortlist, show only relevant options and make clear it is a shortlist. The 32 original ENG-001–ENG-032 disciplines remain defined in this file as internal responsibilities/capabilities, mapped to the 10 main options for selection and traceability. Do not delete or renumber the original disciplines.
+- After the user selects one of the 10 main engineer cards, show only tasks/features relevant to that card's mapped responsibilities and the current project state. Include a concise reason for the recommendation and any prerequisite/blocker.
 - Use the **10 Main Engineering Options** defined below as the standard user-facing engineer selection in Suggestion Engine. Show exactly these 10 options when the user is choosing from the full engineering menu; for a task-specific shortlist, show only relevant options and make clear it is a shortlist. The 32 original ENG-001–ENG-032 disciplines remain defined in this file as internal responsibilities/capabilities, mapped to the 10 main options for selection and traceability. Do not delete or renumber the original disciplines.
 - After the user selects one of the 10 main engineer cards, show only tasks/features relevant to that card's mapped responsibilities and the current project state. Include a concise reason for the recommendation and any prerequisite/blocker.
 
@@ -154,7 +156,7 @@ The Suggestion Engine must present the following **exactly 10 main engineer card
 - Preserve all selected features across pages/batches. Apply the combined selection only when the user chooses Apply Selected / the safe Enter shortcut, or explicitly chooses Apply for All and confirms it.
 - Apply only the user's selected scope, including only supporting changes necessary to make that work function. Do not start unrelated work without the user's selection.
 - Implement, build/test as appropriate, fix and retest relevant defects, and generate the Final Engineering Report using verified evidence.
-- After the report, show Manual Mode and Auto Mode first again.
+- After the report, show the relevant engineer-selection cards again. Do not automatically reopen Manual/Auto. The persistent Development Mode button remains available if the user wants to switch modes.
 
 ### Auto Mode — selected-domain continuous work
 
@@ -165,13 +167,14 @@ The Suggestion Engine must present the following **exactly 10 main engineer card
 - **Stop means finish the current cycle, then stop:** When the user requests Stop during a cycle, mark a stop-pending state immediately. Do not begin any new task or cycle. Complete the current cycle to the safest practical stopping point, including relevant verification and its report, then exit Auto Mode. Do not claim success for unfinished or unverified work; if a blocker prevents safe completion, stop safely and report what remains incomplete. Honor the request promptly and use cancellation support for unsafe or uninterruptible operations when available.
 - A stop request must not leave half-applied edits if they can reasonably be completed or safely reverted within the current cycle. Do not start broad new work merely to make the cycle look complete.
 - Pause for genuine blockers or actions requiring mandatory approval, such as destructive data loss, exposed secrets, material external impact, cost, or production deployment. Routine in-scope coding and tests should not trigger repeated permission prompts.
-- After Stop, give one short hint about a useful next improvement. Do not automatically switch engineers or begin that improvement. Then show Manual Mode and Auto Mode first; wait for the user's choice before displaying engineer options.
+- After Stop, give one short hint about a useful next improvement. Do not automatically switch engineers or begin that improvement. Generate the Final Engineering Report with a concise **Next Improvement Context**, then show the relevant engineer-selection cards. Do not automatically switch modes; the user can use the persistent Development Mode button if needed.
 
 ### Current state and roadmap
 
 - Maintain the known project goal, selected mode and domain, completed tasks, pending work, dependencies, blockers, test evidence, and latest report wherever the runtime supports persistent state. If it does not, reconstruct state from repository and report evidence; never invent memory.
 - Recalculate recommendations after each report using actual code, tests, defects, and completed work. Avoid repeating completed suggestions unless new evidence or a regression justifies revisiting them.
-- The report's Improvement Suggestions section must contain concise, evidence-based next-improvement recommendations. The separate Manual Mode / Auto Mode choice is a workflow control shown after the report, not an additional suggestions panel.
+- Every Final Engineering Report must end with a short **Next Improvement Context** directly beneath the three required report sections. It must state one or more evidence-based improvements that would be valuable next, why they matter, and which existing engineer card the user can click to work on them. Example: "Next improvement: add input validation to the settings screen to prevent invalid values. Select Backend Engineer if validation belongs in backend logic, or Frontend Engineer if it is a QML form issue." Choose the role based on actual project evidence; do not use generic or unsupported suggestions.
+- After the report and its Next Improvement Context, show the relevant engineer-selection cards immediately. Do not put the Manual/Auto screen between the report and engineer cards. The persistent Development Mode button is separate from this sequence.
 - If the runtime lacks interactive controls, background execution, persistent state, or safe cancellation, use numbered text choices where possible and state the limitation. This instruction alone cannot create UI controls or guarantee background execution.
 
 ---
@@ -180,11 +183,12 @@ The Suggestion Engine must present the following **exactly 10 main engineer card
 
 Use this report for any project. Set the title from the actual project name; never hardcode an example name. Render a compact dark UI (black background, white text, subtle gray separators, red Before/failure accents, green verified-success accents). Avoid decorative double borders, nested frames, duplicate descriptions, and oversized spacing.
 
-### Required order
+### Required report order
 
 1. **Before / After Comparison** — first section under the title. Show two equal-width cards side-by-side on desktop: **Before on the left** (red cross/accent) and **After on the right** (green check/accent). Before states a verified prior gap or defect; After states the corresponding change actually made. Stack only on narrow screens.
 2. **Engineering Work Summary** — show only the exact engineering disciplines from ENG-001–ENG-032 that actually contributed. Each gets a visible role name and one concise, factual contribution. No dropdowns, no generic list of all 32 roles, and no separate Report Engineer.
 3. **QA Testing & Verification** — concise rows with test name, icon, readable status, and evidence/result when available. PASS (green) only for a test actually run and passed; FAIL (red) for a test that failed; NOT RUN / NOT VERIFIED / BLOCKED use neutral or amber status. Build success alone does not prove functional success.
+4. **Next Improvement Context** — a compact, clearly labeled context note directly below the three sections above and still inside the Final Engineering Report. Summarize the most useful evidence-based next improvement, why it is needed, and the exact relevant engineer card the user can click next. Keep it short and project-specific; if no justified improvement is evident, say so instead of inventing one.
 
 ### Compact layout blueprint
 
@@ -203,13 +207,18 @@ Use this report for any project. Set the title from the actual project name; nev
    [ ✕ FAIL — test name — result/evidence ]
    [ ◷ NOT RUN / BLOCKED — reason, if known ]
 
+4. Next Improvement Context
+   [ Short evidence-based next improvement + why it matters + engineer card to select ]
+
+[ Engineer-selection cards appear immediately below the report ]
+
 ```
 
 ### Evidence and rendering rules
 
 - Populate the report from actual changes, actual contributors, and real test results. The blueprint is only a layout example, never evidence.
 - Keep cards and rows visually simple: one subtle border per card, no extra outer frame around every section, no repeated border around the same content, and no duplicated prose.
-- Keep the remaining three report sections in exactly this order. Do not add Task Summary, Detect & Retest Tracking, Files/Changes & Evidence, or Final Completion Summary as separate report sections. The mode choice shown after the report is a separate workflow control, not another report section.
+- Keep the three core report sections in exactly the order above, followed by the required **Next Improvement Context** note. Do not add Task Summary, Detect & Retest Tracking, Files/Changes & Evidence, or Final Completion Summary as separate report sections. Engineer-selection cards are shown immediately after the full report. Manual/Auto is not automatically shown after reports; the separate Development Mode button opens it on demand.
 - Use icons plus text labels, readable contrast, accessible controls, and keyboard focus/navigation where supported.
 - Do not claim a change, test, or improvement was completed unless evidence supports it. If asked to implement the report in an app, build it in the existing UI framework and connect it to actual task/test data; do not substitute a plain-text wireframe for a requested working UI.
 
