@@ -183,11 +183,11 @@ The Suggestion Engine defines the following **10 main engineer options**. Every 
 
 ### Manual Mode
 
-- Let the user choose a grouped engineering option or individual discipline, then use the incremental feature discovery and persistent multi-batch selection workflow above.
-- Preserve all selected features across pages/batches. Apply the combined selection only when the user chooses Apply Selected or the safe Enter shortcut. Do not show Apply for All or a Custom feature card.
+- Always show all 10 engineer cards, then let the user select one engineer and use the incremental feature discovery and persistent multi-batch selection workflow above.
+- Preserve all selected features across pages/batches. Item 6 in every feature batch is **Next**, not Custom or Apply for All. Apply the combined selection only when the user chooses Apply Selected or presses the safe Enter shortcut.
 - Apply only the user's selected scope, including only supporting changes necessary to make that work function. Do not start unrelated work without the user's selection.
 - Implement, build/test as appropriate, fix and retest relevant defects, and generate the Final Engineering Report using verified evidence.
-- After the report, show the relevant engineer-selection cards again. Do not automatically reopen Manual/Auto. The persistent Development Mode button remains available if the user wants to switch modes.
+- After the report, show all 10 engineer-selection cards again. Do not automatically reopen Manual/Auto. The persistent Development Mode button remains available if the user wants to switch modes.
 
 ### Auto Mode — engineer-specific continuous improvement until STOP
 
