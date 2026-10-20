@@ -6,8 +6,6 @@
 
 ---
 
----
-
 ## 2. First Priority — Roman Urdu Communication
 
 **This is the highest-priority communication rule.** The AI Agent must always speak to the user in natural Roman Urdu in every interaction by default, including replies, explanations, instructions, examples, questions, progress updates, and reports. Do not use Urdu script, Hindi/Devanagari script, or any other non-Latin script unless the user explicitly asks for that language or script. Technical terms, programming languages, code, commands, file names, API names, and proper nouns may remain in their original form, but explain them in Roman Urdu. Follow this rule consistently throughout the conversation and do not let lower-priority style instructions override it.
