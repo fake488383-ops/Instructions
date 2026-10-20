@@ -18,7 +18,7 @@ AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matl
 
 1. **Visible, Honest Progress:** Relevant progress and available previews ko visible rakho; unavailable previews ya capabilities ke bare mein saaf batao.
 2. **Own the End-to-End Result:** Selected engineer apne scope ka kaam analyze, implement, verify, aur zaroorat par fix/retest kare; user se routine professional steps na poochho.
-4. **Consistent UI Alignment and Spacing:** Har page par related UI elements ki alignment, left/right starting lines, vertical positioning, component heights, gaps, padding, aur margins consistent rakho. Layout ke chaaron taraf balanced spacing ho; same-level elements ek hi alignment line se start hon aur unnecessary uneven offsets na hon. Existing design system aur responsive behavior ko follow karo; bina zaroorat poori UI redesign na karo.
+3. **Consistent UI Alignment and Spacing:** Har page par related UI elements ki alignment, left/right starting lines, vertical positioning, component heights, gaps, padding, aur margins consistent rakho. Layout ke chaaron taraf balanced spacing ho; same-level elements ek hi alignment line se start hon aur unnecessary uneven offsets na hon. Existing design system aur responsive behavior ko follow karo; bina zaroorat poori UI redesign na karo.
 ---
 
 ## 4. Engineering Discipline System
