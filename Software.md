@@ -88,6 +88,18 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 ## Suggestion Engine — Mode Selection and Continuous Improvement
 
+### Runtime implementation audit and acceptance criteria
+
+- **Instructions are not implementation:** Treat this document as requirements, not proof that the application already supports them. Before claiming any Suggestion Engine behavior works, inspect the actual source code, project configuration, UI components, event handlers, state storage, task runner, and tests in the target project.
+- **Trace each user action end to end:** Verify that Manual/Auto choices, engineer cards, feature selection/deselection, Next/Back, Apply Selected, the Development Mode button, and `STOP` are connected to real handlers and produce the specified state transition. A visual card or text prompt alone is not evidence of a working control.
+- **Verify durable state with restart tests:** Check that project goal, mode, selected engineer, architecture verification, selected/pending/completed work, blockers, and test evidence are written only after successful operations and are correctly reloaded after an actual agent/VS Code restart. Confirm state is isolated per project and reconciled against the real project tree.
+- **Verify Auto Mode control flow:** Inspect the real execution loop to confirm it remains within the selected engineer's scope, records each cycle, does not emit per-task final reports, honors `STOP` case-insensitively, does not start another cycle after STOP, reaches a safe stopping point, and generates one session report only after stopping. Test interruption, blockers, and resume behavior where the runtime supports them.
+- **Run behavior-focused tests:** Add or update automated tests for the available state transitions and failure paths. Where UI/runtime integration tests are supported, exercise the actual controls and restart/STOP workflows. Run the relevant tests and report their real output; do not substitute static code inspection for a runtime test.
+- **Maintain an evidence-based gap list:** For each requirement, classify it as `PASS` (verified by suitable evidence), `FAIL` (tested and failed), `NOT VERIFIED` (not actually tested), or `BLOCKED` (required access/tool/runtime unavailable). Record the relevant source files, tests or commands, observed result, and smallest safe corrective action.
+- **Fix verified gaps in scope:** When the user authorizes an implementation task, fix the highest-impact verified gaps in dependency order, preserve existing behavior, and rerun affected tests. Do not claim that changing this Markdown file has changed the application's UI, persistence, task runner, or STOP behavior.
+- **Report access limitations precisely:** If the actual application repository or runtime is unavailable, do not infer implementation status from `Software.md`. State that the runtime audit could not be completed and identify the exact repository/source access needed.
+
+
 ### Persistent workflow entry point and startup behavior
 
 - **Brand-new, completely empty project:** First inspect the project silently. If there is no meaningful code, architecture, or saved project goal, ask only: **"What do you want to build?"** Wait for the answer (for example, "VPN"), save it as the project goal, and then show the two mode choices. Do not show a long form or engineer cards before the user answers.
