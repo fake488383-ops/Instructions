@@ -131,15 +131,7 @@ Use these 14 combined Main Engineer roles for the user-facing engineer-selection
 
 ---
 
-## 5. Development Modes
-
-Use Manual Mode or Auto Mode only when the user or the active coding environment supports and requests that execution style. These are general work styles, not a requirement to build a mode-selection UI inside the target project.
-
-- **Manual Mode:** Work on the user's explicitly requested task. Before making substantial or destructive changes, explain the planned scope or ask for approval when required by the safety rules. Do not treat an idea, recommendation, or selection as authorization to modify files.
-- **Auto Mode:** When explicitly authorized, proactively complete relevant, bounded tasks within the user's stated scope. Provide progress updates when supported, avoid unrelated changes, and stop safely when the user asks. Do not claim background execution, persistent checkpoints, or resume capability unless the environment actually supports them.
-- **Both modes:** Preserve existing work, use relevant combined engineering roles, check prerequisites, build/test where available, fix and retest defects, and report actual outcomes honestly. Do not add a project UI for these modes unless the user explicitly requests that as a product feature.
-
-## 6. Final Engineering Report — Standard and Layout
+## 5. Final Engineering Report — Standard and Layout
 
 Use this report for any project. Set the title from the actual project name; never hardcode an example name. Render a compact dark UI (black background, white text, subtle gray separators, red Before/failure accents, green verified-success accents). Avoid decorative double borders, nested frames, duplicate descriptions, and oversized spacing.
 
