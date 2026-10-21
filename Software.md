@@ -85,12 +85,33 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 This section defines the interactive project-development workflow. Follow it when the AI Agent is asked to analyze a project and guide the user through engineering work. These are behavior requirements for the agent/application, not a claim that this workflow UI already exists.
 
-### 5.1 Inspect the Project Before Showing the Workflow
+### 5.1 Mandatory Phase Order — Never Skip or Merge Phases
 
-- Read this `Software.md`, inspect the repository/project files, identify the technology stack (including QML, C++, and Python where applicable), and determine whether the project is empty/new or already contains architecture and implementation.
-- Do not assume the project is empty. For an existing project, summarize its actual state and build on the architecture and code already present; do not recreate or overwrite existing work without justification and authorization.
-- If the project is genuinely new/empty and the intended product is unknown, first ask: **“What do you want to build?”** Provide a text input that accepts a custom project idea and supports Enter/submit. Optional example ideas may be offered, but never replace the user's own input.
-- Analyze the user's idea and available project context, then present the two selectable modes: **Manual Mode** and **Auto Mode**. Keep the workflow interactive with real clickable controls wherever the application supports them; plain text describing buttons is not a substitute for implemented controls.
+Follow this exact state sequence. Each phase must be shown separately, and the user must complete the current phase before the next phase appears:
+
+**Phase 1 — Project Goal**
+- First read this `Software.md` and inspect the repository/project files to understand the current state and technology stack.
+- If the user's goal is not already explicitly stated in the current task/conversation, ask **“What do you want to build?”** and wait for the user's answer. This rule applies whether the project is empty, partially built, or already contains code. Do not infer the desired product merely from existing files.
+- Provide a text input that accepts a custom project idea and supports Enter/submit. Optional examples may be shown, but never replace the user's own input.
+- After the user submits the goal, inspect the existing project in light of that goal. Preserve and build on useful existing code; do not recreate or overwrite existing work without justification and authorization.
+
+**Phase 2 — Mode Selection**
+- Only after Phase 1 has a confirmed project goal, show exactly two selectable options: **Manual Mode** and **Auto Mode**.
+- Wait for the user to select one. Do not show engineer cards on this screen.
+- Store the selected mode for the current workflow. Do not ask the user to select the mode again for every engineer/task unless the user explicitly requests a mode change.
+
+**Phase 3 — Engineer Selection**
+- Only after the mode is selected, show exactly the 10 engineer cards defined in Section 5.2. Do not show only four engineer cards, and do not include **Auto Mode** as an engineer/card/option here.
+- In Manual Mode, wait for the user to select one primary engineer from the 10 cards.
+- In Auto Mode, also let the user choose one primary engineer from the same 10 cards before starting automated work. Auto Mode is a mode, not an engineer.
+- Do not skip directly to this phase from Phase 1, and do not combine Phase 2 and Phase 3 into one list or screen.
+
+**Phase 4 — Engineer-Specific Work**
+- In Manual Mode, after the user selects an engineer, show only that engineer's relevant feature suggestions, following Section 5.3. Do not change project files merely because the engineer or a feature was selected; follow the explicit apply/Enter rules.
+- In Auto Mode, after the user selects an engineer and explicitly starts Auto Mode, follow Section 5.4 and keep work within that engineer's scope.
+- After a report, return to the 10-engineer list while retaining the already selected mode and project goal. Do not restart at Phase 1 or show the mode-selection screen again unless the user asks to change the goal/mode.
+
+**Strict interaction rule:** Never display engineer choices before the project goal is known and the user has selected Manual Mode or Auto Mode. Never merge project-goal input, mode selection, and engineer selection into a single prompt. If actual interactive controls are unsupported, ask one step at a time in plain text and wait for the answer before proceeding; do not simulate multiple phases at once.
 
 ### 5.2 Engineer Selection — 10 Simple Cards, 32 Internal Disciplines
 
