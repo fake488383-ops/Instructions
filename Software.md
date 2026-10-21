@@ -143,20 +143,23 @@ This section defines the interactive project-development workflow. Follow it whe
 
 - The user selects exactly one primary engineer. Do not make the primary engineer selection multi-select.
 - Show feature suggestions only for the selected engineer's responsibilities and the actual project context. Do not show unrelated features.
-- Show exactly five feature cards/options per feature page. The sixth control is **Next** only; it is navigation, not a sixth feature. If there are no more relevant suggestions, do not invent filler features merely to fill a page.
-- Allow the user to select multiple features across the current and later pages. Preserve all selections while navigating between pages and keep the selected state visible.
-- Selecting a feature only marks it for consideration; it must not modify project files immediately. Provide an explicit **Apply Selected** action, and support Enter as an equivalent apply action when focus/context makes that behavior clear. Apply all selected features together only after explicit confirmation.
-- Do not make changes for unselected features. Before applying, check dependencies and prerequisites. Clearly mark a feature as blocked when a necessary prerequisite is missing, explain the specific prerequisite, and do not silently bypass it.
-- After applying the selected work, follow the shared ownership and verification standard in Section 4, generate the Final Engineering Report in Section 6 using real evidence, and then return directly to the engineer list.
+- For the selected engineer, show exactly five relevant feature options and exactly one sixth control labeled **Apply for All**. Do not show a Next button, Custom option, or seventh/eighth/ninth feature control on this feature-selection screen.
+- Each of the five feature options must be independently clickable/selectable. The user may select any combination of the five; visibly preserve each selection.
+- The sixth **Apply for All** control selects all five displayed features together. It must not add extra feature options or navigate to another page.
+- Pressing **Enter** applies the currently selected feature set as one batch. If the user selected individual features, apply only those selected features; if the user clicked **Apply for All**, apply all five together. Do not apply changes merely because an individual feature was clicked. Enter must act on the clear, current selection and must not trigger duplicate submissions.
+- Check dependencies and prerequisites before applying. Clearly mark a feature as blocked when a necessary prerequisite is missing, explain the specific prerequisite, and do not silently bypass it. Do not make changes for unselected features.
+- After the batch is applied, follow the shared ownership and verification standard in Section 4, generate the Final Engineering Report in Section 6 using real evidence, and then return directly to the 10-engineer list.
 
 ### 5.4 Auto Mode
 
 - Show the same 10 engineer choices and require the user to select exactly one primary engineer before starting.
-- Work continuously and proactively within that engineer's relevant scope: inspect the project, identify evidence-based improvements, plan a bounded task, implement it, build/test where supported, fix and retest defects, and provide incremental progress updates. Do not modify unrelated areas or invent speculative work merely to keep the loop busy.
-- The primary engineer may involve other relevant disciplines when needed for a small, directly related task. Keep the primary engineer responsible for coordination, scope, verification, and reporting.
-- Provide a visible **STOP** control. When the user requests STOP, finish the current operation only to a safe stopping point, avoid leaving half-written or broken state where feasible, stop starting new tasks, and produce the Final Engineering Report for work completed and verified so far.
+- Work continuously and proactively within that engineer's relevant scope: inspect the project, identify evidence-based improvements, plan bounded tasks, implement them, build/test where supported, and fix/retest defects. Do not modify unrelated areas or invent speculative work merely to keep the loop busy.
+- Show incremental progress/status updates while working, but **do not generate a separate final report after each feature or task**. Keep a running record of every feature/change actually applied, affected files, verification results, failures, blockers, and unresolved risks.
+- The primary engineer may involve other relevant disciplines when needed for directly related work. Keep the selected primary engineer responsible for coordination, scope, verification, and the consolidated report.
+- Provide a visible **STOP** control and accept the user's STOP request. On STOP, finish the current operation to a safe stopping point, complete/apply the current in-scope change where feasible, avoid leaving half-written or broken state, and do not start another task. Then generate **one consolidated Final Engineering Report** covering the whole Auto Mode run—not one report per feature.
+- The consolidated report must list all features and changes actually applied during that run, their real verification/test outcomes, any failures or features not completed, affected areas/files when available, and remaining risks/blockers. Never describe planned or partially implemented work as successfully applied.
 - Where the application supports resumable work, maintain a task queue and checkpoints so interrupted work can resume safely. Never claim that work continues while the application or agent is not running, or that persistence/resume exists unless it is actually implemented and verified.
-- Report blockers, failures, unverified checks, and remaining risks honestly. Use the report layout in Section 6 when stopping or reaching a defined completion point.
+- Report blockers, failures, unverified checks, and remaining risks honestly. Use the report layout in Section 6 for the single consolidated report generated when STOP is requested or a defined completion point is reached.
 
 ### 5.5 Shared Interaction and Safety Rules
 
