@@ -81,7 +81,62 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 ---
 
-## 5. Final Engineering Report — Standard and Layout
+## 5. Project Development Workflow — Manual Mode and Auto Mode
+
+This section defines the interactive project-development workflow. Follow it when the AI Agent is asked to analyze a project and guide the user through engineering work. These are behavior requirements for the agent/application, not a claim that this workflow UI already exists.
+
+### 5.1 Inspect the Project Before Showing the Workflow
+
+- Read this `Software.md`, inspect the repository/project files, identify the technology stack (including QML, C++, and Python where applicable), and determine whether the project is empty/new or already contains architecture and implementation.
+- Do not assume the project is empty. For an existing project, summarize its actual state and build on the architecture and code already present; do not recreate or overwrite existing work without justification and authorization.
+- If the project is genuinely new/empty and the intended product is unknown, first ask: **“What do you want to build?”** Provide a text input that accepts a custom project idea and supports Enter/submit. Optional example ideas may be offered, but never replace the user's own input.
+- Analyze the user's idea and available project context, then present the two selectable modes: **Manual Mode** and **Auto Mode**. Keep the workflow interactive with real clickable controls wherever the application supports them; plain text describing buttons is not a substitute for implemented controls.
+
+### 5.2 Engineer Selection
+
+- Both modes begin with the same list of exactly 10 primary engineer choices. Each choice must have a clear role name and a concise description of its responsibility. The user has approved the workflow, but has not supplied a final custom list; until they do, use this provisional list mapped to the engineering disciplines in Section 4:
+  1. Architecture Engineer (Software Architect, ENG-001)
+  2. UI/UX + Frontend Engineer (UI/UX Engineer, ENG-006, with Frontend Engineer, ENG-005)
+  3. Backend Engineer (ENG-004)
+  4. AI Automation Engineer (coordinate relevant AI/ML and integration work; ENG-007 and ENG-010 as applicable)
+  5. AI/ML Engineer (ENG-007)
+  6. Database Engineer (ENG-009)
+  7. Security Engineer (ENG-011)
+  8. Voice & Audio Engineer (a project-specific specialization coordinated through the relevant disciplines in Section 4; it is not a new ENG role)
+  9. QA & Testing Engineer (QA / Test Engineer, ENG-015)
+  10. Build & Toolchain Engineer (ENG-017)
+- Treat this list as a provisional UI grouping, not a replacement for the 32 authoritative disciplines in Section 4. Only the chosen primary engineer is user-selected; that engineer may involve other relevant disciplines for small, necessary, in-scope tasks without repeatedly asking permission. The primary engineer remains accountable for the selected scope and final result.
+- After a report is completed, return to the engineer list so the user can select another engineer. Do not automatically open mode selection or start another task.
+
+### 5.3 Manual Mode
+
+- The user selects exactly one primary engineer. Do not make the primary engineer selection multi-select.
+- Show feature suggestions only for the selected engineer's responsibilities and the actual project context. Do not show unrelated features.
+- Show exactly five feature cards/options per feature page. The sixth control is **Next** only; it is navigation, not a sixth feature. If there are no more relevant suggestions, do not invent filler features merely to fill a page.
+- Allow the user to select multiple features across the current and later pages. Preserve all selections while navigating between pages and keep the selected state visible.
+- Selecting a feature only marks it for consideration; it must not modify project files immediately. Provide an explicit **Apply Selected** action, and support Enter as an equivalent apply action when focus/context makes that behavior clear. Apply all selected features together only after explicit confirmation.
+- Do not make changes for unselected features. Before applying, check dependencies and prerequisites. Clearly mark a feature as blocked when a necessary prerequisite is missing, explain the specific prerequisite, and do not silently bypass it.
+- After applying the selected work, follow the shared ownership and verification standard in Section 4, generate the Final Engineering Report in Section 6 using real evidence, and then return directly to the engineer list.
+
+### 5.4 Auto Mode
+
+- Show the same 10 engineer choices and require the user to select exactly one primary engineer before starting.
+- Work continuously and proactively within that engineer's relevant scope: inspect the project, identify evidence-based improvements, plan a bounded task, implement it, build/test where supported, fix and retest defects, and provide incremental progress updates. Do not modify unrelated areas or invent speculative work merely to keep the loop busy.
+- The primary engineer may involve other relevant disciplines when needed for a small, directly related task. Keep the primary engineer responsible for coordination, scope, verification, and reporting.
+- Provide a visible **STOP** control. When the user requests STOP, finish the current operation only to a safe stopping point, avoid leaving half-written or broken state where feasible, stop starting new tasks, and produce the Final Engineering Report for work completed and verified so far.
+- Where the application supports resumable work, maintain a task queue and checkpoints so interrupted work can resume safely. Never claim that work continues while the application or agent is not running, or that persistence/resume exists unless it is actually implemented and verified.
+- Report blockers, failures, unverified checks, and remaining risks honestly. Use the report layout in Section 6 when stopping or reaching a defined completion point.
+
+### 5.5 Shared Interaction and Safety Rules
+
+- Make the workflow stateful: project idea, selected mode, selected primary engineer, current feature page, selected features, progress, and stop state must not be lost during ordinary navigation.
+- Keep UI previews and controls aligned with actual backend behavior. Do not show a working Apply, Auto, or STOP control unless it performs its advertised action.
+- Analyze project dependencies before implementation. Avoid destructive or irreversible actions without checking impact and obtaining explicit approval where required by Section 4.
+- Follow the user's stated scope, ethical and safety requirements, and the evidence-based completion standard in this file.
+
+---
+
+## 6. Final Engineering Report — Standard and Layout
 
 Use this report for any project. Set the title from the actual project name; never hardcode an example name. Render a compact dark UI (black background, white text, subtle gray separators, red Before/failure accents, green verified-success accents). Avoid decorative double borders, nested frames, duplicate descriptions, and oversized spacing.
 
