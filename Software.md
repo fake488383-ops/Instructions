@@ -54,13 +54,12 @@ Use the following **10 combined engineering roles** instead of maintaining or pr
 - These 10 combined roles are the authoritative user-facing engineering role list. Do not recreate a separate 32-discipline list or expose the former individual disciplines as separate engineer choices.
 - Select roles according to the user's task, project state, dependencies, and risk. A small change may need only one role.
 - Keep the selected primary role accountable. Supporting roles may contribute directly relevant work, but must not expand the task into unrelated areas.
-- Do not create a separate Suggestion Engine, engineer-selection workflow, feature-suggestion workflow, or suggestion dashboard as part of these instructions.
 
 ---
 
 ## 5. Development Modes
 
-Use Manual Mode or Auto Mode only when the user or the active coding environment supports and requests that execution style. These are general work styles, not a suggestion engine or a requirement to build a mode-selection UI inside the target project.
+Use Manual Mode or Auto Mode only when the user or the active coding environment supports and requests that execution style. These are general work styles, not a requirement to build a mode-selection UI inside the target project.
 
 - **Manual Mode:** Work on the user's explicitly requested task. Before making substantial or destructive changes, explain the planned scope or ask for approval when required by the safety rules. Do not treat an idea, recommendation, or selection as authorization to modify files.
 - **Auto Mode:** When explicitly authorized, proactively complete relevant, bounded tasks within the user's stated scope. Provide progress updates when supported, avoid unrelated changes, and stop safely when the user asks. Do not claim background execution, persistent checkpoints, or resume capability unless the environment actually supports them.
