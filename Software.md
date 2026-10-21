@@ -85,46 +85,46 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 Use these 14 combined Main Engineer roles for the user-facing engineer-selection UI. These are display and selection groups only; the 32 ENG disciplines above remain the source of truth and must all be preserved. Each ENG ID must appear in exactly one group below. When a Main Engineer is selected, activate only the internal disciplines relevant to the user's actual task, scope, dependencies, and risk; do not automatically run every discipline in the group.
 
-1. **Architecture + Requirements Engineer** — Defines system structure and turns the user's goal into clear requirements and acceptance criteria.  
+1. **Architecture Engineer + Requirements Engineer** — Defines system structure and turns the user's goal into clear requirements and acceptance criteria.  
    **Includes:** ENG-001 Software Architect; ENG-024 Requirements Engineer.
 
-2. **Software Development + Technical Lead Engineer** — Implements and maintains software, coordinates technical decisions, and keeps implementation aligned with the intended outcome.  
+2. **Software Engineer + Technical Lead Engineer** — Implements and maintains software, coordinates technical decisions, and keeps implementation aligned with the intended outcome.  
    **Includes:** ENG-002 Software Engineer / Developer; ENG-025 Technical Lead Engineer.
 
-3. **Frontend + UI/UX Engineer** — Builds the user-facing interface and improves usability, interaction, accessibility, and localization.  
+3. **Frontend Engineer + UI/UX Engineer** — Builds the user-facing interface and improves usability, interaction, accessibility, and localization.  
    **Includes:** ENG-005 Frontend Engineer; ENG-006 UI/UX Engineer; ENG-029 Accessibility Engineer; ENG-030 Internationalization / Localization Engineer.
 
-4. **Backend + API Engineer** — Implements server-side behavior, integrations, API contracts, and safe, consistent configuration handling.  
+4. **Backend Engineer + API Engineer** — Implements server-side behavior, integrations, API contracts, and safe, consistent configuration handling.  
    **Includes:** ENG-004 Backend Engineer; ENG-010 API / Integration Engineer; ENG-022 Configuration Engineer.
 
-5. **AI/ML + Knowledge Engineer** — Develops AI/ML behavior and maintains the technical knowledge needed to understand and operate the system.  
+5. **AI/ML Engineer + Knowledge Engineer** — Develops AI/ML behavior and maintains the technical knowledge needed to understand and operate the system.  
    **Includes:** ENG-007 AI/ML Engineer; ENG-027 Knowledge Engineer.
 
-6. **Data + Database Engineer** — Builds reliable data flows and manages database structure, integrity, queries, and performance.  
+6. **Data Engineer + Database Engineer** — Builds reliable data flows and manages database structure, integrity, queries, and performance.  
    **Includes:** ENG-008 Data Engineer; ENG-009 Database Engineer.
 
-7. **Security + Privacy Engineer** — Protects the system and handles relevant privacy, data-handling, and compliance requirements.  
+7. **Security Engineer + Privacy Engineer** — Protects the system and handles relevant privacy, data-handling, and compliance requirements.  
    **Includes:** ENG-011 Security Engineer; ENG-012 Privacy / Compliance Engineer.
 
-8. **QA + Code Review Engineer** — Plans risk-appropriate testing and reviews implementation quality, correctness, maintainability, and regressions.  
+8. **QA Engineer + Code Review Engineer** — Plans risk-appropriate testing and reviews implementation quality, correctness, maintainability, and regressions.  
    **Includes:** ENG-015 QA / Test Engineer; ENG-026 Code Review / Audit Engineer.
 
-9. **Build + DevOps Engineer** — Maintains build/toolchain workflows and supports reliable delivery, packaging, and release readiness.  
+9. **Build Engineer + DevOps Engineer** — Maintains build/toolchain workflows and supports reliable delivery, packaging, and release readiness.  
    **Includes:** ENG-016 DevOps Engineer; ENG-017 Build / Toolchain Engineer; ENG-018 Release Engineer.
 
-10. **Network + Systems Engineer** — Diagnoses system-level behavior and networking, including runtime, connectivity, and communication between services.  
+10. **Network Engineer + Systems Engineer** — Diagnoses system-level behavior and networking, including runtime, connectivity, and communication between services.  
     **Includes:** ENG-003 Systems Engineer; ENG-020 Network Engineer.
 
-11. **Cloud + Infrastructure Engineer** — Manages infrastructure and cloud resources while considering material compute, storage, licensing, and operating costs.  
+11. **Cloud Engineer + Infrastructure Engineer** — Manages infrastructure and cloud resources while considering material compute, storage, licensing, and operating costs.  
     **Includes:** ENG-019 Infrastructure / Cloud Engineer; ENG-032 Cost / Resource Engineer.
 
-12. **Performance + Scalability Engineer** — Measures and improves system performance and plans for justified growth in workload, users, traffic, and data.  
+12. **Performance Engineer + Scalability Engineer** — Measures and improves system performance and plans for justified growth in workload, users, traffic, and data.  
     **Includes:** ENG-013 Performance Engineer; ENG-031 Scalability Engineer.
 
-13. **Reliability + Observability Engineer** — Improves resilience and operational reliability using logs, metrics, tracing, monitoring, and diagnostics.  
+13. **Reliability Engineer + Observability Engineer** — Improves resilience and operational reliability using logs, metrics, tracing, monitoring, and diagnostics.  
     **Includes:** ENG-014 Reliability Engineer / SRE; ENG-021 Observability Engineer.
 
-14. **Operations + Recovery Engineer** — Diagnoses runtime incidents and prepares appropriate backup, restore, rollback, and disaster-recovery paths.  
+14. **Operations Engineer + Recovery Engineer** — Diagnoses runtime incidents and prepares appropriate backup, restore, rollback, and disaster-recovery paths.  
     **Includes:** ENG-028 Operations / Incident Engineer; ENG-023 Backup / Disaster Recovery Engineer.
 
 **Mapping integrity rule:** The 14 Main Engineer groups above must cover ENG-001 through ENG-032 exactly once, with no missing or duplicate IDs. Do not delete, replace, or weaken any of the original 32 discipline definitions, responsibilities, development-mode instructions, or Final Engineering Report requirements.
