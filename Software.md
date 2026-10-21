@@ -92,21 +92,52 @@ This section defines the interactive project-development workflow. Follow it whe
 - If the project is genuinely new/empty and the intended product is unknown, first ask: **“What do you want to build?”** Provide a text input that accepts a custom project idea and supports Enter/submit. Optional example ideas may be offered, but never replace the user's own input.
 - Analyze the user's idea and available project context, then present the two selectable modes: **Manual Mode** and **Auto Mode**. Keep the workflow interactive with real clickable controls wherever the application supports them; plain text describing buttons is not a substitute for implemented controls.
 
-### 5.2 Engineer Selection
+### 5.2 Engineer Selection — 10 Simple Cards, 32 Internal Disciplines
 
-- Both modes begin with the same list of exactly 10 primary engineer choices. Each choice must have a clear role name and a concise description of its responsibility. The user has approved the workflow, but has not supplied a final custom list; until they do, use this provisional list mapped to the engineering disciplines in Section 4:
-  1. Architecture Engineer (Software Architect, ENG-001)
-  2. UI/UX + Frontend Engineer (UI/UX Engineer, ENG-006, with Frontend Engineer, ENG-005)
-  3. Backend Engineer (ENG-004)
-  4. AI Automation Engineer (coordinate relevant AI/ML and integration work; ENG-007 and ENG-010 as applicable)
-  5. AI/ML Engineer (ENG-007)
-  6. Database Engineer (ENG-009)
-  7. Security Engineer (ENG-011)
-  8. Voice & Audio Engineer (a project-specific specialization coordinated through the relevant disciplines in Section 4; it is not a new ENG role)
-  9. QA & Testing Engineer (QA / Test Engineer, ENG-015)
-  10. Build & Toolchain Engineer (ENG-017)
-- Treat this list as a provisional UI grouping, not a replacement for the 32 authoritative disciplines in Section 4. Only the chosen primary engineer is user-selected; that engineer may involve other relevant disciplines for small, necessary, in-scope tasks without repeatedly asking permission. The primary engineer remains accountable for the selected scope and final result.
-- After a report is completed, return to the engineer list so the user can select another engineer. Do not automatically open mode selection or start another task.
+**Display rule:** Show the user exactly 10 clear, clickable primary-engineer cards—not all 32 disciplines as separate choices. Preserve all 32 original ENG disciplines in Section 4 and use them behind the scenes through the mapping below. This is a user-interface simplification, not a deletion, rename, or reduction of the engineering system.
+
+#### The 10 user-facing engineer cards
+
+1. **Architecture Engineer** — Understands what the user wants to build, defines requirements and acceptance criteria, plans the folder/project structure, and makes the main technical design decisions.
+   - Internal disciplines: ENG-001 Software Architect, ENG-024 Requirements Engineer, ENG-025 Technical Lead Engineer.
+
+2. **Frontend Engineer** — Builds and improves the visible application: QML screens, layouts, buttons, navigation, interaction behavior, visual consistency, accessibility, and localization.
+   - Internal disciplines: ENG-005 Frontend Engineer, ENG-006 UI/UX Engineer, ENG-029 Accessibility Engineer, ENG-030 Internationalization / Localization Engineer.
+
+3. **Backend Engineer** — Implements application logic and services, connects frontend to backend, handles APIs and integrations, and keeps component communication reliable.
+   - Internal disciplines: ENG-002 Software Engineer / Developer, ENG-004 Backend Engineer, ENG-010 API / Integration Engineer.
+
+4. **AI + Automation Engineer** — Builds and integrates AI/ML capabilities, agent workflows, tool use, and task automation. In projects that use them, this card may cover Python-based AI logic, voice, vision, and automation features; these are implementation areas, not additional ENG discipline IDs.
+   - Internal discipline: ENG-007 AI/ML Engineer. Involve ENG-010 for integrations only when needed; ENG-010 remains primarily mapped to Backend Engineer.
+
+5. **Data + Database Engineer** — Organizes application data, data pipelines, schemas, database queries, data integrity, migrations, and technical knowledge needed by the project.
+   - Internal disciplines: ENG-008 Data Engineer, ENG-009 Database Engineer, ENG-027 Knowledge Engineer.
+
+6. **Security + Privacy Engineer** — Protects the application and its data, checks access control and secrets handling, identifies security risks, and considers privacy and compliance requirements where relevant.
+   - Internal disciplines: ENG-011 Security Engineer, ENG-012 Privacy / Compliance Engineer.
+
+7. **QA + Testing Engineer** — Plans and runs relevant tests, reproduces bugs, checks regressions, reviews code quality, and supplies evidence about what passed, failed, or remains unverified.
+   - Internal disciplines: ENG-015 QA / Test Engineer, ENG-026 Code Review / Audit Engineer.
+
+8. **Build + DevOps Engineer** — Keeps the project buildable and deliverable: toolchains, Qt/CMake build configuration, development automation, environment configuration, packaging, and release preparation.
+   - Internal disciplines: ENG-016 DevOps Engineer, ENG-017 Build / Toolchain Engineer, ENG-018 Release Engineer, ENG-022 Configuration Engineer.
+
+9. **Performance + Reliability Engineer** — Finds and resolves justified speed or resource problems, improves stability and fault handling, and adds useful monitoring and operational diagnostics.
+   - Internal disciplines: ENG-013 Performance Engineer, ENG-014 Reliability Engineer / SRE, ENG-021 Observability Engineer, ENG-028 Operations / Incident Engineer, ENG-031 Scalability Engineer.
+
+10. **Systems + Infrastructure Engineer** — Handles system-level interactions, runtime environments, networking, infrastructure, backup/recovery planning, and cost/resource considerations when relevant.
+    - Internal disciplines: ENG-003 Systems Engineer, ENG-019 Infrastructure / Cloud Engineer, ENG-020 Network Engineer, ENG-023 Backup / Disaster Recovery Engineer, ENG-032 Cost / Resource Engineer.
+
+#### Rules for mapping and activation
+
+- The mappings above assign each original discipline ENG-001 through ENG-032 to exactly one primary card. Do not omit, delete, rename, or duplicate the authoritative discipline definitions in Section 4.
+- The card selected by the user becomes the **primary accountable engineer** for that task. Its mapped disciplines define its normal area of ownership; relevant supporting disciplines may collaborate when the task crosses boundaries.
+- Do not automatically activate all 32 disciplines. Activate only the relevant mapped disciplines based on the user's goal, project state, risk, dependencies, and affected components.
+- If a task needs a discipline mapped to another card, involve it as a supporting discipline without making the user choose from the full 32-item list again. Keep one primary engineer accountable for the selected task.
+- Display each card with its role name and a short plain-language description. Use a simple, readable list or two-column card layout where appropriate; do not show the internal ENG-ID mapping as 32 separate user choices.
+- The user must be able to select a card through an actual clickable control in the implemented application. A text-only list or decorative mockup does not satisfy the interactive UI requirement. Keep the selection state visible and do not start applying project changes merely because a card was selected.
+- If the agent environment cannot render clickable UI, state that limitation honestly and provide a clear text-based selection fallback, such as asking the user to enter a number from 1 to 10. Do not claim a working UI exists unless it is implemented and verified.
+- Both Manual Mode and Auto Mode use these same 10 cards. After a report is completed, return to the 10-card engineer list so the user can choose the next task; do not automatically start another task.
 
 ### 5.3 Manual Mode
 
