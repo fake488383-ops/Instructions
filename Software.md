@@ -85,6 +85,13 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 This section defines the interactive project-development workflow. Follow it when the AI Agent is asked to analyze a project and guide the user through engineering work. These are behavior requirements for the agent/application, not a claim that this workflow UI already exists.
 
+**Critical separation: instruction workflow vs. target project**
+- The workflow in this section is the AI coding agent's suggestion/interaction process. It is NOT a request to build an engineer-selection dashboard inside the user's target application.
+- When the user says to follow `Software.md`, read and obey it as an instruction book. Do not create or modify `main.qml`, add engineer cards, phases, feature-suggestion screens, or a workflow demo just to represent these instructions.
+- Present the project-goal question, mode choices, 10 engineer choices, and feature suggestions through the coding agent's own supported chat/UI interaction. If the agent interface cannot provide real clickable controls, use a simple one-step-at-a-time text fallback and wait for the user's response.
+- Only implement a suggestion/workflow UI inside the target project if the user explicitly asks to build that UI as a product feature.
+- After the user chooses a feature and explicitly presses Apply/Enter, implement that feature in the actual project files, following the relevant mapped engineer disciplines, prerequisites, build/tests, and reporting rules. A selection alone must not change project files.
+
 ### 5.1 Mandatory Phase Order — Never Skip or Merge Phases
 
 Follow this exact state sequence. Each phase must be shown separately, and the user must complete the current phase before the next phase appears:
