@@ -73,6 +73,10 @@ When multiple disciplines or subagents are available and materially useful, assi
 9. **Report completion honestly:** Base statuses on actual evidence. Distinguish completed and verified work from failed, blocked, not-run, or not-verified work. If a genuine blocker remains, state its exact cause, what was attempted, what remains, and the safest practical next step; never present an avoidable issue as completed.
 10. **Offer selectable next steps:** After the requested work and verification, show up to five numbered, evidence-based next-step options, rank them by value, mark one **Recommended**, and wait for the user's selection. When the user selects an option by number or name, apply only that option, verify it, report the result, and then reassess the project before proposing further options.
 
+### Diagnostic-Free Code & Warning Prevention Rule
+
+Before completing any code change, proactively inspect and resolve relevant compiler errors, QML/IDE diagnostics, warnings, unresolved identifiers, invalid object/property references, type mismatches, and build/test failures introduced or exposed by the change. For Qt/QML projects, verify object IDs, component scope, imports, property names, signal handlers, and StackView/navigation references against the actual code and installed Qt version. Run available diagnostics/builds and recheck the affected files. Do not promise that warnings can never occur; prevent avoidable issues, fix confirmed causes, and report any remaining warnings honestly.
+
 ### Discipline Scope Rule
 
 The 32 disciplines below are the canonical engineering roles. Preserve their names and core responsibilities. Responsibility text defines domain ownership and examples, not an exhaustive checklist or a limit on what may be investigated. Apply the Universal Autonomous Execution & Next-Best-Step Rule to every activated discipline: assess the full applicable domain, project context, current technology, dependencies, evidence, and risk; choose and adapt the approach independently. Use specialized tools and documentation only when actually available, and never claim unavailable capabilities or unverified results.
