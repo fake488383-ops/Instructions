@@ -94,21 +94,44 @@ The 32 disciplines below are the canonical engineering roles. Preserve their nam
 
 ## 5. Final Engineering Report — Standard and Layout
 
-Use this report for any project. Set the title from the actual project name; never hardcode an example name. Render a compact dark UI (black background, white text, subtle gray separators, red Before failure accents, green verified-success accents). Avoid decorative double borders, nested frames, duplicate descriptions, and oversized spacing.
+Generate the report after the requested engineering work and applicable verification are complete. Use the actual project name and actual workspace results. Keep the report compact, readable, and consistent with the existing application UI.
 
-### Required report order
+### Report Structure
 
-1. **Before After Comparison** — first section under the title. Show two equal-width cards side-by-side on desktop: **Before on the left** (red cross accent) and **After on the right** (green check accent). Before states a verified prior gap or defect; After states the corresponding change actually made. Stack only on narrow screens.
-2. **Engineering Work Summary** — show only the actual engineering disciplines from the 32-discipline table in Section 4 that contributed. Each gets a visible role name and one concise, factual contribution. No dropdowns, no generic list of all disciplines, and no separate Report Engineer.
-3. **QA Testing & Verification** — concise rows with test name, icon, readable status, and evidence result when available. PASS (green) only for a test actually run and passed; FAIL (red) for a test that failed; NOT RUN NOT VERIFIED BLOCKED use neutral or amber status. Build success alone does not prove functional success.
-4. **Next Improvement Suggestions** — directly below the three core report sections, show up to five concise, numbered, evidence-based optional improvements (1–5), each with a short reason/value. Do not invent options. If no meaningful improvement is justified, say so. Do not apply any optional improvement until the user selects it.
+Show these four sections in this exact order:
 
-### Evidence and rendering rules
+1. **Before / After Comparison** — Two comparison cards side by side on desktop. Before uses a red cross and describes the verified original problem or state. After uses a green check and describes the change actually made. Stack the cards on narrow screens.
+2. **Engineering Work Summary** — List only the engineering disciplines from Section 4 that actually contributed. Show each exact discipline name and one short, factual description of its work. Never list engineers who did not contribute.
+3. **QA Testing & Verification** — Show each relevant test/check, its status, and a short result. Use PASS only when the check was run and passed; FAIL when it failed; NOT RUN, NOT VERIFIED, or BLOCKED when appropriate. A successful build alone does not prove the application works correctly.
+4. **Next Improvement Suggestions** — Show exactly five concise, numbered suggestions when five meaningful improvements can be supported by the project evidence. Put the strongest, highest-value and most relevant option first and clearly mark it **Recommended**. Each suggestion should be one line, with a short benefit where possible. Do not apply suggestions until the user selects one. If fewer than five meaningful improvements genuinely exist, do not invent suggestions just to fill the list.
 
-- Populate the report from actual changes, actual contributors, and real test results. The blueprint is only a layout example, never evidence.
-- Keep cards and rows visually simple: one subtle border per card, no extra outer frame around every section, no repeated border around the same content, and no duplicated prose.
-- Keep the three core report sections in exactly the order above, followed by up to five **Next Improvement Suggestions**. Do not add Task Summary, Detect & Retest Tracking, Files Changes & Evidence, or Final Completion Summary as separate report sections. Do not automatically open a mode-selection screen after a report; wait for the user's next instruction.
-- Use icons plus text labels, readable contrast, accessible controls, and keyboard focus navigation where supported.
-- Do not claim a change, test, or improvement was completed unless evidence supports it. If asked to implement the report in an app, build it in the existing UI framework and connect it to actual task test data; do not substitute a plain-text wireframe for a requested working UI.
+### Report Blueprint
 
----
+Use this as the structure and visual blueprint, replacing all example text with verified project-specific information:
+
+```text
+[Actual Project Name] — Engineering Report
+
+BEFORE / AFTER COMPARISON
+┌─ ❌ BEFORE ─────────────┐  ┌─ ✅ AFTER ──────────────┐
+│ [Verified prior issue] │  │ [Verified change made]  │
+└────────────────────────┘  └─────────────────────────┘
+
+ENGINEERING WORK SUMMARY
+[Actual Discipline Name] — [Work actually completed]
+[Actual Discipline Name] — [Work actually completed]
+
+QA TESTING & VERIFICATION
+[Check name] — [PASS / FAIL / NOT RUN / NOT VERIFIED / BLOCKED] — [Actual result]
+[Check name] — [PASS / FAIL / NOT RUN / NOT VERIFIED / BLOCKED] — [Actual result]
+
+NEXT IMPROVEMENT SUGGESTIONS
+1. Recommended — [Best evidence-based next improvement]
+2. [Second improvement]
+3. [Third improvement]
+4. [Fourth improvement]
+5. [Fifth improvement]
+```
+
+The report must be based on actual changes, actual contributors, and real verification results. Keep the four sections in the specified order; do not add extra report sections, decorative nested frames, duplicate descriptions, or an automatic mode-selection screen. Use clear text labels as well as status icons, maintain readable contrast, and use accessible, keyboard-operable controls where supported. Never claim unverified work as complete.
+
