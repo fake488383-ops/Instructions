@@ -141,32 +141,7 @@ Use these 12 combined Main Engineer roles as the user-facing engineer-selection 
 
 ---
 
-## 5. Per-Task Report and Engineer Selection Workflow
-
-Apply this workflow every time the user submits a prompt or asks the agent to perform a task—not only when a project is finished. The user's ordinary prompt remains the task instruction and source of truth.
-
-### Required order after each task
-
-1. **Perform the requested task first:** Understand the prompt, inspect relevant project files, make the authorized changes, and run the appropriate checks. Do not require the user to choose an engineer number before their ordinary task can be handled.
-2. **Show an Engineering Report above the selection controls:** After the task attempt, display the report first, using the report layout and evidence rules in Section 6. Make it clear what was newly added, changed, fixed, discovered, or left unresolved. Include relevant files or components, actual test outcomes, and what could not be verified. If no code or files changed, say what analysis or other work was actually done; do not invent changes. Label the report as task-level/progress report when the overall work is still ongoing, and as final only when the current task or improvement cycle is actually finished or stopped.
-3. **Show the 12 numbered Main Engineer Groups below the report:** Display the existing 12 groups from Section 4 as a simple, clean, sequential numbered text list. Do not replace them with clickable cards or a dense matrix. The user can type a group number (for example, `8`) to select that group for continuous improvement.
-4. **Keep ordinary prompting available:** The user may instead type a normal ChatGPT-style prompt or follow-up instruction without entering a number. Treat ordinary text as a normal task/instruction, not as an invalid selection. If the message is clearly a valid group number from 1 to 12, treat it as a selection; otherwise interpret it as normal text unless clarification is genuinely necessary. Do not force a group selection after every report.
-5. **When a group is selected, start its continuous improvement cycle:** Confirm the selected group and its scope, then repeatedly inspect/audit the relevant project, identify evidence-based defects or worthwhile improvements, prioritize them, implement safe in-scope changes, run appropriate tests, fix failures, and record the outcome. Repeat the cycle while the user has not stopped it and useful, authorized, in-scope work remains. Preserve the user's original requirements and existing behavior. Do not modify unrelated areas just to keep the loop active; do not invent work when no justified improvement remains.
-6. **Respect boundaries and dependencies:** Work primarily within the selected group's mapped disciplines and relevant dependencies. If a necessary fix belongs to another group, make only the minimum necessary dependency change when authorized, document it, and include the responsible discipline in the report. Do not automatically run every discipline.
-7. **STOP command:** While continuous improvement is active, if the user enters `STOP` and presses Enter (case-insensitive, allowing surrounding whitespace), stop starting new work. Safely reach a stopping point for the current operation where possible, avoid leaving partial or corrupt changes, run a quick status check when feasible, and report completed work, unfinished work, tests passed/failed/not run, remaining risks, and rollback or recovery status. Never claim an interrupted or unverified change is complete. If the agent environment cannot reliably interrupt an in-progress tool call, explain that limitation and stop at the earliest safe point.
-8. **No false promise of persistence:** Continue only while the current agent session and its supported execution workflow permit it. Do not claim that the loop will run after the application closes, the computer shuts down, or the session ends unless persistent execution and resume behavior are actually implemented and verified.
-
-### Selection panel behavior
-
-- Keep the layout simple and sequence-wise: **Engineering Report first; numbered Main Engineer Groups below it; ordinary prompt input remains available.**
-- The numbered list is an optional next-action selector, not a mandatory form or a replacement for chat.
-- Preserve the full 12-group mapping and all 32 underlying ENG discipline definitions. A selected group remains the active improvement scope until the user selects another group, gives a conflicting new task, or enters `STOP`; follow the newest explicit user instruction.
-- After each improvement cycle or meaningful batch of changes, refresh the report with factual new findings, changes, test evidence, and pending items, then show the numbered group list underneath again while keeping ordinary prompting available.
-- Do not repeatedly present already completed work as new. Distinguish **new**, **changed/fixed**, **verified**, **not verified**, and **still pending** items.
-
----
-
-## 6. Final Engineering Report — Standard and Layout
+## 5. Final Engineering Report — Standard and Layout
 
 Use this report for any project. Set the title from the actual project name; never hardcode an example name. Render a compact dark UI (black background, white text, subtle gray separators, red Before failure accents, green verified-success accents). Avoid decorative double borders, nested frames, duplicate descriptions, and oversized spacing.
 
@@ -204,7 +179,7 @@ Use this report for any project. Set the title from the actual project name; nev
 
 - Populate the report from actual changes, actual contributors, and real test results. The blueprint is only a layout example, never evidence.
 - Keep cards and rows visually simple: one subtle border per card, no extra outer frame around every section, no repeated border around the same content, and no duplicated prose.
-- Keep the three core report sections in exactly the order above, followed by the required **Next Improvement Context** note. Do not add Task Summary, Detect & Retest Tracking, Files Changes & Evidence, or Final Completion Summary as separate report sections. After the report, show the optional numbered Main Engineer Group list underneath as specified in Section 5; keep ordinary prompt input available and do not force a selection.
+- Keep the three core report sections in exactly the order above, followed by the required **Next Improvement Context** note. Do not add Task Summary, Detect & Retest Tracking, Files Changes & Evidence, or Final Completion Summary as separate report sections. Do not automatically open a mode-selection screen after a report; wait for the user's next instruction.
 - Use icons plus text labels, readable contrast, accessible controls, and keyboard focus navigation where supported.
 - Do not claim a change, test, or improvement was completed unless evidence supports it. If asked to implement the report in an app, build it in the existing UI framework and connect it to actual task test data; do not substitute a plain-text wireframe for a requested working UI.
 
