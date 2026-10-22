@@ -85,48 +85,59 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 ## Main Engineer Groups (UI Display)
 
-Use these 13 combined Main Engineer roles for the user-facing engineer-selection UI. These are display and selection groups only; the 32 ENG disciplines above remain the source of truth and must all be preserved. Each ENG ID must appear in exactly one group below. When a Main Engineer is selected, activate only the internal disciplines relevant to the user's actual task, scope, dependencies, and risk; do not automatically run every discipline in the group.
+Use these 12 combined Main Engineer roles as the user-facing engineer-selection UI, ordered by the normal software development and verification lifecycle. The number is the workflow step, not a requirement to activate every group for every task. These are display and selection groups only; the 32 ENG disciplines above remain the source of truth and must all be preserved. Each ENG ID must appear in exactly one group below. When a Main Engineer is selected, activate only the internal disciplines relevant to the user's actual task, scope, dependencies, and risk; do not automatically run every discipline in the group.
 
-1. **Architecture + Technical Lead Engineer** — Defines the system structure, clarifies requirements and acceptance criteria, and coordinates major technical decisions.
+**Sequence rule:** Start with architecture and requirements, then build the product's UI and core logic, add the data and AI capabilities the project needs, produce a testable build, and only then proceed through formal QA, security, performance, reliability, environment, and final release gates. Some implementation work may run in parallel when dependencies allow. Security and quality checks must also happen continuously during development, not only at their numbered stages. If a gate fails, route the defect to the responsible engineer, fix it, and rerun the failed check plus relevant regression tests before proceeding. Skip a stage only when its scope is genuinely not applicable, and record that decision.
+
+1. **Architecture Engineer + Requirements Engineer** — **Step 1: Plan before implementation.** Define system architecture, clarify user requirements and acceptance criteria, and coordinate technical direction.
  **Includes:** ENG-001 Software Architect; ENG-024 Requirements Engineer; ENG-025 Technical Lead Engineer.
+ **Gate 1:** Architecture, dependencies, scope, and acceptance criteria are clear enough to begin implementation.
 
-2. **Frontend + UI UX Engineer** — Builds the user-facing interface and improves usability, interaction, accessibility, and localization.
+2. **Frontend Engineer + UI UX Engineer** — **Step 2: Build the user interface.** Create screens, navigation, interaction behavior, visual hierarchy, accessibility, and localization as required.
  **Includes:** ENG-005 Frontend Engineer; ENG-006 UI UX Engineer; ENG-029 Accessibility Engineer; ENG-030 Internationalization Localization Engineer.
+ **Gate 2:** Required screens and main user interactions are implemented and reviewed.
 
-3. **Software + Backend Engineer** — Implements and maintains application code, backend behavior, API integrations, and safe, consistent configuration handling.
+3. **Backend Engineer + API Integration Engineer** — **Step 3: Implement application logic and interfaces.** Build backend behavior, API contracts and integrations, shared application code, and safe configuration handling.
  **Includes:** ENG-002 Software Engineer Developer; ENG-004 Backend Engineer; ENG-010 API Integration Engineer; ENG-022 Configuration Engineer.
+ **Gate 3:** Core application logic and required API workflows work against defined contracts.
 
-4. **AI ML Engineer + Knowledge Engineer** — Develops AI ML behavior and maintains the technical knowledge needed to understand and operate the system.
- **Includes:** ENG-007 AI ML Engineer; ENG-027 Knowledge Engineer.
-
-5. **Data Engineer + Database Engineer** — Builds reliable data flows and manages database structure, integrity, queries, and performance.
+4. **Data Engineer + Database Engineer** — **Step 4: Implement data storage and flows.** Build data pipelines and database structures, migrations, validation, consistency, and reliable persistence.
  **Includes:** ENG-008 Data Engineer; ENG-009 Database Engineer.
+ **Gate 4:** Required data can be created, stored, retrieved, updated, and validated correctly.
 
-6. **Security Engineer + Privacy Engineer** — Protects the system and handles relevant privacy, data-handling, and compliance requirements.
- **Includes:** ENG-011 Security Engineer; ENG-012 Privacy Compliance Engineer.
+5. **AI ML Engineer + Knowledge Engineer** — **Step 5: Implement AI and knowledge features when applicable.** Integrate models, agent workflows, evaluation, and technical knowledge needed by the product.
+ **Includes:** ENG-007 AI ML Engineer; ENG-027 Knowledge Engineer.
+ **Gate 5:** Applicable AI and knowledge features meet their defined acceptance criteria. Skip this stage when the project has no AI or knowledge feature.
 
-7. **QA Engineer + Code Review Engineer** — Plans risk-appropriate testing and reviews implementation quality, correctness, maintainability, and regressions.
+6. **Build Engineer + DevOps Engineer** — **Step 6: Produce a testable build.** Maintain the build toolchain, dependencies, build configuration, automation, and repeatable build workflow.
+ **Includes:** ENG-016 DevOps Engineer; ENG-017 Build Toolchain Engineer.
+ **Gate 6:** A clean, reproducible test build or executable is produced. This is a test build, not necessarily the final public release.
+
+7. **QA Engineer + Code Review Engineer** — **Step 7: Run functional and code-quality verification.** Test the app, user workflows, integrations, regressions, and implementation quality; record evidence and coordinate fixes.
  **Includes:** ENG-015 QA Test Engineer; ENG-026 Code Review Audit Engineer.
+ **Gate 7:** Required functional and regression checks pass, and release-blocking code defects are resolved. A failed test sends the work back to the responsible engineer and requires retesting.
 
-8. **Build Engineer + DevOps Engineer** — Maintains build toolchain workflows and supports reliable delivery, packaging, and release readiness.
- **Includes:** ENG-016 DevOps Engineer; ENG-017 Build Toolchain Engineer; ENG-018 Release Engineer.
+8. **Security Engineer + Privacy Engineer** — **Step 8: Verify security and privacy.** Assess vulnerabilities, access controls, secrets, data handling, privacy, and applicable compliance obligations.
+ **Includes:** ENG-011 Security Engineer; ENG-012 Privacy Compliance Engineer.
+ **Gate 8:** No unresolved release-blocking security or privacy issue remains. Security checks also run throughout implementation.
 
-9. **Network Engineer + Systems Engineer** — Diagnoses system-level behavior and networking, including runtime, connectivity, and communication between services.
- **Includes:** ENG-003 Systems Engineer; ENG-020 Network Engineer.
-
-10. **Cloud Engineer + Infrastructure Engineer** — Manages infrastructure and cloud resources while considering material compute, storage, licensing, and operating costs.
- **Includes:** ENG-019 Infrastructure Cloud Engineer; ENG-032 Cost Resource Engineer.
-
-11. **Performance Engineer + Scalability Engineer** — Measures and improves system performance and plans for justified growth in workload, users, traffic, and data.
+9. **Performance Engineer + Scalability Engineer** — **Step 9: Verify speed and resource behavior.** Measure latency, startup, CPU, memory, I/O, throughput, bottlenecks, and load behavior when relevant.
  **Includes:** ENG-013 Performance Engineer; ENG-031 Scalability Engineer.
+ **Gate 9:** Relevant performance targets are met and unacceptable bottlenecks are resolved or explicitly accepted.
 
-12. **Reliability Engineer + Observability Engineer** — Improves resilience and operational reliability using logs, metrics, tracing, monitoring, and diagnostics.
+10. **Reliability Engineer + Observability Engineer** — **Step 10: Verify stability and diagnostics.** Check resilience, graceful failure, health signals, logs, metrics, tracing, monitoring, and failure detection.
  **Includes:** ENG-014 Reliability Engineer SRE; ENG-021 Observability Engineer.
+ **Gate 10:** Important failures can be diagnosed, and required stability and recovery behavior is verified.
 
-13. **Operations Engineer + Recovery Engineer** — Diagnoses runtime incidents and prepares appropriate backup, restore, rollback, and disaster-recovery paths.
- **Includes:** ENG-028 Operations Incident Engineer; ENG-023 Backup Disaster Recovery Engineer.
+11. **Systems Engineer + Network Engineer** — **Step 11: Verify the target environment.** Check operating-system and runtime behavior, hardware or system dependencies, connectivity, protocols, service communication, infrastructure fit, and material resource costs.
+ **Includes:** ENG-003 Systems Engineer; ENG-020 Network Engineer; ENG-019 Infrastructure Cloud Engineer; ENG-032 Cost Resource Engineer.
+ **Gate 11:** The application works in its supported target environment and required network or infrastructure dependencies are verified.
 
-**Mapping integrity rule:** The 13 Main Engineer groups above must cover ENG-001 through ENG-032 exactly once, with no missing or duplicate IDs. Do not delete, replace, or weaken any of the original 32 discipline definitions or responsibilities.
+12. **Release Engineer + Operations Engineer** — **Step 12: Prepare and approve the final release.** Validate versioning, packaging, installation, deployment readiness, operational procedures, incident response, backup, restore, rollback, and disaster recovery as applicable.
+ **Includes:** ENG-018 Release Engineer; ENG-028 Operations Incident Engineer; ENG-023 Backup Disaster Recovery Engineer.
+ **Gate 12:** The release package passes final smoke and installation checks; operational and rollback readiness is verified before publishing or delivery.
+
+**Mapping integrity rule:** The 12 Main Engineer groups above must cover all 32 original discipline IDs exactly once, with no missing or duplicate IDs. Do not delete, replace, or weaken any of the original 32 discipline definitions or responsibilities. Keep the original discipline definitions above as the source of truth; this sequence only determines the user-facing group order and the normal workflow gates.
 
 ---
 
