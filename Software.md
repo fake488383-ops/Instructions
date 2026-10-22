@@ -28,40 +28,40 @@ AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matl
 
 
 
-| ID | Discipline | Responsibility |
+| No. | Discipline | Responsibility |
 |---|---|---|
-| ENG-001 | Software Architect | Define and evaluate system architecture, boundaries, components, interfaces, dependencies, architectural patterns, trade-offs, and long-term maintainability.. |
-| ENG-002 | Software Engineer Developer | Design, implement, modify, refactor, debug, and maintain software while preserving requirements and existing behavior.. |
-| ENG-003 | Systems Engineer | Understand the complete system across software, operating system, hardware, processes, services, resources, runtime environment, and system-level interactions.. |
-| ENG-004 | Backend Engineer | Design and implement backend services, business logic, APIs, service boundaries, data flow, authentication, authorization, integrations, and server-side behavior.. |
-| ENG-005 | Frontend Engineer | Build and maintain application interfaces, user interaction, state handling, navigation, rendering, responsiveness, and client-side behavior.. |
-| ENG-006 | UI UX Engineer | Design usable, accessible, consistent, responsive, and purposeful user experiences, including interaction behavior, visual hierarchy, animation, feedback, and usability.. |
-| ENG-007 | AI ML Engineer | Design, integrate, evaluate, optimize, and operate AI ML systems, models, inference pipelines, agents, prompts, tools, evaluation, and model-related workflows.. |
-| ENG-008 | Data Engineer | Design and maintain data models, schemas, pipelines, ingestion, transformation, storage, validation, migration, integrity, lineage, and reliable data flow.. |
-| ENG-009 | Database Engineer | Design, optimize, secure, migrate, and maintain databases, queries, indexes, transactions, consistency, backups, recovery, and database performance.. |
-| ENG-010 | API Integration Engineer | Design and maintain APIs, protocols, service integrations, contracts, serialization, compatibility, external services, and failure handling between systems.. |
-| ENG-011 | Security Engineer | Identify, prevent, investigate, and mitigate security risks across code, architecture, dependencies, identity, access control, secrets, data, network boundaries, runtime, and deployment.. |
-| ENG-012 | Privacy Compliance Engineer | Consider privacy, data handling, retention, consent, regulatory, policy, auditability, and compliance requirements when applicable to the project.. |
-| ENG-013 | Performance Engineer | Identify performance bottlenecks and optimize CPU, memory, GPU, I O, network, database, rendering, startup, latency, throughput, and resource utilization using evidence.. |
-| ENG-014 | Reliability Engineer SRE | Improve availability, resilience, fault tolerance, recovery, graceful degradation, observability, operational reliability, and failure handling.. |
-| ENG-015 | QA Test Engineer | Determine appropriate validation strategy and select relevant unit, integration, system, end-to-end, regression, performance, security, and other tests based on risk and change scope.. |
-| ENG-016 | DevOps Engineer | Manage development-to-deployment workflows, environments, automation, build systems, tooling, CI CD, configuration, and delivery processes.. |
-| ENG-017 | Build Toolchain Engineer | Diagnose and maintain compilers, SDKs, build systems, package managers, toolchains, generators, build configuration, and reproducible builds.. |
-| ENG-018 | Release Engineer | Prepare reliable releases, versioning, packaging, release validation, deployment readiness, rollback capability, and release coordination.. |
-| ENG-019 | Infrastructure Cloud Engineer | Design and operate compute, storage, services, environments, containers, cloud resources, infrastructure automation, capacity, and infrastructure reliability when applicable.. |
-| ENG-020 | Network Engineer | Analyze networking, protocols, routing, connectivity, DNS, ports, service communication, segmentation, latency, and network-related failures when relevant.. |
-| ENG-021 | Observability Engineer | Establish useful logging, metrics, tracing, diagnostics, health signals, monitoring, alerting, and evidence needed to understand system behavior.. |
-| ENG-022 | Configuration Engineer | Manage configuration boundaries, environment-specific settings, secrets references, defaults, validation, compatibility, and safe configuration changes.. |
-| ENG-023 | Backup Disaster Recovery Engineer | Design and validate backup, restore, recovery, rollback, disaster recovery, data protection, and continuity mechanisms when required.. |
-| ENG-024 | Requirements Engineer | Convert user goals into clear requirements, constraints, acceptance criteria, assumptions, dependencies, and measurable outcomes without unnecessarily blocking execution.. |
-| ENG-025 | Technical Lead Engineer | Coordinate engineering decisions across disciplines, resolve trade-offs, maintain technical direction, and ensure the implementation remains aligned with the intended outcome.. |
-| ENG-026 | Code Review Audit Engineer | Review implementation quality, correctness, maintainability, security, architecture, regressions, technical risks, and adherence to project requirements.. |
-| ENG-027 | Knowledge Engineer | Maintain useful technical knowledge, architecture decisions, and operational information needed to understand and operate the system.. |
-| ENG-028 | Operations Incident Engineer | Diagnose operational failures, incidents, degraded behavior, recovery paths, and production runtime issues using evidence and controlled remediation.. |
-| ENG-029 | Accessibility Engineer | Ensure interfaces and interactions remain usable by people with relevant accessibility needs when accessibility is part of the product requirements or platform expectations.. |
-| ENG-030 | Internationalization Localization Engineer | Handle language, locale, formatting, text expansion, regional behavior, encoding, and localization concerns when required.. |
-| ENG-031 | Scalability Engineer | Evaluate growth in users, data, workloads, services, traffic, and resource demand, then design appropriate scaling strategies when justified.. |
-| ENG-032 | Cost Resource Engineer | Consider infrastructure, compute, storage, licensing, operational, and development costs when they materially affect engineering decisions.. |
+| 1 | Software Architect | Define and evaluate system architecture, boundaries, components, interfaces, dependencies, architectural patterns, trade-offs, and long-term maintainability.. |
+| 2 | Software Engineer Developer | Design, implement, modify, refactor, debug, and maintain software while preserving requirements and existing behavior.. |
+| 3 | Systems Engineer | Understand the complete system across software, operating system, hardware, processes, services, resources, runtime environment, and system-level interactions.. |
+| 4 | Backend Engineer | Design and implement backend services, business logic, APIs, service boundaries, data flow, authentication, authorization, integrations, and server-side behavior.. |
+| 5 | Frontend Engineer | Build and maintain application interfaces, user interaction, state handling, navigation, rendering, responsiveness, and client-side behavior.. |
+| 6 | UI UX Engineer | Design usable, accessible, consistent, responsive, and purposeful user experiences, including interaction behavior, visual hierarchy, animation, feedback, and usability.. |
+| 7 | AI ML Engineer | Design, integrate, evaluate, optimize, and operate AI ML systems, models, inference pipelines, agents, prompts, tools, evaluation, and model-related workflows.. |
+| 8 | Data Engineer | Design and maintain data models, schemas, pipelines, ingestion, transformation, storage, validation, migration, integrity, lineage, and reliable data flow.. |
+| 9 | Database Engineer | Design, optimize, secure, migrate, and maintain databases, queries, indexes, transactions, consistency, backups, recovery, and database performance.. |
+| 10 | API Integration Engineer | Design and maintain APIs, protocols, service integrations, contracts, serialization, compatibility, external services, and failure handling between systems.. |
+| 11 | Security Engineer | Identify, prevent, investigate, and mitigate security risks across code, architecture, dependencies, identity, access control, secrets, data, network boundaries, runtime, and deployment.. |
+| 12 | Privacy Compliance Engineer | Consider privacy, data handling, retention, consent, regulatory, policy, auditability, and compliance requirements when applicable to the project.. |
+| 13 | Performance Engineer | Identify performance bottlenecks and optimize CPU, memory, GPU, I O, network, database, rendering, startup, latency, throughput, and resource utilization using evidence.. |
+| 14 | Reliability Engineer SRE | Improve availability, resilience, fault tolerance, recovery, graceful degradation, observability, operational reliability, and failure handling.. |
+| 15 | QA Test Engineer | Determine appropriate validation strategy and select relevant unit, integration, system, end-to-end, regression, performance, security, and other tests based on risk and change scope.. |
+| 16 | DevOps Engineer | Manage development-to-deployment workflows, environments, automation, build systems, tooling, CI CD, configuration, and delivery processes.. |
+| 17 | Build Toolchain Engineer | Diagnose and maintain compilers, SDKs, build systems, package managers, toolchains, generators, build configuration, and reproducible builds.. |
+| 18 | Release Engineer | Prepare reliable releases, versioning, packaging, release validation, deployment readiness, rollback capability, and release coordination.. |
+| 19 | Infrastructure Cloud Engineer | Design and operate compute, storage, services, environments, containers, cloud resources, infrastructure automation, capacity, and infrastructure reliability when applicable.. |
+| 20 | Network Engineer | Analyze networking, protocols, routing, connectivity, DNS, ports, service communication, segmentation, latency, and network-related failures when relevant.. |
+| 21 | Observability Engineer | Establish useful logging, metrics, tracing, diagnostics, health signals, monitoring, alerting, and evidence needed to understand system behavior.. |
+| 22 | Configuration Engineer | Manage configuration boundaries, environment-specific settings, secrets references, defaults, validation, compatibility, and safe configuration changes.. |
+| 23 | Backup Disaster Recovery Engineer | Design and validate backup, restore, recovery, rollback, disaster recovery, data protection, and continuity mechanisms when required.. |
+| 24 | Requirements Engineer | Convert user goals into clear requirements, constraints, acceptance criteria, assumptions, dependencies, and measurable outcomes without unnecessarily blocking execution.. |
+| 25 | Technical Lead Engineer | Coordinate engineering decisions across disciplines, resolve trade-offs, maintain technical direction, and ensure the implementation remains aligned with the intended outcome.. |
+| 26 | Code Review Audit Engineer | Review implementation quality, correctness, maintainability, security, architecture, regressions, technical risks, and adherence to project requirements.. |
+| 27 | Knowledge Engineer | Maintain useful technical knowledge, architecture decisions, and operational information needed to understand and operate the system.. |
+| 28 | Operations Incident Engineer | Diagnose operational failures, incidents, degraded behavior, recovery paths, and production runtime issues using evidence and controlled remediation.. |
+| 29 | Accessibility Engineer | Ensure interfaces and interactions remain usable by people with relevant accessibility needs when accessibility is part of the product requirements or platform expectations.. |
+| 30 | Internationalization Localization Engineer | Handle language, locale, formatting, text expansion, regional behavior, encoding, and localization concerns when required.. |
+| 31 | Scalability Engineer | Evaluate growth in users, data, workloads, services, traffic, and resource demand, then design appropriate scaling strategies when justified.. |
+| 32 | Cost Resource Engineer | Consider infrastructure, compute, storage, licensing, operational, and development costs when they materially affect engineering decisions.. |
 
 
 ---
