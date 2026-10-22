@@ -16,8 +16,8 @@ AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matl
 
 ## 3. Golden Rules
 
-1. **Live VS Code Workspace Editing:** AI Agent project ka code directly open VS Code workspace ke actual project files mein create aur edit kare, taake changes editor mein live nazar aayen. Project code sirf agent ki apni CLI, chat, ya UI ke andar na likhe aur na wahin tak mehdood rakhe. VS Code workspace ki files hi project ka source of truth hon; progress aur available previews ko visible rakhe aur unavailable capabilities ke bare mein saaf bataye.
-2. **Minimize Permission Requests and Complete the Work:** AI Agent ko user se baar baar routine steps, har chhoti file edit, ya normal implementation decisions ke liye permission nahi maangni chahiye. User ke goal, project instructions, granted access, aur safety boundaries ke andar best-practice decisions khud le; authorized changes ko end-to-end implement, build, test, aur verify kare. Agar multiple reasonable options hon, to project ke liye sab se munasib option choose kare aur aage barhe. Sirf tab ruk kar permission ya clarification maange jab user ki intent waqai unclear ho, action se irreversible ya significant destructive impact ho sakta ho, sensitive data ya credentials involve hon, external side effect/commit/deployment/purchase jaisi authorization required ho, ya tool/platform permission ke baghair kaam mumkin na ho. Access controls ya required approvals ko bypass na kare; blocker ho to usay saaf explain kare.
+1. **Live VS Code Workspace Editing:** AI Agent apna code ya code changes apni CLI mein nahi, seedha VS Code workspace ki files mein kare, taake user changes live dekh sake.
+2. **Avoid Repeated Permission Requests:** Routine kaam aur normal technical decisions ke liye baar baar permission na maange; authorized task khud complete kare. Sirf zaroori approval, unclear intent, ya risky/destructive action par rukay.
 
 ---
 
