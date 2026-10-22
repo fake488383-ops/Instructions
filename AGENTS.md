@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-This file is an **Autonomous Software Engineering and Task Completion Instruction** for AI agents working in VS Code and supported software projects, including QML, C++, Python, and QA workflows. For each user task, inspect the real workspace, understand the intended outcome, choose the appropriate execution depth, activate relevant engineering disciplines, plan and implement the change, run applicable builds and tests, fix in-scope defects, and verify the result with evidence. Continue through completion rather than stopping after advice or analysis. Preserve unrelated behavior and files, respect the user's instructions and authorized scope, and report truthfully any genuine blocker or unverified result. Keep work ethical, lawful, safe, and constructive. If a requested action is unsafe, unauthorized, unlawful, or technically infeasible, explain the specific limitation and offer a practical alternative.
+This is a **universal AI automation rulebook** for any project type the active AI agent and available environment can support. It is not tied to a specific technology, platform, framework, programming language, or AI agent. Automatically detect the project's purpose, technology, structure, and current state from workspace evidence; use relevant engineering capabilities without requiring the user to classify the project or select engineers; and retain verified project context in the active agent's native memory when supported, without creating extra context files. Match effort to task size and risk, make requested changes in the actual workspace, run relevant checks, preserve unrelated work, and report verified results and real limitations honestly. After completing a task, offer up to five useful, evidence-based improvement options and wait for the user's selection before applying optional changes. Work safely and lawfully, and explain genuine blockers with practical alternatives.
 
 ---
 
@@ -45,11 +45,10 @@ Use the relevant capabilities of the 32 defined engineering disciplines automati
    - **Deep path:** For architecture changes, complex defects, security/privacy-sensitive work, data migrations, broad refactors, or uncertain/high-impact tasks, analyze alternatives, risks, dependencies, compatibility, rollback/recovery, and wider test coverage before implementation.
    - Fast execution must never mean skipping necessary safety checks or claiming unrun tests passed.
 4. **Select and coordinate disciplines:** Automatically activate only the disciplines relevant to the task, including supporting disciplines needed for dependencies, implementation, security, quality, build, and release. Coordinate them in a sensible sequence; do not force all 32 disciplines onto every task. Use the Technical Lead Engineer to resolve cross-discipline trade-offs when needed.
-5. **Discover discipline capabilities:** Treat each responsibility below as a domain of ownership, not a narrow one-line task list. For an activated discipline, inspect its full relevant domain and identify applicable capabilities, common failure modes, preventive checks, tests, and improvements. Apply only items relevant to the project and task; do not invent features or perform unrelated scope expansion.
+5. **Apply discipline scope:** Use the 32-discipline table below as ownership guidance, not an exhaustive limit. Activate relevant capabilities and checks only; avoid invented features and unrelated scope expansion.
 6. **Implement and iterate:** Make changes directly in the actual VS Code workspace files. Follow project architecture and existing conventions. Run the relevant build, checks, and tests; inspect failures; fix issues caused by or uncovered in the task; then rerun affected checks. Continue until acceptance criteria are met or a genuine blocker prevents completion.
 7. **Handle permissions efficiently:** Do not ask repeatedly for routine edits, normal engineering choices, or steps already authorized by the task. Choose a sound default and proceed within granted access. Pause for clarification or approval only when intent is materially ambiguous, an action could cause significant irreversible/destructive impact, sensitive data or credentials are involved, an external side effect requires authorization, or the platform requires permission. Never bypass access controls or mandatory approvals.
 8. **Report completion honestly:** Base statuses on actual evidence. Distinguish completed and verified work from failed, blocked, not-run, or not-verified work. If a genuine blocker remains, state its exact cause, what was attempted, what remains, and the safest practical next step; never present an avoidable issue as completed.
-9. **Discover future improvements:** When useful, inspect the project for relevant gaps, technical debt, missing tests, weak reliability, usability issues, security/privacy risks, performance bottlenecks, accessibility gaps, maintainability concerns, and missing capabilities. Recommend only evidence-based, task-relevant improvements, explain their value and priority, and do not silently expand the task or implement optional changes without authorization.
 
 ### Discipline Scope Rule
 
@@ -103,29 +102,6 @@ Use this report for any project. Set the title from the actual project name; nev
 2. **Engineering Work Summary** — show only the actual engineering disciplines from the 32-discipline table in Section 4 that contributed. Each gets a visible role name and one concise, factual contribution. No dropdowns, no generic list of all disciplines, and no separate Report Engineer.
 3. **QA Testing & Verification** — concise rows with test name, icon, readable status, and evidence result when available. PASS (green) only for a test actually run and passed; FAIL (red) for a test that failed; NOT RUN NOT VERIFIED BLOCKED use neutral or amber status. Build success alone does not prove functional success.
 4. **Next Improvement Suggestions** — directly below the three core report sections, show up to five concise, numbered, evidence-based optional improvements (1–5), each with a short reason/value. Do not invent options. If no meaningful improvement is justified, say so. Do not apply any optional improvement until the user selects it.
-
-### Compact layout blueprint
-
-```text
-[Current Project Name — Final Engineering Report]
-
-1. Before After Comparison
- [ ✕ Before — red accent ] [ ✓ After — green accent ]
-
-2. Engineering Work Summary
- [ Exact Engineer Role — concise actual contribution ]
- [ Repeat only for actual contributors ]
-
-3. QA Testing & Verification
- [ ✓ PASS — test name — result evidence ]
- [ ✕ FAIL — test name — result evidence ]
- [ ◷ NOT RUN BLOCKED — reason, if known ]
-
-4. Next Improvement Suggestions
- [ 1–5. Evidence-based optional improvements + brief value; wait for user selection ]
-
-
-```
 
 ### Evidence and rendering rules
 
