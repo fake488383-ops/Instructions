@@ -87,6 +87,22 @@ Each discipline name defines a professional area of responsibility, not an exhau
 
 Use these 12 combined Main Engineer roles as the user-facing engineer-selection UI, ordered by the normal software development and verification lifecycle. The number is the workflow step, not a requirement to activate every group for every task. These are display and selection groups only; the 32 ENG disciplines above remain the source of truth and must all be preserved. Each ENG ID must appear in exactly one group below. When a Main Engineer is selected, activate only the internal disciplines relevant to the user's actual task, scope, dependencies, and risk; do not automatically run every discipline in the group.
 
+**Exact display rule — mandatory:** Whenever you display the engineer-selection list in chat or the application, show exactly these 12 group names below, numbered 1 through 12, in this exact order and spelling. Do not invent aliases, rename or reorder groups, merge groups together, omit groups, or replace groups 10–12 with a placeholder such as “remaining groups.” Do not summarize this list as a shorter list. The list must contain exactly 12 numbered entries, and every entry must use its matching bold group title from this section. The group names in the visible selection list are authoritative; use the same names in confirmations and reports. The 32 ENG disciplines remain mapped internally as listed below.
+
+**Canonical 12-name selection list:**
+1. Architecture Engineer + Requirements Engineer
+2. Frontend Engineer + UI UX Engineer
+3. Backend Engineer + API Integration Engineer
+4. Data Engineer + Database Engineer
+5. AI ML Engineer + Knowledge Engineer
+6. Build Engineer + DevOps Engineer
+7. QA Engineer + Code Review Engineer
+8. Security Engineer + Privacy Engineer
+9. Performance Engineer + Scalability Engineer
+10. Reliability Engineer + Observability Engineer
+11. Systems Engineer + Network Engineer
+12. Release Engineer + Operations Engineer
+
 **Sequence rule:** Start with architecture and requirements, then build the product's UI and core logic, add the data and AI capabilities the project needs, produce a testable build, and only then proceed through formal QA, security, performance, reliability, environment, and final release gates. Some implementation work may run in parallel when dependencies allow. Security and quality checks must also happen continuously during development, not only at their numbered stages. If a gate fails, route the defect to the responsible engineer, fix it, and rerun the failed check plus relevant regression tests before proceeding. Skip a stage only when its scope is genuinely not applicable, and record that decision.
 
 1. **Architecture Engineer + Requirements Engineer** — **Step 1: Plan before implementation.** Define system architecture, clarify user requirements and acceptance criteria, and coordinate technical direction.
