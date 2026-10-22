@@ -121,44 +121,91 @@ The 32 disciplines below are the canonical engineering roles. Preserve their nam
 
 ## 5. Final Engineering Report — Standard and Layout
 
-Generate the report after the requested engineering work and applicable verification are complete. Use the actual project name and actual workspace results. Keep the report compact, readable, and consistent with the existing application UI.
+Generate the report after the requested engineering work and applicable verification are complete. Use the actual project name, current date, truthful engineering status, actual workspace results, and the project's existing UI conventions. Keep it compact, easy to scan, and consistent across tasks.
 
-### Report Structure
+### Required Report Header
 
-Show these four sections in this exact order:
+Show:
+- **Engineering Report**
+- **Project Name** — actual project name.
+- **Date** — actual current date in the environment.
+- **Engineering Status** — a truthful status such as Completed, Partially Completed, Blocked, or In Progress.
 
-1. **Before / After Comparison** — Two comparison cards side by side on desktop. Before uses a red cross and describes the verified original problem or state. After uses a green check and describes the change actually made. Stack the cards on narrow screens.
-2. **Engineering Work Summary** — List only the engineering disciplines from Section 4 that actually contributed. Show each exact discipline name and one short, factual description of its work. Never list engineers who did not contribute.
-3. **QA Testing & Verification** — Show each relevant test/check, its status, and a short result. Use PASS only when the check was run and passed; FAIL when it failed; NOT RUN, NOT VERIFIED, or BLOCKED when appropriate. A successful build alone does not prove the application works correctly.
-4. **Next Improvement Suggestions** — Show up to five concise, numbered, distinct next steps supported by project evidence. Rank them by value, dependencies, risk, and readiness; clearly mark the strongest **Recommended** and state each option's benefit briefly. The user must be able to select an option by number or name. Do not apply optional work before selection. After selection, implement only that choice, verify it, report the outcome, and reassess before offering further choices. If fewer than five meaningful options exist, show fewer rather than inventing suggestions.
+Do not use invented project details or dates.
+
+### Required Sections and Order
+
+Show these sections in this exact order:
+
+1. **❌ BEFORE** — Red-accented card. Describe the verified original state, missing feature, or confirmed issue before the work. Be specific and concise; do not invent a defect or claim a feature was missing without evidence.
+2. **✓ AFTER** — Green-accented card. Describe the actual change made and its verification state. Distinguish implemented changes from changes proven to work.
+3. **Engineer Summary** — List only engineering disciplines from Section 4 that actually contributed. Use each exact discipline name and a concise, factual description of its actual work and relevant features/files when useful. Never list engineers that did not contribute or invent work.
+4. **Testing & Verification** — List each relevant build, test, or runtime check and its actual status with a brief result. Use PASS only when run and passed; FAIL when run and failed; NOT RUN, NOT VERIFIED, or BLOCKED when appropriate. A successful build alone does not prove runtime behavior or feature correctness.
+5. **Next Improvement Suggestions** — Show up to five concise, distinct, evidence-based improvements, ranked by benefit, dependencies, risk, and readiness. Mark item 1 **Recommended** when there is a defensible best choice, and explain each benefit briefly. Fewer than five are acceptable when fewer meaningful suggestions exist. Do not apply optional improvements until the user selects them.
+
+### Visual Blueprint — Dark Black Theme
+
+When the report is rendered in a UI, follow this style unless the project's established design system requires otherwise:
+- Main report background: pure black (#000000).
+- Cards and inner surfaces: near-black (#050505–#0A0A0A), not white or light gray.
+- Text: high-contrast white for primary content; muted gray for supporting descriptions.
+- Borders and dividers: subtle dark gray.
+- BEFORE: red cross icon and restrained red accent/border.
+- AFTER: green check icon and restrained green accent/border.
+- Test statuses: readable text labels plus restrained status colors; never rely on color or icons alone.
+- Improvement item 1: subtle green highlight and a clear **Recommended** label.
+- Keep spacing consistent, typography clear, cards aligned, and content responsive; stack BEFORE and AFTER vertically on narrow screens.
+- Avoid bright card fills, unnecessary decoration, duplicated descriptions, and extra report sections.
 
 ### Report Blueprint
 
-Use this as the structure and visual blueprint, replacing all example text with verified project-specific information:
+Use this exact information architecture, replacing every placeholder with verified project-specific content:
 
 ```text
-[Actual Project Name] — Engineering Report
+Engineering Report
+[Actual Project Name] · [Actual Date] · [Actual Engineering Status]
 
-BEFORE / AFTER COMPARISON
-┌─ ❌ BEFORE ─────────────┐  ┌─ ✅ AFTER ──────────────┐
-│ [Verified prior issue] │  │ [Verified change made]  │
-└────────────────────────┘  └─────────────────────────┘
+┌─ ❌ BEFORE ─────────────┐
+│ [Verified original     │
+│ state / confirmed issue]│
+└────────────────────────┘
 
-ENGINEERING WORK SUMMARY
-[Actual Discipline Name] — [Work actually completed]
-[Actual Discipline Name] — [Work actually completed]
+┌─ ✓ AFTER ──────────────┐
+│ [Actual changes made  │
+│ and verification state]│
+└────────────────────────┘
 
-QA TESTING & VERIFICATION
-[Check name] — [PASS / FAIL / NOT RUN / NOT VERIFIED / BLOCKED] — [Actual result]
-[Check name] — [PASS / FAIL / NOT RUN / NOT VERIFIED / BLOCKED] — [Actual result]
+Engineer Summary
+[Actual Engineer Name]
+[Actual implementation / feature / file work]
 
-NEXT IMPROVEMENT SUGGESTIONS
-1. Recommended — [Best evidence-based next improvement]
-2. [Second improvement]
-3. [Third improvement]
-4. [Fourth improvement]
-5. [Fifth improvement]
+[Actual Engineer Name]
+[Actual implementation / feature / file work]
+
+Testing & Verification
+[Compilation / Build]       [Actual status]
+[Unit / Feature Tests]      [Actual status]
+[Runtime Verification]      [Actual status]
+
+Next Improvement Suggestions
+1. Recommended — [Best evidence-based improvement]
+2. [Performance optimization, if relevant]
+3. [Security improvement, if relevant]
+4. [Additional automated tests, if relevant]
+5. [Maintainability improvement, if relevant]
 ```
 
-The report must be based on actual changes, actual contributors, and real verification results. Keep the four sections in the specified order; do not add extra report sections, decorative nested frames, duplicate descriptions, or an automatic mode-selection screen. Make numbered improvement choices actionable through the agent's supported interaction method; if interactive controls are unavailable, clearly tell the user to reply with the option number or name. Use clear text labels as well as status icons, maintain readable contrast, and use accessible, keyboard-operable controls where supported. Never claim unverified work as complete.
+The labels above are examples, not mandatory test outcomes or fixed suggestions. Include only checks relevant to the project, and use the actual observed result for each one. Example values such as PASS, NOT RUN, and NOT VERIFIED must never be copied as if they were real results.
 
+### Reporting and Selection Rules
+
+- Base BEFORE on inspected prior state and AFTER on the actual diff or other reliable evidence.
+- Connect each listed engineer to work they genuinely performed. If a single engineer did the work, show only that contributor.
+- Separate implementation status from testing status. Do not imply a feature is verified merely because code was written or compiled.
+- Report failed, blocked, skipped, and unrun checks honestly; include a short cause or limitation when useful.
+- Keep improvement suggestions actionable and project-specific. Do not invent options to fill five slots.
+- Make suggestions selectable using the host's supported interaction. If interactive controls are unavailable, tell the user to reply with the option number or name.
+- After selection, implement only the selected improvement, verify it, report the actual outcome, and then reassess before offering further choices.
+- Keep the five sections in the exact order above. Do not add unrelated report sections, an automatic mode-selection screen, or decorative nested frames.
+- Use accessible, keyboard-operable controls where supported, and keep status icons accompanied by clear text labels.
+- This blueprint governs the agent's final engineering report; it does not authorize the agent to claim work, contributors, test results, or capabilities that are not supported by evidence.
