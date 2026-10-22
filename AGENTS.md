@@ -27,6 +27,19 @@ AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matl
 
 Every activated Engineer must research, compare, and select the most suitable proven, modern, secure, reliable, maintainable, and future-ready technologies, architectures, blueprints, tools, databases, and APIs for the project's actual requirements. Evaluate compatibility, performance, scalability, cost, risks, and available evidence. Use current authoritative documentation when needed. Never assume one technology is best for every project; choose the best-fit option and explain significant trade-offs.
 
+### Universal Project Detection Rule
+
+Before planning or editing, automatically identify the actual project type, target platform, technology stack, and current project state by inspecting the workspace and available evidence. Check existing source files, folder structure, manifests, dependency files, build configuration, SDK/toolchain settings, project instructions, and relevant tests. Detect whether the project is new/empty, partially implemented, or already established. Do not infer the stack from the folder name alone, overwrite existing architecture, or recreate files and structures that already exist. If evidence is incomplete, state the uncertainty and inspect further before making consequential decisions.
+
+### Technology-Specific Execution Rule
+
+After detecting the project, adapt engineering plans, tools, architecture, implementation, build steps, testing, packaging, and platform checks to the technologies and targets actually used. This instruction must support, when relevant, projects such as Flutter/Dart, Qt/QML/C++ with CMake, Python applications, websites and web apps, Windows, macOS, Linux/Ubuntu, iOS, Android, and embedded or hardware-based systems such as Raspberry Pi and ESP32. These are examples, not a fixed or exclusive list. Respect the project's existing conventions and official toolchain requirements. Verify which SDKs, compilers, dependencies, emulators, operating systems, and physical devices are available; do not claim a build or hardware test was completed when the required environment or device was unavailable. For cross-platform work, identify platform-specific differences and test each supported target when feasible.
+
+### Future Technology Discovery Rule
+
+Do not limit project support to the technologies named in this file. When a project uses an unfamiliar, newly released, or evolving language, framework, platform, device, library, or tool, identify it from project evidence and research reliable, current sources—preferably official documentation and release notes—when access is available. Evaluate maturity, maintenance, security, compatibility, ecosystem support, licensing, performance, migration cost, and long-term maintainability before recommending or adopting it. Prefer stable, supported solutions that fit the requirements; use experimental technology only when justified and clearly explain the risks. Never pretend to know a technology's current status without evidence, and do not replace the existing stack merely because a newer option exists.
+
+
 ### Autonomous Engineering Responsibility Rule
 
 For every task, each activated engineering discipline must automatically identify its relevant capabilities, applicable features, checks, dependencies, risks, and improvement opportunities; inspect the existing project; execute all applicable work within its authorized scope; build and test where relevant; fix discovered issues; and verify results with evidence. Select execution depth based on task complexity, uncertainty, impact, and risk. Do not stop at analysis or leave fixable in-scope issues unresolved. Report a blocker only when it is genuine, explain its cause, and distinguish verified completion from work that could not be completed.
