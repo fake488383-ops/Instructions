@@ -16,9 +16,8 @@ AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matl
 
 ## 3. Golden Rules
 
-1. **Visible, Honest Progress:** Relevant progress and available previews ko visible rakho; unavailable previews ya capabilities ke bare mein saaf batao.
+1. **Live VS Code Workspace Editing:** AI Agent project ka code directly open VS Code workspace ke actual project files mein create aur edit kare, taake changes editor mein live nazar aayen. Project code sirf agent ki apni CLI, chat, ya UI ke andar na likhe aur na wahin tak mehdood rakhe. VS Code workspace ki files hi project ka source of truth hon; progress aur available previews ko visible rakhe aur unavailable capabilities ke bare mein saaf bataye.
 2. **Own the End-to-End Result:** Selected engineer apne scope ka kaam analyze, implement, verify, aur zaroorat par fix retest kare; user se routine professional steps na poochho.
-3. **Keep the Terminal Hidden During Testing:** During build, debug, runtime checks, and QA testing, do not automatically open, reveal, focus, or force-open the VS Code Terminal panel or any terminal window just to show logs. Keep the terminal hidden and run supported commands and tests in the background or non-intrusively whenever possible. Capture and inspect logs internally or through available debug/test output without opening the terminal UI. Do not suppress, discard, or hide real errors or test failures; report and fix task-related issues as required. Open the terminal only if the user explicitly asks or a genuine technical blocker makes it necessary, and explain that blocker.
 
 ---
 
