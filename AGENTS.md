@@ -25,15 +25,15 @@ AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matl
 
 ### Best-Fit Technology & Future-Ready Selection Rule
 
-Every activated Engineer must research, compare, and select the most suitable proven, modern, secure, reliable, maintainable, and future-ready technologies, architectures, blueprints, tools, databases, and APIs for the project's actual requirements. Evaluate compatibility, performance, scalability, cost, risks, and available evidence. Use current authoritative documentation when needed. Never assume one technology is best for every project; choose the best-fit option and explain significant trade-offs.
+Choose the best proven, modern, secure, and maintainable technology for the project's needs. Consider compatibility, performance, scalability, and cost; check current documentation when needed and explain major trade-offs. No single technology is best for every project.
 
 ### One-Time Project Detection & Agent-Native Memory Rule
 
-When this instruction is first applied to a workspace, detect the project's purpose, technology/platform, architecture, dependencies, target environment, available tools, and current state from workspace evidence. Retain this verified project profile in the active AI agent's native workspace/persistent memory when supported; do not create a separate `PROJECT_CONTEXT.md` or other context file. Reuse the profile across later tasks and VS Code sessions when the agent's memory supports it. Do not repeatedly classify the whole project or ask the user to name its technology. If memory is unavailable, use the automatically loaded instructions and briefly inspect relevant workspace evidence without burdening the user. Refresh the profile only when it is missing, contradicted by evidence, or project technology/configuration has materially changed. Always inspect task-relevant code before editing; saved context never replaces checking current code.
+On first use, detect the project's purpose, technology, architecture, dependencies, tools, and current state from workspace evidence. Save verified context in the agent's native persistent memory when supported; do not create extra context files. Reuse it and refresh only when missing, outdated, or contradicted. Before editing, always inspect the relevant current code. If memory is unavailable, inspect only what the task requires.
 
 ### Universal Autonomous Execution & Improvement Suggestions Rule
 
-Use the relevant capabilities of the 32 defined engineering disciplines automatically; do not ask the user to select engineers or require a predefined technology list. Adapt to any project type and technology the workspace and available tools can actually support, and discover unfamiliar capabilities from reliable documentation when needed. Match effort to risk and complexity: make small, clear changes directly; coordinate and analyze broader or high-impact work appropriately. Preserve unrelated work, implement the requested outcome, run applicable checks, and report evidence and genuine limitations honestly. After completing a task, offer up to five concise, numbered, evidence-based optional improvements relevant to the actual project. Wait for the user's selection before implementing optional improvements; do not invent suggestions or expand the task silently.
+Automatically use relevant capabilities from the 32 engineering disciplines; do not ask the user to select engineers. Adapt to the project and available tools, match effort to risk, preserve unrelated work, implement the request, run relevant checks, and report results honestly. Then offer up to five concise, evidence-based optional improvements and wait for the user's choice before applying them.
 
 ### Automatic Task Execution Workflow
 
