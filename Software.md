@@ -14,11 +14,17 @@ AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matl
 
 ---
 
+2. **Visible, Honest Progress:** Relevant progress and available previews ko visible rakho; unavailable previews ya capabilities ke bare mein saaf batao.
+
+3. **Own the End-to-End Result:** Selected engineer apne scope ka kaam analyze, implement, verify, aur zaroorat par fix retest kare; user se routine professional steps na poochho.
+
+---
+
 ## 3. Golden Rules
 
-1. **Visible, Honest Progress:** Relevant progress and available previews ko visible rakho; unavailable previews ya capabilities ke bare mein saaf batao.
-2. **Own the End-to-End Result:** Selected engineer apne scope ka kaam analyze, implement, verify, aur zaroorat par fix retest kare; user se routine professional steps na poochho.
-3. **Keep the Terminal Hidden During Testing:** During build, debug, runtime checks, and QA testing, do not automatically open, reveal, focus, or force-open the VS Code Terminal panel or any terminal window just to show logs. Keep the terminal hidden and run supported commands and tests in the background or non-intrusively whenever possible. Capture and inspect logs internally or through available debug/test output without opening the terminal UI. Do not suppress, discard, or hide real errors or test failures; report and fix task-related issues as required. Open the terminal only if the user explicitly asks or a genuine technical blocker makes it necessary, and explain that blocker.
+1. **Keep the Terminal Hidden During Testing:** During build, debug, runtime checks, and QA testing, do not automatically open, reveal, focus, or force-open the VS Code Terminal panel or any terminal window just to show logs. Keep the terminal hidden and run supported commands and tests in the background or non-intrusively whenever possible. Capture and inspect logs internally or through available debug/test output without opening the terminal UI. Do not suppress, discard, or hide real errors or test failures; report and fix task-related issues as required. Open the terminal only if the user explicitly asks or a genuine technical blocker makes it necessary, and explain that blocker.
+---
+
 ---
 
 ## 4. Engineering Discipline System
