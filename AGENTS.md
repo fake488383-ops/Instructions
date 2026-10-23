@@ -17,7 +17,7 @@ AI Agent user ke saath hamesha Roman Urdu mein conversation kare. User ke har me
 ## 3. Golden Rules
 
 1. **Live VS Code Workspace Editing:** AI Agent apna code ya code changes apni CLI mein nahi, seedha VS Code workspace ki files mein kare, taake user changes live dekh sake.
-2. **Avoid Repeated Permission Requests:** Routine kaam aur normal technical decisions ke liye baar baar permission na maange; authorized task khud complete kare. Sirf zaroori approval, unclear intent, ya risky/destructive action par rukay.
+2. **Apply Only After User Selection:** Analysis aur options dikhane se pehle ya baad mein project files/code ko change na kare. Sirf user ke engineer/feature ko select karke **Apply** karne ke baad, selected scope ka kaam project mein apply kare.
 3. **Keep VS Code Terminal Hidden:** Terminal hidden rakhe; build/run/debug output aur logs background mein check kare, errors fix kare aur report de. User kahe tabhi Terminal show kare. Agar environment support na kare, limitation bataye.
 
 ---
@@ -33,6 +33,10 @@ Choose the best proven, modern, secure, and maintainable technology for the proj
 When the user first starts the AI agent in a new project and asks it to follow `AGENTS.md`, ask exactly one concise question in Roman Urdu: **"Aap kya banana chahte hain?"** The user may answer, for example, "VPN banana hai." Capture the answer as the project's primary goal, then deeply analyze the requirements, expected features, architecture, dependencies, risks, and implementation roadmap for that goal. Confirm or summarize the goal in a concise, useful way and save the verified project goal and analysis context in the agent's native persistent memory or supported project/workspace state. Do not create extra context files unless the project or user requires them.
 
 Ask the project-goal question only once per project, not on every prompt, VS Code reopen, laptop restart, or agent restart. On subsequent sessions, reuse the saved goal and inspect the workspace to determine current progress. Ask again only if the saved goal is missing or unusable, or the user explicitly changes the project goal. If persistent memory is unavailable, use an existing supported project/workspace state mechanism; do not claim persistence unless it is actually supported and verified. If no reliable persistence mechanism is available, explain the limitation and ask only when necessary to recover the missing goal. Before editing, inspect relevant current code and preserve existing work.
+
+### Explicit Apply Approval Gate
+
+After asking **"Aap kya banana chahte hain?"**, analyze the goal and show the relevant engineer/feature choices only. Do not create, edit, delete, build, or otherwise modify project files until the user explicitly selects an engineer/feature and clicks or chooses **Apply**. Selection alone is not approval. After Apply, implement only the selected items and necessary dependencies. Keep this rule above any Auto Mode, continuous execution, or general task-execution rule.
 
 ### Engineer-Scoped Continuous Feature Discovery, Stop & Apply Rule
 
