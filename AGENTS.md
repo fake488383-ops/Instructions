@@ -199,16 +199,15 @@ Do not use invented project details or dates.
 
 ### Project Security Score
 
-Inside the existing **✓ AFTER** section, show only one compact security result in plain text, with the label on the left and the score on the right. Use a **1,000-point scale**, not a 100-point scale, and show the equivalent percentage. Required format:
+Inside the existing **✓ AFTER** section, show the Project Security result only as a score out of 1,000, with no percentage. Required format:
 
 ```text
-Project Security                         850/1000 — 85% secure
+Project Security                         850/1000
 ```
 
-- Calculate the score from current, inspected project evidence and a defined set of applicable security controls; weight controls only when justified. The number must reflect the latest assessment performed for this task, so refresh it whenever relevant code, dependencies, configuration, or security checks change.
-- The score is a measured assessment, not a guarantee of security. Never invent a score or imply continuous live monitoring if the agent cannot actually perform it.
+- Calculate the score from current, inspected project evidence and applicable security controls. Never invent a score or imply continuous live monitoring if the agent cannot actually perform it.
 - If the project has not been assessed or evidence is insufficient, write `Project Security: Not Assessed` or `Project Security: Not Verified`; do not guess a number.
-- Show only the Project Security result here. Do not add overall completion, feature, privacy, unmet-gap, change-percentage, or other maturity-score rows.
+- Do not show percentage-based scores or progress percentages anywhere in the final engineering report.
 - Explain the most important verified security improvement or remaining security issue in the existing report text where relevant; do not add a separate report section for it.
 
 ### Required Sections and Order
