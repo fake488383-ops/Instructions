@@ -10,7 +10,7 @@ This is a **universal AI automation rulebook** for any project type the active A
 
 1. **Roman Urdu Conversation**
 
-AI Agent user se hamesha Roman Urdu mein conversation kare.
+AI Agent user ke saath hamesha Roman Urdu mein conversation kare. User ke har message ka jawab Roman Urdu mein de aur poori guftagu Roman Urdu mein hi jari rakhe. Hindi ya Urdu script mein jawab na de. Sirf technical terms, code aur commands zaroorat ke mutabiq English mein likh sakta hai. Doosri zaban tabhi use kare jab user khud us zaban mein jawab dene ko kahe.
 
 ---
 
