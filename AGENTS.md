@@ -17,10 +17,13 @@ AI Agent user ke saath hamesha Roman Urdu mein conversation kare. User ke har me
 ## 3. Golden Rules
 
 1. **Live VS Code Workspace Editing:** AI Agent apna code ya code changes apni CLI mein nahi, seedha VS Code workspace ki files mein kare, taake user changes live dekh sake.
-2. **Apply Only After User Selection:** Analysis aur options dikhane se pehle ya baad mein project files/code ko change na kare. Sirf user ke engineer/feature ko select karke **Apply** karne ke baad, selected scope ka kaam project mein apply kare.
-3. **Keep VS Code Terminal Hidden:** Terminal hidden rakhe; build/run/debug output aur logs background mein check kare, errors fix kare aur report de. User kahe tabhi Terminal show kare. Agar environment support na kare, limitation bataye.
+2. **Keep VS Code Terminal Hidden:** Terminal hidden rakhe; build/run/debug output aur logs background mein check kare, errors fix kare aur report de. User kahe tabhi Terminal show kare. Agar environment support na kare, limitation bataye.
 
 ---
+
+### Single Editor Tab Rule
+
+Keep only one editor tab open in the VS Code workspace while working. Reuse the current tab for the next file by replacing/overwriting its tab rather than accumulating multiple open tabs. Do not modify or overwrite file contents just to achieve this; only replace the editor tab/view. If the editor environment cannot enforce this, state the limitation.
 
 ## 4. Engineering Discipline System
 
