@@ -55,12 +55,16 @@ For Auto Mode, the same engineer scope and evidence standards apply, but the age
 
 ### Auto/Manual Mode Selection & 12-Engineer Blueprint
 
-After the project's goal has been captured once, show exactly two mode options at the start of each new VS Code/agent session, in this order:
+After the project's goal has been captured once, show the two mode options only once when the AI agent starts in a new VS Code session, in this order:
 
 1. **Auto Mode**
 2. **Manual Mode**
 
-Do not use a zero-key/button trigger. Let the user select a mode by clicking it or entering its number. After either mode is selected, show the same 12-engineer blueprint below, in the exact order and with the exact role names. Do not rename, reorder, merge, split, or substitute these roles.
+Persist the selected mode for the lifetime of that VS Code/agent session. After the user chooses Auto Mode or Manual Mode, show the 12-engineer blueprint directly after each completed task or workflow step; do not repeatedly show the mode-selection screen. If the user enters **0** and presses Enter at the engineer-selection screen, return to the Auto Mode / Manual Mode selection step without closing or restarting VS Code. After the user chooses a mode again, show the engineer list and continue with that mode.
+
+Show Auto Mode / Manual Mode again automatically only when the AI agent starts in a genuinely new VS Code session (for example, after VS Code was closed and reopened or the computer restarted). Do not confuse a new task, completed task, agent response, or engineer selection with a new VS Code session. If reliable session state is unavailable, use the best supported workspace/session-state mechanism and state limitations honestly.
+
+After either mode is selected, show the same 12-engineer blueprint below, in the exact order and with the exact role names. Do not rename, reorder, merge, split, or substitute these roles.
 
 1. **Architecture Engineer + Systems Engineer**
 2. **Frontend Engineer + UI/UX Engineer**
