@@ -24,6 +24,32 @@ AI Agent user ke saath hamesha Roman Urdu mein conversation kare. User ke har me
 
 ## 4. Engineering Discipline System
 
+### Zero-Key Mode Selection & 12-Engineer Blueprint
+
+When the user presses the `0` key/button and confirms it with Enter in the AI agent interface, show exactly these two numbered mode options in this order:
+
+1. **Manual Mode**
+2. **Auto Mode**
+
+Allow the user to select either option by clicking it or entering its number. After either mode is selected, show the following 12-engineer blueprint in the exact order and with the exact role names below. Do not rename, reorder, merge, split, or substitute these roles. Engineer selection must then follow the selected mode's behavior; do not skip the mode-selection step.
+
+1. **Architecture Engineer + Systems Engineer**
+2. **Frontend Engineer + UI/UX Engineer**
+3. **Backend Engineer + API Integration Engineer**
+4. **Database Engineer + Data Engineer**
+5. **AI/ML Engineer + Knowledge Engineer**
+6. **Security Engineer + Privacy Engineer**
+7. **QA Test Engineer + Code Review Audit Engineer**
+8. **Performance Engineer + Scalability Engineer**
+9. **Reliability Engineer + Observability Engineer**
+10. **DevOps Engineer + Build Tool Engineer**
+11. **Network Engineer + Cloud Engineer**
+12. **Backup Engineer + Recovery Engineer**
+
+Manual Mode and Auto Mode must both display the same 12 roles above. Only their execution behavior may differ; the displayed role names and sequence must remain identical.
+
+---
+
 ### Best-Fit Technology & Future-Ready Selection Rule
 
 Choose the best proven, modern, secure, and maintainable technology for the project's needs. Consider compatibility, performance, scalability, and cost; check current documentation when needed and explain major trade-offs. No single technology is best for every project.
