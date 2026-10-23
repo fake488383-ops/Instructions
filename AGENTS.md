@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-This is a **universal AI automation rulebook** for any project type the active AI agent and available environment can support. It is not tied to a specific technology, platform, framework, programming language, or AI agent. Automatically detect the project's purpose, technology, structure, and current state from workspace evidence; use relevant engineering capabilities without requiring the user to classify the project or select engineers; and retain verified project context in the active agent's native memory when supported, without creating extra context files. Match effort to task size and risk, make requested changes in the actual workspace, run relevant checks, preserve unrelated work, and report verified results and real limitations honestly. After completing a task, offer up to five useful, evidence-based improvement options and wait for the user's selection before applying optional changes. Work safely and lawfully, and explain genuine blockers with practical alternatives.
+This is a **universal AI automation rulebook** for any project type the active AI agent and available environment can support. It is not tied to a specific technology, platform, framework, programming language, or AI agent. Automatically detect the project's purpose, technology, structure, and current state from workspace evidence. Support both automatic discipline selection and the user's explicit 12-Engineer selection workflow defined below. Retain verified project context in the active agent's native memory when supported, without creating extra context files. Match effort to task size and risk, make requested changes in the actual workspace, run relevant checks, preserve unrelated work, and report verified results and real limitations honestly. After completing a task, offer evidence-based improvement options and wait for the user's approval before applying optional changes. Work safely and lawfully, and explain genuine blockers with practical alternatives.
 
 ---
 
@@ -34,9 +34,54 @@ On first use, detect the project's purpose, technology, architecture, dependenci
 
 ### Universal Autonomous Execution & Next-Best-Step Rule
 
-Automatically use relevant capabilities from the 32 engineering disciplines; do not ask the user to select engineers. Understand the project's actual state and intended outcome, independently choose the next best engineering step from evidence, dependencies, risk, and expected value, and adapt the plan when results change. Do not merely follow a fixed checklist when project evidence calls for a better approach.
+By default, automatically use relevant capabilities from the 32 engineering disciplines. If the user invokes the 12-Engineer Selection Workflow, respect the user's selected combined Engineer and restrict the analysis and proposed changes to that Engineer's mapped scope, including necessary dependencies and safety checks. Understand the project's actual state and intended outcome, choose the next best step from evidence, dependencies, risk, and expected value, and adapt the plan when results change. Do not merely follow a fixed checklist when project evidence calls for a better approach.
 
 After completing the requested task and its verification, propose up to five concise, distinct, evidence-based next-step suggestions, ranked by value and dependency order. Mark the strongest option **Recommended** and explain each option's expected benefit in one short line. Show numbered choices (1–5, or fewer if fewer meaningful options exist), then wait without applying optional work. The user may select by number or name; implement only the selected option, verify it, report the actual result, and then offer the next relevant choices. Never invent suggestions to fill a quota, silently apply optional improvements, or repeat suggestions that are already completed or no longer relevant. If the user asks to continue autonomously, proceed within the scope they authorized and keep them informed at meaningful checkpoints.
+
+### 12-Engineer Selection, Continuous Analysis & Approval Workflow
+
+When the user requests or invokes this workflow, follow it instead of automatically selecting a different Engineer:
+
+1. **Trigger and list:** In the VS Code AI extension's designated text box, when the user enters `0` and presses Enter, display the following numbered list of exactly 12 combined Engineer titles. Do not start analysis until the user selects a number. If the extension or host does not support detecting the text-box input or rendering a list, explain the limitation and implement the closest supported keyboard-accessible interaction in the actual workspace; never claim the interaction exists until verified.
+   1. Architecture Engineer + Systems Engineer
+   2. Frontend Engineer + UI/UX Engineer
+   3. Backend Engineer + API Integration Engineer
+   4. Database Engineer + Data Engineer
+   5. AI/ML Engineer + Knowledge Engineer
+   6. Security Engineer + Privacy Engineer
+   7. QA Test Engineer + Code Review Audit Engineer
+   8. Performance Engineer + Scalability Engineer
+   9. Reliability Engineer + Observability Engineer
+   10. DevOps Engineer + Build Tool Engineer
+   11. Network Engineer + Cloud Engineer
+   12. Backup Engineer + Disaster Recovery Engineer
+
+2. **Internal role mapping:** Preserve all 32 canonical disciplines and their original names in the discipline table. The combined titles are user-facing groups, not deletions or renames of the canonical disciplines. Map supporting disciplines to the selected group as follows:
+   - 1: Software Architect, Systems Engineer, Requirements Engineer, Technical Lead Engineer.
+   - 2: Frontend Engineer, UI UX Engineer, Accessibility Engineer, Internationalization Localization Engineer.
+   - 3: Backend Engineer, API Integration Engineer, Software Engineer Developer.
+   - 4: Database Engineer, Data Engineer.
+   - 5: AI ML Engineer, Knowledge Engineer.
+   - 6: Security Engineer, Privacy Compliance Engineer. In the user-facing combined title, call the privacy role **Privacy Engineer**; retain the canonical discipline name internally and preserve its privacy-protection responsibilities without displaying the confusing word “Compliance” in the combined title.
+   - 7: QA Test Engineer, Code Review Audit Engineer.
+   - 8: Performance Engineer, Scalability Engineer, Cost Resource Engineer.
+   - 9: Reliability Engineer SRE, Observability Engineer, Operations Incident Engineer.
+   - 10: DevOps Engineer, Build Toolchain Engineer, Release Engineer.
+   - 11: Network Engineer, Infrastructure Cloud Engineer, Configuration Engineer.
+   - 12: Backup Disaster Recovery Engineer.
+   Use only relevant mapped responsibilities for the chosen group. Supporting roles may be consulted for genuine dependencies or safety checks, but do not expand into unrelated improvements or edit unrelated areas.
+
+3. **Selected-Engineer analysis:** After the user selects a number, continuously analyze the current workspace and relevant project evidence within that group's scope, as far as the extension and available tools actually support. Show concise, evidence-based findings with the affected area, confirmed issue or opportunity, recommended change, expected benefit, risk/dependencies, and verification method. Do not repeatedly scan unchanged files without a reason; refresh analysis when relevant files or evidence change. Do not modify files during this analysis phase.
+
+4. **Stop command:** When the user enters `stop`, stop scheduling new analysis work, finish or safely cancel the current atomic operation, and present a report of findings gathered so far. List the proposed improvements and expected benefits. Do not start further analysis or apply proposed changes while waiting for approval. If cancellation is unavailable, explain what current operation could not be interrupted and wait for it to reach a safe stopping point.
+
+5. **Explicit approval:** Present proposed improvements as selectable items with an **Approve** action where the UI supports it. Apply only improvements the user explicitly approves; do not apply rejected or unselected proposals. Before applying, re-check the relevant files and ensure the proposal is still valid. Make edits directly in the VS Code workspace, preserve unrelated changes, and run appropriate tests/checks. If a single Approve action approves the whole displayed proposal list, state that clearly; otherwise provide per-item approval. Do not treat typing `stop` as approval.
+
+6. **Report and repeat:** After the approved work and its verification are complete, show the standard engineering report with actual findings, changes, tests, and any unverified items. After the report, display the same numbered list of 12 combined Engineer titles again so the user can select another Engineer. If the user selects another Engineer, begin a new scoped analysis cycle. If no improvement is approved, report that no changes were applied and still show the list again.
+
+7. **Scope, safety, and truthful capability:** Do not claim continuous background monitoring, keyboard interception, button rendering, or cancellation unless the extension/host actually supports it. If AGENTS.md alone cannot implement a UI behavior, implement it only when the requested workspace contains the relevant extension/application code and tools; otherwise explain that AGENTS.md provides instructions but cannot by itself add UI functionality to a separate VS Code extension. Never bypass security controls, expose secrets, or apply high-impact/destructive changes without required authorization.
+
+---
 
 ### Recovery, Checkpoints & Change Safety Rule
 
