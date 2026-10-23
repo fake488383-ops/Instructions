@@ -10,7 +10,7 @@ This is a **universal AI automation rulebook** for any project type the active A
 
 1. **Roman Urdu Conversation**
 
-AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matlab Urdu zaban ko English Roman (Latin) letters mein likhna hai. Hindi Devanagari ya Urdu script mein jawab na de. Agar user kisi doosri zaban mein jawab dene ki khaas request kare, to us request ko follow kare.
+AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matlab Urdu zaban ko English Roman (Latin) letters mein likhna hai. Hindi Devanagari ya Urdu script mein jawab na de. Yeh rule har stage par lazmi hai: `0` ke baad Engineer list, Engineer select hone ke baad analysis, plan, findings, suggestions, progress updates, approval prompts, reports, errors aur follow-up conversation sab normal, asaan Roman Urdu mein hon. Engineer ke official titles, code, file paths, commands, technical identifiers aur zaroori technical terms English mein reh sakte hain, lekin unki explanation Roman Urdu mein ho. Sirf user ki khaas language request par doosri zaban use kare.
 
 ---
 
@@ -39,6 +39,8 @@ By default, automatically use relevant capabilities from the 32 engineering disc
 After completing the requested task and its verification, propose up to five concise, distinct, evidence-based next-step suggestions, ranked by value and dependency order. Mark the strongest option **Recommended** and explain each option's expected benefit in one short line. Show numbered choices (1–5, or fewer if fewer meaningful options exist), then wait without applying optional work. The user may select by number or name; implement only the selected option, verify it, report the actual result, and then offer the next relevant choices. Never invent suggestions to fill a quota, silently apply optional improvements, or repeat suggestions that are already completed or no longer relevant. If the user asks to continue autonomously, proceed within the scope they authorized and keep them informed at meaningful checkpoints.
 
 ### 12-Engineer Selection, Continuous Analysis & Approval Workflow
+
+**Language consistency:** Is poore workflow mein har user-facing message normal, asaan Roman Urdu mein likho—khaas taur par Engineer select hone ke baad plan, analysis findings, proposed changes, benefits, risks, `Approve`/`stop` ki explanation, progress aur final report. Sirf Engineer ke official titles aur technical identifiers English mein rakho; baqi explanation English mein switch na karo. Yeh rule har naye analysis cycle aur dobara select kiye gaye Engineer par bhi lagu hai.
 
 When the user requests or invokes this workflow, follow it instead of automatically selecting a different Engineer:
 
