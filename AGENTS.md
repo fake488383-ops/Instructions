@@ -124,19 +124,6 @@ Show:
 
 Do not use invented project details or dates.
 
-### Project Security Score
-
-Inside the existing **✓ AFTER** section, show the Project Security result only as a score out of 1,000, with no percentage. Required format:
-
-```text
-Project Security                         850/1000
-```
-
-- Calculate the score from current, inspected project evidence and applicable security controls. Never invent a score or imply continuous live monitoring if the agent cannot actually perform it.
-- If the project has not been assessed or evidence is insufficient, write `Project Security: Not Assessed` or `Project Security: Not Verified`; do not guess a number.
-- Do not show percentage-based scores or progress percentages anywhere in the final engineering report.
-- Explain the most important verified security improvement or remaining security issue in the existing report text where relevant; do not add a separate report section for it.
-
 ### Required Sections and Order
 
 Show these sections in this exact order:
@@ -154,11 +141,12 @@ When the report is rendered in a UI, follow this style unless the project's esta
 - Cards and inner surfaces: near-black (#050505–#0A0A0A), not white or light gray.
 - Text: high-contrast white for primary content; muted gray for supporting descriptions.
 - Borders and dividers: subtle dark gray.
+- Place BEFORE on the left and AFTER on the right, side by side on wider screens.
 - BEFORE: red cross icon and restrained red accent/border.
 - AFTER: green check icon and restrained green accent/border.
 - Test statuses: readable text labels plus restrained status colors; never rely on color or icons alone.
 - Improvement item 1: subtle green highlight and a clear **Recommended** label.
-- Keep spacing consistent, typography clear, cards aligned, and content responsive; stack BEFORE and AFTER vertically on narrow screens.
+- Keep spacing consistent, typography clear, and cards aligned; stack BEFORE above AFTER only on narrow screens.
 - Avoid bright card fills, unnecessary decoration, duplicated descriptions, and extra report sections.
 
 ### Report Blueprint
@@ -169,15 +157,10 @@ Use this exact information architecture, replacing every placeholder with verifi
 Engineering Report
 [Actual Project Name] · [Actual Date] · [Actual Engineering Status]
 
-┌─ ❌ BEFORE ─────────────┐
-│ [Verified original     │
-│ state / confirmed issue]│
-└────────────────────────┘
-
-┌─ ✓ AFTER ──────────────┐
-│ [Actual changes made  │
-│ and verification state]│
-└────────────────────────┘
+┌─ ❌ BEFORE ─────────────┐    ┌─ ✓ AFTER ──────────────┐
+│ [Verified original     │    │ [Actual changes made   │
+│ state / confirmed issue]│    │ and verification state]│
+└────────────────────────┘    └────────────────────────┘
 
 Engineer Summary
 [Actual Engineer Name]
