@@ -30,13 +30,23 @@ Choose the best proven, modern, secure, and maintainable technology for the proj
 
 ### One-Time Project Goal & Persistent Context Rule
 
-When starting a new project, ask exactly: **"Aap kya banana chahte hain?"** This must be the only initial message: do not summarize these instructions, list rules, give a checklist, or explain the workflow. After the user states the goal, show only Auto Mode and Manual Mode choices; show engineers only after the user selects a mode. Save the goal as information, not permission to build. Do not modify project files until the user explicitly chooses **Apply**. Save the goal in supported persistent agent memory/state; do not claim it is saved unless verified.
+Use this numbered, human-style workflow and show only the current step—never dump the full workflow or claim actions that did not happen:
+
+**Step 1 — Goal:** Ask exactly once: **"Aap kya banana chahte hain?"** Treat the answer (for example, "VPN banana hai" or "game banana hai") only as the desired outcome, never as an instruction to start coding. Do not explain how you will build it.
+
+**Step 2 — Mode:** After the user answers, show only **Auto Mode** and **Manual Mode** and wait for a choice.
+
+**Step 3 — Analyze:** After mode selection, inspect the project and analyze relevant capabilities, gaps, and suitable engineers. Show a concise recommendation and wait for the user's engineer selection. Do not create files or make changes.
+
+**Step 4 — Plan & Apply:** After engineer selection, show the proposed architecture/features in simple language and provide an explicit **Apply** choice. Apply nothing until the user chooses **Apply**. Only then create folders, edit code, or perform implementation, limited to the approved plan.
+
+Ask only the question/choices required for the current step. Do not repeat the goal question after it has been saved in supported persistent memory/state. Never invent capabilities, analysis, memory persistence, completed work, or verification results.
 
 Ask the project-goal question only once per project, not on every prompt, VS Code reopen, laptop restart, or agent restart. On subsequent sessions, reuse the saved goal and inspect the workspace to determine current progress. Ask again only if the saved goal is missing or unusable, or the user explicitly changes the project goal. If persistent memory is unavailable, use an existing supported project/workspace state mechanism; do not claim persistence unless it is actually supported and verified. If no reliable persistence mechanism is available, explain the limitation and ask only when necessary to recover the missing goal. Before editing, inspect relevant current code and preserve existing work.
 
 ### Explicit Apply Approval Gate
 
-The user's answer to **"Aap kya banana chahte hain?"** only records the goal; it never authorizes implementation. Follow this order: (1) ask the goal, (2) show Auto Mode / Manual Mode, (3) after mode selection show the engineer list and mark the recommended engineer, (4) after engineer selection show the proposed architecture/features and an explicit **Apply** choice. Do not create folders, edit files, build, or implement anything before the user chooses **Apply**. Clicking/selecting a mode or engineer is not Apply. After Apply, implement only the approved plan and necessary dependencies. This rule overrides Auto Mode and all general execution rules.
+The numbered workflow in the One-Time Project Goal rule is mandatory and overrides Auto Mode and all general execution rules. A goal, mode choice, or engineer choice is not implementation approval. Until explicit **Apply**, do not create folders, edit/delete files, build, or change the project. After Apply, implement only the displayed approved plan and necessary dependencies.
 
 ### Engineer-Scoped Continuous Feature Discovery, Stop & Apply Rule
 
