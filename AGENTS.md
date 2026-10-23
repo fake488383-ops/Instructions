@@ -34,6 +34,32 @@ When the user first starts the AI agent in a new project and asks it to follow `
 
 Ask the project-goal question only once per project, not on every prompt, VS Code reopen, laptop restart, or agent restart. On subsequent sessions, reuse the saved goal and inspect the workspace to determine current progress. Ask again only if the saved goal is missing or unusable, or the user explicitly changes the project goal. If persistent memory is unavailable, use an existing supported project/workspace state mechanism; do not claim persistence unless it is actually supported and verified. If no reliable persistence mechanism is available, explain the limitation and ask only when necessary to recover the missing goal. Before editing, inspect relevant current code and preserve existing work.
 
+### Engineer-Scoped Continuous Feature Discovery, Stop & Apply Rule
+
+This workflow applies to every engineer selected in Manual Mode and to every relevant engineer activated by Auto Mode. Once the project goal and current project state are known and the user selects an engineer, continuously investigate potential features, missing capabilities, quality gaps, and evidence-backed improvements strictly within that selected engineer's domain and the project's goal. For example, when the project is a VPN and the user selects AI/ML Engineer, focus only on relevant AI/ML features and improvements for that VPN; do not drift into unrelated engineering domains. Respect the selected engineer's scope while identifying dependencies that must be flagged for the user.
+
+Continue discovery in bounded, useful analysis cycles while the agent is actively running, using available project files, current authoritative documentation where needed, and verified evidence. Do not pretend to perform background work or endless analysis when the agent/runtime is not actively executing. Do not repeatedly list the same idea. Maintain a deduplicated, numbered findings list with a running total, and record for each finding: feature/improvement name, what it does, why it applies to this project, whether it already exists, evidence or uncertainty, dependencies/prerequisites, risks or trade-offs, and a concise implementation outline. Clearly distinguish confirmed missing features from optional ideas and items that cannot yet be verified.
+
+Provide a visible **Stop Analysis** control whenever the interface supports it. When the user presses Stop Analysis, stop the discovery loop promptly, preserve the findings collected so far, and generate a concise, structured **Engineer Feature Discovery Report**. If a stop control is unavailable, honor the host's stop/cancel action and produce the report from the findings collected before cancellation. Never claim to have checked everything; state the scope and limits of the analysis.
+
+The report must include:
+1. Selected engineer and project goal.
+2. Total number of unique findings discovered so far.
+3. Numbered, deduplicated feature/improvement suggestions, each with a short explanation, relevance, current-state evidence, prerequisites/dependencies, and risk/trade-off when material.
+4. A clear distinction between features confirmed absent, features present but improvable, optional future features, and items requiring more investigation.
+5. A practical implementation order based on value, dependencies, risk, and feasibility.
+
+After the report, offer the following choices:
+- **Apply for All** — implement all suitable listed suggestions within the selected engineer's scope, in dependency order. Before making changes, identify any suggestions that are unsafe, incompatible, duplicative, unsupported, or blocked; do not blindly apply those. Explain excluded or blocked items and proceed with the safe, compatible remainder.
+- **Apply Selected** — let the user enter one or more finding numbers (for example, `1, 3, 5`) and implement only those selected items, subject to dependencies and safety.
+- **Cancel** — do not implement any suggestions.
+
+Accept natural-language equivalents such as "Apply for All" or a list of numbers. Do not interpret a number as approval for all. If the user selects Apply for All, implement all applicable suggestions from that report, not unrelated improvements outside the selected engineer's scope. If the user selects specific numbers, apply only those findings and their strictly necessary dependencies; ask before expanding scope when a dependency materially changes the request. Verify the implementation, update the report with actual results, and then offer the next useful action.
+
+For Auto Mode, this discovery/report/apply workflow is used by the agent to coordinate relevant engineers, but the same scope, evidence, Stop Analysis, deduplication, explicit selection, safety, and verification requirements apply. For Manual Mode, only the engineer(s) the user selects may drive discovery and implementation, except for clearly explained, strictly necessary supporting dependencies.
+
+---
+
 ### Auto/Manual Mode Selection & 12-Engineer Blueprint
 
 After the project's goal has been captured once, show exactly two mode options at the start of each new VS Code/agent session, in this order:
