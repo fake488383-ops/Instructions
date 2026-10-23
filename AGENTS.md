@@ -134,32 +134,19 @@ Show:
 
 Do not use invented project details or dates.
 
-### Project Progress, Maturity & Improvement Status
+### Project Security Score
 
-Include a compact **Project Progress & Maturity** summary inside the existing **✓ AFTER** section so the required five report sections and their order remain unchanged. Show each area as a plain text row: area name on the left and the result aligned on the right. Do not use progress bars, orange lines, colored meter lines, or large decorative percentage graphics.
-
-For each scored area, show the percentage followed immediately by its denominator in this exact style: **`50% of 100%`** (meaning 50 percent secure/completed out of the full 100 percent). For example:
+Inside the existing **✓ AFTER** section, show only one compact security result in plain text, with the label on the left and the score on the right. Use a **1,000-point scale**, not a 100-point scale, and show the equivalent percentage. Required format:
 
 ```text
-Project Progress & Maturity
-Overall Completion                         42% of 100%  (+4%)
-Features                                   70% of 100%  (+8%)
-Security                                   50% of 100% secure
-Security still unmet                       50% of 100%
-Privacy                                    35% of 100% protected
-Privacy still unmet                        65% of 100%
-
-Improved this task: [verified improvement]
-Still needs improvement: [highest-priority verified gap]
+Project Security                         850/1000 — 85% secure
 ```
 
-- Percentages must come from inspected requirements, code, test results, security/privacy checks, and other relevant evidence—not intuition or arbitrary estimates. Define completion against known requirements and maturity against applicable quality controls.
-- For Security and Privacy, explicitly show both the measured level and the remaining gap, each written as a percentage **out of 100%**. Keep the score on the right side of its row.
-- Calculate Security/Privacy coverage from an explicit set of applicable controls: controls met versus total applicable controls, weighted where justified. The unmet percentage is the remainder only when the scoring method supports that calculation.
-- If checks are unknown, unrun, or insufficient, report **Not Assessed** or **Not Verified** instead of claiming a percentage. A percentage is an evidence-based assessment, not a guarantee of security or legal compliance.
-- Show change since the previous comparable report only when a prior recorded/evidenced baseline exists; otherwise show `Change: baseline unavailable`.
-- Briefly state what objectively improved in this task and the most important remaining improvement. If nothing improved, say so plainly.
-- 100% means all defined requirements for that measure are complete and required verification passed; a successful build alone does not prove a project is secure.
+- Calculate the score from current, inspected project evidence and a defined set of applicable security controls; weight controls only when justified. The number must reflect the latest assessment performed for this task, so refresh it whenever relevant code, dependencies, configuration, or security checks change.
+- The score is a measured assessment, not a guarantee of security. Never invent a score or imply continuous live monitoring if the agent cannot actually perform it.
+- If the project has not been assessed or evidence is insufficient, write `Project Security: Not Assessed` or `Project Security: Not Verified`; do not guess a number.
+- Show only the Project Security result here. Do not add overall completion, feature, privacy, unmet-gap, change-percentage, or other maturity-score rows.
+- Explain the most important verified security improvement or remaining security issue in the existing report text where relevant; do not add a separate report section for it.
 
 ### Required Sections and Order
 
