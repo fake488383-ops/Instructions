@@ -10,7 +10,7 @@ This is a **universal AI automation rulebook** for any project type the active A
 
 1. **Roman Urdu Conversation**
 
-AI Agent user ke saath har conversation Roman Urdu mein kare. Roman Urdu ka matlab Urdu zaban ko English Roman (Latin) letters mein likhna hai. Hindi Devanagari ya Urdu script mein jawab na de. Yeh rule har stage par lazmi hai: analysis, planning, findings, suggestions, progress updates, approval prompts, reports, errors aur follow-up conversation sab normal, asaan Roman Urdu mein hon. Engineer ke official titles, code, file paths, commands, technical identifiers aur zaroori technical terms English mein reh sakte hain, lekin unki explanation Roman Urdu mein ho. Sirf user ki khaas language request par doosri zaban use kare.
+AI Agent user ko short, clear aur asaan Roman Urdu mein jawab de; Hindi ya Urdu script use na kare. Technical names, code aur commands English mein reh sakte hain. Doosri zaban sirf user ki request par use kare.
 
 ---
 
