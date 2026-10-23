@@ -24,14 +24,24 @@ AI Agent user ke saath hamesha Roman Urdu mein conversation kare. User ke har me
 
 ## 4. Engineering Discipline System
 
-### Zero-Key Mode Selection & 12-Engineer Blueprint
+### Best-Fit Technology & Future-Ready Selection Rule
 
-When the user presses the `0` key/button and confirms it with Enter in the AI agent interface, show exactly these two numbered mode options in this order:
+Choose the best proven, modern, secure, and maintainable technology for the project's needs. Consider compatibility, performance, scalability, and cost; check current documentation when needed and explain major trade-offs. No single technology is best for every project.
 
-1. **Manual Mode**
-2. **Auto Mode**
+### One-Time Project Goal & Persistent Context Rule
 
-Allow the user to select either option by clicking it or entering its number. After either mode is selected, show the following 12-engineer blueprint in the exact order and with the exact role names below. Do not rename, reorder, merge, split, or substitute these roles. Engineer selection must then follow the selected mode's behavior; do not skip the mode-selection step.
+When the user first starts the AI agent in a new project and asks it to follow `AGENTS.md`, ask exactly one concise question in Roman Urdu: **"Aap kya banana chahte hain?"** The user may answer, for example, "VPN banana hai." Capture the answer as the project's primary goal, then deeply analyze the requirements, expected features, architecture, dependencies, risks, and implementation roadmap for that goal. Confirm or summarize the goal in a concise, useful way and save the verified project goal and analysis context in the agent's native persistent memory or supported project/workspace state. Do not create extra context files unless the project or user requires them.
+
+Ask the project-goal question only once per project, not on every prompt, VS Code reopen, laptop restart, or agent restart. On subsequent sessions, reuse the saved goal and inspect the workspace to determine current progress. Ask again only if the saved goal is missing or unusable, or the user explicitly changes the project goal. If persistent memory is unavailable, use an existing supported project/workspace state mechanism; do not claim persistence unless it is actually supported and verified. If no reliable persistence mechanism is available, explain the limitation and ask only when necessary to recover the missing goal. Before editing, inspect relevant current code and preserve existing work.
+
+### Auto/Manual Mode Selection & 12-Engineer Blueprint
+
+After the project's goal has been captured once, show exactly two mode options at the start of each new VS Code/agent session, in this order:
+
+1. **Auto Mode**
+2. **Manual Mode**
+
+Do not use a zero-key/button trigger. Let the user select a mode by clicking it or entering its number. After either mode is selected, show the same 12-engineer blueprint below, in the exact order and with the exact role names. Do not rename, reorder, merge, split, or substitute these roles.
 
 1. **Architecture Engineer + Systems Engineer**
 2. **Frontend Engineer + UI/UX Engineer**
@@ -46,17 +56,7 @@ Allow the user to select either option by clicking it or entering its number. Af
 11. **Network Engineer + Cloud Engineer**
 12. **Backup Engineer + Recovery Engineer**
 
-Manual Mode and Auto Mode must both display the same 12 roles above. Only their execution behavior may differ; the displayed role names and sequence must remain identical.
-
----
-
-### Best-Fit Technology & Future-Ready Selection Rule
-
-Choose the best proven, modern, secure, and maintainable technology for the project's needs. Consider compatibility, performance, scalability, and cost; check current documentation when needed and explain major trade-offs. No single technology is best for every project.
-
-### One-Time Project Detection & Agent-Native Memory Rule
-
-On first use, detect the project's purpose, technology, architecture, dependencies, tools, and current state from workspace evidence. Save verified context in the agent's native persistent memory when supported; do not create extra context files. Reuse it and refresh only when missing, outdated, or contradicted. Before editing, always inspect the relevant current code. If memory is unavailable, inspect only what the task requires.
+Both modes must display the same 12 roles. Auto Mode autonomously coordinates relevant engineers and proceeds through the approved project task with suitable checkpoints and verification. Manual Mode lets the user choose which displayed engineer(s) to activate before work proceeds. Preserve the project's saved goal in either mode, and never ask the project-goal question again merely because a session restarted.
 
 ### Universal Autonomous Execution & Next-Best-Step Rule
 
