@@ -134,6 +134,30 @@ Show:
 
 Do not use invented project details or dates.
 
+### Project Progress, Maturity & Improvement Status
+
+Include a compact **Project Progress & Maturity** summary inside the existing **✓ AFTER** section so the required five report sections and their order remain unchanged. Show each area as a plain text row: area name on the left and its percentage aligned on the right. Do not use progress bars, orange lines, colored meter lines, or large decorative percentage graphics.
+
+Report the **Overall Project Completion** and applicable areas such as Features, Architecture/Code Quality, Security, Privacy, Testing/Reliability, Performance, and Documentation. Include only areas relevant to the project. Example layout:
+
+```text
+Project Progress & Maturity
+Overall Completion                         42%  (+4%)
+Features                                   70%  (+8%)
+Security                                   50%  (+2%)
+Privacy                                    35%  (+0%)
+Testing & Reliability                      25%  (+5%)
+
+Improved this task: [verified improvement]
+Still needs improvement: [highest-priority verified gap]
+```
+
+- Percentages must come from inspected requirements, code, test results, security/privacy checks, and other relevant evidence—not intuition or arbitrary estimates. Define completion against the project's known requirements and maturity against applicable quality controls.
+- Show the change since the previous comparable report in parentheses (for example, `+4%`, `-2%`, or `+0%`). Use a prior recorded/evidenced baseline only; if none exists, show `Change: baseline unavailable` rather than inventing a change.
+- If there is not enough evidence to score an area, show **Not Assessed** or **Not Verified**, not a guessed percentage. A high overall completion score must not conceal low Security or Privacy maturity.
+- Briefly state what objectively improved in this task and the most important remaining improvement. If nothing improved, say so plainly.
+- 100% means all defined requirements for that measure are complete and the required verification passed; do not imply the whole project is finished or secure solely because code exists or a build succeeds.
+
 ### Required Sections and Order
 
 Show these sections in this exact order:
