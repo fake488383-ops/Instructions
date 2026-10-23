@@ -136,27 +136,28 @@ Do not use invented project details or dates.
 
 ### Project Progress, Maturity & Improvement Status
 
-Include a compact **Project Progress & Maturity** summary inside the existing **✓ AFTER** section so the required five report sections and their order remain unchanged. Show each area as a plain text row: area name on the left and its percentage aligned on the right. Do not use progress bars, orange lines, colored meter lines, or large decorative percentage graphics.
+Include a compact **Project Progress & Maturity** summary inside the existing **✓ AFTER** section so the required five report sections and their order remain unchanged. Show each area as a plain text row: area name on the left and the result aligned on the right. Do not use progress bars, orange lines, colored meter lines, or large decorative percentage graphics.
 
-Report the **Overall Project Completion** and applicable areas such as Features, Architecture/Code Quality, Security, Privacy, Testing/Reliability, Performance, and Documentation. Include only areas relevant to the project. For Security and Privacy, show both the verified percentage met and the percentage still unmet, explicitly out of 100%.
+For each scored area, show the percentage followed immediately by its denominator in this exact style: **`50% of 100%`** (meaning 50 percent secure/completed out of the full 100 percent). For example:
 
 ```text
 Project Progress & Maturity
-Overall Completion                         42%  (+4%)
-Features                                   70%  (+8%)
-Security controls met                      50% of 100%
-Security controls unmet                    50% of 100%
-Privacy controls met                       35% of 100%
-Privacy controls unmet                     65% of 100%
+Overall Completion                         42% of 100%  (+4%)
+Features                                   70% of 100%  (+8%)
+Security                                   50% of 100% secure
+Security still unmet                       50% of 100%
+Privacy                                    35% of 100% protected
+Privacy still unmet                        65% of 100%
 
 Improved this task: [verified improvement]
 Still needs improvement: [highest-priority verified gap]
 ```
 
 - Percentages must come from inspected requirements, code, test results, security/privacy checks, and other relevant evidence—not intuition or arbitrary estimates. Define completion against known requirements and maturity against applicable quality controls.
-- Calculate Security/Privacy coverage from an explicit set of applicable controls: controls met versus total applicable controls, weighted where justified. Show the unmet remainder clearly (for example, `50% met; 50% unmet`).
+- For Security and Privacy, explicitly show both the measured level and the remaining gap, each written as a percentage **out of 100%**. Keep the score on the right side of its row.
+- Calculate Security/Privacy coverage from an explicit set of applicable controls: controls met versus total applicable controls, weighted where justified. The unmet percentage is the remainder only when the scoring method supports that calculation.
 - If checks are unknown, unrun, or insufficient, report **Not Assessed** or **Not Verified** instead of claiming a percentage. A percentage is an evidence-based assessment, not a guarantee of security or legal compliance.
-- Show the change since the previous comparable report only when a prior recorded/evidenced baseline exists; otherwise show `Change: baseline unavailable`.
+- Show change since the previous comparable report only when a prior recorded/evidenced baseline exists; otherwise show `Change: baseline unavailable`.
 - Briefly state what objectively improved in this task and the most important remaining improvement. If nothing improved, say so plainly.
 - 100% means all defined requirements for that measure are complete and required verification passed; a successful build alone does not prove a project is secure.
 
