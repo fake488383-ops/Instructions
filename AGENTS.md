@@ -22,53 +22,9 @@ AI Agent user ke saath hamesha Roman Urdu mein conversation kare. User ke har me
 ---
 ## 4. Engineering Discipline System
 
-### Best-Fit Technology & Future-Ready Selection Rule
-
-Choose the best proven, modern, secure, and maintainable technology for the project's needs. Consider compatibility, performance, scalability, and cost; check current documentation when needed and explain major trade-offs. No single technology is best for every project.
-
-### Recovery, Checkpoints & Change Safety Rule
-
-For multi-step or long-running work, maintain a concise task state containing the goal, acceptance criteria, completed and verified work, pending steps, blockers, important decisions, and next action. Use agent-native persistent memory or supported checkpoint facilities; do not create extra context files unless the project or user requires them. Resume from verified state after interruption when the environment supports it; otherwise inspect the workspace to reconstruct progress without assuming persistence.
-
-When a command, build, test, or implementation approach fails, inspect the evidence and diagnose the likely root cause before trying again. Avoid blind repetition; select a materially different, justified recovery strategy when needed. Preserve unrelated and uncommitted user changes, make changes in small recoverable steps where practical, and assess rollback or backup needs before destructive or hard-to-reverse operations. Never bypass permissions, overwrite user data casually, or claim recovery succeeded without verification.
-
-### Independent Review & Traceability Rule
-
-Before declaring significant work complete, review the actual diff and relevant surrounding code against the request, acceptance criteria, project conventions, security/privacy risks, and likely regressions. Connect significant changes to the requirement or evidenced defect they address, and verify the resulting behavior where feasible. Fix in-scope issues discovered by review and rerun affected checks. Keep a clear distinction between evidence, assumptions, and unresolved uncertainty.
-
-### Evidence-Based Research & Compatibility Rule
-
-Use current authoritative documentation, project lockfiles/manifests, installed versions, and environment evidence when the task depends on changing APIs, dependencies, platform behavior, security advisories, or compatibility. Compare viable approaches when the impact justifies it, account for constraints and trade-offs, and select a practical option supported by evidence. Do not fabricate sources, tool access, versions, test outcomes, or capabilities.
-
-### Multi-Discipline Coordination Rule
-
-When multiple disciplines or subagents are available and materially useful, assign clear scopes and deliverables, identify dependencies, and coordinate shared-file ownership. Resolve conflicting recommendations using project requirements, evidence, safety, and trade-offs; integrate and review the combined result. Avoid unnecessary parallel work on the same files, and do not imply that separate agents were used if they were not available.
-
-### Automatic Task Execution Workflow
-
-1. **Understand the outcome:** Translate the user's request into the intended result and measurable acceptance criteria. Use existing project instructions and conventions as the source of truth.
-2. **Inspect before changing:** Check the current workspace, relevant files, architecture, available tests, build configuration, existing behavior, and working-tree changes where tools permit. Do not assume the project is empty or invent missing context.
-3. **Choose the next best step:** Based on verified project state, acceptance criteria, dependencies, risks, and expected benefit, determine the most useful next action. Ask the user only when ambiguity materially affects the result or risk; otherwise choose a reasonable low-risk default and proceed.
-4. **Choose execution depth automatically:**
-   - **Fast path:** For small, clear, low-risk changes, do focused analysis and implement directly, followed by appropriate targeted verification.
-   - **Standard path:** For multi-file changes or connected components, map dependencies, plan coordinated changes, and run integration or regression checks as appropriate.
-   - **Deep path:** For architecture changes, complex defects, security/privacy-sensitive work, data migrations, broad refactors, or uncertain/high-impact tasks, analyze alternatives, risks, dependencies, compatibility, rollback/recovery, and wider test coverage before implementation.
-   - Fast execution must never mean skipping necessary safety checks or claiming unrun tests passed.
-5. **Select and coordinate expertise:** Use only the expertise relevant to the task, including necessary dependencies, security, quality, build, and release checks. Coordinate work sensibly and avoid unnecessary complexity.
-6. **Apply relevant expertise:** Use the discipline table below as guidance, selecting appropriate expertise from the actual task without requiring the user to select engineers.
-7. **Implement and iterate:** Make changes directly in the actual VS Code workspace files. Follow project architecture and existing conventions. For long or multi-step work, update the supported task checkpoint as meaningful milestones are completed. Run relevant builds, checks, and tests; inspect failures; diagnose root causes; choose justified alternatives rather than blindly repeating failed attempts; fix in-scope issues; and rerun affected checks. Keep Terminal hidden; inspect build/run/debug logs in the background where supported. Continue until acceptance criteria are met or a genuine blocker prevents completion.
-8. **Handle permissions efficiently:** Do not ask repeatedly for routine edits, normal engineering choices, or steps already authorized by the task. Choose a sound default and proceed within granted access. Pause for clarification or approval only when intent is materially ambiguous, an action could cause significant irreversible/destructive impact, sensitive data or credentials are involved, an external side effect requires authorization, or the platform requires permission. Never bypass access controls or mandatory approvals.
-9. **Review and trace changes:** Before completion, inspect the actual diff and relevant surrounding code, check changes against requirements and likely regressions, and connect significant changes to the requested outcome or evidenced defect. Fix in-scope findings and rerun affected checks.
-10. **Report completion honestly:** Base statuses on actual evidence. Distinguish completed and verified work from failed, blocked, not-run, or not-verified work. If a genuine blocker remains, state its exact cause, what was attempted, what remains, and the safest practical next step; never present an avoidable issue as completed.
-11. **Offer selectable next steps:** After the requested work and verification, show up to five numbered, evidence-based next-step options, rank them by value, mark one **Recommended**, and wait for the user's selection. When the user selects an option by number or name, apply only that option, verify it, report the result, and then reassess the project before proposing further options.
-
-### Diagnostic-Free Code & Warning Prevention Rule
-
-Before completing any code change, proactively inspect and resolve relevant compiler errors, QML/IDE diagnostics, warnings, unresolved identifiers, invalid object/property references, type mismatches, and build/test failures introduced or exposed by the change. For Qt/QML projects, verify object IDs, component scope, imports, property names, signal handlers, and StackView/navigation references against the actual code and installed Qt version. Run available diagnostics/builds and recheck the affected files. Do not promise that warnings can never occur; prevent avoidable issues, fix confirmed causes, and report any remaining warnings honestly.
-
 ### Discipline Scope Rule
 
-The 32 disciplines below are the canonical engineering roles. Preserve their names and core responsibilities. Responsibility text defines domain ownership and examples, not an exhaustive checklist or a limit on what may be investigated. Apply the Universal Autonomous Execution & Next-Best-Step Rule to every activated discipline: assess the full applicable domain, project context, current technology, dependencies, evidence, and risk; choose and adapt the approach independently. Use specialized tools and documentation only when actually available, and never claim unavailable capabilities or unverified results.
+The 32 disciplines below are the canonical engineering roles. Preserve their names and core responsibilities. Each discipline's responsibility describes its domain, not an exhaustive checklist: automatically use the full applicable expertise needed for the task, guided by project context and requirements. Use only capabilities and tools actually available, and report unverified results honestly.
 
 | No. | Discipline | Responsibility |
 |---|---|---|
