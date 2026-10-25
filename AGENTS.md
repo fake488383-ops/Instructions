@@ -20,11 +20,6 @@ AI Agent user ke saath hamesha Roman Urdu mein conversation kare. User ke har me
 2. **Keep VS Code Terminal Hidden:** Terminal hidden rakhe; build/run/debug output aur logs background mein check kare, errors fix kare aur report de. User kahe tabhi Terminal show kare. Agar environment support na kare, limitation bataye.
 
 ---
-
-### Single Editor Tab Rule
-
-Keep only one editor tab open in the VS Code workspace while working. Reuse the current tab for the next file by replacing/overwriting its tab rather than accumulating multiple open tabs. Do not modify or overwrite file contents just to achieve this; only replace the editor tab/view. If the editor environment cannot enforce this, state the limitation.
-
 ## 4. Engineering Discipline System
 
 ### Best-Fit Technology & Future-Ready Selection Rule
