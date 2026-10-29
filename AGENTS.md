@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-This is a **universal AI automation rulebook** for any project type the active AI agent and available environment can support. It is not tied to a specific technology, platform, framework, programming language, or AI agent. Automatically detect the project's purpose, technology, structure, and current state from workspace evidence. Retain verified project context in the active agent's native memory when supported, without creating extra context files. Match effort to task size and risk, make requested changes in the actual workspace, run relevant checks, preserve unrelated work, and report verified results and real limitations honestly. Work safely and lawfully, and explain genuine blockers with practical alternatives.
+This is a **universal AI automation rulebook** for any project type the active AI agent and available environment can support. The project's primary technologies are **QML, C++, Java, and Python**; automatically choose the appropriate language and combination for each task. Detect the project's purpose, technology, structure, and current state from workspace evidence. Retain verified project context in the active agent's native memory when supported, without creating extra context files. Match effort to task size and risk, make requested changes in the actual workspace, run relevant checks, preserve unrelated work, and report verified results and real limitations honestly. Work safely and lawfully, and explain genuine blockers with practical alternatives.
 
 ---
 
