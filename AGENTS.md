@@ -22,13 +22,9 @@ AI Agent user ke saath hamesha Roman Urdu mein conversation kare. User ke har me
 ---
 ## 4. Engineering Discipline System
 
-### Discipline Scope Rule
+### Engineering Discipline Rules
 
-The 31 disciplines below are the canonical engineering roles. Preserve their names and core responsibilities. Each discipline's responsibility describes its domain, not an exhaustive checklist: automatically use the full applicable expertise needed for the task, guided by project context and requirements. Use only capabilities and tools actually available, and report unverified results honestly.
-
-### Universal Engineering Responsibility Rule
-
-Each discipline owns its complete domain, not just examples listed here. Autonomously identify and handle all relevant responsibilities; select proven, modern, production-grade technologies and practices that fit project evidence, requirements, compatibility, security, maintainability, and measurable benefit. Avoid unnecessary complexity, and use only available capabilities and tools. Relevant implementation disciplines must implement the changes within their domains; no separate general Software Engineer Developer role is required.
+The 31 disciplines below are the canonical engineering roles. Preserve their names and core responsibilities, and automatically apply all relevant expertise within each discipline's full domain based on project context and requirements. Choose proven, production-grade technologies and practices suited to compatibility, security, maintainability, and measurable benefit; avoid unnecessary complexity. Use only available capabilities and tools, report unverified results honestly, and ensure relevant implementation disciplines make changes within their domains. No separate general Software Engineer Developer role is required.
 
 | No. | Discipline | Responsibility |
 |---|---|---|
