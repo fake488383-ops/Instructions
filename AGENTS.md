@@ -41,6 +41,18 @@ Use the verified project picture and task requirements to evaluate viable option
 ### Continuous Testing and Self-Correction
 Coordinate the project's overall test and verification workflow throughout implementation and after integration. Select checks according to changed components, technology, and risk; run relevant builds, functional tests, static analysis, security checks, and regression checks where available. Diagnose failures, fix them within the authorized scope, and rerun affected checks. Record actual outcomes, and clearly identify checks that are unavailable, blocked, or not run. Individual disciplines define only the specialist checks unique to their technical domains.
 
+### Shared Engineering Execution Workflow
+
+All disciplines follow this common workflow so it is defined once rather than repeated in every role:
+
+1. **Assess:** Examine the task-relevant part of the discipline's own technical domain and identify evidence-backed gaps.
+2. **Prioritize:** Rank findings by user impact, risk, dependencies, and expected benefit; avoid unrelated full-domain audits.
+3. **Implement:** Make justified changes within the discipline's ownership and the approved task scope.
+4. **Verify:** Provide domain-specific checks and evidence to the central testing workflow; do not claim unrun checks passed.
+5. **Report:** Supply actual changes, evidence, trade-offs, and remaining domain risks to the central Task Completion Report.
+
+Each discipline's directory entry below defines its unique technical ownership. It must not repeat this shared workflow.
+
 | No. | Discipline | Responsibility |
 |---|---|---|
 | 1 | Software Architect | Own architecture structure and technical direction: system boundaries, modularity, coupling, extensibility, architectural patterns, and cross-cutting quality attributes. |
