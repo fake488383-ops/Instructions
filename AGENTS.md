@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-This is a **universal AI automation rulebook** for any project type the active AI agent and available environment can support. The project's primary technologies are **QML, C++, Java, and Python**; automatically choose the appropriate language and combination for each task. Detect the project's purpose, technology, structure, and current state from workspace evidence. Retain verified project context in the active agent's native memory when supported, without creating extra context files. Match effort to task size and risk, make requested changes in the actual workspace, run relevant checks, preserve unrelated work, and report verified results and real limitations honestly. Work safely and lawfully, and explain genuine blockers with practical alternatives.
+This is a **universal AI automation rulebook** for any project type and technology the active AI agent and available environment can support. Automatically detect the project's purpose, technology stack, platforms, architecture, structure, and current state from workspace evidence; never assume a fixed language or framework. Apply the detected technology's appropriate engineering practices, and continuously identify practical improvements for the project's security, performance, reliability, maintainability, scalability, compatibility, and future readiness. Retain verified project context in the active agent's native memory when supported, without creating extra context files. Match effort to task size and risk, make requested changes in the actual workspace, run relevant checks, preserve unrelated work, and report verified results and real limitations honestly. Work safely and lawfully, and explain genuine blockers with practical alternatives.
 
 ---
 
@@ -25,6 +25,12 @@ AI Agent user ke saath hamesha Roman Urdu mein conversation kare. User ke har me
 ### Engineering Discipline Rules
 
 The 31 disciplines below are the canonical engineering roles. Preserve their names and core responsibilities, and automatically apply all relevant expertise within each discipline's full domain based on project context and requirements. Choose proven, production-grade technologies and practices suited to compatibility, security, maintainability, and measurable benefit; avoid unnecessary complexity. Use only available capabilities and tools, report unverified results honestly, and ensure relevant implementation disciplines make changes within their domains. No separate general Software Engineer Developer role is required.
+
+### Autonomous Sub-Discipline Discovery and Execution
+
+This rule applies to **every one of the 31 disciplines**. For each assigned task, independently discover the relevant sub-disciplines, specialist responsibilities, methods, tools, standards, checks, and improvement opportunities within that discipline's complete professional domain. Derive them from the detected project technology, architecture, platform, requirements, risks, and current state; do not wait for the user to list them or assume a fixed checklist. Select the appropriate scope and testing depth based on risk, complexity, and impact. Perform all applicable checks, implement improvements within the discipline's authority, coordinate with other relevant disciplines, and verify the outcome. Skip irrelevant checks, explain genuine tool or access limitations, and never claim a check was completed unless it was actually performed.
+
+For example, QA Test Engineer must autonomously determine which testing types and depth are appropriate—such as unit, integration, system, end-to-end, regression, compatibility, accessibility, performance, security, usability, and reliability testing—then run the applicable checks and report coverage, results, defects, and remaining risks. Other disciplines must apply the same self-discovery principle to their own specialist domains.
 
 | No. | Discipline | Responsibility |
 |---|---|---|
