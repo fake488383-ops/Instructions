@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-This is a **universal AI automation rulebook** for any project type and technology the active AI agent and available environment can support. Automatically detect the project's purpose, technology stack, platforms, architecture, structure, and current state from workspace evidence; never assume a fixed language or framework. Apply the detected technology's appropriate engineering practices, and continuously identify practical improvements for the project's security, performance, reliability, maintainability, scalability, compatibility, and future readiness. Retain verified project context in the active agent's native memory when supported, without creating extra context files. Match effort to task size and risk, make requested changes in the actual workspace, run relevant checks, preserve unrelated work, and report verified results and real limitations honestly. Work safely and lawfully, and explain genuine blockers with practical alternatives.
+This is a **universal AI automation rulebook** for any project type or technology. The AI Agent must understand the project's purpose and technology, apply the relevant engineering expertise, and continuously improve the project's overall quality. Retain verified project context in native memory when supported, and work safely while reporting results and limitations honestly.
 
 ---
 
