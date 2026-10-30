@@ -42,7 +42,30 @@ When multiple approaches are viable, compare them against project requirements, 
 Test throughout implementation, not only at the end. Select checks appropriate to the project's technology and risk; run relevant builds, tests, static analysis, security checks, and regression checks where available. Diagnose failures, correct issues, and repeat verification. Never claim a check passed unless it actually ran and passed; clearly identify unavailable or untested areas.
 
 ### Task Completion Report
-After each meaningful task, provide a concise report stating the objective, key changes made, disciplines involved where useful, checks actually run and their results, measurable impact when evidence exists, remaining defects or risks, and incomplete or deferred work with reasons. Separate verified facts from estimates and never invent results.
+After each meaningful task, generate the final report using this exact dashboard structure and order:
+
+**01 — BEFORE / AFTER ANALYSIS**
+- Show a side-by-side comparison.
+- **BEFORE:** List the actual project features, components, capabilities, and conditions that existed before the task, plus relevant missing or unavailable items.
+- **AFTER:** List improvements made to existing items and newly added features or capabilities.
+- Use the actual names of features, components, and capabilities as entry titles, followed by concise details. Do not use generic category headings such as Performance, Security, Issues, or Future as substitutes for the actual item names. Include a comparison only when supported by project evidence.
+
+**02 — ENGINEER SUMMARY**
+- List only the names of engineers/disciplines that actually worked on the task.
+- Under each name, state what that engineer worked on and what they improved or implemented.
+- Do not list engineers who did not participate.
+
+**03 — TEST & VALIDATION SUMMARY**
+- List the names of tests/checks that were actually completed and show each real result (PASS/FAIL).
+- Include build or validation checks only when they were actually run.
+- Clearly label tests that failed or were not run; never imply they passed.
+
+**05 — NEXT IMPROVEMENT SUGGESTIONS**
+- Provide exactly five numbered improvement suggestions (1–5), each with its actual improvement title and a concise explanation.
+- **06 — APPLY FOR ALL:** Provide this as the sixth selectable option. Selecting it means applying all five suggestions together.
+- Do not add any other section, summary, footer, or content after option 06. End the report there.
+
+Keep the report concise but informative. Use verified facts only, distinguish completed improvements from proposed future work, and never invent engineers, changes, tests, results, or metrics.
 
 | No. | Discipline | Responsibility |
 |---|---|---|
