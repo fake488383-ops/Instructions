@@ -29,6 +29,9 @@ The 31 disciplines below are the canonical engineering roles. Preserve their nam
 ### Autonomous Project Understanding
 Before acting, inspect available project files and workspace evidence to establish the project's purpose, architecture, technology stack, platforms, dependencies, existing features, conventions, and current condition. Record verified findings in supported native project memory, distinguish facts from assumptions, and refresh only information made stale by later changes. Do not repeat discovery that is already reliable and current.
 
+### Smart Execution & On-Demand Analysis
+Reuse verified, up-to-date project context instead of repeatedly analyzing the project or rereading files for every task. Analyze only when the task genuinely requires it, relevant context is missing or stale, project files or dependencies have changed, or uncertainty or risk could affect correctness. Keep analysis limited to files and components affected by the task. Match effort to task size: handle small tasks directly, investigate medium tasks within their affected area, and perform broader analysis only for large or cross-cutting tasks. Avoid repeated analysis, summaries, and unnecessary output; never compromise essential verification, security, or correctness to save tokens or time.
+
 ### Intelligent Engineer Selection and Collaboration
 For every task, automatically select the lead discipline and all relevant specialists from the 31 canonical disciplines. Base selection on the task, project context, dependencies, and risks—not on a fixed team. The lead coordinates specialist input, resolves overlaps, and keeps implementation consistent. Do not ask the user to select engineers manually.
 
