@@ -200,72 +200,48 @@ SELECT IMPROVEMENT
 - Do not expose secrets, transmit private data, or modify production systems during the audit.
 ### Task Completion Report
 
-After each meaningful task, render this report using the exact visual blueprint below. Preserve its headings, order, columns, alignment, spacing, padding, margins, borders, colors, and overall layout. The blueprint defines the visual structure; generate all content dynamically from the actual task and verified evidence. Do not hardcode sample content or add unrelated sections.
+After each meaningful task, generate this report from verified task evidence. Preserve the visual blueprint exactly. Only the content rows and section height may expand or shrink.
 
 **REPORT RULES**
-- Use a black background, white outer border, white text, and white section divider lines. BEFORE is red; AFTER is green.
-- Preserve the section numbering and order exactly: 01, 02, 03, 04, 05, 06.
-- Section 01: show BEFORE and AFTER side by side in two equal-width columns. BEFORE is on the left and AFTER on the right. The central vertical divider must continuously connect the top and bottom horizontal borders. Use equal inner padding. BEFORE describes the actual prior state, missing features, and limitations. AFTER includes both newly added features and improvements to existing features.
-- Section 02: underline the heading **ENGINEER SUMMARY**. Show only engineers/disciplines that actually contributed, each separately, with their actual contribution. Keep engineer names left-aligned and contribution text right-aligned, using equal inner padding. Include testing specialists here when they actually contributed; do not create a separate Testing Engineer Contributions section.
-- Section 03: underline the heading **TEST & VALIDATION SUMMARY**. List each relevant test exactly once, with its actual result on the same row. Use test name on the left and result (PASS / FAIL / IN PROGRESS / NOT RUN / BLOCKED) aligned to the right. Include applicable test types such as Unit, Integration, End-to-End, Regression, Performance, and Security Testing. Do not repeat the test list in a separate Testing Coverage or Testing Results list. Never claim PASS unless the test was executed and passed.
-- Section 04: **FEATURE VALIDATION**. List actual implemented or changed features individually, with the actual validation result aligned to the right. Validate real feature behavior, not merely the existence of files. Use only relevant features and genuine test evidence.
-- Section 05: **NEXT IMPROVEMENT SUGGESTIONS**. Show exactly five numbered suggestions (01–05), dynamically based on verified project findings. Display the green **RECOMMENDED** label to identify the best first suggestion. Each suggestion has a concise title and one short explanation. Do not add a Suggestion Priority column or a Benefit label.
-- Section 06: show only **APPLY ALL FIVE SUGGESTIONS** as the final selectable option. Nothing follows it.
-- Keep the exact visual hierarchy and compact report style. Use consistent inner padding in every column; align right-side values to the same right inner edge. Do not use manual spaces to fake alignment.
-- Dynamically expand or shrink rows to fit actual content. Do not show empty rows or invent engineers, work, tests, results, features, or recommendations.
-- Treat example feature names and test statuses as illustrative only. Report actual project/task evidence.
+- Preserve the existing visual design: black background, white outer border/text/dividers, red BEFORE label, green AFTER label, original section order, column widths, borders, padding, spacing, and alignment.
+- Populate the report dynamically. Repeat the relevant row or content block once for every actual item; there is no fixed row limit. Expand or shrink sections to fit the content.
+- BEFORE shows the verified prior state. AFTER shows every actual addition and improvement. Include all relevant items without limiting them to the sample placeholders.
+- Show only engineers who contributed and describe their actual contributions.
+- Show each relevant test exactly once, only if it was actually run, with its real result. Never mark an unrun test as PASS.
+- Show every implemented or changed feature with its own actual validation result. Validate behavior, not merely file existence.
+- Generate up to five improvement suggestions from verified findings only. Order them by value and mark the best first suggestion **RECOMMENDED**. Do not invent suggestions to fill empty slots.
+- Do not duplicate the same information across sections. Do not display template markers or empty rows.
+- Section 06 remains the final selectable option: **APPLY ALL FIVE SUGGESTIONS**. Nothing follows it.
 
 **TASK COMPLETION REPORT — VISUAL BLUEPRINT**
+
+This compact skeleton defines layout only. Bracketed repeat markers are templates: repeat them for every matching real item, and never display the markers in the rendered report.
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │                            TASK COMPLETION REPORT                            │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 01 — BEFORE / AFTER ANALYSIS                                                 │
-│                                                                              │
 │  ┌────────────────────────────────────┬───────────────────────────────────┐ │
 │  │              BEFORE                │                AFTER              │ │
-│  │                                    │                                   │ │
-│  │       [Actual previous state]      │       [Added improvements]        │ │
-│  │       [Missing features]           │       [New features added]         │ │
-│  │       [Existing limitations]       │       [Improved existing features]│ │
+│  │ [[REPEAT: actual prior-state items]]│ [[REPEAT: actual changes/items]] │ │
 │  └────────────────────────────────────┴───────────────────────────────────┘ │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 02 — ENGINEER SUMMARY                                                       │
-│                                                                              │
 │  ENGINEER                                                   CONTRIBUTION     │
-│  [Actual contributing engineer]                         [Actual contribution]│
-│  [Actual contributing engineer]                         [Actual contribution]│
+│  [[REPEAT: contributing engineer + actual contribution]]                    │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 03 — TEST & VALIDATION SUMMARY                                               │
-│                                                                              │
 │  TEST NAME                                                        RESULT     │
-│  Unit Testing                                                       PASS     │
-│  Integration Testing                                                PASS     │
-│  End-to-End Testing                                                 PASS     │
-│  Regression Testing                                                 PASS     │
-│  Performance Testing                                                PASS     │
-│  Security Testing                                                   PASS     │
+│  [[REPEAT: each test actually run + its actual result]]                      │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 04 — FEATURE VALIDATION                                                      │
-│                                                                              │
 │  FEATURE TESTED                                                   RESULT     │
-│  [Actual implemented feature]                              [Actual result]  │
-│  [Actual implemented feature]                              [Actual result]  │
+│  [[REPEAT: each changed feature + actual validation result]]                 │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 05 — NEXT IMPROVEMENT SUGGESTIONS                                            │
-│                                                                              │
-│  RECOMMENDED                                                                   │
-│  01. [Best first improvement suggestion]                                     │
-│      [One concise explanation]                                               │
-│  02. [Improvement suggestion]                                                │
-│      [One concise explanation]                                               │
-│  03. [Improvement suggestion]                                                │
-│      [One concise explanation]                                               │
-│  04. [Improvement suggestion]                                                │
-│      [One concise explanation]                                               │
-│  05. [Improvement suggestion]                                                │
-│      [One concise explanation]                                               │
+│  [[REPEAT: up to five evidence-based suggestions; best first and marked      │
+│            RECOMMENDED; each with a concise title and reason]]              │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 06 — APPLY ALL FIVE SUGGESTIONS                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
