@@ -58,7 +58,7 @@ Each discipline's directory entry below defines its unique technical ownership. 
 
 | No. | Discipline | Responsibility |
 |---|---|---|
-| 1 | Software Architect | Own architecture structure and technical direction: system boundaries, modularity, coupling, extensibility, architectural patterns, and cross-cutting quality attributes. |
+| 1 | Architecture Engineer | Own architecture structure and technical direction: system boundaries, modularity, coupling, extensibility, architectural patterns, and cross-cutting quality attributes. |
 | 2 | Systems Engineer | Own end-to-end system behavior and interactions: subsystem interfaces, lifecycle, resource coordination, fault behavior, and system-level compatibility. |
 | 3 | Backend Engineer | Own server-side application logic: business rules, services, authentication and authorization implementation, concurrency, and backend maintainability. |
 | 4 | Frontend Engineer | Own client-side implementation: rendering, application state, navigation, responsiveness, browser/device compatibility, and frontend integration. |
@@ -68,27 +68,27 @@ Each discipline's directory entry below defines its unique technical ownership. 
 | 8 | Database Engineer | Own database technology and persistence: schema, query plans, indexing, transactions, integrity, concurrency, backup, and database recovery. |
 | 9 | API Integration Engineer | Own API contracts and external/system integrations: protocols, versioning, validation, retries, idempotency, rate limits, and interoperability. |
 | 10 | Security Engineer | Own technical security controls and threat reduction: attack surfaces, identity, access control, secrets, dependencies, application/API/network/host security, and authorized security testing. |
-| 11 | Privacy Compliance Engineer | Own privacy engineering and compliance analysis: lawful purpose, consent, minimization, retention, data-subject rights, cross-border flows, and applicable regulatory obligations. |
+| 11 | Privacy Engineer | Own privacy engineering and compliance analysis: lawful purpose, consent, minimization, retention, data-subject rights, cross-border flows, and applicable regulatory obligations. |
 | 12 | Performance Engineer | Own current runtime performance: profiling, startup, latency, throughput, rendering, CPU/GPU, memory, I/O, network, battery, and performance benchmarks. |
-| 13 | Reliability Engineer SRE | Own service reliability engineering: availability, fault isolation, resilience, graceful degradation, capacity reliability, service objectives, and recovery readiness. |
+| 13 | Reliability Engineer | Own service reliability engineering: availability, fault isolation, resilience, graceful degradation, capacity reliability, service objectives, and recovery readiness. |
 | 14 | QA Test Engineer | Own overall quality strategy: test planning, test architecture, functional coverage, automation, test data, defect verification, and regression strategy. |
 | 15 | DevOps Engineer | Own development-to-operations automation: CI/CD workflows, environments, infrastructure automation, developer workflows, and delivery pipeline operation. |
 | 16 | Build Toolchain Engineer | Own build and toolchain correctness: compilers, SDKs, dependency resolution, build configuration, packaging toolchains, and reproducible builds. |
 | 17 | Release Engineer | Own release execution: versioning, artifact signing, provenance, release validation, rollout, distribution, rollback, and release readiness. |
-| 18 | Infrastructure Cloud Engineer | Own compute and cloud infrastructure: hosting resources, cloud architecture, infrastructure provisioning, identity boundaries, capacity resources, portability, and infrastructure cost. |
+| 18 | Cloud Engineer | Own compute and cloud infrastructure: hosting resources, cloud architecture, infrastructure provisioning, identity boundaries, capacity resources, portability, and infrastructure cost. |
 | 19 | Network Engineer | Own network connectivity and design: topology, segmentation, routing, DNS, protocols, network access, encryption in transit, and network capacity. |
 | 20 | Observability Engineer | Own operational visibility: logs, metrics, traces, dashboards, alerts, diagnostics, and incident context. |
 | 21 | Configuration Engineer | Own application and environment configuration: configuration schemas, environment consistency, safe defaults, configuration validation, and secret/configuration separation. |
-| 22 | Backup Disaster Recovery Engineer | Own backup and disaster recovery capability: backup policy, isolation, immutability, retention, restoration, recovery objectives, and restore testing. |
+| 22 | Backup Recovery Engineer | Own backup and disaster recovery capability: backup policy, isolation, immutability, retention, restoration, recovery objectives, and restore testing. |
 | 23 | Requirements Engineer | Own requirements quality: stakeholder needs, functional and non-functional requirements, constraints, traceability, ambiguity, and acceptance criteria. |
 | 24 | Technical Lead Engineer | Own technical coordination across disciplines: task decomposition, dependencies, engineering alignment, technical trade-offs, and resolution of cross-domain conflicts. |
-| 25 | Code Review Audit Engineer | Own code-level review and audit: correctness, maintainability, defect patterns, static analysis findings, change review, and evidence-based code audit. |
+| 25 | Code Review Edit Engineer | Own code-level review and audit: correctness, maintainability, defect patterns, static analysis findings, change review, and evidence-based code audit. |
 | 26 | Knowledge Engineer | Own project knowledge quality: documentation structure, authoritative sources, discoverability, consistency, knowledge retrieval, and stale-knowledge correction. |
 | 27 | Operations Incident Engineer | Own incident handling: incident triage, containment, operational diagnosis, restoration coordination, root-cause follow-up, and prevention actions. |
 | 28 | Accessibility Engineer | Own product accessibility: semantic structure, keyboard access, assistive technology compatibility, contrast, motion, captions, forms, and accessibility validation. |
 | 29 | Internationalization Localization Engineer | Own localization and internationalization: language resources, scripts, directionality, pluralization, locale formats, time zones, fonts, sorting, and regional adaptation. |
 | 30 | Scalability Engineer | Own growth and load capacity: workload projections, scaling patterns, concurrency limits, distributed capacity, load testing, and growth bottlenecks. |
-| 31 | Cost Resource Engineer | Own lifecycle resource economics: compute, memory, storage, network, licensing, energy, operational cost, and cost-efficiency trade-offs. |
+| 31 | Resources Engineer | Own lifecycle resource economics: compute, memory, storage, network, licensing, energy, operational cost, and cost-efficiency trade-offs. |
 
 ### On-Demand Engineering Discipline Audit & Improvement System
 
