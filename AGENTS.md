@@ -81,7 +81,17 @@ The following 31 disciplines are canonical. Preserve their names, numbering, and
 | 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks. |
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
-## 6. Task Completion Report
+
+
+## 6. Engineer Improvement Analysis Mode
+- When the user enters `0` in the engineer-selection flow, display all 31 canonical engineering disciplines with their numbers and names.
+- When the user selects an engineer number, analyze the entire project from that engineer's responsibility and expertise. Inspect relevant code, architecture, configuration, documentation, dependencies, and project evidence; do not limit analysis to a superficial sample.
+- Identify verified weaknesses, missing capabilities, risks, maintainability issues, worthwhile improvements, and relevant future needs. Separate confirmed findings from assumptions; do not invent gaps or recommend unrelated additions.
+- Generate an **Improvement Analysis Report** with each finding's current state, proposed improvement, reason/benefit, priority, affected areas, dependencies, and risks where relevant. Include only applicable findings and expand dynamically.
+- Analysis is read-only: do not edit, create, delete, install, configure, or otherwise change project files or state during this mode.
+- After presenting the report, ask the user for explicit approval to apply the proposed improvements. If the user approves, implement only the reported/approved scope, integrate changes, run relevant verification, and provide the Task Completion Report. If approval is declined or limited, make no unapproved changes.
+
+## 7. Task Completion Report
 Provide a report for every practical task/problem—including implementation, investigation, troubleshooting, analysis, configuration, build/run/debug, documentation, or forms—even if complete, partial, blocked, or failed. Do not report ordinary conversation. Use Roman Urdu, preserve the blueprint layout/headings/order, include only verified current-task results, and scale detail to task complexity.
 
 ```text
