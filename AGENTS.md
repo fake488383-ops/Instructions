@@ -77,7 +77,7 @@ Each discipline's directory entry below defines its unique technical ownership. 
 | 17 | Release Engineer | Own release execution: versioning, artifact signing, provenance, release validation, rollout, distribution, rollback, and release readiness. |
 | 18 | Infrastructure Cloud Engineer | Own compute and cloud infrastructure: hosting resources, cloud architecture, infrastructure provisioning, identity boundaries, capacity resources, portability, and infrastructure cost. |
 | 19 | Network Engineer | Own network connectivity and design: topology, segmentation, routing, DNS, protocols, network access, encryption in transit, and network capacity. |
-| 20 | Observability Engineer | Own operational visibility: logs, metrics, traces, dashboards, alerts, diagnostics, service-health signals, and incident context. |
+| 20 | Observability Engineer | Own operational visibility: logs, metrics, traces, dashboards, alerts, diagnostics, and incident context. |
 | 21 | Configuration Engineer | Own application and environment configuration: configuration schemas, environment consistency, safe defaults, configuration validation, and secret/configuration separation. |
 | 22 | Backup Disaster Recovery Engineer | Own backup and disaster recovery capability: backup policy, isolation, immutability, retention, restoration, recovery objectives, and restore testing. |
 | 23 | Requirements Engineer | Own requirements quality: stakeholder needs, functional and non-functional requirements, constraints, traceability, ambiguity, and acceptance criteria. |
@@ -89,60 +89,6 @@ Each discipline's directory entry below defines its unique technical ownership. 
 | 29 | Internationalization Localization Engineer | Own localization and internationalization: language resources, scripts, directionality, pluralization, locale formats, time zones, fonts, sorting, and regional adaptation. |
 | 30 | Scalability Engineer | Own growth and load capacity: workload projections, scaling patterns, concurrency limits, distributed capacity, load testing, and growth bottlenecks. |
 | 31 | Cost Resource Engineer | Own lifecycle resource economics: compute, memory, storage, network, licensing, energy, operational cost, and cost-efficiency trade-offs. |
-
-### Software Health Audit — `00` Command
-
-When the user enters exactly `00`, perform a complete read-only project audit and generate this **compact, dynamic report**:
-
-```text
-00 — SOFTWARE HEALTH AUDIT
-
-1. OVERALL SOFTWARE HEALTH
-[Evidence-based health score and status]
-
-2. FEATURE HEALTH ANALYSIS
-[Actual feature/component] — [Health/status]
-
-3. PERFORMANCE ANALYSIS
-[Relevant metric] — [Measured value or NOT MEASURED]
-
-4. IMPROVEMENT OPPORTUNITIES
-[Component] — [Evidence-based opportunity]
-
-5. MISSING FEATURES & WEAKNESSES
-[Area] — [Confirmed gap/weakness]
-
-6. RECOMMENDED PRIORITIES
-[Ranked improvement] — [Short reason]
-
-7. AUDIT COVERAGE
-[Audit area] — [CHECKED / NOT CHECKED / BLOCKED / NOT APPLICABLE]
-
-SELECT IMPROVEMENT
-01 — Feature Health Improvements
-02 — Performance Optimization
-03 — API Optimization
-04 — Database Optimization
-05 — Security Improvements
-06 — Logging & Observability Improvements
-07 — Startup & Background Services Optimization
-08 — Storage, Backup & Recovery Improvements
-09 — Apply All Recommended Improvements
-```
-
-**Dynamic report rules**
-- Keep these seven sections and their order. Add only project-relevant findings; create as many concise rows as the actual audit requires. No fixed row limit, padding, truncation, or invented/duplicated findings.
-- Adapt report length to the project: small audits stay short; large audits expand only where evidence requires.
-- Use actual component names. Show measured values with units; otherwise state `NOT MEASURED`. Separate facts, test results, estimates, and recommendations. Never invent scores or performance gains.
-- Rank actionable priorities by impact, risk, dependencies, and effort; identify the best first priority.
-- Include test gaps/results in Sections 5 and 7; do not add another section. Never claim a test passed unless it was run and passed.
-- Show a compact black-background, white-text dashboard where supported; otherwise use the same headings and concise text.
-
-**Audit and action rules**
-- Inspect all applicable project areas, including architecture, features, code, APIs, data/storage, dependencies, configuration, integrations, security, tests, startup, backup/recovery, build, deployment, and performance.
-- Audit is read-only. Do not edit, install, migrate, or apply improvements until the user selects an action. Mark inaccessible or unrun checks honestly; avoid destructive or production-impacting tests.
-- After selection, change only the authorized area (09 means all justified recommendations), then build, test, debug, verify, and report actual outcomes. Pause risky or destructive changes that require approval.
-- `AGENTS.md` cannot register a VS Code shortcut or custom chat command by itself; do not claim `00` has been configured unless the relevant extension supports and has configured it.
 
 ### Task Completion Report
 
