@@ -92,66 +92,113 @@ Each discipline's directory entry below defines its unique technical ownership. 
 
 ### Software Health Audit — `00` Command
 
-The Software Health Audit is a separate, on-demand, whole-project assessment. It is not part of the Task Completion Report and must not modify the project merely by running the audit.
+The Software Health Audit is a separate, complete, on-demand assessment of the entire project. It is not part of the Task Completion Report. Its purpose is to identify the project's actual condition, every relevant weakness or missing capability, all improvement opportunities, and testing already completed or still needed.
 
 **Command behavior**
-- When the user sends exactly `00` as a command in the VS Code AI Agent chat, treat it as **Software Health Audit**. Inspect the complete project and produce the dashboard below.
-- If the VS Code extension supports custom chat commands/keybindings, configure `00` + Enter to invoke this audit. An `AGENTS.md` instruction alone cannot register or intercept a keyboard shortcut; if extension configuration is required, explain that setup instead of claiming the shortcut was installed.
-- Audit the actual project: discover its features, modules, APIs, database, storage, logs, memory, startup, background services, dependencies, security controls, backup/recovery, and runtime performance where applicable. Skip irrelevant areas and mark unavailable or unmeasured areas honestly.
-- The audit is read-only. Do not edit code, change configuration, migrate data, or apply optimizations during the audit. Preserve user data and existing changes.
+- When the user sends exactly `00` in the VS Code AI Agent chat, run this complete Software Health Audit and produce the dashboard below.
+- If the VS Code extension supports custom chat commands/keybindings, configure `00` + Enter to invoke this audit. `AGENTS.md` alone cannot register or intercept a keyboard shortcut; explain any required extension setup instead of claiming it is installed.
+- Inspect the complete project, not only the currently open file: source code, architecture, modules, features, interfaces, APIs, database, storage, memory, logs, configuration, dependencies, build system, tests, startup, background services, integrations, security, backup/recovery, deployment, and runtime behavior as relevant.
+- Discover the actual project scope first. Include only applicable areas, and mark inaccessible, unavailable, or unmeasured areas honestly.
+- The audit is strictly read-only. Do not edit code, change configuration, migrate data, install or remove dependencies, or apply improvements until the user selects an action.
 
 **Exact dashboard structure and order**
 
 **01 — OVERALL SOFTWARE HEALTH**
-- Show one overall health percentage and a clear status.
-- Calculate it from measured, relevant health dimensions and their stated criteria. Briefly show the scoring basis; do not use an arbitrary average or invented score.
+- Show the overall health percentage and status, based on actual evidence.
+- Briefly state the scoring method, relevant dimensions, criteria, and weights. Do not use an arbitrary average or invent a score.
+- Clearly state the audit scope and any major coverage limitation that affects the overall result.
 
-**02 — FEATURE HEALTH ANALYSIS**
-- List the actual detected features/components and each measured health percentage.
-- Include a concise current condition for each item. Do not invent features or scores.
+**02 — COMPLETE FEATURE & COMPONENT ANALYSIS**
+- Discover and list the project's actual features, modules, components, services, and integrations.
+- For each applicable item, show its measured health percentage/status, current condition, whether it is complete or partial, and its verified dependencies.
+- Identify broken, unused, duplicated, disconnected, placeholder, or incomplete functionality where evidence confirms it.
+- Do not invent features, components, or health scores.
 
-**03 — PERFORMANCE ANALYSIS**
-- Show measured metrics where available, such as startup time, API response latency/throughput, database query time, CPU, memory, disk I/O, network, rendering/frame rate, and error rate.
-- Include target/baseline and measurement conditions when known. Mark unavailable metrics as `NOT MEASURED`; do not guess.
+**03 — PERFORMANCE & RESOURCE ANALYSIS**
+- Measure applicable metrics such as startup/shutdown time, API latency and throughput, database query time, CPU/GPU usage, memory, disk and network I/O, rendering/frame rate, background task duration, battery/energy use, and error/crash rate.
+- Show actual values, units, test conditions, and target/baseline where available.
+- Identify bottlenecks and their evidence. Mark unavailable metrics as `NOT MEASURED`; never guess or present estimates as measurements.
 
-**04 — IMPROVEMENT OPPORTUNITIES**
-- List components that could be improved, the evidence-backed proposed change, and estimated improvement potential only when supported by profiling, benchmarks, or a clearly stated estimate.
-- Keep health percentage separate from improvement-potential percentage. Never present a potential gain as a measured result or guarantee. For example, evaluate WebSocket only if real-time, persistent communication is actually needed; do not assume it is automatically faster or a replacement for every REST API.
+**04 — ARCHITECTURE, CODE & TECHNICAL QUALITY**
+- Assess architecture, module boundaries, coupling, cohesion, maintainability, readability, duplication, error handling, concurrency, type safety, coding conventions, documentation, and technical debt where applicable.
+- Identify fragile dependencies, dead or unreachable code, incomplete implementations, circular dependencies, and single points of failure only when supported by evidence.
+- Report concrete file/module references for significant findings when available.
 
-**05 — MISSING FEATURES & WEAKNESSES**
-- List actual missing capabilities, technical weaknesses, risks, bottlenecks, outdated dependencies, absent monitoring, backup gaps, or incomplete coverage discovered during the audit.
-- Distinguish confirmed gaps from items that could not be verified.
+**05 — API, DATA & INTEGRATION ANALYSIS**
+- Assess actual API endpoints/contracts, validation, authentication/authorization, error handling, retries, rate limits, versioning, timeouts, idempotency, and integration reliability.
+- Assess database schema, query efficiency, indexing, transactions, data integrity, migrations, connection handling, and recovery.
+- Assess storage, file handling, memory/cache, data lifecycle, synchronization, and external integrations as applicable.
+- Recommend alternatives such as REST, WebSocket, queues, or streaming only when project requirements justify them. Do not assume one protocol or technology is universally better.
 
-**06 — RECOMMENDED PRIORITIES**
-- Rank actionable improvements by impact, risk, dependencies, effort, and evidence.
-- Give each recommendation a stable numbered selection and concise reason. Identify the best first improvement.
+**06 — SECURITY, PRIVACY & RELIABILITY**
+- Assess authentication, authorization, permissions, secrets handling, input validation, dependency vulnerabilities, encryption, exposed services, privacy/data minimization, and relevant threat surfaces.
+- Assess crash handling, fault isolation, graceful degradation, logging/monitoring, background service supervision, backup, restore, disaster recovery, and failure recovery.
+- Use safe, authorized, non-destructive checks. Do not expose secrets or transmit private data.
 
-**07 — AUDIT COVERAGE**
-- Show which relevant areas were CHECKED, NOT CHECKED, or NOT APPLICABLE. Do not claim full-project coverage if any relevant area was inaccessible or skipped.
+**07 — TESTING & VALIDATION AUDIT**
+- Inventory the tests that already exist and show which were actually executed, their result (PASS/FAIL/BLOCKED/NOT RUN), and the evidence or command where available.
+- Identify missing test coverage and explain which tests should be added or run next. Never mark a test PASS unless it was actually executed and passed.
+- Evaluate all applicable test categories, including:
+  - Unit Testing
+  - Integration Testing
+  - Functional Testing
+  - End-to-End (E2E) Testing
+  - Regression Testing
+  - Smoke Testing
+  - Acceptance Testing
+  - API and Contract Testing
+  - Database, Migration and Data-Integrity Testing
+  - Security and Dependency Testing
+  - Performance, Load, Stress and Soak Testing
+  - Compatibility and Platform Testing
+  - UI, Rendering and Accessibility Testing
+  - Localization and Internationalization Testing
+  - Reliability, Recovery and Backup-Restore Testing
+  - Installation, Upgrade and Uninstallation Testing
+  - Startup, Shutdown and Background-Service Testing
+  - Offline, Network-Failure and Error-Recovery Testing
+  - Memory-Leak and Resource-Usage Testing
+- Do not run destructive, production-impacting, privacy-invasive, or unusually expensive tests during the read-only audit. Mark tests requiring special environments, credentials, hardware, approval, or unavailable tooling as BLOCKED or NOT RUN with the reason.
 
-**Selectable improvement actions**
-After the dashboard, show a compact numbered action menu. The user can send a number to start improving that area:
-1. Feature Health Improvements
-2. Performance Optimization
-3. API Optimization
-4. Database Optimization
-5. Security Improvements
-6. Logging & Observability Improvements
-7. Startup & Background Services Optimization
-8. Storage, Backup & Recovery Improvements
-9. Apply All Recommended Improvements
+**08 — MISSING FEATURES, WEAKNESSES & IMPROVEMENT OPPORTUNITIES**
+- List confirmed missing capabilities, incomplete features, defects, risks, bottlenecks, outdated dependencies, absent safeguards, monitoring gaps, backup gaps, and technical weaknesses.
+- Separate confirmed findings from assumptions and items that could not be verified.
+- For each improvement, state the affected component, evidence/reason, proposed change, expected benefit, dependencies, risk, and effort where known.
+- Keep current health percentage separate from improvement-potential percentage. Give a potential gain only as an evidence-based estimate with assumptions and baseline; otherwise write `NOT ESTIMATED`.
+- Do not promise a gain or claim an unmeasured improvement. For example, evaluate WebSocket only if real-time persistent communication is needed; do not assume it is automatically faster or a replacement for every REST API.
 
-When the user selects an option, use the audit findings to prepare and execute changes only within that selected scope. Option 9 applies all justified recommendations, respecting dependencies and safety. Before changes, inspect affected files, preserve existing user data and unrelated work, and explain any material risk. Implement in the live VS Code workspace, then build/test/verify affected areas, fix failures where possible, and report actual outcomes. If a change is unsafe, destructive, requires unavailable access, or has unresolved material impact, pause that change and explain why. Never claim an improvement was applied until it is implemented and verified.
+**09 — PRIORITY & SELECTABLE IMPROVEMENT PLAN**
+- Rank improvements by user impact, severity, security/reliability risk, evidence, dependencies, effort, and expected benefit.
+- Give each action a stable number, concise description, affected area, and reason. Identify the best first improvement and explain briefly why.
+- After the audit dashboard, show this action menu:
+  1. Feature & Component Improvements
+  2. Architecture & Code Quality Improvements
+  3. Performance & Resource Optimization
+  4. API & Integration Optimization
+  5. Database & Data Optimization
+  6. Security, Privacy & Reliability Improvements
+  7. Testing & Validation Improvements
+  8. Logging, Monitoring, Storage & Recovery Improvements
+  9. Apply All Recommended Improvements
 
-**Scoring and evidence rules**
-- Health percentages must be reproducible from defined criteria and real measurements/tests. Explain the scoring method briefly; identify the dimensions and weights if a combined score is used.
-- Improvement-potential percentages must be evidence-based estimates with their assumptions and measurement baseline. If evidence is insufficient, show `NOT ESTIMATED` rather than fabricating a percentage.
-- Use project-specific thresholds; distinguish measured values from estimates and recommendations.
-- Do not run destructive load/security tests, expose secrets, transmit private data, or alter production systems during a read-only audit. Use safe local/staging checks and obtain explicit approval for risky or destructive actions.
-- The audit must be repeatable and comparable over time. Where prior verified measurements exist, show the change from the previous audit; otherwise establish a baseline without pretending historical data exists.
+**10 — AUDIT COVERAGE & LIMITATIONS**
+- Mark every relevant audit area as CHECKED, NOT CHECKED, BLOCKED, or NOT APPLICABLE.
+- State important files, modules, environments, tools, hardware, credentials, or runtime access that were unavailable.
+- Do not claim complete project coverage when any relevant area was inaccessible or skipped.
 
----
+**When the user selects an improvement**
+- Use the audit findings and execute only the selected scope. Option 9 applies all justified recommendations, respecting dependencies and safety.
+- Before editing, inspect affected files, preserve user data and unrelated work, and explain material risks. Do not overwrite user changes.
+- Implement in the live VS Code workspace, then build, test, debug, and verify affected areas. Fix failures within the authorized scope and rerun affected checks.
+- If a change is destructive, unsafe, production-impacting, requires unavailable access, or has unresolved material risk, pause that change and explain why. Never claim an improvement was applied until it is implemented and verified.
 
+**Scoring, evidence & repeatability**
+- Health percentages must be reproducible from defined criteria and actual measurements/tests. Explain the method and weights for any combined score; do not fabricate scores.
+- Improvement-potential percentages must be evidence-based estimates with assumptions and a stated baseline. If evidence is insufficient, show `NOT ESTIMATED`.
+- Separate measured facts, test results, estimates, assumptions, and recommendations.
+- Use project-specific thresholds and include measurement conditions where relevant.
+- Compare with previous verified audits only when historical evidence exists; otherwise establish a baseline without pretending historical data exists.
+- Keep the audit read-only, repeatable, and safe. Do not run destructive load/security tests, expose secrets, transmit private data, or modify production systems during the audit.
 ### Task Completion Report
 After each meaningful task, generate the final report using this exact dashboard structure and order:
 
