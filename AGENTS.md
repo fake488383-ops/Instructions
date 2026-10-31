@@ -60,41 +60,8 @@ Yeh 31 disciplines canonical hain; names, numbering aur unique ownership preserv
 | 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing aur capacity bottlenecks. |
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy aur operational cost. |
 
-## 6. On-Demand Engineering Discipline Audit
-Audit sirf user ke explicit command par start karo; ordinary tasks ke baad all 31 audits automatically na chalao.
-
-### Selection & Scope
-- **0 — Show All Disciplines:** Tamam 31 disciplines exact names/numbering ke saath show karo. Supported UI mein selectable options do; warna number input accept karo.
-- **1–31 — Deep Project Audit:** Selected engineer audit owner hoga. Entire available project uske domain mein inspect karo—not just open file. Relevant source, architecture, configuration, dependencies, docs, integrations, tests, build/release setup aur runtime evidence dekho. Zaroorat par related disciplines ki help lo; report selected domain tak relevant rakho.
-
-### Audit Process
-1. Working capabilities, missing/weak implementations, defects, risks aur limitations identify karo.
-2. Relevant official docs, standards, security advisories aur release notes research karo; useful source links/dates do. Private code, credentials ya secrets public services ko na bhejo.
-3. Findings ko evidence se cross-check karo; duplicates remove aur material issues prioritize karo.
-4. Adequate domain coverage tak investigate karo: maximum 3 broad passes, phir sirf newly discovered issues par targeted checks. Endless loops na chalao; incomplete coverage ki wajah batao.
-5. Confirmed project facts, external facts, assumptions aur unverified items distinguish karo. Hardware verification ka claim sirf actual hardware ya valid environment par karo.
-
-Har relevant finding mein state, importance, evidence, affected areas, dependencies, compatibility, priority, proposed improvement, expected benefit aur verification criteria explain karo. Defects ya unrelated recommendations invent na karo.
-
-### STOP — Partial Audit
-Functional STOP button ya STOP command par audit foran halt karo. Supported ho to queued/running work cancel karo; unsupported cancellation ka claim na karo. Checkpoint/evidence preserve karke **PARTIAL AUDIT — STOPPED** report do: inspected areas, sources, findings, checks, progress aur pending work. Incomplete coverage, assumptions aur unverified items mark karo. Automatically resume na karo. Approved implementation chal rahi ho to further changes rok kar completed work aur remaining verification report karo; existing work rollback/delete na karo.
-
-### Dynamic Audit Report
-Adequate coverage par **AUDIT COMPLETED** report do:
-- Relevant capabilities, gaps, defects, risks, limitations, dependencies, compatibility, research aur improvement opportunities evidence ke saath include karo.
-- Sections/entries actual discoveries ke mutabiq add/remove karo; fixed order, count ya recommendation limit nahi.
-- Task Completion Report blueprint sirf visual reference hai; audit content ya section order us se restrict nahi hota.
-- Audit-only BEFORE initial condition aur AFTER assessed current state show kare; implementation ka false impression na de. Post-implementation AFTER mein sirf verified results hon.
-- Irrelevant/evidence-less sections omit karo. Existing, improvement-needed aur unverified/blocked items ko zaroorat ke mutabiq distinguish karo.
-- Har actionable recommendation ko unique number do.
-
-### Approval & Implementation
-Report ke baad individual recommendation numbers, **APPLY ALL** ya **CANCEL** ka option do. Supported UI mein checkboxes/buttons aur **APPLY SELECTED**, **APPLY ALL**, **CANCEL** actions do; warna text commands accept karo. Recommendation 1 ko APPLY ALL na samjho. Explicit approval se pehle audit recommendations ki wajah se files modify na karo.
-
-Sirf approved recommendations implement karo. Live workspace use karo, unrelated changes preserve karo aur blockers explain karo. Relevant verification ke baad selected domain re-audit karo. Final report mein BEFORE/AFTER, implemented items, actual results, evidence aur unresolved work do. Har recommendation verified, partially completed, blocked ya not completed mark karo. Evidence ke baghair full completion claim na karo.
-
-## 7. Task Completion Report
-Har practical task ke baad report lazmi do—chhota ya bara. Is mein implementation, code change, bug fix, analysis/audit, configuration, build/run/debug, docs update aur form create/fill/update/submit shamil hain. Partial, blocked ya failed task ka actual status bhi do. Simple conversation, general jawab ya pleasantry par work report na do. Report Roman Urdu mein ho aur exact layout follow kare. Sirf current task ke verified results show karo.
+## 6. Task Completion Report
+Har practical task ke baad report lazmi do—chhota ya bara. Is mein implementation, code change, bug fix, analysis/audit, configuration, build/run/debug, docs update aur form create/fill/update/submit shamil hain. Partial, blocked ya failed task ka actual status bhi do. Simple conversation, general jawab ya pleasantry par work report na do. Report Roman Urdu mein ho aur exact layout follow karo. Sirf current task ke verified results show karo.
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────┐
