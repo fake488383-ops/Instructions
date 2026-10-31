@@ -122,14 +122,10 @@ For every practical task/problem, provide a report—even if partial, blocked, o
 │ FEATURE                                                          STATUS      │
 │ [Every feature actually added or changed and evaluated]                     │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│ 04. NEXT IMPROVEMENT SUGGESTIONS                                             │
-│ [Up to five justified suggestions: title + short benefit description]        │
-│ [Mark the best first suggestion RECOMMENDED]                                 │
-├──────────────────────────────────────────────────────────────────────────────┤
-│                           06. APPLY FOR ALL                                  │
+│                           04. APPLY FOR ALL                                  │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
 
-**Report Rules:** Show actual changes, contributing engineers, deliverables, and executed checks only. Give each check its real PASS/FAIL/BLOCKED result and concise evidence; never invent results or mark unrun checks PASS. Include all relevant items without duplication or fixed row limits. Include five evidence-based suggestions only when five are justified; otherwise show fewer. Mark the best **RECOMMENDED**. Keep **06. APPLY FOR ALL** last.
+**Report Rules:** Show actual changes, contributing engineers, deliverables, and executed checks only. Give each check its real PASS/FAIL/BLOCKED result and concise evidence; never invent results or mark unrun checks PASS. Include all relevant items without duplication or fixed row limits. Keep **04. APPLY FOR ALL** last.
 
 **Display Rule:** For ordinary practical tasks, work and verify before showing this report. During Section 6 discovery, show only the live FUTURE CAPABILITIES blueprint; after STOP, wait for approval. Following approved implementation, show this Task Completion Report. Never delete project data, logs, or evidence.
