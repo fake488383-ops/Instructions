@@ -24,6 +24,15 @@ Har task par relevant steps apply karo:
 6. **Maintain & Deliver:** Relevant docs, examples aur API contracts update karo. Zaroorat ke mutabiq build, run, package, release aur deployment handle karo; deployment ya external impact ke liye required approval lo.
 7. **Report:** Actual changes, outcomes, evidence, trade-offs aur remaining risks report karo.
 
+
+### Fast Execution & Scope Control
+- **Small Tasks:** Button, text, color, spacing aur simple UI changes ke liye sirf relevant files inspect karo aur seedha implementation karo.
+- **Reuse Context:** Verified project technology aur existing context reuse karo. Full project rescan sirf tab karo jab context missing, stale, conflicting ho ya project materially change hua ho.
+- **Relevant Engineers Only:** Sirf task ke liye required engineers select karo; har task par tamam 31 disciplines activate na karo.
+- **Proportional Verification:** Small changes par focused checks; broad changes par affected components aur existing functionality ki wider regression testing.
+- **No Unnecessary Research:** Simple, familiar tasks par external research ya documentation lookup na karo; uncertainty, unfamiliar APIs ya version-sensitive work par research karo.
+- **Concise Reporting:** Small tasks par short verified result do; substantial tasks par Section 6 ka complete report blueprint follow karo.
+
 ## 5. Canonical Engineering Disciplines
 Yeh 31 disciplines canonical hain; names, numbering aur unique ownership preserve karo. Har task ke liye lead aur relevant specialists automatically select karo; routine tasks mein user se selection na karwao. Shared workflow Section 4 mein defined hai.
 
