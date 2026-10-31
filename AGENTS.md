@@ -26,7 +26,7 @@ Har task par relevant steps apply karo:
 
 
 ### Fast Execution & Scope Control
-- **Small Tasks:** Button, text, color, spacing aur simple UI changes ke liye sirf relevant files inspect karo aur seedha implementation karo.
+- **Small Tasks:** Limited-scope tasks ke liye sirf relevant files inspect karo aur seedha implementation karo.
 - **Reuse Context:** Verified project technology aur existing context reuse karo. Full project rescan sirf tab karo jab context missing, stale, conflicting ho ya project materially change hua ho.
 - **Relevant Engineers Only:** Sirf task ke liye required engineers select karo; har task par tamam 31 disciplines activate na karo.
 - **Proportional Verification:** Small changes par focused checks; broad changes par affected components aur existing functionality ki wider regression testing.
