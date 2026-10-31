@@ -75,11 +75,42 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Add only capabilities that are **missing** or can be **improved**. Keep one live blueprint and number findings sequentially (01, 02, 03 ...), with no fixed limit. Continue until the actual VS Code agent **STOP** button is pressed or a real session/tool limit intervenes. Disclose limits; never pretend to detect an inaccessible STOP event.
 - Show only each finding's **title and short description on the left**, and one status on the right: **MISSING** (not present) or **IMPROVEMENT** (present but can be improved). Do not show APPLIED items, extra fields, summaries, or other content. Keep the complete white-bordered, black-background CLI-style blueprint; if rich styling is unavailable, use a box-drawing code block without claiming it has a real black background.
 
+```text
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                              FUTURE CAPABILITIES                                  ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║  01. [Capability title]                                  [MISSING / IMPROVEMENT] ║
+║      [Short description]                                                        ║
+║  02. [Next finding; continue numbering]                  [MISSING / IMPROVEMENT] ║
+║      [Short description]                                                        ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+```
 
 - During discovery, show only this growing blueprint. On **STOP**, stop immediately and freeze the last number; make no changes. Wait for **APPLY ALL** or a specified subset. Assess feasibility, dependencies, compatibility, risks, and impact; implement only approved applicable items. Get separate approval for destructive, irreversible, external, or production-impacting actions. Verify approved work, then use Section 7. Without approval, make no changes.
 ## 7. Task Completion Report
 For every practical task/problem, provide a report—even if partial, blocked, or failed. Do not report ordinary conversation. Use Roman Urdu, preserve this layout and order, and include only verified current-task results. Scale detail to task size.
 
+```text
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                            TASK COMPLETION REPORT                            │
+├────────────────────────────────────┬─────────────────────────────────────────┤
+│               BEFORE               │                  AFTER                  │
+│       [All relevant old-state      │       [All verified resulting-state     │
+│        items, centered]            │        items, centered]                 │
+├────────────────────────────────────┴─────────────────────────────────────────┤
+│ 01. ENGINEER SUMMARY                                                         │
+│ ENGINEER                                                   CONTRIBUTION      │
+│ [Every engineer who actually contributed]                                   │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 02. TEST & VALIDATION SUMMARY                                                │
+│ TEST / CHECK                         RESULT                 DETAILS          │
+│ [Only checks actually performed, with verified results]                     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 03. FEATURE VALIDATION SUMMARY                                               │
+│ FEATURE                                                          STATUS      │
+│ [Every feature actually added or changed and evaluated]                     │
+└──────────────────────────────────────────────────────────────────────────────┘
+```
 
 **Report Rules:** Show actual changes, contributing engineers, deliverables, and executed checks only. Give each check its real PASS/FAIL/BLOCKED result and concise evidence; never invent results or mark unrun checks PASS. Include all relevant items without duplication or fixed row limits.
 
