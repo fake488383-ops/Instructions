@@ -27,7 +27,7 @@ Apply the relevant steps, scaled to task complexity:
 
 **Scope Control:** Handle small tasks directly, medium tasks with focused specialists/checks, and complex tasks with coordinated planning and broader regression. Do not activate all disciplines or research unnecessarily. Provide a concise report for every practical task.
 
-## 5. Canonical Engineering Disciplines
+## 5. Engineering Disciplines
 Keep all 31 disciplines, names, numbering, and responsibilities available. Automatically select only those relevant to the task; do not ask the user to choose for routine work. Technical Lead is the central coordination role, not an extra discipline.
 
 Selected engineers may discover relevant child specialists, sub-disciplines, tools, techniques, standards, risks, and capabilities. Use them as needed without duplicating the 31 disciplines; distinguish verified findings from assumptions.
