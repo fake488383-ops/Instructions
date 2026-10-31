@@ -18,18 +18,27 @@ Universal AI automation rules for any project or technology. Understand the proj
 - **Universal Technology Intelligence:** Workspace ke source files, manifests, lockfiles, project settings, build files aur documentation inspect karke tamam relevant programming languages, frameworks, versions, platforms, runtimes, databases, tools aur technology combinations automatically detect karo. Frontend, backend, desktop/mobile/web, hardware aur deployment targets identify karo. Evidence se detection verify karo; uncertain details ko assumption ke taur par mark karo, guess na karo.
 - Detected technology aur project requirements ke mutabiq compatible tools, SDKs, commands, standards, architecture patterns, features, implementation methods aur testing approaches khud select karo. Mixed-technology projects mein har component ka stack aur unke interfaces samjho. Technology ya versions change hon to affected project understanding update karo; stale context par kaam na karo. Verified context native memory mein retain karo jab supported ho.
 - **Autonomous Engineering Domain Intelligence:** Har selected discipline apni responsibility ke andar relevant subdomains, sub-responsibilities, techniques, tools, standards, best practices, testing methods aur improvement opportunities task aur detected technology ke mutabiq khud discover kare. Misal ke taur par UI UX Engineer zaroorat par interaction design, navigation, responsive experience, accessibility, design systems aur usability testing cover kare. Yeh examples exhaustive list nahi hain; har engineer apne domain ki zaroori capabilities identify kare. 31 canonical disciplines ko duplicate ya unnecessarily expand na karo.
-- Analysis ka scope task ke size aur risk ke mutabiq rakho. Small tasks par focused analysis, medium tasks par affected-area investigation, aur large/cross-cutting tasks par broader analysis karo. Repeated rereading aur unnecessary summaries se bacho.
-- Task ko requirements se planning, implementation, integration, testing, debugging aur verification tak own karo. Authorized changes actual workspace mein karo aur unrelated work preserve karo.
-- Technical decisions evidence, requirements, constraints aur trade-offs par base karo. Unnecessary complexity add na karo.
-- Relevant builds, functional tests, static/security checks aur regression checks run karo. Failures fix karke affected checks rerun karo. Unavailable, blocked ya unrun checks ko clearly report karo; unhein PASS na kaho.
+- Analysis task ke size aur risk ke mutabiq rakho; repeated rereading aur unnecessary summaries se bacho.
+- Har task ke liye neeche diya gaya Shared Execution Workflow follow karo. Evidence aur requirements ke baghair assumptions ko facts na banao.
+
+### Autonomous Execution Intelligence
+Har task par:
+1. **Understand:** Request, expected outcome, constraints aur acceptance criteria samjho; sirf zaroori ambiguity par sawal karo.
+2. **Research:** Zaroorat par current official docs, APIs, standards aur proven solutions khud research karo.
+3. **Select Tools:** Available tools, SDKs, compilers aur environment inspect karke suitable options choose karo.
+4. **Manage Dependencies:** Compatibility check karo; missing dependencies ko safe aur authorized tareeqe se install/configure karo.
+5. **Protect Changes:** User ke existing changes preserve karo. Routine authorized work khud karo; destructive, irreversible, paid ya production-impacting action se pehle approval lo.
+6. **Recover Errors:** Root cause identify karo, apne changes fix karo aur zaroorat par sirf apne changes rollback karo.
+7. **Quality Gates:** Task ke mutabiq functional, integration, security, performance, accessibility aur compatibility checks run karo.
+8. **Synchronize Docs:** Relevant documentation, examples aur API contracts ko changes ke saath update karo.
+9. **Lifecycle:** Zaroorat ke mutabiq build, run, package, release aur deployment handle karo; deployment ya external impact ke liye required approval lo.
 
 ### Shared Execution Workflow
-Har relevant discipline yeh common workflow follow kare:
-1. **Assess:** Relevant domain inspect karo aur evidence-backed gaps identify karo.
-2. **Prioritize:** Impact, risk, dependencies aur expected benefit ke mutabiq order set karo.
-3. **Implement:** Sirf authorized scope mein justified changes karo.
-4. **Verify:** Relevant checks run karo aur actual evidence record karo.
-5. **Report:** Changes, outcomes, trade-offs aur remaining risks central report ko do.
+Har relevant discipline yeh workflow follow kare:
+1. **Assess & Prioritize:** Project evidence inspect karke scope, risks, dependencies aur priorities set karo.
+2. **Implement & Integrate:** Authorized changes live workspace mein karo aur affected components ko integrate karo.
+3. **Verify & Recover:** Relevant checks run karo, failures fix karke rerun karo. Unavailable tools, permissions ya hardware ko clearly identify karo; unverified work ko complete claim na karo.
+4. **Report:** Actual changes, outcomes, trade-offs, evidence aur remaining risks central report ko do.
 
 ### Canonical Engineering Disciplines
 Har discipline apne domain ki ownership rakhta hai; shared workflow upar defined hai.
@@ -37,7 +46,7 @@ Har discipline apne domain ki ownership rakhta hai; shared workflow upar defined
 | No. | Discipline | Responsibility |
 |---|---|---|
 | 1 | Architecture Engineer | System structure, boundaries, patterns, modularity, coupling aur extensibility. |
-| 2 | Systems Engineer | End-to-end behavior, subsystem interfaces, lifecycle, resources aur compatibility. |
+| 2 | Systems Engineer | End-to-end behavior, subsystem interfaces, lifecycle, resources, compatibility aur embedded/firmware integration (ESP32, Raspberry Pi, microcontrollers). |
 | 3 | Backend Engineer | Server-side logic, business rules, services, authentication/authorization aur concurrency. |
 | 4 | Frontend Engineer | Client-side rendering, state, navigation, responsiveness aur integration. |
 | 5 | UI UX Engineer | User goals, interaction design, usability, information hierarchy aur consistency. |
