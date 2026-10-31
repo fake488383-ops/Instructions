@@ -238,6 +238,60 @@ After each meaningful task, generate the report using this exact structure, visu
 - Selecting it means implementing all five suggestions, subject to dependencies and safety.
 - Do not add any section, summary, footer, or other content after option 06. End the report there.
 
+**EXACT REPORT BLUEPRINT — THE AGENT MUST RENDER THIS STRUCTURE**
+
+Use the following as the visible report skeleton. Replace bracketed placeholders with verified task-specific facts. Do not omit the blueprint or substitute the Software Health Audit dashboard.
+
+```text
+┌──────────────────────────────────────────────────────────────────────┐
+│                         TASK COMPLETION REPORT                       │
+│                                                                      │
+│  01 — BEFORE / AFTER ANALYSIS                                        │
+│  ──────────────────────────────────────────────────────────────────  │
+│  BEFORE (RED)                         AFTER (GREEN)                   │
+│  • [Actual pre-task state]            • [Actual completed change]     │
+│  • [Existing limitation]              • [Verified improvement]        │
+│                                                                      │
+│  02 — ENGINEER SUMMARY                                               │
+│  ──────────────────────────────────────────────────────────────────  │
+│  ENGINEER                         CONTRIBUTION                       │
+│  [Implementation engineer]        [Actual work performed]            │
+│  [Development engineer]            [Actual work performed]            │
+│                                                                      │
+│  03 — TEST & VALIDATION SUMMARY                                      │
+│  ──────────────────────────────────────────────────────────────────  │
+│  TESTING & VALIDATION ENGINEERS                                      │
+│  [Testing/QA engineer]             [Actual validation work]           │
+│                                                                      │
+│  TESTING TYPE                      RESULT                            │
+│  [Test actually run]               [PASS / FAIL]                      │
+│  [Test actually run]               [PASS / FAIL]                      │
+│                                                                      │
+│  05 — NEXT IMPROVEMENT SUGGESTIONS                                   │
+│  ──────────────────────────────────────────────────────────────────  │
+│  BEST FIRST IMPROVEMENT: [Suggestion number and short reason]        │
+│  01. [Improvement title] — [Concise explanation]                     │
+│  02. [Improvement title] — [Concise explanation]                     │
+│  03. [Improvement title] — [Concise explanation]                     │
+│  04. [Improvement title] — [Concise explanation]                     │
+│  05. [Improvement title] — [Concise explanation]                     │
+│                                                                      │
+│  06 — APPLY FOR ALL                                                  │
+│  ──────────────────────────────────────────────────────────────────  │
+│  06. APPLY ALL FIVE SUGGESTIONS                                      │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+**Blueprint rendering rules**
+- The outer white border must enclose the entire report; every section heading has a white underline/divider.
+- Show BEFORE in red and AFTER in green. Keep the two columns side by side where supported.
+- Align ENGINEER and CONTRIBUTION as real table columns with consistent widths and spacing; never pad with arbitrary spaces.
+- Section 02 contains implementation/development/architecture/design contributors only. Testing Engineer, QA Engineer, and test-only validators appear only under TESTING & VALIDATION ENGINEERS in Section 03.
+- Section 03 uses exactly the table columns TESTING TYPE | RESULT and includes only tests actually run.
+- Keep section numbering exactly as shown: 01, 02, 03, 05, 06. Section 04 is intentionally absent.
+- Section 05 contains exactly five suggestions. Section 06 is the final selectable option. Nothing may appear after it.
+- When the interface cannot render color or a graphical border, preserve the exact layout with clear text labels (BEFORE [RED], AFTER [GREEN]) and Unicode box/underline characters.
+
 **REPORT INTEGRITY**
 - Keep the report concise but informative. Separate completed work from proposed improvements.
 - Show only engineers who actually participated, and place testing/validation-only engineers in Section 03.
