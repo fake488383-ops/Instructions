@@ -92,71 +92,31 @@ Each discipline's directory entry below defines its unique technical ownership. 
 
 ### Software Health Audit — `00` Command
 
-When the user enters exactly `00` in the VS Code AI Agent chat, perform a complete, read-only audit of the entire project and return the **same dashboard structure, section order, compact tables, and dark report-style layout defined below**. Do not replace it with a summary, a different report format, or extra sections. This audit is separate from the Task Completion Report.
-
-**Dynamic report:** Report every relevant, actual finding discovered in the audit. There is no fixed limit on features, metrics, missing features, weaknesses, risks, test gaps, or justified priorities. Add a separate entry for each finding and expand the relevant section to fit the results, however large the report becomes. Never cap, truncate, omit, invent, or duplicate findings to keep the report short. Include only applicable project-specific information supported by evidence.
-
-**Command and audit rules**
-- Inspect the whole project and all applicable features, components, architecture, code, APIs, database, storage, memory, logs, configuration, dependencies, startup, background services, integrations, security, testing, backup/recovery, build, deployment, and runtime performance.
-- Discover actual project components; include only applicable areas. Show inaccessible or unmeasured items honestly.
-- The audit is read-only: do not edit code, change configuration, migrate data, install/remove dependencies, or apply improvements until the user selects an action.
-- If custom chat commands/keybindings are supported, configure `00` + Enter to invoke the audit. `AGENTS.md` alone cannot register a keyboard shortcut; do not claim it has been installed without configuring the extension.
-
-**MANDATORY REPORT BLUEPRINT — preserve this exact order and headings**
+When the user enters exactly `00`, perform a complete read-only project audit and generate this **compact, dynamic report**:
 
 ```text
 00 — SOFTWARE HEALTH AUDIT
 
-SOFTWARE HEALTH AUDIT
-
 1. OVERALL SOFTWARE HEALTH
-[Actual overall health percentage]                         [HEALTH STATUS]
-[Health progress bar, if the chat interface supports it]
-[One short note explaining the scoring basis and measurement evidence]
+[Evidence-based health score and status]
 
 2. FEATURE HEALTH ANALYSIS
-FEATURE / COMPONENT                              HEALTH
-[Actual feature/component]                       [Measured % / STATUS]
-[Actual feature/component]                       [Measured % / STATUS]
-...
+[Actual feature/component] — [Health/status]
 
 3. PERFORMANCE ANALYSIS
-METRIC                                           CURRENT VALUE
-API Response Time                               [Measured value + unit]
-Application Startup                              [Measured value + unit]
-CPU Usage                                       [Measured value + unit]
-Memory Usage                                    [Measured value + unit]
-Database Query Time                             [Measured value + unit]
-Error Rate                                      [Measured value + unit]
-[Add or omit rows according to the actual project and measurements]
+[Relevant metric] — [Measured value or NOT MEASURED]
 
 4. IMPROVEMENT OPPORTUNITIES
-COMPONENT                                        IMPROVEMENT POTENTIAL
-[Actual component]                              [Evidence-based estimate / NOT ESTIMATED]
-[Actual component]                              [Evidence-based estimate / NOT ESTIMATED]
-...
+[Component] — [Evidence-based opportunity]
 
 5. MISSING FEATURES & WEAKNESSES
-AREA                         FINDING
-[Actual area]                [Confirmed gap or weakness]
-[Actual area]                [Confirmed gap or weakness]
-...
+[Area] — [Confirmed gap/weakness]
 
 6. RECOMMENDED PRIORITIES
-01. [Improvement title]
-[One concise reason and evidence]
-
-02. [Improvement title]
-[One concise reason and evidence]
-
-03. [Improvement title]
-[One concise reason and evidence]
-[Continue only for justified priorities]
+[Ranked improvement] — [Short reason]
 
 7. AUDIT COVERAGE
-AUDIT AREA                                    STATUS
-[Relevant audit area]                         CHECKED / NOT CHECKED / BLOCKED / NOT APPLICABLE
-...
+[Audit area] — [CHECKED / NOT CHECKED / BLOCKED / NOT APPLICABLE]
 
 SELECT IMPROVEMENT
 01 — Feature Health Improvements
@@ -170,36 +130,20 @@ SELECT IMPROVEMENT
 09 — Apply All Recommended Improvements
 ```
 
-**Exact rendering requirements**
-- Preserve the seven numbered sections, their exact titles, order, and table column headings. Do not add an eighth or tenth report section.
-- Render a clean, compact, black-background/white-text dashboard where the chat client supports styled output; use a green health percentage/progress indicator and a clear HEALTHY/WARNING/CRITICAL status where supported. Otherwise use the same plain-text/Markdown structure.
-- Use concise rows and actual project feature/component names, like the reference blueprint. Do not fill the report with generic categories when concrete components are discoverable.
-- Section 1: calculate the overall percentage from defined, relevant criteria and real evidence; briefly state the scoring basis. Never invent a percentage.
-- Section 2: list actual features/components and their evidence-based health. If a percentage cannot be calculated, show `NOT MEASURED` or a status instead.
-- Section 3: show measured current values with units and conditions when known. Include project-relevant metrics; omit irrelevant sample rows. Unmeasured metrics must say `NOT MEASURED`.
-- Section 4: show improvement potential separately from current health. Use evidence-based estimates and assumptions; otherwise show `NOT ESTIMATED`. Never present a potential gain as a measured result or guarantee.
-- Section 5: list real missing features and weaknesses. Distinguish confirmed findings from unverified concerns.
-- Section 6: rank actionable priorities by impact, risk, dependencies, effort, and evidence. Explain each briefly and identify the best first priority.
-- Section 7: show audit coverage honestly, including CHECKED, NOT CHECKED, BLOCKED, or NOT APPLICABLE. Do not claim complete coverage if anything relevant was inaccessible or skipped.
-- Keep the dashboard in this exact seven-section structure. The `SELECT IMPROVEMENT` menu follows Section 7 and is not an extra numbered report section.
-- Do not copy the illustrative percentages, timings, component names, or findings from any reference image as actual results.
+**Dynamic report rules**
+- Keep these seven sections and their order. Add only project-relevant findings; create as many concise rows as the actual audit requires. No fixed row limit, padding, truncation, or invented/duplicated findings.
+- Adapt report length to the project: small audits stay short; large audits expand only where evidence requires.
+- Use actual component names. Show measured values with units; otherwise state `NOT MEASURED`. Separate facts, test results, estimates, and recommendations. Never invent scores or performance gains.
+- Rank actionable priorities by impact, risk, dependencies, and effort; identify the best first priority.
+- Include test gaps/results in Sections 5 and 7; do not add another section. Never claim a test passed unless it was run and passed.
+- Show a compact black-background, white-text dashboard where supported; otherwise use the same headings and concise text.
 
-**Testing requirement**
-- Testing status and gaps must be reflected within Sections 5 and 7, without adding a new numbered section.
-- In Section 5, include missing test coverage and recommended tests as findings (for example Unit, Integration, Functional, End-to-End, Regression, Smoke, Acceptance, API/Contract, Security, Performance/Load, Compatibility, Accessibility, Recovery/Backup-Restore, Installation/Upgrade, and resource-leak tests where applicable).
-- In Section 7, show which testing areas were checked, not checked, blocked, or not applicable. State actual test results briefly in the finding or coverage status; never claim PASS unless the test was executed and passed.
-- Do not run destructive, production-impacting, privacy-invasive, or unusually expensive tests during the read-only audit. Mark tests requiring special environments, credentials, hardware, approval, or unavailable tooling as BLOCKED or NOT CHECKED with the reason.
+**Audit and action rules**
+- Inspect all applicable project areas, including architecture, features, code, APIs, data/storage, dependencies, configuration, integrations, security, tests, startup, backup/recovery, build, deployment, and performance.
+- Audit is read-only. Do not edit, install, migrate, or apply improvements until the user selects an action. Mark inaccessible or unrun checks honestly; avoid destructive or production-impacting tests.
+- After selection, change only the authorized area (09 means all justified recommendations), then build, test, debug, verify, and report actual outcomes. Pause risky or destructive changes that require approval.
+- `AGENTS.md` cannot register a VS Code shortcut or custom chat command by itself; do not claim `00` has been configured unless the relevant extension supports and has configured it.
 
-**After the audit**
-- The user may select actions 01–08 to improve only that area. Action 09 applies all justified recommendations, respecting dependencies and safety.
-- Inspect affected files, preserve user data and unrelated changes, and explain material risks before implementation.
-- Implement in the live VS Code workspace, then build, test, debug, and verify affected areas. Fix failures within the authorized scope and report actual outcomes.
-- Pause destructive, unsafe, production-impacting, or materially risky changes that need explicit approval. Never claim an improvement was applied until it is implemented and verified.
-
-**Evidence and repeatability**
-- Separate measured facts, test results, estimates, assumptions, and recommendations. Health percentages must be reproducible from stated criteria; potential gains must include assumptions and baseline or be marked `NOT ESTIMATED`.
-- Compare with previous verified audits only when historical evidence exists; otherwise establish a baseline.
-- Do not expose secrets, transmit private data, or modify production systems during the audit.
 ### Task Completion Report
 
 Har meaningful task ke baad neeche wala report exact layout mein render karo. Sirf current task ke verified results show karo.
