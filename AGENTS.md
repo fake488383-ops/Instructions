@@ -200,73 +200,59 @@ SELECT IMPROVEMENT
 - Do not expose secrets, transmit private data, or modify production systems during the audit.
 ### Task Completion Report
 
-After each meaningful task, generate this report from verified task evidence. Preserve the visual blueprint exactly. Only content rows and section height may expand or shrink.
+After each meaningful task, generate this report from verified task evidence. The report is fully dynamic: its content, row count, and section height grow or shrink automatically to match the actual work. Never use sample content as fixed output.
 
-**REPORT RULES**
-- Use a pure black background, one complete white outer border around the entire report, white text and horizontal section dividers. Do not draw separate boxes around individual sections.
-- Keep BEFORE and AFTER side by side in equal-width columns. BEFORE heading and all content beneath it must be horizontally centered in its column. AFTER heading and all content beneath it must also be horizontally centered in its column. Use equal left/right padding in both columns.
-- A single continuous white vertical divider separates BEFORE and AFTER. It must connect to the top and bottom horizontal edges of the two-column area.
-- Color the BEFORE heading red and the AFTER heading green. Keep their content white.
-- Keep the section order and headings shown in the blueprint: BEFORE / AFTER first and unnumbered; 01 Engineer Summary; 02 Test & Validation Summary; 03 Feature Validation Summary; 04 Next Improvement Suggestions; 06 Apply for All. The final action is numbered 06 exactly as shown; nothing follows it.
-- Populate the report dynamically from verified task evidence. Repeat relevant rows/content blocks for actual items; do not impose a fixed engineer, test, feature, or row limit.
-- BEFORE shows the verified prior state. AFTER shows actual additions, changes, and improvements.
-- Engineer Summary: show only engineers who actually contributed. Put each engineer on the left and that engineer's actual contribution aligned to the right.
-- Test & Validation Summary: list each relevant test actually executed by QA/testing engineers (for example build, unit, integration, end-to-end, regression, API, security, or performance tests where applicable). Align each real result to the right. Never show PASS for a test that was not run.
-- Feature Validation Summary: list each feature actually added or changed, with its real behavior-validation result aligned to the right. Use WORKING only when the feature was tested and works; otherwise show the actual state such as FAILED, PARTIAL, BLOCKED, or NOT VERIFIED. Validate behavior, not merely file existence.
-- Next Improvement Suggestions: show five evidence-based options when five justified improvements are available. Each option must have a concise title followed by a short description of its expected benefit. Rank the strongest first and mark only option 01 with green **RECOMMENDED** text. Do not invent improvements or benefits; if fewer than five are justified, show only the justified options.
-- The final action must read **06. APPLY FOR ALL**. It applies the displayed justified suggestions. Do not add explanatory content, footnotes, or another section after it.
-- Do not duplicate information across sections, show template markers, or display empty rows. Clearly distinguish completed work from suggestions that have not yet been applied.
+**DYNAMIC REPORT RULES**
+- Show only real, relevant items supported by the current task and workspace evidence. Never display placeholder rows, sample entries, empty headings, or invented content.
+- No fixed maximum applies to engineers, contributions, tests, validated features, or implemented additions. Include every qualifying item, even if there are dozens or hundreds.
+- Engineer Summary: include every engineer/discipline that actually contributed to the task, exactly once, with that engineer's actual contribution. Do not show engineers who were not involved.
+- Test & Validation Summary: include every distinct, relevant test that was actually executed, exactly once, with its real outcome. The number of test rows must match the actual executed tests, not a predefined sample list. Do not list planned, skipped, or unavailable tests as completed tests; report blocked/not-run checks only when materially necessary to explain verification limits.
+- Feature Validation Summary: include every feature actually added or changed and evaluated, exactly once, with its actual behavioral validation status. If 50 features were added and verified, show all 50; expand the section to fit all 50. Do not cap, summarize away, or omit real features merely to keep the report short. Use WORKING only when behavior was actually tested and works; otherwise show the accurate status such as FAILED, PARTIAL, BLOCKED, or NOT VERIFIED.
+- BEFORE / AFTER: show all relevant, verified prior-state and resulting-state items. Both columns remain equal width, and all content within each column remains horizontally centered with equal left/right padding.
+- Next Improvement Suggestions: show up to five justified, evidence-based suggestions. Each has a concise title and short benefit description. Mark the strongest first option with green **RECOMMENDED**. Never invent suggestions to fill slots.
+- The report must expand naturally: add a row/content block for each additional real engineer, test, feature, or state change; increase the relevant section height; preserve the overall layout, borders, dividers, spacing, and alignment. When fewer real items exist, show fewer rows. Do not enforce a fixed count based on the example blueprint.
+- Do not duplicate items across sections. Do not claim work, tests, or validation that did not occur. Distinguish implemented features from future suggestions.
+- The final action must read **06. APPLY FOR ALL**. It applies all displayed justified suggestions. Nothing may appear after it.
 
 **TASK COMPLETION REPORT — VISUAL BLUEPRINT**
 
-This is the layout reference. Render it as a black terminal-style report with white outer border and white horizontal dividers. The BEFORE / AFTER text content is centered in each half, with equal padding and a continuous center divider. Section dividers are horizontal lines only; do not create individual section boxes.
+The following is a layout guide only, not a fixed dataset or row count. Bracketed descriptions are instructions and must never appear in the rendered report. Repeat rows/blocks for every matching real item; remove unused examples entirely.
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │                            TASK COMPLETION REPORT                            │
 ├────────────────────────────────────┬─────────────────────────────────────────┤
 │               BEFORE               │                  AFTER                  │
-│                                    │                                         │
-│          [Previous state]          │          [Completed state]              │
-│          [Previous item]           │          [Added / changed item]         │
-│                                    │                                         │
+│       [Centered actual items]      │       [Centered actual items]           │
+│       [Repeat for all items]       │       [Repeat for all items]            │
 ├────────────────────────────────────┴─────────────────────────────────────────┤
 │ 01. ENGINEER SUMMARY                                                         │
 │ ENGINEER                                                   CONTRIBUTION      │
-│ [Contributing engineer]                         [Actual contribution]        │
-│ [Contributing engineer]                         [Actual contribution]        │
+│ [One row for EVERY engineer who actually contributed]                       │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 02. TEST & VALIDATION SUMMARY                                                │
 │ TEST NAME                                                        RESULT      │
-│ [Test actually executed]                                         [PASS/FAIL] │
-│ [Test actually executed]                                         [PASS/FAIL] │
+│ [One row for EVERY distinct test actually executed]                         │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 03. FEATURE VALIDATION SUMMARY                                               │
 │ FEATURE                                                          STATUS      │
-│ [Feature added or changed]                                      [WORKING]    │
-│ [Feature added or changed]                                      [Actual]     │
+│ [One row for EVERY feature actually added/changed and validated]             │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 04. NEXT IMPROVEMENT SUGGESTIONS                                             │
-│ 01. [Suggestion title]                                      [RECOMMENDED]   │
-│     [Short description of expected benefit]                                │
-│ 02. [Suggestion title]                                                      │
-│     [Short description of expected benefit]                                │
-│ 03. [Suggestion title]                                                      │
-│     [Short description of expected benefit]                                │
-│ 04. [Suggestion title]                                                      │
-│     [Short description of expected benefit]                                │
-│ 05. [Suggestion title]                                                      │
-│     [Short description of expected benefit]                                │
+│ [Up to five justified suggestions; title + short benefit description]        │
+│ [Mark the strongest first suggestion RECOMMENDED in green]                   │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │                           06. APPLY FOR ALL                                  │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
 
-**DYNAMIC RENDERING AND ALIGNMENT**
-- The actual rendered report must keep the complete outer white border, black background, white horizontal dividers, and no inner section boxes.
-- BEFORE and AFTER are equal-width columns. Center each heading and every content line within its own column; do not left-align either column's content.
-- Keep the vertical center divider continuous through the complete BEFORE / AFTER panel, meeting its top and bottom horizontal edges.
-- Engineer names, test names, and feature names align left within their rows; their corresponding contributions and results align right.
-- Suggestion descriptions appear directly below their titles. The first suggestion's RECOMMENDED label is green; all other report text and borders remain white except BEFORE (red) and AFTER (green).
-- Preserve the layout while allowing content and section heights to grow naturally. Do not let long content break the outer border or the center divider.
-- Section 06 is the final line of the report. Never append anything beneath it.
+**RENDERING AND ALIGNMENT**
+- Use a pure black background, one complete white outer border, white text and white horizontal section dividers. Do not draw separate boxes around individual sections.
+- BEFORE heading is red; AFTER heading is green. Center each heading and every content line within its own equal-width column, with equal left/right padding.
+- A single continuous white vertical divider separates BEFORE and AFTER and meets the top and bottom edges of that panel.
+- In Engineer Summary, align engineer names left and actual contributions right.
+- In Test & Validation Summary, align test names left and actual results right.
+- In Feature Validation Summary, align feature names left and actual statuses right.
+- In suggestions, place each concise description directly beneath its title. Only the first/best suggestion carries the green **RECOMMENDED** label.
+- Preserve the visual layout while allowing content and section heights to grow without limit as required by the number of actual items. Prevent overflow, clipping, truncation, or omission; use the host's scrollable report area if necessary.
+- Keep Section 06 as the final action and final report content. Do not append footnotes, explanations, or additional sections below it.
