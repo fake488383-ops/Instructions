@@ -90,6 +90,68 @@ Each discipline's directory entry below defines its unique technical ownership. 
 | 30 | Scalability Engineer | Own growth and load capacity: workload projections, scaling patterns, concurrency limits, distributed capacity, load testing, and growth bottlenecks. |
 | 31 | Cost Resource Engineer | Own lifecycle resource economics: compute, memory, storage, network, licensing, energy, operational cost, and cost-efficiency trade-offs. |
 
+### Software Health Audit — `00` Command
+
+The Software Health Audit is a separate, on-demand, whole-project assessment. It is not part of the Task Completion Report and must not modify the project merely by running the audit.
+
+**Command behavior**
+- When the user sends exactly `00` as a command in the VS Code AI Agent chat, treat it as **Software Health Audit**. Inspect the complete project and produce the dashboard below.
+- If the VS Code extension supports custom chat commands/keybindings, configure `00` + Enter to invoke this audit. An `AGENTS.md` instruction alone cannot register or intercept a keyboard shortcut; if extension configuration is required, explain that setup instead of claiming the shortcut was installed.
+- Audit the actual project: discover its features, modules, APIs, database, storage, logs, memory, startup, background services, dependencies, security controls, backup/recovery, and runtime performance where applicable. Skip irrelevant areas and mark unavailable or unmeasured areas honestly.
+- The audit is read-only. Do not edit code, change configuration, migrate data, or apply optimizations during the audit. Preserve user data and existing changes.
+
+**Exact dashboard structure and order**
+
+**01 — OVERALL SOFTWARE HEALTH**
+- Show one overall health percentage and a clear status.
+- Calculate it from measured, relevant health dimensions and their stated criteria. Briefly show the scoring basis; do not use an arbitrary average or invented score.
+
+**02 — FEATURE HEALTH ANALYSIS**
+- List the actual detected features/components and each measured health percentage.
+- Include a concise current condition for each item. Do not invent features or scores.
+
+**03 — PERFORMANCE ANALYSIS**
+- Show measured metrics where available, such as startup time, API response latency/throughput, database query time, CPU, memory, disk I/O, network, rendering/frame rate, and error rate.
+- Include target/baseline and measurement conditions when known. Mark unavailable metrics as `NOT MEASURED`; do not guess.
+
+**04 — IMPROVEMENT OPPORTUNITIES**
+- List components that could be improved, the evidence-backed proposed change, and estimated improvement potential only when supported by profiling, benchmarks, or a clearly stated estimate.
+- Keep health percentage separate from improvement-potential percentage. Never present a potential gain as a measured result or guarantee. For example, evaluate WebSocket only if real-time, persistent communication is actually needed; do not assume it is automatically faster or a replacement for every REST API.
+
+**05 — MISSING FEATURES & WEAKNESSES**
+- List actual missing capabilities, technical weaknesses, risks, bottlenecks, outdated dependencies, absent monitoring, backup gaps, or incomplete coverage discovered during the audit.
+- Distinguish confirmed gaps from items that could not be verified.
+
+**06 — RECOMMENDED PRIORITIES**
+- Rank actionable improvements by impact, risk, dependencies, effort, and evidence.
+- Give each recommendation a stable numbered selection and concise reason. Identify the best first improvement.
+
+**07 — AUDIT COVERAGE**
+- Show which relevant areas were CHECKED, NOT CHECKED, or NOT APPLICABLE. Do not claim full-project coverage if any relevant area was inaccessible or skipped.
+
+**Selectable improvement actions**
+After the dashboard, show a compact numbered action menu. The user can send a number to start improving that area:
+1. Feature Health Improvements
+2. Performance Optimization
+3. API Optimization
+4. Database Optimization
+5. Security Improvements
+6. Logging & Observability Improvements
+7. Startup & Background Services Optimization
+8. Storage, Backup & Recovery Improvements
+9. Apply All Recommended Improvements
+
+When the user selects an option, use the audit findings to prepare and execute changes only within that selected scope. Option 9 applies all justified recommendations, respecting dependencies and safety. Before changes, inspect affected files, preserve existing user data and unrelated work, and explain any material risk. Implement in the live VS Code workspace, then build/test/verify affected areas, fix failures where possible, and report actual outcomes. If a change is unsafe, destructive, requires unavailable access, or has unresolved material impact, pause that change and explain why. Never claim an improvement was applied until it is implemented and verified.
+
+**Scoring and evidence rules**
+- Health percentages must be reproducible from defined criteria and real measurements/tests. Explain the scoring method briefly; identify the dimensions and weights if a combined score is used.
+- Improvement-potential percentages must be evidence-based estimates with their assumptions and measurement baseline. If evidence is insufficient, show `NOT ESTIMATED` rather than fabricating a percentage.
+- Use project-specific thresholds; distinguish measured values from estimates and recommendations.
+- Do not run destructive load/security tests, expose secrets, transmit private data, or alter production systems during a read-only audit. Use safe local/staging checks and obtain explicit approval for risky or destructive actions.
+- The audit must be repeatable and comparable over time. Where prior verified measurements exist, show the change from the previous audit; otherwise establish a baseline without pretending historical data exists.
+
+---
+
 ### Task Completion Report
 After each meaningful task, generate the final report using this exact dashboard structure and order:
 
