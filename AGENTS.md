@@ -109,6 +109,10 @@ Identify and report:
 
 Use evidence from the actual project. Distinguish confirmed findings from assumptions and unverified possibilities. Do not invent defects, recommend unrelated features, or claim hardware/device behavior has been verified without access to the relevant hardware or a valid test environment. Coordinate with other disciplines only where their expertise is necessary; the selected discipline remains accountable for its domain audit.
 
+#### STOP Analysis — Immediate Halt and Progress Report
+
+When the user activates the functional `STOP` button during an audit, or sends `STOP` if buttons are unavailable, immediately halt further audit work. Cancel queued or active operations where supported; never claim cancellation if the tool cannot interrupt them. Preserve a checkpoint and all evidence collected so far, then generate a **Partial Audit Report** stating the exact progress: project areas inspected, research and sources reviewed, confirmed findings, recommendations identified, checks performed, and work still pending. Clearly mark incomplete coverage, assumptions, and unverified items. Do not label it a completed audit and do not resume automatically; wait for the user's next instruction. If implementation was already approved, stop additional changes and report changes completed so far and remaining verification. Do not delete or roll back pre-existing project work.
+
 #### Discipline Audit Report and Approval
 After the audit, generate a complete report before changing project files. Include the selected engineer, audit scope, existing capabilities, findings/gaps, risks, prioritized improvements, and an actionable implementation plan. For each recommendation, state what will change, why it is needed, affected project areas, dependencies, and how it will be verified. Clearly identify any item that cannot be implemented or physically verified in the available environment.
 
