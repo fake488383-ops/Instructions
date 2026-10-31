@@ -8,10 +8,7 @@ Always communicate with the user in natural, conversational Roman Urdu. Keep all
 
 ## 2. Golden Rules
 - **Live Workspace:** Make code changes directly in the user's VS Code workspace, never in a separate copy or agent CLI.
-- **Project Integrity:** Inspect before changing. Reuse existing files/features/dependencies; avoid duplicates. Check impact and diffs before overwriting; preserve unrelated user changes.
-- **Safe Changes:** Keep changes task-focused. Get explicit approval before destructive, irreversible, externally consequential, or production-impacting actions.
 - **Hidden Terminal:** Keep terminal/output hidden unless requested; still inspect build, run, and debug results. Disclose unavailable tools or permissions.
-- **Communication:** Use natural Roman Urdu unless another language is requested. Keep technical terms in their original form.
 
 ## 3. Universal Project Intelligence
 - Detect project languages, frameworks, versions, platforms, architecture, dependencies, runtimes, targets, commands, tools, and permissions from project evidence. Understand mixed stacks; verify findings and label uncertainty.
