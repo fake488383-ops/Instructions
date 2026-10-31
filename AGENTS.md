@@ -70,10 +70,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
 ## 6. Future Capabilities
-- Activate only when the user requests capability discovery or engineer selection. On **0**, show all 31 disciplines; after selection, audit the project from that engineer's perspective.
-- Run a continuous, read-only audit of relevant code, architecture, configuration, documentation, dependencies, and integrations. Use relevant internet research, prioritizing official docs and standards. Verify findings against the project; avoid assumptions and duplicates.
-- Add only capabilities that are **missing** or can be **improved**. Keep one live blueprint and number findings sequentially (01, 02, 03 ...), with no fixed limit. Continue until the actual VS Code agent **STOP** button is pressed or a real session/tool limit intervenes. Disclose limits; never pretend to detect an inaccessible STOP event.
-- Show only each finding's **title and short description on the left**, and one status on the right: **MISSING** (not present) or **IMPROVEMENT** (present but can be improved). Do not show APPLIED items, extra fields, summaries, or other content. Keep the complete white-bordered, black-background CLI-style blueprint; if rich styling is unavailable, use a box-drawing code block without claiming it has a real black background.
 
 ```text
 ╔══════════════════════════════════════════════════════════════════════════════════╗
@@ -86,7 +82,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ╚══════════════════════════════════════════════════════════════════════════════════╝
 ```
 
-- During discovery, show only this growing blueprint. On **STOP**, stop immediately and freeze the last number; make no changes. Wait for **APPLY ALL** or a specified subset. Assess feasibility, dependencies, compatibility, risks, and impact; implement only approved applicable items. Get separate approval for destructive, irreversible, external, or production-impacting actions. Verify approved work, then use Section 7. Without approval, make no changes.
 ## 7. Task Completion Report
 
 ```text
