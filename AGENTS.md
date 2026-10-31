@@ -200,19 +200,22 @@ SELECT IMPROVEMENT
 - Do not expose secrets, transmit private data, or modify production systems during the audit.
 ### Task Completion Report
 
-After each meaningful task, render this report using the exact headings, section order, layout, and design in the blueprint. The blueprint defines the structure only. Dynamically generate all descriptions, engineer entries, test categories, tested features, results, and improvement details from the actual task and verified evidence. Do not hardcode sample content or add unrelated sections.
+After each meaningful task, render this report using the exact visual blueprint below. Preserve its headings, order, columns, alignment, spacing, padding, margins, borders, colors, and overall layout. The blueprint defines the visual structure; generate all content dynamically from the actual task and verified evidence. Do not hardcode sample content or add unrelated sections.
 
 **REPORT RULES**
-- Use a white outer border, black background, white text, and white section dividers where supported. BEFORE is red; AFTER is green.
-- Section 01: BEFORE and AFTER must appear side by side in two columns on the same row, BEFORE on the left and AFTER on the right.
-- Section 02: show each participating implementation engineer separately, with their actual contribution. Use ENGINEER and CONTRIBUTION columns.
-- Section 03: dynamically create only relevant test-category tables. Each table uses FEATURE TESTED and RESULT columns and lists actual checks and their actual outcomes. Include testing/QA-only engineers in this section when applicable.
-- Section 05: show exactly five numbered suggestions (01–05), dynamically based on verified findings, and clearly identify the best first suggestion. Use SUGGESTION and PRIORITY columns.
-- Section 06 must be the final selectable option: **06. APPLY ALL FIVE SUGGESTIONS**. Nothing follows it. Omit Section 04.
-- **Equal inner padding is mandatory in every table:** use consistent left and right cell padding. The first column's text must be inset from the left outer border by exactly the same distance that the last column's text is inset from the right outer border. Right-align CONTRIBUTION, RESULT, and PRIORITY contents; never center them. Their right edges must align with the same right-side inner padding. Keep column spacing consistent; never use manual spaces to fake alignment.
-- Dynamically expand or shrink content and rows to fit the actual task. Do not show empty rows or invent engineers, work, tests, results, metrics, or improvements.
+- Use a black background, white outer border, white text, and white section divider lines. BEFORE is red; AFTER is green.
+- Preserve the section numbering and order exactly: 01, 02, 03, 04, 05, 06.
+- Section 01: show BEFORE and AFTER side by side in two equal-width columns. BEFORE is on the left and AFTER on the right. The central vertical divider must continuously connect the top and bottom horizontal borders. Use equal inner padding. BEFORE describes the actual prior state, missing features, and limitations. AFTER includes both newly added features and improvements to existing features.
+- Section 02: underline the heading **ENGINEER SUMMARY**. Show only engineers/disciplines that actually contributed, each separately, with their actual contribution. Keep engineer names left-aligned and contribution text right-aligned, using equal inner padding. Include testing specialists here when they actually contributed; do not create a separate Testing Engineer Contributions section.
+- Section 03: underline the heading **TEST & VALIDATION SUMMARY**. List each relevant test exactly once, with its actual result on the same row. Use test name on the left and result (PASS / FAIL / IN PROGRESS / NOT RUN / BLOCKED) aligned to the right. Include applicable test types such as Unit, Integration, End-to-End, Regression, Performance, and Security Testing. Do not repeat the test list in a separate Testing Coverage or Testing Results list. Never claim PASS unless the test was executed and passed.
+- Section 04: **FEATURE VALIDATION**. List actual implemented or changed features individually, with the actual validation result aligned to the right. Validate real feature behavior, not merely the existence of files. Use only relevant features and genuine test evidence.
+- Section 05: **NEXT IMPROVEMENT SUGGESTIONS**. Show exactly five numbered suggestions (01–05), dynamically based on verified project findings. Display the green **RECOMMENDED** label to identify the best first suggestion. Each suggestion has a concise title and one short explanation. Do not add a Suggestion Priority column or a Benefit label.
+- Section 06: show only **APPLY ALL FIVE SUGGESTIONS** as the final selectable option. Nothing follows it.
+- Keep the exact visual hierarchy and compact report style. Use consistent inner padding in every column; align right-side values to the same right inner edge. Do not use manual spaces to fake alignment.
+- Dynamically expand or shrink rows to fit actual content. Do not show empty rows or invent engineers, work, tests, results, features, or recommendations.
+- Treat example feature names and test statuses as illustrative only. Report actual project/task evidence.
 
-**TASK COMPLETION REPORT — BLUEPRINT**
+**TASK COMPLETION REPORT — VISUAL BLUEPRINT**
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -220,29 +223,50 @@ After each meaningful task, render this report using the exact headings, section
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 01 — BEFORE / AFTER ANALYSIS                                                 │
 │                                                                              │
-│  ┌────────────────────────────────────┐  ┌────────────────────────────────┐ │
-│  │ BEFORE                             │  │ AFTER                          │ │
-│  │                                    │  │                                │ │
-│  └────────────────────────────────────┘  └────────────────────────────────┘ │
+│  ┌────────────────────────────────────┬───────────────────────────────────┐ │
+│  │              BEFORE                │                AFTER              │ │
+│  │                                    │                                   │ │
+│  │       [Actual previous state]      │       [Added improvements]        │ │
+│  │       [Missing features]           │       [New features added]         │ │
+│  │       [Existing limitations]       │       [Improved existing features]│ │
+│  └────────────────────────────────────┴───────────────────────────────────┘ │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│ 02 — ENGINEER SUMMARY                                                        │
+│ 02 — ENGINEER SUMMARY                                                       │
 │                                                                              │
 │  ENGINEER                                                   CONTRIBUTION     │
-│  [Dynamic rows; each engineer listed separately]                             │
+│  [Actual contributing engineer]                         [Actual contribution]│
+│  [Actual contributing engineer]                         [Actual contribution]│
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 03 — TEST & VALIDATION SUMMARY                                               │
 │                                                                              │
-│  [Dynamic test-category tables]                                              │
+│  TEST NAME                                                        RESULT     │
+│  Unit Testing                                                       PASS     │
+│  Integration Testing                                                PASS     │
+│  End-to-End Testing                                                 PASS     │
+│  Regression Testing                                                 PASS     │
+│  Performance Testing                                                PASS     │
+│  Security Testing                                                   PASS     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 04 — FEATURE VALIDATION                                                      │
+│                                                                              │
 │  FEATURE TESTED                                                   RESULT     │
-│  [Dynamic rows for actual checks and outcomes]                               │
+│  [Actual implemented feature]                              [Actual result]  │
+│  [Actual implemented feature]                              [Actual result]  │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 05 — NEXT IMPROVEMENT SUGGESTIONS                                            │
 │                                                                              │
-│  SUGGESTION                                                     PRIORITY     │
-│  [Exactly five dynamic suggestions: 01–05; best suggestion identified]       │
+│  RECOMMENDED                                                                   │
+│  01. [Best first improvement suggestion]                                     │
+│      [One concise explanation]                                               │
+│  02. [Improvement suggestion]                                                │
+│      [One concise explanation]                                               │
+│  03. [Improvement suggestion]                                                │
+│      [One concise explanation]                                               │
+│  04. [Improvement suggestion]                                                │
+│      [One concise explanation]                                               │
+│  05. [Improvement suggestion]                                                │
+│      [One concise explanation]                                               │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│ 06 — APPLY FOR ALL                                                           │
-│                                                                              │
-│                     06. APPLY ALL FIVE SUGGESTIONS                           │
+│ 06 — APPLY ALL FIVE SUGGESTIONS                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
