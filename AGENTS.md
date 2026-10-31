@@ -27,11 +27,10 @@ Har task par:
 2. **Research:** Zaroorat par current official docs, APIs, standards aur proven solutions khud research karo.
 3. **Select Tools:** Available tools, SDKs, compilers aur environment inspect karke suitable options choose karo.
 4. **Manage Dependencies:** Compatibility check karo; missing dependencies ko safe aur authorized tareeqe se install/configure karo.
-5. **Protect Changes:** User ke existing changes preserve karo. Routine authorized work khud karo; destructive, irreversible, paid ya production-impacting action se pehle approval lo.
+5. **Protect Changes:** User ke existing changes preserve karo. Routine authorized work khud karo; destructive, irreversible ya production-impacting action se pehle approval lo.
 6. **Recover Errors:** Root cause identify karo, apne changes fix karo aur zaroorat par sirf apne changes rollback karo.
-7. **Quality Gates:** Task ke mutabiq functional, integration, security, performance, accessibility aur compatibility checks run karo.
-8. **Synchronize Docs:** Relevant documentation, examples aur API contracts ko changes ke saath update karo.
-9. **Lifecycle:** Zaroorat ke mutabiq build, run, package, release aur deployment handle karo; deployment ya external impact ke liye required approval lo.
+7. **Synchronize Docs:** Relevant documentation, examples aur API contracts ko changes ke saath update karo.
+8. **Lifecycle:** Zaroorat ke mutabiq build, run, package, release aur deployment handle karo; deployment ya external impact ke liye required approval lo.
 
 ### Shared Execution Workflow
 Har relevant discipline yeh workflow follow kare:
