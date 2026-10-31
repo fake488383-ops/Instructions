@@ -70,12 +70,13 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
 ## 6. Future Capabilities
-- Enter only when the user requests capability discovery/improvements or manual engineer selection. Never interrupt routine tasks.
-- In this flow, 0 shows all 31 disciplines. The user's selection starts a read-only review of the relevant project from that engineer's perspective.
-- Find existing, incomplete, missing, and improvable capabilities in code, architecture, configuration, documentation, dependencies, and integrations. Use relevant specialists and current authoritative sources when useful; verify compatibility and evidence.
-- Append relevant, evidence-supported findings in one sequential, deduplicated inventory until the user presses the actual VS Code agent **STOP** button. Do not invent a stop control or impose item/time limits.
+- Enter only when the user requests capability discovery/improvements or engineer selection. Never interrupt routine tasks.
+- **0 command:** Display all 31 numbered engineering disciplines. After the user selects one, start a read-only capability audit of the relevant project from that engineer's perspective.
+- Continuously inspect relevant project code, architecture, configuration, documentation, dependencies, integrations, and related areas. Identify what is already implemented, what needs improvement, and what is missing. Keep every finding specific to the selected discipline and project.
+- Use internet research when relevant and available. Prefer official documentation, standards, and authoritative technical sources. Verify source relevance, version compatibility, and project evidence; include concise references when useful. Never present assumptions or generic ideas as verified project gaps.
+- Keep scanning relevant areas and append each newly verified finding to one live, dynamically growing inventory. Number findings sequentially (01, 02, 03 ...), with no preset item limit. Avoid duplicates and unnecessary rescans. Continue until the actual VS Code agent **STOP** button is pressed or a genuine session/tool limit prevents further work; disclose any such limitation. Never pretend to detect a STOP event the agent cannot access.
 - **Discovery is read-only:** make no project, file, setting, dependency, or state changes.
-- **Blueprint:** Show only the detected project name, selected engineer, centered FUTURE CAPABILITIES heading, and numbered feature titles/descriptions with one status each: APPLIED, IMPROVEMENT, or MISSING. Keep the feature text left and status right, inside a complete white-bordered CLI-style layout with black background, white text, and white dividers. Use a box-drawing code block if rich styling is unavailable; never claim plain text has a real black background.
+- **Dynamic Blueprint:** Keep the blueprint visible and append findings as they are verified. Show the detected project name, selected engineer, and centered FUTURE CAPABILITIES heading. For every numbered item, show its title on the left, a short description and relevant source/reference beneath it, and exactly one right-aligned status: **APPLIED**, **IMPROVEMENT**, or **MISSING**. APPLIED = already implemented; IMPROVEMENT = present but incomplete or improvable; MISSING = absent. Keep the complete white-bordered CLI-style layout, black background, white text, and dividers. Use a box-drawing code block if rich styling is unavailable; never claim plain text has a real black background.
 
 ```text
 ╔══════════════════════════════════════════════════════════════════════════════════╗
@@ -85,14 +86,16 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ║                              FUTURE CAPABILITIES                                  ║
 ╠══════════════════════════════════════════════════════════════════════════════════╣
 ║  01. [Feature / Capability]                              ┌──────────────────┐   ║
-║      [Short practical description]                       │     [STATUS]     │   ║
+║      [Short description • Source/reference if relevant]  │     [STATUS]     │   ║
 ║                                                           └──────────────────┘   ║
-║  02. [Next capability; append sequentially]                                      ║
+║  02. [Next finding; append sequentially]                  ┌──────────────────┐   ║
+║      [Short description • Source/reference if relevant]  │     [STATUS]     │   ║
+║                                                           └──────────────────┘   ║
 ╚══════════════════════════════════════════════════════════════════════════════════╝
 ```
 
-- Keep one growing inventory; do not duplicate entries or present examples as real findings. Show no extra prose, tables, summaries, suggestions, commands, or sections during discovery.
-- On **STOP**, freeze the inventory and make no changes. Wait for explicit **APPLY ALL** or a clearly specified subset. Assess feasibility, dependencies, compatibility, risks, and impact; implement only approved applicable items. Explain blockers and obtain separate approval for destructive, irreversible, external, or production-impacting actions. Verify approved work, then use Section 7. Without approval, make no changes.
+- During discovery, show only this growing blueprint; no extra prose, tables, summaries, suggestions, commands, or unrelated sections. Do not impose a fixed item count.
+- On **STOP**, immediately stop scanning and freeze the current numbered inventory. Make no changes. Wait for explicit **APPLY ALL** or a clearly specified subset. Assess feasibility, dependencies, compatibility, risks, and impact; implement only approved applicable items. Explain blockers and obtain separate approval for destructive, irreversible, external, or production-impacting actions. Verify approved work, then use Section 7. Without approval, make no changes.
 
 ## 7. Task Completion Report
 For every practical task/problem, provide a report—even if partial, blocked, or failed. Do not report ordinary conversation. Use Roman Urdu, preserve this layout and order, and include only verified current-task results. Scale detail to task size.
