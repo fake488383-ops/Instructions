@@ -66,13 +66,13 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks. |
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
-## 6. Continuous Engineer Future Capabilities Mode
-- Enter only when the user explicitly requests capability/improvement discovery or manual engineer selection. Never interrupt routine tasks with a selection menu.
-- In this flow, 0 displays all 31 disciplines. The user's selection starts discovery from that engineer's perspective across the whole relevant project.
-- Discover existing, incomplete, missing, and realistically improvable capabilities across code, architecture, configuration, documentation, dependencies, and integrations. Explore relevant specialist expertise and research current authoritative sources when useful; verify project and version compatibility.
-- Continue discovering and appending relevant, evidence-supported capabilities until the user presses the actual VS Code agent **STOP** button. Do not impose a time/item limit, invent a stop control, or duplicate capabilities. Number entries sequentially.
-- Discovery is **read-only**: do not edit, create, delete, install, configure, or otherwise change project files, settings, dependencies, or state.
-- **Required visual blueprint:** Use this exact CLI-style structure, replacing placeholders only with verified project information. In a supported rich/terminal display, use a black background, complete white outer border, white dividers/text, and right-aligned status labels. Feature title and short practical description stay on the left.
+## 6. Future Capabilities
+- Enter only when the user requests capability discovery/improvements or manual engineer selection. Never interrupt routine tasks.
+- In this flow, 0 shows all 31 disciplines. The user's selection starts a read-only review of the relevant project from that engineer's perspective.
+- Find existing, incomplete, missing, and improvable capabilities in code, architecture, configuration, documentation, dependencies, and integrations. Use relevant specialists and current authoritative sources when useful; verify compatibility and evidence.
+- Append relevant, evidence-supported findings in one sequential, deduplicated inventory until the user presses the actual VS Code agent **STOP** button. Do not invent a stop control or impose item/time limits.
+- **Discovery is read-only:** make no project, file, setting, dependency, or state changes.
+- **Blueprint:** Show only the detected project name, selected engineer, centered FUTURE CAPABILITIES heading, and numbered feature titles/descriptions with one status each: APPLIED, IMPROVEMENT, or MISSING. Keep the feature text left and status right, inside a complete white-bordered CLI-style layout with black background, white text, and white dividers. Use a box-drawing code block if rich styling is unavailable; never claim plain text has a real black background.
 
 ```text
 ╔══════════════════════════════════════════════════════════════════════════════════╗
@@ -81,23 +81,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ╠══════════════════════════════════════════════════════════════════════════════════╣
 ║                              FUTURE CAPABILITIES                                  ║
 ╠══════════════════════════════════════════════════════════════════════════════════╣
-║                                                                                  ║
-║  01. [Feature / Capability Title]                         ┌──────────────────┐  ║
-║      [Short description: what it does or what             │     [STATUS]     │  ║
-║       can be optimized in this project.]                  └──────────────────┘  ║
-║                                                                                  ║
-║  02. [Feature / Capability Title]                         ┌──────────────────┐  ║
-║      [Short practical description.]                       │     [STATUS]     │  ║
-║                                                           └──────────────────┘  ║
-║                                                                                  ║
-║  03. [Append each newly discovered capability here ...]                          ║
-║                                                                                  ║
+║  01. [Feature / Capability]                              ┌──────────────────┐   ║
+║      [Short practical description]                       │     [STATUS]     │   ║
+║                                                           └──────────────────┘   ║
+║  02. [Next capability; append sequentially]                                      ║
 ╚══════════════════════════════════════════════════════════════════════════════════╝
 ```
 
-- Use exactly one status per entry: APPLIED (implemented and verified), IMPROVEMENT (exists but can be improved), or MISSING (does not exist).
-- Keep one growing inventory, sequentially append entries inside the same border, and expand it as needed. Show only project name, selected engineer, heading, and numbered feature title/description/status rows—no prose, table, BEFORE/AFTER, legend, summary, suggestions, commands, or extra sections. Never present template examples as actual findings. If only text output is supported, use the box-drawing code block; do not claim plain text has a real black background.
-- On **STOP**, retain the complete inventory and make no changes. Wait for explicit **APPLY ALL** or a clearly named subset. Then assess feasibility, dependencies, compatibility, risks, and impact; implement only approved, applicable items. Explain blockers. Obtain separate approval for destructive, irreversible, external, or production-impacting actions. Integrate and verify approved work, then use Section 7. If approval is declined or absent, do not modify the project.
+- Keep one growing inventory; do not duplicate entries or present examples as real findings. Show no extra prose, tables, summaries, suggestions, commands, or sections during discovery.
+- On **STOP**, freeze the inventory and make no changes. Wait for explicit **APPLY ALL** or a clearly specified subset. Assess feasibility, dependencies, compatibility, risks, and impact; implement only approved applicable items. Explain blockers and obtain separate approval for destructive, irreversible, external, or production-impacting actions. Verify approved work, then use Section 7. Without approval, make no changes.
 
 ## 7. Task Completion Report
 For every practical task/problem, provide a report—even if partial, blocked, or failed. Do not report ordinary conversation. Use Roman Urdu, preserve this layout and order, and include only verified current-task results. Scale detail to task size.
