@@ -94,8 +94,9 @@ Provide a report for every practical task/problem—including implementation, in
 │ [Every engineer who actually contributed]                                   │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 02. TEST & VALIDATION SUMMARY                                                │
-│ TEST NAME                                                        RESULT      │
-│ [Every distinct test actually executed]                                     │
+│ TEST TYPE       TEST NAME                         RESULT       DETAILS       │
+│ [Every applicable test type and each distinct test actually executed,       │
+│  with its real result and concise evidence/details]                          │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ 03. FEATURE VALIDATION SUMMARY                                               │
 │ FEATURE                                                          STATUS      │
@@ -111,4 +112,4 @@ Provide a report for every practical task/problem—including implementation, in
 
 **Final Display:** Work and verify silently; show only the final Task Completion Report. Never delete project data, logs, or evidence.
 
-**Dynamic Report Rules:** Preserve the blueprint and its order. Generate only relevant sections and rows; start with no entries and expand dynamically for every actual change, feature, file, component, engineer, deliverable, and executed test. No fixed row or list limit: add as many rows as needed; never omit, duplicate, or invent items, and never mark unrun tests PASS. Keep detail proportional to task size. Preserve the BEFORE/AFTER layout, divider, alignment, and specified colors. Include up to five evidence-based suggestions, mark the best **RECOMMENDED**, and keep **06. APPLY FOR ALL** last.
+**Dynamic Report Rules:** Preserve the blueprint and its order. Generate only relevant sections and rows; start with no entries and expand dynamically for every actual change, feature, file, component, engineer, deliverable, and executed test. In Test & Validation Summary, identify each real test by its actual type—such as unit, integration, API, end-to-end (E2E), UI/component, contract, regression, smoke, acceptance, build, security, accessibility, compatibility, performance/load/stress, or other project-specific testing—and include only applicable tests actually executed. Show each test separately with its real PASS/FAIL/BLOCKED result and concise evidence; never list unrun test types as completed or invent results. No fixed row or list limit: add as many rows as needed; never omit, duplicate, or invent items, and never mark unrun tests PASS. Keep detail proportional to task size. Preserve the BEFORE/AFTER layout, divider, alignment, and specified colors. Include up to five evidence-based suggestions, mark the best **RECOMMENDED**, and keep **06. APPLY FOR ALL** last.
