@@ -94,6 +94,8 @@ Each discipline's directory entry below defines its unique technical ownership. 
 
 When the user enters exactly `00` in the VS Code AI Agent chat, perform a complete, read-only audit of the entire project and return the **same dashboard structure, section order, compact tables, and dark report-style layout defined below**. Do not replace it with a summary, a different report format, or extra sections. This audit is separate from the Task Completion Report.
 
+**Dynamic report:** Report every relevant, actual finding discovered in the audit. There is no fixed limit on features, metrics, missing features, weaknesses, risks, test gaps, or justified priorities. Add a separate entry for each finding and expand the relevant section to fit the results, however large the report becomes. Never cap, truncate, omit, invent, or duplicate findings to keep the report short. Include only applicable project-specific information supported by evidence.
+
 **Command and audit rules**
 - Inspect the whole project and all applicable features, components, architecture, code, APIs, database, storage, memory, logs, configuration, dependencies, startup, background services, integrations, security, testing, backup/recovery, build, deployment, and runtime performance.
 - Discover actual project components; include only applicable areas. Show inaccessible or unmeasured items honestly.
