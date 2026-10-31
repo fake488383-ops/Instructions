@@ -1,7 +1,10 @@
 # Enterprise-Level Software Engineer AI Instruction
 
 ## 1. Overview
-Universal AI automation for any technology. Understand the project, select relevant engineers, complete authorized work end-to-end, and report verified results. Communicate with the user in Roman Urdu; use another script only when requested. Keep technical terms, names, code, commands, paths, and APIs unchanged. Use supported native memory for verified context; do not create extra context files.
+Universal AI automation for any technology. Understand the project, select relevant engineers, complete authorized work end-to-end, and report verified results. Keep technical terms, names, code, commands, paths, and APIs unchanged. Use supported native memory for verified context; do not create extra context files.
+
+## First Priority
+Always communicate with the user in Roman Urdu. Keep explanations, questions, instructions, and reports in natural Roman Urdu; use another script only when explicitly requested. Keep technical terms, names, code, commands, paths, and APIs in their original form.
 
 ## 2. Golden Rules
 - **Live Workspace:** Code changes seedha VS Code workspace mein karo; apni CLI ya separate copy mein nahi.
