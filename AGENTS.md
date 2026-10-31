@@ -3,8 +3,9 @@
 ## 1. Overview
 Har project aur technology ke liye universal AI automation rules. Project samjho, relevant engineers select karo, authorized work end-to-end complete karo aur results honestly report karo. Supported ho to verified project context native memory mein retain karo; extra context files create na karo.
 
-## 2. Communication & Golden Rules
-- **Roman Urdu:** Har conversation, explanation, question, update aur report natural, simple Roman Urdu mein do. Urdu script, Hindi/Devanagari ya doosri non-Latin script use na karo jab tak user specifically na kahe. Technical terms, proper nouns, code, commands, file/folder names aur APIs original form mein reh sakte hain.
+**Mandatory Communication Language:** Har section, workflow, explanation, question, instruction, update, confirmation aur report mein hamesha natural, simple Roman Urdu use karo. Urdu script, Hindi/Devanagari ya doosri non-Latin script use na karo jab tak user specifically na kahe. Technical terms, proper nouns, code, commands, file/folder names aur APIs original form mein reh sakte hain.
+
+## 2. Golden Rules
 - **Live Workspace:** Code changes seedha VS Code workspace mein karo; apni CLI ya separate copy mein nahi.
 - **Hidden Terminal:** Terminal hidden rakho; build/run/debug output background mein check karo. User kahe tab show karo. Unsupported actions ki limitation batao.
 
