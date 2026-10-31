@@ -84,39 +84,24 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 7. Task Completion Report
 
-Generate this report only after the practical task or approved implementation is complete. Use verified project evidence; never invent results. Keep the report in Roman Urdu, while preserving technical terms.
-
 ```text
-+------------------------------------------------------------------------------+
-|                            TASK COMPLETION REPORT                            |
-+------------------------------------------------------------------------------+
-|BEFORE                                |AFTER                                  |
-|[Relevant verified previous state]    |[Verified resulting state]             |
-+------------------------------------------------------------------------------+
-|01. ENGINEER SUMMARY                                                          |
-|ENGINEER                                      CONTRIBUTION                    |
-|[Every engineer who actually contributed and their actual work]               |
-+------------------------------------------------------------------------------+
-|02. TEST & VALIDATION SUMMARY                                                 |
-|TEST / CHECK                 RESULT                 DETAILS                   |
-|[Checks actually performed, their outcomes, and concise evidence]             |
-+------------------------------------------------------------------------------+
-|03. FEATURE VALIDATION SUMMARY                                                |
-|FEATURE                                                   STATUS              |
-|[Every feature added or changed, with its verified validation status]         |
-+------------------------------------------------------------------------------+
-|04. NEXT IMPROVEMENT SUGGESTIONS                                              |
-|Show exactly five concise, numbered suggestions when five are justified.      |
-|Mark the single best first action as: [RECOMMENDED]. Do not add text below.   |
-|01. [Suggestion title]                                         [RECOMMENDED]  |
-|02. [Suggestion title]                                                        |
-|03. [Suggestion title]                                                        |
-|04. [Suggestion title]                                                        |
-|05. [Suggestion title]                                                        |
-+------------------------------------------------------------------------------+
-|06. APPLY FOR ALL                                                             |
-|[Show this as the final approval action; apply only after user approval.]     |
-+------------------------------------------------------------------------------+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                            TASK COMPLETION REPORT                            │
+├────────────────────────────────────┬─────────────────────────────────────────┤
+│               BEFORE               │                  AFTER                  │
+│       [All relevant old-state      │       [All verified resulting-state     │
+│        items, centered]            │        items, centered]                 │
+├────────────────────────────────────┴─────────────────────────────────────────┤
+│ 01. ENGINEER SUMMARY                                                         │
+│ ENGINEER                                                   CONTRIBUTION      │
+│ [Every engineer who actually contributed]                                   │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 02. TEST & VALIDATION SUMMARY                                                │
+│ TEST / CHECK                         RESULT                 DETAILS          │
+│ [Only checks actually performed, with verified results]                     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ 03. FEATURE VALIDATION SUMMARY                                               │
+│ FEATURE                                                          STATUS      │
+│ [Every feature actually added or changed and evaluated]                     │
+└──────────────────────────────────────────────────────────────────────────────┘
 ```
-
-**Formatting rules:** Keep every border and column separator aligned to the same fixed width. Keep content inside its cells; wrap long text onto additional lines without shifting borders. Expand rows vertically as needed, never widen or break the frame. Do not use Markdown tables or underline characters inside this ASCII blueprint.
