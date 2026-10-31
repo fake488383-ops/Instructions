@@ -36,6 +36,8 @@ Har task par relevant steps apply karo:
 ## 5. Canonical Engineering Disciplines
 Yeh 31 disciplines canonical hain; names, numbering aur unique ownership preserve karo. Har task ke liye lead aur relevant specialists automatically select karo; routine tasks mein user se selection na karwao. Shared workflow Section 4 mein defined hai.
 
+**Discipline Self-Discovery & Improvement:** Har selected engineer apne domain ke andar task-relevant child engineers, sub-disciplines, specializations, responsibilities, tools, techniques, standards aur capabilities khud discover kare; listed examples ko complete list na samjhe. Har engineer apne domain ke relevant gaps, outdated practices, missing capabilities, risks aur practical improvement opportunities evaluate kare. Improvements ko impact, benefit, priority, effort aur risk ke mutabiq rank karke Section 6 ke Next Improvement Suggestions mein consolidate karo; best option ko RECOMMENDED mark karo. Child engineers task ke mutabiq dynamically select/form hon; canonical 31 disciplines duplicate ya unnecessarily expand na hon. Irrelevant areas explore na karo aur assumptions ko verified facts ke taur par present na karo.
+
 | No. | Discipline | Responsibility |
 |---|---|---|
 | 1 | Architecture Engineer | System structure, boundaries, patterns, modularity aur extensibility. |
