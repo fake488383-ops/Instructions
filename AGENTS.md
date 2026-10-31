@@ -88,7 +88,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 - During discovery, show only this growing blueprint. On **STOP**, stop immediately and freeze the last number; make no changes. Wait for **APPLY ALL** or a specified subset. Assess feasibility, dependencies, compatibility, risks, and impact; implement only approved applicable items. Get separate approval for destructive, irreversible, external, or production-impacting actions. Verify approved work, then use Section 7. Without approval, make no changes.
 ## 7. Task Completion Report
-For every practical task/problem, provide a report—even if partial, blocked, or failed. Do not report ordinary conversation. Use Roman Urdu, preserve this layout and order, and include only verified current-task results. Scale detail to task size.
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────┐
@@ -111,7 +110,3 @@ For every practical task/problem, provide a report—even if partial, blocked, o
 │ [Every feature actually added or changed and evaluated]                     │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
-
-**Report Rules:** Show actual changes, contributing engineers, deliverables, and executed checks only. Give each check its real PASS/FAIL/BLOCKED result and concise evidence; never invent results or mark unrun checks PASS. Include all relevant items without duplication or fixed row limits.
-
-**Display Rule:** For ordinary practical tasks, work and verify before showing this report. During Section 6 discovery, show only the live FUTURE CAPABILITIES blueprint; after STOP, wait for approval. Following approved implementation, show this Task Completion Report. Never delete project data, logs, or evidence.
