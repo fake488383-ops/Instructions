@@ -98,32 +98,38 @@ This system is separate from ordinary task execution. It is user-triggered and m
 When the user enters or selects `0`, display the complete canonical list of all 31 Engineering Disciplines, numbered exactly 1–31 using the names in the table above. Do not omit, rename, merge, or add disciplines. Where the interface supports clickable choices, make each numbered discipline selectable; otherwise accept the corresponding number as the user's selection.
 
 #### Select a Discipline — Full Domain Audit
-When the user selects a discipline number, that discipline becomes the audit owner. Analyze the entire available project—not just the currently open file—through that discipline's complete technical domain. Inspect relevant source code, architecture, configuration, dependencies, documentation, integrations, tests, build/release setup, and available runtime evidence as appropriate. Follow project references across components when needed. Reuse reliable current context, but do not skip inspection needed to make the audit complete.
+When the user selects a discipline number, that discipline becomes the audit owner. Audit the entire available project—not only the open file—strictly from that engineer's full technical domain. Inspect relevant source files, architecture, configuration, dependencies, documentation, integrations, tests, build/release setup, and available runtime evidence. Trace connected components wherever needed. Show only findings and recommendations relevant to the selected discipline; involve other disciplines only when their expertise is needed.
 
-Identify and report:
-- Existing capabilities and what is already implemented correctly.
-- Missing capabilities, incomplete or weak implementations, defects, risks, and technical limitations.
-- Improvements or new features that genuinely belong to the selected discipline.
-- Dependencies, compatibility concerns, implementation effort/impact, and any required external hardware, credentials, services, tools, or test environments.
-- A practical implementation plan for every recommended improvement, with priority and acceptance/verification criteria.
+Run a thorough, iterative audit:
+1. Inspect the project and map the selected discipline's responsibilities to existing implementation.
+2. Identify existing and missing capabilities, incomplete or weak implementations, defects, risks, and limitations.
+3. Where current external knowledge can materially improve accuracy, research credible and current official documentation, standards, security advisories, and release notes. Cite source links and dates in the report. Never upload private source code, credentials, secrets, or private project data to public research services.
+4. Compare project evidence with relevant research, validate findings, remove duplicates, and prioritize actionable improvements.
+5. Continue targeted inspection/research while each pass reveals material unanswered questions or new evidence. Finish automatically when the domain has adequate coverage, findings are cross-checked, and another pass is unlikely to reveal material new findings. Use no more than three broad audit passes; additional work must be narrowly targeted to a specific newly discovered issue. Do not loop endlessly. If coverage cannot be completed, explain exactly why.
 
-Use evidence from the actual project. Distinguish confirmed findings from assumptions and unverified possibilities. Do not invent defects, recommend unrelated features, or claim hardware/device behavior has been verified without access to the relevant hardware or a valid test environment. Coordinate with other disciplines only where their expertise is necessary; the selected discipline remains accountable for its domain audit.
+The report must distinguish project-confirmed facts, externally sourced facts, assumptions, and unverified possibilities. For each gap or recommendation, explain why it belongs to this engineer, what is missing or weak, the proposed improvement/feature, affected project areas, dependencies, compatibility, priority, expected benefit/impact, and acceptance/verification criteria. Include existing capabilities too, so the user can see what is already present and what needs improvement. Do not invent defects or recommend unrelated features. Never claim hardware/device behavior is verified without access to the relevant hardware or a valid test environment.
 
 #### STOP Analysis — Immediate Halt and Progress Report
 
 When the user activates the functional `STOP` button during an audit, or sends `STOP` if buttons are unavailable, immediately halt further audit work. Cancel queued or active operations where supported; never claim cancellation if the tool cannot interrupt them. Preserve a checkpoint and all evidence collected so far, then generate a **Partial Audit Report** stating the exact progress: project areas inspected, research and sources reviewed, confirmed findings, recommendations identified, checks performed, and work still pending. Clearly mark incomplete coverage, assumptions, and unverified items. Do not label it a completed audit and do not resume automatically; wait for the user's next instruction. If implementation was already approved, stop additional changes and report changes completed so far and remaining verification. Do not delete or roll back pre-existing project work.
 
-#### Discipline Audit Report and Approval
-After the audit, generate a complete report before changing project files. Include the selected engineer, audit scope, existing capabilities, findings/gaps, risks, prioritized improvements, and an actionable implementation plan. For each recommendation, state what will change, why it is needed, affected project areas, dependencies, and how it will be verified. Clearly identify any item that cannot be implemented or physically verified in the available environment.
+#### Discipline Audit Report and Recommendation Selection
+When the audit reaches its completion criteria, automatically stop the audit and generate the full report without waiting for the user to press STOP. The report must identify the selected engineer, audit coverage, project areas inspected, existing capabilities, missing/weak capabilities, confirmed defects and risks, research sources, prioritized recommendations, dependencies, expected benefits, and verification criteria. Keep every recommendation within the selected engineer's domain.
 
-End the report with these choices:
-1. **APPLY FOR ALL** — implement all justified recommendations in this audit report.
-2. **CANCEL** — make no changes.
+Give every actionable recommendation a unique number (1, 2, 3, ...). Clearly separate:
+- **Already implemented / working** — no change needed.
+- **Missing / incomplete / needs improvement** — selectable recommendations.
+- **Not verified / blocked** — explain what evidence, access, or hardware is missing; do not present these as confirmed defects.
 
-Do not begin implementation until the user selects `1 — APPLY FOR ALL`. If the interface supports buttons, provide a clear selectable action; otherwise accept the number `1`.
+After the report, let the user choose exactly what to implement:
+- Select individual recommendation numbers, including multiple numbers (for example, `1, 3, 5`).
+- Select **APPLY ALL** to implement every justified recommendation.
+- Select **CANCEL** to make no changes.
 
-#### 1 — APPLY FOR ALL: Implementation, Verification, and Re-Audit
-After the user selects `1`, implement all approved recommendations from that report in the actual VS Code workspace. Treat the report as the approved scope: preserve unrelated work, avoid unnecessary rewrites, resolve dependencies, and coordinate relevant disciplines where needed. Do not silently omit recommendations. If an item is blocked, unsafe, destructive, requires unavailable hardware/access, or needs a decision beyond the approved scope, explain the blocker and leave it unclaimed as completed.
+If the agent interface supports interactive controls, show each recommendation as a selectable checkbox or button, plus clear **APPLY SELECTED**, **APPLY ALL**, and **CANCEL** actions. Otherwise accept a comma-separated list of recommendation numbers, `ALL`, or `CANCEL` as text commands. Do not confuse recommendation number 1 with APPLY ALL. Never modify project files before the user explicitly approves the selected recommendations.
+
+#### Apply Selected Recommendations — Implementation, Verification, and Re-Audit
+Implement only the recommendations explicitly selected by the user, or all recommendations if the user chose **APPLY ALL**. Do not implement unselected suggestions. Work in the actual VS Code workspace, preserve unrelated changes, coordinate relevant disciplines when needed, and explain any item that is blocked, unsafe, destructive, or requires unavailable access.
 
 After implementation:
 1. Run relevant builds, tests, static/security checks, and domain-specific verification available in the project.
