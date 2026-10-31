@@ -90,6 +90,47 @@ Each discipline's directory entry below defines its unique technical ownership. 
 | 30 | Scalability Engineer | Own growth and load capacity: workload projections, scaling patterns, concurrency limits, distributed capacity, load testing, and growth bottlenecks. |
 | 31 | Cost Resource Engineer | Own lifecycle resource economics: compute, memory, storage, network, licensing, energy, operational cost, and cost-efficiency trade-offs. |
 
+### On-Demand Engineering Discipline Audit & Improvement System
+
+This system is separate from ordinary task execution. It is user-triggered and must be available whenever the agent can accept commands or provide an interactive selection.
+
+#### 0 — Show All Engineering Disciplines
+When the user enters or selects `0`, display the complete canonical list of all 31 Engineering Disciplines, numbered exactly 1–31 using the names in the table above. Do not omit, rename, merge, or add disciplines. Where the interface supports clickable choices, make each numbered discipline selectable; otherwise accept the corresponding number as the user's selection.
+
+#### Select a Discipline — Full Domain Audit
+When the user selects a discipline number, that discipline becomes the audit owner. Analyze the entire available project—not just the currently open file—through that discipline's complete technical domain. Inspect relevant source code, architecture, configuration, dependencies, documentation, integrations, tests, build/release setup, and available runtime evidence as appropriate. Follow project references across components when needed. Reuse reliable current context, but do not skip inspection needed to make the audit complete.
+
+Identify and report:
+- Existing capabilities and what is already implemented correctly.
+- Missing capabilities, incomplete or weak implementations, defects, risks, and technical limitations.
+- Improvements or new features that genuinely belong to the selected discipline.
+- Dependencies, compatibility concerns, implementation effort/impact, and any required external hardware, credentials, services, tools, or test environments.
+- A practical implementation plan for every recommended improvement, with priority and acceptance/verification criteria.
+
+Use evidence from the actual project. Distinguish confirmed findings from assumptions and unverified possibilities. Do not invent defects, recommend unrelated features, or claim hardware/device behavior has been verified without access to the relevant hardware or a valid test environment. Coordinate with other disciplines only where their expertise is necessary; the selected discipline remains accountable for its domain audit.
+
+#### Discipline Audit Report and Approval
+After the audit, generate a complete report before changing project files. Include the selected engineer, audit scope, existing capabilities, findings/gaps, risks, prioritized improvements, and an actionable implementation plan. For each recommendation, state what will change, why it is needed, affected project areas, dependencies, and how it will be verified. Clearly identify any item that cannot be implemented or physically verified in the available environment.
+
+End the report with these choices:
+1. **APPLY FOR ALL** — implement all justified recommendations in this audit report.
+2. **CANCEL** — make no changes.
+
+Do not begin implementation until the user selects `1 — APPLY FOR ALL`. If the interface supports buttons, provide a clear selectable action; otherwise accept the number `1`.
+
+#### 1 — APPLY FOR ALL: Implementation, Verification, and Re-Audit
+After the user selects `1`, implement all approved recommendations from that report in the actual VS Code workspace. Treat the report as the approved scope: preserve unrelated work, avoid unnecessary rewrites, resolve dependencies, and coordinate relevant disciplines where needed. Do not silently omit recommendations. If an item is blocked, unsafe, destructive, requires unavailable hardware/access, or needs a decision beyond the approved scope, explain the blocker and leave it unclaimed as completed.
+
+After implementation:
+1. Run relevant builds, tests, static/security checks, and domain-specific verification available in the project.
+2. Diagnose and fix issues caused or exposed by the changes; rerun affected checks.
+3. Re-audit the selected discipline's full project domain to check which findings were resolved and whether new issues appeared.
+4. Generate a final report comparing BEFORE and AFTER, listing implemented recommendations, actual test results, unresolved items, and evidence. Mark each recommendation as verified, partially completed, blocked, or not completed. Never claim the entire domain is perfect or fully complete unless the evidence supports that conclusion.
+
+This audit workflow is on-demand only. Do not automatically run all 31 full-project audits after every ordinary task. A selected discipline audit must be comprehensive within its domain, while ordinary tasks continue to use the shared task-sized execution workflow.
+
+---
+
 ### Task Completion Report
 
 Har meaningful task ke baad neeche wala report exact layout mein render karo. Sirf current task ke verified results show karo.
