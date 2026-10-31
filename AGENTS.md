@@ -200,99 +200,34 @@ SELECT IMPROVEMENT
 - Do not expose secrets, transmit private data, or modify production systems during the audit.
 ### Task Completion Report
 
-After each meaningful task, generate the report using this exact structure, visual design, and section order. Adapt the actual report content to the task performed (for example, if the task was building an AI Agent, report the actual AI Agent features, architecture, implementation, engineers, and tests). The example labels below define layout, not facts to copy.
+After each meaningful task, render the blueprint below. Populate every section dynamically with concise, task-specific, verified information. Add only the rows/details needed; never duplicate the blueprint in explanatory prose.
 
-**MANDATORY VISUAL DESIGN**
-- Render the complete report inside one clearly visible **white outline/border on all four sides**. Use a black background and white text wherever the chat interface supports styling.
-- Add a clear **white underline/divider beneath every section heading** and maintain consistent white separators between sections. Keep the border and underlines visible; do not omit them.
-- In Section 01, **BEFORE must always be red** and **AFTER must always be green**. Never reverse these colors.
-- Use compact, clean tables with consistent column widths, aligned text, even spacing, and matching left/right margins. In Engineer Summary, keep ENGINEER and CONTRIBUTION columns properly aligned; do not use irregular manual spaces to fake alignment.
-- If rich styling is unavailable, preserve the same headings, order, table structure, and separators in Markdown/plain text.
+**REPORT RULES**
+- Use a white outer border, black background, white text and white section dividers where supported. BEFORE is red; AFTER is green.
+- Auto-list only participating engineers and their actual contributions. Keep implementation engineers in Section 02; testing/QA-only engineers and actual test results belong in Section 03.
+- Show only tests actually run; never invent engineers, work, results, metrics, or improvements.
+- Section 05 must contain exactly five numbered improvement suggestions (01–05), with the best first suggestion identified. Section 06 must be the final selectable option: **06. APPLY ALL FIVE SUGGESTIONS**. Nothing follows it.
+- Expand or shrink all other section content and rows automatically according to the work performed. Keep Section 04 omitted.
 
-**01 — BEFORE / AFTER ANALYSIS**
-- Show BEFORE and AFTER side by side when the interface allows.
-- **BEFORE (RED):** List actual project features, components, and conditions before the task, including relevant missing/unavailable items.
-- **AFTER (GREEN):** List actual features/components added, changed, fixed, or improved by the task.
-- Use real feature/component names and concise details. For an AI Agent task, describe the actual agent capabilities built (such as orchestration, memory, tools, UI, automation, or integrations) only if genuinely implemented.
-- Do not invent changes or use generic category labels as substitutes for actual items.
-
-**02 — ENGINEER SUMMARY**
-- Show only engineers/disciplines that actually performed implementation, development, architecture, design, or other direct task work.
-- Use a clean two-column table: ENGINEER | CONTRIBUTION. Keep columns, margins, and spacing consistently aligned.
-- Describe each participating engineer's actual contribution.
-- **Do not show Testing Engineer, QA Engineer, or test-only validation roles in this section.** Those roles belong in Section 03.
-
-**03 — TEST & VALIDATION SUMMARY**
-- Show the testing/validation engineers who actually performed testing or validation under a separate **TESTING & VALIDATION ENGINEERS** label within this section. Include their actual testing contribution; do not move them into Section 02.
-- Show completed test types and their real results in a compact table with exactly these columns: TESTING TYPE | RESULT.
-- Include only tests/checks actually performed. Use PASS or FAIL for executed tests; clearly mark BLOCKED or NOT RUN where relevant. Never claim PASS unless execution and success are verified.
-- Include build/validation checks only when actually run. Do not invent test names, engineers, or results.
-
-**05 — NEXT IMPROVEMENT SUGGESTIONS**
-- Provide exactly five numbered suggestions (01–05), each with its actual improvement title and one concise explanation.
-- Identify the **BEST FIRST IMPROVEMENT** clearly, without adding an extra suggestion.
-- Suggestions must be relevant to the completed task and grounded in observed code, test results, or project evidence.
-
-**06 — APPLY FOR ALL**
-- Show this as the sixth and final selectable option: **06. APPLY ALL FIVE SUGGESTIONS**.
-- Selecting it means implementing all five suggestions, subject to dependencies and safety.
-- Do not add any section, summary, footer, or other content after option 06. End the report there.
-
-**EXACT REPORT BLUEPRINT — THE AGENT MUST RENDER THIS STRUCTURE**
-
-Use the following as the visible report skeleton. Replace bracketed placeholders with verified task-specific facts. Do not omit the blueprint or substitute the Software Health Audit dashboard.
+**TASK COMPLETION REPORT — BLUEPRINT**
 
 ```text
-┌──────────────────────────────────────────────────────────────────────┐
-│                         TASK COMPLETION REPORT                       │
-│                                                                      │
-│  01 — BEFORE / AFTER ANALYSIS                                        │
-│  ──────────────────────────────────────────────────────────────────  │
-│  BEFORE (RED)                         AFTER (GREEN)                   │
-│  • [Actual pre-task state]            • [Actual completed change]     │
-│  • [Existing limitation]              • [Verified improvement]        │
-│                                                                      │
-│  02 — ENGINEER SUMMARY                                               │
-│  ──────────────────────────────────────────────────────────────────  │
-│  ENGINEER                         CONTRIBUTION                       │
-│  [Implementation engineer]        [Actual work performed]            │
-│  [Development engineer]            [Actual work performed]            │
-│                                                                      │
-│  03 — TEST & VALIDATION SUMMARY                                      │
-│  ──────────────────────────────────────────────────────────────────  │
-│  TESTING & VALIDATION ENGINEERS                                      │
-│  [Testing/QA engineer]             [Actual validation work]           │
-│                                                                      │
-│  TESTING TYPE                      RESULT                            │
-│  [Test actually run]               [PASS / FAIL]                      │
-│  [Test actually run]               [PASS / FAIL]                      │
-│                                                                      │
-│  05 — NEXT IMPROVEMENT SUGGESTIONS                                   │
-│  ──────────────────────────────────────────────────────────────────  │
-│  BEST FIRST IMPROVEMENT: [Suggestion number and short reason]        │
-│  01. [Improvement title] — [Concise explanation]                     │
-│  02. [Improvement title] — [Concise explanation]                     │
-│  03. [Improvement title] — [Concise explanation]                     │
-│  04. [Improvement title] — [Concise explanation]                     │
-│  05. [Improvement title] — [Concise explanation]                     │
-│                                                                      │
-│  06 — APPLY FOR ALL                                                  │
-│  ──────────────────────────────────────────────────────────────────  │
-│  06. APPLY ALL FIVE SUGGESTIONS                                      │
-└──────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────┐
+│                    TASK COMPLETION REPORT                    │
+├──────────────────────────────────────────────────────────────┤
+│ 01 — BEFORE / AFTER ANALYSIS                                 │
+│                                                              │
+├──────────────────────────────────────────────────────────────┤
+│ 02 — ENGINEER SUMMARY                                       │
+│                                                              │
+├──────────────────────────────────────────────────────────────┤
+│ 03 — TEST & VALIDATION SUMMARY                              │
+│                                                              │
+├──────────────────────────────────────────────────────────────┤
+│ 05 — NEXT IMPROVEMENT SUGGESTIONS                            │
+│                                                              │
+├──────────────────────────────────────────────────────────────┤
+│ 06 — APPLY FOR ALL                                           │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
 ```
-
-**Blueprint rendering rules**
-- The outer white border must enclose the entire report; every section heading has a white underline/divider.
-- Show BEFORE in red and AFTER in green. Keep the two columns side by side where supported.
-- Align ENGINEER and CONTRIBUTION as real table columns with consistent widths and spacing; never pad with arbitrary spaces.
-- Section 02 contains implementation/development/architecture/design contributors only. Testing Engineer, QA Engineer, and test-only validators appear only under TESTING & VALIDATION ENGINEERS in Section 03.
-- Section 03 uses exactly the table columns TESTING TYPE | RESULT and includes only tests actually run.
-- Keep section numbering exactly as shown: 01, 02, 03, 05, 06. Section 04 is intentionally absent.
-- Section 05 contains exactly five suggestions. Section 06 is the final selectable option. Nothing may appear after it.
-- When the interface cannot render color or a graphical border, preserve the exact layout with clear text labels (BEFORE [RED], AFTER [GREEN]) and Unicode box/underline characters.
-
-**REPORT INTEGRITY**
-- Keep the report concise but informative. Separate completed work from proposed improvements.
-- Show only engineers who actually participated, and place testing/validation-only engineers in Section 03.
-- Use verified facts only. Never invent engineers, contributions, changes, tests, results, or metrics.
