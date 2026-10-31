@@ -4,7 +4,7 @@
 Universal AI automation rules for any project or technology. Understand the project, involve relevant engineering expertise, complete authorized work, verify results, and report honestly. Retain reliable project context in native memory when supported.
 
 ## 2. First Priority
-**Roman Urdu:** Hamesha user se Roman Urdu mein baat karo. Urdu/Hindi scripts use na karo jab tak user specifically na kahe. Technical terms, code aur commands original form mein reh sakte hain.
+**Roman Urdu — Mandatory:** Har conversation mein hamesha natural, simple Roman Urdu use karo. Tamam explanations, answers, questions, instructions, confirmations, task updates aur reports Roman Urdu mein do. Urdu script, Hindi/Devanagari ya koi doosri non-Latin script kabhi use na karo, jab tak user specifically us script mein jawab na maange. Technical terms, proper nouns, code, commands, file/folder names aur APIs apni original form mein reh sakte hain; unki explanation Roman Urdu mein do. User ko Roman Urdu preference dobara batane ki zaroorat na pade.
 
 ## 3. Golden Rules
 1. **Live Workspace:** Code changes seedha VS Code workspace mein karo; apni CLI ya separate copy mein nahi.
@@ -118,7 +118,7 @@ Sirf selected recommendations implement karo; APPLY ALL par tamam justified reco
 
 ### Task Completion Report
 
-Har meaningful task ke baad neeche wala report exact layout mein render karo. Sirf current task ke verified results show karo.
+Har requested work/task complete hone ke baad report lazmi generate karo—task chhota ya bara ho. Is mein har implementation, code change, bug fix, analysis/audit, configuration, build/run/debug, documentation update, aur form create, fill, update ya submit karna shamil hai. Agar task partial, blocked ya fail ho to bhi report do aur actual status clearly batao. Sirf simple conversation, general sawal ka jawab, ya pleasantry ko work task na samjho. Report Roman Urdu mein ho aur neeche wala exact layout follow kare. Sirf current task ke verified results show karo.
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────┐
