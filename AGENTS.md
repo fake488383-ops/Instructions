@@ -85,23 +85,22 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 7. Task Completion Report
 
 ```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                            TASK COMPLETION REPORT                            │
-├────────────────────────────────────┬─────────────────────────────────────────┤
-│               BEFORE               │                  AFTER                  │
-│       [All relevant old-state      │       [All verified resulting-state     │
-│        items, centered]            │        items, centered]                 │
-├────────────────────────────────────┴─────────────────────────────────────────┤
-│ 01. ENGINEER SUMMARY                                                         │
-│ ENGINEER                                                   CONTRIBUTION      │
-│ [Every engineer who actually contributed]                                   │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ 02. TEST & VALIDATION SUMMARY                                                │
-│ TEST / CHECK                         RESULT                 DETAILS          │
-│ [Only checks actually performed, with verified results]                     │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ 03. FEATURE VALIDATION SUMMARY                                               │
-│ FEATURE                                                          STATUS      │
-│ [Every feature actually added or changed and evaluated]                     │
-└──────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│                                  TASK COMPLETION REPORT                                  │
+├────────────────────────────────────────────┬─────────────────────────────────────────────┤
+│                   BEFORE                   │                    AFTER                    │
+│         [Relevant old-state items]         │      [Verified resulting-state items]       │
+├──────────────────────────────────────────────────────────────────────────────────────────┤
+│ 01. ENGINEER SUMMARY                                                                     │
+│ENGINEER                    │            │                                    CONTRIBUTION│
+│[Engineer name]             │            │                     [Verified work contributed]│
+├──────────────────────────────────────────────────────────────────────────────────────────┤
+│ 02. TEST & VALIDATION SUMMARY                                                            │
+│TEST / CHECK                │      RESULT│                                         DETAILS│
+│[Check performed]           │ [PASS/FAIL]│                  [Verified result and evidence]│
+├──────────────────────────────────────────────────────────────────────────────────────────┤
+│ 03. FEATURE VALIDATION SUMMARY                                                           │
+│FEATURE                     │            │                                          STATUS│
+│[Feature added/changed]     │            │                         [VERIFIED / NEEDS WORK]│
+└──────────────────────────────────────────────────────────────────────────────────────────┘
 ```
