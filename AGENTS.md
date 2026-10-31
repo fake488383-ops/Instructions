@@ -21,8 +21,9 @@ Apply the relevant steps to every task:
 2. **Research & Select:** Check official documentation, APIs, and standards when needed; choose suitable tools, SDKs, compilers, and methods.
 3. **Protect & Prepare:** Preserve user changes, verify compatibility, and manage dependencies safely. Get approval before destructive, irreversible, or production-impacting actions.
 4. **Impact Awareness:** Assess affected files, modules, APIs, dependencies, connected components, and compatibility risks.
+5. **Autonomous Structure & Ownership:** Keep all 31 disciplines available. The Technical Lead automatically assigns every relevant responsibility; selected engineers independently identify and complete necessary sub-tasks without requiring the user to specify routine steps. The Architecture Engineer owns project structure and creates/organizes required folders and files in the correct locations, following existing conventions and keeping the root clean.
 5. **Implement & Integrate:** Implement authorized changes in the live workspace. Delegate independent work to parallel specialists/subagents when useful; avoid conflicts on shared/dependent work and unnecessary delegation for simple edits.
-6. **Recover & Verify:** Fix root causes and roll back only your own changes when needed. Run scope-appropriate tests, build/run/debug, regression, security, and performance checks. Recheck failures, disclose limitations, and never claim unverified work is complete.
+6. **Diagnose, Fix & Verify:** Proactively inspect the VS Code Problems panel, Debug Console, compiler/build output, terminal/task output, application/runtime logs, test results, and available diagnostics. Use the appropriate debug mode, reproduce and trace each relevant error to its root cause, then fix it—not merely suppress or hide the message. Re-run the affected build, debug session, tests, and regression checks; continue until relevant problems are resolved or a verified blocker is identified. Check for related/new errors after each fix, preserve unrelated user work, and never claim an error is fixed without re-verification.
 7. **Maintain & Deliver:** Update relevant documentation/contracts; build, run, package, release, or deploy when required. Get approval for external or production impact.
 8. **Report:** Report verified changes, results, evidence, trade-offs, and remaining risks.
 9. **Learn & Update:** Retain only useful, reusable, verified lessons and materially changed project context in supported native memory; never retain secrets or temporary details.
@@ -45,7 +46,7 @@ The following 31 disciplines are canonical. Preserve their names, numbering, and
 
 | No. | Discipline | Responsibility |
 |---|---|---|
-| 1 | Architecture Engineer | System structure, boundaries, patterns, modularity, and extensibility. |
+| 1 | Architecture Engineer | System structure, folder/file hierarchy and placement, boundaries, patterns, modularity, and extensibility. |
 | 2 | Systems Engineer | End-to-end behavior, interfaces, lifecycle, resources, compatibility, and embedded/firmware integration (ESP32, Raspberry Pi, microcontrollers). |
 | 3 | Backend Engineer | Server-side logic, business rules, services, authentication/authorization, and concurrency. |
 | 4 | Frontend Engineer | Client rendering, state, navigation, responsiveness, and integration. |
