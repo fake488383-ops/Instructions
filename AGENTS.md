@@ -118,34 +118,49 @@ Sirf selected recommendations implement karo; APPLY ALL par tamam justified reco
 
 ### Task Completion Report
 
-Har requested work/task complete hone ke baad report lazmi generate karo—task chhota ya bara ho. Is mein har implementation, code change, bug fix, analysis/audit, configuration, build/run/debug, documentation update, aur form create, fill, update ya submit karna shamil hai. Agar task partial, blocked ya fail ho to bhi report do aur actual status clearly batao. Sirf simple conversation, general sawal ka jawab, ya pleasantry ko work task na samjho. Report Roman Urdu mein ho aur neeche wala exact layout follow kare. Sirf current task ke verified results show karo.
+Har requested work/task ke baad report lazmi generate karo—task chhota ya bara ho. Is mein implementation, code change, bug fix, analysis/audit, configuration, build/run/debug, documentation aur form create/fill/update/submit shamil hain. Partial, blocked ya failed task par bhi actual status ki report do. Sirf simple conversation, general sawal ka jawab ya pleasantry work task nahi.
 
-```text
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                            TASK COMPLETION REPORT                            │
-├────────────────────────────────────┬─────────────────────────────────────────┤
-│               BEFORE               │                  AFTER                  │
-│       [All relevant old-state      │       [All verified resulting-state     │
-│        items, centered]            │        items, centered]                 │
-├────────────────────────────────────┴─────────────────────────────────────────┤
-│ 01. ENGINEER SUMMARY                                                         │
-│ ENGINEER                                                   CONTRIBUTION      │
-│ [Every engineer who actually contributed]                                   │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ 02. TEST & VALIDATION SUMMARY                                                │
-│ TEST NAME                                                        RESULT      │
-│ [Every distinct test actually executed]                                     │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ 03. FEATURE VALIDATION SUMMARY                                               │
-│ FEATURE                                                          STATUS      │
-│ [Every feature actually added or changed and evaluated]                     │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ 04. NEXT IMPROVEMENT SUGGESTIONS                                             │
-│ [Up to five justified suggestions: title + short benefit description]        │
-│ [Mark the best first suggestion RECOMMENDED]                                 │
-├──────────────────────────────────────────────────────────────────────────────┤
-│                           06. APPLY FOR ALL                                  │
-└──────────────────────────────────────────────────────────────────────────────┘
-```
+**Rendering is mandatory:**
+- Report ko final rendered layout ki tarah show karo, blueprint ki instructions ki tarah nahi.
+- ASCII box drawing, code block, raw template, placeholder text (jaise "[Every engineer...]") ya blueprint ka literal text user ko kabhi output na karo.
+- BEFORE aur AFTER ko ek actual two-column Markdown table mein side-by-side render karo; dono columns mein current task ke old state aur verified resulting state ke concise points hon.
+- ENGINEER SUMMARY, TEST & VALIDATION SUMMARY, FEATURE VALIDATION SUMMARY aur NEXT IMPROVEMENT SUGGESTIONS ko separate visible headings ke neeche actual Markdown tables/lists mein render karo. Engineer/test/feature names left column mein aur contribution/result/status right column mein ho.
+- Sirf waqai contribute karne wale engineers, actually run kiye gaye tests aur actually added/changed features show karo. Unrun tests ko PASS na kaho. Missing category ko "Not applicable" likho; fake rows na banao.
+- Maximum five evidence-based improvement suggestions do; best suggestion ko **RECOMMENDED** mark karo. Suggestion ka short benefit uske title ke neeche ho.
+- **06. APPLY FOR ALL** ko report ka final visible section/line rakho; uske baad koi extra text na ho.
+- Supported rich UI/webview ho to black background, white borders/dividers/text, red BEFORE heading aur green AFTER heading ke saath designed two-column layout use karo. Agar environment custom styling support nahi karta, Markdown tables/headings se sab se qareebi clean visual layout banao. ASCII art se styling simulate mat karo aur unsupported colors/rendering ka claim mat karo.
+- Report Roman Urdu mein ho. Sirf current task ke verified results show karo.
 
-**Rules:** Blueprint ka layout, headings aur order same rakho. BEFORE/AFTER equal-width centered columns hon, beech mein continuous white divider ho; black background, white outer border/dividers/text, red BEFORE aur green AFTER heading. Engineer names, test names aur feature names left; unki contribution, result aur status right. Har actual contributing engineer, executed test aur added/changed feature ki apni row ho—koi fixed limit nahi; zaroorat par section expand karo. Sirf verified results show karo; kuch invent, duplicate ya omit na karo. Unrun tests ko PASS na kaho. Sirf relevant BEFORE/AFTER items aur maximum five evidence-based suggestions show karo; best suggestion **RECOMMENDED** ho. Suggestion description title ke neeche ho. **06. APPLY FOR ALL** final line ho; iske baad kuch na ho.
+**Required rendered structure (headings aur order preserve karo):**
+
+### TASK COMPLETION REPORT
+
+| BEFORE | AFTER |
+|---|---|
+| Is task se pehle ki relevant condition | Is task ke baad ki verified condition |
+
+### 01. ENGINEER SUMMARY
+
+| ENGINEER | CONTRIBUTION |
+|---|---|
+| Actual contributing engineer | Actual contribution |
+
+### 02. TEST & VALIDATION SUMMARY
+
+| TEST NAME | RESULT |
+|---|---|
+| Actually executed test | Actual result |
+
+### 03. FEATURE VALIDATION SUMMARY
+
+| FEATURE | STATUS |
+|---|---|
+| Actually added/changed feature | Verified status |
+
+### 04. NEXT IMPROVEMENT SUGGESTIONS
+
+1. **Suggestion title — RECOMMENDED**
+   Short benefit description.
+
+### 06. APPLY FOR ALL
+
