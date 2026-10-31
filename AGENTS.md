@@ -89,18 +89,19 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 │                            TASK COMPLETION REPORT                            │
 ├────────────────────────────────────┬─────────────────────────────────────────┤
 │               BEFORE               │                  AFTER                  │
-│       [Previous verified state]    │       [Verified resulting state]        │
+│       [All relevant old-state      │       [All verified resulting-state     │
+│        items, centered]            │        items, centered]                 │
 ├────────────────────────────────────┴─────────────────────────────────────────┤
-│                             01. ENGINEER SUMMARY                             │
-│                  ENGINEER                 │             CONTRIBUTION         │
-│              [Actual engineer]            │          [Verified work]         │
+│ 01. ENGINEER SUMMARY                                                         │
+│ ENGINEER                                                   CONTRIBUTION      │
+│ [Every engineer who actually contributed]                                   │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│                        02. TEST & VALIDATION SUMMARY                         │
-│          TEST / CHECK          │       RESULT       │        DETAILS          │
-│        [Check performed]       │    [Pass/Fail]     │    [Verified result]     │
+│ 02. TEST & VALIDATION SUMMARY                                                │
+│ TEST / CHECK                         RESULT                 DETAILS          │
+│ [Only checks actually performed, with verified results]                     │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│                        03. FEATURE VALIDATION SUMMARY                        │
-│                 FEATURE                 │              STATUS               │
-│           [Feature evaluated]           │        [Verified status]           │
+│ 03. FEATURE VALIDATION SUMMARY                                               │
+│ FEATURE                                                          STATUS      │
+│ [Every feature actually added or changed and evaluated]                     │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
