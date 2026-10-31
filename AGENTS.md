@@ -89,19 +89,18 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 │                            TASK COMPLETION REPORT                            │
 ├────────────────────────────────────┬─────────────────────────────────────────┤
 │               BEFORE               │                  AFTER                  │
-│      [All relevant old-state       │      [All verified resulting-state      │
-│          items, centered]          │            items, centered]             │
+│       [Previous verified state]    │       [Verified resulting state]        │
 ├────────────────────────────────────┴─────────────────────────────────────────┤
 │                             01. ENGINEER SUMMARY                             │
-│   ENGINEER                                                   CONTRIBUTION    │
-│                  [Every engineer who actually contributed]                   │
+│                  ENGINEER                 │             CONTRIBUTION         │
+│              [Actual engineer]            │          [Verified work]         │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │                        02. TEST & VALIDATION SUMMARY                         │
-│     TEST / CHECK                         RESULT                 DETAILS      │
-│           [Only checks actually performed, with verified results]            │
+│          TEST / CHECK          │       RESULT       │        DETAILS          │
+│        [Check performed]       │    [Pass/Fail]     │    [Verified result]     │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │                        03. FEATURE VALIDATION SUMMARY                        │
-│   FEATURE                                                          STATUS    │
-│           [Every feature actually added or changed and evaluated]            │
+│                 FEATURE                 │              STATUS               │
+│           [Feature evaluated]           │        [Verified status]           │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
