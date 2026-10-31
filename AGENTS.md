@@ -69,7 +69,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks. |
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
-## 6. Future Capabilities
+## 6. Future Enhancements
 
 ```text
 ╔══════════════════════════════════════════════════════════════════════════════════╗
