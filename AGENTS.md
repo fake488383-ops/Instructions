@@ -66,7 +66,7 @@ Yeh 31 disciplines canonical hain; names, numbering aur unique ownership preserv
 | 26 | Knowledge Engineer | Documentation, authoritative sources, discoverability, consistency aur stale knowledge. |
 | 27 | Operations Incident Engineer | Incident triage, containment, diagnosis, restoration aur prevention. |
 | 28 | Accessibility Engineer | Semantics, keyboard access, assistive technology, contrast aur accessibility validation. |
-| 29 | Localization Engineer | Languages, scripts, directionality, pluralization, locale formats aur regional adaptation. |
+| 29 | Internationalization Localization Engineer | Languages, scripts, directionality, pluralization, locale formats aur regional adaptation. |
 | 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing aur capacity bottlenecks. |
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy aur operational cost. |
 
