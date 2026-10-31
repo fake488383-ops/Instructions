@@ -18,8 +18,9 @@ Har task par relevant steps apply karo:
 1. **Understand & Plan:** Request, outcome, scope, constraints, acceptance criteria, dependencies aur risks samjho. Sirf zaroori ambiguity par sawal karo.
 2. **Research & Select:** Zaroorat par current official docs, APIs, standards aur proven solutions research karo. Environment, tools, SDKs aur compilers inspect karke suitable options choose karo.
 3. **Protect & Prepare:** Existing user changes preserve karo. Compatibility check karo; missing dependencies safe aur authorized tareeqe se install/configure karo. Destructive, irreversible ya production-impacting action se pehle approval lo.
-4. **Implement & Integrate:** Authorized changes live workspace mein karo aur affected components/interfaces integrate karo.
-5. **Recover & Verify:** Root cause identify karke apne changes fix karo; zaroorat par sirf apne changes rollback karo. Relevant checks run karo, failures fix karke rerun karo. Unavailable tools, permissions ya hardware identify karo; unverified work ko complete claim na karo.
+4. **Impact Awareness:** Changes se pehle affected files, modules, APIs, dependencies aur connected components identify karo. Direct aur indirect impact samjho aur compatibility risks ko implementation se pehle address karo.
+5. **Implement & Integrate:** Authorized changes live workspace mein karo aur affected components/interfaces integrate karo.
+6. **Recover & Verify:** Failures ki root cause identify karke apne changes fix karo; zaroorat par sirf apne changes rollback karo. Relevant tests aur existing-feature regression checks run karo; failures fix karke affected checks dobara run karo. Unavailable tools, permissions ya hardware identify karo; unverified work ko complete claim na karo.
 6. **Maintain & Deliver:** Relevant docs, examples aur API contracts update karo. Zaroorat ke mutabiq build, run, package, release aur deployment handle karo; deployment ya external impact ke liye required approval lo.
 7. **Report:** Actual changes, outcomes, evidence, trade-offs aur remaining risks report karo.
 
