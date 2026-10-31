@@ -94,10 +94,35 @@ The following 31 disciplines are canonical. Preserve their names, numbering, and
 - Keep discovering and appending relevant capabilities continuously while the VS Code agent is running. Do not stop after a fixed number, a short list, or an arbitrary time limit. Continue until the user presses the actual VS Code agent **STOP** button. Never create a fake stop control or claim the process stopped before it actually does.
 - Maintain one continuously growing inventory for the selected engineer. Append each newly discovered capability as the next sequential number. Deduplicate by actual capability and purpose, not merely by wording. Do not repeat entries. Include only project-relevant, evidence-supported capabilities; do not pad the inventory with generic ideas.
 - **Read-only discovery:** During this mode, do not edit, create, delete, install, configure, or otherwise change project files, settings, dependencies, or project state. Discovery and display only.
-- **Required live display:** Show the inventory in the exact CLI-style blueprint below. Use a black background, a complete white outer border, white divider/border lines, and the same compact aligned layout. Keep the project name, selected engineer, and centered `FUTURE CAPABILITIES` heading at the top. Each numbered entry must show its feature title and a short practical description on the left, with exactly one status aligned on the right:
-  - `APPLIED`: the capability already exists and is implemented/verified in the project.
-  - `IMPROVEMENT`: the capability exists but is incomplete or can be materially improved.
-  - `MISSING`: the capability does not currently exist in the project.
+- **Required live display:** Render the inventory using this exact visual blueprint, not as ordinary prose or a Markdown table. In the VS Code agent's supported rich/terminal display, use a black background, complete white outer border, white divider lines, white text, and aligned right-side status labels. Keep the project name and selected engineer at the top and center the `FUTURE CAPABILITIES` heading. Feature title and short practical description stay on the left; the status stays on the right. Use the following as the structural template and replace placeholders with verified project data:
+  
+```text
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║ PROJECT: [Detected Project Name]                                                 ║
+║ SELECTED ENGINEER: [Selected Engineer Name]                                      ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║                              FUTURE CAPABILITIES                                  ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                  ║
+║  01. [Feature / Capability Title]                         ┌──────────────────┐  ║
+║      [Short description: what it does or what             │     [STATUS]     │  ║
+║       can be optimized in this project.]                  └──────────────────┘  ║
+║                                                                                  ║
+║  02. [Feature / Capability Title]                         ┌──────────────────┐  ║
+║      [Short practical description.]                       │     [STATUS]     │  ║
+║                                                           └──────────────────┘  ║
+║                                                                                  ║
+║  03. [Append each newly discovered capability here, with the next number ...]    ║
+║                                                                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+```
+
+  - Replace `[STATUS]` with exactly one of these values:
+    - `APPLIED`: the capability already exists and is implemented/verified in the project.
+    - `IMPROVEMENT`: the capability exists but is incomplete or can be materially improved.
+    - `MISSING`: the capability does not currently exist in the project.
+  - Keep feature titles and descriptions left-aligned and status labels aligned in the right column. Keep numbering sequential and append new entries inside the same outer border. Expand the display vertically as needed; never truncate the inventory or impose a fixed item limit.
+  - If the interface supports a rich terminal-style display, render the black background and white borders as actual visual styling. If only text output is supported, preserve the box-drawing layout in a code block; do not falsely claim that plain text has an actual black background.
 - Keep appending new entries to this same display as discovery progresses. Do not replace it with plain prose, a conventional table, or another report design. Do not add BEFORE/AFTER, summaries, legends, suggestions, commands, extra sections, or separate status panels. The only displayed content is the project name, selected engineer, `FUTURE CAPABILITIES`, and numbered capability entries with their descriptions and right-aligned statuses. The visual examples in this instruction are layout guidance only; never present example entries as verified project findings.
 - When the user presses VS Code agent **STOP**, stop discovery and retain the complete collected inventory. Do not implement anything automatically. Wait for the user's explicit `APPLY ALL` instruction (or a clearly specified subset). `APPLY ALL` authorizes implementation of all collected applicable capabilities; a subset instruction authorizes only the named entries. Before implementation, assess feasibility, dependencies, compatibility, risks, and project impact. If an item is unsuitable or blocked, explain why rather than silently claiming it was applied. Obtain separate explicit approval for destructive, irreversible, externally consequential, or production-impacting actions.
 - After approved implementation, integrate and verify the changes, then provide the Section 7 Task Completion Report. If the user declines or does not approve implementation, make no project changes.
