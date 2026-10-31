@@ -87,21 +87,21 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │                            TASK COMPLETION REPORT                            │
-├────────────────────────────────────┬─────────────────────────────────────────┤
+│────────────────────────────────────┬─────────────────────────────────────────│
 │               BEFORE               │                  AFTER                  │
-│       [All relevant old-state      │       [All verified resulting-state     │
-│        items, centered]            │        items, centered]                 │
-├────────────────────────────────────┴─────────────────────────────────────────┤
-│ 01. ENGINEER SUMMARY                                                         │
-│ ENGINEER                                                   CONTRIBUTION      │
-│ [Every engineer who actually contributed]                                   │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ 02. TEST & VALIDATION SUMMARY                                                │
-│ TEST / CHECK                         RESULT                 DETAILS          │
-│ [Only checks actually performed, with verified results]                     │
-├──────────────────────────────────────────────────────────────────────────────┤
-│ 03. FEATURE VALIDATION SUMMARY                                               │
-│ FEATURE                                                          STATUS      │
-│ [Every feature actually added or changed and evaluated]                     │
+│      [All relevant old-state       │      [All verified resulting-state      │
+│          items, centered]          │            items, centered]             │
+│────────────────────────────────────┴─────────────────────────────────────────│
+│                             01. ENGINEER SUMMARY                             │
+│   ENGINEER                                                   CONTRIBUTION    │
+│                  [Every engineer who actually contributed]                   │
+│──────────────────────────────────────────────────────────────────────────────│
+│                        02. TEST & VALIDATION SUMMARY                         │
+│     TEST / CHECK                         RESULT                 DETAILS      │
+│           [Only checks actually performed, with verified results]            │
+│──────────────────────────────────────────────────────────────────────────────│
+│                        03. FEATURE VALIDATION SUMMARY                        │
+│   FEATURE                                                          STATUS    │
+│           [Every feature actually added or changed and evaluated]            │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
