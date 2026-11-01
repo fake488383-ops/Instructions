@@ -90,15 +90,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 **Unified report template:**
 
-Create exactly one continuous report box without a separate **FINAL REPORT** title. Make it 100% of the available content width, extending from the left content margin to the right content margin. Keep equal outer margins and no extra indentation. Inside this single box, show BEFORE in the left half and AFTER in the right half, side by side in the same comparison row, separated by one vertical divider. Keep Engineer Summary, Testing Summary, and Quality Summary full-width below the comparison within the same outer box. Preserve the outer border and horizontal section/divider lines. Add rows as needed.
+Use one valid two-column Markdown table. Keep **BEFORE** in the left column and **AFTER** in the right column, side by side, with the standard vertical column divider. Keep every row at exactly two cells; never create a one-cell row. Put the report heading and each summary heading/content into the two-column structure without changing the column order.
 
-| **PROJECT REPORT** |
-|:---:|
+| **PROJECT REPORT** | **PROJECT REPORT** |
+|:---|:---|
 | **BEFORE** | **AFTER** |
 | [Relevant previous state] | [Changes made] |
-| **2. ENGINEER SUMMARY** |
-| [Actual discipline and work performed] |
-| **3. TESTING SUMMARY** |
-| [Applicable test — PASSED / FAILED / PENDING / NOT APPLICABLE — evidence] |
-| **4. QUALITY SUMMARY** |
-| [Tests / Coverage / Defects / Duration — actual value or Not Measured] |
+| **ENGINEER SUMMARY** | **ENGINEER SUMMARY** |
+| [Actual disciplines and work performed] | [Leave empty if no separate right-column content] |
+| **TESTING SUMMARY** | **TESTING SUMMARY** |
+| [Applicable tests, actual statuses, and evidence] | [Leave empty if no separate right-column content] |
+| **QUALITY SUMMARY** | **QUALITY SUMMARY** |
+| [Actual measurements or Not Measured] | [Leave empty if no separate right-column content] |
