@@ -108,7 +108,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               │TEST SUMMARY                                                                                  STATUS│
               │[Check performed]                                                     [Verified result and evidence]│
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │FEATURE SUMMARY                                                                                STATUS│
-              │[Feature title]                                                               [WORKING / FAILED]│
+              │FEATURE SUMMARY                                                                               STATUS│
+              │[Feature title]                                                                   [WORKING / FAILED]│
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
