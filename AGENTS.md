@@ -74,25 +74,24 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Enterprise Task Completion Report
 
-- **Mandatory:** Generate this report after every task, small or large. Never skip it.
-- **Strict Markdown Table:** Use Markdown tables only. Preserve the complete two-column report structure below; expand rows dynamically for every item. Do not replace tables with prose or lists.
-- **Centered Layout:** Center the report table and all headings, column labels, and cell text. Use centered Markdown table alignment (`|:---:|:---:|`) wherever supported by the renderer.
-- **Short Wording:** Use concise names and phrases only. No long paragraphs or explanations inside report cells.
-- **Before / After:** Show one feature per matching row. BEFORE: missing feature or short previous-state name. AFTER: short added feature name or concise improvement.
-- **Engineer Summary:** One engineer per row. Left: full engineer name/designation. Right: short contribution name/phrase.
-- **Testing Summary:** One feature/test per row on the left; short actual PASS/FAIL status on the right.
-- **Quality Summary:** One metric per row on the left; short measured value with units/status on the right (e.g., `85 ms`, `1.2 s`, `42 tokens/s`, `Healthy`). Never invent values; use `NOT MEASURED` when unavailable.
-- **Future Additions:** List each planned future feature by its short feature name only; do not add long descriptions.
+- **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
+- **Dynamic Vertical Layout:** Preserve the complete table format below. Add as many rows as required for every feature, engineer, test, and quality metric. Show each item on its own row, vertically; never combine lists horizontally. Keep the two columns equally sized and centered.
+- **Before / After:** Each feature gets its own matching row. BEFORE shows missing features or the previous state; AFTER shows additions or improvements.
+- **Engineer Summary:** One engineer per row. Left: full engineer name/designation. Right: that engineer's matching contribution. Include only participating engineers.
+- **Testing Summary:** One added/modified feature or test per row on the left; actual PASS/FAIL status on the right. Verify each feature; never claim PASS without testing.
+- **Quality Summary:** One applicable health/performance metric per row on the left; actual measured value with units on the right (e.g., latency, response time, throughput, CPU/RAM, task success rate, service health). Never invent values; mark unmeasured items NOT MEASURED.
 
-| **PROJECT REPORT — BEFORE** | **PROJECT REPORT — AFTER** |
-|:---:|:---:|
-| [Short previous/missing feature] | [Short added/improved feature] |
-| **ENGINEER SUMMARY** | **CONTRIBUTION** |
-| [Full engineer name] | [Short contribution] |
-| **TESTING SUMMARY — TEST** | **STATUS** |
-| [Feature/test name] | [PASS/FAIL] |
-| **QUALITY SUMMARY — METRIC** | **ACTUAL VALUE** |
-| [Metric name] | [Measured value + unit] |
-| **FUTURE ADDITIONS** | **FEATURE NAME** |
-| [Short future feature name] | [Short future feature name] |
-
+<div align="center">
+<table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
+  <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
+  <tr><th colspan="2" align="center">PROJECT REPORT</th></tr>
+  <tr><th align="center" width="50%">BEFORE</th><th align="center" width="50%">AFTER</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[One previous/missing feature per row]</td><td align="center" valign="middle" width="50%">[Matching addition/improvement per row]</td></tr>
+  <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[Full engineer name]</td><td align="center" valign="middle" width="50%">[Matching contribution]</td></tr>
+  <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[Feature/test name]</td><td align="center" valign="middle" width="50%">[Actual PASS/FAIL status]</td></tr>
+  <tr><th colspan="2" align="center">QUALITY SUMMARY</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[Quality/health metric]</td><td align="center" valign="middle" width="50%">[Measured value and unit]</td></tr>
+</table>
+</div>
