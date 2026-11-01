@@ -91,24 +91,24 @@ Keep the report box centered. Use consistent column widths, equal left/right inn
 
 ```text
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                         TASK COMPLETION REPORT                                    │
+│                                      TASK COMPLETION REPORT                                       │
 ├─────────────────────────────────────────────────┬─────────────────────────────────────────────────┤
-│                      BEFORE                     │                      AFTER                      │
-│          [Relevant old-state items]             │          [Verified resulting-state items]       │
+│                     BEFORE                      │                      AFTER                      │
+│  [Relevant old-state items]                     │  [Verified resulting-state items]               │
 ├─────────────────────────────────────────────────┴─────────────────────────────────────────────────┤
-│                                         01. ENGINEER SUMMARY                                       │
+│                                       01. ENGINEER SUMMARY                                        │
 ├─────────────────────────────────────────────────┬─────────────────────────────────────────────────┤
 │                    ENGINEER                     │                  CONTRIBUTION                   │
-│              [Engineer name]                    │          [Verified work contributed]            │
-├─────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
-│                                     02. TEST & VALIDATION SUMMARY                                  │
-├─────────────────────────────────┬─────────────────────────────────┬───────────────────────────────┤
-│           TEST / CHECK          │             RESULT                │            DETAILS            │
-│        [Check performed]        │           [PASS/FAIL]             │    [Verified result/evidence] │
-├─────────────────────────────────┴─────────────────────────────────┴───────────────────────────────┤
-│                                      03. FEATURE VALIDATION SUMMARY                                │
+│  [Engineer name]                                │  [Verified work contributed]                    │
 ├─────────────────────────────────────────────────┬─────────────────────────────────────────────────┤
-│                    FEATURE                      │                     STATUS                      │
-│             [Feature added/changed]              │           [VERIFIED / NEEDS WORK]               │
-└─────────────────────────────────────────────────┴─────────────────────────────────────────────────┘
+│                                   02. TEST & VALIDATION SUMMARY                                   │
+├────────────────────────────────┬─────────────────────────────────┬────────────────────────────────┤
+│          TEST / CHECK          │             RESULT              │            DETAILS             │
+│  [Check performed]             │  [PASS / FAIL]                  │  [Verified result/evidence]    │
+├────────────────────────────────┴─────────────────────────────────┴────────────────────────────────┤
+│                                  03. FEATURE VALIDATION SUMMARY                                   │
+├─────────────────────────────────────────────────┬─────────────────────────────────────────────────┤
+│                     FEATURE                     │                     STATUS                      │
+│  [Feature added/changed]                        │  [VERIFIED / NEEDS WORK]                        │
+└───────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
