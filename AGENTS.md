@@ -74,7 +74,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Enterprise Task Completion Report
 
-<table style="width:100%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;">
+<table style="display:table; width:100%; min-width:100%; max-width:100%; box-sizing:border-box; margin:0 auto; table-layout:fixed; border-collapse:collapse; border:1px solid;">
   <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">PROJECT REPORT</th></tr>
   <tr><th style="width:50%; text-align:center; vertical-align:middle; border:1px solid; padding:10px;">BEFORE</th><th style="width:50%; text-align:center; vertical-align:middle; border:1px solid; padding:10px;">AFTER</th></tr>
   <tr><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Previous state]</td><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Actual changes]</td></tr>
