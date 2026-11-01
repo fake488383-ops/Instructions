@@ -77,7 +77,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Report ke exactly four sections hon: Before / After, Engineer Summary, Testing Summary, Quality Summary.
 - Charon sections ek hi table ke andar hon; separate tables na banao.
 - Table report body ke center mein ho aur left/right outer margins equal hon.
-- **Cell Alignment:** Har cell ka tamam text horizontally center-aligned ho: PROJECT REPORT, BEFORE, AFTER, section headings, engineer names, contributions, test names, results, quality metrics aur values. Koi report cell left-aligned na ho.
+- **Cell Alignment:** Charon report sections — Before / After, Engineer Summary, Testing Summary, aur Quality Summary — mein sirf headings nahi, balkay har box ke andar aane wala tamam content bhi horizontally aur vertically center-aligned ho. Is mein engineer names, designations, numbering, descriptions, test names, PASSED/FAILED statuses, quality metrics, numeric values aur tamam lists shamil hain. Har cell ke andar text apne box ke bilkul center mein ho; koi item left-aligned ya top-aligned na ho.
 - **Borders and Padding:** Outer table aur har cell ke charon taraf complete visible border ho. Har cell mein left/right padding equal aur top/bottom padding equal ho. Sirf underline use na karo.
 - **Before / After:** Do columns; BEFORE left aur AFTER right.
 - **Engineer Summary:** Heading full-width. Content ki left column mein sirf involved engineers/disciplines ke names; right column mein unki matching contributions.
@@ -90,15 +90,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 Neeche diye gaye ek hi HTML table structure ko follow karo. Har cell ka text center-aligned ho, aur har cell ki complete border aur equal inner padding ho. Summary headings full-width hon; summary content rows do columns mein rahen.
 
 <table style="width:90%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;">
-  <tr><th colspan="2" style="text-align:center; border:1px solid; padding:10px;">PROJECT REPORT</th></tr>
-  <tr><th style="width:50%; text-align:center; border:1px solid; padding:10px;">BEFORE</th><th style="width:50%; text-align:center; border:1px solid; padding:10px;">AFTER</th></tr>
-  <tr><td style="text-align:center; border:1px solid; padding:10px;">[Relevant previous state]</td><td style="text-align:center; border:1px solid; padding:10px;">[Changes made]</td></tr>
-  <tr><th colspan="2" style="text-align:center; border:1px solid; padding:10px;">ENGINEER SUMMARY</th></tr>
-  <tr><td style="text-align:center; border:1px solid; padding:10px;">[Engineer / Discipline names]</td><td style="text-align:center; border:1px solid; padding:10px;">[Matching contributions]</td></tr>
-  <tr><th colspan="2" style="text-align:center; border:1px solid; padding:10px;">TESTING SUMMARY</th></tr>
-  <tr><td style="text-align:center; border:1px solid; padding:10px;">[Test name/type]</td><td style="text-align:center; border:1px solid; padding:10px;">[Actual status]</td></tr>
-  <tr><th colspan="2" style="text-align:center; border:1px solid; padding:10px;">QUALITY SUMMARY</th></tr>
-  <tr><td style="text-align:center; border:1px solid; padding:10px;">[Quality metric/check]</td><td style="text-align:center; border:1px solid; padding:10px;">[Measured value/status]</td></tr>
+  <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">PROJECT REPORT</th></tr>
+  <tr><th style="width:50%; text-align:center; vertical-align:middle; border:1px solid; padding:10px;">BEFORE</th><th style="width:50%; text-align:center; vertical-align:middle; border:1px solid; padding:10px;">AFTER</th></tr>
+  <tr><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Relevant previous state]</td><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Changes made]</td></tr>
+  <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">ENGINEER SUMMARY</th></tr>
+  <tr><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Engineer / Discipline names]</td><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Matching contributions]</td></tr>
+  <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">TESTING SUMMARY</th></tr>
+  <tr><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Test name/type]</td><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Actual status]</td></tr>
+  <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">QUALITY SUMMARY</th></tr>
+  <tr><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Quality metric/check]</td><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Measured value/status]</td></tr>
 </table>
 
-Multiple engineers, tests, and metrics ke liye additional rows add karo. Har row mein dono columns, complete borders, equal padding, aur centered text maintain karo.
+Multiple engineers, tests, and metrics ke liye additional rows add karo. Har row mein dono columns, complete borders, equal padding, aur har cell ke andar tamam text/items ki horizontal aur vertical centering maintain karo — including names, designations, numbers, test results aur statuses.
