@@ -100,12 +100,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               │TEST SUMMARY                                                                              STATUS│
               │[Check performed]                                                     [Verified result and evidence]│
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │FEATURE SUMMARY                                                                            STATUS│
-              │[Feature added/changed]                                                      [VERIFIED / NEEDS WORK]│
-              ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │TASK SUMMARY                                                                              STATUS│
-              │[Concise summary of completed task]                                         [COMPLETED / INCOMPLETE]│
-              ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
               │FUTURE SUMMARY                                                                            STATUS│
               │[Remaining work or future direction]                                      [PENDING / NOT REQUIRED]│
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
