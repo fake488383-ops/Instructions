@@ -92,7 +92,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               │                                         TASK FINAL REPORT                                          │
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
               │                     BEFORE                      │                      AFTER                       │
-              │[Relevant old-state items]                       │[Verified resulting-state items]                  │
+              │             [Relevant old-state items]          │          [Verified resulting-state items]        │
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
               │ENGINEER SUMMARY                                                                        CONTRIBUTION│
               │[Engineer name]                                              [Verified work contributed]            │
