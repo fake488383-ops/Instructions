@@ -89,7 +89,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ```text
               ┌──────────────────────────────────────────────────────────────────────────────────────────┐              
-              │                                  FINAL REPORT                                  │              
+              │                                  FINAL REPORT                                                 
               ├────────────────────────────────────────────┬─────────────────────────────────────────────┤              
               │                   BEFORE                   │                    AFTER                    │              
               │         [Relevant old-state items]         │      [Verified resulting-state items]       │              
