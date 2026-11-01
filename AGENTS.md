@@ -74,7 +74,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Enterprise Task Completion Report
 - After every task, including small changes, generate a concise report at the end. Scale detail to the task.
-- Start the report with the exact main title **FINAL REPORT**.
 - Inside one unified report box, use **PROJECT REPORT** as the full-width, horizontally centered heading.
 - Keep all report content in one continuous, full-width table. Do not create separate tables, boxes, or disconnected sections.
 - Use two equal-width columns, consistent cell padding and row spacing, and center-align all headings, labels, and content.
@@ -90,11 +89,9 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 **Unified report template:**
 
-Begin with **FINAL REPORT**, then create exactly one continuous table. Keep two equal-width columns and center-align all headings and cell text. Use section-title rows within the same table. Keep the complete white outer border and section borders, including the vertical divider between **BEFORE** and **AFTER**. Add rows as needed.
+Create exactly one continuous report table without a separate **FINAL REPORT** title. Keep two equal-width columns and center-align all headings and cell text. Use section-title rows within the same table. Keep the complete white outer border and section borders, including the vertical divider between **BEFORE** and **AFTER**. Add rows as needed.
 
-# FINAL REPORT
-
-| **PROJECT REPORT** | **PROJECT REPORT** |
+| **PROJECT REPORT** | **—** |
 |:---:|:---:|
 | **1. BEFORE / AFTER** | **—** |
 | **BEFORE** | **AFTER** |
