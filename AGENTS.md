@@ -89,7 +89,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 Neeche diye gaye ek hi HTML table structure ko follow karo. Har cell ka text center-aligned ho, aur har cell ki complete border aur equal inner padding ho. Summary headings full-width hon; summary content rows do columns mein rahen.
 
-<table style="width:90%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;">
+<table style="width:100%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;">
   <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">PROJECT REPORT</th></tr>
   <tr><th style="width:50%; text-align:center; vertical-align:middle; border:1px solid; padding:10px;">BEFORE</th><th style="width:50%; text-align:center; vertical-align:middle; border:1px solid; padding:10px;">AFTER</th></tr>
   <tr><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Relevant previous state]</td><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Changes made]</td></tr>
