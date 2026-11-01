@@ -70,7 +70,19 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks. |
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
-## 6. Enterprise Task Completion Report
+
+## 6. Continuous Engineering Audit
+
+- When the user enters `0` and presses Enter, display a numbered selection menu containing all 31 Engineering Disciplines exactly as listed in Section 5. Keep their names and numbering unchanged.
+- Option `32` must be **Apply for All**. It runs the audit across all 31 disciplines, coordinated by the Technical Lead, with duplicate findings consolidated.
+- Selecting `1–31` runs the continuous audit for only that selected discipline. Do not confuse the activation command `0` with option `32`.
+- Audit the live project for existing, missing, and partially implemented responsibilities/features. Research relevant current official documentation, standards, and credible sources; verify applicability and cite source links for recommendations.
+- Maintain a live, numbered register table with two columns: **MISSING** (feature title + description of what it does and what adding it enables) and **IMPROVEMENT** (existing feature title + description of the proposed enhancement and expected benefit). Add separate rows for separate findings; match related findings on the same row. Clearly distinguish present, missing, partial, and unverified status, and avoid duplicates.
+- Suggestions only: do not change project code, dependencies, configuration, or implement recommendations unless the user explicitly approves.
+- Continue audit/research cycles until the user enters **Stop**. On Stop, finish the current safe cycle, update the register, and stop further cycles. Respect tool availability, rate limits, and resource limits; never fabricate project facts, tests, or sources.
+- This instruction defines the workflow, not a ready-made interactive menu or background service. Implement the menu/register UI and continuous runtime only when the project has the required interface and execution support; otherwise provide the numbered menu in chat and disclose runtime limitations.
+
+## 7. Enterprise Task Completion Report
 
 - **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
 - **Short Table Content:** Keep every report table cell concise—short feature names, full engineer names, brief contributions, test names, PASS/FAIL, and metric values with units. No long paragraphs inside table cells.
