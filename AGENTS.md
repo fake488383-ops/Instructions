@@ -101,6 +101,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               │[Check performed]                                                     [Verified result and evidence]│
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
               │FUTURE SUMMARY                                                                                STATUS│
-              │[Remaining work or future direction]                                      [PENDING / NOT REQUIRED]│
+              │[Remaining work or future direction]                                        [PENDING / NOT REQUIRED]│
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
