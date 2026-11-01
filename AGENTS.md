@@ -97,10 +97,10 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               │ENGINEER SUMMARY                                                                        CONTRIBUTION│
               │[Engineer name]                                                          [Verified work contributed]│
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │TEST & VALIDATION SUMMARY                                                                     STATUS│
+              │TEST SUMMARY                                                                     STATUS│
               │[Check performed]                                                     [Verified result and evidence]│
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │FEATURE VALIDATION SUMMARY                                                                    STATUS│
+              │FEATURE SUMMARY                                                                    STATUS│
               │[Feature added/changed]                                                      [VERIFIED / NEEDS WORK]│
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
