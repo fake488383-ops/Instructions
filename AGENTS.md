@@ -82,18 +82,14 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 6. Capability Gap & Improvement Analysis
 
 ```text
-                  ╔══════════════════════════════════════════════════════════════════════════════════╗                  
-                  ║                   CAPABILITY GAP & IMPROVEMENT ANALYSIS                          ║                  
-                  ╠══════════════════════════════════════════════════════════════════════════════════╣                  
-                  ║ ENGINEER: [Engineer title]                                                   ║                  
-                  ║  01. [Capability title]                                  [MISSING / IMPROVEMENT] ║                  
-                  ║     [Short description]                                                         ║                  
-                  ║ ENGINEER: [Next engineer title]                                                 ║                  
-                  ║  02. [Next capability title]                            [MISSING / IMPROVEMENT] ║                  
-                  ║     [Short description]                                                         ║                  
-                  ╚══════════════════════════════════════════════════════════════════════════════════╝                  
+╔════════════════════════════════════════════════════════════════════════════════════════════╗
+║                           CAPABILITY GAP & IMPROVEMENT ANALYSIS                            ║
+╠════════════════════════════════════════════════════════════════════════════════════════════╣
+║ENGINEER: [Engineer title]                                                                  ║
+║01. [Capability title]                                      [MISSING / IMPROVEMENT]         ║
+║    [Short description]                                                                     ║
+╚════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
-
 ## 7. Task Final Report
 
 **Mandatory Dynamic Report Rules**
