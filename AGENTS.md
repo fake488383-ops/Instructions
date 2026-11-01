@@ -75,35 +75,35 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 6. Future Enhancements
 
 ```text
-                 ╔══════════════════════════════════════════════════════════════════════════════════╗ 
-                 ║                              FUTURE CAPABILITIES                                  ║
-                 ╠══════════════════════════════════════════════════════════════════════════════════╣ 
-                 ║  01. [Capability title]                                  [MISSING / IMPROVEMENT] ║ 
-                 ║      [Short description]                                                        ║  
-                 ║  02. [Next finding; continue numbering]                  [MISSING / IMPROVEMENT] ║ 
-                 ║      [Short description]                                                        ║  
-                 ╚══════════════════════════════════════════════════════════════════════════════════╝ 
+                          ╔══════════════════════════════════════════════════════════════════════════════════╗          
+                          ║                              FUTURE CAPABILITIES                                  ║         
+                          ╠══════════════════════════════════════════════════════════════════════════════════╣          
+                          ║  01. [Capability title]                                  [MISSING / IMPROVEMENT] ║          
+                          ║      [Short description]                                                        ║           
+                          ║  02. [Next finding; continue numbering]                  [MISSING / IMPROVEMENT] ║          
+                          ║      [Short description]                                                        ║           
+                          ╚══════════════════════════════════════════════════════════════════════════════════╝          
 ```
 
 ## 7. Task Completion Report
 
 ```text
-              ┌──────────────────────────────────────────────────────────────────────────────────────────┐
-              │                                  TASK COMPLETION REPORT                                  │
-              ├────────────────────────────────────────────┬─────────────────────────────────────────────┤
-              │                   BEFORE                   │                    AFTER                    │
-              │         [Relevant old-state items]         │      [Verified resulting-state items]       │
-              ├──────────────────────────────────────────────────────────────────────────────────────────┤
-              │ 01. ENGINEER SUMMARY                                                                     │
-              │ENGINEER                    │            │                                    CONTRIBUTION│
-              │[Engineer name]             │            │                     [Verified work contributed]│
-              ├──────────────────────────────────────────────────────────────────────────────────────────┤
-              │ 02. TEST & VALIDATION SUMMARY                                                            │
-              │TEST / CHECK                │      RESULT│                                         DETAILS│
-              │[Check performed]           │ [PASS/FAIL]│                  [Verified result and evidence]│
-              ├──────────────────────────────────────────────────────────────────────────────────────────┤
-              │ 03. FEATURE VALIDATION SUMMARY                                                           │
-              │FEATURE                     │            │                                          STATUS│
-              │[Feature added/changed]     │            │                         [VERIFIED / NEEDS WORK]│
-              └──────────────────────────────────────────────────────────────────────────────────────────┘
+                     ┌──────────────────────────────────────────────────────────────────────────────────────────┐       
+                     │                                  TASK COMPLETION REPORT                                  │       
+                     ├────────────────────────────────────────────┬─────────────────────────────────────────────┤       
+                     │                   BEFORE                   │                    AFTER                    │       
+                     │         [Relevant old-state items]         │      [Verified resulting-state items]       │       
+                     ├──────────────────────────────────────────────────────────────────────────────────────────┤       
+                     │ 01. ENGINEER SUMMARY                                                                     │       
+                     │ENGINEER                    │            │                                    CONTRIBUTION│       
+                     │[Engineer name]             │            │                     [Verified work contributed]│       
+                     ├──────────────────────────────────────────────────────────────────────────────────────────┤       
+                     │ 02. TEST & VALIDATION SUMMARY                                                            │       
+                     │TEST / CHECK                │      RESULT│                                         DETAILS│       
+                     │[Check performed]           │ [PASS/FAIL]│                  [Verified result and evidence]│       
+                     ├──────────────────────────────────────────────────────────────────────────────────────────┤       
+                     │ 03. FEATURE VALIDATION SUMMARY                                                           │       
+                     │FEATURE                     │            │                                          STATUS│       
+                     │[Feature added/changed]     │            │                         [VERIFIED / NEEDS WORK]│       
+                     └──────────────────────────────────────────────────────────────────────────────────────────┘       
 ```
