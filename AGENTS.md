@@ -91,8 +91,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - After every task, small or large, generate this report; never skip it. Keep the layout fixed, but add or remove detail rows dynamically to match actual work.
 - **BEFORE:** show relevant features/state that existed before the task. **AFTER:** show new additions and verified improvements to existing items.
 - **ENGINEER SUMMARY:** list each engineer who meaningfully worked and their actual contribution; add one row per engineer.
-- **TEST SUMMARY:** list each test actually run by its proper name (e.g. unit, integration, system, end-to-end); show **PASS** or **FAIL** for each. Never claim a test was run if it was not.
-- **FEATURE SUMMARY:** list every feature added or changed, with its title and **WORKING** or **FAILED** status based on verification; add one row per feature. Scale the report to the work, including 50 or more features when applicable.
+- **TEST SUMMARY:** show the actual test names performed, what each tested, and whether coverage was full-project or limited; use **PASS**/**FAIL**. Never show generic titles or unrun tests.
+- **FEATURE SUMMARY:** list every added or changed feature by its real title, one row each, with verified **WORKING**/**FAILED** status.
 - Keep all entries evidence-based and concise. Do not invent engineers, tests, features, results, or improvements. If a category has no entries, state that clearly without changing the layout.
 
 ```text
