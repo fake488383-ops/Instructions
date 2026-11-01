@@ -79,6 +79,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Engineer Summary:** One engineer per row. Left: full engineer name/designation. Right: that engineer's matching contribution. Include only participating engineers.
 - **Testing Summary:** One added/modified feature or test per row on the left; actual PASS/FAIL status on the right. Verify each feature; never claim PASS without testing.
 - **Quality Summary:** One applicable health/performance metric per row on the left; actual measured value with units on the right (e.g., latency, response time, throughput, CPU/RAM, task success rate, service health). Never invent values; mark unmeasured items NOT MEASURED.
+- **Missing & Improvement:** Every MISSING entry must contain a feature title and a brief description of what the absent feature does and what adding it enables. Every IMPROVEMENT entry must contain the existing feature title and a brief description of the proposed enhancement and its expected benefit. Put each item on its own row; match related items across the same row. Verify project status before classifying.
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
@@ -100,6 +101,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
   <tr><th colspan="2" align="center">MISSING &amp; IMPROVEMENT</th></tr>
   <tr><th align="center" width="50%">MISSING</th><th align="center" width="50%">IMPROVEMENT</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[One verified missing feature/responsibility per row]</td><td align="center" valign="middle" width="50%">[Matching recommended improvement per row]</td></tr>
+  <tr><td align="center" valign="middle" width="50%"><strong>[Missing feature title]</strong><br>[Description: what it does and what adding it enables]</td><td align="center" valign="middle" width="50%"><strong>[Existing feature title]</strong><br>[Description: proposed enhancement and expected benefit]</td></tr>
 </table>
 </div>
