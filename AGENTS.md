@@ -76,30 +76,34 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - After every task, including small changes, generate a concise report at the end. Scale detail to the task.
 - Use exactly four report sections in this order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**.
 - Combine the entire report into **one single table**. Do not create separate tables or boxes.
-- Center the table horizontally within the report body. The empty space outside the table must be exactly equal on the left and right. Calculate the table width from the available body width and apply equal left/right margins; do not align the table to either edge or use arbitrary fixed margins. The table must remain within the body.
-- **Before / After:** Within the single table, use two side-by-side cells: BEFORE on the left and AFTER on the right.
-- **Engineer Summary, Testing Summary, and Quality Summary:** Keep each section full-width in the same table, spanning both columns as one cell. Do not split their content into left and right columns. Align these three section titles to the left; do not center them. Keep the PROJECT REPORT heading centered.
-- Use one outer table with a consistent border and clear horizontal separators. Do not add a separate FINAL REPORT title or extra report sections.
-- Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, and test names.
+- Center the table horizontally within the report body. The empty space outside the table must be exactly equal on the left and right. Calculate the table width from the available body width and apply equal left/right margins; do not align the table to either edge or use arbitrary fixed margins.
+- **Before / After:** Use two side-by-side columns: BEFORE on the left and AFTER on the right.
+- **Engineer Summary:** Keep the section heading full-width and left-aligned. In its content row, use two columns: the left column lists the names of the engineers/disciplines that actually worked; the right column states what each listed engineer worked on. Match each contribution clearly to its engineer.
+- **Testing Summary:** Keep the section heading full-width and left-aligned. In its content row, use two columns: the left column lists test names/types (for example Unit Test, Integration Test, UI Test, API Test, Regression Test); the right column shows the actual result for each test, using `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include evidence or commands when useful. Never mark an unrun test as passed.
+- **Quality Summary:** Keep the section heading full-width and left-aligned. In its content row, use two columns: the left column lists each quality metric/check (for example Coverage, Defects, Build Duration, Test Duration); the right column shows its measured value or status. Use `Not Measured` when unavailable; do not estimate or fabricate metrics.
+- Keep all four sections inside the same outer table with consistent borders and horizontal separators. Do not add a separate FINAL REPORT title or extra report sections.
+- Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, test names, and metric names.
 
 **Required report sections and rules:**
 1. **Before / After:** Compare the relevant previous state and changes made in exactly two side-by-side columns: BEFORE (left) and AFTER (right).
-2. **Engineer Summary:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
-3. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
-4. **Quality Summary:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
+2. **Engineer Summary:** Show actual participating engineer/discipline names on the left and their corresponding contributions on the right. Do not list disciplines that were not involved.
+3. **Testing Summary:** Show each applicable test name/type on the left and its actual status on the right. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`; include evidence when useful.
+4. **Quality Summary:** Show each quality metric/check on the left and its actual measured value/status on the right. Use `Not Measured` when data is unavailable.
 
 **Unified report template:**
 
-Use one HTML table centered within the report body. Its left and right outer gaps must be equal: use `margin-left:auto; margin-right:auto` (or equivalent native layout behavior) and a responsive width that fits the available body width. Do not hardcode unequal side margins. Use `colspan="2"` for each full-width summary row:
+Use one HTML table centered within the report body. Its left and right outer gaps must be equal. Use `margin-left:auto` and `margin-right:auto` where supported. Keep the table responsive and within the available body width. The PROJECT REPORT heading is centered; the three summary section headings are left-aligned. Use the following structure:
 
 <table style="width:90%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse;">
-  <tr><th colspan="2">PROJECT REPORT</th></tr>
-  <tr><th width="50%">BEFORE</th><th width="50%">AFTER</th></tr>
+  <tr><th colspan="2" style="text-align:center;">PROJECT REPORT</th></tr>
+  <tr><th style="width:50%;">BEFORE</th><th style="width:50%;">AFTER</th></tr>
   <tr><td>[Relevant previous state]</td><td>[Changes made]</td></tr>
   <tr><th colspan="2" align="left">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="2">[Only disciplines actually involved and their contributions]</td></tr>
+  <tr><td>[Engineer / Discipline names]</td><td>[Each engineer's corresponding contribution]</td></tr>
   <tr><th colspan="2" align="left">TESTING SUMMARY</th></tr>
-  <tr><td colspan="2">[Applicable tests, actual statuses, and evidence]</td></tr>
+  <tr><td>[Test name/type]</td><td>[Actual status: PASSED / FAILED / PENDING / NOT APPLICABLE]</td></tr>
   <tr><th colspan="2" align="left">QUALITY SUMMARY</th></tr>
-  <tr><td colspan="2">[Actual measurements or Not Measured]</td></tr>
+  <tr><td>[Quality metric/check]</td><td>[Measured value or actual status / Not Measured]</td></tr>
 </table>
+
+For multiple engineers, tests, or quality metrics, add more rows while preserving the same two-column pattern. Do not merge the two content columns in these three summary sections.
