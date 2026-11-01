@@ -38,6 +38,15 @@ Keep all 31 disciplines, names, numbering, and responsibilities available. Autom
 
 Selected engineers may discover relevant child specialists, sub-disciplines, tools, techniques, standards, risks, and capabilities. Use them as needed without duplicating the 31 disciplines; distinguish verified findings from assumptions.
 
+### Engineer Selection & Continuous Future-Capability Analysis
+- When the user sends `0` as an AI Agent chat message and presses Enter, display only the 31 engineer titles from this list, numbered 1–31, plus `32. Apply for All`. Show no descriptions or extra text. This is a chat-command trigger, not a keyboard shortcut.
+- Run analysis for the selected engineer(s) only; `Apply for All` runs the same process across all 31 disciplines.
+- Continuously analyze the complete project against the selected engineer's responsibilities. Research current, authoritative sources online where useful; inspect existing implementation and evidence; identify genuine missing capabilities and improvement opportunities. Do not invent, duplicate, or recommend irrelevant items.
+- Present findings in the existing **FUTURE CAPABILITIES** blueprint as a continuously numbered, dynamically growing list. Each item must contain only a concise capability title, a short description of its project benefit, and status `MISSING` or `IMPROVEMENT`. Keep the blueprint's exact design, borders, alignment, spacing, and underlines unchanged; only item content and row count may grow.
+- Continue until the user stops the AI Agent using its built-in Stop control. Preserve all findings collected so far and the analysis checkpoint; stop promptly when requested. Do not implement findings during analysis.
+- After stopping, wait for the user's instruction to apply all findings or selected item numbers. Implement only the requested findings, verify them with relevant tests, then generate the unchanged **TASK FINAL REPORT** blueprint.
+- If the agent interface does not support a chat message trigger, continuous execution, or built-in Stop control, state the exact limitation; do not pretend the behavior is available.
+
 | No. | Discipline | Responsibility |
 |---|---|---|
 | 1 | Architecture Engineer | System structure, folder/file placement, boundaries, patterns, modularity, and extensibility. |
