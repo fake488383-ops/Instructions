@@ -78,27 +78,25 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Keep all report content in one continuous table. Do not create separate tables, boxes, or disconnected sections.
 - Make the report box span the full available content width (100%), from the left content margin to the right content margin. Do not render it as a narrow or half-width table. Expand the layout fully across the page's usable width.
 - Keep the report box centered with equal outer left and right margins; do not add extra left indentation or padding that shifts it to one side. Use one full-width column only, with consistent cell padding and row spacing. Center-align all headings, labels, and content.
-- Use a single-column table throughout; do not create a second column or any center vertical divider. Preserve the outer border and all horizontal section/divider lines.
+- Use two side-by-side columns only for the combined **BEFORE / AFTER** comparison row. Keep all other report sections as single full-width rows. Preserve the outer border and horizontal section/divider lines.
 - Include only these four sections, in this exact order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**. Do not include Feature Summary, Feature Details, Security & Performance Review, Architecture & Impact Summary, Build & Deployment Summary, or Final Result & Next Steps.
 - Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, and test names.
 
 **Required report sections and rules:**
-1. **Before / After:** Show the relevant project state before the task and the exact changes afterward. Use one full-width column. Show **BEFORE** and **AFTER** as separate stacked rows, each followed by its content. Do not split them into columns.
+1. **Before / After:** Show the relevant project state before the task and the exact changes afterward. In the **Before / After** section only, show **BEFORE** and **AFTER** side by side as two columns in one combined row, with their content directly beneath each heading. Keep all other report sections in one full-width column.
 2. **Engineer Summary:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
 3. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
 4. **Quality Summary:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
 
 **Unified report template:**
 
-Create exactly one continuous report table without a separate **FINAL REPORT** title. Make the table 100% of the available content width, extending from the left content margin to the right content margin; never use a narrow or half-width layout. Keep equal outer left and right margins, no extra left indentation, one full-width column, and center-align all headings and cell text. Use section-title rows within the same table. Keep the complete white outer border and all horizontal section/divider lines. Use a single-column table with no center vertical divider. Add rows as needed.
+Create exactly one continuous report table without a separate **FINAL REPORT** title. Make the table 100% of the available content width, extending from the left content margin to the right content margin; never use a narrow or half-width layout. Keep equal outer left and right margins, no extra left indentation, one full-width column, and center-align all headings and cell text. Use section-title rows within the same table. Keep the complete white outer border and all horizontal section/divider lines. Use two columns only for the **BEFORE / AFTER** comparison; merge all other section rows across the full table width as single-column rows. Add rows as needed.
 
 | **PROJECT REPORT** |
 |:---:|
 | **1. BEFORE / AFTER** |
-| **BEFORE** |
-| [Relevant previous state] |
-| **AFTER** |
-| [Changes made] |
+| **BEFORE** | **AFTER** |
+| [Relevant previous state] | [Changes made] |
 | **2. ENGINEER SUMMARY** |
 | [Actual discipline and work performed] |
 | **3. TESTING SUMMARY** |
