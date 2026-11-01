@@ -90,25 +90,16 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 **Unified report template:**
 
-Create exactly one continuous report table without a separate **FINAL REPORT** title. **Do not use a Markdown pipe table**, because its rendered width may shrink to fit its text. Use an HTML table with an explicit full-width layout: `width="100%"` and `style="width:100%; table-layout:fixed; border-collapse:collapse;"`. The table must stretch from the left content margin all the way to the right content margin, not stop near the left side. Set both columns to exactly **50% width**. Keep equal outer left and right margins, no extra left indentation, and center-align all headings and cell text. Use section-title rows within the same table. Keep the complete white outer border and section borders, including the vertical divider between **BEFORE** and **AFTER**. Add rows as needed. Apply the same full-width HTML table structure to the final rendered report, not merely to its source instructions.
+Create exactly one continuous report table without a separate **FINAL REPORT** title. Make the table 100% of the available content width, extending from the left content margin to the right content margin; never use a narrow or half-width layout. Keep equal outer left and right margins, no extra left indentation, two equal-width columns, and center-align all headings and cell text. Use section-title rows within the same table. Keep the complete white outer border and section borders, including the vertical divider between **BEFORE** and **AFTER**. Add rows as needed.
 
-Use this structure and preserve the required report content:
-
-```html
-<table width="100%" style="width:100%; table-layout:fixed; border-collapse:collapse;" border="1">
-  <colgroup>
-    <col style="width:50%;">
-    <col style="width:50%;">
-  </colgroup>
-  <tr><th colspan="2" style="text-align:center;">PROJECT REPORT</th></tr>
-  <tr><th colspan="2" style="text-align:center;">1. BEFORE / AFTER</th></tr>
-  <tr><th style="width:50%; text-align:center;">BEFORE</th><th style="width:50%; text-align:center;">AFTER</th></tr>
-  <tr><td style="width:50%; text-align:center;">[Relevant previous state]</td><td style="width:50%; text-align:center;">[Changes made]</td></tr>
-  <tr><th colspan="2" style="text-align:center;">2. ENGINEERING DISCIPLINES</th></tr>
-  <tr><td style="text-align:center;">[Actual discipline]</td><td style="text-align:center;">[Work performed]</td></tr>
-  <tr><th colspan="2" style="text-align:center;">3. TESTING SUMMARY</th></tr>
-  <tr><td style="text-align:center;">[Applicable test]</td><td style="text-align:center;">[PASSED / FAILED / PENDING / NOT APPLICABLE — evidence]</td></tr>
-  <tr><th colspan="2" style="text-align:center;">4. QUALITY METRICS</th></tr>
-  <tr><td style="text-align:center;">[Tests / Coverage / Defects / Duration]</td><td style="text-align:center;">[Actual value or Not Measured]</td></tr>
-</table>
-```
+| **PROJECT REPORT** | **—** |
+|:---:|:---:|
+| **1. BEFORE / AFTER** | **—** |
+| **BEFORE** | **AFTER** |
+| [Relevant previous state] | [Changes made] |
+| **2. ENGINEERING DISCIPLINES** | **—** |
+| [Actual discipline] | [Work performed] |
+| **3. TESTING SUMMARY** | **—** |
+| [Applicable test] | [PASSED / FAILED / PENDING / NOT APPLICABLE — evidence] |
+| **4. QUALITY METRICS** | **—** |
+| [Tests / Coverage / Defects / Duration] | [Actual value or Not Measured] |
