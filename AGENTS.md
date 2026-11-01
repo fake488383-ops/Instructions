@@ -71,20 +71,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
 
-## 6. Continuous Engineering Audit
-
-- When the user enters `0` and presses Enter, show all 31 Engineering Disciplines exactly as listed in Section 5. Option `32` is **Apply for All** (audit all 31 disciplines); `0` is only the menu activation command.
-- Selecting `1–31` audits only that discipline. Inspect the entire relevant project—not just a few files—including its features, modules, workflows, responsibilities, integrations, configuration, and current implementation status. Build and maintain an inventory so the audit covers the project's full scope.
-- Continuously inspect, analyze, and research the project. Identify every relevant existing, missing, partial, weak, outdated, or improvable feature/responsibility. Validate findings against current official documentation, standards, and credible sources. Avoid duplicates and irrelevant suggestions.
-- Keep adding findings to a live register as a continuous numbered sequence: `1, 2, 3, 4...`. Every entry must show its number, clear feature title, concise description, status (existing/missing/partial/improvable), reason or evidence, expected benefit, priority, and relevant source links. Do not show numbers without descriptive titles. Keep the register updated as new findings are discovered.
-- The register must make project status and recommendations easy to compare. Use the existing **MISSING & IMPROVEMENT** two-column layout: left describes the verified current feature/status; right describes the related missing feature or proposed improvement. Add as many rows as needed; one finding per row.
-- **Stop control:** Keep the audit running continuously until the user presses the AI agent's **Stop** button. Stop further scanning/research immediately, safely close the active operation, preserve the findings already collected, and leave the register available. Do not restart unless the user starts it again.
-- **Apply approval:** Do not implement suggestions while auditing. After reviewing the numbered register, the user may write **Apply All** (or clearly ask to apply all listed suggestions). Then implement all approved register items, in dependency-safe priority order, in the live workspace; validate each change and report anything blocked or not safely applicable. A specific selection applies only those numbered items.
-- Option `32` **Apply for All** means audit all 31 disciplines; it does not authorize implementation. Only the separate user approval described above authorizes applying recommendations.
-- This instruction defines the workflow, not a ready-made menu, Stop button, or background service. Implement the actual menu/register UI and continuous runtime using project-supported UI and execution facilities. If those facilities are unavailable, explain the limitation and provide the closest supported interaction without claiming a functional button or persistent background process.
-- Respect tool availability, rate limits, and resource limits. Never fabricate project facts, test results, or sources; label unverified findings clearly.
-
-## 7. Enterprise Task Completion Report
+## 6. Enterprise Task Completion Report
 
 - **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
 - **Short Table Content:** Keep every report table cell concise—short feature names, full engineer names, brief contributions, test names, PASS/FAIL, and metric values with units. No long paragraphs inside table cells.
@@ -93,7 +80,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Engineer Summary:** One engineer per row. Left: full engineer name/designation. Right: that engineer's matching contribution. Include only participating engineers.
 - **Testing Summary:** One added/modified feature or test per row on the left; actual PASS/FAIL status on the right. Verify each feature; never claim PASS without testing.
 - **Quality Summary:** One applicable health/performance metric per row on the left; actual measured value with units on the right (e.g., latency, response time, throughput, CPU/RAM, task success rate, service health). Never invent values; mark unmeasured items NOT MEASURED.
-- **Missing & Improvement:** Every MISSING entry must contain a feature title and a brief description of what the absent feature does and what adding it enables. Every IMPROVEMENT entry must contain the existing feature title and a brief description of the proposed enhancement and its expected benefit. Put each item on its own row; match related items across the same row. Verify project status before classifying.
+- **Missing & Improvement:** Number every MISSING and IMPROVEMENT item independently in sequence (1, 2, 3...). Show the number and **bold feature title** first, followed by a very short, clear description. Keep descriptions brief enough to explain the feature's purpose or the improvement's benefit at a glance. Put each item on its own row; match related items across the same row. Verify project status before classifying.
+- **Continuous Report:** When the user requests ongoing project review, keep updating one live report as new findings appear. Append newly discovered numbered items to the same register; do not generate duplicate reports or restart numbering. Stop updating when the user stops the review.
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
@@ -115,6 +103,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
   <tr><th colspan="2" align="center">MISSING &amp; IMPROVEMENT</th></tr>
   <tr><th align="center" width="50%">MISSING</th><th align="center" width="50%">IMPROVEMENT</th></tr>
-  <tr><td align="center" valign="middle" width="50%"><strong>[Missing feature title]</strong><br>[Description: what it does and what adding it enables]</td><td align="center" valign="middle" width="50%"><strong>[Existing feature title]</strong><br>[Description: proposed enhancement and expected benefit]</td></tr>
+  <tr><td align="center" valign="middle" width="50%"><strong>1. [Missing feature title]</strong><br>[Short description of its purpose and value]</td><td align="center" valign="middle" width="50%"><strong>1. [Improvement title]</strong><br>[Short description of the enhancement and benefit]</td></tr>
 </table>
 </div>
