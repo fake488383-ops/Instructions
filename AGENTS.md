@@ -94,13 +94,13 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               │                     BEFORE                      │                      AFTER                       │
               │             [Relevant old-state items]          │          [Verified resulting-state items]        │
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │ENGINEER SUMMARY                                                                        CONTRIBUTION│
-              │[Engineer name]                                              [Verified work contributed]            │
+              │ENGINEER SUMMARY                                  │                                      CONTRIBUTIO│
+              │[Engineer name]                                   │                       [Verified work contributed│
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │TEST & VALIDATION SUMMARY                                                               STATUS      │
-              │[Check performed]                                            [Verified result and evidence]         │
+              │TEST & VALIDATION SUMMARY                         │                                            STATU│
+              │[Check performed]                                 │                    [Verified result and evidence│
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │FEATURE VALIDATION SUMMARY                                                              STATUS      │
-              │[Feature added/changed]                                      [VERIFIED / NEEDS WORK]                │
+              │FEATURE VALIDATION SUMMARY                        │                                            STATU│
+              │[Feature added/changed]                           │                           [VERIFIED / NEEDS WORK│
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
