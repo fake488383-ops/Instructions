@@ -74,10 +74,11 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Enterprise Task Completion Report
 - After every task, including small changes, generate a report at the end. Scale the detail to the task: keep small-task entries brief and provide full explanations for complex tasks.
-- Start the report with the exact main title **FINAL REPORT**. Do not include a Task Overview section; the report must begin directly with **BEFORE / AFTER**.
-- Combine all report sections into one unified, continuous, full-width table. Do not create separate tables, boxes, or disconnected sections.
-- Use two equal-width columns throughout, with consistent cell padding, row spacing, and table width. Center-align all headings, labels, and content.
-- Remove all visible vertical borders/dividers between columns and rows throughout the unified table. The only exception is the single vertical divider separating the **BEFORE** and **AFTER** columns in the Before / After section. Do not show any other vertical divider or underline.
+- Start the report with the exact main title **FINAL REPORT**.
+- Inside the report box, replace **SECTION / ITEM** and **DETAILS** with one full-width, horizontally centered heading: **PROJECT REPORT**.
+- Combine all report sections into one unified, continuous, full-width report box. Do not create separate tables, boxes, or disconnected sections.
+- Use two equal-width columns for report content, with consistent cell padding and row spacing. Center-align all headings, labels, and content.
+- Remove every vertical divider/border from the entire report box, including its center, except for exactly one vertical divider between **BEFORE** and **AFTER** in the **BEFORE / AFTER** section. No other vertical line may appear anywhere in the report box.
 - Keep the sections in the exact sequence below. If a section is irrelevant, write `Not Applicable`; never invent details or claim unperformed work.
 - Write explanations in clear Roman Urdu while preserving established technical terms, filenames, paths, commands, APIs, and test names.
 
@@ -99,7 +100,7 @@ Begin with the heading **FINAL REPORT**, then create exactly one continuous tabl
 
 # FINAL REPORT
 
-| SECTION / ITEM | DETAILS |
+| **PROJECT REPORT** | **PROJECT REPORT** |
 |:---:|:---:|
 | **1. BEFORE / AFTER** | **—** |
 | **BEFORE** | **AFTER** |
