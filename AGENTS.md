@@ -40,47 +40,13 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ### Engineer Selection & Continuous Future-Capability Analysis
 - When the user sends `0` as an AI Agent chat message and presses Enter, display only the 31 engineer titles from this list, numbered 1–31, plus `32. Apply for All`. Show no descriptions or extra text. This is a chat-command trigger, not a keyboard shortcut.
-- Run analysis for the selected engineer(s) only; `Apply for All` runs the same process across all 31 disciplines.
-- Continuously analyze the complete project against the selected engineer's responsibilities. Research current, authoritative sources online where useful; inspect existing implementation and evidence; identify genuine missing capabilities and improvement opportunities. Do not invent, duplicate, or recommend irrelevant items.
+- Analyze only the selected engineer's own discipline and listed responsibilities; `Apply for All` runs each engineer's analysis within its own domain. Do not take over, duplicate, or report another discipline's responsibilities.
+- For the selected engineer, continuously inspect the complete project and verify only domain-relevant existing work. Identify only **MISSING** capabilities and **IMPROVEMENT** opportunities within that engineer's responsibilities. Do not add unrelated categories such as security or performance unless they belong to the selected engineer's defined responsibilities.
+- Research current, authoritative sources online where useful; compare findings with project evidence. Do not invent, duplicate, or recommend irrelevant items. If another discipline's issue is noticed, leave it to that discipline rather than reporting it as the selected engineer's finding.
 - Present findings in the existing **FUTURE CAPABILITIES** blueprint as a continuously numbered, dynamically growing list. Each item must contain only a concise capability title, a short description of its project benefit, and status `MISSING` or `IMPROVEMENT`. Keep the blueprint's exact design, borders, alignment, spacing, and underlines unchanged; only item content and row count may grow.
 - Continue until the user stops the AI Agent using its built-in Stop control. Preserve all findings collected so far and the analysis checkpoint; stop promptly when requested. Do not implement findings during analysis.
 - After stopping, wait for the user's instruction to apply all findings or selected item numbers. Implement only the requested findings, verify them with relevant tests, then generate the unchanged **TASK FINAL REPORT** blueprint.
 - If the agent interface does not support a chat message trigger, continuous execution, or built-in Stop control, state the exact limitation; do not pretend the behavior is available.
-
-| No. | Discipline | Responsibility |
-|---|---|---|
-| 1 | Architecture Engineer | System structure, folder/file placement, boundaries, patterns, modularity, and extensibility. |
-| 2 | Systems Engineer | End-to-end behavior, interfaces, lifecycle, resources, compatibility, and embedded/firmware integration (ESP32, Raspberry Pi, microcontrollers). |
-| 3 | Backend Engineer | Server-side logic, business rules, services, authentication/authorization, and concurrency. |
-| 4 | Frontend Engineer | Client rendering, state, navigation, responsiveness, and integration. |
-| 5 | UI UX Engineer | User goals, interaction design, usability, information hierarchy, and consistency. |
-| 6 | AI ML Engineer | Models, prompts, inference, training/evaluation, grounding, and model safety. |
-| 7 | Data Engineer | Data ingestion, transformation, pipelines, lineage, quality, and governance. |
-| 8 | Database Engineer | Schema, queries, indexing, transactions, integrity, and recovery. |
-| 9 | API Integration Engineer | API contracts, protocols, versioning, validation, retries, and interoperability. |
-| 10 | Security Engineer | Threats, attack surfaces, identity, access control, secrets, and authorized security testing. |
-| 11 | Privacy Engineer | Consent, data minimization, retention, data rights, and privacy obligations. |
-| 12 | Performance Engineer | Profiling, startup, latency, throughput, CPU/GPU, memory, I/O, and benchmarks. |
-| 13 | Reliability Engineer | Availability, resilience, fault isolation, graceful degradation, and recovery. |
-| 14 | QA Test Engineer | Test strategy, coverage, automation, test data, defect verification, and regression. |
-| 15 | DevOps Engineer | CI/CD, environments, infrastructure automation, and delivery workflows. |
-| 16 | Build Toolchain Engineer | Compilers, SDKs, dependencies, build configuration, and reproducible builds. |
-| 17 | Release Engineer | Versioning, signing, release validation, rollout, distribution, and rollback. |
-| 18 | Cloud Engineer | Cloud architecture, hosting, provisioning, capacity, portability, and cost. |
-| 19 | Network Engineer | Topology, segmentation, routing, DNS, protocols, access, and capacity. |
-| 20 | Observability Engineer | Logs, metrics, traces, dashboards, alerts, and diagnostics. |
-| 21 | Configuration Engineer | Configuration schemas, environments, safe defaults, validation, and secrets separation. |
-| 22 | Backup Recovery Engineer | Backup policy, isolation, retention, restoration, and recovery testing. |
-| 23 | Requirements Engineer | Stakeholder needs, functional/non-functional requirements, constraints, and acceptance criteria. |
-| 24 | Technical Lead Engineer | Cross-discipline coordination, task decomposition, dependencies, and technical conflict resolution. |
-| 25 | Code Review Edit Engineer | Code correctness, maintainability, review, defect patterns, and static analysis. |
-| 26 | Knowledge Engineer | Documentation, authoritative sources, discoverability, consistency, and stale knowledge. |
-| 27 | Operations Incident Engineer | Incident triage, containment, diagnosis, restoration, and prevention. |
-| 28 | Accessibility Engineer | Semantics, keyboard access, assistive technology, contrast, and accessibility validation. |
-| 29 | Internationalization Localization Engineer | Languages, scripts, directionality, pluralization, locale formats, and regional adaptation. |
-| 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks. |
-| 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
-
 ## 6. Future Enhancements
 
 ```text
