@@ -76,10 +76,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - When the user enters `0` and presses Enter, show only the 31 engineer titles listed in Section 5, with their numbers. Do not show discipline headings, descriptions, responsibilities, explanations, tables, or any other content in this selection menu.
 - After the user selects an engineer, analyze the complete project and directly display concise, relevant findings and improvements in Roman Urdu. Do not show unnecessary menus or machine-learning content.
 - Keep analyzing and displaying new, relevant findings continuously. Avoid duplicates and distinguish existing, missing, partial, and improvable features.
-- Continue until the user presses **Stop**. Then stop immediately and preserve the findings already shown.
-- Do not implement recommendations during the audit. Implement them only when the user explicitly says **Apply All** or selects specific findings.
-- Use available project UI/runtime facilities for continuous execution and Stop control. If unsupported, explain the limitation; never pretend a background process or Stop button exists.
-- Never invent project facts, test results, or sources.
 
 ## 7. Enterprise Task Completion Report
 
