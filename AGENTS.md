@@ -74,8 +74,10 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Enterprise Task Completion Report
 - After every task, including small changes, generate a report at the end. Scale the detail to the task: keep small-task entries brief and provide full explanations for complex tasks.
-- Present the report as one continuous, full-width, center-positioned table. Keep all sections joined in the same table, with no separate or disconnected boxes. Center-align section titles, column headings, and cell content.
-- Include all sections in the order shown below. If a section is irrelevant, write `Not Applicable`; never invent details or claim unperformed work.
+- Combine all 11 report sections into **one unified, continuous, full-width table**. Do not create separate tables, boxes, or disconnected sections.
+- Use two equal-width columns throughout, with consistent cell padding, row spacing, and table width.
+- Center-align all text in every cell, including section titles, column headings, labels, and explanations. Make section-title rows visually distinct within the same table.
+- Keep all sections in the exact sequence below. If a section is irrelevant, write `Not Applicable`; never invent details or claim unperformed work.
 - Write explanations in clear Roman Urdu while preserving established technical terms, filenames, paths, commands, APIs, and test names.
 
 **Required report sections and rules:**
@@ -91,74 +93,43 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 10. **Build & Deployment Summary:** Report build, packaging, run, release, or deployment outcomes only when applicable and actually attempted. Include target/environment and errors or blockers where relevant.
 11. **Final Result & Next Steps:** State what was delivered, whether the task's acceptance criteria were met, remaining work/blockers, and the most useful next action.
 
-**Sequential report template:**
+**Unified report template:**
 
-Generate each section as its own separate, full-width box/table. Place the boxes vertically, one below another, in the exact sequence below. Do not combine them into one large table. Keep each box's title as its heading, center-align titles and column headings, and use equal left/right margins. Keep the content inside each box relevant to that section.
+Generate exactly one continuous table containing every section below. Never create separate tables or boxes. Keep two equal-width columns and consistent cell padding, row spacing, and overall width. Center-align every heading and all cell text. Use distinct section-heading rows within the same table. Add rows as needed for multiple entries.
 
-**1. TASK OVERVIEW**
-
-| ITEM | DETAIL |
+| SECTION / ITEM | DETAILS |
 |:---:|:---:|
+| **1. TASK OVERVIEW** | **—** |
 | Task / Objective | [Task name and objective] |
 | Task Type / Scope | [Type and scope] |
 | Overall Status | [Completed / Partially Completed / Blocked] |
-
-**2. BEFORE / AFTER**
-
+| **2. BEFORE / AFTER** | **—** |
 | BEFORE | AFTER |
-|:---:|:---:|
 | [Relevant previous state] | [Changes made] |
-
-**3. FEATURE SUMMARY**
-
-| FEATURE | PURPOSE / STATUS |
-|:---:|:---:|
+| **3. FEATURE SUMMARY** | **—** |
+| Feature | Purpose / Status |
 | [Feature name] | [Purpose — WORKING / ISSUE FOUND / PENDING] |
-
-**4. FEATURE DETAILS**
-
-| FEATURE | EXPLANATION |
-|:---:|:---:|
+| **4. FEATURE DETAILS** | **—** |
+| Feature | Explanation |
 | [Feature name] | [Problem solved, how it works, user behavior, inputs/outputs, dependencies] |
-
-**5. ENGINEERING DISCIPLINES**
-
-| DISCIPLINE | CONTRIBUTION |
-|:---:|:---:|
+| **5. ENGINEERING DISCIPLINES** | **—** |
+| Discipline | Contribution |
 | [Actual discipline] | [Work performed] |
-
-**6. TESTING SUMMARY**
-
-| TEST | RESULT / EVIDENCE |
-|:---:|:---:|
+| **6. TESTING SUMMARY** | **—** |
+| Test | Result / Evidence |
 | [Applicable test] | [PASSED / FAILED / PENDING / NOT APPLICABLE — evidence] |
-
-**7. QUALITY METRICS**
-
-| METRIC | MEASURED RESULT |
-|:---:|:---:|
+| **7. QUALITY METRICS** | **—** |
+| Metric | Measured Result |
 | [Tests / Coverage / Defects / Duration] | [Actual value or Not Measured] |
-
-**8. SECURITY & PERFORMANCE REVIEW**
-
-| AREA | FINDING / STATUS |
-|:---:|:---:|
+| **8. SECURITY & PERFORMANCE REVIEW** | **—** |
+| Area | Finding / Status |
 | [Security / Privacy / Performance] | [Verified finding, impact, or Not Checked] |
-
-**9. ARCHITECTURE & IMPACT SUMMARY**
-
-| AFFECTED AREA | CHANGE / IMPACT |
-|:---:|:---:|
+| **9. ARCHITECTURE & IMPACT SUMMARY** | **—** |
+| Affected Area | Change / Impact |
 | [Module / API / Database / Dependency] | [Change and compatibility impact] |
-
-**10. BUILD & DEPLOYMENT SUMMARY**
-
-| ACTIVITY | RESULT |
-|:---:|:---:|
+| **10. BUILD & DEPLOYMENT SUMMARY** | **—** |
+| Activity | Result |
 | [Build / Run / Package / Deploy] | [Actual result, environment, or Not Applicable] |
-
-**11. FINAL RESULT & NEXT STEPS**
-
-| FINAL RESULT | NEXT STEP / BLOCKER |
-|:---:|:---:|
+| **11. FINAL RESULT & NEXT STEPS** | **—** |
+| Final Result | Next Step / Blocker |
 | [Delivered outcome and acceptance status] | [Remaining work and prioritized next action] |
