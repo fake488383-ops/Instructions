@@ -87,7 +87,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
               │ENGINEER TITLE                 CAPABILITY TITLE                         SHORT DESCRIPTION           │
               │[Engineer title]                01. [Capability title]                                              │
-              │                                [Short description]                           [MISSING / IMPROVEMENT│
+              │[Short description]                                                          [MISSING / IMPROVEMENT]│
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 ## 7. Task Final Report
