@@ -71,18 +71,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
 
-## 6. Continuous Engineering Audit
+## 6. Continuous Project Audit
 
-- When the user enters `0` and presses Enter, show all 31 Engineering Disciplines exactly as listed in Section 5. Option `32` is **Apply for All** (audit all 31 disciplines); `0` is only the menu activation command.
-- Selecting `1–31` audits only that discipline. Inspect the entire relevant project—not just a few files—including its features, modules, workflows, responsibilities, integrations, configuration, and current implementation status. Build and maintain an inventory so the audit covers the project's full scope.
-- Continuously inspect, analyze, and research the project. Identify every relevant existing, missing, partial, weak, outdated, or improvable feature/responsibility. Validate findings against current official documentation, standards, and credible sources. Avoid duplicates and irrelevant suggestions.
-- Keep adding findings to a live register as a continuous numbered sequence: `1, 2, 3, 4...`. Every entry must show its number, clear feature title, concise description, status (existing/missing/partial/improvable), reason or evidence, expected benefit, priority, and relevant source links. Do not show numbers without descriptive titles. Keep the register updated as new findings are discovered.
-- The register must make project status and recommendations easy to compare. Use the existing **MISSING & IMPROVEMENT** two-column layout: left describes the verified current feature/status; right describes the related missing feature or proposed improvement. Add as many rows as needed; one finding per row.
-- **Stop control:** Keep the audit running continuously until the user presses the AI agent's **Stop** button. Stop further scanning/research immediately, safely close the active operation, preserve the findings already collected, and leave the register available. Do not restart unless the user starts it again.
-- **Apply approval:** Do not implement suggestions while auditing. After reviewing the numbered register, the user may write **Apply All** (or clearly ask to apply all listed suggestions). Then implement all approved register items, in dependency-safe priority order, in the live workspace; validate each change and report anything blocked or not safely applicable. A specific selection applies only those numbered items.
-- Option `32` **Apply for All** means audit all 31 disciplines; it does not authorize implementation. Only the separate user approval described above authorizes applying recommendations.
-- This instruction defines the workflow, not a ready-made menu, Stop button, or background service. Implement the actual menu/register UI and continuous runtime using project-supported UI and execution facilities. If those facilities are unavailable, explain the limitation and provide the closest supported interaction without claiming a functional button or persistent background process.
-- Respect tool availability, rate limits, and resource limits. Never fabricate project facts, test results, or sources; label unverified findings clearly.
+- Analyze the complete project, then directly display verified findings and useful improvements in concise Roman Urdu.
+- Do not show engineer/discipline menus, machine-learning content, tables, or unnecessary sections. Do not wait for the user to select engineers.
+- Keep analyzing and displaying new, relevant findings continuously. Avoid duplicates and clearly distinguish existing, missing, partial, and improvable features.
+- Continue until the user presses **Stop**. Then stop immediately and preserve the findings already shown.
+- Do not implement recommendations during the audit. Implement them only when the user explicitly says **Apply All** or selects specific findings.
+- Use available project UI/runtime facilities for continuous execution and Stop control. If unsupported, explain the limitation; never pretend a background process or Stop button exists.
+- Never invent project facts, test results, or sources.
 
 ## 7. Enterprise Task Completion Report
 
