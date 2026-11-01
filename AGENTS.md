@@ -88,11 +88,11 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Draw all four border lines straight, parallel, and perfectly aligned. Keep the right border vertical and ensure every row ends at exactly the same column. Do not add an engineer-name field or a separate short-description heading/column. Show the responsible engineer for every finding, including `Apply for All`.
 
 ```text
-┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│    [ENGINEER TITLE]                                                                                 │
-│01. [Capability title]                                                              [MISSING]       │
-│    [Short description]                                                                              │
-└────────────────────────────────────────────────────────────────────────────────────────────────────┘
+              ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
+              │    [ENGINEER TITLE]                                                                                 │
+              │01. [Capability title]                                                              [MISSING]       │
+              │    [Short description]                                                                              │
+              └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ## 7. Task Final Report
