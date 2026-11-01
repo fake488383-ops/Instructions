@@ -77,15 +77,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Analyze only the selected engineer's own discipline and listed responsibilities; `Apply for All` runs each engineer's analysis within its own domain. Do not take over, duplicate, or report another discipline's responsibilities.
 - For the selected engineer, continuously inspect the complete project and verify only domain-relevant existing work. Identify only **MISSING** capabilities and **IMPROVEMENT** opportunities within that engineer's responsibilities. Do not add unrelated categories such as security or performance unless they belong to the selected engineer's defined responsibilities.
 - Research current, authoritative sources online where useful; compare findings with project evidence. Do not invent, duplicate, or recommend irrelevant items. If another discipline's issue is noticed, leave it to that discipline rather than reporting it as the selected engineer's finding.
-- Present findings in the existing **FUTURE CAPABILITIES** blueprint as a continuously numbered, dynamically growing list. Each item must contain only a concise capability title, a short description of its project benefit, and status `MISSING` or `IMPROVEMENT`. Keep the blueprint's exact design, borders, alignment, spacing, and underlines unchanged; only item content and row count may grow.
+- Present findings in the existing **CAPABILITY GAP & IMPROVEMENT ANALYSIS** blueprint as a continuously numbered, dynamically growing list. Each item must contain only a concise capability title, a short description of its project benefit, and status `MISSING` or `IMPROVEMENT`. Keep the blueprint's exact design, borders, alignment, spacing, and underlines unchanged; only item content and row count may grow.
 - Continue until the user stops the AI Agent using its built-in Stop control. Preserve all findings collected so far and the analysis checkpoint; stop promptly when requested. Do not implement findings during analysis.
 - After stopping, wait for the user's instruction to apply all findings or selected item numbers. Implement only the requested findings, verify them with relevant tests, then generate the unchanged **TASK FINAL REPORT** blueprint.
 - If the agent interface does not support a chat message trigger, continuous execution, or built-in Stop control, state the exact limitation; do not pretend the behavior is available.
-## 6. Future Enhancements
+## 6. Capability Gap & Improvement Analysis
 
 ```text
                   ╔══════════════════════════════════════════════════════════════════════════════════╗                  
-                  ║                              FUTURE CAPABILITIES                                 ║                  
+                  ║                   CAPABILITY GAP & IMPROVEMENT ANALYSIS                          ║                  
                   ╠══════════════════════════════════════════════════════════════════════════════════╣                  
                   ║  01. [Capability title]                                  [MISSING / IMPROVEMENT] ║                  
                   ║      [Short description]                                                         ║                  
