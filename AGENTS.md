@@ -73,30 +73,24 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
 ## 6. Enterprise Task Completion Report
-- After every task, including small changes, generate a report at the end. Scale the detail to the task: keep small-task entries brief and provide full explanations for complex tasks.
+- After every task, including small changes, generate a concise report at the end. Scale detail to the task.
 - Start the report with the exact main title **FINAL REPORT**.
-- Inside the report box, replace **SECTION / ITEM** and **DETAILS** with one full-width, horizontally centered heading: **PROJECT REPORT**.
-- Combine all report sections into one unified, continuous, full-width report box. Do not create separate tables, boxes, or disconnected sections.
-- Use two equal-width columns for report content, with consistent cell padding and row spacing. Center-align all headings, labels, and content.
-- Keep a complete white border around the entire report box and around each section. Use vertical dividers where shown in the report layout, including between **BEFORE** and **AFTER**.
-- Keep the sections in the exact sequence below. If a section is irrelevant, write `Not Applicable`; never invent details or claim unperformed work.
-- Write explanations in clear Roman Urdu while preserving established technical terms, filenames, paths, commands, APIs, and test names.
+- Inside one unified report box, use **PROJECT REPORT** as the full-width, horizontally centered heading.
+- Keep all report content in one continuous, full-width table. Do not create separate tables, boxes, or disconnected sections.
+- Use two equal-width columns, consistent cell padding and row spacing, and center-align all headings, labels, and content.
+- Keep a complete white border around the report box and its sections. Retain the vertical divider between **BEFORE** and **AFTER**.
+- Include only these four sections, in this exact order: **Before / After**, **Engineering Disciplines**, **Testing Summary**, and **Quality Metrics**. Do not include Feature Summary, Feature Details, Security & Performance Review, Architecture & Impact Summary, Build & Deployment Summary, or Final Result & Next Steps.
+- Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, and test names.
 
 **Required report sections and rules:**
-1. **Before / After:** Relevant project state before the task and the exact changes afterward. Use two equal-width columns with one visible vertical divider between them. Center **BEFORE** and **AFTER** within their respective columns.
-2. **Feature Summary:** List every feature created or changed, its purpose in one concise sentence, and its current status. Use `WORKING`, `ISSUE FOUND`, or `PENDING`. Use `WORKING` only after verification.
-3. **Feature Details:** Explain each feature's purpose, the problem it solves, how it works, user-visible behavior, inputs/outputs, and important dependencies. Explain technical details at a level appropriate to the task.
-4. **Engineering Disciplines:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
-5. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
-6. **Quality Metrics:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
-7. **Security & Performance Review:** Summarize relevant security checks, privacy/data-handling considerations, resource usage, latency, responsiveness, and performance impact. Clearly mark checks that were not performed.
-8. **Architecture & Impact Summary:** Explain affected modules, components, APIs, database/schema, dependencies, interfaces, and compatibility. Identify potential side effects and whether existing behavior was preserved.
-9. **Build & Deployment Summary:** Report build, packaging, run, release, or deployment outcomes only when applicable and actually attempted. Include target/environment and errors or blockers where relevant.
-10. **Final Result & Next Steps:** State what was delivered, whether the task's acceptance criteria were met, remaining work/blockers, and the most useful next action.
+1. **Before / After:** Show the relevant project state before the task and the exact changes afterward. Use two equal-width columns with one visible vertical divider between them. Center **BEFORE** and **AFTER** within their respective columns.
+2. **Engineering Disciplines:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
+3. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
+4. **Quality Metrics:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
 
 **Unified report template:**
 
-Begin with the heading **FINAL REPORT**, then create exactly one continuous table. Do not include Task Overview. The first table section must be Before / After. Keep two equal-width columns and consistent cell padding, row spacing, and overall width. Center-align every heading and all cell text. Use section-title rows within the same table. Keep the complete white outer border and section borders. Retain the vertical divider between the **BEFORE** and **AFTER** columns. Add rows as needed for multiple entries.
+Begin with **FINAL REPORT**, then create exactly one continuous table. Keep two equal-width columns and center-align all headings and cell text. Use section-title rows within the same table. Keep the complete white outer border and section borders, including the vertical divider between **BEFORE** and **AFTER**. Add rows as needed.
 
 # FINAL REPORT
 
@@ -105,21 +99,9 @@ Begin with the heading **FINAL REPORT**, then create exactly one continuous tabl
 | **1. BEFORE / AFTER** | **—** |
 | **BEFORE** | **AFTER** |
 | [Relevant previous state] | [Changes made] |
-| **2. FEATURE SUMMARY** | **—** |
-| [Feature name] | [Purpose — WORKING / ISSUE FOUND / PENDING] |
-| **3. FEATURE DETAILS** | **—** |
-| [Feature name] | [Problem solved, how it works, user behavior, inputs/outputs, dependencies] |
-| **4. ENGINEERING DISCIPLINES** | **—** |
+| **2. ENGINEERING DISCIPLINES** | **—** |
 | [Actual discipline] | [Work performed] |
-| **5. TESTING SUMMARY** | **—** |
+| **3. TESTING SUMMARY** | **—** |
 | [Applicable test] | [PASSED / FAILED / PENDING / NOT APPLICABLE — evidence] |
-| **6. QUALITY METRICS** | **—** |
+| **4. QUALITY METRICS** | **—** |
 | [Tests / Coverage / Defects / Duration] | [Actual value or Not Measured] |
-| **7. SECURITY & PERFORMANCE REVIEW** | **—** |
-| [Security / Privacy / Performance] | [Verified finding, impact, or Not Checked] |
-| **8. ARCHITECTURE & IMPACT SUMMARY** | **—** |
-| [Module / API / Database / Dependency] | [Change and compatibility impact] |
-| **9. BUILD & DEPLOYMENT SUMMARY** | **—** |
-| [Build / Run / Package / Deploy] | [Actual result, environment, or Not Applicable] |
-| **10. FINAL RESULT & NEXT STEPS** | **—** |
-| [Delivered outcome and acceptance status] | [Remaining work and prioritized next action] |
