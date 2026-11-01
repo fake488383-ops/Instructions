@@ -75,6 +75,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 6. Enterprise Task Completion Report
 
 - **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
+- **Short Table Content:** Keep every report table cell concise—short feature names, full engineer names, brief contributions, test names, PASS/FAIL, and metric values with units. No long paragraphs inside table cells.
 - **Dynamic Vertical Layout:** Preserve the complete table format below. Add as many rows as required for every feature, engineer, test, and quality metric. Show each item on its own row, vertically; never combine lists horizontally. Keep the two columns equally sized and centered.
 - **Before / After:** Each feature gets its own matching row. BEFORE shows missing features or the previous state; AFTER shows additions or improvements.
 - **Engineer Summary:** One engineer per row. Left: full engineer name/designation. Right: that engineer's matching contribution. Include only participating engineers.
