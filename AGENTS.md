@@ -82,13 +82,13 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 6. Capability Gap & Improvement Analysis
 
 ```text
-╔════════════════════════════════════════════════════════════════════════════════════════════╗
-║                           CAPABILITY GAP & IMPROVEMENT ANALYSIS                            ║
-╠════════════════════════════════════════════════════════════════════════════════════════════╣
-║ENGINEER: [Engineer title]                                                                  ║
-║01. [Capability title]                                      [MISSING / IMPROVEMENT]         ║
-║    [Short description]                                                                     ║
-╚════════════════════════════════════════════════════════════════════════════════════════════╝
+              ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
+              │                                          ENGINEER SUMMARY                                          │
+              ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+              │ENGINEER TITLE                 CAPABILITY TITLE                         SHORT DESCRIPTION           │
+              │[Engineer title]                01. [Capability title]                                              │
+              │                                [Short description]                           [MISSING / IMPROVEMENT│
+              └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 ## 7. Task Final Report
 
