@@ -75,35 +75,30 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 6. Enterprise Task Completion Report
 - After every task, including small changes, generate a concise report at the end. Scale detail to the task.
 - Use exactly four report sections in this order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**.
-- **Before / After:** Use one two-column table only. Put **BEFORE** in the left column and **AFTER** in the right column.
-- **Engineer Summary, Testing Summary, and Quality Summary:** Keep each in its own normal single-column table. Do not split these sections into two columns.
-- Keep the report clean, aligned, and easy to read. Do not add other report sections or a separate FINAL REPORT title.
+- Combine the entire report into **one single table**. Do not create separate tables or boxes.
+- **Before / After:** Within the single table, use two side-by-side cells: BEFORE on the left and AFTER on the right.
+- **Engineer Summary, Testing Summary, and Quality Summary:** Keep each section full-width in the same table, spanning both columns as one cell. Do not split their content into left and right columns.
+- Use one outer table with a consistent border and clear horizontal separators. Do not add a separate FINAL REPORT title or extra report sections.
 - Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, and test names.
 
 **Required report sections and rules:**
-1. **Before / After:** Compare the relevant previous state and the changes made in exactly two columns: BEFORE (left) and AFTER (right).
+1. **Before / After:** Compare the relevant previous state and changes made in exactly two side-by-side columns: BEFORE (left) and AFTER (right).
 2. **Engineer Summary:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
 3. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
 4. **Quality Summary:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
 
 **Unified report template:**
 
-### Before / After
-| **BEFORE** | **AFTER** |
-|:---|:---|
-| [Relevant previous state] | [Changes made] |
+Use one HTML table so the full-width summary rows can span both columns. Keep all four sections inside this same table:
 
-### Engineer Summary
-| **Engineer / Discipline and contribution** |
-|:---|
-| [Only disciplines actually involved and their work] |
-
-### Testing Summary
-| **Test / Status / Evidence** |
-|:---|
-| [Applicable test, actual status, and evidence] |
-
-### Quality Summary
-| **Measurement / Result** |
-|:---|
-| [Actual tests, coverage, defects, duration, or Not Measured] |
+<table>
+  <tr><th colspan="2">PROJECT REPORT</th></tr>
+  <tr><th>BEFORE</th><th>AFTER</th></tr>
+  <tr><td>[Relevant previous state]</td><td>[Changes made]</td></tr>
+  <tr><th colspan="2">ENGINEER SUMMARY</th></tr>
+  <tr><td colspan="2">[Only disciplines actually involved and their contributions]</td></tr>
+  <tr><th colspan="2">TESTING SUMMARY</th></tr>
+  <tr><td colspan="2">[Applicable tests, actual statuses, and evidence]</td></tr>
+  <tr><th colspan="2">QUALITY SUMMARY</th></tr>
+  <tr><td colspan="2">[Actual measurements or Not Measured]</td></tr>
+</table>
