@@ -79,7 +79,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Make the report box span the full available content width (100%), from the left content margin to the right content margin. Do not render it as a narrow or half-width table. Expand the layout fully across the page's usable width.
 - Keep the report box centered with equal outer left and right margins; do not add extra left indentation or padding that shifts it to one side. Use two equal-width columns across the full report width, with consistent cell padding and row spacing. Center-align all headings, labels, and content.
 - Keep the complete outer border and all horizontal section/divider lines. Remove only the center vertical divider between the two columns throughout the report table; preserve every other line.
-- Include only these four sections, in this exact order: **Before / After**, **Engineering Disciplines**, **Testing Summary**, and **Quality Metrics**. Do not include Feature Summary, Feature Details, Security & Performance Review, Architecture & Impact Summary, Build & Deployment Summary, or Final Result & Next Steps.
+- Include only these four sections, in this exact order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**. Do not include Feature Summary, Feature Details, Security & Performance Review, Architecture & Impact Summary, Build & Deployment Summary, or Final Result & Next Steps.
 - Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, and test names.
 
 **Required report sections and rules:**
