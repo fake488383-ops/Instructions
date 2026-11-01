@@ -84,9 +84,9 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 **Required report sections and rules:**
 1. **Before / After:** Show the relevant project state before the task and the exact changes afterward. Use two equal-width columns. Keep all horizontal lines beneath and around the **BEFORE / AFTER** row. Remove only the center vertical divider between the two columns throughout the report table. Keep the outer border and all horizontal section/divider lines unchanged. Center **BEFORE** and **AFTER** within their respective columns.
-2. **Engineering Disciplines:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
+2. **Engineer Summary:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
 3. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
-4. **Quality Metrics:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
+4. **Quality Summary:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
 
 **Unified report template:**
 
@@ -97,9 +97,9 @@ Create exactly one continuous report table without a separate **FINAL REPORT** t
 | **1. BEFORE / AFTER** | **—** |
 | **BEFORE** | **AFTER** |
 | [Relevant previous state] | [Changes made] |
-| **2. ENGINEERING DISCIPLINES** | **—** |
+| **2. ENGINEER SUMMARY** | **—** |
 | [Actual discipline] | [Work performed] |
 | **3. TESTING SUMMARY** | **—** |
 | [Applicable test] | [PASSED / FAILED / PENDING / NOT APPLICABLE — evidence] |
-| **4. QUALITY METRICS** | **—** |
+| **4. QUALITY SUMMARY** | **—** |
 | [Tests / Coverage / Defects / Duration] | [Actual value or Not Measured] |
