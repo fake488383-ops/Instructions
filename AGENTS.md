@@ -76,15 +76,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
-  <colgroup><col width="50%"><col width="50%"></colgroup>
+  <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
   <tr><th colspan="2" align="center">PROJECT REPORT</th></tr>
-  <tr><th align="center">BEFORE</th><th align="center">AFTER</th></tr>
-  <tr><td align="center" valign="middle">[Previous state]</td><td align="center" valign="middle">[Actual changes]</td></tr>
+  <tr><th align="center" width="50%">BEFORE</th><th align="center" width="50%">AFTER</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[Previous state]</td><td align="center" valign="middle" width="50%">[Actual changes]</td></tr>
   <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td align="center" valign="middle">[Involved engineers / designations]</td><td align="center" valign="middle">[Matching contributions]</td></tr>
+  <tr><td align="center" valign="middle" width="50%">[Involved engineers / designations]</td><td align="center" valign="middle" width="50%">[Matching contributions]</td></tr>
   <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
-  <tr><td align="center" valign="middle">[Test name]</td><td align="center" valign="middle">[Actual status]</td></tr>
+  <tr><td align="center" valign="middle" width="50%">[Test name]</td><td align="center" valign="middle" width="50%">[Actual status]</td></tr>
   <tr><th colspan="2" align="center">QUALITY SUMMARY</th></tr>
-  <tr><td align="center" valign="middle">[Quality check / metric]</td><td align="center" valign="middle">[Actual value / status]</td></tr>
+  <tr><td align="center" valign="middle" width="50%">[Quality check / metric]</td><td align="center" valign="middle" width="50%">[Actual value / status]</td></tr>
 </table>
 </div>
