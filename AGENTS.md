@@ -73,14 +73,13 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
 ## 6. Task Completion Report
-- After every task, including small changes, generate one concise, unified report at the end. Do not create separate or disconnected boxes.
-- Use one full-width, center-positioned table with equal left and right margins. Keep all sections joined in the same table, with no gaps.
-- The top section must contain **BEFORE** and **AFTER** in two equal-width columns. Center-align headings and all cell text.
+- After every task, including small changes, generate one concise, unified report at the end. Keep all report sections in one full-width, center-positioned table with equal left and right margins and no gaps.
+- The first section must contain **BEFORE** and **AFTER** in two equal-width columns. Center-align all headings and cell text.
 - **BEFORE:** summarize the relevant state or features before the task.
 - **AFTER:** list what was added, changed, or improved by the task.
-- Directly below BEFORE / AFTER, place a full-width merged heading: **Engineers Future Summary**. Under it, list each feature added or changed during the task with its status alongside it.
-- Use only these feature statuses: `PASSED`, `FAILED`, or `PENDING`. Mark `PASSED` only after successful verification; use `FAILED` when verification fails, and `PENDING` when it has not yet been verified.
-- Keep feature names clear and concise. Include one row per feature; do not list unrelated existing features. Keep the report in Roman Urdu. If a section has no relevant information, write `None`.
+- Directly below BEFORE / AFTER, add a full-width merged title: **Feature Summary**. List every feature created or changed in the task, with its current verification status. Use `WORKING`, `ISSUE FOUND`, or `PENDING`; only use `WORKING` after successful feature verification.
+- Directly below Feature Summary, add a full-width merged title: **Testing Summary**. List the applicable test types and their results. Include, where relevant: Unit Tests, Integration Tests, System Tests, End-to-End (E2E) Tests, UI Tests, API Tests, Regression Tests, Performance Tests, Security Tests, Compatibility Tests, Accessibility Tests, and Acceptance Tests. Select tests relevant to the project and changes; do not claim a test was run unless it actually ran. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE` as test results.
+- Keep feature names and test names clear and concise. Add one row per feature or test. Keep all report text in Roman Urdu except established technical terms. If a section has no relevant entries, write `None`.
 
 <table align="center" width="100%">
   <thead>
@@ -95,15 +94,26 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
       <td align="center">[Added, changed, or improved result]</td>
     </tr>
     <tr>
-      <th align="center" colspan="2">Engineers Future Summary</th>
+      <th align="center" colspan="2">Feature Summary</th>
     </tr>
     <tr>
-      <th align="center" width="50%">FEATURE</th>
-      <th align="center" width="50%">STATUS</th>
+      <th align="center">FEATURE</th>
+      <th align="center">STATUS</th>
     </tr>
     <tr>
       <td align="center">[Feature name]</td>
-      <td align="center">[PASSED / FAILED / PENDING]</td>
+      <td align="center">[WORKING / ISSUE FOUND / PENDING]</td>
+    </tr>
+    <tr>
+      <th align="center" colspan="2">Testing Summary</th>
+    </tr>
+    <tr>
+      <th align="center">TEST</th>
+      <th align="center">RESULT</th>
+    </tr>
+    <tr>
+      <td align="center">[Test type]</td>
+      <td align="center">[PASSED / FAILED / PENDING / NOT APPLICABLE]</td>
     </tr>
   </tbody>
 </table>
