@@ -75,10 +75,10 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 6. Enterprise Task Completion Report
 - After every task, including small changes, generate a report at the end. Scale the detail to the task: keep small-task entries brief and provide full explanations for complex tasks.
 - Start the report with the exact main title **FINAL REPORT**.
-- Inside the report box, replace **SECTION / ITEM** and **DETAILS** with one full-width, horizontally centered heading: **PROJECT REPORT**.
-- Combine all report sections into one unified, continuous, full-width report box. Do not create separate tables, boxes, or disconnected sections.
-- Use two equal-width columns for report content, with consistent cell padding and row spacing. Center-align all headings, labels, and content.
-- Remove every vertical divider/border from the entire report box, including its center, except for exactly one vertical divider between **BEFORE** and **AFTER** in the **BEFORE / AFTER** section. No other vertical line may appear anywhere in the report box.
+- Inside the report box, show **PROJECT REPORT** exactly once as a single full-width, horizontally centered heading. Never duplicate this title.
+- Keep all report sections in one continuous report box, with two equal-width content columns where comparison is needed. Center-align headings, labels, and content.
+- Do not use Markdown tables or table borders. They create unwanted vertical divider lines in chat rendering. Use a clean borderless report layout instead.
+- The only permitted vertical divider is exactly one between **BEFORE** and **AFTER** in the **BEFORE / AFTER** section. Do not show any other vertical line or divider anywhere in the report.
 - Keep the sections in the exact sequence below. If a section is irrelevant, write `Not Applicable`; never invent details or claim unperformed work.
 - Write explanations in clear Roman Urdu while preserving established technical terms, filenames, paths, commands, APIs, and test names.
 
@@ -96,30 +96,59 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 **Unified report template:**
 
-Begin with the heading **FINAL REPORT**, then create exactly one continuous table. Do not include Task Overview. The first table section must be Before / After. Keep two equal-width columns and consistent cell padding, row spacing, and overall width. Center-align every heading and all cell text. Use section-title rows within the same table. Remove all vertical borders/dividers except the one separating BEFORE and AFTER. Do not use underlines or other vertical separators anywhere else. Add rows as needed for multiple entries.
+Begin with the heading **FINAL REPORT**, then create one continuous, borderless report box. Do not include Task Overview. Show **PROJECT REPORT** exactly once as a single centered title. Do not use Markdown tables, grid borders, pipes, or repeated title cells because they create unwanted vertical lines in chat rendering. Use clean centered headings and paired text columns only where needed. The only vertical divider is the single divider between BEFORE and AFTER in the first section.
 
 # FINAL REPORT
 
-| **PROJECT REPORT** | **PROJECT REPORT** |
-|:---:|:---:|
-| **1. BEFORE / AFTER** | **—** |
-| **BEFORE** | **AFTER** |
-| [Relevant previous state] | [Changes made] |
-| **2. FEATURE SUMMARY** | **—** |
-| [Feature name] | [Purpose — WORKING / ISSUE FOUND / PENDING] |
-| **3. FEATURE DETAILS** | **—** |
-| [Feature name] | [Problem solved, how it works, user behavior, inputs/outputs, dependencies] |
-| **4. ENGINEERING DISCIPLINES** | **—** |
-| [Actual discipline] | [Work performed] |
-| **5. TESTING SUMMARY** | **—** |
-| [Applicable test] | [PASSED / FAILED / PENDING / NOT APPLICABLE — evidence] |
-| **6. QUALITY METRICS** | **—** |
-| [Tests / Coverage / Defects / Duration] | [Actual value or Not Measured] |
-| **7. SECURITY & PERFORMANCE REVIEW** | **—** |
-| [Security / Privacy / Performance] | [Verified finding, impact, or Not Checked] |
-| **8. ARCHITECTURE & IMPACT SUMMARY** | **—** |
-| [Module / API / Database / Dependency] | [Change and compatibility impact] |
-| **9. BUILD & DEPLOYMENT SUMMARY** | **—** |
-| [Build / Run / Package / Deploy] | [Actual result, environment, or Not Applicable] |
-| **10. FINAL RESULT & NEXT STEPS** | **—** |
-| [Delivered outcome and acceptance status] | [Remaining work and prioritized next action] |
+**PROJECT REPORT**
+
+**1. BEFORE / AFTER**
+
+**BEFORE**　　　　　　　　　│　　　　　　　　　**AFTER**
+
+[Relevant previous state]　　　　　　　　　[Changes made]
+
+**2. FEATURE SUMMARY**
+
+[Feature name]
+[Purpose — WORKING / ISSUE FOUND / PENDING]
+
+**3. FEATURE DETAILS**
+
+[Feature name]
+[Problem solved, how it works, user behavior, inputs/outputs, dependencies]
+
+**4. ENGINEERING DISCIPLINES**
+
+[Actual discipline]
+[Work performed]
+
+**5. TESTING SUMMARY**
+
+[Applicable test]
+[PASSED / FAILED / PENDING / NOT APPLICABLE — evidence]
+
+**6. QUALITY METRICS**
+
+[Tests / Coverage / Defects / Duration]
+[Actual value or Not Measured]
+
+**7. SECURITY & PERFORMANCE REVIEW**
+
+[Security / Privacy / Performance]
+[Verified finding, impact, or Not Checked]
+
+**8. ARCHITECTURE & IMPACT SUMMARY**
+
+[Module / API / Database / Dependency]
+[Change and compatibility impact]
+
+**9. BUILD & DEPLOYMENT SUMMARY**
+
+[Build / Run / Package / Deploy]
+[Actual result, environment, or Not Applicable]
+
+**10. FINAL RESULT & NEXT STEPS**
+
+[Delivered outcome and acceptance status]
+[Remaining work and prioritized next action]
