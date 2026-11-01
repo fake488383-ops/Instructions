@@ -71,3 +71,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 29 | Internationalization Localization Engineer | Languages, scripts, directionality, pluralization, locale formats, and regional adaptation. |
 | 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks. |
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
+
+## 6. Task Completion Report
+- After every task, including small changes, generate a concise report at the end. Do not use a blueprint or add extra report sections.
+- Use exactly three columns: **BEFORE**, **AFTER**, and **STATUS**.
+- **BEFORE:** summarize the relevant state or features before the task.
+- **AFTER:** list what was added, changed, or improved by the task.
+- **STATUS:** show the verified state of each result using only `WORKING`, `IN PROGRESS`, or `FAILED`. Use `WORKING` only after verification; never claim an untested feature works.
+- Add one row per relevant item. Keep the report short, clear, and in Roman Urdu. If a column has no relevant information, write `None`.
+
+| BEFORE | AFTER | STATUS |
+|---|---|---|
+| [Relevant existing state] | [Added, changed, or improved result] | [WORKING / IN PROGRESS / FAILED] |
