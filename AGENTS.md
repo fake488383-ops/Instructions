@@ -73,18 +73,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
 ## 6. Enterprise Task Completion Report
-- Har completed task ke baad ek concise Project Report table banao.
-- Table page/layout ke horizontal center mein ho; left aur right margins equal hon.
-- Table available content width use kare, complete outer aur inner borders hon, aur har cell mein equal padding ho.
-- Tamam headings aur cell content horizontal aur vertical center-aligned hon.
-- Ek hi table mein ye four sections isi order mein hon: Before / After, Engineer Summary, Testing Summary, Quality Summary.
-- Before / After mein previous state aur actual changes side-by-side dikhao.
-- Engineer Summary mein sirf involved engineers/designations aur unki matching contributions dikhao.
-- Testing Summary mein actual test names aur status dikhao: `PASSED`, `FAILED`, `PENDING`, ya `NOT APPLICABLE`. Unrun tests ko passed na likho.
-- Quality Summary mein relevant quality checks/metrics aur actual values/status dikhao. Data available na ho to `Not Measured` likho; values invent na karo.
-- Report concise, task-relevant aur Roman Urdu explanations mein ho; technical terms aur test names original rakho.
-
-**Unified report template:**
 
 <table style="width:calc(100% - 32px); max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;">
   <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">PROJECT REPORT</th></tr>
