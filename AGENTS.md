@@ -74,6 +74,13 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Enterprise Task Completion Report
 
+- **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
+- **Before / After:** Show key points only. BEFORE records missing features and the prior state of existing features; AFTER records what was added and how existing features were improved.
+- **Engineer Summary:** List each participating discipline's full engineer name on the left and that engineer's matching contribution on the right. Include only engineers who actually worked.
+- **Testing Summary:** List each test/check performed on the left and its actual PASS/FAIL or other truthful status on the right.
+- **Quality Summary:** List each quality check/metric on the left and its verified result/status on the right. Never invent results; mark unperformed or unavailable checks clearly.
+
+
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
   <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
