@@ -90,7 +90,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ```text
               ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
               │    [ENGINEER TITLE]                                                                                │
-              │01. [Capability title]                                                              [MISSING]      │
+              │01. [Capability title]                                                                     [MISSING]│
               │    [Short description]                                                                             │
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
