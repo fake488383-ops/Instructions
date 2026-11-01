@@ -74,31 +74,36 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Enterprise Task Completion Report
 - After every task, including small changes, generate a concise report at the end. Scale detail to the task.
-- Inside one unified report box, use **PROJECT REPORT** as the full-width, horizontally centered heading.
-- Keep all report content in one continuous table. Do not create separate tables, boxes, or disconnected sections.
-- Make the report box span the full available content width (100%), from the left content margin to the right content margin. Do not render it as a narrow or half-width table. Expand the layout fully across the page's usable width.
-- Keep the report box centered with equal outer left and right margins; do not add extra left indentation or padding that shifts it to one side. Use one unified full-width report box. Inside the Before / After comparison, place BEFORE on the left and AFTER on the right, with one vertical divider between them. Keep the other summary sections full-width within the same report box.
-- Use one combined Before / After comparison table with exactly two side-by-side columns: BEFORE on the left and AFTER on the right, separated by one center vertical divider. Do not add a separate numbered Before / After section-title box. Keep all other report sections full-width.
-- Include only these report areas in this exact order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**. Do not add a numbered section-title row for Before / After. Do not include Feature Summary, Feature Details, Security & Performance Review, Architecture & Impact Summary, Build & Deployment Summary, or Final Result & Next Steps.
+- Use exactly four report sections in this order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**.
+- **Before / After:** Use one two-column table only. Put **BEFORE** in the left column and **AFTER** in the right column.
+- **Engineer Summary, Testing Summary, and Quality Summary:** Keep each in its own normal single-column table. Do not split these sections into two columns.
+- Keep the report clean, aligned, and easy to read. Do not add other report sections or a separate FINAL REPORT title.
 - Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, and test names.
 
 **Required report sections and rules:**
-1. **Before / After:** Show one combined comparison table with two columns only: **BEFORE** on the left and **AFTER** on the right, with one vertical delimiter between them and their respective content beneath. Do not add a separate **1. BEFORE / AFTER** heading row or outer section-title box.
+1. **Before / After:** Compare the relevant previous state and the changes made in exactly two columns: BEFORE (left) and AFTER (right).
 2. **Engineer Summary:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
 3. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
 4. **Quality Summary:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
 
 **Unified report template:**
 
-Use one valid two-column Markdown table. Keep **BEFORE** in the left column and **AFTER** in the right column, side by side, with the standard vertical column divider. Keep every row at exactly two cells; never create a one-cell row. Put the report heading and each summary heading/content into the two-column structure without changing the column order.
-
-| **PROJECT REPORT** | **PROJECT REPORT** |
-|:---|:---|
+### Before / After
 | **BEFORE** | **AFTER** |
+|:---|:---|
 | [Relevant previous state] | [Changes made] |
-| **ENGINEER SUMMARY** | **ENGINEER SUMMARY** |
-| [Actual disciplines and work performed] | [Leave empty if no separate right-column content] |
-| **TESTING SUMMARY** | **TESTING SUMMARY** |
-| [Applicable tests, actual statuses, and evidence] | [Leave empty if no separate right-column content] |
-| **QUALITY SUMMARY** | **QUALITY SUMMARY** |
-| [Actual measurements or Not Measured] | [Leave empty if no separate right-column content] |
+
+### Engineer Summary
+| **Engineer / Discipline and contribution** |
+|:---|
+| [Only disciplines actually involved and their work] |
+
+### Testing Summary
+| **Test / Status / Evidence** |
+|:---|
+| [Applicable test, actual status, and evidence] |
+
+### Quality Summary
+| **Measurement / Result** |
+|:---|
+| [Actual tests, coverage, defects, duration, or Not Measured] |
