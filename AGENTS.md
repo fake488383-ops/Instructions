@@ -76,7 +76,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - After every task, including small changes, generate a concise report at the end. Scale detail to the task.
 - Use exactly four report sections in this order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**.
 - Combine the entire report into **one single table**. Do not create separate tables or boxes.
-- Center the table horizontally within the report body. The empty space outside the table must be exactly equal on the left and right. Calculate the table width from the available body width and apply equal left/right margins; do not align the table to either edge or use arbitrary fixed margins.
+- Center the table horizontally within the report body. The empty space outside the table must be exactly equal on the left and right. Keep the table within the available body width.
+- **Table borders and cell spacing:** Draw a complete, continuous border around the outside of the table and visible borders around every cell, including the right-hand cells. Use consistent border thickness and style on all four sides; do not leave the right edge, bottom edge, or any cell edge missing. Give every cell equal inner padding on the left and right, and consistent equal padding on the top and bottom. Text must sit comfortably inside its cell, not touch or cross the border. Do not use underline-only styling in place of cell borders.
 - **Before / After:** Use two side-by-side columns: BEFORE on the left and AFTER on the right.
 - **Engineer Summary:** Keep the section heading full-width and left-aligned. In its content row, use two columns: the left column lists the names of the engineers/disciplines that actually worked; the right column states what each listed engineer worked on. Match each contribution clearly to its engineer.
 - **Testing Summary:** Keep the section heading full-width and left-aligned. In its content row, use two columns: the left column lists test names/types (for example Unit Test, Integration Test, UI Test, API Test, Regression Test); the right column shows the actual result for each test, using `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include evidence or commands when useful. Never mark an unrun test as passed.
@@ -92,18 +93,18 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 **Unified report template:**
 
-Use one HTML table centered within the report body. Its left and right outer gaps must be equal. Use `margin-left:auto` and `margin-right:auto` where supported. Keep the table responsive and within the available body width. The PROJECT REPORT heading is centered; the three summary section headings are left-aligned. Use the following structure:
+Use one HTML table centered within the report body, with equal left/right outer margins. Apply complete borders to the table and every cell, and equal inner cell padding on all sides. The PROJECT REPORT heading is centered; the three summary section headings are left-aligned. Preserve the two-column content layout:
 
-<table style="width:90%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse;">
-  <tr><th colspan="2" style="text-align:center;">PROJECT REPORT</th></tr>
-  <tr><th style="width:50%;">BEFORE</th><th style="width:50%;">AFTER</th></tr>
-  <tr><td>[Relevant previous state]</td><td>[Changes made]</td></tr>
-  <tr><th colspan="2" align="left">ENGINEER SUMMARY</th></tr>
-  <tr><td>[Engineer / Discipline names]</td><td>[Each engineer's corresponding contribution]</td></tr>
-  <tr><th colspan="2" align="left">TESTING SUMMARY</th></tr>
-  <tr><td>[Test name/type]</td><td>[Actual status: PASSED / FAILED / PENDING / NOT APPLICABLE]</td></tr>
-  <tr><th colspan="2" align="left">QUALITY SUMMARY</th></tr>
-  <tr><td>[Quality metric/check]</td><td>[Measured value or actual status / Not Measured]</td></tr>
+<table style="width:90%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; ">
+  <tr><th colspan="2" style="text-align:center; border:1px solid; padding:10px;">PROJECT REPORT</th></tr>
+  <tr><th style="width:50%; border:1px solid; padding:10px;">BEFORE</th><th style="width:50%; border:1px solid; padding:10px;">AFTER</th></tr>
+  <tr><td style="border:1px solid; padding:10px;">[Relevant previous state]</td><td style="border:1px solid; padding:10px;">[Changes made]</td></tr>
+  <tr><th colspan="2" align="left" style="text-align:left; border:1px solid; padding:10px;">ENGINEER SUMMARY</th></tr>
+  <tr><td style="border:1px solid; padding:10px;">[Engineer / Discipline names]</td><td style="border:1px solid; padding:10px;">[Each engineer's corresponding contribution]</td></tr>
+  <tr><th colspan="2" align="left" style="text-align:left; border:1px solid; padding:10px;">TESTING SUMMARY</th></tr>
+  <tr><td style="border:1px solid; padding:10px;">[Test name/type]</td><td style="border:1px solid; padding:10px;">[Actual status: PASSED / FAILED / PENDING / NOT APPLICABLE]</td></tr>
+  <tr><th colspan="2" align="left" style="text-align:left; border:1px solid; padding:10px;">QUALITY SUMMARY</th></tr>
+  <tr><td style="border:1px solid; padding:10px;">[Quality metric/check]</td><td style="border:1px solid; padding:10px;">[Measured value or actual status / Not Measured]</td></tr>
 </table>
 
-For multiple engineers, tests, or quality metrics, add more rows while preserving the same two-column pattern. Do not merge the two content columns in these three summary sections.
+For multiple engineers, tests, or quality metrics, add rows while preserving complete borders and equal cell padding. Never replace the cell borders with underlines.
