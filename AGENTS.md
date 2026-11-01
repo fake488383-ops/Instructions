@@ -75,14 +75,14 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 6. Future Enhancements
 
 ```text
-                 ╔══════════════════════════════════════════════════════════════════════════════════╗                   
-                 ║                              FUTURE CAPABILITIES                                  ║                  
-                 ╠══════════════════════════════════════════════════════════════════════════════════╣                   
-                 ║  01. [Capability title]                                  [MISSING / IMPROVEMENT] ║                   
-                 ║      [Short description]                                                        ║                    
-                 ║  02. [Next finding; continue numbering]                  [MISSING / IMPROVEMENT] ║                   
-                 ║      [Short description]                                                        ║                    
-                 ╚══════════════════════════════════════════════════════════════════════════════════╝                   
+                  ╔══════════════════════════════════════════════════════════════════════════════════╗                  
+                  ║                              FUTURE CAPABILITIES                                 ║                  
+                  ╠══════════════════════════════════════════════════════════════════════════════════╣                  
+                  ║  01. [Capability title]                                  [MISSING / IMPROVEMENT] ║                  
+                  ║      [Short description]                                                         ║                  
+                  ║  02. [Next finding; continue numbering]                  [MISSING / IMPROVEMENT] ║                  
+                  ║      [Short description]                                                         ║                  
+                  ╚══════════════════════════════════════════════════════════════════════════════════╝                  
 ```
 
 ## 7. Task Completion Report
