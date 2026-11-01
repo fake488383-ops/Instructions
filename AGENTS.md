@@ -91,21 +91,21 @@ Generate this report after every task. Keep it fully dynamic: add one row per ac
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                  FINAL REPORT — TASK FINAL REPORT                                   │
+│FINAL REPORT — TASK FINAL REPORT                                                                    │
 ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ BEFORE                                      │ AFTER                                                  │
-│ [Existing state before the task]           │ [New additions and verified improvements]              │
+│BEFORE                                                            │AFTER                            │
+│[Existing state before the task]                                  │[New additions and verified impro│
 ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 01. ENGINEER SUMMARY                                                                              │
-│ ENGINEER NAME                                                        CONTRIBUTION                 │
-│ [Full discipline name — one row per engineer]                         [Work performed]              │
+│01. ENGINEER SUMMARY                                                                                │
+│ENGINEER NAME                                                     CONTRIBUTION                      │
+│[Full discipline name — one row per engineer]                     [Work performed]                  │
 ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 02. TEST & VALIDATION SUMMARY                                                                     │
-│ TEST NAME                                                                 STATUS                   │
-│ [Actual test name — one row per test]                                     [PASS / FAIL]             │
+│02. TEST & VALIDATION SUMMARY                                                                       │
+│TEST NAME                                                         STATUS                            │
+│[Actual test name — one row per test]                             [PASS / FAIL]                     │
 ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 03. FEATURE VALIDATION SUMMARY                                                                    │
-│ FEATURE NAME                                                              STATUS                   │
-│ [Added or improved feature — one row per feature]                         [WORKING / PASS / FAIL]   │
+│03. FEATURE VALIDATION SUMMARY                                                                      │
+│FEATURE NAME                                                      STATUS                            │
+│[Added or improved feature — one row per feature]                 [WORKING / PASS / FAIL]           │
 └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
