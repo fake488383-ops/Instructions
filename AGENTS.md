@@ -85,7 +85,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
                   ╚══════════════════════════════════════════════════════════════════════════════════╝                  
 ```
 
-## 7. Task Final Report
+## 7. Task Completion Report
 
 ```text
               ┌──────────────────────────────────────────────────────────────────────────────────────────┐              
@@ -94,15 +94,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               │                   BEFORE                   │                    AFTER                    │              
               │         [Relevant old-state items]         │      [Verified resulting-state items]       │              
               ├──────────────────────────────────────────────────────────────────────────────────────────┤              
-              │    ENGINEER SUMMARY                                                                     │              
+              │ 01. ENGINEER SUMMARY                                                                     │              
               │                                                                              CONTRIBUTION│              
               │[Engineer name]                                                [Verified work contributed]│              
               ├──────────────────────────────────────────────────────────────────────────────────────────┤              
-              │    TEST & VALIDATION SUMMARY                                                            │              
+              │ 02. TEST & VALIDATION SUMMARY                                                            │              
               │                                                                                   STATUS│              
               │[Check performed]                                           [Verified result and evidence]│              
               ├──────────────────────────────────────────────────────────────────────────────────────────┤              
-              │    FEATURE VALIDATION SUMMARY                                                           │              
+              │ 03. FEATURE VALIDATION SUMMARY                                                           │              
               │                                                                                    STATUS│              
               │[Feature added/changed]                                            [VERIFIED / NEEDS WORK]│              
               └──────────────────────────────────────────────────────────────────────────────────────────┘              
