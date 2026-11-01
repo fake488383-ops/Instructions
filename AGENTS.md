@@ -78,7 +78,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Keep all report content in one continuous table. Do not create separate tables, boxes, or disconnected sections.
 - Make the report box span the full available content width (100%), from the left content margin to the right content margin. Do not render it as a narrow or half-width table. Expand the layout fully across the page's usable width.
 - Keep the report box centered with equal outer left and right margins; do not add extra left indentation or padding that shifts it to one side. Use one full-width column only, with consistent cell padding and row spacing. Center-align all headings, labels, and content.
-- Use two side-by-side columns only for the combined **BEFORE / AFTER** comparison row. Keep all other report sections as single full-width rows. Preserve the outer border and horizontal section/divider lines.
+- Use a single-column table throughout; do not create a second column or any center vertical divider. Preserve the outer border and all horizontal section/divider lines.
 - Include only these four sections, in this exact order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**. Do not include Feature Summary, Feature Details, Security & Performance Review, Architecture & Impact Summary, Build & Deployment Summary, or Final Result & Next Steps.
 - Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, and test names.
 
@@ -95,8 +95,10 @@ Create exactly one continuous report table without a separate **FINAL REPORT** t
 | **PROJECT REPORT** |
 |:---:|
 | **1. BEFORE / AFTER** |
-| **BEFORE** | **AFTER** |
-| [Relevant previous state] | [Changes made] |
+| **BEFORE** |
+| [Relevant previous state] |
+| **AFTER** |
+| [Changes made] |
 | **2. ENGINEER SUMMARY** |
 | [Actual discipline and work performed] |
 | **3. TESTING SUMMARY** |
