@@ -79,22 +79,11 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Add every verified finding to the **CAPABILITY GAP & IMPROVEMENT ANALYSIS** blueprint with continuous numbering. Show the responsible `ENGINEER TITLE` directly above the capability title, with the same left text alignment as the capability-title text and short description. Place the sequence number (for example, `01.`) immediately after the left border, with no left padding; place the capability-title text after the number and its separator so that the title text aligns exactly with the engineer title and short description. Keep `MISSING` or `IMPROVEMENT` at the far right with consistent right padding. Center the complete three-line content block vertically within the bordered row. Show the responsible engineer for every finding, including `Apply for All`, while keeping one shared continuous numbering sequence. Keep content vertically centered with balanced inner spacing; no text may touch or overlap border lines. Expand rows as needed and preserve the blueprint's design.
 - Continue until the user presses the built-in Stop control. Preserve findings; do not implement during analysis. After stopping, wait for the user's selection, implement only selected findings, run relevant tests, and generate the unchanged **TASK FINAL REPORT**.
 - If chat triggering, continuous execution, or Stop is unsupported, state the limitation honestly.
-## 6. Capability Gap & Improvement Analysis
-
-- Keep the responsible `ENGINEER TITLE`, capability-title text, and short description in one compact, vertically centered text block with the same left alignment.
-- Keep the `01.` sequence number flush against the left border. Place the capability title immediately after it with only a small, consistent gap; keep the engineer title and short description closely aligned to that same text column.
-- Reduce unnecessary margins, padding, and blank spaces between all three text lines while preserving readability and a small, even inset from the top and bottom borders.
-- Keep `MISSING` or `IMPROVEMENT` right-aligned with a small, consistent inset from the right border.
-- Keep the original layout unchanged. Draw the white bottom underline perfectly straight and horizontal; align its right endpoint exactly with the top border's right endpoint. Keep the right border perfectly vertical, with all row endings on the same column. Do not let the underline or border shift, slope, bend, or extend unevenly. Do not add an engineer-name field or a separate short-description heading/column. Show the responsible engineer for every finding, including `Apply for All`.
-
-```text
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│    [ENGINEER TITLE]                                                                                 │
-│01. [Capability title]                                             [MISSING / IMPROVEMENT]          │
-│    [Short description]                                                                              │
+│    [ENGINEER TITLE]                                                                                │
+│01. [Capability title]                                                       [MISSING / IMPROVEMENT]│
+│    [Short description]                                                                             │
 └────────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
-
 ## 7. Task Final Report
 
 **Mandatory Dynamic Report Rules**
