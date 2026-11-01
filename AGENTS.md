@@ -78,7 +78,19 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **BEFORE:** summarize the relevant state or features before the task.
 - **AFTER:** list what was added, changed, or improved by the task.
 - Add one row per relevant item. Keep the report short, clear, and in Roman Urdu. If a column has no relevant information, write `None`.
+- Center the table on the page with equal left and right margins, keeping both columns equal in width.
 
-| BEFORE | AFTER |
-|---|---|
-| [Relevant existing state] | [Added, changed, or improved result] |
+<table align="center" width="80%">
+  <thead>
+    <tr>
+      <th align="center" width="50%">BEFORE</th>
+      <th align="center" width="50%">AFTER</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[Relevant existing state]</td>
+      <td>[Added, changed, or improved result]</td>
+    </tr>
+  </tbody>
+</table>
