@@ -74,62 +74,51 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Enterprise Task Completion Report
 - After every task, including small changes, generate a report at the end. Scale the detail to the task: keep small-task entries brief and provide full explanations for complex tasks.
-- Combine all 11 report sections into **one unified, continuous, full-width table**. Do not create separate tables, boxes, or disconnected sections.
-- Use two equal-width columns throughout, with consistent cell padding, row spacing, and table width.
-- Center-align all text in every cell, including section titles, column headings, labels, and explanations. Make section-title rows visually distinct within the same table.
-- Keep all sections in the exact sequence below. If a section is irrelevant, write `Not Applicable`; never invent details or claim unperformed work.
+- Start the report with the exact main title **FINAL REPORT**. Do not include a Task Overview section; the report must begin directly with **BEFORE / AFTER**.
+- Combine all report sections into one unified, continuous, full-width table. Do not create separate tables, boxes, or disconnected sections.
+- Use two equal-width columns throughout, with consistent cell padding, row spacing, and table width. Center-align all headings, labels, and content.
+- Remove all visible vertical borders/dividers between columns and rows throughout the unified table. The only exception is the single vertical divider separating the **BEFORE** and **AFTER** columns in the Before / After section. Do not show any other vertical divider or underline.
+- Keep the sections in the exact sequence below. If a section is irrelevant, write `Not Applicable`; never invent details or claim unperformed work.
 - Write explanations in clear Roman Urdu while preserving established technical terms, filenames, paths, commands, APIs, and test names.
 
 **Required report sections and rules:**
-1. **Task Overview:** Task name, objective, task type, scope, and overall completion status.
-2. **Before / After:** Relevant project state before the task and the exact changes afterward. Use two equal-width columns.
-3. **Feature Summary:** List every feature created or changed, its purpose in one concise sentence, and its current status. Use `WORKING`, `ISSUE FOUND`, or `PENDING`. Use `WORKING` only after verification.
-4. **Feature Details:** Explain each feature's purpose, the problem it solves, how it works, user-visible behavior, inputs/outputs, and important dependencies. Explain technical details at a level appropriate to the task.
-5. **Engineering Disciplines:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
-6. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
-7. **Quality Metrics:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
-8. **Security & Performance Review:** Summarize relevant security checks, privacy/data-handling considerations, resource usage, latency, responsiveness, and performance impact. Clearly mark checks that were not performed.
-9. **Architecture & Impact Summary:** Explain affected modules, components, APIs, database/schema, dependencies, interfaces, and compatibility. Identify potential side effects and whether existing behavior was preserved.
-10. **Build & Deployment Summary:** Report build, packaging, run, release, or deployment outcomes only when applicable and actually attempted. Include target/environment and errors or blockers where relevant.
-11. **Final Result & Next Steps:** State what was delivered, whether the task's acceptance criteria were met, remaining work/blockers, and the most useful next action.
+1. **Before / After:** Relevant project state before the task and the exact changes afterward. Use two equal-width columns with one visible vertical divider between BEFORE and AFTER.
+2. **Feature Summary:** List every feature created or changed, its purpose in one concise sentence, and its current status. Use `WORKING`, `ISSUE FOUND`, or `PENDING`. Use `WORKING` only after verification.
+3. **Feature Details:** Explain each feature's purpose, the problem it solves, how it works, user-visible behavior, inputs/outputs, and important dependencies. Explain technical details at a level appropriate to the task.
+4. **Engineering Disciplines:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
+5. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
+6. **Quality Metrics:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
+7. **Security & Performance Review:** Summarize relevant security checks, privacy/data-handling considerations, resource usage, latency, responsiveness, and performance impact. Clearly mark checks that were not performed.
+8. **Architecture & Impact Summary:** Explain affected modules, components, APIs, database/schema, dependencies, interfaces, and compatibility. Identify potential side effects and whether existing behavior was preserved.
+9. **Build & Deployment Summary:** Report build, packaging, run, release, or deployment outcomes only when applicable and actually attempted. Include target/environment and errors or blockers where relevant.
+10. **Final Result & Next Steps:** State what was delivered, whether the task's acceptance criteria were met, remaining work/blockers, and the most useful next action.
 
 **Unified report template:**
 
-Generate exactly one continuous table containing every section below. Never create separate tables or boxes. Keep two equal-width columns and consistent cell padding, row spacing, and overall width. Center-align every heading and all cell text. Use distinct section-heading rows within the same table. Add rows as needed for multiple entries.
+Begin with the heading **FINAL REPORT**, then create exactly one continuous table. Do not include Task Overview. The first table section must be Before / After. Keep two equal-width columns and consistent cell padding, row spacing, and overall width. Center-align every heading and all cell text. Use section-title rows within the same table. Remove all vertical borders/dividers except the one separating BEFORE and AFTER. Do not use underlines or other vertical separators anywhere else. Add rows as needed for multiple entries.
+
+# FINAL REPORT
 
 | SECTION / ITEM | DETAILS |
 |:---:|:---:|
-| **1. TASK OVERVIEW** | **—** |
-| Task / Objective | [Task name and objective] |
-| Task Type / Scope | [Type and scope] |
-| Overall Status | [Completed / Partially Completed / Blocked] |
-| **2. BEFORE / AFTER** | **—** |
-| BEFORE | AFTER |
+| **1. BEFORE / AFTER** | **—** |
+| **BEFORE** | **AFTER** |
 | [Relevant previous state] | [Changes made] |
-| **3. FEATURE SUMMARY** | **—** |
-| Feature | Purpose / Status |
+| **2. FEATURE SUMMARY** | **—** |
 | [Feature name] | [Purpose — WORKING / ISSUE FOUND / PENDING] |
-| **4. FEATURE DETAILS** | **—** |
-| Feature | Explanation |
+| **3. FEATURE DETAILS** | **—** |
 | [Feature name] | [Problem solved, how it works, user behavior, inputs/outputs, dependencies] |
-| **5. ENGINEERING DISCIPLINES** | **—** |
-| Discipline | Contribution |
+| **4. ENGINEERING DISCIPLINES** | **—** |
 | [Actual discipline] | [Work performed] |
-| **6. TESTING SUMMARY** | **—** |
-| Test | Result / Evidence |
+| **5. TESTING SUMMARY** | **—** |
 | [Applicable test] | [PASSED / FAILED / PENDING / NOT APPLICABLE — evidence] |
-| **7. QUALITY METRICS** | **—** |
-| Metric | Measured Result |
+| **6. QUALITY METRICS** | **—** |
 | [Tests / Coverage / Defects / Duration] | [Actual value or Not Measured] |
-| **8. SECURITY & PERFORMANCE REVIEW** | **—** |
-| Area | Finding / Status |
+| **7. SECURITY & PERFORMANCE REVIEW** | **—** |
 | [Security / Privacy / Performance] | [Verified finding, impact, or Not Checked] |
-| **9. ARCHITECTURE & IMPACT SUMMARY** | **—** |
-| Affected Area | Change / Impact |
+| **8. ARCHITECTURE & IMPACT SUMMARY** | **—** |
 | [Module / API / Database / Dependency] | [Change and compatibility impact] |
-| **10. BUILD & DEPLOYMENT SUMMARY** | **—** |
-| Activity | Result |
+| **9. BUILD & DEPLOYMENT SUMMARY** | **—** |
 | [Build / Run / Package / Deploy] | [Actual result, environment, or Not Applicable] |
-| **11. FINAL RESULT & NEXT STEPS** | **—** |
-| Final Result | Next Step / Blocker |
+| **10. FINAL RESULT & NEXT STEPS** | **—** |
 | [Delivered outcome and acceptance status] | [Remaining work and prioritized next action] |
