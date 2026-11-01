@@ -85,25 +85,27 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
                   ╚══════════════════════════════════════════════════════════════════════════════════╝                  
 ```
 
-## 7. Task Completion Report
+## 7. Task Final Report
+
+Generate this report after every task. Keep it fully dynamic: add one row per actual engineer, test, and feature—never cap, merge, or omit entries. Use exact engineer discipline names from Section 5 and show each contribution. List only performed test names with PASS/FAIL status. List every added or improved feature with its verified working/test status. BEFORE shows the prior state; AFTER shows new additions and verified improvements. Include only evidence-backed results; mark untested or incomplete items clearly.
 
 ```text
-              ┌──────────────────────────────────────────────────────────────────────────────────────────┐              
-              │                                  FINAL REPORT                                                 
-              ├────────────────────────────────────────────┬─────────────────────────────────────────────┤              
-              │                   BEFORE                   │                    AFTER                    │              
-              │         [Relevant old-state items]         │      [Verified resulting-state items]       │              
-              ├──────────────────────────────────────────────────────────────────────────────────────────┤              
-              │ 01. ENGINEER SUMMARY                                                                     │              
-              │                                                                              CONTRIBUTION│              
-              │[Engineer name]                                                [Verified work contributed]│              
-              ├──────────────────────────────────────────────────────────────────────────────────────────┤              
-              │ 02. TEST & VALIDATION SUMMARY                                                            │              
-              │                                                                                   STATUS│              
-              │[Check performed]                                           [Verified result and evidence]│              
-              ├──────────────────────────────────────────────────────────────────────────────────────────┤              
-              │ 03. FEATURE VALIDATION SUMMARY                                                           │              
-              │                                                                                    STATUS│              
-              │[Feature added/changed]                                            [VERIFIED / NEEDS WORK]│              
-              └──────────────────────────────────────────────────────────────────────────────────────────┘              
+┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                  FINAL REPORT — TASK FINAL REPORT                                   │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ BEFORE                                      │ AFTER                                                  │
+│ [Existing state before the task]           │ [New additions and verified improvements]              │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 01. ENGINEER SUMMARY                                                                              │
+│ ENGINEER NAME                                                        CONTRIBUTION                 │
+│ [Full discipline name — one row per engineer]                         [Work performed]              │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 02. TEST & VALIDATION SUMMARY                                                                     │
+│ TEST NAME                                                                 STATUS                   │
+│ [Actual test name — one row per test]                                     [PASS / FAIL]             │
+├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 03. FEATURE VALIDATION SUMMARY                                                                    │
+│ FEATURE NAME                                                              STATUS                   │
+│ [Added or improved feature — one row per feature]                         [WORKING / PASS / FAIL]   │
+└────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
