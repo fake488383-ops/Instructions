@@ -91,54 +91,74 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 10. **Build & Deployment Summary:** Report build, packaging, run, release, or deployment outcomes only when applicable and actually attempted. Include target/environment and errors or blockers where relevant.
 11. **Final Result & Next Steps:** State what was delivered, whether the task's acceptance criteria were met, remaining work/blockers, and the most useful next action.
 
-**Unified report template:**
+**Sequential report template:**
 
-<table align="center" width="100%">
-  <tbody>
-    <tr><th align="center" colspan="2">TASK OVERVIEW</th></tr>
-    <tr><th align="center" width="50%">ITEM</th><th align="center" width="50%">DETAIL</th></tr>
-    <tr><td align="center">Task / Objective</td><td align="center">[Task name and objective]</td></tr>
-    <tr><td align="center">Task Type / Scope</td><td align="center">[Type and scope]</td></tr>
-    <tr><td align="center">Overall Status</td><td align="center">[Completed / Partially Completed / Blocked]</td></tr>
+Generate each section as its own separate, full-width box/table. Place the boxes vertically, one below another, in the exact sequence below. Do not combine them into one large table. Keep each box's title as its heading, center-align titles and column headings, and use equal left/right margins. Keep the content inside each box relevant to that section.
 
-    <tr><th align="center" colspan="2">BEFORE / AFTER</th></tr>
-    <tr><th align="center">BEFORE</th><th align="center">AFTER</th></tr>
-    <tr><td align="center">[Relevant previous state]</td><td align="center">[Changes made]</td></tr>
+**1. TASK OVERVIEW**
 
-    <tr><th align="center" colspan="2">FEATURE SUMMARY</th></tr>
-    <tr><th align="center">FEATURE</th><th align="center">PURPOSE / STATUS</th></tr>
-    <tr><td align="center">[Feature name]</td><td align="center">[Purpose — WORKING / ISSUE FOUND / PENDING]</td></tr>
+| ITEM | DETAIL |
+|:---:|:---:|
+| Task / Objective | [Task name and objective] |
+| Task Type / Scope | [Type and scope] |
+| Overall Status | [Completed / Partially Completed / Blocked] |
 
-    <tr><th align="center" colspan="2">FEATURE DETAILS</th></tr>
-    <tr><th align="center">FEATURE</th><th align="center">EXPLANATION</th></tr>
-    <tr><td align="center">[Feature name]</td><td align="center">[Problem solved, how it works, user behavior, inputs/outputs, dependencies]</td></tr>
+**2. BEFORE / AFTER**
 
-    <tr><th align="center" colspan="2">ENGINEERING DISCIPLINES</th></tr>
-    <tr><th align="center">DISCIPLINE</th><th align="center">CONTRIBUTION</th></tr>
-    <tr><td align="center">[Actual discipline]</td><td align="center">[Work performed]</td></tr>
+| BEFORE | AFTER |
+|:---:|:---:|
+| [Relevant previous state] | [Changes made] |
 
-    <tr><th align="center" colspan="2">TESTING SUMMARY</th></tr>
-    <tr><th align="center">TEST</th><th align="center">RESULT / EVIDENCE</th></tr>
-    <tr><td align="center">[Applicable test]</td><td align="center">[PASSED / FAILED / PENDING / NOT APPLICABLE — evidence]</td></tr>
+**3. FEATURE SUMMARY**
 
-    <tr><th align="center" colspan="2">QUALITY METRICS</th></tr>
-    <tr><th align="center">METRIC</th><th align="center">MEASURED RESULT</th></tr>
-    <tr><td align="center">[Tests / Coverage / Defects / Duration]</td><td align="center">[Actual value or Not Measured]</td></tr>
+| FEATURE | PURPOSE / STATUS |
+|:---:|:---:|
+| [Feature name] | [Purpose — WORKING / ISSUE FOUND / PENDING] |
 
-    <tr><th align="center" colspan="2">SECURITY &amp; PERFORMANCE REVIEW</th></tr>
-    <tr><th align="center">AREA</th><th align="center">FINDING / STATUS</th></tr>
-    <tr><td align="center">[Security / Privacy / Performance]</td><td align="center">[Verified finding, impact, or Not Checked]</td></tr>
+**4. FEATURE DETAILS**
 
-    <tr><th align="center" colspan="2">ARCHITECTURE &amp; IMPACT SUMMARY</th></tr>
-    <tr><th align="center">AFFECTED AREA</th><th align="center">CHANGE / IMPACT</th></tr>
-    <tr><td align="center">[Module / API / Database / Dependency]</td><td align="center">[Change and compatibility impact]</td></tr>
+| FEATURE | EXPLANATION |
+|:---:|:---:|
+| [Feature name] | [Problem solved, how it works, user behavior, inputs/outputs, dependencies] |
 
-    <tr><th align="center" colspan="2">BUILD &amp; DEPLOYMENT SUMMARY</th></tr>
-    <tr><th align="center">ACTIVITY</th><th align="center">RESULT</th></tr>
-    <tr><td align="center">[Build / Run / Package / Deploy]</td><td align="center">[Actual result, environment, or Not Applicable]</td></tr>
+**5. ENGINEERING DISCIPLINES**
 
-    <tr><th align="center" colspan="2">FINAL RESULT &amp; NEXT STEPS</th></tr>
-    <tr><th align="center">FINAL RESULT</th><th align="center">NEXT STEP / BLOCKER</th></tr>
-    <tr><td align="center">[Delivered outcome and acceptance status]</td><td align="center">[Remaining work and prioritized next action]</td></tr>
-  </tbody>
-</table>
+| DISCIPLINE | CONTRIBUTION |
+|:---:|:---:|
+| [Actual discipline] | [Work performed] |
+
+**6. TESTING SUMMARY**
+
+| TEST | RESULT / EVIDENCE |
+|:---:|:---:|
+| [Applicable test] | [PASSED / FAILED / PENDING / NOT APPLICABLE — evidence] |
+
+**7. QUALITY METRICS**
+
+| METRIC | MEASURED RESULT |
+|:---:|:---:|
+| [Tests / Coverage / Defects / Duration] | [Actual value or Not Measured] |
+
+**8. SECURITY & PERFORMANCE REVIEW**
+
+| AREA | FINDING / STATUS |
+|:---:|:---:|
+| [Security / Privacy / Performance] | [Verified finding, impact, or Not Checked] |
+
+**9. ARCHITECTURE & IMPACT SUMMARY**
+
+| AFFECTED AREA | CHANGE / IMPACT |
+|:---:|:---:|
+| [Module / API / Database / Dependency] | [Change and compatibility impact] |
+
+**10. BUILD & DEPLOYMENT SUMMARY**
+
+| ACTIVITY | RESULT |
+|:---:|:---:|
+| [Build / Run / Package / Deploy] | [Actual result, environment, or Not Applicable] |
+
+**11. FINAL RESULT & NEXT STEPS**
+
+| FINAL RESULT | NEXT STEP / BLOCKER |
+|:---:|:---:|
+| [Delivered outcome and acceptance status] | [Remaining work and prioritized next action] |
