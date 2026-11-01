@@ -78,12 +78,12 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Inside the report box, replace **SECTION / ITEM** and **DETAILS** with one full-width, horizontally centered heading: **PROJECT REPORT**.
 - Combine all report sections into one unified, continuous, full-width report box. Do not create separate tables, boxes, or disconnected sections.
 - Use two equal-width columns for report content, with consistent cell padding and row spacing. Center-align all headings, labels, and content.
-- Remove every vertical divider/border from the entire report box, including its center, except for exactly one vertical divider between **BEFORE** and **AFTER** in the **BEFORE / AFTER** section. No other vertical line may appear anywhere in the report box.
+- Remove all vertical lines and vertical dividers from the entire report box, including between **BEFORE** and **AFTER**.
 - Keep the sections in the exact sequence below. If a section is irrelevant, write `Not Applicable`; never invent details or claim unperformed work.
 - Write explanations in clear Roman Urdu while preserving established technical terms, filenames, paths, commands, APIs, and test names.
 
 **Required report sections and rules:**
-1. **Before / After:** Relevant project state before the task and the exact changes afterward. Use two equal-width columns with one visible vertical divider between BEFORE and AFTER.
+1. **Before / After:** Relevant project state before the task and the exact changes afterward. Use two equal-width columns with no vertical divider between them.
 2. **Feature Summary:** List every feature created or changed, its purpose in one concise sentence, and its current status. Use `WORKING`, `ISSUE FOUND`, or `PENDING`. Use `WORKING` only after verification.
 3. **Feature Details:** Explain each feature's purpose, the problem it solves, how it works, user-visible behavior, inputs/outputs, and important dependencies. Explain technical details at a level appropriate to the task.
 4. **Engineering Disciplines:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
@@ -96,11 +96,11 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 **Unified report template:**
 
-Begin with the heading **FINAL REPORT**, then create exactly one continuous table. Do not include Task Overview. The first table section must be Before / After. Keep two equal-width columns and consistent cell padding, row spacing, and overall width. Center-align every heading and all cell text. Use section-title rows within the same table. Remove all vertical borders/dividers except the one separating BEFORE and AFTER. Do not use underlines or other vertical separators anywhere else. Add rows as needed for multiple entries.
+Begin with the heading **FINAL REPORT**, then create exactly one continuous table. Do not include Task Overview. The first table section must be Before / After. Keep two equal-width columns and consistent cell padding, row spacing, and overall width. Center-align every heading and all cell text. Use section-title rows within the same table. Remove all vertical borders/dividers throughout the entire report. Do not use vertical separators anywhere. Add rows as needed for multiple entries.
 
 # FINAL REPORT
 
-| **PROJECT REPORT** | **PROJECT REPORT** |
+| **PROJECT REPORT** |
 |:---:|:---:|
 | **1. BEFORE / AFTER** | **—** |
 | **BEFORE** | **AFTER** |
