@@ -104,3 +104,18 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               │[Feature added/changed]                                                      [VERIFIED / NEEDS WORK]│
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+**Report Blueprint**
+- Generate the report after implementation and verification; use only observed project state and recorded evidence.
+- Compare the relevant BEFORE state with the verified AFTER state.
+- List only engineers who made a meaningful contribution and summarize their actual work.
+- Include tests/checks performed, their outcomes, and any unresolved failures or blockers.
+- List changed or added features with a clear status; never mark incomplete work as verified.
+- Keep the report concise, task-specific, and entirely in Roman Urdu except technical terms.
+
+**Next Improvement Suggestions**
+1. [BEST — highest-impact improvement to do first]
+2. [Second useful improvement]
+3. [Third useful improvement]
+4. [Fourth useful improvement]
+5. [Fifth useful improvement]
