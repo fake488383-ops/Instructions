@@ -81,19 +81,19 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - If chat triggering, continuous execution, or Stop is unsupported, state the limitation honestly.
 ## 6. Capability Gap & Improvement Analysis
 
+- Keep the three content lines left-aligned close to the left border; do not center them or add broad outer padding.
+- Align the capability title after its number with the short description below it.
+- Keep the same horizontal gap between the engineer title and the capability title as the gap between the capability number (for example, `01.`) and its title.
+- Keep the status at the far right. Maintain clear spacing from the border; no text may touch or overlap border lines.
+
 ```text
-              ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-              │                                                                                                    │
-              │                         CAPABILITY GAP & IMPROVEMENT ANALYSIS                                      │
-              │                                                                                                    │
-              ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │                                                                                                    │
-              │                         [Engineer title]                                                           │
-              │                         01. [Capability title]                         [MISSING / IMPROVEMENT]     │
-              │                         [Short description]                                                       │
-              │                                                                                                    │
-              └────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│[Engineer title]        [MISSING / IMPROVEMENT]                                                      │
+│01.     [Capability title]                                                                          │
+│        [Short description]                                                                         │
+└────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
 ## 7. Task Final Report
 
 **Mandatory Dynamic Report Rules**
