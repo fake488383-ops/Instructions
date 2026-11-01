@@ -77,7 +77,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
 - **Before / After:** Show key points only. BEFORE records missing features and the prior state of existing features; AFTER records what was added and how existing features were improved.
 - **Engineer Summary:** List each participating discipline's full engineer name on the left and that engineer's matching contribution on the right. Include only engineers who actually worked.
-- **Testing Summary:** List each test/check performed on the left and its actual PASS/FAIL or other truthful status on the right.
+- **Testing Summary:** Show the added or modified features/tests by name on the left and their actual PASS/FAIL status on the right. Test every added or modified feature; never claim PASS without verification.
 - **Quality Summary:** Show each applicable quality/health metric on the left and its actual measured value on the right (e.g., latency/ping in ms, response time in seconds, speed/throughput, resource usage, and service health). Include units and test conditions where relevant; never invent values—mark unmeasured metrics as NOT MEASURED.
 
 
