@@ -78,7 +78,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Before / After:** Show key points only. BEFORE records missing features and the prior state of existing features; AFTER records what was added and how existing features were improved.
 - **Engineer Summary:** List each participating discipline's full engineer name on the left and that engineer's matching contribution on the right. Include only engineers who actually worked.
 - **Testing Summary:** List each test/check performed on the left and its actual PASS/FAIL or other truthful status on the right.
-- **Quality Summary:** List each quality check/metric on the left and its verified result/status on the right. Never invent results; mark unperformed or unavailable checks clearly.
+- **Quality Summary:** Show each applicable quality/health metric on the left and its actual measured value on the right (e.g., latency/ping in ms, response time in seconds, speed/throughput, resource usage, and service health). Include units and test conditions where relevant; never invent values—mark unmeasured metrics as NOT MEASURED.
 
 
 <div align="center">
