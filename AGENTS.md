@@ -91,7 +91,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
               │                                         TASK FINAL REPORT                                          │
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │                     BEFORE                                             AFTER                       │
+              │                     BEFORE                      │                      AFTER                       │
               │             [Relevant old-state items]                     [Verified resulting-state items]        │
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
               │ENGINEER SUMMARY                                                                    CONTRIBUTION    │
