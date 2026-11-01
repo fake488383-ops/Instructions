@@ -73,14 +73,12 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
 ### Engineer Selection & Continuous Future-Capability Analysis
-- When the user sends `0` as an AI Agent chat message and presses Enter, display only the 31 engineer titles from this list, numbered 1–31, plus `32. Apply for All`. Show no descriptions or extra text. This is a chat-command trigger, not a keyboard shortcut.
-- Analyze only the selected engineer's own discipline and listed responsibilities; `Apply for All` runs each engineer's analysis within its own domain. Do not take over, duplicate, or report another discipline's responsibilities.
-- For the selected engineer, continuously inspect the complete project and verify only domain-relevant existing work. Identify only **MISSING** capabilities and **IMPROVEMENT** opportunities within that engineer's responsibilities. Do not add unrelated categories such as security or performance unless they belong to the selected engineer's defined responsibilities.
-- Research current, authoritative sources online where useful; compare findings with project evidence. Do not invent, duplicate, or recommend irrelevant items. If another discipline's issue is noticed, leave it to that discipline rather than reporting it as the selected engineer's finding.
-- Present findings in the existing **CAPABILITY GAP & IMPROVEMENT ANALYSIS** blueprint as a continuously numbered, dynamically growing list. Each item must contain only a concise capability title, a short description of its project benefit, and status `MISSING` or `IMPROVEMENT`. Keep the blueprint's exact design, borders, alignment, spacing, and underlines unchanged; only item content and row count may grow.
-- Continue until the user stops the AI Agent using its built-in Stop control. Preserve all findings collected so far and the analysis checkpoint; stop promptly when requested. Do not implement findings during analysis.
-- After stopping, wait for the user's instruction to apply all findings or selected item numbers. Implement only the requested findings, verify them with relevant tests, then generate the unchanged **TASK FINAL REPORT** blueprint.
-- If the agent interface does not support a chat message trigger, continuous execution, or built-in Stop control, state the exact limitation; do not pretend the behavior is available.
+- User sends `0` in AI Agent chat and presses Enter: show only the 31 engineer titles (1–31) and `32. Apply for All`, without descriptions. This is a chat command, not a keyboard shortcut.
+- Analyze only the selected engineer's discipline and responsibilities. `Apply for All` analyzes every discipline separately; never overlap or report another engineer's work.
+- Continuously inspect the complete project and identify only relevant **MISSING** capabilities and **IMPROVEMENT** opportunities. Verify existing work and use authoritative research when useful; base findings on evidence and avoid duplicates or irrelevant items.
+- Add findings to the **CAPABILITY GAP & IMPROVEMENT ANALYSIS** blueprint with continuous numbering, a concise title, short project benefit, and `MISSING` or `IMPROVEMENT` status. Keep its design unchanged.
+- Continue until the user presses the built-in Stop control. Preserve findings; do not implement during analysis. After stopping, wait for the user's selection, implement only selected findings, run relevant tests, and generate the unchanged **TASK FINAL REPORT**.
+- If chat triggering, continuous execution, or Stop is unsupported, state the limitation honestly.
 ## 6. Capability Gap & Improvement Analysis
 
 ```text
