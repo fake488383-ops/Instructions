@@ -74,23 +74,22 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Task Completion Report
 - After every task, including small changes, generate a concise report at the end. Do not use a blueprint or add extra report sections.
-- Use exactly two columns: **BEFORE** and **AFTER**.
+- The **BEFORE / AFTER** report must span the full available width. Keep both columns equal in width, with equal left and right outer margins. Center-align all headings and cell text.
 - **BEFORE:** summarize the relevant state or features before the task.
 - **AFTER:** list what was added, changed, or improved by the task.
 - Add one row per relevant item. Keep the report short, clear, and in Roman Urdu. If a column has no relevant information, write `None`.
-- Center the table on the page with equal left and right margins, keeping both columns equal in width.
 
-<table align="center" width="80%">
-  <thead>
-    <tr>
-      <th align="center" width="50%">BEFORE</th>
-      <th align="center" width="50%">AFTER</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>[Relevant existing state]</td>
-      <td>[Added, changed, or improved result]</td>
-    </tr>
-  </tbody>
-</table>
+| **BEFORE** | **AFTER** |
+|:---:|:---:|
+| [Relevant existing state] | [Added, changed, or improved result] |
+
+### Engineers Future Summary
+- Below the BEFORE / AFTER report, add a separate full-width summary table titled **Engineers Future Summary**.
+- List each feature added or changed during the task by its feature name, with its verification status shown alongside it.
+- Use only these statuses: `PASSED`, `FAILED`, or `PENDING`. Mark a feature `PASSED` only after successful verification; use `FAILED` when verification fails, and `PENDING` when it has not yet been verified.
+- Keep feature names clear and concise. Include one row per feature. Do not list unrelated existing features.
+- Center-align the title, column headings, and cell text.
+
+| **FEATURE** | **STATUS** |
+|:---:|:---:|
+| [Feature name] | [PASSED / FAILED / PENDING] |
