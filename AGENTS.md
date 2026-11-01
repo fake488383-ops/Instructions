@@ -76,7 +76,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - After every task, including small changes, generate a concise report at the end. Scale detail to the task.
 - Use exactly four report sections in this order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**.
 - Combine the entire report into **one single table**. Do not create separate tables or boxes.
-- Make the table use the full available content width (100%), extending to the right content boundary. Remove unnecessary right-side whitespace so the right border aligns with the right edge of the available report area. Keep the left and right outer margins balanced; do not overflow the page or container.
+- Center the complete table horizontally. Keep the left and right outer margins exactly equal; do not stretch the table to touch either side or align it only to the right. Set a suitable width that leaves balanced whitespace on both sides, while never exceeding the available content width.
 - **Before / After:** Within the single table, use two side-by-side cells: BEFORE on the left and AFTER on the right.
 - **Engineer Summary, Testing Summary, and Quality Summary:** Keep each section full-width in the same table, spanning both columns as one cell. Do not split their content into left and right columns.
 - Use one outer table with a consistent border and clear horizontal separators. Do not add a separate FINAL REPORT title or extra report sections.
@@ -90,9 +90,9 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 **Unified report template:**
 
-Use one HTML table with a 100% width, fixed layout, and collapsed borders. Keep the table within the available content area, with its right outer border aligned to the right content boundary and balanced outer margins. Use colspan="2" for each full-width summary row:
+Use one HTML table with a centered layout, a width appropriate to the available content area, and balanced left/right margins. Do not force it to 100% width or pin its right border to the page edge. Use `margin-left:auto` and `margin-right:auto` where supported. Use `colspan="2"` for each full-width summary row:
 
-<table width="100%" style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:90%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse;">
   <tr><th colspan="2">PROJECT REPORT</th></tr>
   <tr><th width="50%">BEFORE</th><th width="50%">AFTER</th></tr>
   <tr><td>[Relevant previous state]</td><td>[Changes made]</td></tr>
