@@ -84,13 +84,13 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Keep the responsible `ENGINEER TITLE`, capability-title text, and short description in one compact, vertically centered text block with the same left alignment.
 - Keep the `01.` sequence number flush against the left border. Place the capability title immediately after it with only a small, consistent gap; keep the engineer title and short description closely aligned to that same text column.
 - Reduce unnecessary margins, padding, and blank spaces between all three text lines while preserving readability and a small, even inset from the top and bottom borders.
-- Keep `MISSING` or `IMPROVEMENT` right-aligned with a small, consistent inset from the right border.
+- Show exactly one status label per finding: either `MISSING` or `IMPROVEMENT`, never both. Place that single label flush against the inner edge of the right border, with zero right-side padding or margin.
 - Draw all four border lines straight, parallel, and perfectly aligned. Keep the right border vertical and ensure every row ends at exactly the same column. Do not add an engineer-name field or a separate short-description heading/column. Show the responsible engineer for every finding, including `Apply for All`.
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │    [ENGINEER TITLE]                                                                                 │
-│01. [Capability title]                                             [MISSING / IMPROVEMENT]          │
+│01. [Capability title]                                                              [MISSING]       │
 │    [Short description]                                                                              │
 └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
