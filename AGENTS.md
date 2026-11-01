@@ -77,12 +77,12 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Inside one unified report box, use **PROJECT REPORT** as the full-width, horizontally centered heading.
 - Keep all report content in one continuous, full-width table. Do not create separate tables, boxes, or disconnected sections.
 - Use two equal-width columns, consistent cell padding and row spacing, and center-align all headings, labels, and content.
-- Keep a complete white border around the report box and its sections. Retain the vertical divider between **BEFORE** and **AFTER**.
+- Keep a complete white border around the report box and its sections. Remove the full-width line/underline across the **BEFORE / AFTER** row only; preserve the outer box border and all other section borders.
 - Include only these four sections, in this exact order: **Before / After**, **Engineering Disciplines**, **Testing Summary**, and **Quality Metrics**. Do not include Feature Summary, Feature Details, Security & Performance Review, Architecture & Impact Summary, Build & Deployment Summary, or Final Result & Next Steps.
 - Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, and test names.
 
 **Required report sections and rules:**
-1. **Before / After:** Show the relevant project state before the task and the exact changes afterward. Use two equal-width columns with one visible vertical divider between them. Center **BEFORE** and **AFTER** within their respective columns.
+1. **Before / After:** Show the relevant project state before the task and the exact changes afterward. Use two equal-width columns. Remove the full horizontal line/underline running across the entire **BEFORE / AFTER** row or paragraph; do not show any line between or beneath the BEFORE and AFTER content. Keep all outer box borders and every other section border unchanged. Center **BEFORE** and **AFTER** within their respective columns.
 2. **Engineering Disciplines:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
 3. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
 4. **Quality Metrics:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
