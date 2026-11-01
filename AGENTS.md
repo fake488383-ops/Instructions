@@ -76,7 +76,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - User sends `0` in AI Agent chat and presses Enter: show only the 31 engineer titles (1–31) and `32. Apply for All`, without descriptions. This is a chat command, not a keyboard shortcut.
 - Analyze only the selected engineer's discipline and responsibilities. `Apply for All` analyzes every discipline separately; never overlap or report another engineer's work.
 - Continuously inspect the complete project and identify only relevant **MISSING** capabilities and **IMPROVEMENT** opportunities. Verify existing work and use authoritative research when useful; base findings on evidence and avoid duplicates or irrelevant items.
-- Add every verified finding to the **CAPABILITY GAP & IMPROVEMENT ANALYSIS** blueprint with continuous numbering. Show the capability title on the left and its short description directly underneath; place `MISSING` or `IMPROVEMENT` status at the far right. Group findings by responsible engineer without adding separate engineer-title or short-description column headings. For `Apply for All`, keep one shared continuous numbering sequence. Expand rows automatically as needed and preserve the blueprint's design.
+- Add every verified finding to the **CAPABILITY GAP & IMPROVEMENT ANALYSIS** blueprint with continuous numbering. For each finding, show **ENGINEER TITLE** (responsible engineer's name) first, then the capability title, with its short description directly underneath; place `MISSING` or `IMPROVEMENT` status at the far right. For `Apply for All`, group findings by responsible engineer and keep one shared continuous numbering sequence. Expand rows automatically as needed and preserve the blueprint's design.
 - Continue until the user presses the built-in Stop control. Preserve findings; do not implement during analysis. After stopping, wait for the user's selection, implement only selected findings, run relevant tests, and generate the unchanged **TASK FINAL REPORT**.
 - If chat triggering, continuous execution, or Stop is unsupported, state the limitation honestly.
 ## 6. Capability Gap & Improvement Analysis
@@ -85,6 +85,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
               │                                CAPABILITY GAP & IMPROVEMENT ANALYSIS                              │
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
+              │[Engineer title]                                                                                   │
               │01. [Capability title]                                                        [MISSING / IMPROVEMENT]│
               │    [Short description]                                                                           │
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
