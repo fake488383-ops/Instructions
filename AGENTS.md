@@ -87,28 +87,23 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 7. Task Completion Report
 
-Keep the report box centered. Use consistent column widths, equal left/right inner padding in every cell, centered section headings, and wrap long values within their cells. Keep the layout visually balanced; do not let text touch borders.
-
 ```text
-┌───────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                      TASK COMPLETION REPORT                                       │
-├─────────────────────────────────────────────────┬─────────────────────────────────────────────────┤
-│                     BEFORE                      │                      AFTER                      │
-│  [Relevant old-state items]                     │  [Verified resulting-state items]               │
-├─────────────────────────────────────────────────┴─────────────────────────────────────────────────┤
-│                                       01. ENGINEER SUMMARY                                        │
-├─────────────────────────────────────────────────┬─────────────────────────────────────────────────┤
-│                    ENGINEER                     │                  CONTRIBUTION                   │
-│  [Engineer name]                                │  [Verified work contributed]                    │
-├─────────────────────────────────────────────────┬─────────────────────────────────────────────────┤
-│                                   02. TEST & VALIDATION SUMMARY                                   │
-├────────────────────────────────┬─────────────────────────────────┬────────────────────────────────┤
-│          TEST / CHECK          │             RESULT              │            DETAILS             │
-│  [Check performed]             │  [PASS / FAIL]                  │  [Verified result/evidence]    │
-├────────────────────────────────┴─────────────────────────────────┴────────────────────────────────┤
-│                                  03. FEATURE VALIDATION SUMMARY                                   │
-├─────────────────────────────────────────────────┬─────────────────────────────────────────────────┤
-│                     FEATURE                     │                     STATUS                      │
-│  [Feature added/changed]                        │  [VERIFIED / NEEDS WORK]                        │
-└───────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│                                  TASK COMPLETION REPORT                                  │
+├────────────────────────────────────────────┬─────────────────────────────────────────────┤
+│                   BEFORE                   │                    AFTER                    │
+│         [Relevant old-state items]         │      [Verified resulting-state items]       │
+├──────────────────────────────────────────────────────────────────────────────────────────┤
+│ 01. ENGINEER SUMMARY                                                                     │
+│ENGINEER                    │            │                                    CONTRIBUTION│
+│[Engineer name]             │            │                     [Verified work contributed]│
+├──────────────────────────────────────────────────────────────────────────────────────────┤
+│ 02. TEST & VALIDATION SUMMARY                                                            │
+│TEST / CHECK                │      RESULT│                                         DETAILS│
+│[Check performed]           │ [PASS/FAIL]│                  [Verified result and evidence]│
+├──────────────────────────────────────────────────────────────────────────────────────────┤
+│ 03. FEATURE VALIDATION SUMMARY                                                           │
+│FEATURE                     │            │                                          STATUS│
+│[Feature added/changed]     │            │                         [VERIFIED / NEEDS WORK]│
+└──────────────────────────────────────────────────────────────────────────────────────────┘
 ```
