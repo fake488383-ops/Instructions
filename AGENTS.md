@@ -78,7 +78,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Combine the entire report into **one single table**. Do not create separate tables or boxes.
 - Center the table horizontally within the report body. The empty space outside the table must be exactly equal on the left and right. Calculate the table width from the available body width and apply equal left/right margins; do not align the table to either edge or use arbitrary fixed margins. The table must remain within the body.
 - **Before / After:** Within the single table, use two side-by-side cells: BEFORE on the left and AFTER on the right.
-- **Engineer Summary, Testing Summary, and Quality Summary:** Keep each section full-width in the same table, spanning both columns as one cell. Do not split their content into left and right columns.
+- **Engineer Summary, Testing Summary, and Quality Summary:** Keep each section full-width in the same table, spanning both columns as one cell. Do not split their content into left and right columns. Align these three section titles to the left; do not center them. Keep the PROJECT REPORT heading centered.
 - Use one outer table with a consistent border and clear horizontal separators. Do not add a separate FINAL REPORT title or extra report sections.
 - Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, and test names.
 
@@ -96,10 +96,10 @@ Use one HTML table centered within the report body. Its left and right outer gap
   <tr><th colspan="2">PROJECT REPORT</th></tr>
   <tr><th width="50%">BEFORE</th><th width="50%">AFTER</th></tr>
   <tr><td>[Relevant previous state]</td><td>[Changes made]</td></tr>
-  <tr><th colspan="2">ENGINEER SUMMARY</th></tr>
+  <tr><th colspan="2" align="left">ENGINEER SUMMARY</th></tr>
   <tr><td colspan="2">[Only disciplines actually involved and their contributions]</td></tr>
-  <tr><th colspan="2">TESTING SUMMARY</th></tr>
+  <tr><th colspan="2" align="left">TESTING SUMMARY</th></tr>
   <tr><td colspan="2">[Applicable tests, actual statuses, and evidence]</td></tr>
-  <tr><th colspan="2">QUALITY SUMMARY</th></tr>
+  <tr><th colspan="2" align="left">QUALITY SUMMARY</th></tr>
   <tr><td colspan="2">[Actual measurements or Not Measured]</td></tr>
 </table>
