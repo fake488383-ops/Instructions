@@ -73,23 +73,37 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
 ## 6. Task Completion Report
-- After every task, including small changes, generate a concise report at the end. Do not use a blueprint or add extra report sections.
-- The **BEFORE / AFTER** report must span the full available width. Keep both columns equal in width, with equal left and right outer margins. Center-align all headings and cell text.
+- After every task, including small changes, generate one concise, unified report at the end. Do not create separate or disconnected boxes.
+- Use one full-width, center-positioned table with equal left and right margins. Keep all sections joined in the same table, with no gaps.
+- The top section must contain **BEFORE** and **AFTER** in two equal-width columns. Center-align headings and all cell text.
 - **BEFORE:** summarize the relevant state or features before the task.
 - **AFTER:** list what was added, changed, or improved by the task.
-- Add one row per relevant item. Keep the report short, clear, and in Roman Urdu. If a column has no relevant information, write `None`.
+- Directly below BEFORE / AFTER, place a full-width merged heading: **Engineers Future Summary**. Under it, list each feature added or changed during the task with its status alongside it.
+- Use only these feature statuses: `PASSED`, `FAILED`, or `PENDING`. Mark `PASSED` only after successful verification; use `FAILED` when verification fails, and `PENDING` when it has not yet been verified.
+- Keep feature names clear and concise. Include one row per feature; do not list unrelated existing features. Keep the report in Roman Urdu. If a section has no relevant information, write `None`.
 
-| **BEFORE** | **AFTER** |
-|:---:|:---:|
-| [Relevant existing state] | [Added, changed, or improved result] |
-
-### Engineers Future Summary
-- Below the BEFORE / AFTER report, add a separate full-width summary table titled **Engineers Future Summary**.
-- List each feature added or changed during the task by its feature name, with its verification status shown alongside it.
-- Use only these statuses: `PASSED`, `FAILED`, or `PENDING`. Mark a feature `PASSED` only after successful verification; use `FAILED` when verification fails, and `PENDING` when it has not yet been verified.
-- Keep feature names clear and concise. Include one row per feature. Do not list unrelated existing features.
-- Center-align the title, column headings, and cell text.
-
-| **FEATURE** | **STATUS** |
-|:---:|:---:|
-| [Feature name] | [PASSED / FAILED / PENDING] |
+<table align="center" width="100%">
+  <thead>
+    <tr>
+      <th align="center" width="50%">BEFORE</th>
+      <th align="center" width="50%">AFTER</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">[Relevant existing state]</td>
+      <td align="center">[Added, changed, or improved result]</td>
+    </tr>
+    <tr>
+      <th align="center" colspan="2">Engineers Future Summary</th>
+    </tr>
+    <tr>
+      <th align="center" width="50%">FEATURE</th>
+      <th align="center" width="50%">STATUS</th>
+    </tr>
+    <tr>
+      <td align="center">[Feature name]</td>
+      <td align="center">[PASSED / FAILED / PENDING]</td>
+    </tr>
+  </tbody>
+</table>
