@@ -76,21 +76,20 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - User sends `0` in AI Agent chat and presses Enter: show only the 31 engineer titles (1–31) and `32. Apply for All`, without descriptions. This is a chat command, not a keyboard shortcut.
 - Analyze only the selected engineer's discipline and responsibilities. `Apply for All` analyzes every discipline separately; never overlap or report another engineer's work.
 - Continuously inspect the complete project and identify only relevant **MISSING** capabilities and **IMPROVEMENT** opportunities. Verify existing work and use authoritative research when useful; base findings on evidence and avoid duplicates or irrelevant items.
-- Add every verified finding to the **CAPABILITY GAP & IMPROVEMENT ANALYSIS** blueprint with continuous numbering. For each finding, show the responsible engineer's name first, then the capability title, with its short description directly underneath; place `MISSING` or `IMPROVEMENT` status at the far right. Keep all content vertically centered within its row/section, with equal top/bottom and left/right inner padding and margins. Maintain consistent spacing so no text touches or merges with border lines. For `Apply for All`, group findings by responsible engineer and keep one shared continuous numbering sequence. Expand rows automatically as needed and preserve the blueprint's design.
+- Add every verified finding to the **CAPABILITY GAP & IMPROVEMENT ANALYSIS** blueprint with continuous numbering. Place the numbered capability title on the left and its short description directly underneath; place `MISSING` or `IMPROVEMENT` status at the far right. Do not add separate `ENGINEER TITLE`, engineer-name, or `SHORT DESCRIPTION` fields/columns. Retain engineer ownership by grouping findings under the responsible engineer when using `Apply for All`, while keeping one shared continuous numbering sequence. Keep content vertically centered with balanced inner spacing; no text may touch or overlap border lines. Expand rows as needed and preserve the blueprint's design.
 - Continue until the user presses the built-in Stop control. Preserve findings; do not implement during analysis. After stopping, wait for the user's selection, implement only selected findings, run relevant tests, and generate the unchanged **TASK FINAL REPORT**.
 - If chat triggering, continuous execution, or Stop is unsupported, state the limitation honestly.
 ## 6. Capability Gap & Improvement Analysis
 
-- Keep the three content lines left-aligned close to the left border; do not center them or add broad outer padding.
-- Align the capability title after its number with the short description below it.
-- Keep the same horizontal gap between the engineer title and the capability title as the gap between the capability number (for example, `01.`) and its title.
-- Keep the status at the far right. Maintain clear spacing from the border; no text may touch or overlap border lines.
+- Keep the numbered capability title left-aligned near the left border, with its short description directly underneath.
+- Keep `MISSING` or `IMPROVEMENT` at the far right, with clear spacing from the border.
+- Do not show an engineer-title field, engineer-name field, or separate short-description heading/column in an individual finding. For `Apply for All`, show engineer ownership through group headings above that engineer's findings.
+- Maintain balanced inner spacing; no text may touch or overlap border lines.
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│[Engineer title]        [MISSING / IMPROVEMENT]                                                      │
-│01.     [Capability title]                                                                          │
-│        [Short description]                                                                         │
+│01. [Capability title]                                                   [MISSING / IMPROVEMENT]    │
+│    [Short description]                                                                            │
 └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
