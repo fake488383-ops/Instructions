@@ -72,48 +72,73 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks. |
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
-## 6. Task Completion Report
-- After every task, including small changes, generate one concise, unified report at the end. Keep all report sections in one full-width, center-positioned table with equal left and right margins and no gaps.
-- The first section must contain **BEFORE** and **AFTER** in two equal-width columns. Center-align all headings and cell text.
-- **BEFORE:** summarize the relevant state or features before the task.
-- **AFTER:** list what was added, changed, or improved by the task.
-- Directly below BEFORE / AFTER, add a full-width merged title: **Feature Summary**. List every feature created or changed in the task, with its current verification status. Use `WORKING`, `ISSUE FOUND`, or `PENDING`; only use `WORKING` after successful feature verification.
-- Directly below Feature Summary, add a full-width merged title: **Testing Summary**. List the applicable test types and their results. Include, where relevant: Unit Tests, Integration Tests, System Tests, End-to-End (E2E) Tests, UI Tests, API Tests, Regression Tests, Performance Tests, Security Tests, Compatibility Tests, Accessibility Tests, and Acceptance Tests. Select tests relevant to the project and changes; do not claim a test was run unless it actually ran. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE` as test results.
-- Keep feature names and test names clear and concise. Add one row per feature or test. Keep all report text in Roman Urdu except established technical terms. If a section has no relevant entries, write `None`.
+## 6. Enterprise Task Completion Report
+- After every task, including small changes, generate a report at the end. Scale the detail to the task: keep small-task entries brief and provide full explanations for complex tasks.
+- Present the report as one continuous, full-width, center-positioned table. Keep all sections joined in the same table, with no separate or disconnected boxes. Center-align section titles, column headings, and cell content.
+- Include all sections in the order shown below. If a section is irrelevant, write `Not Applicable`; never invent details or claim unperformed work.
+- Write explanations in clear Roman Urdu while preserving established technical terms, filenames, paths, commands, APIs, and test names.
+
+**Required report sections and rules:**
+1. **Task Overview:** Task name, objective, task type, scope, and overall completion status.
+2. **Before / After:** Relevant project state before the task and the exact changes afterward. Use two equal-width columns.
+3. **Feature Summary:** List every feature created or changed, its purpose in one concise sentence, and its current status. Use `WORKING`, `ISSUE FOUND`, or `PENDING`. Use `WORKING` only after verification.
+4. **Feature Details:** Explain each feature's purpose, the problem it solves, how it works, user-visible behavior, inputs/outputs, and important dependencies. Explain technical details at a level appropriate to the task.
+5. **Engineering Disciplines:** List only the disciplines actually involved and briefly state each one's contribution. Do not claim participation by disciplines that were not used.
+6. **Testing Summary:** List applicable tests and their actual results. Consider Unit, Integration, System, End-to-End (E2E), UI, API, Regression, Performance, Security, Compatibility, Accessibility, and Acceptance Tests. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include a test command or evidence reference when useful. Never mark an unrun test as passed.
+7. **Quality Metrics:** Report available measurements such as tests run/passed/failed, coverage, defect counts, and build/test duration. State the measurement source or period where relevant. Use `Not Measured` when data is unavailable; do not estimate or fabricate metrics.
+8. **Security & Performance Review:** Summarize relevant security checks, privacy/data-handling considerations, resource usage, latency, responsiveness, and performance impact. Clearly mark checks that were not performed.
+9. **Architecture & Impact Summary:** Explain affected modules, components, APIs, database/schema, dependencies, interfaces, and compatibility. Identify potential side effects and whether existing behavior was preserved.
+10. **Build & Deployment Summary:** Report build, packaging, run, release, or deployment outcomes only when applicable and actually attempted. Include target/environment and errors or blockers where relevant.
+11. **Final Result & Next Steps:** State what was delivered, whether the task's acceptance criteria were met, remaining work/blockers, and the most useful next action.
+
+**Unified report template:**
 
 <table align="center" width="100%">
-  <thead>
-    <tr>
-      <th align="center" width="50%">BEFORE</th>
-      <th align="center" width="50%">AFTER</th>
-    </tr>
-  </thead>
   <tbody>
-    <tr>
-      <td align="center">[Relevant existing state]</td>
-      <td align="center">[Added, changed, or improved result]</td>
-    </tr>
-    <tr>
-      <th align="center" colspan="2">Feature Summary</th>
-    </tr>
-    <tr>
-      <th align="center">FEATURE</th>
-      <th align="center">STATUS</th>
-    </tr>
-    <tr>
-      <td align="center">[Feature name]</td>
-      <td align="center">[WORKING / ISSUE FOUND / PENDING]</td>
-    </tr>
-    <tr>
-      <th align="center" colspan="2">Testing Summary</th>
-    </tr>
-    <tr>
-      <th align="center">TEST</th>
-      <th align="center">RESULT</th>
-    </tr>
-    <tr>
-      <td align="center">[Test type]</td>
-      <td align="center">[PASSED / FAILED / PENDING / NOT APPLICABLE]</td>
-    </tr>
+    <tr><th align="center" colspan="2">TASK OVERVIEW</th></tr>
+    <tr><th align="center" width="50%">ITEM</th><th align="center" width="50%">DETAIL</th></tr>
+    <tr><td align="center">Task / Objective</td><td align="center">[Task name and objective]</td></tr>
+    <tr><td align="center">Task Type / Scope</td><td align="center">[Type and scope]</td></tr>
+    <tr><td align="center">Overall Status</td><td align="center">[Completed / Partially Completed / Blocked]</td></tr>
+
+    <tr><th align="center" colspan="2">BEFORE / AFTER</th></tr>
+    <tr><th align="center">BEFORE</th><th align="center">AFTER</th></tr>
+    <tr><td align="center">[Relevant previous state]</td><td align="center">[Changes made]</td></tr>
+
+    <tr><th align="center" colspan="2">FEATURE SUMMARY</th></tr>
+    <tr><th align="center">FEATURE</th><th align="center">PURPOSE / STATUS</th></tr>
+    <tr><td align="center">[Feature name]</td><td align="center">[Purpose — WORKING / ISSUE FOUND / PENDING]</td></tr>
+
+    <tr><th align="center" colspan="2">FEATURE DETAILS</th></tr>
+    <tr><th align="center">FEATURE</th><th align="center">EXPLANATION</th></tr>
+    <tr><td align="center">[Feature name]</td><td align="center">[Problem solved, how it works, user behavior, inputs/outputs, dependencies]</td></tr>
+
+    <tr><th align="center" colspan="2">ENGINEERING DISCIPLINES</th></tr>
+    <tr><th align="center">DISCIPLINE</th><th align="center">CONTRIBUTION</th></tr>
+    <tr><td align="center">[Actual discipline]</td><td align="center">[Work performed]</td></tr>
+
+    <tr><th align="center" colspan="2">TESTING SUMMARY</th></tr>
+    <tr><th align="center">TEST</th><th align="center">RESULT / EVIDENCE</th></tr>
+    <tr><td align="center">[Applicable test]</td><td align="center">[PASSED / FAILED / PENDING / NOT APPLICABLE — evidence]</td></tr>
+
+    <tr><th align="center" colspan="2">QUALITY METRICS</th></tr>
+    <tr><th align="center">METRIC</th><th align="center">MEASURED RESULT</th></tr>
+    <tr><td align="center">[Tests / Coverage / Defects / Duration]</td><td align="center">[Actual value or Not Measured]</td></tr>
+
+    <tr><th align="center" colspan="2">SECURITY &amp; PERFORMANCE REVIEW</th></tr>
+    <tr><th align="center">AREA</th><th align="center">FINDING / STATUS</th></tr>
+    <tr><td align="center">[Security / Privacy / Performance]</td><td align="center">[Verified finding, impact, or Not Checked]</td></tr>
+
+    <tr><th align="center" colspan="2">ARCHITECTURE &amp; IMPACT SUMMARY</th></tr>
+    <tr><th align="center">AFFECTED AREA</th><th align="center">CHANGE / IMPACT</th></tr>
+    <tr><td align="center">[Module / API / Database / Dependency]</td><td align="center">[Change and compatibility impact]</td></tr>
+
+    <tr><th align="center" colspan="2">BUILD &amp; DEPLOYMENT SUMMARY</th></tr>
+    <tr><th align="center">ACTIVITY</th><th align="center">RESULT</th></tr>
+    <tr><td align="center">[Build / Run / Package / Deploy]</td><td align="center">[Actual result, environment, or Not Applicable]</td></tr>
+
+    <tr><th align="center" colspan="2">FINAL RESULT &amp; NEXT STEPS</th></tr>
+    <tr><th align="center">FINAL RESULT</th><th align="center">NEXT STEP / BLOCKER</th></tr>
+    <tr><td align="center">[Delivered outcome and acceptance status]</td><td align="center">[Remaining work and prioritized next action]</td></tr>
   </tbody>
 </table>
