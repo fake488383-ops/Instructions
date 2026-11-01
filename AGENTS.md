@@ -73,38 +73,32 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
 ## 6. Enterprise Task Completion Report
-- After every task, including small changes, generate a concise report at the end. Scale detail to the task.
-- Use exactly four report sections in this order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**.
-- Combine the entire report into **one single table**. Do not create separate tables or boxes.
-- Center the table horizontally within the report body. The empty space outside the table must be exactly equal on the left and right. Keep the table within the available body width.
-- **Table borders and cell spacing:** Draw a complete, continuous border around the outside of the table and visible borders around every cell, including the right-hand cells. Use consistent border thickness and style on all four sides; do not leave the right edge, bottom edge, or any cell edge missing. Give every cell equal inner padding on the left and right, and consistent equal padding on the top and bottom. Text must sit comfortably inside its cell, not touch or cross the border. Do not use underline-only styling in place of cell borders.
-- **Before / After:** Use two side-by-side columns: BEFORE on the left and AFTER on the right.
-- **Engineer Summary:** Keep the section heading full-width and left-aligned. In its content row, use two columns: the left column lists the names of the engineers/disciplines that actually worked; the right column states what each listed engineer worked on. Match each contribution clearly to its engineer.
-- **Testing Summary:** Keep the section heading full-width and left-aligned. In its content row, use two columns: the left column lists test names/types (for example Unit Test, Integration Test, UI Test, API Test, Regression Test); the right column shows the actual result for each test, using `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`. Include evidence or commands when useful. Never mark an unrun test as passed.
-- **Quality Summary:** Keep the section heading full-width and left-aligned. In its content row, use two columns: the left column lists each quality metric/check (for example Coverage, Defects, Build Duration, Test Duration); the right column shows its measured value or status. Use `Not Measured` when unavailable; do not estimate or fabricate metrics.
-- Keep all four sections inside the same outer table with consistent borders and horizontal separators. Do not add a separate FINAL REPORT title or extra report sections.
-- Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, test names, and metric names.
-
-**Required report sections and rules:**
-1. **Before / After:** Compare the relevant previous state and changes made in exactly two side-by-side columns: BEFORE (left) and AFTER (right).
-2. **Engineer Summary:** Show actual participating engineer/discipline names on the left and their corresponding contributions on the right. Do not list disciplines that were not involved.
-3. **Testing Summary:** Show each applicable test name/type on the left and its actual status on the right. Use `PASSED`, `FAILED`, `PENDING`, or `NOT APPLICABLE`; include evidence when useful.
-4. **Quality Summary:** Show each quality metric/check on the left and its actual measured value/status on the right. Use `Not Measured` when data is unavailable.
+- Har task ke baad concise report generate karo.
+- Report ke exactly four sections hon: Before / After, Engineer Summary, Testing Summary, Quality Summary.
+- Charon sections ek hi table ke andar hon; separate tables na banao.
+- Table report body ke center mein ho aur left/right outer margins equal hon.
+- **Cell Alignment:** Har cell ka tamam text horizontally center-aligned ho: PROJECT REPORT, BEFORE, AFTER, section headings, engineer names, contributions, test names, results, quality metrics aur values. Koi report cell left-aligned na ho.
+- **Borders and Padding:** Outer table aur har cell ke charon taraf complete visible border ho. Har cell mein left/right padding equal aur top/bottom padding equal ho. Sirf underline use na karo.
+- **Before / After:** Do columns; BEFORE left aur AFTER right.
+- **Engineer Summary:** Heading full-width. Content ki left column mein sirf involved engineers/disciplines ke names; right column mein unki matching contributions.
+- **Testing Summary:** Heading full-width. Left column mein test names/types; right column mein actual status: `PASSED`, `FAILED`, `PENDING`, ya `NOT APPLICABLE`. Unrun test ko passed na likho.
+- **Quality Summary:** Heading full-width. Left column mein quality metric/check; right column mein actual measured value/status. Data na ho to `Not Measured` likho; metrics invent na karo.
+- Roman Urdu explanations use karo; technical terms, filenames, paths, commands, APIs aur test names original rakho.
 
 **Unified report template:**
 
-Use one HTML table centered within the report body, with equal left/right outer margins. Apply complete borders to the table and every cell, and equal inner cell padding on all sides. The PROJECT REPORT heading is centered; the three summary section headings are left-aligned. Preserve the two-column content layout:
+Neeche diye gaye ek hi HTML table structure ko follow karo. Har cell ka text center-aligned ho, aur har cell ki complete border aur equal inner padding ho. Summary headings full-width hon; summary content rows do columns mein rahen.
 
-<table style="width:90%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; ">
+<table style="width:90%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;">
   <tr><th colspan="2" style="text-align:center; border:1px solid; padding:10px;">PROJECT REPORT</th></tr>
-  <tr><th style="width:50%; border:1px solid; padding:10px;">BEFORE</th><th style="width:50%; border:1px solid; padding:10px;">AFTER</th></tr>
-  <tr><td style="border:1px solid; padding:10px;">[Relevant previous state]</td><td style="border:1px solid; padding:10px;">[Changes made]</td></tr>
-  <tr><th colspan="2" align="left" style="text-align:left; border:1px solid; padding:10px;">ENGINEER SUMMARY</th></tr>
-  <tr><td style="border:1px solid; padding:10px;">[Engineer / Discipline names]</td><td style="border:1px solid; padding:10px;">[Each engineer's corresponding contribution]</td></tr>
-  <tr><th colspan="2" align="left" style="text-align:left; border:1px solid; padding:10px;">TESTING SUMMARY</th></tr>
-  <tr><td style="border:1px solid; padding:10px;">[Test name/type]</td><td style="border:1px solid; padding:10px;">[Actual status: PASSED / FAILED / PENDING / NOT APPLICABLE]</td></tr>
-  <tr><th colspan="2" align="left" style="text-align:left; border:1px solid; padding:10px;">QUALITY SUMMARY</th></tr>
-  <tr><td style="border:1px solid; padding:10px;">[Quality metric/check]</td><td style="border:1px solid; padding:10px;">[Measured value or actual status / Not Measured]</td></tr>
+  <tr><th style="width:50%; text-align:center; border:1px solid; padding:10px;">BEFORE</th><th style="width:50%; text-align:center; border:1px solid; padding:10px;">AFTER</th></tr>
+  <tr><td style="text-align:center; border:1px solid; padding:10px;">[Relevant previous state]</td><td style="text-align:center; border:1px solid; padding:10px;">[Changes made]</td></tr>
+  <tr><th colspan="2" style="text-align:center; border:1px solid; padding:10px;">ENGINEER SUMMARY</th></tr>
+  <tr><td style="text-align:center; border:1px solid; padding:10px;">[Engineer / Discipline names]</td><td style="text-align:center; border:1px solid; padding:10px;">[Matching contributions]</td></tr>
+  <tr><th colspan="2" style="text-align:center; border:1px solid; padding:10px;">TESTING SUMMARY</th></tr>
+  <tr><td style="text-align:center; border:1px solid; padding:10px;">[Test name/type]</td><td style="text-align:center; border:1px solid; padding:10px;">[Actual status]</td></tr>
+  <tr><th colspan="2" style="text-align:center; border:1px solid; padding:10px;">QUALITY SUMMARY</th></tr>
+  <tr><td style="text-align:center; border:1px solid; padding:10px;">[Quality metric/check]</td><td style="text-align:center; border:1px solid; padding:10px;">[Measured value/status]</td></tr>
 </table>
 
-For multiple engineers, tests, or quality metrics, add rows while preserving complete borders and equal cell padding. Never replace the cell borders with underlines.
+Multiple engineers, tests, and metrics ke liye additional rows add karo. Har row mein dono columns, complete borders, equal padding, aur centered text maintain karo.
