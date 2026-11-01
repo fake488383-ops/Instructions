@@ -91,16 +91,16 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
               │                                         TASK FINAL REPORT                                          │
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │                     BEFORE                      │                      AFTER                       │
-              │             [Relevant old-state items]          │          [Verified resulting-state items]        │
+              │                     BEFORE                                             AFTER                       │
+              │             [Relevant old-state items]                     [Verified resulting-state items]        │
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │ENGINEER SUMMARY                                                                    CONTRIBUTION│
-              │[Engineer name]                                                   [Verified work contributed]│
+              │ENGINEER SUMMARY                                                                    CONTRIBUTION    │
+              │[Engineer name]                                                   [Verified work contributed]       │
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │TEST & VALIDATION SUMMARY                                                               STATUS│
-              │[Check performed]                                             [Verified result and evidence]│
+              │TEST & VALIDATION SUMMARY                                                               STATUS      │
+              │[Check performed]                                             [Verified result and evidence]        │
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │FEATURE VALIDATION SUMMARY                                                              STATUS│
-              │[Feature added/changed]                                                   [VERIFIED / NEEDS WORK]│
+              │FEATURE VALIDATION SUMMARY                                                              STATUS      │
+              │[Feature added/changed]                                                   [VERIFIED / NEEDS WORK]   │
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
