@@ -81,17 +81,17 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - If chat triggering, continuous execution, or Stop is unsupported, state the limitation honestly.
 ## 6. Capability Gap & Improvement Analysis
 
-- Keep the responsible `ENGINEER TITLE`, capability-title text, and short description on the same left text alignment.
-- Place the sequence number (for example, `01.`) immediately after the left border, with no left padding. The capability-title text after the number and separator must align with the engineer title and short description.
-- Keep `MISSING` or `IMPROVEMENT` at the far right, with consistent right padding.
-- Center the complete three-line content block vertically within the bordered row. Do not add an engineer-name field or a separate short-description heading/column. Show the responsible engineer for every finding, including `Apply for All`.
-- Maintain balanced inner spacing; no text may touch or overlap border lines except the sequence number, which intentionally starts at the left border.
+- Keep the responsible `ENGINEER TITLE`, capability-title text, and short description in one compact, vertically centered text block with the same left alignment.
+- Keep the `01.` sequence number flush against the left border. Place the capability title immediately after it with only a small, consistent gap; keep the engineer title and short description closely aligned to that same text column.
+- Reduce unnecessary margins, padding, and blank spaces between all three text lines while preserving readability and a small, even inset from the top and bottom borders.
+- Keep `MISSING` or `IMPROVEMENT` right-aligned with a small, consistent inset from the right border.
+- Draw all four border lines straight, parallel, and perfectly aligned. Keep the right border vertical and ensure every row ends at exactly the same column. Do not add an engineer-name field or a separate short-description heading/column. Show the responsible engineer for every finding, including `Apply for All`.
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│    [ENGINEER TITLE]                                                                              │
-│01. [Capability title]                                               [MISSING / IMPROVEMENT]      │
-│    [Short description]                                                                            │
+│    [ENGINEER TITLE]                                                                                 │
+│01. [Capability title]                                             [MISSING / IMPROVEMENT]          │
+│    [Short description]                                                                              │
 └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
