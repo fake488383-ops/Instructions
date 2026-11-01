@@ -75,7 +75,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 6. Enterprise Task Completion Report
 - After every task, including small changes, generate a concise report at the end. Scale detail to the task.
 - Inside one unified report box, use **PROJECT REPORT** as the full-width, horizontally centered heading.
-- Keep all report content in one continuous, full-width table. Do not create separate tables, boxes, or disconnected sections.
+- Keep all report content in one continuous table. Do not create separate tables, boxes, or disconnected sections.
+- Center the entire report layout horizontally on the page. Set equal left and right outer margins/padding so the report box sits exactly in the center; do not let it lean toward either side. Keep its width consistent and fit it within the available page width.
 - Use two equal-width columns, consistent cell padding and row spacing, and center-align all headings, labels, and content.
 - Keep a complete white border around the report box and its sections. Remove the full-width line/underline across the **BEFORE / AFTER** row only; preserve the outer box border and all other section borders.
 - Include only these four sections, in this exact order: **Before / After**, **Engineering Disciplines**, **Testing Summary**, and **Quality Metrics**. Do not include Feature Summary, Feature Details, Security & Performance Review, Architecture & Impact Summary, Build & Deployment Summary, or Final Result & Next Steps.
@@ -89,7 +90,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 **Unified report template:**
 
-Create exactly one continuous report table without a separate **FINAL REPORT** title. Keep two equal-width columns and center-align all headings and cell text. Use section-title rows within the same table. Keep the complete white outer border and section borders, including the vertical divider between **BEFORE** and **AFTER**. Add rows as needed.
+Create exactly one continuous report table without a separate **FINAL REPORT** title. Center the complete report box horizontally with equal left and right margins/padding. Keep two equal-width columns and center-align all headings and cell text. Use section-title rows within the same table. Keep the complete white outer border and section borders, including the vertical divider between **BEFORE** and **AFTER**. Add rows as needed.
 
 | **PROJECT REPORT** | **—** |
 |:---:|:---:|
