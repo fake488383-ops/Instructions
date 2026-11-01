@@ -75,9 +75,23 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 6. Enterprise Task Completion Report
 
 - **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
-- **Dynamic Vertical Layout:** Use the complete report table sequence below. Expand rows automatically to include every relevant feature, engineer, test, and quality metric, whether there are 5 or 50. Never combine multiple items into one cell or arrange item lists horizontally; show each item on its own row, vertically, one below another. Keep the two report columns: item/name on the left, matching detail/result on the right.
-- **Before / After:** Show each feature separately. BEFORE records missing features and the prior state of existing features; AFTER records what was added and how existing features were improved. Keep matching Before/After entries on corresponding rows.
-- **Engineer Summary:** Show every participating engineer separately on its own row, with the full engineer name on the left and that engineer's matching contribution on the right. Include only engineers who actually worked.
-- **Testing Summary:** Show every added or modified feature/test separately on its own row on the left and its actual PASS/FAIL status on the right. Test every added or modified feature; never claim PASS without verification.
-- **Quality Summary:** Show each applicable quality/health metric separately on its own row on the left and its actual measured value on the right (e.g., latency/ping in ms, response time in seconds, speed/throughput, resource usage, and service health). Include units and test conditions where relevant; never invent values—mark unmeasured metrics as NOT MEASURED.
+- **Dynamic Vertical Layout:** Preserve the complete table format below. Add as many rows as required for every feature, engineer, test, and quality metric. Show each item on its own row, vertically; never combine lists horizontally. Keep the two columns equally sized and centered.
+- **Before / After:** Each feature gets its own matching row. BEFORE shows missing features or the previous state; AFTER shows additions or improvements.
+- **Engineer Summary:** One engineer per row. Left: full engineer name/designation. Right: that engineer's matching contribution. Include only participating engineers.
+- **Testing Summary:** One added/modified feature or test per row on the left; actual PASS/FAIL status on the right. Verify each feature; never claim PASS without testing.
+- **Quality Summary:** One applicable health/performance metric per row on the left; actual measured value with units on the right (e.g., latency, response time, throughput, CPU/RAM, task success rate, service health). Never invent values; mark unmeasured items NOT MEASURED.
 
+<div align="center">
+<table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
+  <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
+  <tr><th colspan="2" align="center">PROJECT REPORT</th></tr>
+  <tr><th align="center" width="50%">BEFORE</th><th align="center" width="50%">AFTER</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[One previous/missing feature per row]</td><td align="center" valign="middle" width="50%">[Matching addition/improvement per row]</td></tr>
+  <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[Full engineer name]</td><td align="center" valign="middle" width="50%">[Matching contribution]</td></tr>
+  <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[Feature/test name]</td><td align="center" valign="middle" width="50%">[Actual PASS/FAIL status]</td></tr>
+  <tr><th colspan="2" align="center">QUALITY SUMMARY</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[Quality/health metric]</td><td align="center" valign="middle" width="50%">[Measured value and unit]</td></tr>
+</table>
+</div>
