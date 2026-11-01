@@ -76,18 +76,19 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - User sends `0` in AI Agent chat and presses Enter: show only the 31 engineer titles (1–31) and `32. Apply for All`, without descriptions. This is a chat command, not a keyboard shortcut.
 - Analyze only the selected engineer's discipline and responsibilities. `Apply for All` analyzes every discipline separately; never overlap or report another engineer's work.
 - Continuously inspect the complete project and identify only relevant **MISSING** capabilities and **IMPROVEMENT** opportunities. Verify existing work and use authoritative research when useful; base findings on evidence and avoid duplicates or irrelevant items.
-- Add every verified finding to the **CAPABILITY GAP & IMPROVEMENT ANALYSIS** blueprint with continuous numbering. Place the numbered capability title on the left and its short description directly underneath; place `MISSING` or `IMPROVEMENT` status at the far right. Do not add separate `ENGINEER TITLE`, engineer-name, or `SHORT DESCRIPTION` fields/columns. Retain engineer ownership by grouping findings under the responsible engineer when using `Apply for All`, while keeping one shared continuous numbering sequence. Keep content vertically centered with balanced inner spacing; no text may touch or overlap border lines. Expand rows as needed and preserve the blueprint's design.
+- Add every verified finding to the **CAPABILITY GAP & IMPROVEMENT ANALYSIS** blueprint with continuous numbering. Show the responsible `ENGINEER TITLE` directly above the capability title, left-aligned on the same vertical alignment. Place the numbered capability title underneath it, with its short description directly below; place `MISSING` or `IMPROVEMENT` status at the far right on the capability-title row. Show the responsible engineer for every finding, including `Apply for All`, while keeping one shared continuous numbering sequence. Keep content vertically centered with balanced inner spacing; no text may touch or overlap border lines. Expand rows as needed and preserve the blueprint's design.
 - Continue until the user presses the built-in Stop control. Preserve findings; do not implement during analysis. After stopping, wait for the user's selection, implement only selected findings, run relevant tests, and generate the unchanged **TASK FINAL REPORT**.
 - If chat triggering, continuous execution, or Stop is unsupported, state the limitation honestly.
 ## 6. Capability Gap & Improvement Analysis
 
 - Keep the numbered capability title left-aligned near the left border, with its short description directly underneath.
 - Keep `MISSING` or `IMPROVEMENT` at the far right, with clear spacing from the border.
-- Do not show an engineer-title field, engineer-name field, or separate short-description heading/column in an individual finding. For `Apply for All`, show engineer ownership through group headings above that engineer's findings.
+- Show the responsible `ENGINEER TITLE` directly above each capability title, using the same left alignment. Do not add an engineer-name field or a separate short-description heading/column. Show the responsible engineer for every finding, including `Apply for All`.
 - Maintain balanced inner spacing; no text may touch or overlap border lines.
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│[ENGINEER TITLE]                                                                                    │
 │01. [Capability title]                                                   [MISSING / IMPROVEMENT]    │
 │    [Short description]                                                                            │
 └────────────────────────────────────────────────────────────────────────────────────────────────────┘
