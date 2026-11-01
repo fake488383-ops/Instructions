@@ -95,15 +95,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               │         [Relevant old-state items]         │      [Verified resulting-state items]       │              
               ├──────────────────────────────────────────────────────────────────────────────────────────┤              
               │ 01. ENGINEER SUMMARY                                                                     │              
-              │ENGINEER                    │            │                                    CONTRIBUTION│              
-              │[Engineer name]             │            │                     [Verified work contributed]│              
+              │ENGINEER                                                                      CONTRIBUTION│              
+              │[Engineer name]                                                [Verified work contributed]│              
               ├──────────────────────────────────────────────────────────────────────────────────────────┤              
               │ 02. TEST & VALIDATION SUMMARY                                                            │              
-              │TEST / CHECK                │      RESULT│                                         DETAILS│              
-              │[Check performed]           │ [PASS/FAIL]│                  [Verified result and evidence]│              
+              │TEST / CHECK                       RESULT                                          DETAILS│              
+              │[Check performed]             [PASS/FAIL]                   [Verified result and evidence]│              
               ├──────────────────────────────────────────────────────────────────────────────────────────┤              
               │ 03. FEATURE VALIDATION SUMMARY                                                           │              
-              │FEATURE                     │            │                                          STATUS│              
-              │[Feature added/changed]     │            │                         [VERIFIED / NEEDS WORK]│              
+              │FEATURE                                                                             STATUS│              
+              │[Feature added/changed]                                            [VERIFIED / NEEDS WORK]│              
               └──────────────────────────────────────────────────────────────────────────────────────────┘              
 ```
