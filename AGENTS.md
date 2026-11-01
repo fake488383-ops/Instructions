@@ -87,6 +87,14 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 7. Task Final Report
 
+**Mandatory Dynamic Report Rules**
+- After every task, small or large, generate this report; never skip it. Keep the layout fixed, but add or remove detail rows dynamically to match actual work.
+- **BEFORE:** show relevant features/state that existed before the task. **AFTER:** show new additions and verified improvements to existing items.
+- **ENGINEER SUMMARY:** list each engineer who meaningfully worked and their actual contribution; add one row per engineer.
+- **TEST SUMMARY:** list each test actually run by its proper name (e.g. unit, integration, system, end-to-end); show **PASS** or **FAIL** for each. Never claim a test was run if it was not.
+- **FEATURE SUMMARY:** list every feature added or changed, with its title and **WORKING** or **FAILED** status based on verification; add one row per feature. Scale the report to the work, including 50 or more features when applicable.
+- Keep all entries evidence-based and concise. Do not invent engineers, tests, features, results, or improvements. If a category has no entries, state that clearly without changing the layout.
+
 ```text
               ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
               │                                         TASK FINAL REPORT                                          │
@@ -100,7 +108,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
               │TEST SUMMARY                                                                                  STATUS│
               │[Check performed]                                                     [Verified result and evidence]│
               ├────────────────────────────────────────────────────────────────────────────────────────────────────┤
-              │FUTURE SUMMARY                                                                                STATUS│
-              │[Remaining work or future direction]                                        [PENDING / NOT REQUIRED]│
+              │FEATURE SUMMARY                                                                                STATUS│
+              │[Feature title]                                                               [WORKING / FAILED]│
               └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
