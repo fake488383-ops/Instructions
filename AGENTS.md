@@ -74,15 +74,17 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Enterprise Task Completion Report
 
-<table style="width:90%; max-width:90%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;">
-  <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
-  <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">PROJECT REPORT</th></tr>
-  <tr><th style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">BEFORE</th><th style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">AFTER</th></tr>
-  <tr><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Previous state]</td><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Actual changes]</td></tr>
-  <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">ENGINEER SUMMARY</th></tr>
-  <tr><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Involved engineers / designations]</td><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Matching contributions]</td></tr>
-  <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">TESTING SUMMARY</th></tr>
-  <tr><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Test name]</td><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Actual status]</td></tr>
-  <tr><th colspan="2" style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">QUALITY SUMMARY</th></tr>
-  <tr><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Quality check / metric]</td><td style="text-align:center; vertical-align:middle; border:1px solid; padding:10px;">[Actual value / status]</td></tr>
+<div align="center">
+<table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
+  <colgroup><col width="50%"><col width="50%"></colgroup>
+  <tr><th colspan="2" align="center">PROJECT REPORT</th></tr>
+  <tr><th align="center">BEFORE</th><th align="center">AFTER</th></tr>
+  <tr><td align="center" valign="middle">[Previous state]</td><td align="center" valign="middle">[Actual changes]</td></tr>
+  <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
+  <tr><td align="center" valign="middle">[Involved engineers / designations]</td><td align="center" valign="middle">[Matching contributions]</td></tr>
+  <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
+  <tr><td align="center" valign="middle">[Test name]</td><td align="center" valign="middle">[Actual status]</td></tr>
+  <tr><th colspan="2" align="center">QUALITY SUMMARY</th></tr>
+  <tr><td align="center" valign="middle">[Quality check / metric]</td><td align="center" valign="middle">[Actual value / status]</td></tr>
 </table>
+</div>
