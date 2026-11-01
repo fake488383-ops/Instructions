@@ -77,7 +77,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - Inside one unified report box, use **PROJECT REPORT** as the full-width, horizontally centered heading.
 - Keep all report content in one continuous table. Do not create separate tables, boxes, or disconnected sections.
 - Make the report box span the full available content width (100%), from the left content margin to the right content margin. Do not render it as a narrow or half-width table. Expand the layout fully across the page's usable width.
-- Keep the report box centered with equal outer left and right margins; do not add extra left indentation or padding that shifts it to one side. Use one full-width column only, with consistent cell padding and row spacing. Center-align all headings, labels, and content.
+- Keep the report box centered with equal outer left and right margins; do not add extra left indentation or padding that shifts it to one side. Use one unified full-width report box. Inside the Before / After comparison, place BEFORE on the left and AFTER on the right, with one vertical divider between them. Keep the other summary sections full-width within the same report box.
 - Use one combined Before / After comparison table with exactly two side-by-side columns: BEFORE on the left and AFTER on the right, separated by one center vertical divider. Do not add a separate numbered Before / After section-title box. Keep all other report sections full-width.
 - Include only these report areas in this exact order: **Before / After**, **Engineer Summary**, **Testing Summary**, and **Quality Summary**. Do not add a numbered section-title row for Before / After. Do not include Feature Summary, Feature Details, Security & Performance Review, Architecture & Impact Summary, Build & Deployment Summary, or Final Result & Next Steps.
 - Write explanations in clear Roman Urdu while preserving technical terms, filenames, paths, commands, APIs, and test names.
@@ -90,7 +90,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 **Unified report template:**
 
-Create exactly one continuous report table without a separate **FINAL REPORT** title. Make the table 100% of the available content width, extending from the left content margin to the right content margin; never use a narrow or half-width layout. Keep equal outer left and right margins, no extra left indentation, one full-width column, and center-align all headings and cell text. Use section-title rows within the same table. Keep the complete white outer border and all horizontal section/divider lines. Use two columns only for the combined **BEFORE / AFTER** comparison (BEFORE left, AFTER right, with one center delimiter); keep Engineer Summary, Testing Summary, and Quality Summary as full-width single-column rows. Add rows as needed.
+Create exactly one continuous report box without a separate **FINAL REPORT** title. Make it 100% of the available content width, extending from the left content margin to the right content margin. Keep equal outer margins and no extra indentation. Inside this single box, show BEFORE in the left half and AFTER in the right half, side by side in the same comparison row, separated by one vertical divider. Keep Engineer Summary, Testing Summary, and Quality Summary full-width below the comparison within the same outer box. Preserve the outer border and horizontal section/divider lines. Add rows as needed.
 
 | **PROJECT REPORT** |
 |:---:|
