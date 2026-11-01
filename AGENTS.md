@@ -94,3 +94,12 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <tr><td align="center" valign="middle" width="50%">[Quality/health metric]</td><td align="center" valign="middle" width="50%">[Measured value and unit]</td></tr>
 </table>
 </div>
+
+<div align="center">
+<table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
+  <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
+  <tr><th colspan="2" align="center">MISSING &amp; IMPROVEMENT</th></tr>
+  <tr><th align="center" width="50%">MISSING</th><th align="center" width="50%">IMPROVEMENT</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[One verified missing feature/responsibility per row]</td><td align="center" valign="middle" width="50%">[Matching recommended improvement per row]</td></tr>
+</table>
+</div>
