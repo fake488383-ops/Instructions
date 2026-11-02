@@ -80,9 +80,14 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Output Discipline:** During the audit, display findings only in this MISSING & IMPROVEMENT table. Do not add explanations, summaries, progress messages, recommendations, extra headings, or other output outside the table. The initial engineer-selection menu remains titles and numbers only.
 - **Continuous Operation & Stop:** Continue researching, checking relevant project areas, and appending newly verified findings without an automatic item limit or arbitrary completion cutoff. Stop only when the user activates the Stop control or a genuine system/tool limitation prevents continuation. On user Stop, finalize the audit and automatically generate the Enterprise Task Completion Report using Section 7's PROJECT REPORT table. Do not make code changes merely because a missing feature or improvement was identified; this audit reports findings only unless the user separately authorizes implementation.
 
-| MISSING No. | MISSING Feature | Description | IMPROVEMENT No. | IMPROVEMENT Feature | Description |
-|---:|---|---|---:|---|---|
-| 1 | [Missing feature title] | [What is absent and what adding it enables] | 1 | [Existing feature title] | [What to improve and the expected benefit] |
+<div align="center">
+<table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
+  <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
+  <tr><th colspan="2" align="center">MISSING &amp; IMPROVEMENT</th></tr>
+  <tr><th align="center" width="50%">MISSING</th><th align="center" width="50%">IMPROVEMENT</th></tr>
+  <tr><td align="center" valign="middle" width="50%"><strong>[Missing feature title]</strong><br>[Description: what it does and what adding it enables]</td><td align="center" valign="middle" width="50%"><strong>[Existing feature title]</strong><br>[Description: proposed enhancement and expected benefit]</td></tr>
+</table>
+</div>
 
 ## 7. Enterprise Task Completion Report
 
