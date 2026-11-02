@@ -76,17 +76,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - When the user enters `0` and presses Enter, show only the 31 engineer titles listed in Section 5, with their numbers. Do not show discipline headings, descriptions, responsibilities, explanations, tables, or any other content in this selection menu.
 - After the user selects an engineer, analyze the complete project and directly display concise, relevant findings and improvements in Roman Urdu. Do not show unnecessary menus or machine-learning content.
 - Keep analyzing and displaying new, relevant findings continuously. Avoid duplicates and distinguish existing, missing, partial, and improvable features.
-
-## 7. Enterprise Task Completion Report
-
-- **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
-- **Short Table Content:** Keep every report table cell concise—short feature names, full engineer names, brief contributions, test names, PASS/FAIL, and metric values with units. No long paragraphs inside table cells.
-- **Dynamic Vertical Layout:** Preserve the complete table format below. Add as many rows as required for every feature, engineer, test, and quality metric. Show each item on its own row, vertically; never combine lists horizontally. Keep the two columns equally sized and centered.
-- **Before / After:** Each feature gets its own matching row. BEFORE shows missing features or the previous state; AFTER shows additions or improvements.
-- **Engineer Summary:** One engineer per row. Left: full engineer name/designation. Right: that engineer's matching contribution. Include only participating engineers.
-- **Testing Summary:** One added/modified feature or test per row on the left; actual PASS/FAIL status on the right. Verify each feature; never claim PASS without testing.
-- **Quality Summary:** One applicable health/performance metric per row on the left; actual measured value with units on the right (e.g., latency, response time, throughput, CPU/RAM, task success rate, service health). Never invent values; mark unmeasured items NOT MEASURED.
-- **Missing & Improvement:** Every MISSING entry must contain a feature title and a brief description of what the absent feature does and what adding it enables. Every IMPROVEMENT entry must contain the existing feature title and a brief description of the proposed enhancement and its expected benefit. Put each item on its own row; match related items across the same row. Verify project status before classifying.
+- **Missing & Improvement:** Show verified missing features and improvement opportunities in the table directly below this section's audit instructions. Each entry must have a feature title and a brief description; match related items across the same row and verify project status before classifying.
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
@@ -102,6 +92,18 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <tr><td align="center" valign="middle" width="50%">[Quality/health metric]</td><td align="center" valign="middle" width="50%">[Measured value and unit]</td></tr>
 </table>
 </div>
+
+## 7. Enterprise Task Completion Report
+
+- **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
+- **Short Table Content:** Keep every report table cell concise—short feature names, full engineer names, brief contributions, test names, PASS/FAIL, and metric values with units. No long paragraphs inside table cells.
+- **Dynamic Vertical Layout:** Preserve the complete table format below. Add as many rows as required for every feature, engineer, test, and quality metric. Show each item on its own row, vertically; never combine lists horizontally. Keep the two columns equally sized and centered.
+- **Before / After:** Each feature gets its own matching row. BEFORE shows missing features or the previous state; AFTER shows additions or improvements.
+- **Engineer Summary:** One engineer per row. Left: full engineer name/designation. Right: that engineer's matching contribution. Include only participating engineers.
+- **Testing Summary:** One added/modified feature or test per row on the left; actual PASS/FAIL status on the right. Verify each feature; never claim PASS without testing.
+- **Quality Summary:** One applicable health/performance metric per row on the left; actual measured value with units on the right (e.g., latency, response time, throughput, CPU/RAM, task success rate, service health). Never invent values; mark unmeasured items NOT MEASURED.
+
+
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
