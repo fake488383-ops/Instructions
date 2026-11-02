@@ -73,18 +73,17 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Continuous Project Audit
 
-- **Selection:** When the user enters `0` and presses Enter, show all 31 engineers from Section 5 as a compact vertical list,   one per line, using only each engineer's number and short title. Do not use a horizontal layout. Audit only the selected   engineer's complete responsibility domain; exclude all other disciplines.
-- **Research & Verification:** Build a complete responsibility checklist from current authoritative sources and relevant engineering standards. Compare it with the live project by inspecting applicable code, architecture, configuration, dependencies, tests, and runtime evidence. Clearly distinguish verified facts from assumptions.
-- **Classification:** **MISSING** = genuinely absent capabilities. **IMPROVEMENT** = existing capabilities that are incomplete, weak, outdated, inefficient, or improvable. Never classify the same capability in both. Include only actionable, project-relevant, evidence-backed findings; exclude unrelated or speculative suggestions.
-- **Dynamic Findings:** Add each verified finding immediately; continue expanding the table without a preset limit. Number MISSING and IMPROVEMENT independently and continuously (1, 2, 3, ...). Each side uses a minimal-width number column and a feature/description column; numbers must not appear in descriptions. Explain what each missing feature enables or the improvement and its expected benefit. Leave unmatched cells blank. Track findings across scans and update changed evidence instead of creating duplicates.
-
+- **Selection:** When the user enters `0` and presses Enter, show all 31 engineers from Section 5 as a compact vertical list, one per line, using only each engineer's number and short title. Add **32 — Apply All Engineers** as the final option. Selecting 1–31 audits only that engineer; selecting 32 automatically applies all 31 disciplines. Do not use a horizontal layout.
+- **Research & Verification:** For every selected discipline, build its relevant responsibility checklist internally. Continuously research current authoritative sources and applicable standards, then inspect the live project—including relevant code, architecture, configuration, dependencies, tests, and runtime behavior—to identify what is present, missing, or weak. Do not display the raw checklist or a separate numbered feature list. Base findings on verified project evidence, not assumptions.
+- **Classification:** **MISSING** = a relevant capability that is genuinely absent. **IMPROVEMENT** = an existing capability that is incomplete, weak, outdated, inefficient, or otherwise needs enhancement. Do not place the same capability in both categories. Exclude irrelevant, speculative, and duplicate findings.
+- **Dynamic Findings:** Add each verified finding directly to the table below as soon as it is confirmed. Put missing capabilities only under **MISSING** and enhancements only under **IMPROVEMENT**. Number each side independently and continuously (1, 2, 3, ...). Each entry must contain a clear, short feature title and a brief description explaining the practical benefit of adding or improving it. Keep descriptions concise; avoid lengthy explanations. Keep the table updated as the audit progresses, revise findings when evidence changes, and do not add duplicates. Show findings in the table only; never display a separate checklist or numbered feature list.
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
   <colgroup><col style="width:2%;"><col style="width:48%;"><col style="width:2%;"><col style="width:48%;"></colgroup>
   <tr><th colspan="4" align="center">CONTINUOUS PROJECT AUDIT</th></tr>
   <tr><th colspan="2" align="center">MISSING</th><th colspan="2" align="center">IMPROVEMENT</th></tr>
-  <tr><td align="center" valign="middle">1</td><td align="center" valign="middle"><strong>[Missing feature title]</strong><br>[Description: what it does and what adding it enables]</td><td align="center" valign="middle">1</td><td align="center" valign="middle"><strong>[Existing feature title]</strong><br>[Description: proposed enhancement and expected benefit]</td></tr>
+  <tr><td align="center" valign="middle">1</td><td align="center" valign="middle"><strong>[Short feature title]</strong><br>[Brief benefit of adding this feature]</td><td align="center" valign="middle">1</td><td align="center" valign="middle"><strong>[Short feature title]</strong><br>[Brief benefit of improving this feature]</td></tr>
 </table>
 </div>
 
