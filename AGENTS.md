@@ -85,7 +85,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <colgroup><col style="width:2%;"><col style="width:48%;"><col style="width:2%;"><col style="width:48%;"></colgroup>
   <tr><th colspan="4" align="center">CONTINUOUS PROJECT AUDIT</th></tr>
   <tr><th colspan="2" align="center">MISSING</th><th colspan="2" align="center">IMPROVEMENT</th></tr>
-  <tr><th align="center">#</th><th align="center">FEATURE / DESCRIPTION</th><th align="center">#</th><th align="center">FEATURE / DESCRIPTION</th></tr>
   <tr><td align="center" valign="middle">1</td><td align="center" valign="middle"><strong>[Missing feature title]</strong><br>[Description: what it does and what adding it enables]</td><td align="center" valign="middle">1</td><td align="center" valign="middle"><strong>[Existing feature title]</strong><br>[Description: proposed enhancement and expected benefit]</td></tr>
 </table>
 </div>
