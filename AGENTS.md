@@ -77,7 +77,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Research & Verification:** Build a complete responsibility checklist from current authoritative sources and relevant engineering standards. Compare it with the live project by inspecting applicable code, architecture, configuration, dependencies, tests, and runtime evidence. Clearly distinguish verified facts from assumptions.
 - **Classification:** **MISSING** = genuinely absent capabilities. **IMPROVEMENT** = existing capabilities that are incomplete, weak, outdated, inefficient, or improvable. Never classify the same capability in both. Include only actionable, project-relevant, evidence-backed findings; exclude unrelated or speculative suggestions.
 - **Dynamic Findings:** Add each verified finding immediately; continue expanding the table without a preset limit. Number MISSING and IMPROVEMENT independently and continuously (1, 2, 3, ...). Each side uses a minimal-width number column and a feature/description column; numbers must not appear in descriptions. Explain what each missing feature enables or the improvement and its expected benefit. Leave unmatched cells blank. Track findings across scans and update changed evidence instead of creating duplicates.
-- **Output:** During the audit, show findings only in the table below—no external explanations, summaries, progress messages, recommendations, or extra headings. The initial selection menu shows titles and numbers only.
 
 
 <div align="center">
