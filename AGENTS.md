@@ -85,7 +85,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
   <tr><th colspan="2" align="center">MISSING &amp; IMPROVEMENT</th></tr>
   <tr><th align="center" width="50%">MISSING</th><th align="center" width="50%">IMPROVEMENT</th></tr>
-  <tr><td align="center" valign="middle" width="50%"><strong>[Missing feature title]</strong><br><strong>No. 1:</strong> [Description: what it does and what adding it enables]</td><td align="center" valign="middle" width="50%"><strong>[Existing feature title]</strong><br><strong>No. 1:</strong> [Description: proposed enhancement and expected benefit]</td></tr>
+  <tr><td align="center" valign="middle" width="50%"><strong>[Missing feature title]</strong><br><strong>1</strong> [Description: what it does and what adding it enables]</td><td align="center" valign="middle" width="50%"><strong>[Existing feature title]</strong><br><strong>1</strong> [Description: proposed enhancement and expected benefit]</td></tr>
 </table>
 </div>
 
