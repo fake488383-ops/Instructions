@@ -97,9 +97,9 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Chat-Only:** Show the report in this conversation. Do not create a report file unless the user explicitly requests one.
 - **Concise Vertical Layout:** Use the specified columns for each section. Keep cells brief and include only task-relevant, verified information.
 - **Before / After:** Match each implemented feature's previous state to its actual result. Do not present unimplemented audit suggestions as completed work.
-- **Feature Status:** Show implemented feature names in the left column. In the right column, show **IMPLEMENTATION COMPLETE — WORKING** or **IMPLEMENTATION COMPLETE — FAIL** when implementation is complete; use **IN PROGRESS**, **BLOCKED**, or **NOT IMPLEMENTED** when applicable. WORKING requires runtime/acceptance verification; never infer it from code changes alone.
-- **Engineer Summary:** Use three columns: **Engineer**, **Feature**, and **Contribution**. Show each participating engineer, the feature they worked on, and their actual contribution.
-- **Testing Summary:** Use three columns: **Test Type**, **Feature**, and **Result**. Include relevant test types (e.g., Unit, Integration, End-to-End, Regression, Load, Security); show the feature tested and **PASS**, **FAIL**, or **NOT TESTED**. Below the table, show **Tests Run**, **Passed**, **Failed**, and **Not Run** counts. Count actual test executions only; do not invent or double-count results.
+- **Feature Status:** Use two columns: **Feature** on the left and **Status** on the right. List each relevant feature and show only **WORKING** or **FAIL**. WORKING requires runtime/acceptance verification; never infer it from code changes alone. If a feature is incomplete or blocked, show **FAIL**.
+- **Engineer Summary:** Use two columns: **Engineer** on the left and **Contribution** on the right. List each participating engineer and briefly state what they actually worked on.
+- **Testing Summary:** Use two columns: **Test Type** on the left and **Result** on the right. List each test type actually run and show only **PASS** or **FAIL**. If a relevant test was not run, show **NOT TESTED**. Below the table, show **Tests Run**, **Passed**, **Failed**, and **Not Run** counts. Count actual test executions only; do not invent or double-count results.
 - **Performance Metrics:** Use two columns: **Performance Metric** and **Measured Value**. Include relevant measured values such as latency, response time, throughput, CPU usage, and memory usage. Include units and test conditions/load where available. Use **NOT MEASURED** when no valid measurement exists; never invent metrics.
 
 <div align="center">
@@ -109,13 +109,14 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <tr><th colspan="3" align="center">BEFORE</th><th colspan="3" align="center">AFTER</th></tr>
   <tr><td colspan="3" align="center" valign="middle">[Previous state of implemented feature]</td><td colspan="3" align="center" valign="middle">[Actual implemented result]</td></tr>
   <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
-  <tr><td colspan="3" align="center" valign="middle">[Feature Name]</td><td colspan="3" align="center" valign="middle">[IMPLEMENTATION COMPLETE — WORKING / IMPLEMENTATION COMPLETE — FAIL]</td></tr>
+  <tr><th colspan="3" align="center">Feature</th><th colspan="3" align="center">Status</th></tr>
+  <tr><td colspan="3" align="center" valign="middle">[Feature Name]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL]</td></tr>
   <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><th colspan="2" align="center">Engineer</th><th colspan="2" align="center">Feature</th><th colspan="2" align="center">Contribution</th></tr>
-  <tr><td colspan="2" align="center">[Engineer Name]</td><td colspan="2" align="center">[Feature Name]</td><td colspan="2" align="center">[Actual contribution]</td></tr>
+  <tr><th colspan="3" align="center">Engineer</th><th colspan="3" align="center">Contribution</th></tr>
+  <tr><td colspan="3" align="center">[Engineer Name]</td><td colspan="3" align="center">[What the engineer worked on]</td></tr>
   <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
-  <tr><th colspan="2" align="center">Test Type</th><th colspan="2" align="center">Feature</th><th colspan="2" align="center">Result</th></tr>
-  <tr><td colspan="2" align="center">[Unit / Integration / E2E / etc.]</td><td colspan="2" align="center">[Feature Name]</td><td colspan="2" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><th colspan="3" align="center">Test Type</th><th colspan="3" align="center">Result</th></tr>
+  <tr><td colspan="3" align="center">[Unit / Integration / E2E / etc.]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><td colspan="6" align="center">Tests Run: [count] | Passed: [count] | Failed: [count] | Not Run: [count]</td></tr>
   <tr><th colspan="6" align="center">PERFORMANCE METRICS</th></tr>
   <tr><th colspan="3" align="center">Performance Metric</th><th colspan="3" align="center">Measured Value</th></tr>
