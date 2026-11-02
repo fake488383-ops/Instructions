@@ -99,7 +99,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Before / After:** Match each implemented feature's previous state to its actual result. Do not present unimplemented audit suggestions as completed work.
 - **Feature Status:** Use two columns: **Feature** on the left and **Status** on the right. List each relevant feature and show only **WORKING** or **FAIL**. WORKING requires runtime/acceptance verification; never infer it from code changes alone. If a feature is incomplete or blocked, show **FAIL**.
 - **Engineer Summary:** Use two columns: **Engineer** on the left and **Contribution** on the right. List each participating engineer and briefly state what they actually worked on.
-- **Testing Summary:** Use two columns: **Test Type** on the left and **Result** on the right. List each test type actually run and show only **PASS** or **FAIL**. If a relevant test was not run, show **NOT TESTED**. Below the table, show **Tests Run**, **Passed**, **Failed**, and **Not Run** counts. Count actual test executions only; do not invent or double-count results.
+- **Testing Summary:** Use two columns: **Test Type** on the left and **Result** on the right. List each test type actually run and show only **PASS** or **FAIL**. If a relevant test was not run, show **NOT TESTED**. Do not add test-count summaries.
 - **Performance Metrics:** Use two columns: **Performance Metric** and **Measured Value**. Include relevant measured values such as latency, response time, throughput, CPU usage, and memory usage. Include units and test conditions/load where available. Use **NOT MEASURED** when no valid measurement exists; never invent metrics.
 
 <div align="center">
@@ -117,7 +117,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
   <tr><th colspan="3" align="center">Test Type</th><th colspan="3" align="center">Result</th></tr>
   <tr><td colspan="3" align="center">[Unit / Integration / E2E / etc.]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
-  <tr><td colspan="6" align="center">Tests Run: [count] | Passed: [count] | Failed: [count] | Not Run: [count]</td></tr>
   <tr><th colspan="6" align="center">PERFORMANCE METRICS</th></tr>
   <tr><th colspan="3" align="center">Performance Metric</th><th colspan="3" align="center">Measured Value</th></tr>
   <tr><td colspan="3" align="center">[Latency / Throughput / CPU / Memory]</td><td colspan="3" align="center">[Measured value + unit / NOT MEASURED]</td></tr>
