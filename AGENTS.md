@@ -81,15 +81,9 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
   <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
-  <tr><th colspan="2" align="center">PROJECT REPORT</th></tr>
-  <tr><th align="center" width="50%">BEFORE</th><th align="center" width="50%">AFTER</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[One previous/missing feature per row]</td><td align="center" valign="middle" width="50%">[Matching addition/improvement per row]</td></tr>
-  <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Full engineer name]</td><td align="center" valign="middle" width="50%">[Matching contribution]</td></tr>
-  <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Feature/test name]</td><td align="center" valign="middle" width="50%">[Actual PASS/FAIL status]</td></tr>
-  <tr><th colspan="2" align="center">QUALITY SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Quality/health metric]</td><td align="center" valign="middle" width="50%">[Measured value and unit]</td></tr>
+  <tr><th colspan="2" align="center">MISSING &amp; IMPROVEMENT</th></tr>
+  <tr><th align="center" width="50%">MISSING</th><th align="center" width="50%">IMPROVEMENT</th></tr>
+  <tr><td align="center" valign="middle" width="50%"><strong>[Missing feature title]</strong><br>[Description: what it does and what adding it enables]</td><td align="center" valign="middle" width="50%"><strong>[Existing feature title]</strong><br>[Description: proposed enhancement and expected benefit]</td></tr>
 </table>
 </div>
 
@@ -108,8 +102,14 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
   <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
-  <tr><th colspan="2" align="center">MISSING &amp; IMPROVEMENT</th></tr>
-  <tr><th align="center" width="50%">MISSING</th><th align="center" width="50%">IMPROVEMENT</th></tr>
-  <tr><td align="center" valign="middle" width="50%"><strong>[Missing feature title]</strong><br>[Description: what it does and what adding it enables]</td><td align="center" valign="middle" width="50%"><strong>[Existing feature title]</strong><br>[Description: proposed enhancement and expected benefit]</td></tr>
+  <tr><th colspan="2" align="center">PROJECT REPORT</th></tr>
+  <tr><th align="center" width="50%">BEFORE</th><th align="center" width="50%">AFTER</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[One previous/missing feature per row]</td><td align="center" valign="middle" width="50%">[Matching addition/improvement per row]</td></tr>
+  <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[Full engineer name]</td><td align="center" valign="middle" width="50%">[Matching contribution]</td></tr>
+  <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[Feature/test name]</td><td align="center" valign="middle" width="50%">[Actual PASS/FAIL status]</td></tr>
+  <tr><th colspan="2" align="center">QUALITY SUMMARY</th></tr>
+  <tr><td align="center" valign="middle" width="50%">[Quality/health metric]</td><td align="center" valign="middle" width="50%">[Measured value and unit]</td></tr>
 </table>
 </div>
