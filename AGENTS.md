@@ -84,16 +84,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 </div>
 <h2>7. Task Completion Report</h2>
 
-- **Always Report:** After every implementation attempt, provide a completion report in this conversation, including partial, blocked, or failed outcomes. Do not create a report file unless requested. Read-only research, audit findings, engineer selection, and **STOP** do not trigger an implementation report.
-- **Report Size:** Use **Compact Fix Report** for a small, focused fix or single-feature change. Use **Full Report** for broad, multi-feature, or multi-part work. Choose by actual task scope.
-- **Compact Fix Report:** Show a concise feature outcome, then the **TESTING SUMMARY** table and **PERFORMANCE METRICS** table. Do not show **BEFORE / AFTER** or **ENGINEER SUMMARY**. Preserve both table headings and column headers; include only relevant rows. If no relevant performance metric applies, show **NOT APPLICABLE**; if it applies but was not measured, show **NOT MEASURED**. Never replace tables with plain text.
-- **Full Report:** Use the complete HTML blueprint below, preserving its title, every section, heading, table, column header, order, and structure. Include concise rows where appropriate; do not omit sections.
+- **Mandatory Report:** Generate a completion report in this conversation after every user-requested task, whether small or large. This applies to successful, partial, blocked, and failed outcomes. Never skip the report because a change is minor. Do not create a report file unless requested.
+- **One Report Format:** Always use the complete report blueprint below, including every table, heading, section, and column. Never switch between separate small-task and large-task report formats, and never replace a table with plain text.
+- **Scale Detail to Work:** For a small change, provide brief, relevant information and only the necessary data rows. For a large or multi-part task, provide fuller explanations and all relevant detail. Keep every required table present even when it contains only one row or a concise status such as **NOT APPLICABLE**.
 - **Verification & Status:** QA Test Engineer independently selects and runs relevant tests, fixes defects, and retests when possible. Report only actual evidence. **WORKING** requires runtime or acceptance verification; otherwise use **FAIL** where verification shows failure. Use **PASS**, **FAIL**, or **NOT TESTED** accurately for tests.
-- **Before / After:** In full reports, compare the actual previous state with the implemented result. Never present suggestions as completed work.
-- **Feature Status:** In full reports, use the existing **Feature** and **Status** columns; list relevant features with **WORKING** or **FAIL** only.
-- **Engineer Summary:** In full reports, list only participating engineers and their actual contributions.
-- **Testing Summary:** Use only relevant, recognized QA test types in the **Test Type** column, such as **Unit Test**, **Integration Test**, **System Test**, **End-to-End Test**, and **Regression Test**. Add specialized test types only when genuinely applicable. Never use feature names, task descriptions, generic labels, implementation steps, or filler rows as test titles. Show **PASS** or **FAIL** for tests run and **NOT TESTED** only for applicable tests not run.
-- **Performance Metrics:** Show only relevant feature-specific metrics, with measured values, units, and conditions. Use **NOT MEASURED** when a relevant metric was not measured; never invent values or add irrelevant metrics.
+- **Before / After:** Always show the actual previous state and the actual result after the task. Never present suggestions as completed work.
+- **Feature Status:** Use the existing **Feature** and **Status** columns; list relevant features with **WORKING** or **FAIL** only. If no feature applies, state **NOT APPLICABLE** in the table.
+- **Engineer Summary:** List only engineers who actually participated and their real contributions. If none applies, state **NOT APPLICABLE** in the table.
+- **Testing Summary:** Use only relevant, recognized QA test types in the **Test Type** column, such as **Unit Test**, **Integration Test**, **System Test**, **End-to-End Test**, and **Regression Test**. Add specialized test types only when genuinely applicable. Never use feature names, task descriptions, generic labels, implementation steps, or filler rows as test titles. Show **PASS** or **FAIL** for tests run and **NOT TESTED** only for applicable tests not run. If testing is not applicable, state **NOT APPLICABLE** in the table.
+- **Performance Metrics:** Show only relevant feature-specific metrics, with measured values, units, and conditions. Use **NOT MEASURED** when a relevant metric was not measured; use **NOT APPLICABLE** when no relevant metric applies. Never invent values or add irrelevant metrics.
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
@@ -103,15 +102,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <tr><td colspan="3" align="center" valign="middle">[Previous state of implemented feature]</td><td colspan="3" align="center" valign="middle">[Actual implemented result]</td></tr>
   <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
   <tr><th colspan="3" align="center">Feature</th><th colspan="3" align="center">Status</th></tr>
-  <tr><td colspan="3" align="center" valign="middle">[Feature Name]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL]</td></tr>
+  <tr><td colspan="3" align="center" valign="middle">[Feature Name / NOT APPLICABLE]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT APPLICABLE]</td></tr>
   <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
   <tr><th colspan="3" align="center">Engineer</th><th colspan="3" align="center">Contribution</th></tr>
-  <tr><td colspan="3" align="center">[Engineer Name]</td><td colspan="3" align="center">[What the engineer worked on]</td></tr>
+  <tr><td colspan="3" align="center">[Engineer Name / NOT APPLICABLE]</td><td colspan="3" align="center">[Actual contribution / NOT APPLICABLE]</td></tr>
   <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
   <tr><th colspan="3" align="center">Test Type</th><th colspan="3" align="center">Result</th></tr>
-  <tr><td colspan="3" align="center">[Relevant standard QA test type]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><td colspan="3" align="center">[Relevant standard QA test type / NOT APPLICABLE]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED / NOT APPLICABLE]</td></tr>
   <tr><th colspan="6" align="center">PERFORMANCE METRICS</th></tr>
   <tr><th colspan="3" align="center">Performance Metric</th><th colspan="3" align="center">Measured Value</th></tr>
-  <tr><td colspan="3" align="center">[Auto-selected feature-specific metric]</td><td colspan="3" align="center">[Measured value + unit / NOT MEASURED]</td></tr>
+  <tr><td colspan="3" align="center">[Feature-specific metric / NOT APPLICABLE]</td><td colspan="3" align="center">[Measured value + unit / NOT MEASURED / NOT APPLICABLE]</td></tr>
 </table>
 </div>
