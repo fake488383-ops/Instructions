@@ -98,8 +98,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Concise Vertical Layout:** Keep two equal columns; add one item per row and keep every cell brief.
 - **Before / After:** Match each implemented feature's previous state to its actual result. Do not present unimplemented audit suggestions as completed work.
 - **Engineer Summary:** Show each participating engineer and their actual contribution, one per row.
-- **Testing Summary:** Show each relevant feature/test and its actual PASS/FAIL or NOT TESTED status. Never claim an unverified pass.
-- **Quality Summary:** Show applicable measured health/performance metrics with units. Never invent values; use NOT MEASURED when no measurement was taken.
+- **Testing Summary:** Show only implemented feature names in the left column and **PASS** or **FAIL** in the right column. No test names, explanations, or extra details. Include only features with an actual verification result; never claim an unverified PASS.
+- **Quality Summary:** Show only the quality of implemented features using relevant, measured feature-specific metrics (e.g., AI response accuracy, voice recognition accuracy, response latency, reliability). Do not show unrelated project-wide metrics or invent scores; use **NOT MEASURED** when no measurement exists.
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
@@ -110,8 +110,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
   <tr><td align="center" valign="middle" width="50%">[Full engineer name]</td><td align="center" valign="middle" width="50%">[Actual contribution]</td></tr>
   <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Feature/test name]</td><td align="center" valign="middle" width="50%">[Actual PASS/FAIL/NOT TESTED status]</td></tr>
+  <tr><td align="center" valign="middle" width="50%">[Implemented feature name]</td><td align="center" valign="middle" width="50%">[PASS / FAIL]</td></tr>
   <tr><th colspan="2" align="center">QUALITY SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Quality/health metric]</td><td align="center" valign="middle" width="50%">[Measured value and unit / NOT MEASURED]</td></tr>
+  <tr><td align="center" valign="middle" width="50%">[Feature-specific quality metric]</td><td align="center" valign="middle" width="50%">[Measured score/value and unit / NOT MEASURED]</td></tr>
 </table>
 </div>
