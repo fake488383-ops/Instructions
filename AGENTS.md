@@ -75,14 +75,13 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Continuous Project Audit
 
-- **Chat-Only Output / No Audit Files:** Run the `0` menu, engineer selection, and all audit updates only in the active VS Code agent conversation. Display the engineer menu and every audit finding exclusively in the audit table in chat. Never create, modify, or save `.md`, `.txt`, `.json`, CSV, HTML, or other project files to store, display, export, or continue an audit. Never create an audit folder or separate checklist/report. Write project files only when they are genuine, user-authorized implementation deliverables—not as an audit presentation. No audit findings may appear outside the table.
-
-- **Selection:** When the user enters `0` and presses Enter, show all 31 engineers from Section 5 as a compact vertical list, one per line, using only each engineer's number and short title. Add **32 — Apply All Engineers** as the final option. Selecting 1–31 audits only that engineer; selecting 32 automatically applies all 31 disciplines. Do not use a horizontal layout.
-- **Research & Project Coverage:** For every selected discipline, continuously research current authoritative sources, standards, and relevant high-level capabilities within that engineer's full responsibility domain. Discover applicable sub-disciplines, features, technologies, methods, risks, and best practices without limiting the audit to a small predefined checklist. Inspect the live project—including code, architecture, configuration, dependencies, tests, and runtime behavior—to verify what exists, what is missing, and what can be improved. Do not use a specific product example as a fixed feature list. Base every finding on project evidence.
-- **Classification:** **MISSING** = a relevant capability that is genuinely absent. **IMPROVEMENT** = an existing capability that is incomplete, weak, outdated, inefficient, or otherwise needs enhancement. Do not place the same capability in both categories. Exclude irrelevant, speculative, and duplicate findings.
-- **Finding Format:** Show each feature name/title in **English**. Under it, write only one short description in **Roman Urdu** explaining what the feature does or the practical benefit of adding/improving it. Never write descriptions in Urdu or Devanagari script. Keep descriptions brief; no long explanations.
-- **Continuous Audit Loop:** Do not stop after 5, 10, 20, or any fixed number of findings. Keep auditing the selected engineer's complete responsibility domain in repeated cycles: research, inspect, verify, classify, and update the table. Explore all relevant high-level capabilities and deeper sub-areas; add every distinct, evidence-backed finding without an arbitrary count limit. Revisit affected areas as new findings, project changes, or new evidence emerge. Continue until the user stops the audit; never declare the audit complete merely because a target number of findings has been reached. Avoid duplicates and unsupported suggestions.
-- **Dynamic Findings:** Add each verified finding directly to the table below as soon as it is confirmed. Put missing capabilities only under **MISSING** and enhancements only under **IMPROVEMENT**. Number each side independently and continuously (1, 2, 3, ...). Keep the table updated as the audit progresses and revise findings when evidence changes. Show findings in the table only; never display the raw checklist or a separate numbered feature list.
+- **Selection:** On `0` + Enter, show all 31 Section 5 engineers vertically, one numbered title per line, plus **32 — Audit With All Engineers**. Numbers 1–31 audit only that engineer; 32 audits with all 31. Do not interpret this option as approval to implement.
+- **Research & Verification:** Research current authoritative sources, standards, and the selected engineer's full relevant domain. Inspect the live project (architecture, code, configuration, dependencies, tests, and runtime). Compare industry-relevant capabilities with verified project evidence; classify only genuine gaps or weaknesses. Do not assume a feature is missing or expand into unrelated scope.
+- **Classification:** **MISSING** = relevant capability absent. **IMPROVEMENT** = existing capability that is incomplete, weak, outdated, or inefficient. Keep categories exclusive; remove duplicates and unsupported findings.
+- **Finding Format:** Show English feature titles with one brief Roman Urdu description. Display findings only in the audit table; no separate checklist, feature list, audit report, or audit files.
+- **Continuous Loop & Commands:** Keep researching, inspecting, verifying, and updating the table without a fixed finding limit. Continue while the audit is active; do not declare it complete automatically. **STOP** ends the audit without implementation or a completion report. **APPLY** starts implementation only for findings the user explicitly approves; never apply all findings by default. If execution is paused or interrupted, resume from the latest verified audit state when the user continues.
+- **Audit Output Only:** The engineer menu and all audit findings must appear only in this conversation. Never create or modify project files to store, display, or export audit results. Modify project files only for user-approved implementation deliverables.
+- **After Implementation:** Once approved findings are implemented and verified, generate the Section 7 report. After the report, the user can enter `0` to start another audit.
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
@@ -94,30 +93,25 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 </div>
 <h2>7. Task Completion Report</h2>
 
-- **Chat-Only Report:** Display the completion report only in the active conversation using the table below. Do not create or modify project files for the report unless the user explicitly requests a saved report file.
-
-
-- **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
-- **Short Table Content:** Keep every report table cell concise—short feature names, full engineer names, brief contributions, test names, PASS/FAIL, and metric values with units. No long paragraphs inside table cells.
-- **Dynamic Vertical Layout:** Preserve the complete table format below. Add as many rows as required for every feature, engineer, test, and quality metric. Show each item on its own row, vertically; never combine lists horizontally. Keep the two columns equally sized and centered.
-- **Before / After:** Each feature gets its own matching row. BEFORE shows missing features or the previous state; AFTER shows additions or improvements.
-- **Engineer Summary:** One engineer per row. Left: full engineer name/designation. Right: that engineer's matching contribution. Include only participating engineers.
-- **Testing Summary:** One added/modified feature or test per row on the left; actual PASS/FAIL status on the right. Verify each feature; never claim PASS without testing.
-- **Quality Summary:** One applicable health/performance metric per row on the left; actual measured value with units on the right (e.g., latency, response time, throughput, CPU/RAM, task success rate, service health). Never invent values; mark unmeasured items NOT MEASURED.
-
-
+- **When to Report:** Generate this report only after user-approved implementation is complete and verification has been attempted. Never generate it for engineer selection, research, audit findings, or STOP. If the user only requests analysis, show only the audit table.
+- **Chat-Only:** Show the report in this conversation. Do not create a report file unless the user explicitly requests one.
+- **Concise Vertical Layout:** Keep two equal columns; add one item per row and keep every cell brief.
+- **Before / After:** Match each implemented feature's previous state to its actual result. Do not present unimplemented audit suggestions as completed work.
+- **Engineer Summary:** Show each participating engineer and their actual contribution, one per row.
+- **Testing Summary:** Show each relevant feature/test and its actual PASS/FAIL or NOT TESTED status. Never claim an unverified pass.
+- **Quality Summary:** Show applicable measured health/performance metrics with units. Never invent values; use NOT MEASURED when no measurement was taken.
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
   <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
   <tr><th colspan="2" align="center">PROJECT REPORT</th></tr>
   <tr><th align="center" width="50%">BEFORE</th><th align="center" width="50%">AFTER</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[One previous/missing feature per row]</td><td align="center" valign="middle" width="50%">[Matching addition/improvement per row]</td></tr>
+  <tr><td align="center" valign="middle" width="50%">[Previous state of implemented feature]</td><td align="center" valign="middle" width="50%">[Actual implemented result]</td></tr>
   <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Full engineer name]</td><td align="center" valign="middle" width="50%">[Matching contribution]</td></tr>
+  <tr><td align="center" valign="middle" width="50%">[Full engineer name]</td><td align="center" valign="middle" width="50%">[Actual contribution]</td></tr>
   <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Feature/test name]</td><td align="center" valign="middle" width="50%">[Actual PASS/FAIL status]</td></tr>
+  <tr><td align="center" valign="middle" width="50%">[Feature/test name]</td><td align="center" valign="middle" width="50%">[Actual PASS/FAIL/NOT TESTED status]</td></tr>
   <tr><th colspan="2" align="center">QUALITY SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Quality/health metric]</td><td align="center" valign="middle" width="50%">[Measured value and unit]</td></tr>
+  <tr><td align="center" valign="middle" width="50%">[Quality/health metric]</td><td align="center" valign="middle" width="50%">[Measured value and unit / NOT MEASURED]</td></tr>
 </table>
 </div>
