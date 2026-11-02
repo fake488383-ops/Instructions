@@ -75,6 +75,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 6. Continuous Project Audit
 
+- **Chat-Only Output / No Audit Files:** Run the `0` menu, engineer selection, and all audit updates only in the active VS Code agent conversation. Display the engineer menu and every audit finding exclusively in the audit table in chat. Never create, modify, or save `.md`, `.txt`, `.json`, CSV, HTML, or other project files to store, display, export, or continue an audit. Never create an audit folder or separate checklist/report. Write project files only when they are genuine, user-authorized implementation deliverables—not as an audit presentation. No audit findings may appear outside the table.
+
 - **Selection:** When the user enters `0` and presses Enter, show all 31 engineers from Section 5 as a compact vertical list, one per line, using only each engineer's number and short title. Add **32 — Apply All Engineers** as the final option. Selecting 1–31 audits only that engineer; selecting 32 automatically applies all 31 disciplines. Do not use a horizontal layout.
 - **Research & Project Coverage:** For every selected discipline, continuously research current authoritative sources, standards, and relevant high-level capabilities within that engineer's full responsibility domain. Discover applicable sub-disciplines, features, technologies, methods, risks, and best practices without limiting the audit to a small predefined checklist. Inspect the live project—including code, architecture, configuration, dependencies, tests, and runtime behavior—to verify what exists, what is missing, and what can be improved. Do not use a specific product example as a fixed feature list. Base every finding on project evidence.
 - **Classification:** **MISSING** = a relevant capability that is genuinely absent. **IMPROVEMENT** = an existing capability that is incomplete, weak, outdated, inefficient, or otherwise needs enhancement. Do not place the same capability in both categories. Exclude irrelevant, speculative, and duplicate findings.
@@ -91,6 +93,9 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 </table>
 </div>
 <h2>7. Task Completion Report</h2>
+
+- **Chat-Only Report:** Display the completion report only in the active conversation using the table below. Do not create or modify project files for the report unless the user explicitly requests a saved report file.
+
 
 - **Mandatory:** Generate this concise report after every task, small or large. Never skip it.
 - **Short Table Content:** Keep every report table cell concise—short feature names, full engineer names, brief contributions, test names, PASS/FAIL, and metric values with units. No long paragraphs inside table cells.
