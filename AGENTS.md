@@ -93,13 +93,14 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 </div>
 <h2>7. Task Completion Report</h2>
 
-- **When to Report:** Generate this report immediately when a user-approved implementation attempt ends, whether fully completed, partially completed, blocked, or unable to pass verification. Verification must be attempted when feasible, but PASS is not required to generate the report. Record **PASS**, **FAIL**, or **NOT TESTED** accurately. Never generate it for engineer selection, research, audit findings, or STOP. If the user only requests analysis, show only the audit table.
+- **When to Report:** Generate this report immediately when a user-approved implementation attempt ends, whether fully completed, partially completed, blocked, or unable to pass verification. Verification must be attempted when feasible. Record actual outcomes accurately; never claim unverified success. Never generate it for engineer selection, research, audit findings, or STOP. If the user only requests analysis, show only the audit table.
 - **Chat-Only:** Show the report in this conversation. Do not create a report file unless the user explicitly requests one.
-- **Concise Vertical Layout:** Keep two equal columns; add one item per row and keep every cell brief.
+- **Concise Vertical Layout:** Use the specified columns for each section. Keep cells brief and include only task-relevant, verified information.
 - **Before / After:** Match each implemented feature's previous state to its actual result. Do not present unimplemented audit suggestions as completed work.
-- **Engineer Summary:** Show each participating engineer and their actual contribution, one per row.
-- **Testing Summary:** Show only implemented feature names in the left column and **PASS** or **FAIL** in the right column. No test names, explanations, or extra details. Include only features with an actual verification result; never claim an unverified PASS.
-- **Quality Summary:** Show only the quality of implemented features using relevant, measured feature-specific metrics (e.g., AI response accuracy, voice recognition accuracy, response latency, reliability). Do not show unrelated project-wide metrics or invent scores; use **NOT MEASURED** when no measurement exists.
+- **Feature Status:** Show implemented feature names in the left column. In the right column, show **IMPLEMENTATION COMPLETE — WORKING** or **IMPLEMENTATION COMPLETE — FAIL** when implementation is complete; use **IN PROGRESS**, **BLOCKED**, or **NOT IMPLEMENTED** when applicable. WORKING requires runtime/acceptance verification; never infer it from code changes alone.
+- **Engineer Summary:** Use three columns: **Engineer**, **Feature**, and **Contribution**. Show each participating engineer, the feature they worked on, and their actual contribution.
+- **Testing Summary:** Use three columns: **Test Type**, **Feature**, and **Result**. Include relevant test types (e.g., Unit, Integration, End-to-End, Regression, Load, Security); show the feature tested and **PASS**, **FAIL**, or **NOT TESTED**. Below the table, show **Tests Run**, **Passed**, **Failed**, and **Not Run** counts. Count actual test executions only; do not invent or double-count results.
+- **Performance Metrics:** Use two columns: **Performance Metric** and **Measured Value**. Include relevant measured values such as latency, response time, throughput, CPU usage, and memory usage. Include units and test conditions/load where available. Use **NOT MEASURED** when no valid measurement exists; never invent metrics.
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
@@ -107,11 +108,17 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
   <tr><th colspan="2" align="center">PROJECT REPORT</th></tr>
   <tr><th align="center" width="50%">BEFORE</th><th align="center" width="50%">AFTER</th></tr>
   <tr><td align="center" valign="middle" width="50%">[Previous state of implemented feature]</td><td align="center" valign="middle" width="50%">[Actual implemented result]</td></tr>
-  <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Full engineer name]</td><td align="center" valign="middle" width="50%">[Actual contribution]</td></tr>
-  <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Implemented feature name]</td><td align="center" valign="middle" width="50%">[PASS / FAIL]</td></tr>
-  <tr><th colspan="2" align="center">QUALITY SUMMARY</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Feature-specific quality metric]</td><td align="center" valign="middle" width="50%">[Measured score/value and unit / NOT MEASURED]</td></tr>
+  <tr><th colspan="2" align="center">FEATURE STATUS</th></tr>
+  <tr><td align="center" valign="middle">[Feature Name]</td><td align="center" valign="middle">[IMPLEMENTATION COMPLETE — WORKING / IMPLEMENTATION COMPLETE — FAIL]</td></tr>
+  <tr><th colspan="3" align="center">ENGINEER SUMMARY</th></tr>
+  <tr><th align="center">Engineer</th><th align="center">Feature</th><th align="center">Contribution</th></tr>
+  <tr><td align="center">[Engineer Name]</td><td align="center">[Feature Name]</td><td align="center">[Actual contribution]</td></tr>
+  <tr><th colspan="3" align="center">TESTING SUMMARY</th></tr>
+  <tr><th align="center">Test Type</th><th align="center">Feature</th><th align="center">Result</th></tr>
+  <tr><td align="center">[Unit / Integration / E2E / etc.]</td><td align="center">[Feature Name]</td><td align="center">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><td colspan="3" align="center">Tests Run: [count] | Passed: [count] | Failed: [count] | Not Run: [count]</td></tr>
+  <tr><th colspan="2" align="center">PERFORMANCE METRICS</th></tr>
+  <tr><th align="center">Performance Metric</th><th align="center">Measured Value</th></tr>
+  <tr><td align="center">[Latency / Throughput / CPU / Memory]</td><td align="center">[Measured value + unit / NOT MEASURED]</td></tr>
 </table>
 </div>
