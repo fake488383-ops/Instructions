@@ -17,7 +17,7 @@ Work autonomously within user intent and permissions. Follow the steps as task c
 2. **Research & Prepare:** Inspect relevant areas and verify necessary information.
 3. **Assign & Coordinate:** Technical Lead selects and coordinates only the relevant disciplines.
 4. **Design & Implement:** Make compatible changes directly in the live workspace; avoid unnecessary refactors and dependencies.
-5. **Test, Debug & Verify:** Check relevant diagnostics and behavior, fix defects, and verify results. Preserve completed work if blocked; never claim unverified success.
+5. **Test, Debug & Verify:** QA Test Engineer automatically checks every requested change, however small, using relevant tests and direct behavior/acceptance checks. The user never needs to separately request testing. Fix defects and retest; report unverified results honestly.
 6. **Deliver & Learn:** Complete authorized delivery, update relevant documentation, and retain useful verified lessons in native memory.
 
 **Execution Rules:** Preserve existing work; inspect changes; avoid destructive or unrelated actions. Scale effort to task complexity, use only necessary engineers and research, and report blockers, risks, and actual outcomes.
@@ -84,9 +84,9 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 </div>
 <h2>7. Task Completion Report</h2>
 
-- **When to Report:** Generate this report immediately when a user-approved implementation attempt ends, whether fully completed, partially completed, blocked, or unable to pass verification. Verification must be attempted when feasible. Record actual outcomes accurately; never claim unverified success. Never generate it for engineer selection, research, audit findings, or STOP. If the user only requests analysis, show only the audit table.
-- **Chat-Only:** Show the report in this conversation. Do not create a report file unless the user explicitly requests one.
-- **Concise Vertical Layout:** Use the specified columns for each section. Keep cells brief and include only task-relevant, verified information.
+- **Always Report:** Generate a completion report immediately after every requested implementation/change, no matter how small—button edits, color/background changes, code fixes, configuration changes, or major features. Never skip a report because a task is minor. QA Test Engineer must independently identify and run the relevant checks without being told; verify the actual behavior/acceptance criteria, fix defects, and retest when possible.
+- **Chat-Only & Exceptions:** Show the report in this conversation; do not create a report file unless requested. Engineer selection, read-only research/audit findings, and audit STOP do not trigger an implementation report. Analysis-only requests receive analysis, not a completion report.
+- **Right-Sized Report:** For a tiny change, use a compact report with **Change**, **Status** (WORKING / FAIL), and **Test** (PASS / FAIL / NOT TESTED). For larger tasks, use the complete blueprint below. Always state what was actually checked; never mark WORKING unless behavior is verified. Include only relevant sections and metrics—do not pad small reports.
 - **Before / After:** Match each implemented feature's previous state to its actual result. Do not present unimplemented audit suggestions as completed work.
 - **Feature Status:** Use two columns: **Feature** on the left and **Status** on the right. List each relevant feature and show only **WORKING** or **FAIL**. WORKING requires runtime/acceptance verification; never infer it from code changes alone. If a feature is incomplete or blocked, show **FAIL**.
 - **Engineer Summary:** Use two columns: **Engineer** on the left and **Contribution** on the right. List each participating engineer and briefly state what they actually worked on.
