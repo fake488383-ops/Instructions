@@ -104,21 +104,21 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
-  <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
-  <tr><th colspan="2" align="center">PROJECT REPORT</th></tr>
-  <tr><th align="center" width="50%">BEFORE</th><th align="center" width="50%">AFTER</th></tr>
-  <tr><td align="center" valign="middle" width="50%">[Previous state of implemented feature]</td><td align="center" valign="middle" width="50%">[Actual implemented result]</td></tr>
-  <tr><th colspan="2" align="center">FEATURE STATUS</th></tr>
-  <tr><td align="center" valign="middle">[Feature Name]</td><td align="center" valign="middle">[IMPLEMENTATION COMPLETE — WORKING / IMPLEMENTATION COMPLETE — FAIL]</td></tr>
-  <tr><th colspan="3" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><th align="center">Engineer</th><th align="center">Feature</th><th align="center">Contribution</th></tr>
-  <tr><td align="center">[Engineer Name]</td><td align="center">[Feature Name]</td><td align="center">[Actual contribution]</td></tr>
-  <tr><th colspan="3" align="center">TESTING SUMMARY</th></tr>
-  <tr><th align="center">Test Type</th><th align="center">Feature</th><th align="center">Result</th></tr>
-  <tr><td align="center">[Unit / Integration / E2E / etc.]</td><td align="center">[Feature Name]</td><td align="center">[PASS / FAIL / NOT TESTED]</td></tr>
-  <tr><td colspan="3" align="center">Tests Run: [count] | Passed: [count] | Failed: [count] | Not Run: [count]</td></tr>
-  <tr><th colspan="2" align="center">PERFORMANCE METRICS</th></tr>
-  <tr><th align="center">Performance Metric</th><th align="center">Measured Value</th></tr>
-  <tr><td align="center">[Latency / Throughput / CPU / Memory]</td><td align="center">[Measured value + unit / NOT MEASURED]</td></tr>
+  <colgroup><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.70%;"></colgroup>
+  <tr><th colspan="6" align="center">PROJECT REPORT</th></tr>
+  <tr><th colspan="3" align="center">BEFORE</th><th colspan="3" align="center">AFTER</th></tr>
+  <tr><td colspan="3" align="center" valign="middle">[Previous state of implemented feature]</td><td colspan="3" align="center" valign="middle">[Actual implemented result]</td></tr>
+  <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
+  <tr><td colspan="3" align="center" valign="middle">[Feature Name]</td><td colspan="3" align="center" valign="middle">[IMPLEMENTATION COMPLETE — WORKING / IMPLEMENTATION COMPLETE — FAIL]</td></tr>
+  <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
+  <tr><th colspan="2" align="center">Engineer</th><th colspan="2" align="center">Feature</th><th colspan="2" align="center">Contribution</th></tr>
+  <tr><td colspan="2" align="center">[Engineer Name]</td><td colspan="2" align="center">[Feature Name]</td><td colspan="2" align="center">[Actual contribution]</td></tr>
+  <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
+  <tr><th colspan="2" align="center">Test Type</th><th colspan="2" align="center">Feature</th><th colspan="2" align="center">Result</th></tr>
+  <tr><td colspan="2" align="center">[Unit / Integration / E2E / etc.]</td><td colspan="2" align="center">[Feature Name]</td><td colspan="2" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><td colspan="6" align="center">Tests Run: [count] | Passed: [count] | Failed: [count] | Not Run: [count]</td></tr>
+  <tr><th colspan="6" align="center">PERFORMANCE METRICS</th></tr>
+  <tr><th colspan="3" align="center">Performance Metric</th><th colspan="3" align="center">Measured Value</th></tr>
+  <tr><td colspan="3" align="center">[Latency / Throughput / CPU / Memory]</td><td colspan="3" align="center">[Measured value + unit / NOT MEASURED]</td></tr>
 </table>
 </div>
