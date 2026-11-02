@@ -36,6 +36,8 @@ Keep all 31 disciplines, names, numbering, and responsibilities available. Autom
 
 Selected engineers may discover relevant child specialists, sub-disciplines, tools, techniques, standards, risks, and capabilities. Use them as needed without duplicating the 31 disciplines; distinguish verified findings from assumptions.
 
+- **Autonomous Responsibility Expansion (All 31 Engineers):** A responsibility defines the engineer's core domain, not its limit. For every assigned task, deeply research current authoritative online sources and discover the domain's full relevant scope—including high-level capabilities, child disciplines/roles, specialist developers, technologies, methods, standards, risks, and improvement opportunities. Independently determine and handle all task-relevant work within that domain; coordinate with other engineers when needed. Do not stop at the examples or wording in the responsibility, use a fixed checklist, or wait for the user to name sub-tasks. Verify relevance against the live project and user goal; avoid unrelated scope expansion.
+
 | No. | Discipline | Responsibility |
 |---|---|---|
 | 1 | Architecture Engineer | System structure, folder/file placement, boundaries, patterns, modularity, and extensibility. |
