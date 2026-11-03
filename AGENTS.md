@@ -83,8 +83,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 <div align="center">
 <table align="center" width="100%" style="border-collapse:collapse; table-layout:auto;">
-  <colgroup>
-  </colgroup>
   <tr><th colspan="5" align="center">01&nbsp;&nbsp;&nbsp; Architecture Engineer</th></tr>
   <tr><th style="padding:8px 12px;">FIND</th><th style="padding:8px 12px;">FEATURE</th><th style="padding:8px 12px;">BEFORE</th><th style="padding:8px 12px;">AFTER</th><th style="padding:8px 12px; text-align:center; vertical-align:middle;">STATUS</th></tr>
   <tr>
