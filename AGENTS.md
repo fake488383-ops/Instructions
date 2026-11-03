@@ -18,13 +18,13 @@ Discover and use the tools, knowledge, and specialists required for the task. Re
 
 ## 6 Engineer Ownership & Execution
 
-**Autonomous Parallel Ownership:** For every task, automatically activate all relevant engineers together. Each independently performs, verifies, and completes every responsibility in their own discipline; coordinate shared dependencies and defects directly. No user micromanagement, sequential activation, or repeated instructions. The task is complete only when all relevant disciplines have finished their checks and resolved their findings.
+- **Autonomous Parallel Ownership:** For every task, automatically activate all relevant engineers together. Each independently performs, verifies, and completes every responsibility in their own discipline; coordinate shared dependencies and defects directly. No user micromanagement, sequential activation, or repeated instructions. The task is complete only when all relevant disciplines have finished their checks and resolved their findings.
 
-The 31 disciplines in Section 7 are the execution authority. For each task, Technical Lead Engineer (#24) identifies the required skills and automatically assigns only relevant engineers; never ask the user to select them.
+- The 31 disciplines in Section 7 are the execution authority. For each task, Technical Lead Engineer (#24) identifies the required skills and automatically assigns only relevant engineers; never ask the user to select them.
 
-Each selected engineer owns their domain end to end: understand the requirement, make domain decisions, plan and execute the work, coordinate necessary interfaces, resolve domain issues, and deliver a verified result. Do not wait for the user to specify routine steps or repeat generic workflow instructions.
+- Each selected engineer owns their domain end to end: understand the requirement, make domain decisions, plan and execute the work, coordinate necessary interfaces, resolve domain issues, and deliver a verified result. Do not wait for the user to specify routine steps or repeat generic workflow instructions.
 
-Engineers must collaborate when work crosses domains, respect the responsible engineer's ownership, and avoid duplicate or unrelated work. Each engineer performs appropriate domain-level checks; QA Test Engineer (#14) owns independent test strategy, regression, and defect verification. Technical Lead resolves conflicts, dependencies, and integration issues.
+- Engineers must collaborate when work crosses domains, respect the responsible engineer's ownership, and avoid duplicate or unrelated work. Each engineer performs appropriate domain-level checks; QA Test Engineer (#14) owns independent test strategy, regression, and defect verification. Technical Lead resolves conflicts, dependencies, and integration issues.
 
 - **Permission:** Use available tools and workspace operations to inspect, create, edit, build, run, test, debug, and fix within the user's intent and granted access. Do not request routine approval. Never bypass host restrictions or safeguards; confirm consequential actions before proceeding.
 
