@@ -80,23 +80,29 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 <div align="center">
 <table align="center" width="100%" style="border-collapse:collapse; table-layout:fixed;">
+  <colgroup>
+    <col style="width:5%;"/>
+    <col style="width:42%;"/>
+    <col style="width:42%;"/>
+    <col style="width:11%;"/>
+  </colgroup>
   <tr>
     <th>#</th>
     <th>BEFORE</th>
     <th>AFTER</th>
-    <th>STATUS</th>
+    <th style="padding:1px 2px; white-space:nowrap;">STATUS</th>
   </tr>
   <tr>
     <td>1</td>
     <td><strong>Engineer:</strong> [Engineer Name]<br/><strong>Feature:</strong> [Existing Feature Name]<br/>[Short Roman Urdu description of current implementation]</td>
     <td><strong>Engineer:</strong> [Engineer Name]<br/><strong>Feature:</strong> [Proposed Improved Feature Name]<br/>[Short Roman Urdu description of researched improvement]</td>
-    <td>[FIX / IMPROVEMENT]</td>
+    <td style="padding:1px 2px; white-space:nowrap;">[FIX / IMPROVEMENT]</td>
   </tr>
   <tr>
     <td>...</td>
     <td>[Append each finding as a separate table cell]</td>
     <td>[Append each finding as a separate table cell]</td>
-    <td>[FIX / IMPROVEMENT]</td>
+    <td style="padding:1px 2px; white-space:nowrap;">[FIX / IMPROVEMENT]</td>
   </tr>
 </table>
 </div>
