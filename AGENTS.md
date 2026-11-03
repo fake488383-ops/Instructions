@@ -69,12 +69,12 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 7. Continuous Project Audit
 
-- **Selection:** `0` par 31 engineers aur **32 — Audit With All Engineers** show karo. Selected engineer apni responsibility ke mutabiq poore project ko audit kare.
-- **Scope:** Sirf apne domain ki findings do; doosre domains aur duplicate findings avoid karo.
-- **Audit & Research:** Project ke relevant code, architecture, configuration, dependencies, tests aur runtime check karo. Internet par current authoritative documentation, standards aur reliable comparisons research karo; existing solution ko suitable alternatives se compare karke project ke liye best practical option, issues aur improvement opportunities identify karo. Compatibility, security, performance, cost aur migration impact bhi consider karo. Sirf evidence-based recommendations do.
-- **Output:** Har finding **PROJECT IMPROVEMENT REPORT** ke neeche diye gaye table mein ho. Numbering continuous rakho. **BEFORE** mein existing feature/technology ka English name aur neeche uski current condition ya issue ki short Roman Urdu description likho. **AFTER** mein proposed improved feature/technology ka English name aur neeche uske faide ki short Roman Urdu description likho. **STATUS** mein sirf **FIX** ya **IMPROVEMENT** use karo. **FIX** verified defect ke liye aur **IMPROVEMENT** working solution ko behtar banane ke liye use karo. Koi real sample feature names ya example findings na likho.
-- **Continuous Loop:** Audit ko autonomously jari rakho aur tamam relevant project areas check karo; findings ko batches mein table mein add karte raho.
-- **Approval & Report:** Findings khud se implement na karo. Sirf user-approved findings implement karo; implementation ke baad Section 8 report do.
+- **Selection:** `0` par 31 engineers aur **32 — Audit With All Engineers** show karo. Selected engineer apni responsibility ke mutabiq audit kare.
+- **Scope & Research:** Sirf apne domain ki findings do; duplicates avoid karo. Project inspect karo aur current authoritative internet research se existing solutions ko alternatives ke saath compare karo.
+- **Dynamic Report:** **PROJECT IMPROVEMENT REPORT** table dynamically grow hota rahe. **BEFORE** mein existing English feature/technology name aur short Roman Urdu current condition; **AFTER** mein proposed English feature/technology name aur short Roman Urdu benefit; **STATUS** mein sirf **FIX** ya **IMPROVEMENT** ho. Kam az kam **50 findings** show karo, magar 50 par stop na karo. Selected engineer ke tamam relevant features aur improvement opportunities exhaust hone tak continue karo; koi fixed upper limit nahi.
+- **Preserve Existing Concept:** `edges.html` ka existing engineer-selection, audit, research aur continuous-discovery workflow bilkul preserve karo. Sirf table layout/columns update karo.
+- **Apply All:** User ke **Apply All** command par table ki tamam listed findings implement karo. Safe order follow karo, tests/debugging/verification karo aur jo item complete na ho uski wajah report karo.
+- **Approval & Report:** Apply All se pehle findings implement na karo. Implementation ke baad Section 8 completion report do.
 
 ```text
                          PROJECT IMPROVEMENT REPORT
@@ -84,8 +84,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 │  1  │ [Existing Feature Name]      │ [Proposed Feature Name]      │ [FIX /       │
 │     │ [Short Roman Urdu reason]    │ [Short Roman Urdu benefit]   │ IMPROVEMENT] │
 ├─────┼──────────────────────────────┼──────────────────────────────┼──────────────┤
-│  2  │ [Existing Feature Name]      │ [Proposed Feature Name]      │ [FIX /       │
-│     │ [Short Roman Urdu reason]    │ [Short Roman Urdu benefit]   │ IMPROVEMENT] │
+│ ... │ [Continue dynamically]       │ [Continue dynamically]       │ [FIX /       │
+│     │                              │                              │ IMPROVEMENT] │
 └─────┴──────────────────────────────┴──────────────────────────────┴──────────────┘
 ```
 
