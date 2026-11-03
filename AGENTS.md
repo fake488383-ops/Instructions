@@ -79,7 +79,11 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Apply & Safety:** Audit sirf report kare; **Apply All** se pehle changes na karo. **Apply All** par tamam listed findings safe dependency order mein implement, test, debug aur verify karo. Jo implement na ho uska reason/status Section 8 mein do.
 - **Preserve & Deliver:** Existing `edges.html` selection, audit, research aur continuous-discovery workflow preserve karo. Kisi bhi applied change ke baad Section 8 ka complete **FINAL REPORT** lazmi generate karo; unrelated workflow na badlo.
 
-<div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">\n<h2>PROJECT HEALTH REPORT</h2>\n</div>\n\n<div align="center">
+<div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
+<h2>PROJECT HEALTH REPORT</h2>
+</div>
+
+<div align="center">
 <table align="center" width="100%" style="border-collapse:collapse; table-layout:fixed;">
   <colgroup>
     <col style="width:7%;"/>
