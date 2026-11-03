@@ -72,21 +72,21 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Selection:** `0` par 31 engineers aur **32 — Audit With All Engineers** show karo. Selected engineer apni responsibility ke mutabiq poore project ko audit kare.
 - **Scope:** Sirf apne domain ki findings do; doosre domains aur duplicate findings avoid karo.
 - **Audit & Research:** Project ke relevant code, architecture, configuration, dependencies, tests aur runtime check karo. Internet par current authoritative documentation, standards aur reliable comparisons research karo; existing solution ko suitable alternatives se compare karke project ke liye best practical option, issues aur improvement opportunities identify karo. Compatibility, security, performance, cost aur migration impact bhi consider karo. Sirf evidence-based recommendations do.
-- **Output:** Har finding **PROJECT IMPROVEMENT REPORT** ke neeche diye gaye table mein ho. Numbering continuous rakho. **TITLE** concise English mein ho; **DESCRIPTION** mein verified issue ya recommended improvement aur uski reason brief Roman Urdu mein likho. **STATUS** mein sirf **FIX** ya **IMPROVEMENT** use karo. Koi sample feature names ya example findings na likho.
+- **Output:** Har finding **PROJECT IMPROVEMENT REPORT** ke neeche diye gaye table mein ho. Numbering continuous rakho. **BEFORE** mein existing feature/technology ka English name aur neeche uski current condition ya issue ki short Roman Urdu description likho. **AFTER** mein proposed improved feature/technology ka English name aur neeche uske faide ki short Roman Urdu description likho. **STATUS** mein sirf **FIX** ya **IMPROVEMENT** use karo. **FIX** verified defect ke liye aur **IMPROVEMENT** working solution ko behtar banane ke liye use karo. Koi real sample feature names ya example findings na likho.
 - **Continuous Loop:** Audit ko autonomously jari rakho aur tamam relevant project areas check karo; findings ko batches mein table mein add karte raho.
 - **Approval & Report:** Findings khud se implement na karo. Sirf user-approved findings implement karo; implementation ke baad Section 8 report do.
 
 ```text
                          PROJECT IMPROVEMENT REPORT
-┌─────┬──────────────────────────┬──────────────────────────────────────┬──────────────┐
-│  #  │ TITLE                    │ DESCRIPTION                          │ STATUS       │
-├─────┼──────────────────────────┼──────────────────────────────────────┼──────────────┤
-│  1  │ [Improvement Title]      │ [Verified issue / recommended        │ [FIX /       │
-│     │                          │ improvement aur uski reason]         │ IMPROVEMENT] │
-├─────┼──────────────────────────┼──────────────────────────────────────┼──────────────┤
-│  2  │ [Improvement Title]      │ [Verified issue / recommended        │ [FIX /       │
-│     │                          │ improvement aur uski reason]         │ IMPROVEMENT] │
-└─────┴──────────────────────────┴──────────────────────────────────────┴──────────────┘
+┌─────┬──────────────────────────────┬──────────────────────────────┬──────────────┐
+│  #  │ BEFORE                       │ AFTER                        │ STATUS       │
+├─────┼──────────────────────────────┼──────────────────────────────┼──────────────┤
+│  1  │ [Existing Feature Name]      │ [Proposed Feature Name]      │ [FIX /       │
+│     │ [Short Roman Urdu reason]    │ [Short Roman Urdu benefit]   │ IMPROVEMENT] │
+├─────┼──────────────────────────────┼──────────────────────────────┼──────────────┤
+│  2  │ [Existing Feature Name]      │ [Proposed Feature Name]      │ [FIX /       │
+│     │ [Short Roman Urdu reason]    │ [Short Roman Urdu benefit]   │ IMPROVEMENT] │
+└─────┴──────────────────────────────┴──────────────────────────────┴──────────────┘
 ```
 
 ## 8. Task Completion Report
