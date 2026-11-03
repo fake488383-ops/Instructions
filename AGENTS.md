@@ -90,19 +90,19 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
     <th style="padding:1px 3px; white-space:nowrap;">#</th>
     <th>BEFORE</th>
     <th>AFTER</th>
-    <th style="padding:1px 3px; white-space:nowrap;">STATUS</th>
+    <th style="padding:1px 1px; white-space:nowrap; text-align:center;">STATUS</th>
   </tr>
   <tr>
     <td style="padding:1px 3px; white-space:nowrap;">1</td>
     <td><strong>Engineer:</strong> [Engineer Name]<br/><strong>Feature:</strong> [Existing Feature Name]<br/>[Short Roman Urdu description of current implementation]</td>
     <td><strong>Engineer:</strong> [Engineer Name]<br/><strong>Feature:</strong> [Proposed Improved Feature Name]<br/>[Short Roman Urdu description of researched improvement]</td>
-    <td style="padding:1px 3px; white-space:nowrap;">[FIX / IMPROVEMENT]</td>
+    <td style="padding:1px 1px; white-space:nowrap; text-align:center;">[FIX / IMPROVEMENT]</td>
   </tr>
   <tr>
     <td style="padding:1px 3px; white-space:nowrap;">...</td>
     <td>[Append each finding as a separate table cell]</td>
     <td>[Append each finding as a separate table cell]</td>
-    <td style="padding:1px 3px; white-space:nowrap;">[FIX / IMPROVEMENT]</td>
+    <td style="padding:1px 1px; white-space:nowrap; text-align:center;">[FIX / IMPROVEMENT]</td>
   </tr>
 </table>
 </div>
