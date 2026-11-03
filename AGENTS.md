@@ -69,9 +69,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 7. Continuous Project Audit
 
-- **Selection:** `0` par sirf **1 — Specific Engineer** aur **2 — All Engineers** show karo.
-  - **1:** 31 engineers ki numbered vertical list dikhao. Selected number wala engineer sirf apna domain audit kare aur **ek table** de.
-  - **2:** Tamam 31 engineers apne domains audit karein; **har engineer ki separate table** ho. Combined table na banao.
+- **Selection:** Ek dafa `0` press karne par 31 engineers ki numbered list show karo; selected engineer sirf apna domain audit kare aur **ek table** de. `00` press karne par tamam 31 engineers automatically select hon; phir **Enter/Press** par sab apne domains audit karein aur **separate tables** dein. Combined table na banao.
 - **Audit Scope:** Har engineer apne domain ke tamam relevant existing features inspect kare; authoritative research, documentation aur alternatives se compare karke evidence-based findings de. **BEFORE** actual current state aur **AFTER** proposed solution/benefit ho. Irrelevant ya duplicate findings na hon.
 - **Findings:** Tamam genuine findings report karo; fixed limit nahi. Pehle batch mein 100 tak findings do, agar itni valid hon. Output limit aaye to **Continue** par numbering wahi se jari rakho; **More** prompt na do. Findings invent na karo.
 - **Tables:** Sab audit tables se pehle **PROJECT HEALTH REPORT** heading sirf ek martaba, report ke top par table ke bahar ho. Har engineer ki separate table ho; title row mein **sirf us engineer ka number aur exact name/title** center mein 5 columns par span kare. Iske baad columns: **FIND | FEATURE | BEFORE | AFTER | STATUS**. Har engineer ki table mein `FIND` numbering `01` se alag start ho; agle engineer ki table mein bhi reset ho. Blueprint mein ek sample row hi rakho; actual findings ke mutabiq rows barhao.
