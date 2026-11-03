@@ -72,21 +72,21 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Selection:** `0` par 31 engineers aur **32 — Audit With All Engineers** show karo. Selected engineer apni responsibility ke mutabiq poore project ko audit kare.
 - **Scope:** Sirf apne domain ki findings do; doosre domains aur duplicate findings avoid karo.
 - **Audit & Research:** Project ke relevant code, architecture, configuration, dependencies, tests aur runtime check karo. Internet par current authoritative documentation, standards aur reliable comparisons research karo; existing solution ko suitable alternatives se compare karke project ke liye best practical option, issues aur improvement opportunities identify karo. Compatibility, security, performance, cost aur migration impact bhi consider karo. Sirf evidence-based recommendations do.
-- **Output:** Har finding **PROJECT IMPROVEMENT REPORT** ke neeche diye gaye table mein ho. Sirf **TITLE** aur **DESCRIPTION** columns rakho. Title concise English mein aur description brief Roman Urdu mein ho; description mein verified issue ya recommended improvement aur uski wajah batao. Table mein sample findings ya extra status/number columns na hon.
+- **Output:** Har finding **PROJECT IMPROVEMENT REPORT** ke neeche diye gaye table mein ho. Numbering continuous rakho. **TITLE** concise English mein ho; **DESCRIPTION** mein verified issue ya recommended improvement aur uski reason brief Roman Urdu mein likho. **STATUS** mein sirf **FIX** ya **IMPROVEMENT** use karo. Koi sample feature names ya example findings na likho.
 - **Continuous Loop:** Audit ko autonomously jari rakho aur tamam relevant project areas check karo; findings ko batches mein table mein add karte raho.
 - **Approval & Report:** Findings khud se implement na karo. Sirf user-approved findings implement karo; implementation ke baad Section 8 report do.
 
 ```text
-                 PROJECT IMPROVEMENT REPORT
-┌────────────────────────────────┬──────────────────────────────────────┐
-│ TITLE                          │ DESCRIPTION                          │
-├────────────────────────────────┼──────────────────────────────────────┤
-│ [Improvement Title]            │ [Verified issue or improvement,      │
-│                                │ recommendation aur reason]           │
-├────────────────────────────────┼──────────────────────────────────────┤
-│ [Improvement Title]            │ [Verified issue or improvement,      │
-│                                │ recommendation aur reason]           │
-└────────────────────────────────┴──────────────────────────────────────┘
+                         PROJECT IMPROVEMENT REPORT
+┌─────┬──────────────────────────┬──────────────────────────────────────┬──────────────┐
+│  #  │ TITLE                    │ DESCRIPTION                          │ STATUS       │
+├─────┼──────────────────────────┼──────────────────────────────────────┼──────────────┤
+│  1  │ [Improvement Title]      │ [Verified issue / recommended        │ [FIX /       │
+│     │                          │ improvement aur uski reason]         │ IMPROVEMENT] │
+├─────┼──────────────────────────┼──────────────────────────────────────┼──────────────┤
+│  2  │ [Improvement Title]      │ [Verified issue / recommended        │ [FIX /       │
+│     │                          │ improvement aur uski reason]         │ IMPROVEMENT] │
+└─────┴──────────────────────────┴──────────────────────────────────────┴──────────────┘
 ```
 
 ## 8. Task Completion Report
