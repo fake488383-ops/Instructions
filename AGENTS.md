@@ -69,22 +69,25 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 7. Continuous Project Audit
 
-- **Selection:** `0` par 31 engineers aur **32 — Audit With All Engineers** show karo. Selected engineer apni responsibility ke mutabiq audit kare.
-- **Scope & Research:** Sirf apne domain ki findings do; duplicates avoid karo. Project inspect karo aur current authoritative internet research se existing solutions ko alternatives ke saath compare karo.
-- **Dynamic Report:** **PROJECT IMPROVEMENT REPORT** table dynamically grow hota rahe. **BEFORE** mein existing English feature/technology name aur short Roman Urdu current condition; **AFTER** mein proposed English feature/technology name aur short Roman Urdu benefit; **STATUS** mein sirf **FIX** ya **IMPROVEMENT** ho. Kam az kam **50 findings** show karo, magar 50 par stop na karo. Selected engineer ke tamam relevant features aur improvement opportunities exhaust hone tak continue karo; koi fixed upper limit nahi.
-- **Preserve Existing Concept:** `edges.html` ka existing engineer-selection, audit, research aur continuous-discovery workflow bilkul preserve karo. Sirf table layout/columns update karo.
-- **Apply All:** User ke **Apply All** command par table ki tamam listed findings implement karo. Safe order follow karo, tests/debugging/verification karo aur jo item complete na ho uski wajah report karo.
-- **Approval & Report:** Apply All se pehle findings implement na karo. Implementation ke baad Section 8 completion report do.
+- **Selection:** `0` press karne par tamam 31 engineers ko numbered **vertical list view** mein, ek ke neeche ek, sirf unke titles ke saath show karo. **32 — Apply All Engineers** option sab 31 engineers ko select kare. Horizontal layout use na karo.
+- **Engineer Audit:** Selected engineer sirf apne defined domain ke tamam existing project features inspect kare. Har feature ko current authoritative internet research, documentation aur suitable alternatives se compare karke uska best evidence-based improvement identify kare. **BEFORE** hamesha project ki actual existing implementation ho; **AFTER** researched proposed improvement ho. Findings relevant aur unique hon; koi unrelated/filler entries na hon.
+- **Dynamic Findings:** Findings ko isi **PROJECT IMPROVEMENT REPORT** table mein continuously append karo. Jitni relevant findings waqai milen, sab report karo; koi fixed total limit nahi. Pehle response/batch mein kam az kam **100 findings** do jab 100 ya zyada valid findings available hon. Agar output limit ki wajah se rukna pade aur aur findings baqi hon, user ke **Continue** kehne par aglay batch se wahi numbering continue karo; dobara 1 se shuru na karo. Koi **More** option ya prompt mat do. Agar 100 se kam valid findings hon, tamam available findings show karo; findings invent mat karo.
+- **Table Content:** Table mein sirf **#**, **BEFORE**, **AFTER**, **STATUS** columns hon. BEFORE aur AFTER dono cells mein isi order mein **Engineer Name**, **Feature**, aur neeche **Short Description** show karo. Engineer Name selected engineer ka ho; **32 — Apply All Engineers** par har finding ke responsible engineer ka naam ho. Feature title English mein aur description short Roman Urdu mein ho. **STATUS** sirf **FIX** (verified defect/failure ko fix karna hai) ya **IMPROVEMENT** (working feature ko upgrade karna hai) ho. Table ke aage, peeche ya darmiyan extra commentary, suggestions, summaries ya filler na ho.
+- **All Engineers:** Option 32 select hone par tamam 31 engineers apne-apne domains audit karein, multiple valid findings report karein, duplicates merge/avoid karein, aur table numbering musalsal rakhein.
+- **Apply All:** User ke **Apply All** kehne par table mein listed tamam findings project mein implement karo. Dependencies aur safe execution order follow karo; har change test, debug aur verify karo. Jo finding implement na ho sake usay chupao nahi; uska reason aur actual status Section 8 report mein do.
+- **Preserve Workflow:** Existing `edges.html` selection, audit, research aur continuous-discovery behavior preserve karo. Is instruction mein report format aur upar diye gaye rules follow karo; unrelated workflow change na karo.
+- **Approval & Report:** Audit findings pehle sirf report karo; user ke **Apply All** command se pehle implement na karo. Project mein koi bhi changes apply hone ke baad lazmi Section 8 ka complete **PROJECT REPORT** generate karo.
 
 ```text
                          PROJECT IMPROVEMENT REPORT
 ┌─────┬──────────────────────────────┬──────────────────────────────┬──────────────┐
 │  #  │ BEFORE                       │ AFTER                        │ STATUS       │
 ├─────┼──────────────────────────────┼──────────────────────────────┼──────────────┤
-│  1  │ [Existing Feature Name]      │ [Proposed Feature Name]      │ [FIX /       │
-│     │ [Short Roman Urdu reason]    │ [Short Roman Urdu benefit]   │ IMPROVEMENT] │
+│  1  │ Engineer: [Engineer Name]    │ Engineer: [Engineer Name]    │ [FIX /       │
+│     │ Feature: [Feature Name]      │ Feature: [Improved Feature]   │ IMPROVEMENT] │
+│     │ [Short description]          │ [Short description]          │              │
 ├─────┼──────────────────────────────┼──────────────────────────────┼──────────────┤
-│ ... │ [Continue dynamically]       │ [Continue dynamically]       │ [FIX /       │
+│ ... │ [Append every valid finding] │ [Append every valid finding] │ [FIX /       │
 │     │                              │                              │ IMPROVEMENT] │
 └─────┴──────────────────────────────┴──────────────────────────────┴──────────────┘
 ```
