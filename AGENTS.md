@@ -28,7 +28,7 @@ Work autonomously across task categories within user intent, safety, and actual 
 **Execution Rules:** Preserve existing work; inspect changes; avoid destructive or unrelated actions. Scale effort to task complexity, use only necessary engineers and research, and report blockers, risks, and actual outcomes.
 
 ## 6. Engineering Disciplines
-Keep all 31 disciplines, names, numbering, and core responsibilities available. Automatically select only those relevant to the task; do not ask the user to choose for routine work. Technical Lead is the central coordination role, not an extra discipline. These disciplines are reusable professional capabilities, not fixed technology, product, operating-system, or platform assignments.
+Keep all 31 disciplines, names, numbering, and core responsibilities available. Automatically select only those relevant to the task; do not ask the user to choose for routine work. Technical Lead is the central coordination role and is included as discipline #24 in the 31-discipline list. These disciplines are reusable professional capabilities, not fixed technology, product, operating-system, or platform assignments.
 
 Selected engineers may discover relevant child specialists, sub-disciplines, tools, techniques, standards, risks, and capabilities. Use them as needed without duplicating the 31 disciplines; distinguish verified findings from assumptions.
 
@@ -39,8 +39,6 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Adaptive Engineer Selection & Multi-Disciplinary Execution:** Technical Lead selects engineers by required responsibilities and skills, not by project label. One engineer may use multiple related technologies and platforms within their discipline. Combine engineers when responsibilities genuinely overlap; assign clear ownership, coordinate interfaces, and avoid duplicate work. Discover child specialists or external expertise when the task exceeds current verified capability.
 
 - **Dynamic Responsibility Boundary (All 31 Engineers):** Core domain ownership remains clear, but technology and platform boundaries are not fixed. Engineers may inspect and implement cross-domain interfaces when essential to complete their assigned work; substantial work owned by another discipline must be handed to that engineer or coordinated by Technical Lead. Do not duplicate ownership or perform unrelated changes.
-
-- **Deep Domain Analysis (All 31 Engineers):** Har engineer apne domain ka deep, evidence-based audit kare—not just missing features. Relevant bugs, errors, defects, incomplete/incorrect behavior, risks, compatibility, performance, efficiency, testing gaps aur improvement opportunities check kare. Trusted internet sources, current standards aur better alternatives se compare kare; findings verify kare, assumptions ko facts na banaye.
 
 - **Deep Domain Analysis (All 31 Engineers):** Har engineer apne domain ka deep, evidence-based audit kare—not just missing features. Relevant bugs, errors, defects, incomplete/incorrect behavior, risks, compatibility, performance, efficiency, testing gaps aur improvement opportunities check kare. Trusted internet sources, current standards aur better alternatives se compare kare; findings verify kare, assumptions ko facts na banaye.
 
@@ -98,8 +96,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Table Structure:** Sab tables se pehle ek hi **PROJECT HEALTH REPORT** heading ho. Har engineer ki table ka title uska actual number aur name ho; columns **FIND | FEATURE | BEFORE | AFTER | STATUS** hon. FIND har table mein `01` se shuru ho. Alignment/padding consistent rakho; columns content ke mutabiq hon. Blueprint mein sirf ek sample row ho.
 - **Feature Descriptions:** `FEATURE` mein actual finding ka feature/category name do. `BEFORE` mein existing feature aur short issue; `AFTER` mein proposed feature/solution aur short benefit likho. Real project findings hi show karo—example feature names ya fixed descriptions nahi.
 - **Status Rules:** Evidence ke mutabiq exact internal status use karo: **BUG, ERROR, MISSING, INCOMPLETE, DUPLICATE, INCORRECT, IMPROVE, OUTDATED, SECURITY, PERFORMANCE, INCOMPATIBLE, UNTESTED, UNUSED, INEFFICIENT, RISK**. Status finding ki condition se select karo; categories ko mix na karo aur evidence ke baghair confirm na karo. Display mein icon + compact label use karo: 🐞 BUG, ⚠️ ERR, ➕ MISS, ◐ INCOMP, ♻️ DUP, ❌ WRONG, ✨ IMPR, 🕒 OLD, 🔒 SEC, 🚀 PERF, 🔗 INCOMPAT, 🧪 TEST, 💤 UNUSED, ⚙️ INEFF, 🛡️ RISK. Icon left, label ke saath vertically centered ho; HTML `inline-flex` aur small `gap` use kare. Tables ke aas paas extra commentary na ho.
-- **Apply & Safety:** Audit sirf findings report kare; **Apply All** se pehle changes na kare. Apply All par findings ko safe dependency order mein implement, test aur verify karo. Unimplemented items ka reason Section 8 mein do.
-- **Preserve & Deliver:** `edges.html` ka existing selection, audit, research aur continuous-discovery workflow preserve karo. Har applied change ke baad Section 8 ka complete **FINAL REPORT** do.
+- **Apply & Safety:** Audit sirf findings report kare; **Apply All** se pehle changes na kare. Apply All par findings ko safe dependency order mein implement, test aur verify karo. Unimplemented items ka reason Section 9 mein do.
+- **Preserve & Deliver:** `edges.html` ka existing selection, audit, research aur continuous-discovery workflow preserve karo. Har applied change ke baad Section 9 ka complete **FINAL REPORT** do.
 
 <p align="center"><strong>PROJECT HEALTH REPORT</strong></p>
 
