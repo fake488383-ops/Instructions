@@ -73,42 +73,38 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 7. Continuous Project Audit
 
-- **Selection:** Ek dafa `0` press karne par 31 engineers ki numbered list show karo; selected engineer sirf apna domain audit kare aur **ek table** de. `00` press karne par tamam 31 engineers automatically select hon; phir **Enter/Press** par sab apne domains audit karein aur **separate tables** dein. Combined table na banao.
-- **Domain-Specific Reports:** Har engineer sirf apne relevant features/findings report kare. `FEATURE`, `BEFORE`, `AFTER` aur evidence-based `STATUS` actual finding ke mutabiq hon. Ek engineer = ek report; `00` = har engineer ki separate report/table; combined report nahi.
-- **Audit Loop:** `00` par engineers ek-ek karke sequence mein kaam karein. Har engineer apne domain ko multiple loops mein exhaustively inspect/research/compare kare; jab tak naye valid findings milte rahen, sab report kare. Domain complete hone par hi next engineer shuru ho.
-- **Findings:** Koi per-engineer ya total finding limit nahi; 1, 50, 100, 1000—jitni genuine findings milen sab report karo. Output limit aaye to batches mein automatically/Continue se wahi numbering jari rakho; findings skip, summarize ya invent na karo.
-- **Tables:** Sab audit tables se pehle **PROJECT HEALTH REPORT** heading sirf ek martaba, report ke top par table ke bahar ho. Har engineer ki separate table ho; title row mein **sirf us engineer ka number aur exact name/title** center mein 5 columns par span kare. Iske baad columns: **FIND | FEATURE | BEFORE | AFTER | STATUS**. Har cell ki left/right padding equal ho aur columns content ke mutabiq dynamically size hon. Har engineer ki table mein `FIND` numbering `01` se reset ho. Blueprint mein ek sample row hi rakho; actual findings ke mutabiq rows barhao.
-- **Cells & Status:** `FEATURE` = category/name. `BEFORE` aur `AFTER` dono mein feature ka naam aur ek mukhtasar, clear description likho. Sirf zaroori issue, fix ya benefit likho; lambi explanation nahi. Description itni complete ho ke feature aur change samajh aa jaye. Example: `BEFORE: REST API — Request-response; har call par nayi request.` `AFTER: WebSocket — Persistent connection; real-time aur low-latency updates.` Internally exact canonical status names use karo: **BUG, ERROR, MISSING, INCOMPLETE, DUPLICATE, INCORRECT, IMPROVE, OUTDATED, SECURITY, PERFORMANCE, INCOMPATIBLE, UNTESTED, UNUSED, INEFFICIENT, RISK**. Status engineer ke naam/domain se nahi, finding ki evidence-based condition se decide karo; sirf relevant status use karo. Missing ko BUG/ERROR, incomplete ko MISSING, ya kisi finding ko unrelated status kabhi na do. Evidence ke baghair status confirm na karo. **Display rule:** STATUS cell mein full words nahi; sirf left-side icon ke baad compact label show ho. Icon label se pehle ho, dono vertically center aur left-aligned hon. Fixed mapping: 🐞 BUG, ⚠️ ERR, ➕ MISS, ◐ INCOMP, ♻️ DUP, ❌ WRONG, ✨ IMPR, 🕒 OLD, 🔒 SEC, 🚀 PERF, 🔗 INCOMPAT, 🧪 TEST, 💤 UNUSED, ⚙️ INEFF, 🛡️ RISK. HTML mein icon aur short label ko `inline-flex` group, `align-items:center`, `justify-content:flex-start`, aur small `gap` ke saath render karo. Abbreviations sirf visual hain; internal classification canonical hi rahe. Tables ke aas paas commentary, suggestions, summaries ya filler na ho.
-- **Apply & Safety:** Audit sirf report kare; **Apply All** se pehle changes na karo. **Apply All** par tamam listed findings safe dependency order mein implement, test, debug aur verify karo. Jo implement na ho uska reason/status Section 8 mein do.
-- **Preserve & Deliver:** Existing `edges.html` selection, audit, research aur continuous-discovery workflow preserve karo. Kisi bhi applied change ke baad Section 8 ka complete **FINAL REPORT** lazmi generate karo; unrelated workflow na badlo.
+- **Selection & Reports:** `0` par 31 engineers ki list dikhao; selected engineer apna domain audit karke ek separate table de. `00` par tamam engineers sequence mein audit karein aur har engineer ki alag table ho.
+- **Audit & Findings:** Har engineer apna domain inspect, research aur compare kare. Naye verified findings milne tak audit continue rakhe. Findings ki limit nahi; output limit par batches mein numbering continue karo. Koi finding skip, merge ya invent na karo.
+- **Table Structure:** Sab tables se pehle ek hi **PROJECT HEALTH REPORT** heading ho. Har engineer ki table ka title uska actual number aur name ho; columns **FIND | FEATURE | BEFORE | AFTER | STATUS** hon. FIND har table mein `01` se shuru ho. Alignment/padding consistent rakho; columns content ke mutabiq hon. Blueprint mein sirf ek sample row ho.
+- **Feature Descriptions:** `FEATURE` mein actual finding ka feature/category name do. `BEFORE` mein existing feature aur short issue; `AFTER` mein proposed feature/solution aur short benefit likho. Real project findings hi show karo—example feature names ya fixed descriptions nahi.
+- **Status Rules:** Evidence ke mutabiq exact internal status use karo: **BUG, ERROR, MISSING, INCOMPLETE, DUPLICATE, INCORRECT, IMPROVE, OUTDATED, SECURITY, PERFORMANCE, INCOMPATIBLE, UNTESTED, UNUSED, INEFFICIENT, RISK**. Status finding ki condition se select karo; categories ko mix na karo aur evidence ke baghair confirm na karo. Display mein icon + compact label use karo: 🐞 BUG, ⚠️ ERR, ➕ MISS, ◐ INCOMP, ♻️ DUP, ❌ WRONG, ✨ IMPR, 🕒 OLD, 🔒 SEC, 🚀 PERF, 🔗 INCOMPAT, 🧪 TEST, 💤 UNUSED, ⚙️ INEFF, 🛡️ RISK. Icon left, label ke saath vertically centered ho; HTML `inline-flex` aur small `gap` use kare. Tables ke aas paas extra commentary na ho.
+- **Apply & Safety:** Audit sirf findings report kare; **Apply All** se pehle changes na kare. Apply All par findings ko safe dependency order mein implement, test aur verify karo. Unimplemented items ka reason Section 8 mein do.
+- **Preserve & Deliver:** `edges.html` ka existing selection, audit, research aur continuous-discovery workflow preserve karo. Har applied change ke baad Section 8 ka complete **FINAL REPORT** do.
 
 <p align="center"><strong>PROJECT HEALTH REPORT</strong></p>
 
 <div align="center">
 <table align="center" width="100%" style="border-collapse:collapse; table-layout:auto;">
-  <tr><th colspan="5" align="center">01&nbsp;&nbsp;&nbsp; Architecture Engineer</th></tr>
+  <tr><th colspan="5" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
   <tr><th style="padding:8px 12px;">FIND</th><th style="padding:8px 12px;">FEATURE</th><th style="padding:8px 12px;">BEFORE</th><th style="padding:8px 12px;">AFTER</th><th style="padding:8px 12px; text-align:center; vertical-align:middle;">STATUS</th></tr>
   <tr>
     <td style="padding:8px 12px;">01</td>
-    <td style="padding:8px 12px;">[Feature Category / Name]</td>
-    <td style="padding:8px 12px;">REST API<br/>Request-response; har call par nayi request.</td>
-    <td style="padding:8px 12px;">WebSocket<br/>Persistent connection; real-time aur low-latency updates.</td>
-    <td style="padding:8px 12px; text-align:left; vertical-align:middle;"><span style="display:inline-flex; align-items:center; justify-content:flex-start; gap:6px; white-space:nowrap;">🐞 <span>BUG</span></span></td>
+    <td style="padding:8px 12px;">[Actual feature/category name]</td>
+    <td style="padding:8px 12px;">[Existing feature name]<br/>[Short actual issue]</td>
+    <td style="padding:8px 12px;">[Proposed feature/solution name]<br/>[Short benefit]</td>
+    <td style="padding:8px 12px; text-align:left; vertical-align:middle;">[Relevant status icon + label]</td>
   </tr>
 </table>
 </div>
 
 ## 8. Task Completion Report
 
-- **Mandatory Project Report:** Whenever any work is applied to the project—including one change, multiple changes, or **Apply All** for 40–50+ audit findings—always generate the complete **Section 8 FINAL REPORT** blueprint at the end, with a centered **FINAL REPORT** heading outside and above the table. Report the actual combined Before/After state, applied features, participating engineers, tests and relevant performance metrics. This is mandatory after every project change, whether small or large, successful, partial, blocked, or failed; never replace it with the audit findings table or plain text. Do not create a separate report file unless requested.
-- **One Report Format:** Always use the complete report blueprint below, including every table, heading, section, and column. Never switch between separate small-task and large-task report formats, and never replace a table with plain text.
-- **Scale Detail to Work:** For a small change, provide brief, relevant information and only the necessary data rows. For a large or multi-part task, provide fuller explanations and all relevant detail. Keep every required table present even when it contains only one row or a concise status such as **NOT APPLICABLE**.
-- **Verification & Status:** QA Test Engineer independently selects and runs relevant tests, fixes defects, and retests when possible. Report only actual evidence. **WORKING** requires runtime or acceptance verification; otherwise use **FAIL** where verification shows failure. Use **PASS**, **FAIL**, or **NOT TESTED** accurately for tests.
-- **Before / After:** Always show the actual previous state and the actual result after the task. Never present suggestions as completed work.
-- **Feature Status:** Use the existing **Feature** and **Status** columns; list relevant features with **WORKING** or **FAIL** only. If no feature applies, state **NOT APPLICABLE** in the table.
-- **Engineer Summary:** List only engineers who actually participated and their real contributions. If none applies, state **NOT APPLICABLE** in the table.
-- **Testing Summary:** Use only relevant, recognized QA test types in the **Test Type** column, such as **Unit Test**, **Integration Test**, **System Test**, **End-to-End Test**, and **Regression Test**. Add specialized test types only when genuinely applicable. Never use feature names, task descriptions, generic labels, implementation steps, or filler rows as test titles. Show **PASS** or **FAIL** for tests run and **NOT TESTED** only for applicable tests not run. If testing is not applicable, state **NOT APPLICABLE** in the table.
-- **Performance Metrics:** Show only relevant feature-specific metrics, with measured values, units, and conditions. Use **NOT MEASURED** when a relevant metric was not measured; use **NOT APPLICABLE** when no relevant metric applies. Never invent values or add irrelevant metrics.
+- **Mandatory Format:** Har applied task ke baad centered **FINAL REPORT** heading aur neeche diya gaya complete table generate karo—small, large, partial, blocked ya failed task sab ke liye. Separate report file na banao jab tak user na kahe.
+- **Actual Results:** BEFORE/AFTER mein real previous aur resulting state do; suggestions ko completed work na dikhao. Sirf relevant rows bharo; baqi mein **NOT APPLICABLE** likho.
+- **Feature Status:** Har relevant feature ka **WORKING** ya **FAIL** status do. **WORKING** ke liye runtime/acceptance verification zaroori hai.
+- **Engineer Summary:** Sirf actually participating engineers aur unki real contribution list karo.
+- **Testing Summary:** QA Test Engineer relevant tests khud select, run, defects fix aur retest kare. Sirf applicable standard test types aur actual **PASS / FAIL / NOT TESTED** results report karo. **NOT TESTED** sirf tab jab relevant test run na ho saka.
+- **Performance Metrics:** Sirf relevant, measured metrics units/conditions ke saath do. Measure na hua ho to **NOT MEASURED**; irrelevant ho to **NOT APPLICABLE**. Values invent na karo.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
 <h2>FINAL REPORT</h2>
@@ -118,18 +114,18 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
   <colgroup><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.70%;"></colgroup>
   <tr><th colspan="3" align="center">BEFORE</th><th colspan="3" align="center">AFTER</th></tr>
-  <tr><td colspan="3" align="center" valign="middle">[Previous state of implemented feature]</td><td colspan="3" align="center" valign="middle">[Actual implemented result]</td></tr>
+  <tr><td colspan="3" align="center" valign="middle">[Actual previous state]</td><td colspan="3" align="center" valign="middle">[Actual resulting state]</td></tr>
   <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
   <tr><th colspan="3" align="center">Feature</th><th colspan="3" align="center">Status</th></tr>
-  <tr><td colspan="3" align="center" valign="middle">[Feature Name / NOT APPLICABLE]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT APPLICABLE]</td></tr>
+  <tr><td colspan="3" align="center" valign="middle">[Actual feature / NOT APPLICABLE]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT APPLICABLE]</td></tr>
   <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
   <tr><th colspan="3" align="center">Engineer</th><th colspan="3" align="center">Contribution</th></tr>
-  <tr><td colspan="3" align="center">[Engineer Name / NOT APPLICABLE]</td><td colspan="3" align="center">[Actual contribution / NOT APPLICABLE]</td></tr>
+  <tr><td colspan="3" align="center">[Actual engineer / NOT APPLICABLE]</td><td colspan="3" align="center">[Actual contribution / NOT APPLICABLE]</td></tr>
   <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
   <tr><th colspan="3" align="center">Test Type</th><th colspan="3" align="center">Result</th></tr>
-  <tr><td colspan="3" align="center">[Relevant standard QA test type / NOT APPLICABLE]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED / NOT APPLICABLE]</td></tr>
+  <tr><td colspan="3" align="center">[Applicable QA test type / NOT APPLICABLE]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED / NOT APPLICABLE]</td></tr>
   <tr><th colspan="6" align="center">PERFORMANCE METRICS</th></tr>
   <tr><th colspan="3" align="center">Performance Metric</th><th colspan="3" align="center">Measured Value</th></tr>
-  <tr><td colspan="3" align="center">[Feature-specific metric / NOT APPLICABLE]</td><td colspan="3" align="center">[Measured value + unit / NOT MEASURED / NOT APPLICABLE]</td></tr>
+  <tr><td colspan="3" align="center">[Relevant metric / NOT APPLICABLE]</td><td colspan="3" align="center">[Measured value + unit / NOT MEASURED / NOT APPLICABLE]</td></tr>
 </table>
 </div>
