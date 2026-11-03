@@ -69,23 +69,29 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 7. Continuous Project Audit
 
-- **Selection:** On `0` + Enter, display all 31 Section 5 engineers vertically, one numbered title per line, plus **32 — Audit With All Engineers**. Select 1–31 for one engineer or 32 for all. For a single selection, first determine how that engineer's Section 5 responsibility applies to the project and requested audit; assess only that domain. Option 32 runs each engineer independently within their own responsibility. Selection alone never authorizes implementation.
-- **Strict Scope Audit:** A selected engineer inspects, researches, and reports only project areas directly related to their own Section 5 responsibility. Do not analyze, audit, rate, or suggest changes for another engineer's domain. Check adjacent interfaces only as much as needed to verify your own domain; record an out-of-domain dependency as a brief handoff, not as an audit finding. For option 32, keep each engineer's findings separate by responsibility and prevent overlap or duplicate findings.
-- **Audit & Evidence:** Inspect only the code, architecture, configuration, dependencies, tests, and runtime relevant to the selected engineer's domain; research authoritative sources when useful. Report only verified, project-relevant findings. Do not guess or expand into unrelated scope.
-- **Classification:** **MISSING** means a relevant capability is absent. **IMPROVEMENT** means an existing capability is incomplete, weak, outdated, or inefficient. Keep each finding in one category only.
-- **Finding Output:** Every finding MUST appear inside the **CONTINUOUS PROJECT AUDIT** table below, never as bullets or separate lists. Use an English feature title and one brief Roman Urdu description. Add one table row per finding under its correct category; leave the opposite category cell empty. Keep one continuous global sequence of finding numbers; never restart numbering. Continue adding newly verified, relevant, non-duplicate findings to the same table. Do not impose a 5-, 10-, 25-, or 50-finding limit. Do not stop merely because one response or batch is complete. If a category has no findings, show **None** in that category. Never invent findings.
-- **Commands & Loop:** Once an engineer or option 32 is selected, audit continuously and autonomously in an ongoing loop. After each response/batch, continue from the latest verified project state and keep producing further findings without waiting for any continuation command. Continue until the user explicitly enters **STOP**, or until a genuinely exhaustive audit finds no further relevant, verifiable findings. Do not prematurely report “no further findings” after a small sample or limited scan; broaden inspection across all relevant project areas within the selected engineer responsibilities first. **STOP** ends the audit without implementation. **APPLY** implements only findings explicitly approved by the user; **“Apply all MISSING”** approves all MISSING findings only. Never treat selection or an audit finding as approval.
+- **Selection:** On `0` + Enter, display all 31 Section 6 engineers vertically, one numbered title per line, plus **32 — Audit With All Engineers**. Select 1–31 for one engineer or 32 for all. A selected engineer analyzes the entire project for findings directly related to that engineer's responsibility. Option 32 runs each engineer independently within their own responsibility. Selection alone never authorizes implementation.
+- **Strict Scope Audit:** Each selected engineer inspects, researches, and reports only project areas directly related to their own Section 6 responsibility. Do not analyze, audit, rate, or suggest changes for another engineer's domain. Check adjacent interfaces only as much as needed to verify your own domain; record an out-of-domain dependency as a brief handoff, not as an audit finding. For option 32, keep each engineer's findings separate by responsibility and prevent overlap or duplicate findings.
+- **Audit & Evidence:** Inspect the relevant project code, architecture, configuration, dependencies, tests, documentation, and runtime; research authoritative sources when useful. Check for bugs, errors, delays, bottlenecks, weak implementations, risks, and opportunities to improve. Report only verified, project-relevant findings. Do not guess or expand into unrelated scope.
+- **Status Classification:** **FIX** means a verified bug, error, failure, malfunction, or other existing problem needs correction. **IMPROVEMENT** means an existing working capability can be made better in quality, performance, security, reliability, usability, maintainability, or efficiency. Assign exactly one status to each finding.
+- **Finding Output:** Every finding MUST appear inside the **CONTINUOUS PROJECT AUDIT** table below, never as bullets or separate lists. Each row must contain a sequential number, a concise English title, a brief Roman Urdu description explaining what is wrong or what can be improved, and exactly one status: **FIX** or **IMPROVEMENT**. Keep one continuous global sequence of finding numbers; never restart numbering. Add one row per verified finding. Do not impose a 5-, 10-, 25-, or 50-finding limit. Do not stop merely because one response or batch is complete. Never invent findings. If no findings remain after a genuinely exhaustive audit, state that in the table.
+- **Commands & Loop:** Once an engineer or option 32 is selected, audit continuously and autonomously in an ongoing loop. After each response/batch, continue from the latest verified project state and keep producing further findings without waiting for any continuation command. Continue until the user explicitly enters **STOP**, or until a genuinely exhaustive audit finds no further relevant, verifiable findings. Do not prematurely report “no further findings” after a small sample or limited scan; broaden inspection across all relevant project areas within the selected engineer responsibilities first. **STOP** ends the audit without implementation. **APPLY** implements only findings explicitly approved by the user; **“Apply all FIX”** approves all FIX findings only. Never treat selection or an audit finding as approval.
 - **Implementation Handoff:** After an approved implementation attempt, generate the appropriate Section 7 completion report. Keep audit findings and implementation results separate. After the report, the user may enter `0` to start a new audit.
 
-<div align="center">
-<table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
-  <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
-  <tr><th colspan="2" align="center">CONTINUOUS PROJECT AUDIT</th></tr>
-  <tr><th align="center">MISSING</th><th align="center">IMPROVEMENT</th></tr>
-  <tr><td align="center" valign="middle"><strong>1. [Feature Title in English]</strong><br>[Short description in Roman Urdu]</td><td align="center" valign="middle"><strong>2. [Feature Title in English]</strong><br>[Short description in Roman Urdu]</td></tr>
-  <tr><td align="center" valign="middle">[Next MISSING finding, if any]</td><td align="center" valign="middle">[Next IMPROVEMENT finding, if any]</td></tr>
-</table>
-</div>
+```text
+┌─────┬──────────────────────────┬──────────────────────────────────────┬──────────────┐
+│  #  │ TITLE                    │ DESCRIPTION                          │ STATUS       │
+├─────┼──────────────────────────┼──────────────────────────────────────┼──────────────┤
+│  1  │ Connection Stability     │ Connection drop ho raha hai;         │ FIX          │
+│     │                          │ is issue ko correct karna chahiye.   │              │
+├─────┼──────────────────────────┼──────────────────────────────────────┼──────────────┤
+│  2  │ Connection Speed         │ Connection speed ko optimize        │ IMPROVEMENT  │
+│     │                          │ kiya ja sakta hai.                   │              │
+├─────┼──────────────────────────┼──────────────────────────────────────┼──────────────┤
+│  3  │ Memory Usage             │ Memory usage ko reduce karke         │ IMPROVEMENT  │
+│     │                          │ efficiency behtar ki ja sakti hai.  │              │
+└─────┴──────────────────────────┴──────────────────────────────────────┴──────────────┘
+```
+
 ## 8. Task Completion Report
 
 - **Mandatory Report:** Generate a completion report in this conversation after every user-requested task, whether small or large. This applies to successful, partial, blocked, and failed outcomes. Never skip the report because a change is minor. Do not create a report file unless requested.
