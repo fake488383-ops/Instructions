@@ -78,19 +78,28 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Preserve Workflow:** Existing `edges.html` selection, audit, research aur continuous-discovery behavior preserve karo. Is instruction mein report format aur upar diye gaye rules follow karo; unrelated workflow change na karo.
 - **Approval & Report:** Audit findings pehle sirf report karo; user ke **Apply All** command se pehle implement na karo. Project mein koi bhi changes apply hone ke baad lazmi Section 8 ka complete **PROJECT REPORT** generate karo.
 
-```text
-                         PROJECT IMPROVEMENT REPORT
-┌─────┬──────────────────────────────┬──────────────────────────────┬──────────────┐
-│  #  │ BEFORE                       │ AFTER                        │ STATUS       │
-├─────┼──────────────────────────────┼──────────────────────────────┼──────────────┤
-│  1  │ Engineer: [Engineer Name]    │ Engineer: [Engineer Name]    │ [FIX /       │
-│     │ Feature: [Feature Name]      │ Feature: [Improved Feature]   │ IMPROVEMENT] │
-│     │ [Short description]          │ [Short description]          │              │
-├─────┼──────────────────────────────┼──────────────────────────────┼──────────────┤
-│ ... │ [Append every valid finding] │ [Append every valid finding] │ [FIX /       │
-│     │                              │                              │ IMPROVEMENT] │
-└─────┴──────────────────────────────┴──────────────────────────────┴──────────────┘
-```
+<div align="center">
+<table align="center" width="100%" style="border-collapse:collapse; table-layout:fixed;">
+  <tr>
+    <th>#</th>
+    <th>BEFORE</th>
+    <th>AFTER</th>
+    <th>STATUS</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><strong>Engineer:</strong> [Engineer Name]<br/><strong>Feature:</strong> [Existing Feature Name]<br/>[Short Roman Urdu description of current implementation]</td>
+    <td><strong>Engineer:</strong> [Engineer Name]<br/><strong>Feature:</strong> [Proposed Improved Feature Name]<br/>[Short Roman Urdu description of researched improvement]</td>
+    <td>[FIX / IMPROVEMENT]</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>[Append each finding as a separate table cell]</td>
+    <td>[Append each finding as a separate table cell]</td>
+    <td>[FIX / IMPROVEMENT]</td>
+  </tr>
+</table>
+</div>
 
 ## 8. Task Completion Report
 
