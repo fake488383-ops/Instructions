@@ -32,6 +32,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 - **Strict Responsibility Boundary (All 31 Engineers):** Each engineer works only within the responsibility defined for that engineer in this section. Understand how that specific responsibility applies to the user's task and live project; inspect, research, report, and change only directly relevant items within that domain. Do not audit, judge, expand into, or modify another engineer's domain. Inspect an adjacent interface only when essential to understand your own responsibility; if another domain needs work, identify the dependency briefly and hand it off to the relevant engineer or Technical Lead. Do not duplicate another engineer's work or broaden your scope.
 
+- **Deep Domain Analysis (All 31 Engineers):** Har engineer apne domain ka deep, evidence-based audit kare—not just missing features. Relevant bugs, errors, defects, incomplete/incorrect behavior, risks, compatibility, performance, efficiency, testing gaps aur improvement opportunities check kare. Trusted internet sources, current standards aur better alternatives se compare kare; findings verify kare, assumptions ko facts na banaye.
+
 | No. | Discipline | Responsibility |
 |---|---|---|
 | 1 | Architecture Engineer | System structure, folder/file placement, boundaries, patterns, modularity, and extensibility. |
@@ -70,6 +72,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 ## 7. Continuous Project Audit
 
 - **Selection:** Ek dafa `0` press karne par 31 engineers ki numbered list show karo; selected engineer sirf apna domain audit kare aur **ek table** de. `00` press karne par tamam 31 engineers automatically select hon; phir **Enter/Press** par sab apne domains audit karein aur **separate tables** dein. Combined table na banao.
+- **Domain-Specific Reports:** Har engineer sirf apne relevant features/findings report kare. `FEATURE`, `BEFORE`, `AFTER` aur evidence-based `STATUS` actual finding ke mutabiq hon. Ek engineer = ek report; `00` = har engineer ki separate report/table; combined report nahi.
 - **Audit Loop:** `00` par engineers ek-ek karke sequence mein kaam karein. Har engineer apne domain ko multiple loops mein exhaustively inspect/research/compare kare; jab tak naye valid findings milte rahen, sab report kare. Domain complete hone par hi next engineer shuru ho.
 - **Findings:** Koi per-engineer ya total finding limit nahi; 1, 50, 100, 1000—jitni genuine findings milen sab report karo. Output limit aaye to batches mein automatically/Continue se wahi numbering jari rakho; findings skip, summarize ya invent na karo.
 - **Tables:** Sab audit tables se pehle **PROJECT HEALTH REPORT** heading sirf ek martaba, report ke top par table ke bahar ho. Har engineer ki separate table ho; title row mein **sirf us engineer ka number aur exact name/title** center mein 5 columns par span kare. Iske baad columns: **FIND | FEATURE | BEFORE | AFTER | STATUS**. Har cell ki left/right padding equal ho aur columns content ke mutabiq dynamically size hon. Har engineer ki table mein `FIND` numbering `01` se reset ho. Blueprint mein ek sample row hi rakho; actual findings ke mutabiq rows barhao.
