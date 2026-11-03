@@ -68,7 +68,7 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 
 - **Selection & Reports:** `0` par 31 engineers ki list aur selected engineer ki separate audit table do. `00` par sab engineers sequence mein audit karein, har ek ki separate table ho.
 - **Audit & Findings:** Har engineer inspect, research, aur compare kare; verified findings tak audit continue rakhe. Findings skip, merge, ya invent na kare; output limit par numbering ke saath batches continue kare.
-- **Table Structure:** Ek **PROJECT HEALTH REPORT** heading use karo. Har table par actual engineer number/name aur columns **FIND | FEATURE NAME | BEFORE | AFTER | STATUS** hon. FIND `01` se shuru ho; alignment consistent ho. Blueprint mein ek sample row rakho.
+- **Table Structure:** Ek **PROJECT HEALTH REPORT** heading use karo. Har table par actual engineer number/name aur columns **FIND | FEATURE | BEFORE | AFTER | STATUS** hon. FIND `01` se shuru ho; alignment consistent ho. Blueprint mein ek sample row rakho.
 - **Feature Descriptions:** Actual feature/category, BEFORE mein existing state + short issue, AFTER mein proposed solution + short benefit do. Sirf real findings likho.
 - **Status Rules:** Evidence ke mutabiq exact internal status use karo: **BUG, ERROR, MISSING, INCOMPLETE, DUPLICATE, INCORRECT, IMPROVE, OUTDATED, SECURITY, PERFORMANCE, INCOMPATIBLE, UNTESTED, UNUSED, INEFFICIENT, RISK**. Status finding ki condition se select karo; categories ko mix na karo aur evidence ke baghair confirm na karo. Display mein icon + compact label use karo: 🐞 BUG, ⚠️ ERR, ➕ MISS, ◐ INCOMP, ♻️ DUP, ❌ WRONG, ✨ IMPR, 🕒 OLD, 🔒 SEC, 🚀 PERF, 🔗 INCOMPAT, 🧪 TEST, 💤 UNUSED, ⚙️ INEFF, 🛡️ RISK. Icon left, label ke saath vertically centered ho; HTML `inline-flex` aur small `gap` use kare. Tables ke aas paas extra commentary na ho.
 - **Apply & Safety:** Audit mein sirf findings report karo. **Apply All** par safe dependency order mein implement, test, aur verify karo. Unimplemented items ka reason Section 9 mein do.
@@ -79,7 +79,7 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 <div align="center">
 <table align="center" width="100%" style="border-collapse:collapse; table-layout:auto;">
   <tr><th colspan="5" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
-  <tr><th style="padding:8px 12px;">FIND</th><th style="padding:8px 12px;">FEATURE NAME</th><th style="padding:8px 12px;">BEFORE</th><th style="padding:8px 12px;">AFTER</th><th style="padding:8px 12px; text-align:center; vertical-align:middle;">STATUS</th></tr>
+  <tr><th style="padding:8px 12px;">FIND</th><th style="padding:8px 12px;">FEATURE</th><th style="padding:8px 12px;">BEFORE</th><th style="padding:8px 12px;">AFTER</th><th style="padding:8px 12px; text-align:center; vertical-align:middle;">STATUS</th></tr>
   <tr>
     <td style="padding:8px 12px;">01</td>
     <td style="padding:8px 12px;">[Actual feature/category name]</td>
