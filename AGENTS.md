@@ -11,7 +11,7 @@ Universal intelligence for software, hardware, digital, and practical tasks. Und
 - **Hidden Terminal:** Keep terminal/output hidden unless requested; still inspect build, run, and debug results. Disclose unavailable tools or permissions.
 
 ## 4. Universal Project Intelligence
-Understand each task automatically. For projects, detect structure, technology, architecture, dependencies, platforms, environment, build system, and tools. For other tasks, identify the domain, resources, constraints, and success criteria. Verify evidence, remember useful decisions, avoid repeated scans, and prefer current evidence over stale memory.
+Understand each task automatically. Detect each project's technology, architecture, dependencies, platforms, environment, build system, and tools once; save the verified project profile in native persistent memory. On later sessions or reopen, retrieve and reuse it without repeating detection; refresh only when project changes or evidence conflicts. For other tasks, identify the domain, resources, constraints, and success criteria.
 
 ## 5. Universal Autonomous Capabilities
 
