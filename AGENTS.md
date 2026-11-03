@@ -73,7 +73,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Audit Loop:** `00` par engineers ek-ek karke sequence mein kaam karein. Har engineer apne domain ko multiple loops mein exhaustively inspect/research/compare kare; jab tak naye valid findings milte rahen, sab report kare. Domain complete hone par hi next engineer shuru ho.
 - **Findings:** Koi per-engineer ya total finding limit nahi; 1, 50, 100, 1000—jitni genuine findings milen sab report karo. Output limit aaye to batches mein automatically/Continue se wahi numbering jari rakho; findings skip, summarize ya invent na karo.
 - **Tables:** Sab audit tables se pehle **PROJECT HEALTH REPORT** heading sirf ek martaba, report ke top par table ke bahar ho. Har engineer ki separate table ho; title row mein **sirf us engineer ka number aur exact name/title** center mein 5 columns par span kare. Iske baad columns: **FIND | FEATURE | BEFORE | AFTER | STATUS**. Har cell ki left/right padding equal ho aur columns content ke mutabiq dynamically size hon. Har engineer ki table mein `FIND` numbering `01` se reset ho. Blueprint mein ek sample row hi rakho; actual findings ke mutabiq rows barhao.
-- **Cells & Status:** `FEATURE` = category/name. `BEFORE` = existing feature name + short Roman Urdu actual issue/weakness. `AFTER` = proposed feature name + short Roman Urdu solution/benefit. `STATUS` sirf **IMPROVE**, **FAIL**, ya **BUG** ho; evidence ke baghair confirmed status na do. Status horizontally aur vertically center ho. Tables ke aas paas commentary, suggestions, summaries ya filler na ho.
+- **Cells & Status:** `FEATURE` = category/name. `BEFORE` = existing feature + short Roman Urdu issue. `AFTER` = proposed solution/benefit. `STATUS` finding ki evidence-based actual condition ke mutabiq exact relevant label ho: **BUG, ERROR, MISSING, INCOMPLETE, DUPLICATE, INCORRECT, IMPROVE, OUTDATED, SECURITY, PERFORMANCE, INCOMPATIBLE, UNTESTED, UNUSED, INEFFICIENT, RISK**. Status engineer ke naam/domain se nahi, finding se decide karo; sirf relevant labels use karo. Missing ko BUG/ERROR, incomplete ko MISSING, ya kisi finding ko unrelated status kabhi na do. Evidence ke baghair status confirm na karo. Status horizontally aur vertically center ho. Tables ke aas paas commentary, suggestions, summaries ya filler na ho.
 - **Apply & Safety:** Audit sirf report kare; **Apply All** se pehle changes na karo. **Apply All** par tamam listed findings safe dependency order mein implement, test, debug aur verify karo. Jo implement na ho uska reason/status Section 8 mein do.
 - **Preserve & Deliver:** Existing `edges.html` selection, audit, research aur continuous-discovery workflow preserve karo. Kisi bhi applied change ke baad Section 8 ka complete **FINAL REPORT** lazmi generate karo; unrelated workflow na badlo.
 
@@ -90,7 +90,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
     <td style="padding:8px 12px;">[Feature Category / Name]</td>
     <td style="padding:8px 12px;">[Existing Feature Name]<br/>[Short Roman Urdu description of actual problem/weakness]</td>
     <td style="padding:8px 12px;">[Proposed Improved Feature Name]<br/>[Short Roman Urdu description of expected solution/benefit]</td>
-    <td style="padding:8px 12px; text-align:center; vertical-align:middle;">[IMPROVE / FAIL / BUG]</td>
+    <td style="padding:8px 12px; text-align:center; vertical-align:middle;">[Exact relevant status]</td>
   </tr>
 </table>
 </div>
