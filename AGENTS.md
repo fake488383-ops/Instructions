@@ -63,7 +63,7 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 | 26 | Knowledge Engineer | Documentation, authoritative sources, discoverability, consistency, and stale knowledge. |
 | 27 | Operations Incident Engineer | Incident triage, containment, diagnosis, restoration, and prevention. |
 | 28 | Accessibility Engineer | Semantics, keyboard access, assistive technology, contrast, and accessibility validation. |
-| 29 | Internationalization Localization Engineer | Languages, scripts, directionality, pluralization, locale formats, and regional adaptation. |
+| 29 | Localization Engineer | Languages, scripts, directionality, pluralization, locale formats, and regional adaptation. |
 | 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks. |
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
 
