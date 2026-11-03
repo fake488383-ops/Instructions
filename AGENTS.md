@@ -72,8 +72,8 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Selection:** Ek dafa `0` press karne par 31 engineers ki numbered list show karo; selected engineer sirf apna domain audit kare aur **ek table** de. `00` press karne par tamam 31 engineers automatically select hon; phir **Enter/Press** par sab apne domains audit karein aur **separate tables** dein. Combined table na banao.
 - **Audit Scope:** Har engineer apne domain ke tamam relevant existing features inspect kare; authoritative research, documentation aur alternatives se compare karke evidence-based findings de. **BEFORE** actual current state aur **AFTER** proposed solution/benefit ho. Irrelevant ya duplicate findings na hon.
 - **Findings:** Tamam genuine findings report karo; fixed limit nahi. Pehle batch mein 100 tak findings do, agar itni valid hon. Output limit aaye to **Continue** par numbering wahi se jari rakho; **More** prompt na do. Findings invent na karo.
-- **Tables:** Sab audit tables se pehle **PROJECT HEALTH REPORT** heading sirf ek martaba, report ke top par table ke bahar ho. Har engineer ki separate table ho; title row mein **sirf us engineer ka number aur exact name/title** center mein 5 columns par span kare. Iske baad columns: **FIND | FEATURE | BEFORE | AFTER | STATUS**. Har engineer ki table mein `FIND` numbering `01` se alag start ho; agle engineer ki table mein bhi reset ho. Blueprint mein ek sample row hi rakho; actual findings ke mutabiq rows barhao.
-- **Cells & Status:** `FEATURE` = category/name. `BEFORE` = existing feature name + short Roman Urdu actual issue/weakness. `AFTER` = proposed feature name + short Roman Urdu solution/benefit. `STATUS` sirf **IMPROVEMENT**, **FAIL**, ya **BUG** ho; evidence ke baghair confirmed status na do. Status horizontally aur vertically center ho. Tables ke aas paas commentary, suggestions, summaries ya filler na ho.
+- **Tables:** Sab audit tables se pehle **PROJECT HEALTH REPORT** heading sirf ek martaba, report ke top par table ke bahar ho. Har engineer ki separate table ho; title row mein **sirf us engineer ka number aur exact name/title** center mein 5 columns par span kare. Iske baad columns: **FIND | FEATURE | BEFORE | AFTER | STATUS**. Har cell ki left/right padding equal ho aur columns content ke mutabiq dynamically size hon. Har engineer ki table mein `FIND` numbering `01` se reset ho. Blueprint mein ek sample row hi rakho; actual findings ke mutabiq rows barhao.
+- **Cells & Status:** `FEATURE` = category/name. `BEFORE` = existing feature name + short Roman Urdu actual issue/weakness. `AFTER` = proposed feature name + short Roman Urdu solution/benefit. `STATUS` sirf **IMPROVE**, **FAIL**, ya **BUG** ho; evidence ke baghair confirmed status na do. Status horizontally aur vertically center ho. Tables ke aas paas commentary, suggestions, summaries ya filler na ho.
 - **Apply & Safety:** Audit sirf report kare; **Apply All** se pehle changes na karo. **Apply All** par tamam listed findings safe dependency order mein implement, test, debug aur verify karo. Jo implement na ho uska reason/status Section 8 mein do.
 - **Preserve & Deliver:** Existing `edges.html` selection, audit, research aur continuous-discovery workflow preserve karo. Kisi bhi applied change ke baad Section 8 ka complete **FINAL REPORT** lazmi generate karo; unrelated workflow na badlo.
 
@@ -82,22 +82,17 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 </div>
 
 <div align="center">
-<table align="center" width="100%" style="border-collapse:collapse; table-layout:fixed;">
+<table align="center" width="100%" style="border-collapse:collapse; table-layout:auto;">
   <colgroup>
-    <col style="width:7%;"/>
-    <col style="width:17%;"/>
-    <col style="width:30%;"/>
-    <col style="width:30%;"/>
-    <col style="width:16%;"/>
   </colgroup>
   <tr><th colspan="5" align="center">01&nbsp;&nbsp;&nbsp; Architecture Engineer</th></tr>
-  <tr><th>FIND</th><th>FEATURE</th><th>BEFORE</th><th>AFTER</th><th style="text-align:center; vertical-align:middle;">STATUS</th></tr>
+  <tr><th style="padding:8px 12px;">FIND</th><th style="padding:8px 12px;">FEATURE</th><th style="padding:8px 12px;">BEFORE</th><th style="padding:8px 12px;">AFTER</th><th style="padding:8px 12px; text-align:center; vertical-align:middle;">STATUS</th></tr>
   <tr>
-    <td>01</td>
-    <td>[Feature Category / Name]</td>
-    <td>[Existing Feature Name]<br/>[Short Roman Urdu description of actual problem/weakness]</td>
-    <td>[Proposed Improved Feature Name]<br/>[Short Roman Urdu description of expected solution/benefit]</td>
-    <td style="text-align:center; vertical-align:middle;">[IMPROVEMENT / FAIL / BUG]</td>
+    <td style="padding:8px 12px;">01</td>
+    <td style="padding:8px 12px;">[Feature Category / Name]</td>
+    <td style="padding:8px 12px;">[Existing Feature Name]<br/>[Short Roman Urdu description of actual problem/weakness]</td>
+    <td style="padding:8px 12px;">[Proposed Improved Feature Name]<br/>[Short Roman Urdu description of expected solution/benefit]</td>
+    <td style="padding:8px 12px; text-align:center; vertical-align:middle;">[IMPROVE / FAIL / BUG]</td>
   </tr>
 </table>
 </div>
