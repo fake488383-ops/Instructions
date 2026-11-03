@@ -72,40 +72,51 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Selection:** `0` press karne par tamam 31 engineers ko numbered **vertical list view** mein, ek ke neeche ek, sirf unke titles ke saath show karo. **32 — Apply All Engineers** option sab 31 engineers ko select kare. Horizontal layout use na karo.
 - **Engineer Audit:** Selected engineer sirf apne defined domain ke tamam existing project features inspect kare. Har feature ko current authoritative internet research, documentation aur suitable alternatives se compare karke uska best evidence-based improvement identify kare. **BEFORE** hamesha project ki actual existing implementation ho; **AFTER** researched proposed improvement ho. Findings relevant aur unique hon; koi unrelated/filler entries na hon.
 - **Dynamic Findings:** Findings ko isi **PROJECT IMPROVEMENT REPORT** table mein continuously append karo. Jitni relevant findings waqai milen, sab report karo; koi fixed total limit nahi. Pehle response/batch mein kam az kam **100 findings** do jab 100 ya zyada valid findings available hon. Agar output limit ki wajah se rukna pade aur aur findings baqi hon, user ke **Continue** kehne par aglay batch se wahi numbering continue karo; dobara 1 se shuru na karo. Koi **More** option ya prompt mat do. Agar 100 se kam valid findings hon, tamam available findings show karo; findings invent mat karo.
-- **Table Content:** Table ka title **PROJECT IMPROVEMENT REPORT** ho aur sab se upar ek separate title row mein center aligned, tamam 4 columns par span kare. Is ke neeche sirf **#**, **BEFORE**, **AFTER**, **STATUS** columns hon. BEFORE aur AFTER dono cells mein isi order mein sirf auto-detected **Engineer Name**, **Feature Name**, aur neeche **Short Description** show karo; **Engineer:** ya **Feature:** jaisi labels/headings bilkul mat likho. Engineer Name selected engineer ka ho; **32 — Apply All Engineers** par har finding ke responsible engineer ka naam ho. Feature title English mein aur description short Roman Urdu mein ho. **STATUS** sirf **FIX** (verified defect/failure ko fix karna hai) ya **IMPROVEMENT** (working feature ko upgrade karna hai) ho. STATUS text ko cell ke andar horizontal aur vertical dono directions mein exact center rakho, aur cell ki padding minimum ho taa-ke text clip na ho. Table ke aage, peeche ya darmiyan extra commentary, suggestions, summaries ya filler na ho.
+- **Table Content:** Table ka title **PROJECT IMPROVEMENT REPORT** ho aur separate top row mein center aligned ho, tamam **5 columns** par span kare. Columns isi order mein hon: **FIND**, **FEATURE**, **BEFORE**, **AFTER**, **STATUS**. **FIND** mein continuous finding number ho. **FEATURE** mein feature category/name ho. **BEFORE** cell mein existing feature ka naam upar aur uski actual weakness/problem ki short Roman Urdu description neeche ho. **AFTER** cell mein proposed improved feature ka naam upar aur uske expected benefit/solution ki short Roman Urdu description neeche ho. **STATUS** sirf **IMPROVEMENT** (working feature ko upgrade karna hai), **FAIL** (test/verification mein feature expected kaam nahi kar raha), ya **BUG** (specific defect/error mila hai) ho. Status evidence-based ho; unverified assumptions ko confirmed BUG/FAIL na label karo. STATUS text ko cell ke andar horizontal aur vertical dono directions mein center rakho. Table ke aage, peeche ya darmiyan extra commentary, suggestions, summaries ya filler na ho.
 - **All Engineers:** Option 32 select hone par tamam 31 engineers apne-apne domains audit karein, multiple valid findings report karein, duplicates merge/avoid karein, aur table numbering musalsal rakhein.
 - **Apply All:** User ke **Apply All** kehne par table mein listed tamam findings project mein implement karo. Dependencies aur safe execution order follow karo; har change test, debug aur verify karo. Jo finding implement na ho sake usay chupao nahi; uska reason aur actual status Section 8 report mein do.
 - **Preserve Workflow:** Existing `edges.html` selection, audit, research aur continuous-discovery behavior preserve karo. Is instruction mein report format aur upar diye gaye rules follow karo; unrelated workflow change na karo.
 - **Approval & Report:** Audit findings pehle sirf report karo; user ke **Apply All** command se pehle implement na karo. Project mein koi bhi changes apply hone ke baad lazmi Section 8 ka complete **PROJECT REPORT** generate karo.
 
 <div align="center">
-<table align="center" width="100%" style="border-collapse:collapse; table-layout:auto;">
+<table align="center" width="100%" style="border-collapse:collapse; table-layout:fixed;">
   <colgroup>
-    <col style="width:1%;"/>
-    <col style="width:49%;"/>
-    <col style="width:49%;"/>
-    <col style="width:1%;"/>
+    <col style="width:7%;"/>
+    <col style="width:17%;"/>
+    <col style="width:30%;"/>
+    <col style="width:30%;"/>
+    <col style="width:16%;"/>
   </colgroup>
   <tr>
-    <th colspan="4" align="center">PROJECT IMPROVEMENT REPORT</th>
+    <th colspan="5" align="center">PROJECT IMPROVEMENT REPORT</th>
   </tr>
   <tr>
-    <th style="padding:1px 3px; white-space:nowrap;">#</th>
+    <th>FIND</th>
+    <th>FEATURE</th>
     <th>BEFORE</th>
     <th>AFTER</th>
-    <th style="padding:1px 1px; white-space:nowrap; text-align:center;">STATUS</th>
+    <th style="text-align:center; vertical-align:middle;">STATUS</th>
   </tr>
   <tr>
-    <td style="padding:1px 3px; white-space:nowrap;">1</td>
-    <td>[Auto-detected Engineer Name]<br/>[Auto-detected Existing Feature Name]<br/>[Short Roman Urdu description of current implementation]</td>
-    <td>[Auto-detected Engineer Name]<br/>[Auto-detected Proposed Feature Name]<br/>[Short Roman Urdu description of researched improvement]</td>
-    <td style="padding:1px 1px; white-space:nowrap; text-align:center; vertical-align:middle;">[FIX / IMPROVEMENT]</td>
+    <td>01</td>
+    <td>[Feature Category / Name]</td>
+    <td>[Existing Feature Name]<br/>[Short Roman Urdu description of actual problem/weakness]</td>
+    <td>[Proposed Improved Feature Name]<br/>[Short Roman Urdu description of expected solution/benefit]</td>
+    <td style="text-align:center; vertical-align:middle;">[IMPROVEMENT / FAIL / BUG]</td>
   </tr>
   <tr>
-    <td style="padding:1px 3px; white-space:nowrap;">...</td>
-    <td>[Append each finding as a separate table cell]</td>
-    <td>[Append each finding as a separate table cell]</td>
-    <td style="padding:1px 1px; white-space:nowrap; text-align:center; vertical-align:middle;">[FIX / IMPROVEMENT]</td>
+    <td>02</td>
+    <td>[Next Feature Category / Name]</td>
+    <td>[Existing Feature Name]<br/>[Short Roman Urdu description of actual problem/weakness]</td>
+    <td>[Proposed Improved Feature Name]<br/>[Short Roman Urdu description of expected solution/benefit]</td>
+    <td style="text-align:center; vertical-align:middle;">[IMPROVEMENT / FAIL / BUG]</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>[Continue each relevant finding]</td>
+    <td>[Existing Feature Name + actual problem]</td>
+    <td>[Proposed Feature Name + expected benefit]</td>
+    <td style="text-align:center; vertical-align:middle;">[Evidence-based status]</td>
   </tr>
 </table>
 </div>
