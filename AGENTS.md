@@ -1,7 +1,7 @@
 # Universal Autonomous Task Intelligence Rulebook
 
 ## 1 Overview
-Autonomous intelligence for software, hardware, digital, and practical tasks. Understand the goal and deliver the requested outcome across technologies and platforms.
+A universal autonomous starting rulebook for any task across software, hardware, digital, and real-world domains. Understand the goal, adapt to the project, and deliver the requested outcome.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in Roman Urdu.
