@@ -69,18 +69,15 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 7. Continuous Project Audit
 
-- **Selection Entry:** User ke `0` enter karne par sirf ye do numbered options show karo: **1 — Specific Engineer** aur **2 — All Engineers**. Is stage par 31 engineers ki list mat dikhao.
-- **Specific Engineer Selection:** Option `1` select hone par tamam 31 engineers ko numbered **vertical list view** mein, ek ke neeche ek, sirf unke exact titles ke saath show karo. User jis engineer ka number select kare, sirf wahi engineer apne defined domain ke tamam relevant project areas audit kare. Sirf us selected engineer ki **ek PROJECT HEALTH REPORT table** generate karo. Kisi doosre engineer ki table ya findings include na karo. Horizontal list use na karo.
-- **All Engineers Selection:** Option `2` select hone par tamam 31 engineers audit mein participate karein. Har engineer apne defined domain ke tamam relevant project areas inspect kare aur **apni separate PROJECT HEALTH REPORT table** generate kare. Engineer 01 ki table mein sirf Engineer 01 ki findings, Engineer 02 ki table mein sirf Engineer 02 ki findings, isi tarah tamam 31 engineers ki alag tables hon. Ek combined table mat banao.
-- **Engineer Audit:** Selected engineer sirf apne defined domain ke tamam existing project features inspect kare. Har feature ko current authoritative internet research, documentation aur suitable alternatives se compare karke uska best evidence-based improvement identify kare. **BEFORE** hamesha project ki actual existing implementation ho; **AFTER** researched proposed improvement ho. Findings relevant aur unique hon; koi unrelated/filler entries na hon.
-- **Dynamic Findings:** Findings ko isi **PROJECT HEALTH REPORT** table mein continuously append karo. Jitni relevant findings waqai milen, sab report karo; koi fixed total limit nahi. Pehle response/batch mein kam az kam **100 findings** do jab 100 ya zyada valid findings available hon. Agar output limit ki wajah se rukna pade aur aur findings baqi hon, user ke **Continue** kehne par aglay batch se wahi numbering continue karo; dobara 1 se shuru na karo. Koi **More** option ya prompt mat do. Agar 100 se kam valid findings hon, tamam available findings show karo; findings invent mat karo.
-- **Table Blueprint:** Har selected engineer ke liye alag **PROJECT HEALTH REPORT** table banao. Blueprint mein sirf **ek sample data row** rakho; `02`, `...` ya doosri example rows mat dikhana. Actual audit findings milne par isi table mein zaroorat ke mutabiq naye rows dynamically add karo; findings ki koi fixed limit nahi. `FIND` numbering tamam engineers ki tables mein continuous rahegi.
-- **Engineer Identification Row:** `PROJECT HEALTH REPORT` title ke foran neeche aur column headings se pehle ek hi row banao. Is row mein left-aligned sirf selected engineer ka number aur uska exact title/name ho, misal `01    Architecture Engineer`. Responsibility ya koi extra information mat dikhana. Har engineer ki separate table mein usi engineer ka number aur naam show karo.
-- **Table Content:** Table ka title **PROJECT HEALTH REPORT** ho aur separate top row mein center aligned ho, tamam **5 columns** par span kare. Columns isi order mein hon: **FIND**, **FEATURE**, **BEFORE**, **AFTER**, **STATUS**. **FIND** mein continuous finding number ho. **FEATURE** mein feature category/name ho. **BEFORE** cell mein existing feature ka naam upar aur uski actual weakness/problem ki short Roman Urdu description neeche ho. **AFTER** cell mein proposed improved feature ka naam upar aur uske expected benefit/solution ki short Roman Urdu description neeche ho. **STATUS** sirf **IMPROVEMENT** (working feature ko upgrade karna hai), **FAIL** (test/verification mein feature expected kaam nahi kar raha), ya **BUG** (specific defect/error mila hai) ho. Status evidence-based ho; unverified assumptions ko confirmed BUG/FAIL na label karo. STATUS text ko cell ke andar horizontal aur vertical dono directions mein center rakho. Table ke aage, peeche ya darmiyan extra commentary, suggestions, summaries ya filler na ho.
-- **All Engineers:** Option 32 select hone par tamam 31 engineers apne-apne domains audit karein, multiple valid findings report karein, duplicates merge/avoid karein, aur table numbering musalsal rakhein.
-- **Apply All:** User ke **Apply All** kehne par table mein listed tamam findings project mein implement karo. Dependencies aur safe execution order follow karo; har change test, debug aur verify karo. Jo finding implement na ho sake usay chupao nahi; uska reason aur actual status Section 8 report mein do.
-- **Preserve Workflow:** Existing `edges.html` selection, audit, research aur continuous-discovery behavior preserve karo. Is instruction mein report format aur upar diye gaye rules follow karo; unrelated workflow change na karo.
-- **Approval & Report:** Audit findings pehle sirf report karo; user ke **Apply All** command se pehle implement na karo. Project mein koi bhi changes apply hone ke baad lazmi Section 8 ka complete **PROJECT REPORT** generate karo.
+- **Selection:** `0` par sirf **1 — Specific Engineer** aur **2 — All Engineers** show karo.
+  - **1:** 31 engineers ki numbered vertical list dikhao. Selected number wala engineer sirf apna domain audit kare aur **ek table** de.
+  - **2:** Tamam 31 engineers apne domains audit karein; **har engineer ki separate table** ho. Combined table na banao.
+- **Audit Scope:** Har engineer apne domain ke tamam relevant existing features inspect kare; authoritative research, documentation aur alternatives se compare karke evidence-based findings de. **BEFORE** actual current state aur **AFTER** proposed solution/benefit ho. Irrelevant ya duplicate findings na hon.
+- **Findings:** Tamam genuine findings report karo; fixed limit nahi. Pehle batch mein 100 tak findings do, agar itni valid hon. Output limit aaye to **Continue** par numbering wahi se jari rakho; **More** prompt na do. Findings invent na karo.
+- **Tables:** Har engineer ki separate **PROJECT HEALTH REPORT** table ho. Title center mein 5 columns par span kare; uske neeche left-aligned sirf engineer number aur exact title, phir columns: **FIND | FEATURE | BEFORE | AFTER | STATUS**. `FIND` numbering tamam tables mein continuous ho. Blueprint mein ek sample row hi rakho; actual findings ke mutabiq rows barhao.
+- **Cells & Status:** `FEATURE` = category/name. `BEFORE` = existing feature name + short Roman Urdu actual issue/weakness. `AFTER` = proposed feature name + short Roman Urdu solution/benefit. `STATUS` sirf **IMPROVEMENT**, **FAIL**, ya **BUG** ho; evidence ke baghair confirmed status na do. Status horizontally aur vertically center ho. Tables ke aas paas commentary, suggestions, summaries ya filler na ho.
+- **Apply & Safety:** Audit sirf report kare; **Apply All** se pehle changes na karo. **Apply All** par tamam listed findings safe dependency order mein implement, test, debug aur verify karo. Jo implement na ho uska reason/status Section 8 mein do.
+- **Preserve & Deliver:** Existing `edges.html` selection, audit, research aur continuous-discovery workflow preserve karo. Kisi bhi applied change ke baad Section 8 ka complete **FINAL REPORT** lazmi generate karo; unrelated workflow na badlo.
 
 <div align="center">
 <table align="center" width="100%" style="border-collapse:collapse; table-layout:fixed;">
@@ -91,19 +88,9 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
     <col style="width:30%;"/>
     <col style="width:16%;"/>
   </colgroup>
-  <tr>
-    <th colspan="5" align="center">PROJECT HEALTH REPORT</th>
-  </tr>
-  <tr>
-    <td colspan="5" align="left">01&nbsp;&nbsp;&nbsp; Architecture Engineer</td>
-  </tr>
-  <tr>
-    <th>FIND</th>
-    <th>FEATURE</th>
-    <th>BEFORE</th>
-    <th>AFTER</th>
-    <th style="text-align:center; vertical-align:middle;">STATUS</th>
-  </tr>
+  <tr><th colspan="5" align="center">PROJECT HEALTH REPORT</th></tr>
+  <tr><td colspan="5" align="left">01&nbsp;&nbsp;&nbsp; Architecture Engineer</td></tr>
+  <tr><th>FIND</th><th>FEATURE</th><th>BEFORE</th><th>AFTER</th><th style="text-align:center; vertical-align:middle;">STATUS</th></tr>
   <tr>
     <td>01</td>
     <td>[Feature Category / Name]</td>
