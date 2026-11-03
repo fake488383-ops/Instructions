@@ -79,30 +79,30 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Approval & Report:** Audit findings pehle sirf report karo; user ke **Apply All** command se pehle implement na karo. Project mein koi bhi changes apply hone ke baad lazmi Section 8 ka complete **PROJECT REPORT** generate karo.
 
 <div align="center">
-<table align="center" width="100%" style="border-collapse:collapse; table-layout:fixed;">
+<table align="center" width="100%" style="border-collapse:collapse; table-layout:auto;">
   <colgroup>
-    <col style="width:5%;"/>
-    <col style="width:42%;"/>
-    <col style="width:42%;"/>
-    <col style="width:11%;"/>
+    <col style="width:1%;"/>
+    <col style="width:49%;"/>
+    <col style="width:49%;"/>
+    <col style="width:1%;"/>
   </colgroup>
   <tr>
-    <th>#</th>
+    <th style="padding:1px 3px; white-space:nowrap;">#</th>
     <th>BEFORE</th>
     <th>AFTER</th>
-    <th style="padding:1px 2px; white-space:nowrap;">STATUS</th>
+    <th style="padding:1px 3px; white-space:nowrap;">STATUS</th>
   </tr>
   <tr>
-    <td>1</td>
+    <td style="padding:1px 3px; white-space:nowrap;">1</td>
     <td><strong>Engineer:</strong> [Engineer Name]<br/><strong>Feature:</strong> [Existing Feature Name]<br/>[Short Roman Urdu description of current implementation]</td>
     <td><strong>Engineer:</strong> [Engineer Name]<br/><strong>Feature:</strong> [Proposed Improved Feature Name]<br/>[Short Roman Urdu description of researched improvement]</td>
-    <td style="padding:1px 2px; white-space:nowrap;">[FIX / IMPROVEMENT]</td>
+    <td style="padding:1px 3px; white-space:nowrap;">[FIX / IMPROVEMENT]</td>
   </tr>
   <tr>
-    <td>...</td>
+    <td style="padding:1px 3px; white-space:nowrap;">...</td>
     <td>[Append each finding as a separate table cell]</td>
     <td>[Append each finding as a separate table cell]</td>
-    <td style="padding:1px 2px; white-space:nowrap;">[FIX / IMPROVEMENT]</td>
+    <td style="padding:1px 3px; white-space:nowrap;">[FIX / IMPROVEMENT]</td>
   </tr>
 </table>
 </div>
