@@ -73,7 +73,7 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 - **Audit & Findings:** `00` par tamam 31 engineers sequence mein apne tamam relevant areas/files audit karein; har engineer findings milti rehne tak continue kare, phir next engineer shuru ho. Koi findings limit nahi—10, 100, ya us se zyada; kuch skip ya merge na karo.
 - **Table Structure:** Ek **PROJECT HEALTH REPORT** heading use karo. Har table par actual engineer number/name aur columns **FIND | FEATURE | BEFORE | AFTER | STATUS** hon. FIND `01` se shuru ho; alignment consistent ho. Blueprint mein ek sample row rakho.
 - **Feature Descriptions:** Actual feature/category, BEFORE mein existing state + short issue, AFTER mein proposed solution + short benefit do. Sirf real findings likho.
-- **Status Rules:** Evidence ke mutabiq exact internal status category select karo: **BUG, ERROR, MISSING, INCOMPLETE, DUPLICATE, INCORRECT, IMPROVE, OUTDATED, SECURITY, PERFORMANCE, INCOMPATIBLE, UNTESTED, UNUSED, INEFFICIENT, RISK**. Categories ko mix na karo aur evidence ke baghair confirm na karo. Report mein status ka **sirf icon** dikhao; koi short name, abbreviation, label, ya text icon ke saath na likho. Icons: 🐞, ⚠️, ➕, ◐, ♻️, ❌, ✨, 🕒, 🔒, 🚀, 🔗, 🧪, 💤, ⚙️, 🛡️. Icon ko status cell mein vertically centered rakho. Tables ke aas paas extra commentary na ho.
+- **Status Rules:** Evidence ke mutabiq exact internal status category select karo: **BUG, ERROR, MISSING, INCOMPLETE, DUPLICATE, INCORRECT, IMPROVE, OUTDATED, SECURITY, PERFORMANCE, INCOMPATIBLE, UNTESTED, UNUSED, INEFFICIENT, RISK**. Categories ko mix na karo aur evidence ke baghair confirm na karo. Report mein status ka **sirf icon** dikhao; koi label ya abbreviation nahi. Icon ko status cell ke horizontal aur vertical dono axes par center karo. Tables ke aas paas extra commentary na ho.
 - **Apply & Safety:** Audit mein sirf findings report karo. **Apply All** par safe dependency order mein implement, test, aur verify karo. Unimplemented items ka reason Section 9 mein do.
 - **Preserve & Deliver:** `edges.html` ka existing workflow preserve karo. Har applied change ke baad Section 9 ka complete **FINAL REPORT** do.
 
@@ -86,9 +86,9 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
   <tr>
     <td style="padding:8px 12px;">01</td>
     <td style="padding:8px 12px;">[Actual feature/category name]</td>
-    <td style="padding:8px 12px;">[Existing feature name]<br/>[Short actual issue]</td>
-    <td style="padding:8px 12px;">[Proposed feature/solution name]<br/>[Short benefit]</td>
-    <td style="padding:8px 12px; text-align:left; vertical-align:middle;">[Relevant status icon + label]</td>
+    <td style="padding:8px 12px;"><strong>[Existing feature name]</strong><br/>[Short actual issue]</td>
+    <td style="padding:8px 12px;"><strong>[Proposed feature/solution name]</strong><br/>[Short benefit]</td>
+    <td style="padding:8px 12px; text-align:center; vertical-align:middle;">[Relevant status icon]</td>
   </tr>
 </table>
 </div>
