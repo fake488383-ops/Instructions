@@ -79,9 +79,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Apply & Safety:** Audit sirf report kare; **Apply All** se pehle changes na karo. **Apply All** par tamam listed findings safe dependency order mein implement, test, debug aur verify karo. Jo implement na ho uska reason/status Section 8 mein do.
 - **Preserve & Deliver:** Existing `edges.html` selection, audit, research aur continuous-discovery workflow preserve karo. Kisi bhi applied change ke baad Section 8 ka complete **FINAL REPORT** lazmi generate karo; unrelated workflow na badlo.
 
-### PROJECT HEALTH REPORT
-
-<div align="center">
+<div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">\n<h2>PROJECT HEALTH REPORT</h2>\n</div>\n\n<div align="center">
 <table align="center" width="100%" style="border-collapse:collapse; table-layout:fixed;">
   <colgroup>
     <col style="width:7%;"/>
@@ -104,7 +102,7 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 
 ## 8. Task Completion Report
 
-- **Mandatory Project Report:** Whenever any work is applied to the project—including one change, multiple changes, or **Apply All** for 40–50+ audit findings—always generate the complete **Section 8 FINAL REPORT** blueprint at the end. Report the actual combined Before/After state, applied features, participating engineers, tests and relevant performance metrics. This is mandatory after every project change, whether small or large, successful, partial, blocked, or failed; never replace it with the audit findings table or plain text. Do not create a separate report file unless requested.
+- **Mandatory Project Report:** Whenever any work is applied to the project—including one change, multiple changes, or **Apply All** for 40–50+ audit findings—always generate the complete **Section 8 FINAL REPORT** blueprint at the end, with a centered **FINAL REPORT** heading outside and above the table. Report the actual combined Before/After state, applied features, participating engineers, tests and relevant performance metrics. This is mandatory after every project change, whether small or large, successful, partial, blocked, or failed; never replace it with the audit findings table or plain text. Do not create a separate report file unless requested.
 - **One Report Format:** Always use the complete report blueprint below, including every table, heading, section, and column. Never switch between separate small-task and large-task report formats, and never replace a table with plain text.
 - **Scale Detail to Work:** For a small change, provide brief, relevant information and only the necessary data rows. For a large or multi-part task, provide fuller explanations and all relevant detail. Keep every required table present even when it contains only one row or a concise status such as **NOT APPLICABLE**.
 - **Verification & Status:** QA Test Engineer independently selects and runs relevant tests, fixes defects, and retests when possible. Report only actual evidence. **WORKING** requires runtime or acceptance verification; otherwise use **FAIL** where verification shows failure. Use **PASS**, **FAIL**, or **NOT TESTED** accurately for tests.
@@ -114,10 +112,13 @@ Selected engineers may discover relevant child specialists, sub-disciplines, too
 - **Testing Summary:** Use only relevant, recognized QA test types in the **Test Type** column, such as **Unit Test**, **Integration Test**, **System Test**, **End-to-End Test**, and **Regression Test**. Add specialized test types only when genuinely applicable. Never use feature names, task descriptions, generic labels, implementation steps, or filler rows as test titles. Show **PASS** or **FAIL** for tests run and **NOT TESTED** only for applicable tests not run. If testing is not applicable, state **NOT APPLICABLE** in the table.
 - **Performance Metrics:** Show only relevant feature-specific metrics, with measured values, units, and conditions. Use **NOT MEASURED** when a relevant metric was not measured; use **NOT APPLICABLE** when no relevant metric applies. Never invent values or add irrelevant metrics.
 
+<div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
+<h2>FINAL REPORT</h2>
+</div>
+
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
   <colgroup><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.70%;"></colgroup>
-  <tr><th colspan="6" align="center">FINAL REPORT</th></tr>
   <tr><th colspan="3" align="center">BEFORE</th><th colspan="3" align="center">AFTER</th></tr>
   <tr><td colspan="3" align="center" valign="middle">[Previous state of implemented feature]</td><td colspan="3" align="center" valign="middle">[Actual implemented result]</td></tr>
   <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
