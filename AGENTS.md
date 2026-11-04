@@ -86,7 +86,7 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
     <td style="padding:8px 6px;">[Actual feature/category name]</td>
     <td style="padding:8px 6px;"><strong>[Existing feature name]</strong><br/>[Short actual issue]</td>
     <td style="padding:8px 6px;"><strong>[Proposed feature/solution name]</strong><br/>[Short benefit]</td>
-    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><table align="center"><tr><td align="center" valign="middle">B<br/>U<br/>G</td><td align="center" valign="middle">🐞</td></tr></table></td>
+    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><div style="display:flex; flex-direction:row; align-items:center; justify-content:center; gap:8px;"><span>B<br/>U<br/>G</span><span>🐞</span></div></td>
   </tr>
 </table>
 </div>
