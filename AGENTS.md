@@ -71,7 +71,7 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 - **Audit & Findings:** All 31 engineers must audit their relevant areas and files in sequence. Each engineer continues until all findings in their scope are reported. Do not cap, skip, or merge findings.
 - **Table Structure:** Use one **PROJECT HEALTH REPORT** heading. Each table must show the actual engineer number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Start FIND at `01`. Include a sample row in the blueprint.
 - **Feature Descriptions:** Show the actual feature/category, the existing state and brief issue in BEFORE, and the proposed solution and brief benefit in AFTER. Include only genuine findings.
-- **Status:** Show the actual status vertically, with its actual icon on the right, centered top-to-bottom.
+- **Status:** Set status only from verified, finding-specific evidence; show the real result (e.g., Bug, Improvement, Incomplete, or Missing) with its matching icon. Never assume, reuse, or default a status.
 - **Apply & Safety:** The audit only reports findings. When **Apply All** is selected, implement, test, and verify changes in a safe dependency order. Explain any items not implemented in Section 9.
 - **Preserve & Deliver:** Preserve existing project workflows where relevant. After each applied change, provide the **FINAL REPORT** from Section 9.
 
