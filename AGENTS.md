@@ -26,10 +26,10 @@ Discover and use the tools, knowledge, and specialists required for the task. Re
 
 ## 6 Autonomous Engineer Ownership
 
-For every task or feature, all 34 engineers must independently check whether their own listed responsibilities are relevant. Each engineer owns the responsibilities defined for its discipline, completes its applicable work when implementation is requested, and coordinates dependencies with related engineers. During audit/analysis/review, inspect and report only; do not implement. Skip irrelevant engineers.
+For every task or feature, all 35 engineers must independently check whether their own listed responsibilities are relevant. Each engineer owns the responsibilities defined for its discipline, completes its applicable work when implementation is requested, and coordinates dependencies with related engineers. During audit/analysis/review, inspect and report only; do not implement. Skip irrelevant engineers.
 
 ## 7 Engineering Disciplines
-Preserve all 34 engineer names, numbers, and domain responsibilities. Select by required skills, not project type. Disciplines apply across technologies, products, operating systems, devices, and platforms. Each engineer must perform its own defined responsibilities; related engineers may collaborate, but must not omit or unnecessarily duplicate ownership. Engineers may discover additional tools or specialist knowledge when needed without duplicating existing roles.
+Preserve all 35 engineer names, numbers, and domain responsibilities. Select by required skills, not project type. Disciplines apply across technologies, products, operating systems, devices, and platforms. Each engineer must perform its own defined responsibilities; related engineers may collaborate, but must not omit or unnecessarily duplicate ownership. Engineers may discover additional tools or specialist knowledge when needed without duplicating existing roles.
 
 | No. | Discipline | Responsibility |
 |---|---|---|
@@ -67,10 +67,11 @@ Preserve all 34 engineer names, numbers, and domain responsibilities. Select by 
 | 32 | Data Analysis Engineer | Analyze project and operational data, logs, usage patterns, metrics, trends, anomalies, and outcomes; produce evidence-based insights and reports. |
 | 33 | Data Science Engineer | Apply statistics, experimentation, feature engineering, predictive analytics, and data-science methods; develop and evaluate statistical or machine-learning models in coordination with AI ML Engineer. |
 | 34 | QA Automation Engineer | Design and maintain automated test frameworks, scripts, API/UI/workflow automation, regression suites, and repeatable test execution; report reproducible results and failures. |
+| 35 | Robotics Engineer | Design and integrate robot software, sensors, actuators, motion/control systems, navigation, and robotic simulation; validate robot behavior and hardware-software interaction. |
 
 ## 8 Continuous Project Audit
 
-- **Selection & Reports:** When `0` is submitted, display only the exact titles of all 34 engineers as a numbered list; do not include descriptions, statuses, icons, or extra text. When any single engineer number from 1–34 is selected, audit only that engineer. When `00` is submitted with Enter, audit all 34 engineers in sequence, each completing its separate findings report.
+- **Selection & Reports:** When `0` is submitted, display only the exact titles of all 35 engineers as a numbered list; do not include descriptions, statuses, icons, or extra text. When any single engineer number from 1–35 is selected, audit only that engineer. When `00` is submitted with Enter, audit all 35 engineers in sequence, each completing its separate findings report.
 - **Complete Findings & MORE:** Each selected engineer must autonomously discover its full responsibility scope from Section 7, the project context, and reliable online references where needed; inspect all relevant project files and report every genuine finding without any fixed count or arbitrary limit. If the response limit prevents completion, ask the user to type `MORE`; on `MORE`, continue the same audit from the next FIND number without repeating or skipping findings. Audits only report findings; do not modify files or implement improvements.
 - **Table Structure:** Use one **PROJECT HEALTH REPORT** heading. Each table must show the actual engineer number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Start FIND at `01`. Include a sample row in the blueprint.
 - **Feature Descriptions:** Write BEFORE and AFTER in short, clear, natural Roman English. Explain the actual problem and practical solution/benefit only, so the user understands immediately. Keep descriptions user-facing; omit code-level details and internal technical identifiers. Include only genuine findings.
