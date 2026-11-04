@@ -67,26 +67,27 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 
 ## 8 Continuous Project Audit
 
-- **Selection & Reports:** When `0` is submitted, display only the exact titles of all 31 engineers as a numbered list; do not include descriptions, statuses, icons, or extra text. When `00` is submitted with Enter, start the audit for all 31 engineers. Engineers must work strictly in sequence: the first engineer inspects all relevant project files and completes their report before the second engineer starts, continuing through engineer 31. Include every finding from every relevant file in that engineer's separate table; do not omit files or findings. Start the next engineer only after the current engineer's table is complete.
-- **Audit & Findings:** On `00`, all 31 engineers must audit all relevant areas and files in sequence. Each engineer continues until all findings in their scope are reported, then the next engineer starts. Do not cap findings at 10, 100, or any other number; do not skip or merge findings.
-- **Table Structure:** Use one **PROJECT HEALTH REPORT** heading. Each table must show the actual engineer number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Start FIND at `01` and keep alignment consistent. Include one sample row in the blueprint.
-- **Feature Descriptions:** Show the actual feature/category, the existing state and a brief issue in BEFORE, and the proposed solution and brief benefit in AFTER. Include only genuine findings.
-- **Status Rules:** Status ke liye sirf yeh icons use karo: 🐞 ⚠️ ➕ ◐ ♻️ ❌ ✨ 🕒 🔒 🚀 🔗 🧪 💤 ⚙️ 🛡️. **STATUS cell mein sirf ek bold, centered icon show ho.** Koi category name, label, abbreviation, number, explanation, ya extra text show na ho.
+- **Selection & Reports:** When `0` is submitted, display only the exact titles of all 31 engineers as a numbered list; do not include descriptions, statuses, icons, or extra text. When `00` is submitted with Enter, start the audit for all 31 engineers. Engineers must work strictly in sequence: each engineer inspects all relevant project files and completes their separate report before the next engineer starts. Include every finding from every relevant file; do not omit findings.
+- **Audit & Findings:** All 31 engineers must audit their relevant areas and files in sequence. Each engineer continues until all findings in their scope are reported. Do not cap, skip, or merge findings.
+- **Table Structure:** Use one **PROJECT HEALTH REPORT** heading. Each table must show the actual engineer number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Start FIND at `01`. Include a sample row in the blueprint.
+- **Feature Descriptions:** Show the actual feature/category, the existing state and brief issue in BEFORE, and the proposed solution and brief benefit in AFTER. Include only genuine findings.
+- **Status Rules:** Show a clear status label together with its matching icon in every STATUS cell. Use concise labels such as **Bug**, **Warning**, **Added**, **Partial**, **Refactor**, **Failed**, **Improvement**, **Pending**, **Security**, **Performance**, **Integration**, **Testing**, **Inactive**, **Configuration**, and **Protected**. Use the matching icon from this set: 🐞 ⚠️ ➕ ◐ ♻️ ❌ ✨ 🕒 🔒 🚀 🔗 🧪 💤 ⚙️ 🛡️. Center both the label and icon in the STATUS cell; never show an icon without its label.
+- **Responsive Table:** The report table must automatically fit the available AI extension panel width. It must expand and shrink with the panel when the user resizes it. Use full available width, automatic column sizing, text wrapping, and responsive layout; never enforce a fixed table width or fixed minimum width that causes clipping or horizontal overflow.
 - **Apply & Safety:** The audit only reports findings. When **Apply All** is selected, implement, test, and verify changes in a safe dependency order. Explain any items not implemented in Section 9.
 - **Preserve & Deliver:** Preserve existing project workflows where relevant. After each applied change, provide the **FINAL REPORT** from Section 9.
 
 <p align="center"><strong>PROJECT HEALTH REPORT</strong></p>
 
-<div align="center">
-<table align="center" width="100%" style="border-collapse:collapse; table-layout:auto;">
+<div align="center" style="width:100%; max-width:100%; overflow-x:auto;">
+<table align="center" width="100%" style="width:100%; max-width:100%; border-collapse:collapse; table-layout:auto; overflow-wrap:anywhere;">
   <tr><th colspan="5" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
-  <tr><th style="padding:8px 12px;">FIND</th><th style="padding:8px 12px;">FEATURE</th><th style="padding:8px 12px;">BEFORE</th><th style="padding:8px 12px;">AFTER</th><th style="padding:8px 12px; text-align:center; vertical-align:middle;">STATUS</th></tr>
+  <tr><th style="padding:8px 6px;">FIND</th><th style="padding:8px 6px;">FEATURE</th><th style="padding:8px 6px;">BEFORE</th><th style="padding:8px 6px;">AFTER</th><th style="padding:8px 6px; text-align:center; vertical-align:middle;">STATUS</th></tr>
   <tr>
-    <td style="padding:8px 12px;">01</td>
-    <td style="padding:8px 12px;">[Actual feature/category name]</td>
-    <td style="padding:8px 12px;"><strong>[Existing feature name]</strong><br/>[Short actual issue]</td>
-    <td style="padding:8px 12px;"><strong>[Proposed feature/solution name]</strong><br/>[Short benefit]</td>
-    <td style="padding:8px 12px; text-align:center; vertical-align:middle;">[Relevant status icon]</td>
+    <td style="padding:8px 6px;">01</td>
+    <td style="padding:8px 6px;">[Actual feature/category name]</td>
+    <td style="padding:8px 6px;"><strong>[Existing feature name]</strong><br/>[Short actual issue]</td>
+    <td style="padding:8px 6px;"><strong>[Proposed feature/solution name]</strong><br/>[Short benefit]</td>
+    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><strong>[Status Label]</strong><br/>[Matching icon]</td>
   </tr>
 </table>
 </div>
