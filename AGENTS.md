@@ -72,14 +72,13 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 - **Table Structure:** Use one **PROJECT HEALTH REPORT** heading. Each table must show the actual engineer number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Start FIND at `01`. Include a sample row in the blueprint.
 - **Feature Descriptions:** Show the actual feature/category, the existing state and brief issue in BEFORE, and the proposed solution and brief benefit in AFTER. Include only genuine findings.
 - **Status Rules:** Show a clear status label together with its matching icon in every STATUS cell. Use concise labels such as **Bug**, **Warning**, **Added**, **Partial**, **Refactor**, **Failed**, **Improvement**, **Pending**, **Security**, **Performance**, **Integration**, **Testing**, **Inactive**, **Configuration**, and **Protected**. Use the matching icon from this set: 🐞 ⚠️ ➕ ◐ ♻️ ❌ ✨ 🕒 🔒 🚀 🔗 🧪 💤 ⚙️ 🛡️. Center both the label and icon in the STATUS cell; never show an icon without its label.
-- **Responsive Table:** The report table must automatically fit the available AI extension panel width. It must expand and shrink with the panel when the user resizes it. Use full available width, automatic column sizing, text wrapping, and responsive layout; never enforce a fixed table width or fixed minimum width that causes clipping or horizontal overflow.
 - **Apply & Safety:** The audit only reports findings. When **Apply All** is selected, implement, test, and verify changes in a safe dependency order. Explain any items not implemented in Section 9.
 - **Preserve & Deliver:** Preserve existing project workflows where relevant. After each applied change, provide the **FINAL REPORT** from Section 9.
 
 <p align="center"><strong>PROJECT HEALTH REPORT</strong></p>
 
-<div align="center" style="width:100%; max-width:100%; overflow-x:auto;">
-<table align="center" width="100%" style="width:100%; max-width:100%; border-collapse:collapse; table-layout:auto; overflow-wrap:anywhere;">
+<div align="center">
+<table align="center">
   <tr><th colspan="5" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
   <tr><th style="padding:8px 6px;">FIND</th><th style="padding:8px 6px;">FEATURE</th><th style="padding:8px 6px;">BEFORE</th><th style="padding:8px 6px;">AFTER</th><th style="padding:8px 6px; text-align:center; vertical-align:middle;">STATUS</th></tr>
   <tr>
