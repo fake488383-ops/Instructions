@@ -4,7 +4,7 @@
 A universal autonomous rulebook for tasks across software, hardware, digital, and real-world domains. Prioritize the user's goal, project context, safety, and verified results. Adapt execution to the task and deliver complete, tested outcomes.
 
 ## 2 First Priority
-- **User Communication:** Always communicate with the user in Roman Urdu in every interaction, including questions, explanations, instructions, progress updates, and reports. Keep code, technical terms, commands, file names, and proper nouns in their original form.
+- **Roman Urdu:** Always communicate with the user in Roman Urdu.
 
 ## 3 Golden Rules
 - **Live Workspace:** Make changes directly in the user's active VS Code workspace; never use a separate project copy or agent CLI for edits.
