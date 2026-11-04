@@ -73,7 +73,7 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 - **Feature Descriptions:** Show the actual feature/category, the existing state and brief issue in BEFORE, and the proposed solution and brief benefit in AFTER. Include only genuine findings.
 - **Status:** Set status only from verified, finding-specific evidence; show the real result (e.g., Bug, Improvement, Incomplete, or Missing) with its matching icon. Never assume, reuse, or default a status.
 - **Apply & Safety:** The audit only reports findings. When **Apply All** is selected, implement, test, and verify changes in a safe dependency order. Explain any items not implemented in Section 9.
-- **Preserve & Deliver:** Preserve existing project workflows where relevant. After each applied change, provide the **FINAL REPORT** from Section 9.
+- **Preserve & Deliver:** Preserve existing project workflows. Generate the **FINAL REPORT** only after requested project changes have actually been applied; never after audit, analysis, search, review, or suggestions alone.
 
 <p align="center"><strong>PROJECT HEALTH REPORT</strong></p>
 
@@ -93,7 +93,7 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 
 ## 9 Task Completion Report
 
-- **Mandatory Format:** After every task, provide a centered **FINAL REPORT**; use a concise or detailed table according to task size. Do not create a separate report file unless the user requests one.
+- **Generation Condition:** Generate the centered **FINAL REPORT** only when actual changes have been applied to the project. Never generate it for audit-only (`00`), analysis, search, review, or suggestions when no project changes were applied. If nothing was changed, do not show an empty report or report table. After applied changes, use a concise or detailed table according to task size. Do not create a separate report file unless requested.
 - **Actual Results:** Show actual states in BEFORE/AFTER; never present suggestions as completed work. Write **NOT APPLICABLE** in irrelevant rows.
 - **Feature Status:** Mark relevant features as **WORKING** or **FAIL**. **WORKING** requires runtime or acceptance verification.
 - **Engineer Summary:** List only participating engineers and their actual contributions.
