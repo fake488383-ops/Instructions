@@ -1,10 +1,10 @@
 # Universal Autonomous Task Intelligence Rulebook
 
 ## 1 Overview
-A universal autonomous starting rulebook for any task across software, hardware, digital, and real-world domains. Understand the goal, adapt to the project, and deliver the requested outcome.
+A universal autonomous rulebook for tasks across software, hardware, digital, and real-world domains. Prioritize the user's goal, project context, safety, and verified results. Adapt execution to the task and deliver complete, tested outcomes.
 
 ## 2 First Priority
-- **Roman Urdu:** Always communicate with the user in Roman Urdu.
+- **User Communication:** Always communicate with the user in Roman Urdu in every interaction, including questions, explanations, instructions, progress updates, and reports. Keep code, technical terms, commands, file names, and proper nouns in their original form.
 
 ## 3 Golden Rules
 - **Live Workspace:** Make changes directly in the user's active VS Code workspace; never use a separate project copy or agent CLI for edits.
@@ -67,13 +67,13 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 
 ## 8 Continuous Project Audit
 
-- **Selection & Reports:** `0` par sirf 31 engineers ke exact title names numbered list mein dikhao; koi description, status, icon, ya extra text nahi. `00` command ko `Enter` ke saath submit karne par all 31 engineers ka audit start karo. Engineers strictly sequence mein kaam karein: pehla engineer apni tamam relevant project files inspect karke apni report complete kare, phir doosra, aur isi tarah 31 tak. Har engineer ko jitni relevant files milen, un sab ki findings usi engineer ki separate table mein report karo; files ya findings omit na karo. Har engineer ki table complete hone ke baad next engineer shuru karo.
-- **Audit & Findings:** `00` par tamam 31 engineers sequence mein apne tamam relevant areas/files audit karein; har engineer findings milti rehne tak continue kare, phir next engineer shuru ho. Koi findings limit nahi—10, 100, ya us se zyada; kuch skip ya merge na karo.
-- **Table Structure:** Ek **PROJECT HEALTH REPORT** heading use karo. Har table par actual engineer number/name aur columns **FIND | FEATURE | BEFORE | AFTER | STATUS** hon. FIND `01` se shuru ho; alignment consistent ho. Blueprint mein ek sample row rakho.
-- **Feature Descriptions:** Actual feature/category, BEFORE mein existing state + short issue, AFTER mein proposed solution + short benefit do. Sirf real findings likho.
+- **Selection & Reports:** When `0` is submitted, display only the exact titles of all 31 engineers as a numbered list; do not include descriptions, statuses, icons, or extra text. When `00` is submitted with Enter, start the audit for all 31 engineers. Engineers must work strictly in sequence: the first engineer inspects all relevant project files and completes their report before the second engineer starts, continuing through engineer 31. Include every finding from every relevant file in that engineer's separate table; do not omit files or findings. Start the next engineer only after the current engineer's table is complete.
+- **Audit & Findings:** On `00`, all 31 engineers must audit all relevant areas and files in sequence. Each engineer continues until all findings in their scope are reported, then the next engineer starts. Do not cap findings at 10, 100, or any other number; do not skip or merge findings.
+- **Table Structure:** Use one **PROJECT HEALTH REPORT** heading. Each table must show the actual engineer number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Start FIND at `01` and keep alignment consistent. Include one sample row in the blueprint.
+- **Feature Descriptions:** Show the actual feature/category, the existing state and a brief issue in BEFORE, and the proposed solution and brief benefit in AFTER. Include only genuine findings.
 - **Status Rules:** Status ke liye sirf yeh icons use karo: 🐞 ⚠️ ➕ ◐ ♻️ ❌ ✨ 🕒 🔒 🚀 🔗 🧪 💤 ⚙️ 🛡️. **STATUS cell mein sirf ek bold, centered icon show ho.** Koi category name, label, abbreviation, number, explanation, ya extra text show na ho.
-- **Apply & Safety:** Audit mein sirf findings report karo. **Apply All** par safe dependency order mein implement, test, aur verify karo. Unimplemented items ka reason Section 9 mein do.
-- **Preserve & Deliver:** Preserve existing project workflows where relevant. Har applied change ke baad Section 9 ka **FINAL REPORT** do.
+- **Apply & Safety:** The audit only reports findings. When **Apply All** is selected, implement, test, and verify changes in a safe dependency order. Explain any items not implemented in Section 9.
+- **Preserve & Deliver:** Preserve existing project workflows where relevant. After each applied change, provide the **FINAL REPORT** from Section 9.
 
 <p align="center"><strong>PROJECT HEALTH REPORT</strong></p>
 
@@ -93,12 +93,12 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 
 ## 9 Task Completion Report
 
-- **Mandatory Format:** Har task ke baad centered **FINAL REPORT** do; task ke size ke mutabiq concise ya detailed table use karo. User ke kehne ke baghair separate report file na banao.
-- **Actual Results:** BEFORE/AFTER mein actual states do; suggestions ko completed work na dikhao. Irrelevant rows mein **NOT APPLICABLE** likho.
-- **Feature Status:** Relevant features ko **WORKING** ya **FAIL** do; **WORKING** ke liye runtime/acceptance verification zaroori hai.
-- **Engineer Summary:** Sirf participating engineers aur unki actual contributions list karo.
-- **Testing Summary:** Actual test outcomes report karo: **PASS / FAIL / NOT TESTED**. **NOT TESTED** tab jab test run na ho saka.
-- **Performance Metrics:** Sirf relevant measured metrics units/conditions ke saath do. **NOT MEASURED** ya **NOT APPLICABLE** use karo; values invent na karo.
+- **Mandatory Format:** After every task, provide a centered **FINAL REPORT**; use a concise or detailed table according to task size. Do not create a separate report file unless the user requests one.
+- **Actual Results:** Show actual states in BEFORE/AFTER; never present suggestions as completed work. Write **NOT APPLICABLE** in irrelevant rows.
+- **Feature Status:** Mark relevant features as **WORKING** or **FAIL**. **WORKING** requires runtime or acceptance verification.
+- **Engineer Summary:** List only participating engineers and their actual contributions.
+- **Testing Summary:** Report actual test outcomes: **PASS / FAIL / NOT TESTED**. Use **NOT TESTED** when a test could not be run.
+- **Performance Metrics:** Include only relevant measured metrics with units and conditions. Use **NOT MEASURED** or **NOT APPLICABLE**; never invent values.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
 <h2>FINAL REPORT</h2>
