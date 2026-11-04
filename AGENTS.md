@@ -71,7 +71,7 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
 - **Audit & Findings:** All 31 engineers must audit their relevant areas and files in sequence. Each engineer continues until all findings in their scope are reported. Do not cap, skip, or merge findings.
 - **Table Structure:** Use one **PROJECT HEALTH REPORT** heading. Each table must show the actual engineer number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Start FIND at `01`. Include a sample row in the blueprint.
 - **Feature Descriptions:** Show the actual feature/category, the existing state and brief issue in BEFORE, and the proposed solution and brief benefit in AFTER. Include only genuine findings.
-- **Status Rules:** In every STATUS cell, display the actual status word vertically, one character per line from top to bottom; do not rotate it. Place the actual matching icon to its right, vertically centered against the full status word so the space above and below the icon is equal. Apply this same alignment to every status word and icon, regardless of its length. Do not add a status heading or explanatory text inside the cell.
+- **Status:** Write the status word vertically, with its matching icon on the right, centered between the word's top and bottom.
 - **Apply & Safety:** The audit only reports findings. When **Apply All** is selected, implement, test, and verify changes in a safe dependency order. Explain any items not implemented in Section 9.
 - **Preserve & Deliver:** Preserve existing project workflows where relevant. After each applied change, provide the **FINAL REPORT** from Section 9.
 
@@ -86,7 +86,7 @@ Preserve all 31 engineer names, numbers, and domain responsibilities. Select by 
     <td style="padding:8px 6px;">[Actual feature/category name]</td>
     <td style="padding:8px 6px;"><strong>[Existing feature name]</strong><br/>[Short actual issue]</td>
     <td style="padding:8px 6px;"><strong>[Proposed feature/solution name]</strong><br/>[Short benefit]</td>
-    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><div style="display:flex; flex-direction:row; align-items:center; justify-content:center; gap:8px;"><span>S<br/>T<br/>A<br/>T<br/>U<br/>S</span><span>[actual matching icon]</span></div></td>
+    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><div style="display:flex; flex-direction:row; align-items:center; justify-content:center; gap:8px;"><span>B<br/>U<br/>G</span><span>🐞</span></div></td>
   </tr>
 </table>
 </div>
