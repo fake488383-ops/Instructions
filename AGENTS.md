@@ -31,47 +31,43 @@ For every task or feature, all 35 engineers must independently check whether the
 ## 7 Engineering Disciplines
 Preserve all 35 engineer names, numbers, and domain responsibilities. Select by required skills, not project type. Disciplines apply across technologies, products, operating systems, devices, and platforms. Each engineer must perform its own defined responsibilities; related engineers may collaborate, but must not omit or unnecessarily duplicate ownership. Engineers may discover additional tools or specialist knowledge when needed without duplicating existing roles.
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
-  <colgroup><col style="width:7%;"><col style="width:28%;"><col style="width:65%;"></colgroup>
-  <thead><tr><th>No.</th><th>Discipline</th><th>Responsibility</th></tr></thead>
-  <tbody>
-    <tr><td>1</td><td>Architecture Engineer</td><td>System structure, folder/file placement, boundaries, patterns, modularity, and extensibility.</td></tr>
-    <tr><td>2</td><td>Systems Engineer</td><td>End-to-end behavior, interfaces, lifecycle, resources, compatibility, and embedded/firmware integration (ESP32, Raspberry Pi, microcontrollers).</td></tr>
-    <tr><td>3</td><td>Backend Engineer</td><td>Server-side logic, business rules, services, authentication/authorization, and concurrency.</td></tr>
-    <tr><td>4</td><td>Frontend Engineer</td><td>Client rendering, state, navigation, responsiveness, and integration.</td></tr>
-    <tr><td>5</td><td>UI UX Engineer</td><td>User goals, interaction design, usability, information hierarchy, and consistency.</td></tr>
-    <tr><td>6</td><td>AI ML Engineer</td><td>AI model architecture, prompts, inference, training/fine-tuning workflows, grounding, and model safety.</td></tr>
-    <tr><td>7</td><td>Data Engineer</td><td>Data ingestion, extraction, transformation, pipelines, lineage, data quality, and governance.</td></tr>
-    <tr><td>8</td><td>Database Engineer</td><td>Schema, queries, indexing, transactions, integrity, and recovery.</td></tr>
-    <tr><td>9</td><td>API Integration Engineer</td><td>API contracts, protocols, versioning, validation, retries, and interoperability.</td></tr>
-    <tr><td>10</td><td>Security Engineer</td><td>Threats, attack surfaces, identity, access control, secrets, and authorized security testing.</td></tr>
-    <tr><td>11</td><td>Privacy Engineer</td><td>Consent, data minimization, retention, data rights, and privacy obligations.</td></tr>
-    <tr><td>12</td><td>Performance Engineer</td><td>Profiling, startup, latency, throughput, CPU/GPU, memory, I/O, and benchmarks.</td></tr>
-    <tr><td>13</td><td>Reliability Engineer</td><td>Availability, resilience, fault isolation, graceful degradation, and recovery.</td></tr>
-    <tr><td>14</td><td>QA Test Engineer</td><td>Overall test strategy, requirements-based functional testing, test coverage, test data, defect verification, and quality acceptance.</td></tr>
-    <tr><td>15</td><td>DevOps Engineer</td><td>CI/CD, environments, infrastructure automation, and delivery workflows.</td></tr>
-    <tr><td>16</td><td>Build Toolchain Engineer</td><td>Compilers, SDKs, dependencies, build configuration, and reproducible builds.</td></tr>
-    <tr><td>17</td><td>Release Engineer</td><td>Versioning, signing, release validation, rollout, distribution, and rollback.</td></tr>
-    <tr><td>18</td><td>Cloud Engineer</td><td>Cloud architecture, hosting, provisioning, capacity, portability, and cost.</td></tr>
-    <tr><td>19</td><td>Network Engineer</td><td>Topology, segmentation, routing, DNS, protocols, access, and capacity.</td></tr>
-    <tr><td>20</td><td>Observability Engineer</td><td>Logs, metrics, traces, dashboards, alerts, and diagnostics.</td></tr>
-    <tr><td>21</td><td>Configuration Engineer</td><td>Configuration schemas, environments, safe defaults, validation, and secrets separation.</td></tr>
-    <tr><td>22</td><td>Backup Recovery Engineer</td><td>Backup policy, isolation, retention, restoration, and recovery testing.</td></tr>
-    <tr><td>23</td><td>Requirements Engineer</td><td>Stakeholder needs, functional/non-functional requirements, constraints, and acceptance criteria.</td></tr>
-    <tr><td>24</td><td>Technical Lead Engineer</td><td>Cross-discipline coordination, task decomposition, dependencies, and technical conflict resolution.</td></tr>
-    <tr><td>25</td><td>Code Review Edit Engineer</td><td>Code correctness, maintainability, review, defect patterns, and static analysis.</td></tr>
-    <tr><td>26</td><td>Knowledge Engineer</td><td>Documentation, authoritative sources, discoverability, consistency, and stale knowledge.</td></tr>
-    <tr><td>27</td><td>Operations Incident Engineer</td><td>Incident triage, containment, diagnosis, restoration, and prevention.</td></tr>
-    <tr><td>28</td><td>Accessibility Engineer</td><td>Semantics, keyboard access, assistive technology, contrast, and accessibility validation.</td></tr>
-    <tr><td>29</td><td>Localization Engineer</td><td>Languages, scripts, directionality, pluralization, locale formats, and regional adaptation.</td></tr>
-    <tr><td>30</td><td>Scalability Engineer</td><td>Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks.</td></tr>
-    <tr><td>31</td><td>Resources Engineer</td><td>Compute, memory, storage, network, licensing, energy, and operational cost.</td></tr>
-    <tr><td>32</td><td>Data Analysis Engineer</td><td>Analyze project and operational data, logs, usage patterns, metrics, trends, anomalies, and outcomes; produce evidence-based insights and reports.</td></tr>
-    <tr><td>33</td><td>Data Science Engineer</td><td>Apply statistics, experimentation, feature engineering, predictive analytics, and data-science methods; develop and evaluate statistical or machine-learning models in coordination with AI ML Engineer.</td></tr>
-    <tr><td>34</td><td>QA Automation Engineer</td><td>Design and maintain automated test frameworks, scripts, API/UI/workflow automation, regression suites, and repeatable test execution; report reproducible results and failures.</td></tr>
-    <tr><td>35</td><td>Robotics Engineer</td><td>Design and integrate robot software, sensors, actuators, motion/control systems, navigation, and robotic simulation; validate robot behavior and hardware-software interaction.</td></tr>
-  </tbody>
-</table>
+| No. | Discipline | Responsibility |
+|---|---|---|
+| 1 | Architecture Engineer | System structure, folder/file placement, boundaries, patterns, modularity, and extensibility. |
+| 2 | Systems Engineer | End-to-end behavior, interfaces, lifecycle, resources, compatibility, and embedded/firmware integration (ESP32, Raspberry Pi, microcontrollers). |
+| 3 | Backend Engineer | Server-side logic, business rules, services, authentication/authorization, and concurrency. |
+| 4 | Frontend Engineer | Client rendering, state, navigation, responsiveness, and integration. |
+| 5 | UI UX Engineer | User goals, interaction design, usability, information hierarchy, and consistency. |
+| 6 | AI ML Engineer | AI model architecture, prompts, inference, training/fine-tuning workflows, grounding, and model safety. |
+| 7 | Data Engineer | Data ingestion, extraction, transformation, pipelines, lineage, data quality, and governance. |
+| 8 | Database Engineer | Schema, queries, indexing, transactions, integrity, and recovery. |
+| 9 | API Integration Engineer | API contracts, protocols, versioning, validation, retries, and interoperability. |
+| 10 | Security Engineer | Threats, attack surfaces, identity, access control, secrets, and authorized security testing. |
+| 11 | Privacy Engineer | Consent, data minimization, retention, data rights, and privacy obligations. |
+| 12 | Performance Engineer | Profiling, startup, latency, throughput, CPU/GPU, memory, I/O, and benchmarks. |
+| 13 | Reliability Engineer | Availability, resilience, fault isolation, graceful degradation, and recovery. |
+| 14 | QA Test Engineer | Overall test strategy, requirements-based functional testing, test coverage, test data, defect verification, and quality acceptance. |
+| 15 | DevOps Engineer | CI/CD, environments, infrastructure automation, and delivery workflows. |
+| 16 | Build Toolchain Engineer | Compilers, SDKs, dependencies, build configuration, and reproducible builds. |
+| 17 | Release Engineer | Versioning, signing, release validation, rollout, distribution, and rollback. |
+| 18 | Cloud Engineer | Cloud architecture, hosting, provisioning, capacity, portability, and cost. |
+| 19 | Network Engineer | Topology, segmentation, routing, DNS, protocols, access, and capacity. |
+| 20 | Observability Engineer | Logs, metrics, traces, dashboards, alerts, and diagnostics. |
+| 21 | Configuration Engineer | Configuration schemas, environments, safe defaults, validation, and secrets separation. |
+| 22 | Backup Recovery Engineer | Backup policy, isolation, retention, restoration, and recovery testing. |
+| 23 | Requirements Engineer | Stakeholder needs, functional/non-functional requirements, constraints, and acceptance criteria. |
+| 24 | Technical Lead Engineer | Cross-discipline coordination, task decomposition, dependencies, and technical conflict resolution. |
+| 25 | Code Review Edit Engineer | Code correctness, maintainability, review, defect patterns, and static analysis. |
+| 26 | Knowledge Engineer | Documentation, authoritative sources, discoverability, consistency, and stale knowledge. |
+| 27 | Operations Incident Engineer | Incident triage, containment, diagnosis, restoration, and prevention. |
+| 28 | Accessibility Engineer | Semantics, keyboard access, assistive technology, contrast, and accessibility validation. |
+| 29 | Localization Engineer | Languages, scripts, directionality, pluralization, locale formats, and regional adaptation. |
+| 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks. |
+| 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
+| 32 | Data Analysis Engineer | Analyze project and operational data, logs, usage patterns, metrics, trends, anomalies, and outcomes; produce evidence-based insights and reports. |
+| 33 | Data Science Engineer | Apply statistics, experimentation, feature engineering, predictive analytics, and data-science methods; develop and evaluate statistical or machine-learning models in coordination with AI ML Engineer. |
+| 34 | QA Automation Engineer | Design and maintain automated test frameworks, scripts, API/UI/workflow automation, regression suites, and repeatable test execution; report reproducible results and failures. |
+| 35 | Robotics Engineer | Design and integrate robot software, sensors, actuators, motion/control systems, navigation, and robotic simulation; validate robot behavior and hardware-software interaction. |
 
 ## 8 Continuous Project Audit
 
