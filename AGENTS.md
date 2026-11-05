@@ -62,34 +62,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 | 34 | QA Automation Engineer | Design and maintain automated test frameworks, scripts, API/UI/workflow automation, regression suites, and repeatable test execution; report reproducible results and failures. |
 | 35 | Robotics Engineer | Design and integrate robot software, sensors, actuators, motion/control systems, navigation, and robotic simulation; validate robot behavior and hardware-software interaction. |
 
-## 5 Continuous Project Audit
-
-- **Commands:** Match standalone commands exactly after trimming whitespace: `0` = list the 35 engineer titles only; `1`–`35` = audit that engineer; `00` = start the full sequential audit. `0` and `00` are distinct.
-- **Audit Findings:** Continuously audit all relevant areas and report every verified finding in sequential FIND order until the audit is complete. Audit is read-only; do not modify files.
-- **Report Table:** Use one **PROJECT HEALTH REPORT** heading and a separate table for each engineer, showing its number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Include one sample row. In an audit, AFTER is a proposal, not an implemented result.
-- **Report Display:** Display the audit report directly in agent chat; do not create a report file unless the user explicitly requests one.
-- **Finding Values:** FEATURE = complete feature/category name only. BEFORE = actual existing component/solution name in bold, plus its brief verified problem. AFTER = proposed improvement name in bold, plus its brief practical benefit. Keep values distinct, concise, evidence-based, and in Roman Urdu; never invent findings or repeat the FEATURE name unnecessarily.
-- **Status & Icons:** Status title (e.g. COMPLETE / IMPROVED) ko white color aur small font-size mein vertical likho (har letter alag line); matching icon right side par center mein ho. Status finding ke mutabiq dynamically select karo.
-- **Apply & Safety:** Audit only reports findings. On **Apply All**, responsible engineers implement changes in safe dependency order, coordinate dependencies, then test and verify. Record anything not implemented in Section 6.
-- **Preserve & Deliver:** Preserve existing workflows. Generate the single final report under Section 6 only after the requested task is complete.
-
-<p align="center"><strong>PROJECT HEALTH REPORT</strong></p>
-
-<div align="center">
-<table align="center">
-  <tr><th colspan="5" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
-  <tr><th style="padding:8px 6px;">FIND</th><th style="padding:8px 6px;">FEATURE</th><th style="padding:8px 6px;">BEFORE</th><th style="padding:8px 6px;">AFTER</th><th style="padding:8px 6px; text-align:center; vertical-align:middle;">STATUS</th></tr>
-  <tr>
-    <td style="padding:8px 6px;">1</td>
-    <td style="padding:8px 6px;">[Complete main feature/category name]</td>
-    <td style="padding:8px 6px;"><strong>[Actual existing component/solution name]</strong><br/>[Brief Roman Urdu description of its verified problem or limitation]</td>
-    <td style="padding:8px 6px;"><strong>[Proposed improvement name]</strong><br/>[Brief Roman Urdu description of its practical benefits]</td>
-    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><div style="display:flex; flex-direction:row; align-items:center; justify-content:center; gap:8px;"><strong style="color:#FFFFFF; font-size:11px; line-height:1.1; white-space:pre-line;">[Actual status title, each letter on a separate line]</strong><span style="display:inline-flex; align-items:center; justify-content:center;">[Actual matching status icon, vertically centered]</span></div></td>
-  </tr>
-</table>
-</div>
-
-## 6 Task Completion Report
+## 5 Task Completion Report
 
 - Generate one centered report only after completed/verified work or a genuine blocker; omit it for no-change, audit-only, analysis, search, review, or suggestions.
 - Display the task completion report directly in agent chat; do not create a `.md` or other report file unless the user explicitly requests one.
