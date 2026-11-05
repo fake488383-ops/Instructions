@@ -102,6 +102,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 - **Generation Condition:** Generate exactly ONE centered **FINAL TASK REPORT** after the task is completed and verified, or safely stopped by a genuine blocker. Never generate interim or repeated reports. For a blocker, state what remains incomplete and why; never claim success. For no-change tasks, audit-only (`00`), analysis, search, review, or suggestions, generate no report. A new user task gets its own report. Never create a report file unless requested.
 - **Actual Results:** Show actual states in BEFORE/AFTER; never present suggestions as completed work. Write **NOT APPLICABLE** in irrelevant rows.
 - **Feature Status:** Mark relevant features as **WORKING** or **FAIL**. **WORKING** requires runtime or acceptance verification.
+- **Engineer Summary:** List only engineers who actually performed work on this task, using their exact Section 7 names, separated by commas in one single horizontal row. Exclude engineers who were only considered, assigned but did not contribute, or found irrelevant.
 - **Testing Summary:** Report actual test outcomes: **PASS / FAIL / NOT TESTED**. Use **NOT TESTED** when a test could not be run.
 - **Performance Monitoring:** Include only relevant measured performance metrics with units and conditions. Use **NOT MEASURED** or **NOT APPLICABLE**; never invent values.
 
@@ -117,6 +118,8 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
   <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
   <tr><th colspan="3" align="center">Feature</th><th colspan="3" align="center">Status</th></tr>
   <tr><td colspan="3" align="center" valign="middle">[Actual feature / NOT APPLICABLE]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT APPLICABLE]</td></tr>
+  <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
+  <tr><td colspan="6" align="center" valign="middle">[Actual contributing Engineer Names, separated by commas]</td></tr>
   <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
   <tr><th colspan="3" align="center">Test Type</th><th colspan="3" align="center">Result</th></tr>
   <tr><td colspan="3" align="center">[Applicable QA test type / NOT APPLICABLE]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED / NOT APPLICABLE]</td></tr>
