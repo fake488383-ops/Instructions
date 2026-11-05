@@ -63,6 +63,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 
 ## 5 Continuous Project Audit
 
+- **Adaptive Report Rendering:** Preserve the existing report format when the agent supports it; otherwise automatically render the complete report as a Markdown table with the same data and columns. Never expose unsupported raw markup.
 - **Commands:** Match standalone commands exactly after trimming whitespace: `0` = list the 35 engineer titles only; `1`–`35` = audit that engineer; `00` = start the full sequential audit. `0` and `00` are distinct.
 - **Audit Findings:** Continuously audit all relevant areas and report every verified finding in sequential FIND order until the audit is complete. Audit is read-only; do not modify files.
 - **Report Table:** Use one **PROJECT HEALTH REPORT** heading and a separate table for each engineer, showing its number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Include one sample row. In an audit, AFTER is a proposal, not an implemented result.
