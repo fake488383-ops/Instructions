@@ -69,7 +69,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - **Report Table:** Use one **PROJECT HEALTH REPORT** heading and a separate table for each engineer, showing its number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Include one sample row. In an audit, AFTER is a proposal, not an implemented result.
 - **Report Display:** Display the audit report directly in agent chat; do not create a report file unless the user explicitly requests one.
 - **Finding Values:** FEATURE = complete feature/category name only. BEFORE = actual existing component/solution name in bold, plus its brief verified problem. AFTER = proposed improvement name in bold, plus its brief practical benefit. Keep values distinct, concise, evidence-based, and in Roman Urdu; never invent findings or repeat the FEATURE name unnecessarily.
-- **Status & Icons:** Har finding ko ek actual status aur matching icon do. STATUS cell mein ek hi row ho: left par status ka har letter alag line mein (e.g. `B<br/>U<br/>G`), right par matching icon, poore vertical naam ke center mein. Koi extra heading ya row nahi.
+- **Status & Icons:** Har finding ka status aur icon uski real-time verified problem ke mutabiq select karo. STATUS cell mein ek hi row ho: left par actual status ka har letter alag line mein, right par us status ka matching icon poore vertical naam ke center mein. Koi fixed status ya icon hardcode na karo.
 - **Apply & Safety:** Audit only reports findings. On **Apply All**, responsible engineers implement changes in safe dependency order, coordinate dependencies, then test and verify. Record anything not implemented in Section 6.
 - **Preserve & Deliver:** Preserve existing workflows. Generate the single final report under Section 6 only after the requested task is complete.
 
@@ -84,7 +84,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
     <td style="padding:8px 6px;">[Complete main feature/category name]</td>
     <td style="padding:8px 6px;"><strong>[Actual existing component/solution name]</strong><br/>[Brief Roman Urdu description of its verified problem or limitation]</td>
     <td style="padding:8px 6px;"><strong>[Proposed improvement name]</strong><br/>[Brief Roman Urdu description of its practical benefits]</td>
-    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><div style="display:flex; flex-direction:row; align-items:center; justify-content:center; gap:8px;"><strong>B<br/>U<br/>G</strong><span style="display:inline-flex; align-items:center; justify-content:center;">🐞</span></div></td>
+    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><div style="display:flex; flex-direction:row; align-items:center; justify-content:center; gap:8px;"><strong>[Actual status, one character per line]</strong><span style="display:inline-flex; align-items:center; justify-content:center;">[Matching real-time status icon]</span></div></td>
   </tr>
 </table>
 </div>
