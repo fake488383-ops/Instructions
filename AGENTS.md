@@ -11,6 +11,7 @@ This is an enterprise-level software engineering rulebook for **QML, C++, and Py
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
 - **Existing Project Standards & Conventions:** First detect the project's established architecture, structure, naming, coding patterns, configurations, and workflows; follow them consistently instead of imposing unrelated or duplicate conventions.
+- **Report Output:** Display project reports directly in the agent chat; do not create `.md` or other report files unless the user explicitly requests a file.
 
 
 
