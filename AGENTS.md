@@ -69,7 +69,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 
 <div align="center">
 <table align="center">
-  <tr><th colspan="6" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
+  <tr><th colspan="5" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
   <tr><th>FIND</th><th>FEATURE</th><th>BEFORE</th><th>AFTER</th><th style="text-align:center;">STATUS</th></tr>
   <tr>
     <td>1</td>
