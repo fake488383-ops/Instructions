@@ -101,6 +101,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 
 - **Generation Condition:** Generate exactly ONE centered **FINAL TASK REPORT** after the task is completed and verified, or safely stopped by a genuine blocker. Never generate interim or repeated reports. For a blocker, state what remains incomplete and why; never claim success. For no-change tasks, audit-only (`00`), analysis, search, review, or suggestions, generate no report. A new user task gets its own report. Never create a report file unless requested.
 - **Actual Results:** Show actual states in BEFORE/AFTER; never present suggestions as completed work. Write **NOT APPLICABLE** in irrelevant rows.
+- **Before/After Layout:** Keep BEFORE and AFTER columns exactly equal in width (50% each), with equal left/right padding and consistent cell spacing.
 - **Feature Status:** Mark relevant features as **WORKING** or **FAIL**. **WORKING** requires runtime or acceptance verification.
 - **Engineer Summary:** List only engineers who actually performed work on this task, using their exact Section 7 names, separated by commas in one single horizontal row. Exclude engineers who were only considered, assigned but did not contribute, or found irrelevant.
 - **Testing Summary:** Report actual test outcomes: **PASS / FAIL / NOT TESTED**. Use **NOT TESTED** when a test could not be run.
@@ -112,9 +113,9 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
-  <colgroup><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.66%;"><col style="width:16.70%;"></colgroup>
-  <tr><th colspan="3" align="center">BEFORE</th><th colspan="3" align="center">AFTER</th></tr>
-  <tr><td colspan="3" align="center" valign="middle">[Actual previous state]</td><td colspan="3" align="center" valign="middle">[Actual resulting state]</td></tr>
+  <colgroup><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6665%;"></colgroup>
+  <tr><th colspan="3" width="50%" align="center" style="width:50%; padding:12px 18px;">BEFORE</th><th colspan="3" width="50%" align="center" style="width:50%; padding:12px 18px;">AFTER</th></tr>
+  <tr><td colspan="3" width="50%" align="center" valign="middle" style="width:50%; padding:14px 18px;">[Actual previous state]</td><td colspan="3" width="50%" align="center" valign="middle" style="width:50%; padding:14px 18px;">[Actual resulting state]</td></tr>
   <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
   <tr><th colspan="3" align="center">Feature</th><th colspan="3" align="center">Status</th></tr>
   <tr><td colspan="3" align="center" valign="middle">[Actual feature / NOT APPLICABLE]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT APPLICABLE]</td></tr>
