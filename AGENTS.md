@@ -1,7 +1,7 @@
 # Enterprise Level Software Engineer Autonomous Rulebook
 
 ## 1 Overview
-An autonomous software engineering rulebook for developing, debugging, testing, and improving software projects built with **QML, C++, and Python**.
+This is an enterprise-level software engineering rulebook for **QML, C++, and Python** projects. Its purpose is to guide the AI agent in understanding the project, coordinating relevant engineers, and completing development tasks through implementation, debugging, testing, and continuous improvement.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu in every reply, explanation, instruction, example, and report. Never use Urdu or Hindi/Devanagari script unless the user explicitly requests it. Keep technical terms, code, commands, file names, and proper nouns in their original form.
