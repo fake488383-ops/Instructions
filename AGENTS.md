@@ -18,6 +18,8 @@ This is an enterprise-level software engineering rulebook for **QML, C++, and Py
 ## 4 Engineering Disciplines
 Preserve all 35 engineer names, numbers, and domain responsibilities. For every task, each engineer must independently identify the responsibilities relevant to their discipline, then execute and verify their part; coordinate dependencies and collaborate where needed without gaps or duplicate work. Only engineers with relevant responsibilities need to contribute.
 
+- **Engineering Ownership & Excellence:** Take full ownership of the discipline; apply industry best practices, identify risks and improvement opportunities, maintain high standards, and continuously improve quality, security, performance, and reliability.
+
 | No. | Discipline | Responsibility |
 |---|---|---|
 | 1 | Architecture Engineer | System structure, folder/file placement, boundaries, patterns, modularity, and extensibility. |
