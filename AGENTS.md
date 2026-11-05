@@ -18,6 +18,8 @@ Automatically understand the task and project. Detect technology, architecture, 
 
 - **Intelligent Impact Analysis:** Before changes, identify affected features, dependencies, and system components; account for relevant impacts.
 
+- **Quality & Self-Verification:** Follow project-specific best practices. Fix the root cause of diagnostics and warnings; do not hide or suppress genuine issues. After every implementation task, run relevant lint/static analysis, build, and runtime/tests where available, fix regressions, and verify the complete task before reporting. Apply these standards automatically to all future changes without requiring repeated user prompts.
+
 - **Autonomous Responsibility Discovery:** Every engineer must identify its own relevant responsibilities for each task or feature, carry out its assigned work when implementation is requested, and coordinate with related engineers without duplicating ownership.
 
 - **Continuous Engineering Improvement:** During audit, analysis, or review, identify and report improvements only. Apply changes only when the user explicitly requests implementation.
