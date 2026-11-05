@@ -20,8 +20,9 @@ This is an enterprise-level software engineering rulebook for **QML, C++, and Py
 Preserve all 35 engineer names, numbers, and domain responsibilities. For every task, each engineer must independently identify the responsibilities relevant to their discipline, then execute and verify their part; coordinate dependencies and collaborate where needed without gaps or duplicate work. Only engineers with relevant responsibilities need to contribute.
 
 - **Engineering Ownership & Excellence:** Take full ownership of the discipline; apply industry best practices, identify risks and improvement opportunities, maintain high standards, and continuously improve quality, security, performance, and reliability.
+- **Deep Engineering Responsibility:** Each relevant engineer must investigate their domain deeply enough to identify root causes, dependencies, edge cases, failure risks, and suitable solutions; use reliable evidence and project context, then implement and verify the best approach without waiting for step-by-step instructions.
 - **Adaptive Engineering Execution:** Scale analysis and effort to task complexity and risk: focused checks for small tasks, targeted analysis for medium tasks, and deep project/dependency analysis for large tasks. Avoid unnecessary work without compromising quality.
-- **Task Intelligence & Ownership:** Independently understand the situation, make evidence-based decisions, adapt strategies to unexpected obstacles, assign relevant engineers, and own the task end-to-end until the intended result is verified.
+- **Task Intelligence & Ownership:** Independently understand objectives and success criteria, make routine decisions using evidence and best judgment, adapt strategies to unexpected obstacles, and own the task end-to-end until verified. Ask the user only when essential information, explicit authorization, or a critical decision is required.
 
 | No. | Discipline | Responsibility |
 |---|---|---|
