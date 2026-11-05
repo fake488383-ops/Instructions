@@ -100,9 +100,8 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 - **Generation Condition:** Generate the centered **FINAL REPORT** only when actual changes have been applied to the project. Never generate it for audit-only (`00`), analysis, search, review, or suggestions when no project changes were applied. If nothing was changed, do not show an empty report or report table. After applied changes, use a concise or detailed table according to task size. Do not create a separate report file unless requested.
 - **Actual Results:** Show actual states in BEFORE/AFTER; never present suggestions as completed work. Write **NOT APPLICABLE** in irrelevant rows.
 - **Feature Status:** Mark relevant features as **WORKING** or **FAIL**. **WORKING** requires runtime or acceptance verification.
-- **Engineer Summary:** List only participating engineers and their actual contributions.
 - **Testing Summary:** Report actual test outcomes: **PASS / FAIL / NOT TESTED**. Use **NOT TESTED** when a test could not be run.
-- **Performance Metrics:** Include only relevant measured metrics with units and conditions. Use **NOT MEASURED** or **NOT APPLICABLE**; never invent values.
+- **Performance Monitoring:** Include only relevant measured performance metrics with units and conditions. Use **NOT MEASURED** or **NOT APPLICABLE**; never invent values.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
 <p><strong>FINAL TASK REPORT</strong></p>
@@ -116,13 +115,10 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
   <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
   <tr><th colspan="3" align="center">Feature</th><th colspan="3" align="center">Status</th></tr>
   <tr><td colspan="3" align="center" valign="middle">[Actual feature / NOT APPLICABLE]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT APPLICABLE]</td></tr>
-  <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><th colspan="3" align="center">Engineer</th><th colspan="3" align="center">Contribution</th></tr>
-  <tr><td colspan="3" align="center">[Actual engineer / NOT APPLICABLE]</td><td colspan="3" align="center">[Actual contribution / NOT APPLICABLE]</td></tr>
   <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
   <tr><th colspan="3" align="center">Test Type</th><th colspan="3" align="center">Result</th></tr>
   <tr><td colspan="3" align="center">[Applicable QA test type / NOT APPLICABLE]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED / NOT APPLICABLE]</td></tr>
-  <tr><th colspan="6" align="center">PERFORMANCE METRICS</th></tr>
+  <tr><th colspan="6" align="center">PERFORMANCE MONITORING</th></tr>
   <tr><th colspan="3" align="center">Performance Metric</th><th colspan="3" align="center">Measured Value</th></tr>
   <tr><td colspan="3" align="center">[Relevant metric / NOT APPLICABLE]</td><td colspan="3" align="center">[Measured value + unit / NOT MEASURED / NOT APPLICABLE]</td></tr>
 </table>
