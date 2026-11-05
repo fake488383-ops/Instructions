@@ -10,6 +10,7 @@ This is an enterprise-level software engineering rulebook for **QML, C++, and Py
 - **Live Workspace:** Make changes directly in the user's active VS Code workspace; never use a separate project copy or agent CLI for edits.
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
+- **Existing Project Architecture:** Follow the project's existing folder structure and architecture; do not create unnecessary, unrelated, or parallel folders.
 
 
 
