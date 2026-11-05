@@ -11,7 +11,6 @@ This is an enterprise-level software engineering rulebook for **QML, C++, and Py
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
 - **Existing Project Standards & Conventions:** First detect the project's established architecture, structure, naming, coding patterns, configurations, and workflows; follow them consistently instead of imposing unrelated or duplicate conventions.
-- **Report Output:** Display project reports directly in the agent chat; do not create `.md` or other report files unless the user explicitly requests a file.
 
 
 
@@ -61,6 +60,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 - **Commands:** Match standalone commands exactly after trimming whitespace: `0` = list the 35 engineer titles only; `1`–`35` = audit that engineer; `00` = start the full sequential audit. `0` and `00` are distinct.
 - **Audit & MORE:** Audit all relevant areas and report every verified finding. Each engineer starts FIND at `1` and continues sequentially. `MORE` resumes the active audit at the next finding/engineer without repeats or omissions. Audit is read-only; do not modify files.
 - **Report Table:** Use one **PROJECT HEALTH REPORT** heading and a separate table for each engineer, showing its number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Include one sample row. In an audit, AFTER is a proposal, not an implemented result.
+- **Report Display:** Display the audit report directly in agent chat; do not create a report file unless the user explicitly requests one.
 - **Finding Values:** FEATURE = complete feature/category name only. BEFORE = actual existing component/solution name in bold, plus its brief verified problem. AFTER = proposed improvement name in bold, plus its brief practical benefit. Keep values distinct, concise, evidence-based, and in Roman Urdu; never invent findings or repeat the FEATURE name unnecessarily.
 - **Status & Icons:** Assign exactly one evidence-based status and matching icon per finding: BUG 🐞, ERROR ⚠️, MISSING ➕, INCOMPLETE ◐, DUPLICATE ♻️, INCORRECT ❌, IMPROVE ✨, OUTDATED 🕒, UNUSED 💤, INEFFICIENT ⚙️, INCOMPATIBLE 🔗, UNTESTED 🧪, or RISK 🛡️. These identify the problem, not the engineer or audit area. In STATUS, stack the full status name vertically (one character per line) and center its matching icon to the right across the name's full height; center the combined layout in the cell. No extra text.
 - **Apply & Safety:** Audit only reports findings. On **Apply All**, responsible engineers implement changes in safe dependency order, coordinate dependencies, then test and verify. Record anything not implemented in Section 6.
@@ -85,6 +85,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 ## 6 Task Completion Report
 
 - Generate one centered report only after completed/verified work or a genuine blocker; omit it for no-change, audit-only, analysis, search, review, or suggestions.
+- Display the task completion report directly in agent chat; do not create a `.md` or other report file unless the user explicitly requests one.
 - **BEFORE / AFTER:** Show verified prior state versus actual result, including what was added, fixed, changed, or improved. New items: BEFORE = NOT PRESENT.
 - **Feature Status:** Dynamically list affected features and actual status (WORKING / FAIL / NOT TESTED); WORKING requires verification.
 - **Engineer Summary:** Show every engineer who actually contributed to the task, using each exact title from Section 4 in one comma-separated row. Include all contributors regardless of count; there is no fixed limit or preset number of titles. Never omit a contributing engineer or list an engineer who did not participate.
