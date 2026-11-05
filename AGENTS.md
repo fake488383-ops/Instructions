@@ -58,7 +58,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 ## 5 Continuous Project Audit
 
 - **Commands:** Match standalone commands exactly after trimming whitespace: `0` = list the 35 engineer titles only; `1`–`35` = audit that engineer; `00` = start the full sequential audit. `0` and `00` are distinct.
-- **Audit & MORE:** Audit all relevant areas and report every verified finding. Each engineer starts FIND at `1` and continues sequentially. `MORE` resumes the active audit at the next finding/engineer without repeats or omissions. Audit is read-only; do not modify files.
+- **Audit Findings:** Continuously audit all relevant areas and report every verified finding in sequential FIND order until the audit is complete. Audit is read-only; do not modify files.
 - **Report Table:** Use one **PROJECT HEALTH REPORT** heading and a separate table for each engineer, showing its number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Include one sample row. In an audit, AFTER is a proposal, not an implemented result.
 - **Report Display:** Display the audit report directly in agent chat; do not create a report file unless the user explicitly requests one.
 - **Finding Values:** FEATURE = complete feature/category name only. BEFORE = actual existing component/solution name in bold, plus its brief verified problem. AFTER = proposed improvement name in bold, plus its brief practical benefit. Keep values distinct, concise, evidence-based, and in Roman Urdu; never invent findings or repeat the FEATURE name unnecessarily.
