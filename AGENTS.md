@@ -20,6 +20,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 
 - **Engineering Ownership & Excellence:** Take full ownership of the discipline; apply industry best practices, identify risks and improvement opportunities, maintain high standards, and continuously improve quality, security, performance, and reliability.
 - **Adaptive Engineering Execution:** Scale analysis and effort to task complexity and risk: focused checks for small tasks, targeted analysis for medium tasks, and deep project/dependency analysis for large tasks. Avoid unnecessary work without compromising quality.
+- **Task Intelligence & Ownership:** Understand user intent and success criteria, assign relevant engineers, and own the task end-to-end until the result is verified.
 
 | No. | Discipline | Responsibility |
 |---|---|---|
