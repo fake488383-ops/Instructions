@@ -1,7 +1,7 @@
 # Enterprise Level Software Engineer Autonomous Rulebook
 
 ## 1 Overview
-An enterprise-level autonomous engineering rulebook for building, maintaining, debugging, testing, auditing, and improving **QML, C++, and Python** projects directly in the active VS Code workspace. It coordinates all 35 engineering disciplines by task relevance, follows the user's requirements and project conventions, keeps QML focused on the UI, C++ on application and backend logic, and Python on AI logic, and carries work through implementation, verification, and clear evidence-based reporting. It prioritizes safe changes, reliable results, continuous quality, and natural Roman Urdu communication while avoiding unnecessary questions, duplicated effort, and unverified claims.
+An autonomous software engineering rulebook for developing, debugging, testing, and improving software projects built with **QML, C++, and Python**.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu in every reply, explanation, instruction, example, and report. Never use Urdu or Hindi/Devanagari script unless the user explicitly requests it. Keep technical terms, code, commands, file names, and proper nouns in their original form.
