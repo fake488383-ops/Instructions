@@ -99,14 +99,13 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 
 ## 9 Task Completion Report
 
-- **Generation Condition:** Generate exactly ONE centered **FINAL TASK REPORT** after the task is completed and verified, or safely stopped by a genuine blocker. Never generate interim or repeated reports. For a blocker, state what remains incomplete and why; never claim success. For no-change tasks, audit-only (`00`), analysis, search, review, or suggestions, generate no report. A new user task gets its own report. Never create a report file unless requested.
-- **BEFORE / AFTER:** Show the verified state before the task and the actual state after it. Identify what was absent, present, changed, fixed, or improved. New items show as **NOT PRESENT** in BEFORE and their actual resulting state in AFTER; existing items show the real before/after difference. Never fill these cells with generic or invented text.
-- **Feature Status:** Dynamically list only features actually added, changed, or affected by the task, with their real current status (**WORKING / FAIL / NOT TESTED**). Include each relevant feature as its own row; do not use a fixed feature list. WORKING requires runtime or acceptance verification.
-- **Engineer Summary:** List only engineers who actually performed work on this task, using their exact Section 7 names, separated by commas in one single horizontal row. Exclude engineers who were only considered, assigned but did not contribute, or found irrelevant.
-- **Testing Summary:** Dynamically list only tests actually performed (e.g. unit, integration, functional, regression, or end-to-end when applicable), each with its real result (**PASS / FAIL**). If a relevant test could not be run, show **NOT TESTED**; never imply that an unperformed test happened. Do not use a fixed test list.
-- **Performance Monitoring:** Dynamically list only performance metrics relevant to the task and actually measured, with real values, units, and measurement conditions. Metrics may cover build/launch/startup time, interaction or response latency, throughput, CPU, memory, or other applicable behavior; these are examples, not a fixed list. Use available instrumentation and record the actual measurement—never estimate, invent, or insert example metrics as results. If relevant measurement was not performed or unavailable, state **NOT MEASURED**; use **NOT APPLICABLE** only when irrelevant.
-- **Dynamic Rows:** Add as many rows as actual features, test types, or measured metrics require. Remove unused example/placeholder rows; never display a sample item as a real result.
-- **Before/After Layout:** Keep BEFORE and AFTER columns exactly equal in width (50% each), with equal left/right padding and consistent cell spacing.
+- Generate one centered report only after completed/verified work or a genuine blocker; omit it for no-change, audit-only, analysis, search, review, or suggestions.
+- **BEFORE / AFTER:** Show verified prior state versus actual result, including what was added, fixed, changed, or improved. New items: BEFORE = NOT PRESENT.
+- **Feature Status:** Dynamically list affected features and actual status (WORKING / FAIL / NOT TESTED); WORKING requires verification.
+- **Engineer Summary:** Show only actual contributors, using exact Section 7 engineer titles in one comma-separated row.
+- **Testing Summary:** Autonomously identify and list only tests actually run, with real results (PASS / FAIL); use NOT TESTED when applicable.
+- **Performance Monitoring:** Autonomously identify task-relevant performance measures and show only actual measured values, units, and conditions. Never invent or use examples as results; use NOT MEASURED or NOT APPLICABLE when appropriate. Include as many rows as real results require.
+- Keep BEFORE/AFTER equal-width with equal padding. Add rows dynamically; no fixed feature, test, or metric lists.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
 <p><strong>FINAL TASK REPORT</strong></p>
@@ -116,17 +115,14 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
   <colgroup><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6665%;"></colgroup>
   <tr><th colspan="3" width="50%" align="center" style="width:50%; padding:12px 18px;">BEFORE</th><th colspan="3" width="50%" align="center" style="width:50%; padding:12px 18px;">AFTER</th></tr>
-  <tr><td colspan="3" width="50%" align="center" valign="middle" style="width:50%; padding:14px 18px;">[Verified actual previous state; repeat rows as needed]</td><td colspan="3" width="50%" align="center" valign="middle" style="width:50%; padding:14px 18px;">[Verified actual resulting state; repeat rows as needed]</td></tr>
+  <tr><td colspan="3" width="50%" align="center" valign="middle" style="width:50%; padding:14px 18px;">[Actual previous state]</td><td colspan="3" width="50%" align="center" valign="middle" style="width:50%; padding:14px 18px;">[Actual resulting state]</td></tr>
   <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
-  <tr><th colspan="3" align="center">Feature</th><th colspan="3" align="center">Status</th></tr>
-  <tr><td colspan="3" align="center" valign="middle">[Actual task-related feature; one row per feature]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT TESTED]</td></tr>
+  <tr><td colspan="3" align="center" valign="middle">[Actual feature]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="6" align="center" valign="middle">[Exact names of actual contributing Section 7 engineers, comma-separated in one row]</td></tr>
+  <tr><td colspan="6" align="center" valign="middle">[Exact contributing Section 7 engineer titles, comma-separated]</td></tr>
   <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
-  <tr><th colspan="3" align="center">Test Type</th><th colspan="3" align="center">Result</th></tr>
-  <tr><td colspan="3" align="center">[Actually executed test type; one row per test]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><td colspan="3" align="center">[Actual test performed]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="6" align="center">PERFORMANCE MONITORING</th></tr>
-  <tr><th colspan="3" align="center">Performance Metric</th><th colspan="3" align="center">Measured Value</th></tr>
-  <tr><td colspan="3" align="center">[Actually measured, task-relevant metric; one row per metric]</td><td colspan="3" align="center">[Real measured value + unit + conditions / NOT MEASURED / NOT APPLICABLE]</td></tr>
+  <tr><td colspan="3" align="center">[Actual measured metric]</td><td colspan="3" align="center">[Measured value + unit + conditions / NOT MEASURED / NOT APPLICABLE]</td></tr>
 </table>
 </div>
