@@ -74,7 +74,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
     <td style="padding:8px 6px;">[Complete main feature/category name]</td>
     <td style="padding:8px 6px;"><strong>[Actual existing component/solution name]</strong><br/>[Brief Roman Urdu description of its verified problem or limitation]</td>
     <td style="padding:8px 6px;"><strong>[Proposed improvement name]</strong><br/>[Brief Roman Urdu description of its practical benefits]</td>
-    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><div style="display:flex; flex-direction:row; align-items:stretch; justify-content:center; gap:8px;"><strong style="display:flex; flex-direction:column; justify-content:center; text-align:center; line-height:1.2;">B<br/>U<br/>G</strong><span style="display:flex; align-items:center; justify-content:center;">🐞</span></div></td>
+    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><div style="display:flex; flex-direction:row; align-items:stretch; justify-content:center; gap:8px;"><strong style="display:flex; flex-direction:column; justify-content:center; text-align:center; line-height:1.2;">[Actual status name, one character per line]</strong><span style="display:flex; align-items:center; justify-content:center;">[Actual matching status icon]</span></div></td>
   </tr>
 </table>
 </div>
