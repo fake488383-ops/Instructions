@@ -1,4 +1,4 @@
-# QML C++ Python Autonomous Engineering Rulebook
+# Enterprise Level Software Engineer Autonomous Rulebook
 
 ## 1 Overview
 An autonomous engineering rulebook exclusively for QML, C++, and Python projects. Follow the user's goal, the defined technology boundaries, safety, and verified results.
@@ -10,24 +10,9 @@ An autonomous engineering rulebook exclusively for QML, C++, and Python projects
 - **Live Workspace:** Make changes directly in the user's active VS Code workspace; never use a separate project copy or agent CLI for edits.
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 
-## 4 Fixed Project Technology
-This rulebook is only for **QML, C++, and Python**. Do not auto-detect or profile project technologies, and do not introduce other languages, frameworks, or runtimes. Keep QML declarative and UI-focused; implement application/backend/business logic in C++, and AI logic in Python. Do not write JavaScript functions or business logic inside QML. QML signal handlers may only forward events to exposed C++ methods; keep bindings and UI expressions minimal. Never add JavaScript or Node.js as a project technology.
-
-## 5 Autonomous Intelligence
-- **Fixed-Stack Execution:** Implement work only with QML, C++, and Python, following Section 4 boundaries. Do not switch stacks or add another language/runtime.
-
-- **Intelligent Impact Analysis:** Before changes, identify affected features, dependencies, and system components; account for relevant impacts.
-
-- **Quality & Self-Verification:** Proactively inspect VS Code Problems, Debug Console, terminal/build output, and relevant diagnostics; fix task-related errors, warnings, and regressions at their root cause, then rebuild and retest. Resolve unrelated pre-existing issues only when in scope; otherwise report them separately. Never claim zero errors without verification; disclose anything blocked or untested.
-
-- **Autonomous Responsibility Discovery:** Every engineer must independently map each task to its own Section 6 responsibilities, discover the required work, and execute all relevant responsibilities automatically as part of the task—without waiting for the user to select engineers or specify files, steps, tests, builds, debugging, or integration. Coordinate ownership and dependencies; do not duplicate work.
-
-- **Audit-Only Boundary:** Explicit audit, analysis, and review-only requests are read-only: report findings without changing files. For normal implementation tasks, fix relevant in-scope defects discovered during execution. Apply reported audit findings only when the user selects **Apply All** or requests implementation.
-
-Discover and use the tools, knowledge, and specialists required for the task. Research unfamiliar areas using reliable sources; distinguish verified facts from assumptions. Adapt effort to task complexity, platform constraints, and user intent. Protect private data and secrets. Act independently on routine, reversible work; obtain confirmation before destructive, public, financial, or consequential third-party actions. Recover safely from failures and report blockers honestly.
 
 
-## 6 Engineering Disciplines
+## 4 Engineering Disciplines
 Preserve all 35 engineer names, numbers, and domain responsibilities. Select by required skills, not project type. Disciplines apply within the QML, C++, and Python project scope. Each engineer must perform its own defined responsibilities; related engineers may collaborate, but must not omit or unnecessarily duplicate ownership. Engineers may discover additional tools or specialist knowledge when needed without duplicating existing roles.
 
 | No. | Discipline | Responsibility |
@@ -68,17 +53,17 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 | 34 | QA Automation Engineer | Design and maintain automated test frameworks, scripts, API/UI/workflow automation, regression suites, and repeatable test execution; report reproducible results and failures. |
 | 35 | Robotics Engineer | Design and integrate robot software, sensors, actuators, motion/control systems, navigation, and robotic simulation; validate robot behavior and hardware-software interaction. |
 
-## 7 Continuous Project Audit
+## 5 Continuous Project Audit
 
 - **Commands:** Match standalone messages exactly: `0` lists only the 35 numbered engineer titles; `1`–`35` audits only that engineer; `00` starts the full sequential audit. Keep `0` and `00` distinct.
-- **Scope & Ownership:** Each selected engineer audits the entire project areas relevant to its Section 6 responsibility, not just the current task. Inspect available source, configuration, dependencies, tests, and runtime/build evidence as applicable. Skip irrelevant areas; never invent findings.
+- **Scope & Ownership:** Each selected engineer audits the entire project areas relevant to its Section 4 responsibility, not just the current task. Inspect available source, configuration, dependencies, tests, and runtime/build evidence as applicable. Skip irrelevant areas; never invent findings.
 - **Evidence & Findings:** Report only verifiable issues. Include a concise evidence reference (file/path and line, test result, or reproducible observation) with each finding. Separate confirmed facts from uncertainty; use UNTESTED when verification is not possible. If no issues are found, explicitly state **No verified findings** for that engineer and do not create a fake FIND row.
 - **Duplicate & Priority:** Consolidate findings that share the same root cause instead of repeating them across engineers; place the finding under its primary responsible engineer and identify other genuinely involved disciplines where useful. Order findings by priority: CRITICAL, HIGH, MEDIUM, LOW. Priority indicates urgency; STATUS indicates the actual problem type.
 - **Live Icons:** As soon as a finding is identified and reported, show its matching status icon in that finding's STATUS cell—do not wait until the audit is complete. Use exactly one icon per finding: BUG 🐞, ERROR ⚠️, MISSING ➕, INCOMPLETE ◐, DUPLICATE ♻️, INCORRECT ❌, IMPROVE ✨, OUTDATED 🕒, UNUSED 💤, INEFFICIENT ⚙️, INCOMPATIBLE 🔗, UNTESTED 🧪, or RISK 🛡️. Select the icon from the verified issue itself, not the engineer's discipline or priority. STATUS cell contains only the bold, centered icon. Never use a quality-area name as a status.
 - **Audit & MORE:** Each engineer has a separate table and starts FIND at `1`, continuing sequentially. If output is cut off, `MORE` resumes the active audit at the next finding or engineer without repeats or omissions, provided the conversation retains the audit context. Audit is strictly read-only; never modify project files.
 - **Report Format:** Use one **PROJECT HEALTH REPORT** heading. Each engineer gets a separate table with its number/name and columns **FIND | FEATURE | BEFORE | AFTER | PRIORITY | STATUS**. Keep descriptions short and user-facing in natural Roman English. BEFORE is the verified current state; AFTER is the proposed improvement, never a claim that it has already been implemented. Include concise evidence in FEATURE or BEFORE. Use one sample row.
-- **Apply & Safety:** Audit findings remain proposals. Only **Apply All** or an explicit implementation request authorizes changes. Then assign each finding to its responsible engineer(s), implement in safe dependency order, test, verify, and explain anything not completed in Section 8.
-- Preserve existing project workflows. Defer the single final completion report to Section 8 until the requested work is complete.
+- **Apply & Safety:** Audit findings remain proposals. Only **Apply All** or an explicit implementation request authorizes changes. Then assign each finding to its responsible engineer(s), implement in safe dependency order, test, verify, and explain anything not completed in Section 6.
+- Preserve existing project workflows. Defer the single final completion report to Section 6 until the requested work is complete.
 
 <p align="center"><strong>PROJECT HEALTH REPORT</strong></p>
 
@@ -97,12 +82,12 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 </table>
 </div>
 
-## 8 Task Completion Report
+## 6 Task Completion Report
 
 - Generate one centered report only after completed/verified work or a genuine blocker; omit it for no-change, audit-only, analysis, search, review, or suggestions.
 - **BEFORE / AFTER:** Show verified prior state versus actual result, including what was added, fixed, changed, or improved. New items: BEFORE = NOT PRESENT.
 - **Feature Status:** Dynamically list affected features and actual status (WORKING / FAIL / NOT TESTED); WORKING requires verification.
-- **Engineer Summary:** Show only actual contributors, using exact Section 6 engineer titles in one comma-separated row.
+- **Engineer Summary:** Show only actual contributors, using exact Section 4 engineer titles in one comma-separated row.
 - **Testing Summary:** Autonomously identify and list only tests actually run, with real results (PASS / FAIL); use NOT TESTED when applicable.
 - **Performance Monitoring:** Autonomously identify task-relevant performance measures and show only actual measured values, units, and conditions. Never invent or use examples as results; use NOT MEASURED or NOT APPLICABLE when appropriate. Include as many rows as real results require.
 - Keep BEFORE/AFTER equal-width with equal padding. Add rows dynamically; no fixed feature, test, or metric lists.
@@ -119,7 +104,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
   <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
   <tr><td colspan="3" align="center" valign="middle">[Actual feature]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="6" align="center" valign="middle">[Exact contributing Section 6 engineer titles, comma-separated]</td></tr>
+  <tr><td colspan="6" align="center" valign="middle">[Exact contributing Section 4 engineer titles, comma-separated]</td></tr>
   <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
   <tr><td colspan="3" align="center">[Actual test performed]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="6" align="center">PERFORMANCE MONITORING</th></tr>
