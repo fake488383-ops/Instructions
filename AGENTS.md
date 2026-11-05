@@ -65,10 +65,10 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 ## 5 Continuous Project Audit
 
 - **Commands:** Match standalone commands exactly after trimming whitespace: `0` = list the 35 engineer titles only; `1`–`35` = audit that engineer; `00` = start the full sequential audit. `0` and `00` are distinct.
-- **Audit Findings:** Continuously audit all relevant areas and report every verified finding in sequential FIND order until the audit is complete. Audit is read-only; do not modify files.
-- **Report Table:** Use one **PROJECT HEALTH REPORT** heading and a separate table for each engineer, showing its number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Include one sample row. In an audit, AFTER is a proposal, not an implemented result.
+- **Audit Findings & Evidence:** Audit all relevant areas, including architecture, functionality, UI/UX, code quality, security, privacy, performance, reliability, compatibility, accessibility, configuration, dependencies, build, testing, and missing/unfinished features where applicable. Report every verified finding in sequential FIND order. Each finding must be supported by an actual file/path and line reference, test result, command output, or reproducible observation; never invent evidence. Audit is read-only; do not modify files.
+- **Report Table:** Use one **PROJECT HEALTH REPORT** heading and a separate table for each engineer, showing its number/name and exactly these seven columns: **FIND | FEATURE | CURRENT STATE | PROBLEM | IMPROVEMENT | EXPECTED RESULT | STATUS**. Do not add sample, dummy, or placeholder finding rows. In an audit, IMPROVEMENT and EXPECTED RESULT are proposals, not implemented results.
 - **Report Display:** Display the audit report directly in agent chat; do not create a report file unless the user explicitly requests one.
-- **Finding Values:** FEATURE = complete feature/category name only. BEFORE = actual existing component/solution name in bold, plus its brief verified problem. AFTER = proposed improvement name in bold, plus its brief practical benefit. Keep values distinct, concise, evidence-based, and in Roman Urdu; never invent findings or repeat the FEATURE name unnecessarily.
+- **Finding Values:** FEATURE = only the actual feature name/category; never put its problem, explanation, or proposed solution in this column. CURRENT STATE = actual existing implementation/component name in bold and its concise current behavior. PROBLEM = specific verified defect, gap, risk, or limitation, with evidence reference. IMPROVEMENT = proposed solution name in bold and concise action. EXPECTED RESULT = practical outcome after the proposed improvement. Keep every column distinct, concise, evidence-based, and in Roman Urdu; do not repeat the FEATURE name unnecessarily.
 - **Status & Icons:** Real status title ko yellow color mein vertical likho (har letter alag line); uska real matching icon right side par poore title ke center mein ho. Dono finding ke mutabiq dynamically select karo.
 - **Apply & Safety:** Audit only reports findings. On **Apply All**, responsible engineers implement changes in safe dependency order, coordinate dependencies, then test and verify. Record anything not implemented in Section 6.
 - **Preserve & Deliver:** Preserve existing workflows. Generate the single final report under Section 6 only after the requested task is complete.
@@ -76,14 +76,17 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 <p align="center"><strong>PROJECT HEALTH REPORT</strong></p>
 
 <div align="center">
-<table align="center">
-  <tr><th colspan="5" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
-  <tr><th style="padding:8px 6px;">FIND</th><th style="padding:8px 6px;">FEATURE</th><th style="padding:8px 6px;">BEFORE</th><th style="padding:8px 6px;">AFTER</th><th style="padding:8px 6px; text-align:center; vertical-align:middle;">STATUS</th></tr>
+<table align="center" width="100%" style="width:100%; table-layout:fixed; border-collapse:collapse;">
+  <tr><th colspan="7" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
+  <tr><th style="width:6%; padding:8px 6px;">FIND</th><th style="width:14%; padding:8px 6px;">FEATURE</th><th style="width:14%; padding:8px 6px;">CURRENT STATE</th><th style="width:17%; padding:8px 6px;">PROBLEM</th><th style="width:17%; padding:8px 6px;">IMPROVEMENT</th><th style="width:17%; padding:8px 6px;">EXPECTED RESULT</th><th style="width:15%; padding:8px 6px; text-align:center; vertical-align:middle;">STATUS</th></tr>
+  <!-- Add one data row per verified finding; never add sample or placeholder rows. -->
   <tr>
-    <td style="padding:8px 6px;">1</td>
-    <td style="padding:8px 6px;">[Complete main feature/category name]</td>
-    <td style="padding:8px 6px;"><strong>[Actual existing component/solution name]</strong><br/>[Brief Roman Urdu description of its verified problem or limitation]</td>
-    <td style="padding:8px 6px;"><strong>[Proposed improvement name]</strong><br/>[Brief Roman Urdu description of its practical benefits]</td>
+    <td style="padding:8px 6px;">[Sequential FIND number]</td>
+    <td style="padding:8px 6px;">[Actual feature name/category only]</td>
+    <td style="padding:8px 6px;"><strong>[Actual existing implementation/component]</strong><br/>[Brief current behavior]</td>
+    <td style="padding:8px 6px;">[Verified problem and evidence reference: file/path + line, test, output, or reproducible observation]</td>
+    <td style="padding:8px 6px;"><strong>[Proposed improvement name]</strong><br/>[Brief proposed action]</td>
+    <td style="padding:8px 6px;">[Practical expected outcome]</td>
     <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><div style="display:flex; flex-direction:row; align-items:center; justify-content:center; gap:8px;"><strong style="color:#EAB308; white-space:pre-line;">[Actual status title, each letter on a separate line]</strong><span style="display:inline-flex; align-items:center; justify-content:center;">[Actual matching status icon, vertically centered]</span></div></td>
   </tr>
 </table>
