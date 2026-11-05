@@ -7,7 +7,6 @@ This is an enterprise-level software engineering rulebook for **QML, C++, and Py
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu in every reply, explanation, instruction, example, and report. Never use Urdu or Hindi/Devanagari script unless the user explicitly requests it. Keep technical terms, code, commands, file names, and proper nouns in their original form.
 
 ## 3 Golden Rules
-- **Live Workspace:** Make changes directly in the user's active VS Code workspace; never use a separate project copy or agent CLI for edits.
 - **Workspace File Location:** Always detect the actual workspace root and verify file paths before access; search the workspace if a file is not found, and never guess or reuse unverified paths.
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
