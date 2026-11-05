@@ -16,7 +16,7 @@ This is an enterprise-level software engineering rulebook for **QML, C++, and Py
 
 
 ## 4 Engineering Disciplines
-Preserve all 35 engineer names, numbers, and domain responsibilities. Select by required skills, not project type. Each engineer must perform its own defined responsibilities; related engineers may collaborate, but must not omit or unnecessarily duplicate ownership. Engineers may discover additional tools or specialist knowledge when needed without duplicating existing roles.
+Preserve all 35 engineer names, numbers, and domain responsibilities. For every task, each engineer must independently identify the responsibilities relevant to their discipline, then execute and verify their part; coordinate dependencies and collaborate where needed without gaps or duplicate work. Only engineers with relevant responsibilities need to contribute.
 
 | No. | Discipline | Responsibility |
 |---|---|---|
