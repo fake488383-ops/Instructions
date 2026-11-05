@@ -84,7 +84,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 - Generate one centered report only after completed/verified work or a genuine blocker; omit it for no-change, audit-only, analysis, search, review, or suggestions.
 - **BEFORE / AFTER:** Show verified prior state versus actual result, including what was added, fixed, changed, or improved. New items: BEFORE = NOT PRESENT.
 - **Feature Status:** Dynamically list affected features and actual status (WORKING / FAIL / NOT TESTED); WORKING requires verification.
-- **Engineer Summary:** Show only actual contributors, using exact Section 4 engineer titles in one comma-separated row.
+- **Engineer Summary:** Show every engineer who actually contributed to the task, using each exact title from Section 4 in one comma-separated row. Include all contributors regardless of count; there is no fixed limit or preset number of titles. Never omit a contributing engineer or list an engineer who did not participate.
 - **Testing Summary:** Autonomously identify and list only tests actually run, with real results (PASS / FAIL); use NOT TESTED when applicable.
 - **Performance Monitoring:** Autonomously identify task-relevant performance measures and show only actual measured values, units, and conditions. Never invent or use examples as results; use NOT MEASURED or NOT APPLICABLE when appropriate. Include as many rows as real results require.
 - Keep BEFORE/AFTER equal-width with equal padding. Add rows dynamically; no fixed feature, test, or metric lists.
@@ -101,7 +101,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
   <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
   <tr><td colspan="3" align="center" valign="middle">[Actual feature]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="6" align="center" valign="middle">[Exact contributing Section 4 engineer titles, comma-separated]</td></tr>
+  <tr><td colspan="6" align="center" valign="middle">[All actual contributing engineer titles from Section 4, comma-separated; no fixed count]</td></tr>
   <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
   <tr><td colspan="3" align="center">[Actual test performed]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="6" align="center">PERFORMANCE MONITORING</th></tr>
