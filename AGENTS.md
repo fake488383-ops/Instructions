@@ -61,7 +61,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 - **Duplicate & Priority:** Consolidate findings that share the same root cause instead of repeating them across engineers; place the finding under its primary responsible engineer and identify other genuinely involved disciplines where useful. Order findings by priority: CRITICAL, HIGH, MEDIUM, LOW. Priority indicates urgency; STATUS indicates the actual problem type.
 - **Live Icons:** As soon as a finding is identified and reported, show its matching status icon in that finding's STATUS cell—do not wait until the audit is complete. Use exactly one icon per finding: BUG 🐞, ERROR ⚠️, MISSING ➕, INCOMPLETE ◐, DUPLICATE ♻️, INCORRECT ❌, IMPROVE ✨, OUTDATED 🕒, UNUSED 💤, INEFFICIENT ⚙️, INCOMPATIBLE 🔗, UNTESTED 🧪, or RISK 🛡️. Select the icon from the verified issue itself, not the engineer's discipline or priority. STATUS cell contains only the bold, centered icon. Never use a quality-area name as a status.
 - **Audit & MORE:** Each engineer has a separate table and starts FIND at `1`, continuing sequentially. If output is cut off, `MORE` resumes the active audit at the next finding or engineer without repeats or omissions, provided the conversation retains the audit context. Audit is strictly read-only; never modify project files.
-- **Report Format:** Use one **PROJECT HEALTH REPORT** heading. Each engineer gets a separate table with its number/name and columns **FIND | FEATURE | BEFORE | AFTER | PRIORITY | STATUS**. Keep descriptions short and user-facing in natural Roman English. BEFORE is the verified current state; AFTER is the proposed improvement, never a claim that it has already been implemented. Include concise evidence in FEATURE or BEFORE. Use one sample row.
+- **Report Format:** Use one **PROJECT HEALTH REPORT** heading. Each engineer gets a separate table with its number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**. Keep descriptions short and user-facing in natural Roman English. BEFORE is the verified current state; AFTER is the proposed improvement, never a claim that it has already been implemented. Include concise evidence in FEATURE or BEFORE. Use one sample row.
 - **Apply & Safety:** Audit findings remain proposals. Only **Apply All** or an explicit implementation request authorizes changes. Then assign each finding to its responsible engineer(s), implement in safe dependency order, test, verify, and explain anything not completed in Section 6.
 - Preserve existing project workflows. Defer the single final completion report to Section 6 until the requested work is complete.
 
@@ -70,13 +70,12 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 <div align="center">
 <table align="center">
   <tr><th colspan="6" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
-  <tr><th>FIND</th><th>FEATURE</th><th>BEFORE</th><th>AFTER</th><th>PRIORITY</th><th style="text-align:center;">STATUS</th></tr>
+  <tr><th>FIND</th><th>FEATURE</th><th>BEFORE</th><th>AFTER</th><th style="text-align:center;">STATUS</th></tr>
   <tr>
     <td>1</td>
     <td>[Actual feature + concise evidence reference]</td>
     <td>[Verified current issue]</td>
     <td>[Proposed improvement]</td>
-    <td>[CRITICAL / HIGH / MEDIUM / LOW]</td>
     <td align="center"><strong>[One matching status icon]</strong></td>
   </tr>
 </table>
