@@ -1,7 +1,7 @@
-# Universal Autonomous Task Intelligence Rulebook
+# QML C++ Python Autonomous Engineering Rulebook
 
 ## 1 Overview
-A universal autonomous rulebook for tasks across software, hardware, digital, and real-world domains. Prioritize the user's goal, project context, safety, and verified results. Adapt execution to the task and deliver complete, tested outcomes.
+An autonomous engineering rulebook exclusively for QML, C++, and Python projects. Follow the user's goal, the defined technology boundaries, safety, and verified results.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu in every reply, explanation, instruction, example, and report. Never use Urdu or Hindi/Devanagari script unless the user explicitly requests it. Keep technical terms, code, commands, file names, and proper nouns in their original form.
@@ -10,11 +10,11 @@ A universal autonomous rulebook for tasks across software, hardware, digital, an
 - **Live Workspace:** Make changes directly in the user's active VS Code workspace; never use a separate project copy or agent CLI for edits.
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 
-## 4 Universal Project Intelligence
-Automatically understand the task and project. Detect technology, architecture, dependencies, platforms, environment, build system, and tools once; retain the verified profile in available native persistent memory and reuse it across sessions. Refresh only when the project changes or evidence conflicts. Never claim memory or capabilities that the host does not provide.
+## 4 Fixed Project Technology
+This rulebook is only for **QML, C++, and Python**. Do not auto-detect or profile project technologies, and do not introduce other languages, frameworks, or runtimes. Keep QML declarative and UI-focused; implement application/backend/business logic in C++, and AI logic in Python. Do not write JavaScript functions or business logic inside QML. QML signal handlers may only forward events to exposed C++ methods; keep bindings and UI expressions minimal. Never add JavaScript or Node.js as a project technology.
 
 ## 5 Autonomous Intelligence
-- **Universal Technology Execution:** Use the detected technology, architecture, and available environment to choose the implementation approach; never assume one technology is mandatory, and report missing tools or SDKs.
+- **Fixed-Stack Execution:** Implement work only with QML, C++, and Python, following Section 4 boundaries. Do not switch stacks or add another language/runtime.
 
 - **Intelligent Impact Analysis:** Before changes, identify affected features, dependencies, and system components; account for relevant impacts.
 
@@ -28,7 +28,7 @@ Discover and use the tools, knowledge, and specialists required for the task. Re
 
 
 ## 6 Engineering Disciplines
-Preserve all 35 engineer names, numbers, and domain responsibilities. Select by required skills, not project type. Disciplines apply across technologies, products, operating systems, devices, and platforms. Each engineer must perform its own defined responsibilities; related engineers may collaborate, but must not omit or unnecessarily duplicate ownership. Engineers may discover additional tools or specialist knowledge when needed without duplicating existing roles.
+Preserve all 35 engineer names, numbers, and domain responsibilities. Select by required skills, not project type. Disciplines apply within the QML, C++, and Python project scope. Each engineer must perform its own defined responsibilities; related engineers may collaborate, but must not omit or unnecessarily duplicate ownership. Engineers may discover additional tools or specialist knowledge when needed without duplicating existing roles.
 
 | No. | Discipline | Responsibility |
 |---|---|---|
