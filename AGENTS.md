@@ -70,26 +70,29 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. Select by 
 
 ## 7 Continuous Project Audit
 
-- **Commands:** Match standalone commands exactly after trimming surrounding whitespace: `0` lists only the 35 numbered engineer titles; `1`–`35` audits only that engineer; `00` as a standalone message starts the full sequential audit. `0` and `00` are distinct commands. The `0` list contains no descriptions, statuses, icons, or extra text.
-- **Audit & MORE:** Each selected engineer inspects all relevant project areas and reports every evidence-backed finding, without an arbitrary count. Each engineer's separate report starts FIND at `1` and continues `2`, `3`, and so on. If output is cut off, explicitly request `MORE`; accept it only as continuation of the active audit and resume at the next FIND/engineer without repeats or omissions. Audit is read-only; never modify files.
-- **Table Structure:** Use one **PROJECT HEALTH REPORT** heading for the audit. Give each engineer a separate table with its actual number/name and columns **FIND | FEATURE | BEFORE | AFTER | STATUS**; each engineer starts at `1` and continues `2`, `3`, and so on. In read-only audits, BEFORE is the verified current state and AFTER is the proposed change only—not an implemented result. Include one sample row.
-- **Feature Descriptions:** Write BEFORE and AFTER in short, clear, natural Roman English. Explain the actual problem and practical solution/benefit only, so the user understands immediately. Keep descriptions user-facing; omit code-level details and internal technical identifiers. Include only genuine findings.
-- **Status Classification & Icons:** For every verified finding, select exactly one evidence-based problem status and its icon: BUG 🐞, ERROR ⚠️, MISSING ➕, INCOMPLETE ◐, DUPLICATE ♻️, INCORRECT ❌, IMPROVE ✨, OUTDATED 🕒, UNUSED 💤, INEFFICIENT ⚙️, INCOMPATIBLE 🔗, UNTESTED 🧪, or RISK 🛡️. These statuses describe what is wrong or what needs improvement—not the engineer's discipline or audit area. Never use SECURITY, PERFORMANCE, or other discipline/quality-area names as status icons. Keep categories distinct; never guess, mix, or reuse a status. In the STATUS cell, display only the single bold, centered icon matching the finding—no category name, label, abbreviation, or extra text.
-- **Apply & Safety:** The audit only reports findings. When **Apply All** is selected, implement, test, and verify changes in a safe dependency order. Assign each change to its responsible engineer(s), coordinate cross-discipline dependencies, and explain any items not implemented in Section 8.
-- **Preserve & Deliver:** Preserve existing workflows. Defer the single final report to Section 8 until the entire requested task is complete.
+- **Commands:** Match standalone messages exactly: `0` lists only the 35 numbered engineer titles; `1`–`35` audits only that engineer; `00` starts the full sequential audit. Keep `0` and `00` distinct.
+- **Scope & Ownership:** Each selected engineer audits the entire project areas relevant to its Section 6 responsibility, not just the current task. Inspect available source, configuration, dependencies, tests, and runtime/build evidence as applicable. Skip irrelevant areas; never invent findings.
+- **Evidence & Findings:** Report only verifiable issues. Include a concise evidence reference (file/path and line, test result, or reproducible observation) with each finding. Separate confirmed facts from uncertainty; use UNTESTED when verification is not possible. If no issues are found, explicitly state **No verified findings** for that engineer and do not create a fake FIND row.
+- **Duplicate & Priority:** Consolidate findings that share the same root cause instead of repeating them across engineers; place the finding under its primary responsible engineer and identify other genuinely involved disciplines where useful. Order findings by priority: CRITICAL, HIGH, MEDIUM, LOW. Priority indicates urgency; STATUS indicates the actual problem type.
+- **Live Icons:** As soon as a finding is identified and reported, show its matching status icon in that finding's STATUS cell—do not wait until the audit is complete. Use exactly one icon per finding: BUG 🐞, ERROR ⚠️, MISSING ➕, INCOMPLETE ◐, DUPLICATE ♻️, INCORRECT ❌, IMPROVE ✨, OUTDATED 🕒, UNUSED 💤, INEFFICIENT ⚙️, INCOMPATIBLE 🔗, UNTESTED 🧪, or RISK 🛡️. Select the icon from the verified issue itself, not the engineer's discipline or priority. STATUS cell contains only the bold, centered icon. Never use a quality-area name as a status.
+- **Audit & MORE:** Each engineer has a separate table and starts FIND at `1`, continuing sequentially. If output is cut off, `MORE` resumes the active audit at the next finding or engineer without repeats or omissions, provided the conversation retains the audit context. Audit is strictly read-only; never modify project files.
+- **Report Format:** Use one **PROJECT HEALTH REPORT** heading. Each engineer gets a separate table with its number/name and columns **FIND | FEATURE | BEFORE | AFTER | PRIORITY | STATUS**. Keep descriptions short and user-facing in natural Roman English. BEFORE is the verified current state; AFTER is the proposed improvement, never a claim that it has already been implemented. Include concise evidence in FEATURE or BEFORE. Use one sample row.
+- **Apply & Safety:** Audit findings remain proposals. Only **Apply All** or an explicit implementation request authorizes changes. Then assign each finding to its responsible engineer(s), implement in safe dependency order, test, verify, and explain anything not completed in Section 8.
+- Preserve existing project workflows. Defer the single final completion report to Section 8 until the requested work is complete.
 
 <p align="center"><strong>PROJECT HEALTH REPORT</strong></p>
 
 <div align="center">
 <table align="center">
-  <tr><th colspan="5" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
-  <tr><th style="padding:8px 6px;">FIND</th><th style="padding:8px 6px;">FEATURE</th><th style="padding:8px 6px;">BEFORE</th><th style="padding:8px 6px;">AFTER</th><th style="padding:8px 6px; text-align:center; vertical-align:middle;">STATUS</th></tr>
+  <tr><th colspan="6" align="center">[Engineer Number] — [Actual Engineer Name]</th></tr>
+  <tr><th>FIND</th><th>FEATURE</th><th>BEFORE</th><th>AFTER</th><th>PRIORITY</th><th style="text-align:center;">STATUS</th></tr>
   <tr>
-    <td style="padding:8px 6px;">1</td>
-    <td style="padding:8px 6px;">[Actual feature/category name]</td>
-    <td style="padding:8px 6px;"><strong>[Existing feature name]</strong><br/>[Short actual issue]</td>
-    <td style="padding:8px 6px;"><strong>[Proposed feature/solution name]</strong><br/>[Short benefit]</td>
-    <td style="padding:8px 6px; text-align:center; vertical-align:middle;"><div style="display:flex; flex-direction:row; align-items:center; justify-content:center; gap:8px;"><strong>[One applicable status icon]</strong></div></td>
+    <td>1</td>
+    <td>[Actual feature + concise evidence reference]</td>
+    <td>[Verified current issue]</td>
+    <td>[Proposed improvement]</td>
+    <td>[CRITICAL / HIGH / MEDIUM / LOW]</td>
+    <td align="center"><strong>[One matching status icon]</strong></td>
   </tr>
 </table>
 </div>
