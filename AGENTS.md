@@ -64,14 +64,14 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 
 ## 5 Task Completion Report
 
-- Generate one centered report only after completed/verified work or a genuine blocker; omit it for no-change, audit-only, analysis, search, review, or suggestions.
-- Display the task completion report directly in agent chat; do not create a `.md` or other report file unless the user explicitly requests one.
-- **BEFORE / AFTER:** Show verified prior state versus actual result, including what was added, fixed, changed, or improved. New items: BEFORE = NOT PRESENT.
-- **Feature Status:** Dynamically list affected features and actual status (WORKING / FAIL / NOT TESTED); WORKING requires verification.
-- **Engineer Summary:** Show every engineer who actually contributed to the task, using each exact title from Section 4 in one comma-separated row. Include all contributors regardless of count; there is no fixed limit or preset number of titles. Never omit a contributing engineer or list an engineer who did not participate.
-- **Testing Summary:** Autonomously identify and list only tests actually run, with real results (PASS / FAIL); use NOT TESTED when applicable.
-- **Performance Monitoring:** Autonomously identify task-relevant performance measures and show only actual measured values, units, and conditions. Never invent or use examples as results; use NOT MEASURED or NOT APPLICABLE when appropriate. Include as many rows as real results require.
-- Keep BEFORE/AFTER equal-width with equal padding. Add rows dynamically; no fixed feature, test, or metric lists.
+- Generate one centered report after every completed and verified task, or when genuinely blocked; omit only when no task/work was performed (e.g. search, review, analysis, suggestions, audit-only).
+- Show the report directly in agent chat; never create a report file unless requested.
+- **BEFORE / AFTER:** Show feature names only. New feature: BEFORE = MISSING; AFTER = [Feature Name] — ADDED. Upgrade: BEFORE = [Existing Feature]; AFTER = [Updated Feature] — UPDATED. No descriptions.
+- **Feature Status:** List each affected/added feature name with only WORKING / FAIL / NOT TESTED. WORKING requires actual verification.
+- **Engineer Summary:** Show only exact titles of engineers who actually contributed, in one horizontal, comma-separated row. No descriptions or extra labels.
+- **Testing Summary:** Show only actual test names (e.g. Unit Test, Integration Test) and their real PASS / FAIL / NOT TESTED results. Never claim tests that were not run.
+- **Performance Monitoring:** Dynamically measure relevant real metrics (e.g. EXE startup time, feature response time, latency, ping); show metric name and actual value/unit only. Never invent, estimate, reuse fixed, or fabricate values; use NOT MEASURED / NOT APPLICABLE when unavailable.
+- Add rows dynamically to match actual work; show no descriptions or placeholder/example results.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
 <p><strong>FINAL TASK REPORT</strong></p>
@@ -79,16 +79,16 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 
 <div align="center">
 <table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
-  <colgroup><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6665%;"></colgroup>
-  <tr><th colspan="3" width="50%" align="center" style="width:50%; padding:12px 18px;">BEFORE</th><th colspan="3" width="50%" align="center" style="width:50%; padding:12px 18px;">AFTER</th></tr>
-  <tr><td colspan="3" width="50%" align="center" valign="middle" style="width:50%; padding:14px 18px;">[Actual previous state]</td><td colspan="3" width="50%" align="center" valign="middle" style="width:50%; padding:14px 18px;">[Actual resulting state]</td></tr>
-  <tr><th colspan="6" align="center">FEATURE STATUS</th></tr>
-  <tr><td colspan="3" align="center" valign="middle">[Actual feature]</td><td colspan="3" align="center" valign="middle">[WORKING / FAIL / NOT TESTED]</td></tr>
-  <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="6" align="center" valign="middle">[All actual contributing engineer titles from Section 4, comma-separated; no fixed count]</td></tr>
-  <tr><th colspan="6" align="center">TESTING SUMMARY</th></tr>
-  <tr><td colspan="3" align="center">[Actual test performed]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
-  <tr><th colspan="6" align="center">PERFORMANCE MONITORING</th></tr>
-  <tr><td colspan="3" align="center">[Actual measured metric]</td><td colspan="3" align="center">[Measured value + unit + conditions / NOT MEASURED / NOT APPLICABLE]</td></tr>
+  <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
+  <tr><th align="center" style="padding:12px 18px;">BEFORE</th><th align="center" style="padding:12px 18px;">AFTER</th></tr>
+  <tr><td align="center" valign="middle">[Feature Name — MISSING / Existing Feature Name]</td><td align="center" valign="middle">[Feature Name — ADDED / Updated Feature Name — UPDATED]</td></tr>
+  <tr><th colspan="2" align="center">FEATURE STATUS</th></tr>
+  <tr><td align="center" valign="middle">[Actual Feature Name]</td><td align="center" valign="middle">[WORKING / FAIL / NOT TESTED]</td></tr>
+  <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
+  <tr><td colspan="2" align="center" valign="middle">[Actual contributing engineer titles only, horizontally]</td></tr>
+  <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
+  <tr><td align="center">[Actual Test Name]</td><td align="center">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><th colspan="2" align="center">PERFORMANCE MONITORING</th></tr>
+  <tr><td align="center">[Actual Metric Name]</td><td align="center">[Actual Measured Value + Unit / NOT MEASURED / NOT APPLICABLE]</td></tr>
 </table>
 </div>
