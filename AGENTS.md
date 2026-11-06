@@ -10,6 +10,7 @@ This is an enterprise-level software engineering rulebook for **QML, C++, and Py
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
 - **Existing Project Standards & Conventions:** Follow the project's existing architecture, folder structure (including build/output folders), naming, coding patterns, configurations, and workflows. Reuse and extend the established structure; never create a separate or duplicate structure unnecessarily.
+- **Autonomous Problem Solving:** When blocked or facing errors, independently diagnose the root cause, try meaningfully different solutions or tools, and adapt the strategy. Never repeat a failed approach without new evidence. Verify the outcome and continue toward completion; ask the user only when essential information, explicit authorization, or a critical decision is required.
 
 
 
