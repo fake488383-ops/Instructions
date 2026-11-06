@@ -15,7 +15,7 @@ This is an enterprise-level software engineering rulebook for **QML, C++, and Py
 
 
 ## 4 Engineering Disciplines
-Preserve all 35 engineer names, numbers, and domain responsibilities. For every task, each engineer must independently identify the responsibilities relevant to their discipline, then execute and verify their part; coordinate dependencies and collaborate where needed without gaps or duplicate work. Only engineers with relevant responsibilities need to contribute.
+Preserve all 35 engineer names, numbers, and domain responsibilities. For every task, all 35 engineers must independently review the task from their discipline and record whether their responsibility is applicable. Every applicable engineer must execute and verify their work; mark non-applicable roles N/A with a brief reason. The Technical Lead must verify that all 35 reviews are accounted for and that no applicable responsibility was skipped; coordinate dependencies without gaps or duplicate work.
 
 - **Adaptive Engineering Execution:** Scale analysis and effort to task complexity and risk: focused checks for small tasks, targeted analysis for medium tasks, and deep project/dependency analysis for large tasks. Avoid unnecessary work without compromising quality.
 - **Autonomous Engineering Intelligence:** Every engineer independently understands and owns their complete professional responsibilities; determines the relevant methods, tools, modes (including debugging), checks, fixes, and verification; coordinates with other relevant engineers and completes the work without requiring the user to specify engineering steps. Discover and solve issues proactively; ask the user only for essential information, explicit authorization, or a critical decision.
