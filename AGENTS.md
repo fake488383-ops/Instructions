@@ -63,6 +63,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 
 - Generate one centered report after every completed and verified task, or when genuinely blocked; omit only when no task/work was performed (e.g. search, review, analysis, suggestions, audit-only).
 - Show the report directly in agent chat; never create a report file unless requested.
+- **Table Compatibility:** If the current chat cannot display the defined table, switch to a table format it supports (Markdown or another available layout) while keeping all report sections and data unchanged.
 - **BEFORE / AFTER:** Show feature names only. New feature: BEFORE = MISSING; AFTER = [Feature Name] — ADDED. Upgrade: BEFORE = [Existing Feature]; AFTER = [Updated Feature] — UPDATED. No descriptions.
 - **Feature Status:** List each affected/added feature name with only WORKING / FAIL / NOT TESTED. WORKING requires actual verification.
 - **Engineer Summary:** Show only exact titles of engineers who actually contributed, in one horizontal, comma-separated row. No descriptions or extra labels.
