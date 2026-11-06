@@ -78,17 +78,17 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 </div>
 
 <div align="center">
-<table align="center" width="90%" style="margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
-  <colgroup><col style="width:50%;"><col style="width:50%;"></colgroup>
-  <tr><th align="center" style="padding:12px 18px;">BEFORE</th><th align="center" style="padding:12px 18px;">AFTER</th></tr>
-  <tr><td align="center" valign="middle">[Feature Name — MISSING / Existing Feature Name]</td><td align="center" valign="middle">[Feature Name — ADDED / Updated Feature Name — UPDATED]</td></tr>
+<table align="center" width="90%" style="width:90%; margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
+  <colgroup><col width="50%" style="width:50%;"><col width="50%" style="width:50%;"></colgroup>
+  <tr><th width="50%" align="center" style="width:50%; padding:12px 18px;">BEFORE</th><th width="50%" align="center" style="width:50%; padding:12px 18px;">AFTER</th></tr>
+  <tr><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Feature Name — MISSING / Existing Feature Name]</td><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Feature Name — ADDED / Updated Feature Name — UPDATED]</td></tr>
   <tr><th colspan="2" align="center">FEATURE STATUS</th></tr>
-  <tr><td align="center" valign="middle">[Actual Feature Name]</td><td align="center" valign="middle">[WORKING / FAIL / NOT TESTED]</td></tr>
+  <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Actual Feature Name]</td><td width="50%" align="center" valign="middle" style="width:50%;">[WORKING / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
   <tr><td colspan="2" align="center" valign="middle">[Actual contributing engineer titles only, horizontally]</td></tr>
   <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
-  <tr><td align="center">[Actual Test Name]</td><td align="center">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><td width="50%" align="center" style="width:50%;">[Actual Test Name]</td><td width="50%" align="center" style="width:50%;">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="2" align="center">PERFORMANCE MONITORING</th></tr>
-  <tr><td align="center">[Actual Metric Name]</td><td align="center">[Actual Measured Value + Unit / NOT MEASURED / NOT APPLICABLE]</td></tr>
+  <tr><td width="50%" align="center" style="width:50%;">[Actual Metric Name]</td><td width="50%" align="center" style="width:50%;">[Actual Measured Value + Unit / NOT MEASURED / NOT APPLICABLE]</td></tr>
 </table>
 </div>
