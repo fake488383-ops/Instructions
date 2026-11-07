@@ -60,7 +60,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 | 34 | QA Automation Engineer | Design and maintain automated test frameworks, scripts, API/UI/workflow automation, regression suites, and repeatable test execution; report reproducible results and failures. |
 | 35 | Robotics Engineer | Design and integrate robot software, sensors, actuators, motion/control systems, navigation, and robotic simulation; validate robot behavior and hardware-software interaction. |
 
-## 5 Task Completion Report
+## 5 Task Final Report
 
 - Generate one centered report after every completed and verified task, or when genuinely blocked; omit only when no task/work was performed (e.g. search, review, analysis, suggestions, audit-only).
 - Show the report directly in agent chat; never create a report file unless requested.
@@ -75,7 +75,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - Add rows dynamically to match actual work; show no descriptions or placeholder/example results.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
-<p><strong>FINAL TASK REPORT</strong></p>
+<p><strong>TASK FINAL REPORT</strong></p>
 </div>
 
 <div align="center">
