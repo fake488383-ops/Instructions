@@ -72,7 +72,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - **FEATURE TESTING:** Show relevant feature operations and their actual PASS, FAIL, or NOT TESTED status. Keep the existing two-column grouping; no main-feature duplicates or descriptions.
 - **ENGINEER SUMMARY:** List only engineers who actually contributed, using their exact titles in one horizontal, comma-separated row.
 - **SOFTWARE QUALITY TESTING:** Use two columns without headers: relevant test name and actual PASS, FAIL, or NOT TESTED result. Never claim an unrun test passed.
-- **PERFORMANCE MONITORING:** Show only when relevant measurements exist. Keep three equal-width columns: Feature / Operation | Performance Metric | Actual Measurement. Include measured values and units only; never estimate.
+- **PERFORMANCE MONITORING:** Show only when relevant measurements exist. Remove the three column-header boxes; retain the three data cells below them for actual feature / operation, actual performance metric, and measured value with unit. Include measured values only; never estimate.
 - **BUILD & DEVELOPMENT:** Show only relevant stages actually attempted or verified, in two columns without headers: stage and result. Green = success, red = failure, amber = blocked or not tested. Never invent results.
 - **NEXT IMPROVEMENT SUGGESTIONS:** Give up to 7 distinct, actionable, project-specific suggestions. Each has the complete feature name and one short benefit. End with **Apply for all**.
 
@@ -92,7 +92,6 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><th colspan="6" align="center">SOFTWARE QUALITY TESTING</th></tr>
   <tr><td colspan="3" align="center">[Actual test type]</td><td colspan="3" align="center">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="6" align="center">PERFORMANCE MONITORING</th></tr>
-  <tr><th colspan="2" align="center" style="width:33.3333%;">FEATURE / OPERATION</th><th colspan="2" align="center" style="width:33.3333%;">PERFORMANCE METRIC</th><th colspan="2" align="center" style="width:33.3333%;">ACTUAL MEASUREMENT</th></tr>
   <tr><td colspan="2" align="center">[Actual feature / operation]</td><td colspan="2" align="center">[Actual performance metric]</td><td colspan="2" align="center">[Measured value and unit]</td></tr>
   <tr><th colspan="6" align="center">BUILD &amp; DEVELOPMENT</th></tr>
   <tr><td colspan="3" align="center" valign="middle">[Actual build/launch stage]</td><td colspan="3" align="center" valign="middle"><span style="color:[status color based on actual outcome];"><strong>[Actual result]</strong></span></td></tr>
