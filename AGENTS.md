@@ -71,7 +71,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - **Testing Summary:** Show only actual test names (e.g. Unit Test, Integration Test) and their real PASS / FAIL / NOT TESTED results. Never claim tests that were not run.
 - **Performance Monitoring:** Measure relevant runtime metrics using actual timers, instrumentation, or benchmarks (e.g. EXE startup, AI/voice response latency, memory retrieval time, CPU/RAM, ping); show each metric with its actual measured value and unit (normally ms, MB, %, or ms). Do not leave measurable metrics as NOT MEASURED: run the measurement and report the real result. Never invent or estimate values. Use NOT MEASURED only after a genuine measurement attempt fails, and state the exact blocker; use NOT APPLICABLE only when the metric does not apply.
 - **Final Build & Launch:** Add a dedicated section after Performance Monitoring using a two-column **Task | Result** table. Add applicable stages dynamically (e.g. Background EXE Build, Background Debug Testing, Failed Tests, Bug Fixes, Retesting, Final EXE Build, Final EXE Launch); merge with existing relevant rows instead of duplicating them. For each stage, show the real-time outcome using the clearest accurate status wording (e.g. PASS, PASSED, SUCCESSFUL, COMPLETED, LAUNCHED; or FAIL, FAILED, BLOCKED, NOT COMPLETED, NOT TESTED) and render the status text as a colored tag: green for successful, red for failed, and amber/yellow for blocked or not tested. Choose wording that fits the stage; alternatives are allowed, but never show conflicting or fixed sample values. Update each result from actual execution evidence as work progresses; never hardcode, assume, estimate, or fabricate statuses. Include only applicable stages; state genuine blockers clearly.
-- **Next Improvement Suggestions:** Add a dedicated final section containing exactly five relevant suggestions in a table. Give each suggestion a short feature title only; mark the single best/first one with a green **BEST / FIRST PRIORITY** label. Base suggestions on the completed task and observed gaps; do not invent defects. Do not add any text, notes, or sections after this table.
+- **Next Improvement Suggestions:** Add a dedicated final section containing exactly five relevant suggestions in a two-column table. Keep the first column very narrow (about 7% width) and show only the serial number (1–5); give the remaining width (about 93%) to the suggestion title/description. Mark the single best/first suggestion with a green **BEST / FIRST PRIORITY** label in the second column. Base suggestions on the completed task and observed gaps; do not invent defects. Do not add any text, notes, or sections after this table.
 - Add rows dynamically to match actual work; show no descriptions or placeholder/example results.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
@@ -97,10 +97,15 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Another Actual Stage, if applicable]</td><td width="50%" align="center" valign="middle" style="width:50%;"><span style="color:red;"><strong>[Real-Time Failure Status: FAIL / FAILED]</strong></span></td></tr>
   <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Blocked or untested stage, if applicable]</td><td width="50%" align="center" valign="middle" style="width:50%;"><span style="color:#b7791f;"><strong>[Real-Time Status: BLOCKED / NOT COMPLETED / NOT TESTED]</strong></span></td></tr>
   <tr><th colspan="2" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td width="15%" align="center">1</td><td width="85%" align="left"><span style="color:green;"><strong>BEST / FIRST PRIORITY</strong></span> — [Short Feature Title]</td></tr>
-  <tr><td width="15%" align="center">2</td><td width="85%" align="left">[Short Feature Title]</td></tr>
-  <tr><td width="15%" align="center">3</td><td width="85%" align="left">[Short Feature Title]</td></tr>
-  <tr><td width="15%" align="center">4</td><td width="85%" align="left">[Short Feature Title]</td></tr>
-  <tr><td width="15%" align="center">5</td><td width="85%" align="left">[Short Feature Title]</td></tr>
+  <tr><td colspan="2" align="center" style="padding:0;">
+    <table width="100%" style="width:100%; table-layout:fixed; border-collapse:collapse;">
+      <colgroup><col width="7%" style="width:7%;"><col width="93%" style="width:93%;"></colgroup>
+      <tr><td width="7%" align="center" style="width:7%;">1</td><td width="93%" align="left" style="width:93%;"><span style="color:green;"><strong>BEST / FIRST PRIORITY</strong></span> — [Short Feature Title]</td></tr>
+      <tr><td width="7%" align="center" style="width:7%;">2</td><td width="93%" align="left" style="width:93%;">[Short Feature Title]</td></tr>
+      <tr><td width="7%" align="center" style="width:7%;">3</td><td width="93%" align="left" style="width:93%;">[Short Feature Title]</td></tr>
+      <tr><td width="7%" align="center" style="width:7%;">4</td><td width="93%" align="left" style="width:93%;">[Short Feature Title]</td></tr>
+      <tr><td width="7%" align="center" style="width:7%;">5</td><td width="93%" align="left" style="width:93%;">[Short Feature Title]</td></tr>
+    </table>
+  </td></tr>
 </table>
 </div>
