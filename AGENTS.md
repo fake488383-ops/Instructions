@@ -9,7 +9,6 @@ This is an enterprise-level software engineering rulebook for **QML, C++, and Py
 ## 3 Golden Rules
 - **Cross-Platform Execution:** Identify the requested target platforms, check QML, C++, and Python compatibility, use suitable platform-specific code and configurations, and verify each requested platform. Reuse shared code where compatible.
 - **Live Workspace Editing:** Perform all code and file creation, editing, and deletion directly in the user's VS Code workspace in real time, so changes remain visible as they happen. Never write code in an agent's internal editor, CLI, or separate environment and then bulk-copy it into the workspace.
-- **Project Instruction Loading:** At project start, read the root `AGENTS.md` and follow it throughout the task. If it cannot be accessed or loaded, state that limitation; never assume its rules were applied.
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
 - **Existing Project Standards & Conventions:** Follow the project's existing architecture, folder structure (including build/output folders), naming, coding patterns, configurations, and workflows. Reuse and extend the established structure; never create a separate or duplicate structure unnecessarily.
