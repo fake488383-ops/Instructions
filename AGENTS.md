@@ -73,7 +73,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - **Feature Testing:** Dynamically show only the key sub-feature operations/behaviors used to verify the main features (e.g. API response, GET request, data saving), each with an evidence-based **PASS**, **FAIL**, or **NOT TESTED** result. Use real-time task evidence; never repeat main feature names or include report/engineer/table work, examples, descriptions, fixed items, or unrelated entries. Keep the existing two-column table unchanged.
 - **Engineer Summary:** Show the exact titles of all engineers who actually worked on the task, in one horizontal, comma-separated row. Include every actual contributor and no non-contributors; no descriptions.
 - **Software Quality Testing:** Use exactly two columns and no header row. List only relevant, actually executed software test types (e.g. Unit Test, Integration Test, End-to-End Test, Regression Test, API Test, Security Test, Load Test, or Performance Test) in the left column and evidence-based **PASS**, **FAIL**, or **NOT TESTED** in the right column. No descriptions or header rows; never imply a test ran if it did not.
-- **Performance Monitoring:** Optional; show only when relevant measurements were actually collected for this task. Choose metrics dynamically, include measured values and units, and never estimate or invent. If relevant measurement was attempted but blocked, state the blocker briefly. Use two equal-width, centered columns.
+- **Performance Monitoring:** Optional; show only when relevant measurements were actually collected for this task. Use a separate three-column table: **Feature / Operation | Performance Metric | Actual Measurement**. Dynamically include relevant feature operations and their measured performance values with units (e.g. ms, sec, tokens/sec, %, MB); never estimate or invent measurements. If relevant measurement was attempted but blocked, state the blocker briefly.
 - **Build & Development:** Optional; use two columns without a header row: actual development/build stage and actual result. Add separate relevant steps such as Development, Debug Build/Compilation, Debug Execution, Release Build, Executable Generation, Compatibility Verification, Application Launch, and Runtime Stability. Include only stages actually attempted or verified; use green for confirmed success, red for failure, amber for blocked/not tested. Never invent results.
 - **Next Improvement Suggestions:** Give up to 7 distinct, actionable, project-specific suggestions, each with the complete feature name and a short improvement description. Include no filler or duplicates. Add **Apply for all** as item 8 only when seven valid suggestions are listed; otherwise place it after the genuine suggestions. Build rows dynamically.
 - **Accuracy:** A section with no applicable or evidenced content may be omitted; never fill it with N/A or placeholders unless the report rule for that section explicitly requires it. Keep every entry concise and task-specific.
@@ -93,7 +93,12 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><th colspan="2" align="center">SOFTWARE QUALITY TESTING</th></tr>
   <tr><td align="center">[Unit Test / Integration Test / End-to-End Test]</td><td align="center">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="2" align="center">PERFORMANCE MONITORING</th></tr>
-  <tr><td width="50%" align="center" style="width:50%;">[Actual relevant metric]</td><td width="50%" align="center" style="width:50%;">[Measured value and unit]</td></tr>
+  <tr><td colspan="2" align="center" valign="middle">
+    <table width="100%" style="width:100%; border-collapse:collapse; table-layout:fixed;">
+      <tr><th width="33.33%" align="center">FEATURE / OPERATION</th><th width="33.33%" align="center">PERFORMANCE METRIC</th><th width="33.33%" align="center">ACTUAL MEASUREMENT</th></tr>
+      <tr><td align="center">[Actual feature / operation]</td><td align="center">[Actual performance metric]</td><td align="center">[Measured value and unit]</td></tr>
+    </table>
+  </td></tr>
   <tr><th colspan="2" align="center">BUILD &amp; DEVELOPMENT</th></tr>
   <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Actual build/launch stage]</td><td width="50%" align="center" valign="middle" style="width:50%;"><span style="color:[status color based on actual outcome];"><strong>[Actual result]</strong></span></td></tr>
   <tr><th colspan="2" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
