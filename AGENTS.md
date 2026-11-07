@@ -83,14 +83,12 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 <table align="center" width="90%" style="width:90%; margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:auto;">
   <tr><th width="50%" align="center" style="width:50%; padding:12px 18px;">BEFORE</th><th width="50%" align="center" style="width:50%; padding:12px 18px;">AFTER</th></tr>
   <tr><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[MISSING / Existing Feature Name]</td><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Newly Added Feature Name / Latest Upgraded Feature Name]</td></tr>
-  <tr><th colspan="3" align="center">FEATURE TESTING</th></tr>
-  <tr><th width="34%" align="center">Feature</th><th width="33%" align="center">Actual Test</th><th width="33%" align="center">Result</th></tr>
-  <tr><td align="center">[Actual Feature Name]</td><td align="center">[Short feature behavior check]</td><td align="center">[PASS / FAIL / NOT TESTED]</td></tr>
-  <tr><th colspan="3" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="3" align="center" valign="middle">[Actual contributing engineer titles only, horizontally]</td></tr>
-  <tr><th colspan="3" align="center">TESTING SUMMARY</th></tr>
-  <tr><th width="34%" align="center">Test Type</th><th width="33%" align="center">Actual Test Name</th><th width="33%" align="center">Result</th></tr>
-  <tr><td align="center">[Actual testing method]</td><td align="center">[Short test name]</td><td align="center">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><th colspan="2" align="center">FEATURE TESTING</th></tr>
+  <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Actual Feature / Component Name]</td><td width="50%" align="center" valign="middle" style="width:50%;">[Short actual feature test and PASS / FAIL / NOT TESTED result]</td></tr>
+  <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
+  <tr><td colspan="2" align="center" valign="middle">[Actual contributing engineer titles only, horizontally]</td></tr>
+  <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
+  <tr><td width="50%" align="center" style="width:50%;">[Actual test type and short test name]</td><td width="50%" align="center" style="width:50%;">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="2" align="center">PERFORMANCE MONITORING</th></tr>
   <tr><td width="50%" align="center" style="width:50%;">[Actual relevant metric]</td><td width="50%" align="center" style="width:50%;">[Actual measured value and unit]</td></tr>
   <tr><th colspan="2" align="center">FINAL BUILD &amp; LAUNCH</th></tr>
