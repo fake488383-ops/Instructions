@@ -70,7 +70,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - **BEFORE / AFTER:** Show feature names only. New feature: BEFORE = MISSING; AFTER = exact new feature name. Updated feature: BEFORE = previous name; AFTER = latest name. No status words or descriptions in these cells.
 - **Feature Testing:** List the actual feature/component behavior names affected or checked by the task, including relevant sub-feature actions, with their actual result: **PASS**, **FAIL**, or **NOT TESTED**. One item per row; do not add a header row.
 - **Engineer Summary:** Show only exact titles of engineers who actually contributed, in one horizontal, comma-separated row. Do not list all 35 unless they actually contributed; no descriptions.
-- **Testing Summary:** Use exactly three columns: **Test Type | Actual Test Name | Result**. Test Type is the actual method (e.g. Unit Test, Integration Test, End-to-End Test, Regression Test, API Test, Security Test, Load Test, or Performance Test); Actual Test Name is the specific check performed; Result is **PASS**, **FAIL**, or **NOT TESTED**. Include only relevant tests and evidence. Never imply a test ran if it did not.
+- **Testing Summary:** Use exactly two columns: **Test Type | Result**. List only actual test type names (e.g. Unit Test, Integration Test, End-to-End Test, Regression Test, API Test, Security Test, Load Test, or Performance Test) and their result: **PASS**, **FAIL**, or **NOT TESTED**. Do not add actual test names, descriptions, or extra rows. Include only relevant tests and evidence; never imply a test ran if it did not.
 - **Performance Monitoring:** Optional; show only when relevant measurements were actually collected for this task. Choose metrics dynamically, include measured values and units, and never estimate or invent. If relevant measurement was attempted but blocked, state the blocker briefly. Use two equal-width, centered columns.
 - **Final Build & Launch:** Optional; show only stages relevant to the task and actually attempted. Use two columns without a header row: actual stage and actual result. Use green for confirmed success, red for failure, amber for blocked/not tested. Never invent a build or launch result.
 - **Next Improvement Suggestions:** Give up to 7 distinct, actionable, project-specific suggestions, each with the complete feature name and a short improvement description. Include no filler or duplicates. Add **Apply for all** as item 8 only when seven valid suggestions are listed; otherwise place it after the genuine suggestions. Build rows dynamically.
@@ -89,8 +89,8 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
   <tr><td colspan="2" align="center" valign="middle">[Actual contributing engineer titles, comma-separated]</td></tr>
   <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
-  <tr><th align="center">Test Type</th><th align="center">Actual Test Name</th><th align="center">Result</th></tr>
-  <tr><td align="center">[Actual test method]</td><td align="center">[Actual test name]</td><td align="center">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><th align="center">Test Type</th><th align="center">Result</th></tr>
+  <tr><td align="center">[Unit Test / Integration Test / End-to-End Test]</td><td align="center">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="2" align="center">PERFORMANCE MONITORING</th></tr>
   <tr><td width="50%" align="center" style="width:50%;">[Actual relevant metric]</td><td width="50%" align="center" style="width:50%;">[Measured value and unit]</td></tr>
   <tr><th colspan="2" align="center">FINAL BUILD &amp; LAUNCH</th></tr>
