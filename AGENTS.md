@@ -71,7 +71,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - **Testing Summary:** Show only actual test names (e.g. Unit Test, Integration Test) and their real PASS / FAIL / NOT TESTED results. Never claim tests that were not run.
 - **Performance Monitoring:** Show only performance measurements relevant to the current project and completed task. Select metrics dynamically; do not use a fixed metric checklist. Measure actual values with units, and never invent or estimate. If a relevant measurement cannot be obtained, briefly state the blocker. Center-align both columns and give them equal 50% width, matching the Testing Summary layout.
 - **Final Build & Launch:** Show one compact **Task | Result** table. Center-align both column headings and all row content, with equal 50% column widths. Add only the build/launch stages actually performed, one stage per row, with its real-time status in the same Result cell. Use green for success, red for failure, and amber for blocked/not tested. No fixed stage list, sample rows, extra status rows, or duplicate entries. Report only what execution evidence confirms.
-- **Next Improvement Suggestions:** After each completed task, give exactly 7 project-specific improvement suggestions. Each suggestion must show a complete feature name and a short description of what it improves. Add item 8 as **Apply for all**. Nothing else.
+- **Next Improvement Suggestions:** Generate up to 7 project-specific suggestions dynamically from the completed task. Show only suggestions that are actually generated; add rows as needed. Each row contains a complete feature name and a short improvement description. Add **Apply for all** as item 8. Keep only one example row in the template; never pre-create empty suggestion rows.
 - Add rows dynamically to match actual work; show no descriptions or placeholder/example results.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
@@ -95,12 +95,5 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><td width="50%" align="center" style="width:50%;">[Actual stage performed]</td><td width="50%" align="center" style="width:50%;"><span style="color:[status color based on actual outcome];"><strong>[Actual result]</strong></span></td></tr>
   <tr><th colspan="2" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
   <tr><td colspan="2" valign="middle">1&emsp;<strong>[Complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short improvement description]</td></tr>
-  <tr><td colspan="2" valign="middle">2&emsp;<strong>[Complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short improvement description]</td></tr>
-  <tr><td colspan="2" valign="middle">3&emsp;<strong>[Complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short improvement description]</td></tr>
-  <tr><td colspan="2" valign="middle">4&emsp;<strong>[Complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short improvement description]</td></tr>
-  <tr><td colspan="2" valign="middle">5&emsp;<strong>[Complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short improvement description]</td></tr>
-  <tr><td colspan="2" valign="middle">6&emsp;<strong>[Complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short improvement description]</td></tr>
-  <tr><td colspan="2" valign="middle">7&emsp;<strong>[Complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short improvement description]</td></tr>
-  <tr><td colspan="2" valign="middle">8&emsp;<strong>Apply for all</strong></td></tr>
 </table>
 </div>
