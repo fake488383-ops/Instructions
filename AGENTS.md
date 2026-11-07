@@ -65,13 +65,13 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - Generate one centered report after every completed and verified task, or when genuinely blocked; omit only when no task/work was performed (e.g. search, review, analysis, suggestions, audit-only).
 - Show the report directly in agent chat; never create a report file unless requested.
 - **Table Compatibility:** If the current chat cannot display the defined table, switch to a table format it supports (Markdown or another available layout) while keeping all report sections and data unchanged.
-- **BEFORE / AFTER:** Show feature names only. New feature: BEFORE = MISSING; AFTER = [Feature Name] — ADDED. Upgrade: BEFORE = [Existing Feature]; AFTER = [Updated Feature] — UPDATED. No descriptions.
-- **Feature Implementation & Verification:** Replace FEATURE STATUS with a dynamic two-column table and no column-heading row. Add rows in real time as components/interactions are implemented and tested; show only actual project-specific items and their observed outcomes. In the first cell, show the feature/component name; in the second, briefly describe the implementation and real test result (Added, Working, Failed, or Not Tested). Never prefill a fixed checklist, use placeholder results, or claim verification without an actual test.
+- **BEFORE / AFTER:** Show names only. If a feature does not exist, BEFORE = MISSING (write nothing else in that cell); AFTER = the exact name of the newly added feature. If an existing feature is upgraded, BEFORE = its existing name; AFTER = its latest/new name. Never append ADDED, UPDATED, EDITED, or descriptions.
+- **Feature Implementation & Verification:** Use a dynamic two-column table with no column-heading row. Add only actual project-specific feature/component rows in real time. First cell = exact feature/component name; second cell = one short description of its real behavior (e.g. “AI response is generated and displayed”). Do not write labels such as Added, Edited, or Implemented in the description; put test outcomes only in Testing Summary. Never prefill rows or claim unverified behavior.
 - **Engineer Summary:** Show only exact titles of engineers who actually contributed, in one horizontal, comma-separated row. No descriptions or extra labels.
 - **Testing Summary:** Show only actual test names (e.g. Unit Test, Integration Test) and their real PASS / FAIL / NOT TESTED results. Never claim tests that were not run.
-- **Performance Monitoring:** Dynamically measure relevant real metrics (e.g. EXE startup time, feature response time, latency, ping); show metric name and actual value/unit only. Never invent, estimate, reuse fixed, or fabricate values; use NOT MEASURED / NOT APPLICABLE when unavailable.
+- **Performance Monitoring:** Measure relevant runtime metrics using actual timers, instrumentation, or benchmarks (e.g. EXE startup, AI/voice response latency, memory retrieval time, CPU/RAM, ping); show each metric with its actual measured value and unit (normally ms, MB, %, or ms). Do not leave measurable metrics as NOT MEASURED: run the measurement and report the real result. Never invent or estimate values. Use NOT MEASURED only after a genuine measurement attempt fails, and state the exact blocker; use NOT APPLICABLE only when the metric does not apply.
 - **Final Build & Launch:** Add a dedicated section after Performance Monitoring. Report each applicable stage (background build, background/debug execution, verification, bug fixing, retesting, final build, and visible final launch) with its actual result. Include only stages actually performed; never claim success without evidence. If a stage is unsupported or not performed, state the actual limitation or NOT COMPLETED.
-- **Next Improvement Suggestions:** Add a dedicated final section containing exactly five concise, relevant improvement suggestions in a table. Clearly mark the single best/first recommendation as BEST / FIRST PRIORITY. Base suggestions on the completed task and observed gaps; do not invent defects. Do not add any text, notes, or sections after this table.
+- **Next Improvement Suggestions:** Add a dedicated final section containing exactly five relevant suggestions in a table. Give each suggestion a short feature title only; mark the single best/first one with a green **BEST / FIRST PRIORITY** label. Base suggestions on the completed task and observed gaps; do not invent defects. Do not add any text, notes, or sections after this table.
 - Add rows dynamically to match actual work; show no descriptions or placeholder/example results.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
@@ -82,18 +82,22 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 <table align="center" width="90%" style="width:90%; margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
   <colgroup><col width="50%" style="width:50%;"><col width="50%" style="width:50%;"></colgroup>
   <tr><th width="50%" align="center" style="width:50%; padding:12px 18px;">BEFORE</th><th width="50%" align="center" style="width:50%; padding:12px 18px;">AFTER</th></tr>
-  <tr><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Feature Name — MISSING / Existing Feature Name]</td><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Feature Name — ADDED / Updated Feature Name — UPDATED]</td></tr>
+  <tr><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[MISSING / Existing Feature Name]</td><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Newly Added Feature Name / Latest Upgraded Feature Name]</td></tr>
   <tr><th colspan="2" align="center">FEATURE IMPLEMENTATION &amp; VERIFICATION</th></tr>
-  <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Actual Feature Name]</td><td width="50%" align="center" valign="middle" style="width:50%;">[Implementation details and actual testing outcome / evidence]</td></tr>
+  <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Actual Feature / Component Name]</td><td width="50%" align="center" valign="middle" style="width:50%;">[One short description of actual behavior; no Added / Edited labels]</td></tr>
   <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
   <tr><td colspan="2" align="center" valign="middle">[Actual contributing engineer titles only, horizontally]</td></tr>
   <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
   <tr><td width="50%" align="center" style="width:50%;">[Actual Test Name]</td><td width="50%" align="center" style="width:50%;">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="2" align="center">PERFORMANCE MONITORING</th></tr>
-  <tr><td width="50%" align="center" style="width:50%;">[Actual Metric Name]</td><td width="50%" align="center" style="width:50%;">[Actual Measured Value + Unit / NOT MEASURED / NOT APPLICABLE]</td></tr>
+  <tr><td width="50%" align="center" style="width:50%;">[Actual Metric Name]</td><td width="50%" align="center" style="width:50%;">[Actual Measured Value + Unit; if measurement genuinely fails, exact blocker]</td></tr>
   <tr><th colspan="2" align="center">FINAL BUILD &amp; LAUNCH</th></tr>
   <tr><td width="50%" align="center" style="width:50%;">[Actual Build / Debug / Verification / Fix / Retest / Final Build / Launch Stage]</td><td width="50%" align="center" style="width:50%;">[Actual Result / Evidence / NOT COMPLETED]</td></tr>
   <tr><th colspan="2" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td width="15%" align="center">[1–5]</td><td width="85%" align="left">[Suggestion; clearly mark one as BEST / FIRST PRIORITY]</td></tr>
+  <tr><td width="15%" align="center">1</td><td width="85%" align="left"><span style="color:green;"><strong>BEST / FIRST PRIORITY</strong></span> — [Short Feature Title]</td></tr>
+  <tr><td width="15%" align="center">2</td><td width="85%" align="left">[Short Feature Title]</td></tr>
+  <tr><td width="15%" align="center">3</td><td width="85%" align="left">[Short Feature Title]</td></tr>
+  <tr><td width="15%" align="center">4</td><td width="85%" align="left">[Short Feature Title]</td></tr>
+  <tr><td width="15%" align="center">5</td><td width="85%" align="left">[Short Feature Title]</td></tr>
 </table>
 </div>
