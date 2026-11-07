@@ -71,7 +71,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - **Testing Summary:** Show only actual test names (e.g. Unit Test, Integration Test) and their real PASS / FAIL / NOT TESTED results. Never claim tests that were not run.
 - **Performance Monitoring:** Show only performance measurements relevant to the current project and completed task. Select metrics dynamically; do not use a fixed metric checklist. Measure actual values with units, and never invent or estimate. If a relevant measurement cannot be obtained, briefly state the blocker.
 - **Final Build & Launch:** Show one compact **Task | Result** table. Add only the build/launch stages actually performed, one stage per row, with its real-time status in the same Result cell. Use green for success, red for failure, and amber for blocked/not tested. No fixed stage list, sample rows, extra status rows, or duplicate entries. Report only what execution evidence confirms.
-- **Next Improvement Suggestions:** Recommend exactly five useful future features based on the current project's actual structure, implemented capabilities, user goal, and observed gaps. Generate suggestions dynamically; never repeat a fixed or generic list. Use one row per suggestion: a very narrow 5% column for its number and a 95% column for the complete feature name plus one short practical-benefit description. No priority badges, extra commentary, or content after this final section.
+- **Next Improvement Suggestions:** Recommend exactly five useful future features based on the current project's actual structure, implemented capabilities, user goal, and observed gaps. Generate suggestions dynamically; never repeat a fixed or generic list. Add each suggestion as one direct row in the main report table, with only two cells: a narrow 5% left cell for its number and a 95% right cell for the complete feature name with one short description directly beneath it. Do not create nested tables or extra boxes. No priority badges, extra commentary, or content after this final section.
 - Add rows dynamically to match actual work; show no descriptions or placeholder/example results.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
@@ -79,8 +79,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 </div>
 
 <div align="center">
-<table align="center" width="90%" style="width:90%; margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
-  <colgroup><col width="50%" style="width:50%;"><col width="50%" style="width:50%;"></colgroup>
+<table align="center" width="90%" style="width:90%; margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:auto;">
   <tr><th width="50%" align="center" style="width:50%; padding:12px 18px;">BEFORE</th><th width="50%" align="center" style="width:50%; padding:12px 18px;">AFTER</th></tr>
   <tr><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[MISSING / Existing Feature Name]</td><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Newly Added Feature Name / Latest Upgraded Feature Name]</td></tr>
   <tr><th colspan="2" align="center">FEATURE IMPLEMENTATION &amp; VERIFICATION</th></tr>
@@ -95,6 +94,6 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><th>Task</th><th>Result</th></tr>
   <tr><td>[Actual stage performed]</td><td><span style="color:[status color based on actual outcome];"><strong>[Actual result]</strong></span></td></tr>
   <tr><th colspan="2" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td colspan="2" style="padding:0;"><table width="100%" style="width:100%; table-layout:fixed; border-collapse:collapse;"><colgroup><col width="5%" style="width:5%;"><col width="95%" style="width:95%;"></colgroup><tr><td width="5%" align="center" valign="top" style="width:5%; padding:8px 2px;">1</td><td width="95%" style="width:95%; padding:8px;"><strong>[Complete feature name]</strong><br>[Short, clear practical benefit]</td></tr></table></td></tr>
+  <tr><td width="5%" align="center" valign="top" style="width:5%; padding:8px 2px;">1</td><td width="95%" valign="middle" style="width:95%; padding:8px;"><strong>[Complete feature name]</strong><br>[Short, clear practical benefit]</td></tr>
 </table>
 </div>
