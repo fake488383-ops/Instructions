@@ -62,18 +62,19 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 
 ## 5 Task Final Report
 
-- Generate one centered report after every completed and verified task, or when genuinely blocked; omit only when no task/work was performed (e.g. search, review, analysis, suggestions, audit-only).
-- Show the report directly in agent chat; never create a report file unless requested.
-- **Table Compatibility:** If the current chat cannot display the defined table, switch to a table format it supports (Markdown or another available layout) while keeping all report sections and data unchanged.
-- **Fully Dynamic Report:** Keep the report structure, but generate all content and rows dynamically in real time from the current task and actual execution evidence. Never use fixed, duplicate, fabricated, assumed, or unverified entries or results. Keep every instruction concise.
-- **BEFORE / AFTER:** Show names only. If a feature does not exist, BEFORE = MISSING (write nothing else in that cell); AFTER = the exact name of the newly added feature. If an existing feature is upgraded, BEFORE = its existing name; AFTER = its latest/new name. Never append ADDED, UPDATED, EDITED, or descriptions.
-- **Feature Testing:** List each actual tested feature/component once with its result: **PASS**, **FAIL**, or **NOT TESTED**. Populate entries in real time from tests actually run. Never show fabricated, assumed, or unverified tests or results.
-- **Engineer Summary:** Show only exact titles of engineers who actually contributed, in one horizontal, comma-separated row. No descriptions or extra labels.
-- **Testing Summary:** Use a dynamic table with **Test Type | Actual Test Name | Result**. Test Type identifies the testing method (e.g. Unit, Integration, End-to-End, Regression, API, Security, Load, or Performance Test); Actual Test Name is the short, specific check performed. Show **PASS / FAIL / NOT TESTED** for each relevant test. Include only applicable test types and actual test evidence; never use a fixed checklist, invent tests, or duplicate entries.
-- **Performance Monitoring:** Show only performance measurements relevant to the current project and completed task. Select metrics dynamically; do not use a fixed metric checklist. Measure actual values with units, and never invent or estimate. If a relevant measurement cannot be obtained, briefly state the blocker. Center-align both columns and give them equal 50% width, matching the Testing Summary layout.
-- **Final Build & Launch:** Show only actual build/launch stages and their real-time results. Use green for success, red for failure, and amber for blocked/not tested. No fixed stage list, sample rows, extra status rows, or duplicate entries. Report only what execution evidence confirms.
-- **Next Improvement Suggestions:** Generate exactly 7 distinct, actionable, project-specific suggestions from the completed task, with a complete feature name and short improvement description for each. Add **Apply for all** as item 8. Build the table dynamically: add rows/columns automatically as needed; never use fixed, empty, duplicate, or filler entries. Keep only one example row in the template as a pattern.
-- Add rows dynamically to match actual work; show no descriptions or placeholder/example results.
+- **Mandatory Trigger:** After every user-requested task that involves workspace/project work, generate the report as the final response—even if work is partial, blocked, or tests fail. Never skip the report because verification or build failed. Skip only when no project/workspace action was performed (e.g. discussion, planning, advice, or read-only review).
+- **Finalization Order:** Finish implementation; run relevant checks; collect actual evidence; then generate the report in agent chat before ending the task. Do not wait for a perfect result. Clearly report incomplete, blocked, failed, and untested work.
+- **Instruction Loading:** At project start, read the root `AGENTS.md` and follow it throughout the task. If it cannot be accessed or loaded, state that limitation; do not silently assume its rules were applied.
+- **Chat Output:** Display one centered **TASK FINAL REPORT** directly in agent chat. Do not create a report file unless requested. Use a supported table format; if tables cannot render, use a clear readable list without dropping information.
+- **Dynamic Evidence Rule:** Keep the defined section order, but create only rows supported by the current task and execution evidence. Add or remove rows as needed. Never print template placeholders, sample rows, fixed checklists, duplicates, guesses, or fabricated results.
+- **BEFORE / AFTER:** Show feature names only. New feature: BEFORE = MISSING; AFTER = exact new feature name. Updated feature: BEFORE = previous name; AFTER = latest name. No status words or descriptions in these cells.
+- **Feature Testing:** List the actual feature/component behavior names affected or checked by the task, including relevant sub-feature actions, with their actual result: **PASS**, **FAIL**, or **NOT TESTED**. One item per row; do not add a header row.
+- **Engineer Summary:** Show only exact titles of engineers who actually contributed, in one horizontal, comma-separated row. Do not list all 35 unless they actually contributed; no descriptions.
+- **Testing Summary:** Use exactly three columns: **Test Type | Actual Test Name | Result**. Test Type is the actual method (e.g. Unit Test, Integration Test, End-to-End Test, Regression Test, API Test, Security Test, Load Test, or Performance Test); Actual Test Name is the specific check performed; Result is **PASS**, **FAIL**, or **NOT TESTED**. Include only relevant tests and evidence. Never imply a test ran if it did not.
+- **Performance Monitoring:** Optional; show only when relevant measurements were actually collected for this task. Choose metrics dynamically, include measured values and units, and never estimate or invent. If relevant measurement was attempted but blocked, state the blocker briefly. Use two equal-width, centered columns.
+- **Final Build & Launch:** Optional; show only stages relevant to the task and actually attempted. Use two columns without a header row: actual stage and actual result. Use green for confirmed success, red for failure, amber for blocked/not tested. Never invent a build or launch result.
+- **Next Improvement Suggestions:** Give up to 7 distinct, actionable, project-specific suggestions, each with the complete feature name and a short improvement description. Include no filler or duplicates. Add **Apply for all** as item 8 only when seven valid suggestions are listed; otherwise place it after the genuine suggestions. Build rows dynamically.
+- **Accuracy:** A section with no applicable or evidenced content may be omitted; never fill it with N/A or placeholders unless the report rule for that section explicitly requires it. Keep every entry concise and task-specific.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
 <p><strong>TASK FINAL REPORT</strong></p>
@@ -82,18 +83,19 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 <div align="center">
 <table align="center" width="90%" style="width:90%; margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:auto;">
   <tr><th width="50%" align="center" style="width:50%; padding:12px 18px;">BEFORE</th><th width="50%" align="center" style="width:50%; padding:12px 18px;">AFTER</th></tr>
-  <tr><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[MISSING / Existing Feature Name]</td><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Newly Added Feature Name / Latest Upgraded Feature Name]</td></tr>
+  <tr><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Actual previous or MISSING feature name]</td><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Actual latest feature name]</td></tr>
   <tr><th colspan="2" align="center">FEATURE TESTING</th></tr>
-  <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Actual tested feature/component]</td><td width="50%" align="center" valign="middle" style="width:50%;">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Actual feature/component behavior or sub-feature action]</td><td width="50%" align="center" valign="middle" style="width:50%;">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="2" align="center" valign="middle">[Actual contributing engineer titles only, horizontally]</td></tr>
+  <tr><td colspan="2" align="center" valign="middle">[Actual contributing engineer titles, comma-separated]</td></tr>
   <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
-  <tr><td width="50%" align="center" style="width:50%;">[Actual test type and short test name]</td><td width="50%" align="center" style="width:50%;">[PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><th align="center">Test Type</th><th align="center">Actual Test Name | Result</th></tr>
+  <tr><td align="center">[Actual test method]</td><td align="center">[Actual test name] | [PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="2" align="center">PERFORMANCE MONITORING</th></tr>
-  <tr><td width="50%" align="center" style="width:50%;">[Actual relevant metric]</td><td width="50%" align="center" style="width:50%;">[Actual measured value and unit]</td></tr>
+  <tr><td width="50%" align="center" style="width:50%;">[Actual relevant metric]</td><td width="50%" align="center" style="width:50%;">[Measured value and unit]</td></tr>
   <tr><th colspan="2" align="center">FINAL BUILD &amp; LAUNCH</th></tr>
-  <tr><td width="50%" align="center" style="width:50%;">[Actual stage performed]</td><td width="50%" align="center" style="width:50%;"><span style="color:[status color based on actual outcome];"><strong>[Actual result]</strong></span></td></tr>
+  <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Actual build/launch stage]</td><td width="50%" align="center" valign="middle" style="width:50%;"><span style="color:[status color based on actual outcome];"><strong>[Actual result]</strong></span></td></tr>
   <tr><th colspan="2" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td colspan="2" valign="middle">1&emsp;<strong>[Complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short improvement description]</td></tr>
+  <tr><td colspan="2" valign="middle">1&emsp;<strong>[Complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short, actionable improvement description]</td></tr>
 </table>
 </div>
