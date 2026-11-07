@@ -70,6 +70,8 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - **Engineer Summary:** Show only exact titles of engineers who actually contributed, in one horizontal, comma-separated row. No descriptions or extra labels.
 - **Testing Summary:** Show only actual test names (e.g. Unit Test, Integration Test) and their real PASS / FAIL / NOT TESTED results. Never claim tests that were not run.
 - **Performance Monitoring:** Dynamically measure relevant real metrics (e.g. EXE startup time, feature response time, latency, ping); show metric name and actual value/unit only. Never invent, estimate, reuse fixed, or fabricate values; use NOT MEASURED / NOT APPLICABLE when unavailable.
+- **Final Build & Launch:** Add a dedicated section after Performance Monitoring. Report each applicable stage (background build, background/debug execution, verification, bug fixing, retesting, final build, and visible final launch) with its actual result. Include only stages actually performed; never claim success without evidence. If a stage is unsupported or not performed, state the actual limitation or NOT COMPLETED.
+- **Next Improvement Suggestions:** Add a dedicated final section containing exactly five concise, relevant improvement suggestions in a table. Clearly mark the single best/first recommendation as BEST / FIRST PRIORITY. Base suggestions on the completed task and observed gaps; do not invent defects. Do not add any text, notes, or sections after this table.
 - Add rows dynamically to match actual work; show no descriptions or placeholder/example results.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
@@ -89,5 +91,9 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><td width="50%" align="center" style="width:50%;">[Actual Test Name]</td><td width="50%" align="center" style="width:50%;">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="2" align="center">PERFORMANCE MONITORING</th></tr>
   <tr><td width="50%" align="center" style="width:50%;">[Actual Metric Name]</td><td width="50%" align="center" style="width:50%;">[Actual Measured Value + Unit / NOT MEASURED / NOT APPLICABLE]</td></tr>
+  <tr><th colspan="2" align="center">FINAL BUILD &amp; LAUNCH</th></tr>
+  <tr><td width="50%" align="center" style="width:50%;">[Actual Build / Debug / Verification / Fix / Retest / Final Build / Launch Stage]</td><td width="50%" align="center" style="width:50%;">[Actual Result / Evidence / NOT COMPLETED]</td></tr>
+  <tr><th colspan="2" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
+  <tr><td width="15%" align="center">[1–5]</td><td width="85%" align="left">[Suggestion; clearly mark one as BEST / FIRST PRIORITY]</td></tr>
 </table>
 </div>
