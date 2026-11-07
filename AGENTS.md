@@ -89,8 +89,8 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
   <tr><td colspan="2" align="center" valign="middle">[Actual contributing engineer titles, comma-separated]</td></tr>
   <tr><th colspan="2" align="center">TESTING SUMMARY</th></tr>
-  <tr><th align="center">Test Type</th><th align="center">Actual Test Name | Result</th></tr>
-  <tr><td align="center">[Actual test method]</td><td align="center">[Actual test name] | [PASS / FAIL / NOT TESTED]</td></tr>
+  <tr><th align="center">Test Type</th><th align="center">Actual Test Name</th><th align="center">Result</th></tr>
+  <tr><td align="center">[Actual test method]</td><td align="center">[Actual test name]</td><td align="center">[PASS / FAIL / NOT TESTED]</td></tr>
   <tr><th colspan="2" align="center">PERFORMANCE MONITORING</th></tr>
   <tr><td width="50%" align="center" style="width:50%;">[Actual relevant metric]</td><td width="50%" align="center" style="width:50%;">[Measured value and unit]</td></tr>
   <tr><th colspan="2" align="center">FINAL BUILD &amp; LAUNCH</th></tr>
