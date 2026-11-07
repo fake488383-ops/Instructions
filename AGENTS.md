@@ -82,7 +82,6 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><th width="50%" align="center" style="width:50%; padding:12px 18px;">BEFORE</th><th width="50%" align="center" style="width:50%; padding:12px 18px;">AFTER</th></tr>
   <tr><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Feature Name — MISSING / Existing Feature Name]</td><td width="50%" align="center" valign="middle" style="width:50%; overflow-wrap:anywhere;">[Feature Name — ADDED / Updated Feature Name — UPDATED]</td></tr>
   <tr><th colspan="2" align="center">FEATURE IMPLEMENTATION &amp; VERIFICATION</th></tr>
-  <tr><th width="50%" align="center" style="width:50%;">Feature / Component</th><th width="50%" align="center" style="width:50%;">Implementation &amp; Testing Description</th></tr>
   <tr><td width="50%" align="center" valign="middle" style="width:50%;">[Actual Feature / Component]</td><td width="50%" align="center" valign="middle" style="width:50%;">[What was implemented and the actual testing outcome / evidence]</td></tr>
   <tr><th colspan="2" align="center">ENGINEER SUMMARY</th></tr>
   <tr><td colspan="2" align="center" valign="middle">[Actual contributing engineer titles only, horizontally]</td></tr>
