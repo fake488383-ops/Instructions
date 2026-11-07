@@ -94,6 +94,6 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><th>Task</th><th>Result</th></tr>
   <tr><td>[Actual stage performed]</td><td><span style="color:[status color based on actual outcome];"><strong>[Actual result]</strong></span></td></tr>
   <tr><th colspan="2" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td colspan="2" style="padding:8px;"><div style="display:flex; align-items:center; gap:12px;"><span style="display:inline-block; width:5%; text-align:center; flex-shrink:0;">1</span><div style="flex:1;"><strong>[Complete feature name]</strong><br>[Short, clear practical benefit]</div></div></td></tr>
+  <tr><td colspan="2" style="padding:8px;"><div style="display:flex; align-items:center; gap:12px;"><span style="display:inline-block; width:3%; text-align:center; flex-shrink:0;">1</span><div style="flex:1;"><strong>[Complete feature name]</strong><br>[Short, clear practical benefit]</div></div></td></tr>
 </table>
 </div>
