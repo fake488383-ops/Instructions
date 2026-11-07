@@ -71,7 +71,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 - **Testing Summary:** Show only actual test names (e.g. Unit Test, Integration Test) and their real PASS / FAIL / NOT TESTED results. Never claim tests that were not run.
 - **Performance Monitoring:** Show only performance measurements relevant to the current project and completed task. Select metrics dynamically; do not use a fixed metric checklist. Measure actual values with units, and never invent or estimate. If a relevant measurement cannot be obtained, briefly state the blocker.
 - **Final Build & Launch:** Show one compact **Task | Result** table. Add only the build/launch stages actually performed, one stage per row, with its real-time status in the same Result cell. Use green for success, red for failure, and amber for blocked/not tested. No fixed stage list, sample rows, extra status rows, or duplicate entries. Report only what execution evidence confirms.
-- **Next Improvement Suggestions:** Recommend exactly five useful future features based on the current project's actual structure, implemented capabilities, user goal, and observed gaps. Generate suggestions dynamically; never repeat a fixed or generic list. Add each suggestion as one direct row in the main report table, with only two cells: a narrow 5% left cell for its number and a 95% right cell for the complete feature name with one short description directly beneath it. Do not create nested tables or extra boxes. No priority badges, extra commentary, or content after this final section.
+- **Next Improvement Suggestions:** Recommend exactly five useful future features based on the current project's actual structure, implemented capabilities, user goal, and observed gaps. Generate suggestions dynamically; never repeat a fixed or generic list. Add each suggestion as one direct row in the main report table, using one single cell spanning the full table width. Inside that cell, place the number on the left and the complete feature name with one short description beneath it on the right; do not split them into separate cells, borders, nested tables, or boxes. No priority badges, extra commentary, or content after this final section.
 - Add rows dynamically to match actual work; show no descriptions or placeholder/example results.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
@@ -94,6 +94,6 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
   <tr><th>Task</th><th>Result</th></tr>
   <tr><td>[Actual stage performed]</td><td><span style="color:[status color based on actual outcome];"><strong>[Actual result]</strong></span></td></tr>
   <tr><th colspan="2" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td width="5%" align="center" valign="top" style="width:5%; padding:8px 2px;">1</td><td width="95%" valign="middle" style="width:95%; padding:8px;"><strong>[Complete feature name]</strong><br>[Short, clear practical benefit]</td></tr>
+  <tr><td colspan="2" style="padding:8px;"><div style="display:flex; align-items:flex-start; gap:12px;"><span style="display:inline-block; width:5%; text-align:center; flex-shrink:0;">1</span><div style="flex:1;"><strong>[Complete feature name]</strong><br>[Short, clear practical benefit]</div></div></td></tr>
 </table>
 </div>
