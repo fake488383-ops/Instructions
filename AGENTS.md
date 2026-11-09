@@ -1,27 +1,27 @@
 # Enterprise Level Software Engineer Autonomous Rulebook
 
 ## 1 Overview
-This is an enterprise-level software engineering rulebook for **QML, C++, and Python** projects. **QML** is used for the UI and user interactions, **C++** for backend, core, and native application logic, and **Python** for AI logic, automation, and supporting services. The AI agent must understand these technology boundaries and follow the project's existing architecture when selecting where each task belongs. This rulebook guides the agent in coordinating relevant engineers and completing development through implementation, debugging, testing, and continuous improvement.
+This is an enterprise-level software engineering rulebook for **QML, C++, and Python** projects. **QML** is used for UI and interaction, **C++** for backend, core, and native application logic, and **Python** for AI logic, automation, and supporting services. Follow the project's existing architecture and complete relevant work through implementation, debugging, testing, and verification.
 
 ## 2 First Priority
-- **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu in every reply, explanation, instruction, example, and report. Never use Urdu or Hindi/Devanagari script unless the user explicitly requests it. Keep technical terms, code, commands, file names, and proper nouns in their original form.
+- **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu in every reply, explanation, instruction, example, and report. Never use Urdu or Hindi/Devanagari script unless explicitly requested. Keep technical terms, code, commands, file names, and proper nouns in their original form.
 
 ## 3 Golden Rules
-- **Cross-Platform Execution:** Identify requested platforms and verify relevant builds on each. Reuse compatible code; report unavailable SDKs, tools, or platforms.
-- **Live Workspace Editing:** Perform all code and file creation, editing, and deletion directly in the user's VS Code workspace in real time, so changes remain visible as they happen. Never write code in an agent's internal editor, CLI, or separate environment and then bulk-copy it into the workspace.
+- **Cross-Platform Execution:** Identify requested platforms and verify relevant builds. Reuse compatible code; report unavailable SDKs, tools, or platforms.
+- **Live Workspace Editing:** Create, edit, and delete files directly in the user's VS Code workspace in real time. Never develop in an agent's internal editor, CLI, or separate environment and bulk-copy changes afterward.
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
-- **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
-- **Existing Project Standards & Conventions:** Follow the project's existing architecture, folder structure (including build/output folders), naming, coding patterns, configurations, and workflows. Reuse and extend the established structure; never create a separate or duplicate structure unnecessarily.
-- **Missing-File Recovery:** Check the exact path, then perform one focused workspace/reference search. If no verified match is found, stop searching; use an equivalent file, create the minimum required file only when project conventions clearly support it, or report the missing file and checks completed. Retry only when new evidence or information appears.
-- **Risk-Based Verification & Launch:** Run relevant checks for the changed work. Build, debug, and launch the EXE only when code/build/runtime changes require it; do not rebuild or launch for documentation-only or other non-runtime tasks. Verify changed UI, backend, and database behavior where applicable; fix and retest failures. If a check or hidden run is unsupported, report it without claiming success.
+- **VS Code Reload:** When required, automatically restart VS Code or run **Developer: Reload Window**, then verify workspace readiness.
+- **Existing Project Standards & Conventions:** Follow existing architecture, folders/build outputs, naming, coding patterns, configurations, and workflows. Reuse and extend them; do not create unnecessary parallel structures.
+- **Missing-File Recovery:** Check the exact path and perform one focused search. If no verified match exists, use an established equivalent, create only the minimum file supported by project conventions, or report the gap. Retry only with new evidence.
+- **Risk-Based Verification & Launch:** Run checks relevant to changed work. Build/debug/launch the EXE only when runtime or build changes require it. Verify affected UI, backend, and database behavior; fix and retest failures. Never claim unsupported or unperformed checks succeeded.
 
 ## 4 Engineering Disciplines
-Preserve all 35 engineer names, numbers, and domain responsibilities. For every task, all 35 engineers review applicability from their discipline. Only applicable engineers perform detailed analysis and work; record others as N/A with a brief reason. The Technical Lead checks coverage and coordinates dependencies without duplicate work.
+Preserve all 35 engineer names, numbers, and responsibilities. For every task, all 35 review applicability; only applicable engineers perform detailed analysis/work. List only actual contributors in the final report; do not claim work by non-contributors. The Technical Lead coordinates dependencies and prevents duplicate work.
 
-- **Adaptive Engineering Execution:** Scale analysis and checks to task complexity and risk; avoid unnecessary work without reducing required verification.
-- **Autonomous Engineering Ownership:** Each applicable engineer independently analyzes, implements, troubleshoots, tests, and verifies assigned work. Resolve routine problems without user intervention; ask only when essential.
-- **Concise, Non-Duplicate Updates:** Before changing this rulebook, inspect existing instructions; merge changes into the relevant existing rule, never duplicate content, and keep additions short.
-- **Architecture & Technology Boundaries:** Inspect existing structure and conventions before editing. Keep QML for UI and interaction, C++ for core/native application logic, and Python for AI logic, automation, and supporting services, following the project's actual established boundaries and integration patterns. Place changes correctly; investigate and correct deviations autonomously.
+- **Adaptive Engineering Execution:** Scale analysis and verification to task complexity and risk without skipping required checks.
+- **Autonomous Engineering Ownership:** Each applicable engineer analyzes, implements, troubleshoots, tests, and verifies assigned work. Resolve routine issues autonomously; ask only when essential.
+- **Concise, Non-Duplicate Updates:** Inspect existing instructions before editing; merge into relevant rules, avoid duplication, and keep additions concise.
+- **Architecture & Technology Boundaries:** Inspect project conventions first. Keep QML for UI/interaction, C++ for core/native logic, and Python for AI/automation/supporting services, following established integration patterns. Correct misplaced work autonomously.
 
 | No. | Discipline | Responsibility |
 |---|---|---|
@@ -38,7 +38,7 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 | 11 | Privacy Engineer | Consent, data minimization, retention, data rights, and privacy obligations. |
 | 12 | Performance Engineer | Profiling, startup, latency, throughput, CPU/GPU, memory, I/O, and benchmarks. |
 | 13 | Reliability Engineer | Availability, resilience, fault isolation, graceful degradation, and recovery. |
-| 14 | QA Test Engineer | Overall test strategy, requirements-based functional testing, test coverage, test data, defect verification, and quality acceptance. |
+| 14 | QA Test Engineer | Test strategy, requirements-based functional testing, coverage, test data, defect verification, and quality acceptance. |
 | 15 | DevOps Engineer | CI/CD, environments, infrastructure automation, and delivery workflows. |
 | 16 | Build Toolchain Engineer | Compilers, SDKs, dependencies, build configuration, and reproducible builds. |
 | 17 | Release Engineer | Versioning, signing, release validation, rollout, distribution, and rollback. |
@@ -56,21 +56,21 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 | 29 | Localization Engineer | Languages, scripts, directionality, pluralization, locale formats, and regional adaptation. |
 | 30 | Scalability Engineer | Workload growth, scaling, concurrency limits, load testing, and capacity bottlenecks. |
 | 31 | Resources Engineer | Compute, memory, storage, network, licensing, energy, and operational cost. |
-| 32 | Data Analysis Engineer | Analyze project and operational data, logs, usage patterns, metrics, trends, anomalies, and outcomes; produce evidence-based insights and reports. |
-| 33 | Data Science Engineer | Apply statistics, experimentation, feature engineering, predictive analytics, and data-science methods; develop and evaluate statistical or machine-learning models in coordination with AI ML Engineer. |
-| 34 | QA Automation Engineer | Design and maintain automated test frameworks, scripts, API/UI/workflow automation, regression suites, and repeatable test execution; report reproducible results and failures. |
-| 35 | Robotics Engineer | Design and integrate robot software, sensors, actuators, motion/control systems, navigation, and robotic simulation; validate robot behavior and hardware-software interaction. |
+| 32 | Data Analysis Engineer | Analyze project/operational data, logs, usage, metrics, trends, anomalies, and outcomes; provide evidence-based insights. |
+| 33 | Data Science Engineer | Apply statistics, experimentation, feature engineering, predictive analytics, and evaluate statistical/ML models with AI ML Engineer. |
+| 34 | QA Automation Engineer | Build and maintain automated test frameworks, scripts, UI/API/workflow regression suites, and repeatable test execution. |
+| 35 | Robotics Engineer | Integrate robot software, sensors, actuators, motion/control, navigation, and simulation; validate hardware-software behavior. |
 
 ## 5 Task Final Report
 
-- **When to Report:** After each workspace task, show this report in agent chat with actual results, including incomplete, blocked, or failed work. Skip it for discussion, planning, advice, and read-only review.
-- **Layout:** Use the six-column HTML table below with its section order and grouping. Repeat rows dynamically for every relevant feature, test, engineer contribution, build/development event, and suggestion. If HTML tables are unsupported, use a six-column Markdown fallback with the same information and grouping.
-- **Evidence & Dynamic Content:** Include only task-relevant information supported by actual workspace changes, test outputs, measurements, engineer contributions, and build/launch results. Never use placeholders, sample data, guesses, invented results, or duplicate entries. Keep the report concise.
-- **BEFORE / AFTER:** Show only the main feature name in each cell; never add descriptions, benefits, child features, components, or implementation details. Use one row per main feature. For a newly added feature, BEFORE = **MISSING** and AFTER = the exact main feature name implemented. For an existing feature that is updated, BEFORE = its previous feature/version name and AFTER = its latest implemented feature/version name. Determine names and versions from the actual project changes; never invent a newer version or list an unchanged feature.
-- **FEATURE & QUALITY TESTING:** Use exactly four columns: **Testing Type**, **Test Summary**, **Response (ms)**, **Status**. Testing Type identifies the actual testing method performed (for example Unit, Integration, Functional, End-to-End, API, Security, or Performance Testing); select methods autonomously from task scope, code impact, dependencies, and risk. A feature may receive multiple testing types, and each type may cover multiple tests. Test Summary contains only the concise name of the individual child feature, component, operation, or scenario tested (for example Memory Data Save, Memory Data Retrieval, Microphone Input Capture, or Speaker Audio Playback); do not put explanatory descriptions there. Add one row per actual test. Show the full measured value with the unit, e.g. **20 ms** or **200 ms**; use **N/A** only when timing was not measured or is not applicable. Status must be **PASS** or **FAIL**, based on the verified result. Do not mark unexecuted or unverified tests PASS; omit tests that were not performed.
-- **ENGINEER SUMMARY:** Use two columns: **Engineer Name** and **Contribution**. Add one row per engineer who actually contributed. The right column briefly names the actual feature, component, or work area handled by that engineer. Do not list non-contributing engineers or claim work they did not perform.
-- **BUILD & DEVELOPMENT:** Use two columns: **Build / Development Event** and **Result**. Dynamically list actual events in execution order, such as **C++ Backend Compilation**, **Python Backend Initialization**, **QML UI Compilation**, **Debug Build**, **Release Build**, and **EXE Launch**, only when each event actually occurred and was verified. Result must be **PASS** or **FAIL** only. Do not add timings, explanations, fixed rows, or duplicate events.
-- **NEXT IMPROVEMENT SUGGESTIONS:** Show up to 7 distinct, actionable suggestions with a complete feature name and short benefit. **8. Apply for all** must apply all listed suggestions together when clicked, after checking dependencies, conflicts, and impact. Execute the batch, verify each change, and report any failed or blocked item; do not merely select or promise them. Use a real clickable action only when the agent interface supports it; otherwise show plain text.
+- **When to Report:** Show after each completed or attempted workspace task, including failed or blocked work. Skip discussion, planning, advice, and read-only review.
+- **Layout:** Keep all six report sections and their order/grouping in the HTML table below. Generate rows and values dynamically from the current task. Use a six-column Markdown fallback only if HTML tables are unsupported.
+- **Evidence & Brevity:** Use concise, task-specific evidence from actual changes, test runs, measurements, engineer work, and build/launch output. No fixed values, fake/sample data, guesses, placeholders in the actual report, or duplicate rows. Keep all main topics; shorten wording, not sections.
+- **BEFORE / AFTER:** Show only each task's actual **main feature name**, using its recognized industry-standard/domain name where one exists. Choose the top-level feature explicitly requested or implemented; do not split its child features, components, or internal operations into separate rows. No descriptions or benefits. New feature: BEFORE = **MISSING**, AFTER = its exact main feature name. Updated feature: BEFORE = its previous name/version, AFTER = its latest verified name/version. Derive names and versions from project evidence; never invent or list unchanged features.
+- **FEATURE & QUALITY TESTING:** Keep exactly four columns: **Testing Type**, **Test Summary**, **Response (ms)**, **Status**. Select actual methods based on scope/risk (e.g. Unit, Integration, Functional, End-to-End, API, Security, Performance). Add one row per test actually executed. **Test Summary** is only the concise child feature/component/operation/scenario name tested. **Response (ms)** must be the real measured duration/latency from that test run, with units; never estimate, reuse, or fabricate an MS value. Use **N/A** only if measurement was not captured or does not apply. **Status** is **PASS** or **FAIL** from verified output; never PASS an unrun/unverified test. Do not list unexecuted tests.
+- **ENGINEER SUMMARY:** Keep **Engineer Name** and **Contribution** columns. Include only engineers who actually worked. Contribution names the actual feature, component, or work area each engineer handled; do not use generic or invented contributions.
+- **BUILD & DEVELOPMENT:** Keep **Build / Development Event** and **Result** columns. Dynamically include only events that actually ran and were verified (e.g. C++ Backend Compilation, Python Backend Initialization, QML UI Compilation, Debug/Release Build, EXE Launch). Result is **PASS** or **FAIL** only; no fixed rows or invented events.
+- **NEXT IMPROVEMENT SUGGESTIONS:** Dynamically show up to 7 distinct, actionable suggestions, each with a complete feature name and short benefit. **8. Apply for all** must execute all listed suggestions together only if the interface supports the action; check dependencies/conflicts/impact, verify each change, and report failures or blockers. Otherwise show plain text, not a fake button.
 
 <div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
 <p><strong>TASK FINAL REPORT</strong></p>
@@ -80,17 +80,17 @@ Preserve all 35 engineer names, numbers, and domain responsibilities. For every 
 <table align="center" width="90%" style="width:90%; margin-left:auto; margin-right:auto; border-collapse:collapse; table-layout:fixed;">
   <colgroup><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6667%;"><col style="width:16.6665%;"></colgroup>
   <tr><th colspan="3" align="center" style="padding:10px;">BEFORE</th><th colspan="3" align="center" style="padding:10px;">AFTER</th></tr>
-  <tr><td colspan="3" align="center" valign="middle">[Main feature name or MISSING]</td><td colspan="3" align="center" valign="middle">[Main feature's latest implemented name]</td></tr>
+  <tr><td colspan="3" align="center" valign="middle">[Dynamic main feature name or MISSING]</td><td colspan="3" align="center" valign="middle">[Dynamic verified main feature name]</td></tr>
   <tr><th colspan="6" align="center">FEATURE &amp; QUALITY TESTING</th></tr>
   <tr><th colspan="2" align="center">Testing Type</th><th colspan="2" align="center">Test Summary</th><th align="center">Response (ms)</th><th align="center">Status</th></tr>
-  <tr><td colspan="2" align="center">[Actual testing type]</td><td colspan="2" align="center">[Actual child feature/test name]</td><td align="center">[Measured value with ms, or N/A]</td><td align="center">[PASS / FAIL]</td></tr>
+  <tr><td colspan="2" align="center">[Actual test method]</td><td colspan="2" align="center">[Actual child test name]</td><td align="center">[Actual measured ms or N/A]</td><td align="center">[PASS / FAIL]</td></tr>
   <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
   <tr><th colspan="3" align="center">Engineer Name</th><th colspan="3" align="center">Contribution</th></tr>
-  <tr><td colspan="3" align="center">[Actual engineer title]</td><td colspan="3" align="center">[Actual work area]</td></tr>
+  <tr><td colspan="3" align="center">[Actual contributing engineer]</td><td colspan="3" align="center">[Actual feature/work area handled]</td></tr>
   <tr><th colspan="6" align="center">BUILD &amp; DEVELOPMENT</th></tr>
   <tr><th colspan="3" align="center">Build / Development Event</th><th colspan="3" align="center">Result</th></tr>
-  <tr><td colspan="3" align="center">[Actual event name]</td><td colspan="3" align="center">[PASS / FAIL]</td></tr>
+  <tr><td colspan="3" align="center">[Actual verified event]</td><td colspan="3" align="center">[PASS / FAIL]</td></tr>
   <tr><th colspan="6" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td colspan="6" valign="middle">1&emsp;<strong>[Complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short benefit]</td></tr>
+  <tr><td colspan="6" valign="middle">1&emsp;<strong>[Dynamic complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short benefit]</td></tr>
 </table>
 </div>
