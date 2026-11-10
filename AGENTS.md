@@ -7,13 +7,13 @@ Project-aware engineering rulebook. Detect project requirements, architecture, t
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
 ## 3 Golden Rules
-- **Cross-Platform:** Detect required platforms; reuse shared code, isolate platform-specific behavior, and verify each supported target. Report unsupported or unverified targets.
-- **Workspace Editing:** Edit the actual VS Code workspace. Follow existing structure and conventions; avoid unnecessary parallel files and routine permission prompts.
-- **Hidden Terminal:** Run commands silently in the background. Never open or reveal the terminal. Report execution limits and errors.
-- **VS Code Reload:** Reload VS Code when required and verify workspace readiness.
-- **Existing Architecture:** Reuse established folders, build outputs, naming, patterns, configurations, and workflows. Improve limitations with the smallest safe change.
-- **Missing Files:** Check the exact path and search once. If absent, use an established equivalent, create only what conventions support, or report the gap. Do not repeat fruitless searches.
-- **Verification & Launch:** Test changed work according to risk. Before EXE launch, inspect relevant Problems and debug state. Build, launch, and verify actual UI, controls, and affected backend, voice, or database behavior when tools permit. Fix and retest failures; never claim unperformed checks passed.
+- **Cross-Platform:** Detect target platforms and toolchains from project files. Reuse shared code, isolate platform-specific logic, and verify every required target. Clearly report unsupported targets.
+- **Workspace Editing:** Identify the correct workspace and project root before editing. Locate files by project structure and references; edit in place, preserve conventions, and avoid duplicate or unrelated files.
+- **Hidden Terminal:** Execute commands in the background without opening or exposing the terminal. Capture exit codes and relevant output; surface failures and blockers instead of hiding them.
+- **VS Code:** Use the active workspace, Problems, tasks, debug configurations, and available editor tools. Reload only when required, then confirm extensions and workspace are ready.
+- **Existing Architecture:** Inspect project structure, entry points, dependencies, and data flow before changes. Respect folder ownership, naming, build paths, and established patterns; make the smallest compatible change.
+- **Missing Files:** Verify the path, naming, case, and references; search the project once. Reuse a valid equivalent or create the file only when architecture requires it. Otherwise report the missing dependency; do not loop.
+- **Verification & Launch:** Verify changes at the appropriate levels: static checks, build, tests, and runtime. Before EXE launch, inspect Problems and debug state; verify visible UI, text, controls, and affected backend, voice, and database flows. Fix and retest failures; report checks not performed.
 
 ## 4 Engineering Disciplines
 Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope, components, dependencies, risks, and conventions. Select only relevant disciplines; plan and execute the work without requiring the user to specify routine steps. The Technical Lead coordinates tasks, dependencies, integration, and conflicts. Delegate when subagents are available; otherwise work sequentially. Each selected engineer owns assigned analysis, implementation, testing, and verification. Recover from ordinary failures; ask only when essential information or authorization is missing. Report actual contributors only.
