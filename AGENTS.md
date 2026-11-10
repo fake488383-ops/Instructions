@@ -88,10 +88,14 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
     </div>
   </td></tr>
   <tr><th colspan="6" align="center" style="padding:10px; border:1px solid #888;">TESTING SUMMARY</th></tr>
-  <tr><td colspan="6" align="center" valign="middle" style="padding:10px; border:1px solid #888;">[Actual testing finding 1]</td></tr>
-  <tr><td colspan="6" align="center" valign="middle" style="padding:10px; border:1px solid #888;">[Actual testing finding 2]</td></tr>
-  <tr><td colspan="6" align="center" valign="middle" style="padding:10px; border:1px solid #888;">[Actual testing finding 3]</td></tr>
-  <tr><td colspan="6" align="center" valign="middle" style="padding:10px; border:1px solid #888;">[Actual testing finding 4]</td></tr>
+  <tr><td colspan="6" align="center" valign="middle" style="padding:0; border:1px solid #888;">
+    <table width="100%" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
+      <tr><td align="center" valign="middle" style="padding:10px; border-bottom:1px solid #888;">[Actual testing finding 1]</td></tr>
+      <tr><td align="center" valign="middle" style="padding:10px; border-bottom:1px solid #888;">[Actual testing finding 2]</td></tr>
+      <tr><td align="center" valign="middle" style="padding:10px; border-bottom:1px solid #888;">[Actual testing finding 3]</td></tr>
+      <tr><td align="center" valign="middle" style="padding:10px;">[Actual testing finding 4]</td></tr>
+    </table>
+  </td></tr>
   <tr><th colspan="6" align="center">BUILD &amp; DEVELOPMENT</th></tr>
   <tr><th colspan="3" align="center">Build / Development Event</th><th colspan="3" align="center">Result</th></tr>
   <tr><td colspan="3" align="center">[Actual verified event]</td><td colspan="3" align="center">[PASS / FAIL]</td></tr>
