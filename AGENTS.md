@@ -60,28 +60,30 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
 
 ### Final Task Report
 
-<table width="100%" style="width:100%; min-width:100%; max-width:100%; table-layout:fixed; margin:0; border-collapse:collapse;" border="1">
+<table width="100%" style="width:100%; min-width:100%; max-width:100%; table-layout:fixed; margin:0; border-collapse:collapse; border:1px solid;" border="1">
   <colgroup>
-    <col width="50%" style="width:50%">
-    <col width="50%" style="width:50%">
+    <col style="width:25%">
+    <col style="width:25%">
+    <col style="width:25%">
+    <col style="width:25%">
   </colgroup>
   <tbody>
     <tr>
-      <th width="50%" style="width:50%; text-align:center;">BEFORE</th>
-      <th width="50%" style="width:50%; text-align:center;">AFTER</th>
+      <th colspan="2" style="width:50%; text-align:center; border:1px solid;">BEFORE</th>
+      <th colspan="2" style="width:50%; text-align:center; border:1px solid;">AFTER</th>
     </tr>
     <tr>
-      <td width="50%" style="width:50%;">&nbsp;</td>
-      <td width="50%" style="width:50%;">&nbsp;</td>
+      <td colspan="2" style="width:50%; border:1px solid;">&nbsp;</td>
+      <td colspan="2" style="width:50%; border:1px solid;">&nbsp;</td>
     </tr>
     <tr>
-      <th colspan="2" style="text-align:center;">Testing Summary</th>
+      <th colspan="4" style="text-align:center; border:1px solid;">Testing Summary</th>
     </tr>
     <tr>
-      <td style="width:25%;">&nbsp;</td>
-      <td style="width:25%;">&nbsp;</td>
-      <td style="width:25%;">&nbsp;</td>
-      <td style="width:25%;">&nbsp;</td>
+      <td style="width:25%; border:1px solid;">&nbsp;</td>
+      <td style="width:25%; border:1px solid;">&nbsp;</td>
+      <td style="width:25%; border:1px solid;">&nbsp;</td>
+      <td style="width:25%; border:1px solid;">&nbsp;</td>
     </tr>
   </tbody>
 </table>
