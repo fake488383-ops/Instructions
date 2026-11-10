@@ -64,7 +64,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 - **Testing Summary:** Show test categories, child-feature test names, performance metrics, and Pass or Fail. Include only tests actually run and measured results.
 - **Engineer Summary:** List each contributing engineer inline as **Discipline Title** — short contribution, followed by a comma and the next engineer. Keep all entries in one continuous horizontal text flow; wrap naturally only when the row reaches its width. Never stack engineers in separate blocks or columns.
 
-<table width="100%" align="center" style="width:100%; min-width:100%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;" border="1">
+<table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;" border="1">
   <colgroup>
     <col style="width:25%">
     <col style="width:25%">
@@ -74,12 +74,12 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
   <tbody>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Final Task Report</th></tr>
     <tr>
-      <th colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">BEFORE</th>
-      <th colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">AFTER</th>
+      <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">BEFORE</th>
+      <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER</th>
     </tr>
     <tr>
-      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">&nbsp;</td>
-      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">&nbsp;</td>
+      <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">&nbsp;</td>
+      <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">&nbsp;</td>
     </tr>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
