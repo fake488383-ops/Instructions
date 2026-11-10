@@ -60,40 +60,11 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
 
 ### Before / After Comparison
 
-| BEFORE | AFTER |
-|---|---|
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+<table width="100%">
+  <thead>
+    <tr><th>BEFORE</th><th>AFTER</th></tr>
+  </thead>
+  <tbody>
+    <tr><td></td><td></td></tr>
+  </tbody>
+</table>
