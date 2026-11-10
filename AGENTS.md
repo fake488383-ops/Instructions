@@ -87,8 +87,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <th colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER</th>
     </tr>
     <tr>
-      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Existing State</small></td>
-      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Updated State</small></td>
+      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Actual Existing State</small></td>
+      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Actual Updated State</small></td>
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
     <tr>
