@@ -63,6 +63,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 
 ## 5 Task Final Report
 
+- **Dynamic BEFORE / AFTER Placement:** Populate each side independently with real-time project data: existing features and their actual state go only in **BEFORE**; features added or improved by the current task go only in **AFTER**. Keep corresponding changes on the same row where applicable. Never place AFTER content in BEFORE or vice versa. Generate values from the live workspace/task evidence; do not use fixed examples or placeholders.
 - **Always Generate:** After every project task, show the report using this exact unified table blueprint. Keep all report information inside the table; add rows when needed.
 - **BEFORE / AFTER:** BEFORE shows relevant features already present or marked **MISSING**. AFTER shows features added or improved by this task.
 - **ENGINEER SUMMARY:** Include only actual contributors from the 35 disciplines. Each box contains the engineer's complete title and a short contribution beneath it.
