@@ -60,38 +60,26 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
 
 ### Final Task Report
 
-<table align="center" width="100%" border="1">
+<table width="100%" style="width:100%; min-width:100%; table-layout:fixed; margin-left:auto; margin-right:auto;" border="1">
   <colgroup>
-    <col width="50%">
-    <col width="50%">
+    <col style="width:50%">
+    <col style="width:50%">
   </colgroup>
   <tbody>
     <tr>
-      <th width="50%" align="center">BEFORE</th>
-      <th width="50%" align="center">AFTER</th>
+      <th style="width:50%; text-align:center;">BEFORE</th>
+      <th style="width:50%; text-align:center;">AFTER</th>
     </tr>
     <tr>
-      <td width="50%">&nbsp;</td>
-      <td width="50%">&nbsp;</td>
+      <td style="width:50%;">&nbsp;</td>
+      <td style="width:50%;">&nbsp;</td>
     </tr>
     <tr>
-      <th colspan="2" align="center">Testing Summary</th>
+      <th colspan="2" style="text-align:center;">Testing Summary</th>
     </tr>
-    <tr>
-      <td width="50%">&nbsp;</td>
-      <td width="50%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="50%">&nbsp;</td>
-      <td width="50%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="50%">&nbsp;</td>
-      <td width="50%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="50%">&nbsp;</td>
-      <td width="50%">&nbsp;</td>
-    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
   </tbody>
 </table>
