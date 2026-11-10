@@ -77,9 +77,11 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
     <tr>
       <th colspan="2" style="text-align:center;">Testing Summary</th>
     </tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
-    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr>
+      <td style="width:25%;">&nbsp;</td>
+      <td style="width:25%;">&nbsp;</td>
+      <td style="width:25%;">&nbsp;</td>
+      <td style="width:25%;">&nbsp;</td>
+    </tr>
   </tbody>
 </table>
