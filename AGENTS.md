@@ -65,30 +65,28 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
     <col width="50%">
     <col width="50%">
   </colgroup>
-  <thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="center">Final Task Report</th>
+    </tr>
     <tr>
       <th width="50%" align="center">BEFORE</th>
       <th width="50%" align="center">AFTER</th>
     </tr>
-  </thead>
-  <tbody>
     <tr>
       <td width="50%">&nbsp;</td>
       <td width="50%">&nbsp;</td>
     </tr>
-  </tbody>
-</table>
-
-<table align="center" width="100%" border="1">
-  <thead>
     <tr>
-      <th align="center">Testing Summary</th>
+      <th colspan="2" align="center">Testing Summary</th>
     </tr>
-  </thead>
-  <tbody>
-    <tr><td>&nbsp;</td></tr>
-    <tr><td>&nbsp;</td></tr>
-    <tr><td>&nbsp;</td></tr>
-    <tr><td>&nbsp;</td></tr>
+    <tr>
+      <td width="50%">&nbsp;</td>
+      <td width="50%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="50%">&nbsp;</td>
+      <td width="50%">&nbsp;</td>
+    </tr>
   </tbody>
 </table>
