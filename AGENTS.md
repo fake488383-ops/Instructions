@@ -64,7 +64,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 - **Testing Summary:** Show actual tests, feature results, measured metrics, and Pass/Fail.
 - **Engineer Summary:** List actual contributors and brief contributions inline.
 - **Execution Summary:** Three equal horizontal columns: **Execution Details**, **Performance Metrics**, and **Execution Status**. Show actual build/launch details, measured resource usage, and verified Pass/Fail states only.
-- **Suggestion Summary:** Keep the suggestion content left-aligned and vertically centered in its single main content cell. The first character of the main feature name and the first character of its short description must start at exactly the same horizontal position, forming one straight vertical alignment on the left. Put the sequence number immediately before the feature name, with the number visually centered across the two text lines. Do not indent the description separately. Do not use nested tables, inner containers, separate columns, or generic hint text.
+- **Suggestion Summary:** Show exactly 8 numbered suggestions in the single main content cell. Suggestions 1–7 must each contain a main feature name and a short description explaining the feature's purpose. Suggestion 8 must be **Apply for All**. Keep each feature name and its description aligned to the same left starting position; place its sequence number in a narrow left gutter, vertically centered beside the two lines. Keep the content left-aligned. Do not use nested tables, separate columns, or generic hint text.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
@@ -119,7 +119,14 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
     <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;">
-<strong><span style="display:inline-block; width:1.1em; text-align:center; vertical-align:middle;">1.</span>[Main Feature Name]</strong><br><span style="display:inline-block; text-align:left; vertical-align:middle;">[Short Roman Urdu description]</span>
+<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">1.</span><strong>[Main Feature Name]</strong><br><span style="display:inline-block; margin-left:2em; text-align:left;">[Short description of the feature's purpose]</span><br>
+<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">2.</span><strong>[Main Feature Name]</strong><br><span style="display:inline-block; margin-left:2em; text-align:left;">[Short description of the feature's purpose]</span><br>
+<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">3.</span><strong>[Main Feature Name]</strong><br><span style="display:inline-block; margin-left:2em; text-align:left;">[Short description of the feature's purpose]</span><br>
+<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">4.</span><strong>[Main Feature Name]</strong><br><span style="display:inline-block; margin-left:2em; text-align:left;">[Short description of the feature's purpose]</span><br>
+<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">5.</span><strong>[Main Feature Name]</strong><br><span style="display:inline-block; margin-left:2em; text-align:left;">[Short description of the feature's purpose]</span><br>
+<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">6.</span><strong>[Main Feature Name]</strong><br><span style="display:inline-block; margin-left:2em; text-align:left;">[Short description of the feature's purpose]</span><br>
+<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">7.</span><strong>[Main Feature Name]</strong><br><span style="display:inline-block; margin-left:2em; text-align:left;">[Short description of the feature's purpose]</span><br>
+<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">8.</span><strong>Apply for All</strong>
     </td></tr>
   </tbody>
 </table>
