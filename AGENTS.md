@@ -61,18 +61,20 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 ## Task Final Report
 
 - **Rendering:** Generate the report directly in the final AI-agent response as one continuous standard GitHub-Flavored Markdown table. Do not put table syntax inside code blocks or quotations. Do not use HTML, CLI/ASCII, Unicode box-drawing tables, or separate report files.
-- **Unified Blueprint:** Use the title **Task Final Report** and combine all three report sections into one single Markdown table, preserving this exact order and the original section layouts inside the shared table:
+- **Unified Blueprint:** Use the title **Task Final Report** and combine all three sections into one continuous four-column Markdown table, preserving this exact order and layout:
 
-  | Section | BEFORE / Engineer / Testing Type | AFTER / Title / Testing Feature | Metric | Status |
-  |---|---|---|---|---|
-  | **BEFORE / AFTER** | **BEFORE** | **AFTER** | | |
-  | Feature | [Actual existing feature name, or Missing] | [Actual updated feature name] | | |
-  | **Engineer Summary** | **Engineer Name** | **Title / Contribution** | | |
-  | Engineer | [Exact engineer name] | [Exact discipline title and very short contribution] | | |
-  | **Testing Summary** | **Testing Type** | **Testing Feature** | **Metric** | **Status** |
-  | Testing | [Actual test type] | [Actual tested child feature] | [Measured value with unit, or —] | [Pass/Fail] |
+  | BEFORE / AFTER | | BEFORE / AFTER | |
+  |---|---|---|---|
+  | **BEFORE** | | **AFTER** | |
+  | [Actual existing feature name, or Missing] | | [Actual updated feature name] | |
+  | **Engineer Summary** | | | |
+  | **Engineer Name & Title** | | **Actual Contribution** | |
+  | [Exact engineer name and discipline title] | | [Very short actual contribution] | |
+  | **Testing Summary** | | | |
+  | **Testing Type** | **Testing Feature** | **Metric** | **Status** |
+  | [Actual test type] | [Actual tested child feature] | [Measured value with unit, or —] | [Pass/Fail] |
 
-- **Single-Table Rule:** All section headings, column headings, and data rows must remain inside this one continuous Markdown table. Do not create separate tables or separate boxed layouts. Use the Section column to distinguish Feature, Engineer, and Testing rows. Keep the original order: BEFORE / AFTER, Engineer Summary, Testing Summary.
+- **Single-Table Rule:** All headings, column headings, and data rows must remain inside this one continuous four-column Markdown table. Do not create separate tables, cards, or boxed layouts. Keep the original order: BEFORE / AFTER, Engineer Summary, Testing Summary. Leave unused cells blank; do not add extra columns.
 - **Before/After Rules:** Show actual existing and changed main feature names only. Use **Missing** only when a feature did not exist before. Do not write explanations such as added, improved, or updated in the cells.
 - **Engineer Summary Rules:** Include only actual contributing engineers from the 35-engineer **Engineering Disciplines** list. Use each exact listed name and discipline title; never invent names or include non-contributors. Keep the contribution very short.
 - **Testing Summary Rules:** Generate Testing Types dynamically from tests actually performed. List actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Show relevant measured Metrics as short real-time values with units (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); use **—** when no metric applies or is available. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates, and never mark unperformed tests as passed.
