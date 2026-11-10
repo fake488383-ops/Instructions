@@ -61,7 +61,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 ## Task Final Report
 
 - **Before/After:** Show actual existing and changed main feature names only. Use **Missing** only when the feature did not exist before.
-- **Engineer Summary:** Keep the three equal content columns under the heading, but omit their column headings. Retain the actual engineer-related content labels in each column; omit unavailable values and never invent metrics or tests.
+- **Engineer Summary:** Show each actual contributing engineer in a separate equal-width column/card. Place the engineer's name and title at the top, with a brief description of their actual contribution directly underneath. Include only engineers who contributed; do not use generic status, metric, or testing labels in place of the engineer identity and contribution.
 - **Testing Summary:** Use four columns: **Testing Type**, **Execution Details**, **Metric**, and **Status**. Populate every row dynamically from the work actually tested, executed, and measured. Do not predefine, hardcode, or repeatedly display example test names, action names, metrics, units, build modes, or outcomes. Include every relevant check and runtime measurement that was actually performed or captured. Each row must describe the real check, its actual measured value when available, and its actual result. Omit unavailable or irrelevant data; never invent values or mark unperformed checks as passed.
 - **Suggestion Summary:** Generate 7 relevant suggestions dynamically, each with a feature name and short purpose. Suggestion 8 is **Apply for All**.
 
@@ -92,9 +92,9 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
     <tr>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small>Actual Engineer Status</small></td>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small>Actual Engineer Metric</small></td>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small>Actual Engineer Testing</small></td>
+      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Actual Engineer Name — Title]</strong><br><small>[Short actual contribution: what this engineer worked on]</small></td>
+      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Actual Engineer Name — Title]</strong><br><small>[Short actual contribution: what this engineer worked on]</small></td>
+      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Actual Engineer Name — Title]</strong><br><small>[Short actual contribution: what this engineer worked on]</small></td>
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
