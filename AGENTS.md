@@ -63,7 +63,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 - **Before/After:** Show only main features missing before and added by the task.
 - **Testing Summary:** Show actual tests, feature results, measured metrics, and Pass/Fail.
 - **Engineer Summary:** List actual contributors and brief contributions inline.
-- **Execution Summary:** Use three equal horizontal columns: **Execution Details** (build/debug/launch times), **Performance Metrics** (CPU/RAM/GPU/storage), and **Execution Status** (actual Pass/Fail). Show verified values only; omit unavailable data.
+- **Execution Summary:** Three equal horizontal columns: **Execution Details**, **Performance Metrics**, and **Execution Status**. Show actual build/launch details, measured resource usage, and verified Pass/Fail states only.
+- **Suggestion Summary:** Recommend exactly 7 useful, project-specific features not already present. Each numbered item shows its feature name and a short Roman Urdu benefit description beneath it. Add **8. Apply for All** to apply all 7 suggestions when selected. Keep all 8 items in one column; generate suggestions dynamically and avoid duplicates.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
@@ -116,7 +117,15 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual CPU / RAM / GPU / Storage measurements</td>
       <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual Build / Debug / Launch / Runtime states</td>
     </tr>
-    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Next Improvements</th></tr>
-    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">&nbsp;</td></tr>
+    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small>7 naye project-specific features; har feature ke neeche short Roman Urdu benefit. #8 tamam suggestions apply karne ke liye.</small></td></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">1. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">2. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">3. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">4. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">5. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">6. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">7. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">8. **Apply for All**<br><small>Saath ke 7 features apply karne ke liye.</small></td></tr>
   </tbody>
 </table>
