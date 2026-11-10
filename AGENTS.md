@@ -93,8 +93,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
     <tr>
       <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[Short Contribution]</small></td>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Actual Engineer Name — Title]</strong><br><small>[Short actual contribution: what this engineer worked on]</small></td>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Actual Engineer Name — Title]</strong><br><small>[Short actual contribution: what this engineer worked on]</small></td>
+      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[Short Contribution]</small></td>
+      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[Short Contribution]</small></td>
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
