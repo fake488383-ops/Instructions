@@ -68,7 +68,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
 - **Evidence & Brevity:** Use concise, task-specific evidence from actual changes, test runs, measurements, engineer work, and build/launch output. No fixed values, fake/sample data, guesses, placeholders in the actual report, or duplicate rows. Keep all main topics; shorten wording, not sections.
 - **BEFORE / AFTER:** Show only each task's actual **main feature name**, using its recognized industry-standard/domain name where one exists. Choose the top-level feature explicitly requested or implemented; do not split its child features, components, or internal operations into separate rows. No descriptions or benefits. New feature: BEFORE = **MISSING**, AFTER = its exact main feature name. Updated feature: BEFORE = its previous name/version, AFTER = its latest verified name/version. Derive names and versions from project evidence; never invent or list unchanged features.
 - **ENGINEER SUMMARY:** Use one full-width table row/cell spanning all six base columns, with no separate Engineer Name or Contribution columns/rows. Define one reusable engineer-item template only: engineer name on top and that engineer's actual contribution directly underneath. Dynamically repeat that single template once per actual contributing engineer, arranged horizontally left-to-right and naturally wrapping onto additional lines as needed. Do not pre-write duplicate/sample engineer items. Keep spacing and alignment consistent; never invent engineers or contributions.
-- **TESTING SUMMARY:** Place directly below ENGINEER SUMMARY as one full-width section spanning all six base columns. Keep only the TESTING SUMMARY heading and one empty, full-width bordered box beneath it. Remove all inner headings, columns, tables, labels, and data rows; do not place any nested box or content inside the box.
+- **TESTING SUMMARY:** Place directly below ENGINEER SUMMARY as one full-width section spanning all six base columns. Beneath its heading, show exactly two equal-width, empty, side-by-side bordered boxes in one row, each spanning three base columns (50% / 50%), matching the BEFORE / AFTER two-box layout. Do not add headings, labels, tables, data rows, or nested boxes inside them.
 - **BUILD & DEVELOPMENT:** Keep **Build / Development Event** and **Result** columns. Dynamically include only events that actually ran and were verified (e.g. C++ Backend Compilation, Python Backend Initialization, QML UI Compilation, Debug/Release Build, EXE Launch). Result is **PASS** or **FAIL** only; no fixed rows or invented events.
 - **NEXT IMPROVEMENT SUGGESTIONS:** Dynamically show up to 7 distinct, actionable suggestions, each with a complete feature name and short benefit. **8. Apply for all** must execute all listed suggestions together only if the interface supports the action; check dependencies/conflicts/impact, verify each change, and report failures or blockers. Otherwise show plain text, not a fake button.
 
@@ -84,11 +84,12 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
   <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
   <tr><td colspan="6" align="center" valign="middle" style="padding:10px;">
     <div style="display:flex; flex-wrap:wrap; justify-content:space-around; align-items:stretch; gap:12px; width:100%;">
-      <div style="flex:1 1 160px; min-width:0; text-align:center; padding:8px;"><strong>[Engineer Name]</strong><br>[Actual Contribution]</div>
-    </div>
-  </td></tr>
-  <tr><th colspan="6" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
-  <tr><td colspan="6" align="center" valign="middle" style="height:36px; padding:12px; border:1px solid #888;"></td></tr>
+      <div style="flex:1 1 160px; min-width:0; text-align:center; padding:8px;"><strong>[Engineer Name]</strong><br><tr><th colspan="6" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
+  <tr>
+    <td colspan="3" align="center" valign="middle" style="width:50%; height:36px; padding:12px; border:1px solid #888;"></td>
+    <td colspan="3" align="center" valign="middle" style="width:50%; height:36px; padding:12px; border:1px solid #888;"></td>
+  </tr>
+6px; padding:12px; border:1px solid #888;"></td></tr>
   <tr><th colspan="6" align="center">BUILD &amp; DEVELOPMENT</th></tr>
   <tr><th colspan="3" align="center">Build / Development Event</th><th colspan="3" align="center">Result</th></tr>
   <tr><td colspan="3" align="center">[Actual verified event]</td><td colspan="3" align="center">[PASS / FAIL]</td></tr>
