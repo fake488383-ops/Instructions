@@ -62,7 +62,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 
 - **Before/After:** Show only main feature names. Before: **Missing** if absent; otherwise the existing feature name. After: added feature name only.
 - **Testing Summary:** Show actual testing type names; child-level checks under Feature Test; numeric metrics with units only; and **Pass/Fail** status.
-- **Engineer Summary:** Show each actual engineer horizontally, with name above a brief contribution.
+- **Engineer Summary:** Show only each engineer's name and what they worked on, arranged horizontally.
 - **Execution Summary:** Keep three equal horizontal columns. Execution Details: completed action names only (e.g. Build, Launch, File Created). Performance Metrics: measured numbers with units only. Execution Status: **Pass/Fail** only, without action titles.
 - **Suggestion Summary:** Generate 7 suggestions with a feature name and short purpose; suggestion 8 is **Apply for All**. Keep only hint 1 in the template; generate the rest dynamically.
 
@@ -105,7 +105,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Pass / Fail Only</small></td>
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
-    <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;"><span style="display:inline-block; vertical-align:top; margin:6px 18px 6px 0;"><strong>[Engineer Name]</strong><br><small>[Brief Contribution]</small></span><span style="display:inline-block; vertical-align:top; margin:6px 18px 6px 0;"><strong>[Next Engineer]</strong><br><small>[Brief Contribution]</small></span></td></tr>
+    <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;"><span style="display:inline-block; vertical-align:top; margin:6px 18px 6px 0;"><strong>[Engineer Name]</strong><br>[What this engineer worked on]</span></td></tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Summary</th></tr>
     <tr>
       <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Details</th>
