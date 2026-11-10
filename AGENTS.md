@@ -65,7 +65,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 
 - **Before/After:** Show actual existing and changed main feature names only. Use **Missing** only when the feature did not exist before.
 - **Engineer Summary:** Show each contributing engineer in a separate equal-width card. Display **Engineer Name — Title** and one very short contribution stating the single task handled. Keep it to one brief line; avoid explanations and extra details.
-- **Testing Summary:** Use four columns: **Testing Type**, **Testing Feature**, **Metric**, and **Status**. Generate Testing Types dynamically from tests actually performed. Under Testing Feature, show the actual child-feature names of features listed in After, only when tested. Generate all entries and rows dynamically; avoid fixed lists and duplicates, omit unavailable metrics, and never mark unperformed tests as passed.
+- **Testing Summary:** Use four columns: **Testing Type**, **Testing Feature**, **Metric**, and **Status**. Generate Testing Types dynamically from tests actually performed. Under Testing Feature, show actual tested child-feature names from features listed in After. Show each feature's relevant, measured Metric as a short real-time value with its unit (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); omit unavailable metrics. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates, and never mark unperformed tests as passed.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
