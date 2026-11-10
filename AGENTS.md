@@ -68,7 +68,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
 - **Evidence & Brevity:** Use concise, task-specific evidence from actual changes, test runs, measurements, engineer work, and build/launch output. No fixed values, fake/sample data, guesses, placeholders in the actual report, or duplicate rows. Keep all main topics; shorten wording, not sections.
 - **BEFORE / AFTER:** Show only each task's actual **main feature name**, using its recognized industry-standard/domain name where one exists. Choose the top-level feature explicitly requested or implemented; do not split its child features, components, or internal operations into separate rows. No descriptions or benefits. New feature: BEFORE = **MISSING**, AFTER = its exact main feature name. Updated feature: BEFORE = its previous name/version, AFTER = its latest verified name/version. Derive names and versions from project evidence; never invent or list unchanged features.
 - **ENGINEER SUMMARY:** Use one full-width table row/cell spanning all six base columns, with no separate Engineer Name or Contribution columns/rows. Define one reusable engineer-item template only: engineer name on top and that engineer's actual contribution directly underneath. Dynamically repeat that single template once per actual contributing engineer, arranged horizontally left-to-right and naturally wrapping onto additional lines as needed. Do not pre-write duplicate/sample engineer items. Keep spacing and alignment consistent; never invent engineers or contributions.
-- **TESTING SUMMARY:** Place directly below ENGINEER SUMMARY as a single full-width column spanning all six base columns, containing exactly four rows. Populate rows dynamically with concise, distinct testing findings supported by actual verification; do not show test-count, passed-count, failed-count, or blocked-count metrics, and do not add duplicate or placeholder rows.
+- **TESTING SUMMARY:** Place directly below ENGINEER SUMMARY as one full-width bordered box spanning all six base columns. Inside that single box, show exactly four plain text rows, without separate borders, cells, or boxes for each row. Populate them dynamically with concise, distinct testing findings supported by actual verification; do not show test-count, passed-count, failed-count, or blocked-count metrics, and do not add duplicate or placeholder rows.
 - **BUILD & DEVELOPMENT:** Keep **Build / Development Event** and **Result** columns. Dynamically include only events that actually ran and were verified (e.g. C++ Backend Compilation, Python Backend Initialization, QML UI Compilation, Debug/Release Build, EXE Launch). Result is **PASS** or **FAIL** only; no fixed rows or invented events.
 - **NEXT IMPROVEMENT SUGGESTIONS:** Dynamically show up to 7 distinct, actionable suggestions, each with a complete feature name and short benefit. **8. Apply for all** must execute all listed suggestions together only if the interface supports the action; check dependencies/conflicts/impact, verify each change, and report failures or blockers. Otherwise show plain text, not a fake button.
 
@@ -88,13 +88,13 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
     </div>
   </td></tr>
   <tr><th colspan="6" align="center" style="padding:10px; border:1px solid #888;">TESTING SUMMARY</th></tr>
-  <tr><td colspan="6" align="center" valign="middle" style="padding:0; border:1px solid #888;">
-    <table width="100%" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
-      <tr><td align="center" valign="middle" style="padding:10px; border-bottom:1px solid #888;">[Actual testing finding 1]</td></tr>
-      <tr><td align="center" valign="middle" style="padding:10px; border-bottom:1px solid #888;">[Actual testing finding 2]</td></tr>
-      <tr><td align="center" valign="middle" style="padding:10px; border-bottom:1px solid #888;">[Actual testing finding 3]</td></tr>
-      <tr><td align="center" valign="middle" style="padding:10px;">[Actual testing finding 4]</td></tr>
-    </table>
+  <tr><td colspan="6" align="center" valign="middle" style="padding:10px; border:1px solid #888;">
+    <div style="width:100%; text-align:center; line-height:1.8;">
+      <div>[Actual testing finding 1]</div>
+      <div>[Actual testing finding 2]</div>
+      <div>[Actual testing finding 3]</div>
+      <div>[Actual testing finding 4]</div>
+    </div>
   </td></tr>
   <tr><th colspan="6" align="center">BUILD &amp; DEVELOPMENT</th></tr>
   <tr><th colspan="3" align="center">Build / Development Event</th><th colspan="3" align="center">Result</th></tr>
