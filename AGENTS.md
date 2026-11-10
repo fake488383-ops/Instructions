@@ -63,15 +63,15 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 
 ## 5 Task Final Report
 
-- **Trigger:** Generate only for completed, failed, or blocked workspace tasks; skip planning, discussion, and read-only reviews.
-- **Layout:** Use plain Markdown headings and Markdown tables exactly like the blueprint. No HTML tables, CSS, cards, individual boxes, nested tables, or alternate layouts. Preserve the same table structure and column order.
-- **Rows & Dividers:** Use a Markdown header separator and a separate Markdown row for every entry. Never merge rows or omit separator lines. Add rows vertically; do not change the columns.
-- **Evidence:** Use verified task evidence only. Label demo data **DEMO / SIMULATED**; never present it as actual implementation, testing, or execution.
-- **BEFORE / AFTER:** Keep the two-column table. Show existing feature names or **MISSING** under BEFORE and added/improved feature names under AFTER.
-- **ENGINEER SUMMARY:** Use only the two-column **Engineer | Contribution** Markdown table. One actual contributor per row; plain text cells, no boxes or cards.
-- **TESTING SUMMARY:** Use **Testing Type | Feature Test | Metrics | Status**. One actual test per row; keep visible Markdown row dividers; include units and PASS/FAIL only for tests actually run.
-- **EXECUTION SUMMARY:** Use **Execution Check | Performance | Result**. One observed event per row; keep visible Markdown row dividers and center the Performance column using Markdown alignment. Do not repeat Testing Summary metrics. Keep debugging/fixes before Final Build, EXE Generation, and EXE Launch, in that order.
-- **NEXT IMPROVEMENT SUGGESTIONS:** Use **No. | Feature / Benefit**. In each cell, put the bold feature heading first and its short description directly underneath using a line break. Keep both on separate lines, never side by side. List 10 suggestions, then **Apply for All** as item 11.
+- **Trigger:** Generate for completed, failed, or blocked workspace tasks; skip planning, discussion, and read-only reviews.
+- **Format:** Use standard Markdown tables only, matching the visible table style below. Do not use HTML tables, CSS layouts, cards, bordered boxes, or nested boxes.
+- **Dynamic Rows:** Add Markdown table rows as needed. Keep column headings and order consistent; use normal Markdown row separators so every row is visibly divided.
+- **Evidence:** Use verified task data only. Clearly label simulated/demo data; never present it as actual implementation, testing, or execution.
+- **BEFORE / AFTER:** Keep two side-by-side columns. Show existing feature names or **MISSING** under BEFORE and added/improved feature names under AFTER.
+- **ENGINEER SUMMARY:** Use a simple two-column Markdown table (**Engineer**, **Contribution**). One contributor per row; no individual boxes.
+- **TESTING SUMMARY:** Use **Testing Type**, **Feature Test**, **Metrics**, **Status**. One test per row; include units and PASS/FAIL only for tests actually run.
+- **EXECUTION SUMMARY:** Use **Execution Check**, **Performance**, **Result**. One observed event per row; center Performance where supported. Do not repeat Testing Summary metrics. Keep debugging/fixes before Final Build, EXE Generation, and EXE Launch, in that order.
+- **NEXT IMPROVEMENT SUGGESTIONS:** Use **No.** and **Feature / Benefit** columns. Put each feature name in **bold** and its short description on the next line in the same cell. List 10 suggestions, then **Apply for All** as item 11.
 
 ### TASK FINAL REPORT — Markdown Blueprint
 
@@ -96,7 +96,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 **EXECUTION SUMMARY**
 
 | Execution Check | Performance | Result |
-|---|:---:|---|
+|---|---|---|
 | [Observed execution check] | [Measured value and unit, if available] | [Actual result] |
 
 **NEXT IMPROVEMENT SUGGESTIONS**
