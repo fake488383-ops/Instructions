@@ -74,12 +74,12 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
   <tbody>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Final Task Report</th></tr>
     <tr>
-      <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">BEFORE<br><small>Dynamic: project features/components missing before this task</small></th>
-      <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER<br><small>Dynamic: features/components actually added by this task</small></th>
+      <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">BEFORE</th>
+      <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER</th>
     </tr>
     <tr>
-      <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">&nbsp;</td>
-      <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">&nbsp;</td>
+      <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small>Dynamic: yahan task se pehle project mein jo relevant features/components missing hon, woh automatically list honge.</small></td>
+      <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small>Dynamic: yahan is task ke dauran waqai add kiye gaye features/components automatically list honge.</small></td>
     </tr>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
