@@ -60,11 +60,10 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 
 ## Task Completion Report
 
-- **Before/After:** Show only dynamic main feature names. BEFORE lists relevant features missing before the task; AFTER lists features actually added by the task.
-- **Testing Summary:** Show only real, executed test types, feature test results, measured metrics, and actual Pass/Fail statuses. Generate every value dynamically; never show examples or placeholders.
-- **Engineer Summary:** List each contributing engineer inline as **Discipline Title** — short contribution, followed by a comma and the next engineer. Keep all entries in one continuous horizontal text flow; wrap naturally only when the row reaches its width. Never stack engineers in separate blocks or columns.
-- **Execution Summary:** Display exactly three equal-width columns side by side in one horizontal header row: **Execution Details**, **Performance Metrics**, and **Execution Status**, matching the horizontal Testing Summary columns. Keep Execution Details on the left, Performance Metrics in the center, and Execution Status on the right. Put their dynamic content directly beneath the corresponding heading in one content row; do not stack these categories vertically. Execution covers actual build duration and application execution time; Metrics covers measured CPU, RAM, GPU, and storage usage; Status covers actual build, debug, application launch, and runtime states. Show only values genuinely measured or verified; omit unavailable metrics and never invent results.
-- **Alignment:** Center every report element from left to right, including all headings, dynamic hints, values, labels, and content in every table cell. Apply centered alignment to both the cell and its inner text; no report content may be left-aligned or right-aligned.
+- **Before/After:** Show only main features missing before and added by the task.
+- **Testing Summary:** Show actual tests, feature results, measured metrics, and Pass/Fail.
+- **Engineer Summary:** List actual contributors and brief contributions inline.
+- **Execution Summary:** Use three equal horizontal columns: **Execution Details** (build/debug/launch times), **Performance Metrics** (CPU/RAM/GPU/storage), and **Execution Status** (actual Pass/Fail). Show verified values only; omit unavailable data.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
