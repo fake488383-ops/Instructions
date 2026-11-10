@@ -119,12 +119,9 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
     <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">
-      <table align="center" style="margin:0 auto; border-collapse:collapse; text-align:left;">
-        <tr>
-          <td rowspan="2" style="padding:4px 12px 4px 4px; text-align:left; vertical-align:middle;"><strong>1.</strong></td>
-          <td style="padding:2px 4px; text-align:left;"><strong>[Main Feature Name]</strong><br>[Short Roman Urdu description]</td>
-        </tr>
-      </table>
+<div style="display:flex; align-items:center; justify-content:center; gap:12px; text-align:left;">
+        <strong>1.</strong> <strong>[Main Feature Name]</strong><br>[Short Roman Urdu description]
+      </div>
     </td></tr>
   </tbody>
 </table>
