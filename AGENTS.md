@@ -64,28 +64,28 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 ## 5 Task Final Report
 
 - **Trigger:** Generate for completed, failed, or blocked tasks; skip planning and read-only reviews.
-- **One-Table Rule:** Every VS Code extension agent must render the complete report inside the single unified HTML table below, directly in its response. Never move report data outside the table or replace it with separate tables, cards, or plain text.
-- **Data:** Use verified task information only. Add table rows for every item; never combine multiple items into one cell or show template placeholders.
-- **BEFORE / AFTER:** Keep two equal columns. Put one feature per row; add another row for each additional feature. Pair corresponding Before/After items on the same row where possible.
-- **ENGINEER SUMMARY:** Use three equal columns. Each cell contains one engineer name in bold and that engineer's contribution beneath it. Fill left to right; engineers 4, 5, and 6 go directly below engineers 1, 2, and 3. Continue the same pattern for all contributors.
+- **One-Table Rule:** Every VS Code extension agent must render the complete report inside the single unified table below, directly in its response. Never put report data outside it or replace it with separate tables, cards, or plain text.
+- **Data:** Use verified task information only. Add a new row for every item; never combine multiple items in one cell or show template placeholders.
+- **BEFORE / AFTER:** Keep two equal-width columns. Show one feature per row; add rows for additional features, pairing corresponding Before/After items on the same row where possible.
+- **ENGINEER SUMMARY:** Show exactly three equal-width engineer cells per row. Each cell contains one bold engineer name and its contribution beneath it. Fill left to right; contributors 4, 5, and 6 go directly below contributors 1, 2, and 3 respectively. Continue this three-column pattern.
 - **TESTING SUMMARY:** Keep four columns: **Testing Type**, **Feature Test**, **Metrics**, **Status**. Add one row per actual test.
-- **EXECUTION SUMMARY:** Keep three columns: **Execution Check**, **Performance**, **Result**. Add one row per observed event; keep debugging/fixes before Final Build, EXE Generation, and EXE Launch, in that order. Do not repeat testing metrics.
-- **NEXT IMPROVEMENT SUGGESTIONS:** Add one full-width row per suggestion. Put the feature name in bold and its short benefit directly beneath it. List 10 suggestions and **Apply for All** as item 11.
-- **Table Integrity:** Use simple equal-width grid columns, visible borders on every cell, consistent padding, and centered headings/data. Do not use nested tables, nested boxes, fixed pixel widths, 20 tiny columns, or complex inline sizing. Let rows grow vertically while keeping the table structure consistent.
+- **EXECUTION SUMMARY:** Keep three equal-width columns: **Execution Check**, **Performance**, **Result**. Add one row per observed event; list debugging/fixes before Final Build, EXE Generation, and EXE Launch, in that order. Do not repeat testing metrics.
+- **NEXT IMPROVEMENT SUGGESTIONS:** Add one full-width row per suggestion. Put the bold feature name first and its short benefit directly beneath it. List 10 suggestions and **Apply for All** as item 11.
+- **Table Integrity:** Use one 12-column grid with visible borders on every cell, consistent padding, and centered content. Use colspan to preserve each section's stated column layout. No nested tables/boxes, fixed pixel widths, 20 tiny columns, or complex inline sizing. Let rows grow vertically without changing the grid.
 
 <p align="center"><strong>TASK FINAL REPORT</strong></p>
 
 <table width="100%" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center;">
-  <tr><th colspan="2" style="border:1px solid currentColor; padding:8px;">BEFORE</th><th colspan="2" style="border:1px solid currentColor; padding:8px;">AFTER</th></tr>
-  <tr><td colspan="2" style="border:1px solid currentColor; padding:8px;">[One existing feature or MISSING]</td><td colspan="2" style="border:1px solid currentColor; padding:8px;">[One added or improved feature]</td></tr>
-  <tr><th colspan="4" style="border:1px solid currentColor; padding:8px;">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="1" style="border:1px solid currentColor; padding:8px;"><strong>[Engineer 1]</strong><br>[Contribution]</td><td colspan="1" style="border:1px solid currentColor; padding:8px;"><strong>[Engineer 2]</strong><br>[Contribution]</td><td colspan="1" style="border:1px solid currentColor; padding:8px;"><strong>[Engineer 3]</strong><br>[Contribution]</td><td colspan="1" style="border:1px solid currentColor; padding:8px;"><strong>[Engineer 4]</strong><br>[Contribution]</td></tr>
-  <tr><th colspan="4" style="border:1px solid currentColor; padding:8px;">TESTING SUMMARY</th></tr>
-  <tr><th style="border:1px solid currentColor; padding:8px;">Testing Type</th><th style="border:1px solid currentColor; padding:8px;">Feature Test</th><th style="border:1px solid currentColor; padding:8px;">Metrics</th><th style="border:1px solid currentColor; padding:8px;">Status</th></tr>
-  <tr><td style="border:1px solid currentColor; padding:8px;">[Test type]</td><td style="border:1px solid currentColor; padding:8px;">[One tested feature]</td><td style="border:1px solid currentColor; padding:8px;">[Measured value and unit]</td><td style="border:1px solid currentColor; padding:8px;">[PASS/FAIL]</td></tr>
-  <tr><th colspan="4" style="border:1px solid currentColor; padding:8px;">EXECUTION SUMMARY</th></tr>
-  <tr><th colspan="1" style="border:1px solid currentColor; padding:8px;">Execution Check</th><th colspan="1" style="border:1px solid currentColor; padding:8px;">Performance</th><th colspan="2" style="border:1px solid currentColor; padding:8px;">Result</th></tr>
-  <tr><td style="border:1px solid currentColor; padding:8px;">[Observed check]</td><td style="border:1px solid currentColor; padding:8px;">[Measured value and unit]</td><td colspan="2" style="border:1px solid currentColor; padding:8px;">[Actual result]</td></tr>
-  <tr><th colspan="4" style="border:1px solid currentColor; padding:8px;">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td colspan="4" style="border:1px solid currentColor; padding:8px;"><strong>1. [Feature name]</strong><br>[Short benefit]</td></tr>
+  <tr><th colspan="6" style="border:1px solid currentColor; padding:8px;">BEFORE</th><th colspan="6" style="border:1px solid currentColor; padding:8px;">AFTER</th></tr>
+  <tr><td colspan="6" style="border:1px solid currentColor; padding:8px;">[One existing feature or MISSING]</td><td colspan="6" style="border:1px solid currentColor; padding:8px;">[One added or improved feature]</td></tr>
+  <tr><th colspan="12" style="border:1px solid currentColor; padding:8px;">ENGINEER SUMMARY</th></tr>
+  <tr><td colspan="4" style="border:1px solid currentColor; padding:8px;"><strong>[Engineer 1]</strong><br>[Contribution]</td><td colspan="4" style="border:1px solid currentColor; padding:8px;"><strong>[Engineer 2]</strong><br>[Contribution]</td><td colspan="4" style="border:1px solid currentColor; padding:8px;"><strong>[Engineer 3]</strong><br>[Contribution]</td></tr>
+  <tr><th colspan="12" style="border:1px solid currentColor; padding:8px;">TESTING SUMMARY</th></tr>
+  <tr><th colspan="3" style="border:1px solid currentColor; padding:8px;">Testing Type</th><th colspan="3" style="border:1px solid currentColor; padding:8px;">Feature Test</th><th colspan="3" style="border:1px solid currentColor; padding:8px;">Metrics</th><th colspan="3" style="border:1px solid currentColor; padding:8px;">Status</th></tr>
+  <tr><td colspan="3" style="border:1px solid currentColor; padding:8px;">[Test type]</td><td colspan="3" style="border:1px solid currentColor; padding:8px;">[One tested feature]</td><td colspan="3" style="border:1px solid currentColor; padding:8px;">[Measured value and unit]</td><td colspan="3" style="border:1px solid currentColor; padding:8px;">[PASS/FAIL]</td></tr>
+  <tr><th colspan="12" style="border:1px solid currentColor; padding:8px;">EXECUTION SUMMARY</th></tr>
+  <tr><th colspan="4" style="border:1px solid currentColor; padding:8px;">Execution Check</th><th colspan="4" style="border:1px solid currentColor; padding:8px;">Performance</th><th colspan="4" style="border:1px solid currentColor; padding:8px;">Result</th></tr>
+  <tr><td colspan="4" style="border:1px solid currentColor; padding:8px;">[Observed check]</td><td colspan="4" style="border:1px solid currentColor; padding:8px;">[Measured value and unit]</td><td colspan="4" style="border:1px solid currentColor; padding:8px;">[Actual result]</td></tr>
+  <tr><th colspan="12" style="border:1px solid currentColor; padding:8px;">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
+  <tr><td colspan="12" style="border:1px solid currentColor; padding:8px;"><strong>1. [Feature name]</strong><br>[Short benefit]</td></tr>
 </table>
