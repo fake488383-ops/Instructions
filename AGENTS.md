@@ -61,10 +61,20 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
 ### Before / After Comparison
 
 <table width="100%">
+  <colgroup>
+    <col width="50%">
+    <col width="50%">
+  </colgroup>
   <thead>
-    <tr><th>BEFORE</th><th>AFTER</th></tr>
+    <tr>
+      <th align="center">BEFORE</th>
+      <th align="center">AFTER</th>
+    </tr>
   </thead>
   <tbody>
-    <tr><td></td><td></td></tr>
+    <tr>
+      <td width="50%"></td>
+      <td width="50%"></td>
+    </tr>
   </tbody>
 </table>
