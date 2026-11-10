@@ -63,47 +63,27 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
 
 ## 5 Task Final Report
 
-- **When to Report:** Show after each completed or attempted workspace task, including failed or blocked work. Skip discussion, planning, advice, and read-only review.
-- **Layout:** Keep only the five report sections shown in the HTML table below, in their existing order and grouping: BEFORE / AFTER, ENGINEER SUMMARY, TESTING SUMMARY, BUILD & DEVELOPMENT, and NEXT IMPROVEMENT SUGGESTIONS. Do not add ISSUES & RESOLUTION, FILES CHANGED, or PENDING ITEMS tables/sections. Generate rows and values dynamically from the current task. Use a twelve-column Markdown fallback only if HTML tables are unsupported. Keep the entire table on a fixed twelve-column grid with twelve equal-width base columns. Use six base columns per side for every two-column section so the divider is exactly centered at 50%. Apply equal column widths, consistent cell padding/row spacing, centered alignment, middle vertical alignment, and consistent borders throughout. Content wrapping must never change column widths.
-- **Evidence & Brevity:** Use concise, task-specific evidence from actual changes, test runs, measurements, engineer work, and build/launch output. No fixed values, fake/sample data, guesses, placeholders in the actual report, or duplicate rows. Keep all main topics; shorten wording, not sections.
-- **BEFORE / AFTER:** Show only each task's actual **main feature name**, using its recognized industry-standard/domain name where one exists. Choose the top-level feature explicitly requested or implemented; do not split its child features, components, or internal operations into separate rows. No descriptions or benefits. New feature: BEFORE = **MISSING**, AFTER = its exact main feature name. Updated feature: BEFORE = its previous name/version, AFTER = its latest verified name/version. Derive names and versions from project evidence; never invent or list unchanged features.
-- **ENGINEER SUMMARY:** Use one full-width table row/cell spanning all twelve base columns, with no separate Engineer Name or Contribution columns/rows. Define one reusable engineer-item template only: engineer name on top and that engineer's actual contribution directly underneath. Dynamically repeat that single template once per actual contributing engineer, arranged horizontally left-to-right and naturally wrapping onto additional lines as needed. Do not pre-write duplicate/sample engineer items. Keep spacing and alignment consistent; never invent engineers or contributions.
-- **TESTING SUMMARY:** Place directly below ENGINEER SUMMARY as one full-width section spanning all twelve base columns. Use exactly four equal-width columns, each spanning three base columns (25% each), with these headings in order: **Testing Type**, **Feature Test**, **Metrics**, and **Status**. Dynamically add one row per actual test result: identify the test category/type; name the parent feature and the specific child features/components tested; show measured performance values with units (e.g. load time in ms or seconds) only when actually measured; and show **PASS** or **FAIL** based on the verified result. Never invent tests, child features, timings, metrics, or statuses. If no test ran, show the headings without fabricated result rows.
-- **BUILD & DEVELOPMENT:** Keep **Build / Development Event** and **Result** columns. Dynamically include only events that actually ran and were verified (e.g. C++ Backend Compilation, Python Backend Initialization, QML UI Compilation, Debug/Release Build, EXE Launch). Result is **PASS** or **FAIL** only; no fixed rows or invented events.
-- **NEXT IMPROVEMENT SUGGESTIONS:** Dynamically show up to 7 distinct, actionable suggestions, each with a complete feature name and short benefit. **8. Apply for all** must execute all listed suggestions together only if the interface supports the action; check dependencies/conflicts/impact, verify each change, and report failures or blockers. Otherwise show plain text, not a fake button.
+- **When to Report:** Show after each completed, failed, or blocked workspace task. Skip discussion, planning, advice, and read-only reviews.
+- **Layout:** Keep only these five sections, in order: BEFORE / AFTER, ENGINEER SUMMARY, TESTING SUMMARY, BUILD & DEVELOPMENT, NEXT IMPROVEMENT SUGGESTIONS. Use one fixed 12-column table: BEFORE / AFTER = 6 columns each; ENGINEER SUMMARY and NEXT IMPROVEMENT SUGGESTIONS = 12 columns; TESTING SUMMARY = four equal columns of 3; BUILD & DEVELOPMENT = two columns of 6. Use HTML; use the same 12-column Markdown layout only if HTML is unsupported. Keep cells compact and aligned. Do not add other sections or tables.
+- **Live Evidence:** Generate every row and value from the current task and verified workspace evidence. Never use fixed/sample values, guessed results, duplicate rows, or visible placeholders. Omit unverified claims.
+- **BEFORE / AFTER:** Show only the main feature name. For a new feature, BEFORE = MISSING and AFTER = the verified feature name. For an update, show the previous and verified current name/version. Do not list child features or add descriptions.
+- **ENGINEER SUMMARY:** In one full-width cell, show only actual contributing engineers. For each, show the engineer name with their concise, verified contribution underneath. Add no empty or sample entries.
+- **TESTING SUMMARY:** Use exactly four columns: **Testing Type**, **Feature Test**, **Metrics**, **Status**. Add one row per actual test case. Testing Type is the real method used, such as **Unit Testing**, **Integration Testing**, or **End-to-End Testing**; use other test types only when actually performed. Feature Test is the short, specific test-case name (for example, Microphone Input Test, Voice Capture Test, Speech Recognition Test, AI Response Test, or Speaker Output Test), not a long parent-feature description. Select test cases relevant to the changed feature; do not force unrelated tests. Metrics must contain only measured live results with their correct units, such as **ms**, **s**, **min**, or **%**; include multiple measures only when actually collected. Never use example numbers as report data. Status must reflect the real result: **PASS** or **FAIL**; use **BLOCKED** or **NOT RUN** only when that state genuinely applies. If no test was run, show the headings only.
+- **BUILD & DEVELOPMENT:** Use two columns: **Build / Development Event** and **Result**. Add only relevant events actually run and verified, such as compilation, integration, build, or EXE launch. Report each event separately with its real outcome; never imply a build or launch occurred when it did not.
+- **NEXT IMPROVEMENT SUGGESTIONS:** Show up to 7 distinct, actionable suggestions. Each entry contains the complete feature name and one short benefit. Do not add a fixed suggestion or a fake action button.
 
-<div align="center" style="text-align:center; margin-left:auto; margin-right:auto; padding:12px 0;">
-<p><strong>TASK FINAL REPORT</strong></p>
-</div>
-
-<div align="center">
-<table align="center" width="90%" style="width:90%; margin-left:auto; margin-right:auto; border-collapse:collapse; border-spacing:0; table-layout:fixed; text-align:center; vertical-align:middle;">
-  <colgroup><col style="width:8.3333%;"><col style="width:8.3333%;"><col style="width:8.3333%;"><col style="width:8.3333%;"><col style="width:8.3333%;"><col style="width:8.3333%;"><col style="width:8.3333%;"><col style="width:8.3333%;"><col style="width:8.3333%;"><col style="width:8.3333%;"><col style="width:8.3333%;"><col style="width:8.3335%;"></colgroup>
-  <tr><th colspan="6" align="center" style="padding:10px;">BEFORE</th><th colspan="6" align="center" style="padding:10px;">AFTER</th></tr>
-  <tr><td colspan="6" align="center" valign="middle">[Dynamic main feature name or MISSING]</td><td colspan="6" align="center" valign="middle">[Dynamic verified main feature name]</td></tr>
-  <tr><th colspan="12" align="center">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="12" align="center" valign="middle" style="padding:10px;">
-    <div style="display:flex; flex-wrap:wrap; justify-content:space-around; align-items:stretch; gap:12px; width:100%;">
-      <div style="flex:1 1 160px; min-width:0; text-align:center; padding:8px;"><strong>[Engineer Name]</strong><br>[Actual Contribution]</div>
-    </div>
-  </td></tr>
-  <tr><th colspan="12" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
-  <tr>
-    <th colspan="3" align="center" valign="middle">Testing Type</th>
-    <th colspan="3" align="center" valign="middle">Feature Test</th>
-    <th colspan="3" align="center" valign="middle">Metrics</th>
-    <th colspan="3" align="center" valign="middle">Status</th>
-  </tr>
-  <tr>
-    <td colspan="3" align="center" valign="middle">[Actual test type]</td>
-    <td colspan="3" align="center" valign="middle">[Parent feature and tested child features]</td>
-    <td colspan="3" align="center" valign="middle">[Measured value and unit, if available]</td>
-    <td colspan="3" align="center" valign="middle">[PASS / FAIL]</td>
-  </tr>
-  <tr><th colspan="12" align="center">BUILD &amp; DEVELOPMENT</th></tr>
-  <tr><th colspan="6" align="center">Build / Development Event</th><th colspan="6" align="center">Result</th></tr>
-  <tr><td colspan="6" align="center">[Actual verified event]</td><td colspan="6" align="center">[PASS / FAIL]</td></tr>
-  <tr><th colspan="12" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td colspan="12" valign="middle">1&emsp;<strong>[Dynamic complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short benefit]</td></tr>
+<table style="width:100%; table-layout:fixed; border-collapse:collapse; text-align:center;">
+  <colgroup><col span="12" style="width:8.3333%;"></colgroup>
+  <tr><th colspan="6">BEFORE</th><th colspan="6">AFTER</th></tr>
+  <tr><td colspan="6">[Dynamic verified value]</td><td colspan="6">[Dynamic verified value]</td></tr>
+  <tr><th colspan="12">ENGINEER SUMMARY</th></tr>
+  <tr><td colspan="12">[Actual contributing engineer: name and concise contribution]</td></tr>
+  <tr><th colspan="12">TESTING SUMMARY</th></tr>
+  <tr><th colspan="3">Testing Type</th><th colspan="3">Feature Test</th><th colspan="3">Metrics</th><th colspan="3">Status</th></tr>
+  <tr><td colspan="3">[Actual test method]</td><td colspan="3">[Short actual test-case name]</td><td colspan="3">[Actual measured value and unit, if measured]</td><td colspan="3">[Actual result]</td></tr>
+  <tr><th colspan="12">BUILD &amp; DEVELOPMENT</th></tr>
+  <tr><th colspan="6">Build / Development Event</th><th colspan="6">Result</th></tr>
+  <tr><td colspan="6">[Actual verified event]</td><td colspan="6">[Actual result]</td></tr>
+  <tr><th colspan="12">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
+  <tr><td colspan="12">[Dynamic suggestion: complete feature name — short benefit]</td></tr>
 </table>
-</div>
