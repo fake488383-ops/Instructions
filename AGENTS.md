@@ -61,7 +61,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 ## Task Final Report
 
 - **Before/After:** Show actual existing and changed main feature names only. Use **Missing** only when the feature did not exist before.
-- **Engineer Summary:** Show each actual contributing engineer in a separate equal-width column/card. Place **Engineer Name — Title** at the top and a short **Contribution** underneath. Include only engineers who contributed; do not use generic status, metric, or testing labels in place of the engineer identity and contribution.
+- **Engineer Summary:** Show each contributing engineer in a separate equal-width card. Display **Engineer Name — Title** and one very short contribution stating the single task handled. Keep it to one brief line; avoid explanations and extra details.
 - **Testing Summary:** Use four columns: **Testing Type**, **Testing Feature**, **Metric**, and **Status**. Populate every row dynamically from the work actually tested, executed, and measured. Do not predefine, hardcode, or repeatedly display example test names, action names, metrics, units, build modes, or outcomes. Include every relevant check and runtime measurement that was actually performed or captured. Each row must describe the real check, its actual measured value when available, and its actual result. Omit unavailable or irrelevant data; never invent values or mark unperformed checks as passed.
 - **Suggestion Summary:** Generate 7 relevant suggestions dynamically, each with a feature name and short purpose. Suggestion 8 is **Apply for All**.
 
@@ -92,9 +92,9 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
     <tr>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[Short Contribution]</small></td>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[Short Contribution]</small></td>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[Short Contribution]</small></td>
+      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[One Short Task]</small></td>
+      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[One Short Task]</small></td>
+      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[One Short Task]</small></td>
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
