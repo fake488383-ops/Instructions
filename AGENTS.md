@@ -62,7 +62,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 
 - **Before/After:** Compare with the pre-task state. BEFORE: show only Missing or the existing feature name. AFTER: show only newly added feature names.
 - **Testing Summary:** Show test categories, child-feature test names, performance metrics, and Pass or Fail. Include only tests actually run and measured results.
-- **Engineer Summary:** Show each contributing engineer's discipline title with a short contribution below it. Arrange engineer entries horizontally; wrap to the next line when space runs out.
+- **Engineer Summary:** List each contributing engineer inline as **Discipline Title** — short contribution, followed by a comma and the next engineer. Keep all entries in one continuous horizontal text flow; wrap naturally only when the row reaches its width. Never stack engineers in separate blocks or columns.
 
 <table width="100%" align="center" style="width:100%; min-width:100%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;" border="1">
   <colgroup>
@@ -95,7 +95,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <td style="width:25%; padding:12px; border:1px solid;">&nbsp;</td>
     </tr>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
-    <tr><td colspan="4" style="padding:12px; border:1px solid;"><div style="display:flex; flex-wrap:wrap; gap:16px;"><div style="flex:1 1 45%; min-width:220px;"><strong>Engineer Title</strong><br>Short contribution</div><div style="flex:1 1 45%; min-width:220px;"><strong>Engineer Title</strong><br>Short contribution</div></div></td></tr>
+    <tr><td colspan="4" style="padding:12px; border:1px solid;">&nbsp;</td></tr>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Build &amp; Development</th></tr>
     <tr>
       <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">&nbsp;</td>
