@@ -58,7 +58,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
 | 34 | QA Automation Engineer | Build and maintain automated test frameworks, scripts, UI/API/workflow regression suites, and repeatable test execution. |
 | 35 | Robotics Engineer | Integrate robot software, sensors, actuators, motion/control, navigation, and simulation; validate hardware-software behavior. |
 
-<table width="100%" style="width:100%; min-width:100%; max-width:100%; table-layout:fixed; margin:0; border-collapse:collapse; border:1px solid;" border="1">
+<table width="100%" style="width:100%; min-width:100%; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;" border="1">
   <colgroup>
     <col style="width:25%">
     <col style="width:25%">
@@ -67,43 +67,43 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
   </colgroup>
   <tbody>
     <tr>
-      <th colspan="4" style="text-align:center; border:1px solid;">Final Task Report</th>
+      <th colspan="4" style="width:100%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Final Task Report</th>
     </tr>
     <tr>
-      <th colspan="2" style="width:50%; text-align:center; border:1px solid;">BEFORE</th>
-      <th colspan="2" style="width:50%; text-align:center; border:1px solid;">AFTER</th>
+      <th colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">BEFORE</th>
+      <th colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">AFTER</th>
     </tr>
     <tr>
-      <td colspan="2" style="width:50%; border:1px solid;">&nbsp;</td>
-      <td colspan="2" style="width:50%; border:1px solid;">&nbsp;</td>
+      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; box-sizing:border-box; border:1px solid;">&nbsp;</td>
+      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; box-sizing:border-box; border:1px solid;">&nbsp;</td>
     </tr>
     <tr>
-      <th colspan="4" style="text-align:center; border:1px solid;">Testing Summary</th>
+      <th colspan="4" style="width:100%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th>
     </tr>
     <tr>
-      <th style="width:25%; text-align:center; border:1px solid;">Testing Type</th>
-      <th style="width:25%; text-align:center; border:1px solid;">Feature Test</th>
-      <th style="width:25%; text-align:center; border:1px solid;">Matrix</th>
-      <th style="width:25%; text-align:center; border:1px solid;">Status</th>
+      <th style="width:25%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Testing Type</th>
+      <th style="width:25%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Feature Test</th>
+      <th style="width:25%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Matrix</th>
+      <th style="width:25%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Status</th>
     </tr>
     <tr>
-      <th colspan="4" style="text-align:center; border:1px solid;">Engineer Summary</th>
+      <th colspan="4" style="width:100%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th>
     </tr>
     <tr>
-      <td colspan="4" style="border:1px solid;">&nbsp;</td>
+      <td colspan="4" style="width:100%; padding:12px; border:1px solid;">&nbsp;</td>
     </tr>
     <tr>
-      <th colspan="4" style="text-align:center; border:1px solid;">Build and Development</th>
+      <th colspan="4" style="width:100%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Build and Development</th>
     </tr>
     <tr>
-      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; border:1px solid;">&nbsp;</td>
-      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; border:1px solid;">&nbsp;</td>
+      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; box-sizing:border-box; border:1px solid;">&nbsp;</td>
+      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; box-sizing:border-box; border:1px solid;">&nbsp;</td>
     </tr>
     <tr>
-      <th colspan="4" style="text-align:center; border:1px solid;">Next Improvement Suggestion</th>
+      <th colspan="4" style="width:100%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Next Improvement Suggestion</th>
     </tr>
     <tr>
-      <td colspan="4" style="border:1px solid;">&nbsp;</td>
+      <td colspan="4" style="width:100%; padding:12px; border:1px solid;">&nbsp;</td>
     </tr>
   </tbody>
 </table>
