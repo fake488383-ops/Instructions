@@ -61,7 +61,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 ## Task Final Report
 
 - **Before/After:** Show actual existing and changed main feature names only. Use **Missing** only when the feature did not exist before.
-- **Engineer Summary:** Show each contributing engineer in a separate equal-width card. Display **Engineer Name — Title** and one very short contribution stating the single task handled. Keep it to one brief line; avoid explanations and extra details.
+- **Engineer Summary:** Show only the actual contributing engineers selected from the 35-engineer **Engineering Disciplines** list. Use each engineer's exact listed name and discipline title; never invent or use generic names/titles. Show each in a separate equal-width card with one very short contribution. Include no engineer who did not work on the task.
 - **Testing Summary:** Use four columns: **Testing Type**, **Testing Feature**, **Metric**, and **Status**. Generate Testing Types dynamically from tests actually performed. Under Testing Feature, list actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Show relevant, measured Metrics as short real-time values with units (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); omit unavailable metrics. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates, and never mark unperformed tests as passed.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
