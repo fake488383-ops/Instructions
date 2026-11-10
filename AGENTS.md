@@ -63,6 +63,14 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 
 ## 5 Task Final Report
 
+- **Always Generate:** After every project task, show the report using this exact unified table blueprint. Keep all report information inside the table; add rows when needed.
+- **BEFORE / AFTER:** BEFORE shows relevant features already present or marked **MISSING**. AFTER shows features added or improved by this task.
+- **ENGINEER SUMMARY:** Include only actual contributors from the 35 disciplines. Each box contains the engineer's complete title and a short contribution beneath it.
+- **TESTING SUMMARY:** Testing Type lists actual test types (e.g. Unit, Integration, End-to-End); Feature Test lists the tested child feature/behavior; Metrics shows measured timing, duration, or load performance in concise units (e.g. ms, sec, min); Status is **PASS** or **FAIL**. Add a row for each test.
+- **EXECUTION SUMMARY:** Execution Check lists actual checks/artifacts (e.g. EXE Build, Debug Build, EXE Size, CPU, RAM, Startup Time); Performance shows the corresponding measured value; Result is **PASS** or **FAIL**. Add rows for each applicable check.
+- **NEXT IMPROVEMENT SUGGESTIONS:** Show exactly 10 numbered suggestions, each with a short feature title and benefit description. Item **11. APPLY FOR ALL** applies all 10; selecting 1–10 applies only the selected suggestion numbers. Do not apply suggestions unless the user selects them.
+- **Evidence Only:** Use actual project state, contributors, test outcomes, and measured metrics. Never invent results; mark unperformed checks clearly as **NOT TESTED**.
+
 <p align="center"><strong>TASK FINAL REPORT</strong></p>
 
 <table align="center" width="100%" style="display:table; width:100%; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border-spacing:0; text-align:center !important;">
