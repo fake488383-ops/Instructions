@@ -63,47 +63,31 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 
 ## 5 Task Final Report
 
-- **Trigger:** Generate only for completed, failed, or blocked tasks; skip planning and read-only reviews.
-- **Preserve the Existing Report Arrangement:** Keep the report sections as distinct table boxes in their existing order: BEFORE / AFTER, ENGINEER SUMMARY, TESTING SUMMARY, EXECUTION SUMMARY, and NEXT IMPROVEMENT SUGGESTIONS. Do not combine every section into one giant table or one enclosing box. Keep the established column structure and information hierarchy within each section.
-- **Markdown Table Rendering:** Render each section as a normal Markdown pipe table in the agent response. Use standard Markdown header and separator rows; use `:---:` for centered columns. Do not output raw markup, code fences around tables, CSS, inline styles, HTML tags, or decorative underline/ASCII borders. Do not change the report into cards, oversized boxes, or plain-text layouts.
-- **Consistent Layout:** Preserve the established section order, headings, columns, and compact table appearance. Keep each section's own table separate from the next section. Do not add a new outer table around all sections. Add rows within the relevant section as data grows.
-- **Verified Data:** Use actual task evidence only. Never invent values, contributors, metrics, results, or tests. Never show template placeholders in a real report. If a check was not performed, state **NOT TESTED**; if blocked, state **BLOCKED**.
-- **BEFORE / AFTER:** Show only the main feature names that were changed. No descriptions, explanations, child features, or extra wording in these cells. Use **MISSING** in Before only when the feature did not previously exist. Add one row per changed main feature.
-- **ENGINEER SUMMARY:** Preserve the established three-column arrangement. Show each actual contributing engineer's name in bold with one short contribution directly beneath it. Keep contributions brief; no long explanations. Fill cells left to right and add rows for further contributors.
-- **TESTING SUMMARY:** Use four centered columns: **Testing Type**, **Feature Test**, **Metrics**, **Status**. Testing Type contains the actual test category. Feature Test contains only the short name of the tested child feature/sub-feature, not a long description. Metrics contains only the measured value and unit, when measured. Status contains the actual result.
-- **EXECUTION SUMMARY:** Use three centered columns: **Execution Check**, **Performance**, **Result**. Use short check names, concise measured performance values with units, and short actual result/status words. Include only observed events. Keep debugging/fixes before Final Build, EXE Generation, and EXE Launch, in that order. Do not repeat testing metrics.
-- **NEXT IMPROVEMENT SUGGESTIONS:** Keep this as its own full-width section/table. Each row contains a bold short feature name followed by a brief benefit. Include up to 10 evidence-based suggestions and **Apply for All** as item 11 only when applicable; do not invent suggestions to fill a quota.
-- **Center Alignment:** Center every section heading and every table heading/value, including all entries under Testing Type, Feature Test, Metrics, Status, Execution Check, Performance, and Result. Apply Markdown center alignment (`:---:`) to every column. Keep wrapped text centered.
-- **Expansion Rule:** Add rows only to the relevant section as needed. Keep labels and cell contents concise; do not compress, merge sections, or create oversized boxes.
+- **Trigger:** Generate for completed, failed, or blocked tasks; skip planning and read-only reviews.
+- **Fixed Original Layout:** Preserve the original large, full-width 20-column report layout below. Do not reduce its width, column count, proportions, spacing, typography, styling, or section arrangement. Keep the same layout; only add rows as data grows.
+- **One-Table Rule:** Every VS Code extension agent must render the complete report inside this single unified table, directly in its response. Never put report information outside the table or replace it with separate tables, cards, or plain text.
+- **Verified Data:** Use actual task evidence only. Never show template placeholders, invented values, or unperformed tests.
+- **BEFORE / AFTER:** Keep the original 50% / 50% side-by-side columns. Show one feature per row in each side; add a new row for every additional feature. Do not place multiple features in one cell.
+- **ENGINEER SUMMARY:** Preserve the original three-column proportions (35% / 30% / 35%) and large cell dimensions. Show one engineer name in bold with that engineer's contribution directly beneath it. Fill left to right; contributors 4, 5, and 6 appear directly below contributors 1, 2, and 3. Continue with additional rows of three contributors. Do not create nested tables or shrink the cells.
+- **TESTING SUMMARY:** Preserve four equal-width columns: **Testing Type**, **Feature Test**, **Metrics**, **Status**. Add one row per actual test with visible cell borders.
+- **EXECUTION SUMMARY:** Preserve the original three-column proportions (35% / 30% / 35%): **Execution Check**, **Performance**, **Result**. Add one row per observed event. Keep debugging/fixes before Final Build, EXE Generation, and EXE Launch, in that order. Do not repeat testing metrics.
+- **NEXT IMPROVEMENT SUGGESTIONS:** Preserve the original full-width section. Add one full-width row per suggestion; show the bold feature name first and its short benefit directly beneath it. List 10 suggestions and **Apply for All** as item 11.
+- **Expansion Rule:** Increase table height by adding rows only. Never compress, resize, narrow, or rearrange the original layout to fit additional content.
 
-**TASK FINAL REPORT**
+<p align="center"><strong>TASK FINAL REPORT</strong></p>
 
-**BEFORE / AFTER**
-
-| BEFORE | AFTER |
-|:---:|:---:|
-| Main feature name | Main feature name |
-
-**ENGINEER SUMMARY**
-
-| Engineer 1 | Engineer 2 | Engineer 3 |
-|:---:|:---:|:---:|
-| Short contribution | Short contribution | Short contribution |
-
-**TESTING SUMMARY**
-
-| Testing Type | Feature Test | Metrics | Status |
-|:---:|:---:|:---:|:---:|
-| Test category | Child feature name | Measured value + unit | PASS / FAIL |
-
-**EXECUTION SUMMARY**
-
-| Execution Check | Performance | Result |
-|:---:|:---:|:---:|
-| Short check name | Measured value + unit | Actual status |
-
-**NEXT IMPROVEMENT SUGGESTIONS**
-
-| Suggestions |
-|:---:|
-| **1. Short feature name** — Brief benefit |
+<table align="center" width="100%" style="display:table; width:100%; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border-spacing:0; text-align:center;">
+  <colgroup><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"><col width="5%"></colgroup>
+  <tr><th colspan="10" width="50%" style="padding:10px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;">BEFORE</th><th colspan="10" width="50%" style="padding:10px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;">AFTER</th></tr>
+  <tr><td colspan="10" style="padding:10px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;">[One existing feature or MISSING]</td><td colspan="10" style="padding:10px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;">[One added or improved feature]</td></tr>
+  <tr><th colspan="20" style="padding:10px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;">ENGINEER SUMMARY</th></tr>
+  <tr><td colspan="7" width="35%" style="padding:12px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;"><strong>[Engineer 1]</strong><br>[Contribution]</td><td colspan="6" width="30%" style="padding:12px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;"><strong>[Engineer 2]</strong><br>[Contribution]</td><td colspan="7" width="35%" style="padding:12px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;"><strong>[Engineer 3]</strong><br>[Contribution]</td></tr>
+  <tr><th colspan="20" style="padding:10px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;">TESTING SUMMARY</th></tr>
+  <tr><th colspan="5" width="25%" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">Testing Type</th><th colspan="5" width="25%" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">Feature Test</th><th colspan="5" width="25%" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">Metrics</th><th colspan="5" width="25%" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">Status</th></tr>
+  <tr><td colspan="5" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">[Test type]</td><td colspan="5" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">[One tested feature]</td><td colspan="5" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">[Measured value and unit]</td><td colspan="5" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">[PASS/FAIL]</td></tr>
+  <tr><th colspan="20" style="padding:10px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;">EXECUTION SUMMARY</th></tr>
+  <tr><th colspan="7" width="35%" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">Execution Check</th><th colspan="6" width="30%" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">Performance</th><th colspan="7" width="35%" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">Result</th></tr>
+  <tr><td colspan="7" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">[Observed execution check]</td><td colspan="6" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">[Measured performance and unit]</td><td colspan="7" style="padding:10px 12px; text-align:center; vertical-align:middle; border:1px solid currentColor;">[Actual result]</td></tr>
+  <tr><th colspan="20" style="padding:10px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
+  <tr><td colspan="20" style="padding:10px 14px; text-align:center; vertical-align:middle; border:1px solid currentColor;"><strong>1. [Feature name]</strong><br>[Short benefit]</td></tr>
+</table>
