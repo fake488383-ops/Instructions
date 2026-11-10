@@ -95,8 +95,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
       <th colspan="4" style="text-align:center; border:1px solid;">Build and Development</th>
     </tr>
     <tr>
-      <td colspan="2" style="width:50%; border:1px solid;">&nbsp;</td>
-      <td colspan="2" style="width:50%; border:1px solid;">&nbsp;</td>
+      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; border:1px solid;">&nbsp;</td>
+      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; border:1px solid;">&nbsp;</td>
     </tr>
     <tr>
       <th colspan="4" style="text-align:center; border:1px solid;">Next Improvement Suggestion</th>
