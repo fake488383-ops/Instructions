@@ -73,6 +73,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 - **EXECUTION SUMMARY:** Preserve the original three-column proportions (35% / 30% / 35%): **Execution Check**, **Performance**, **Result**. Add one row per observed event. Keep debugging/fixes before Final Build, EXE Generation, and EXE Launch, in that order. Do not repeat testing metrics.
 - **NEXT IMPROVEMENT SUGGESTIONS:** Preserve the original full-width section. Add one full-width row per suggestion; show the bold feature name first and its short benefit directly beneath it. List 10 suggestions and **Apply for All** as item 11.
 - **Expansion Rule:** Increase table height by adding rows only. Never compress, resize, narrow, or rearrange the original layout to fit additional content.
+- **Center Alignment:** Center-align all headings and all content inside every table cell, including engineer names and contributions, execution checks, metrics, statuses, and suggestions. Apply `align="center"`, `text-align:center`, and `vertical-align:middle` to each cell; keep text centered even when content wraps.
 
 <p align="center"><strong>TASK FINAL REPORT</strong></p>
 
