@@ -105,7 +105,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     </tr>
     <tr>
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Testing</small></td>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Action Title</small></td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Feature Title</small></td>
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Value</small></td>
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Status</small></td>
     </tr>
