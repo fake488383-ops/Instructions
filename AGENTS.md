@@ -67,7 +67,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
 - **Layout:** Keep only these five sections, in order: BEFORE / AFTER, ENGINEER SUMMARY, TESTING SUMMARY, BUILD & DEVELOPMENT, NEXT IMPROVEMENT SUGGESTIONS. Use one fixed 12-column table: BEFORE / AFTER = 6 columns each; ENGINEER SUMMARY and NEXT IMPROVEMENT SUGGESTIONS = 12 columns; TESTING SUMMARY = four equal columns of 3; BUILD & DEVELOPMENT = two columns of 6. Use HTML; use the same 12-column Markdown layout only if HTML is unsupported. Keep cells compact and aligned. Do not add other sections or tables.
 - **Live Evidence:** Generate every row and value dynamically from the current task and verified workspace evidence. Never use fixed/sample values, examples, guessed results, or duplicate rows. Omit unverified claims.
 - **BEFORE / AFTER:** Show only the main feature name. For a new feature, BEFORE = MISSING and AFTER = the verified feature name. For an update, show the previous and verified current name/version. Do not list child features or add descriptions.
-- **ENGINEER SUMMARY:** In one full-width cell, show each actual contributing engineer's name above their short contribution; place entries horizontally side by side, separated by commas, wrapping naturally to the next line within the same cell. Do not use separate columns, cards, or a vertical list.
+- **ENGINEER SUMMARY:** In one full-width cell, show each actual engineer as **name + short contribution**, then a comma and the next engineer's entry. Keep entries flowing horizontally and wrap only when space runs out; no separate columns or cards.
 - **TESTING SUMMARY:** Use exactly four columns: **Testing Type**, **Feature Test**, **Metrics**, **Status**. Populate all rows dynamically from tests actually performed. Show the actual testing method, actual test-case name, measured metrics with units when available, and verified result. Do not include predefined test types, feature-test examples, sample values, or fixed rows in the instructions or report. Never invent tests, metrics, or statuses. If no test ran, show headings only.
 - **BUILD & DEVELOPMENT:** Use two columns: **Build / Development Event** and **Result**. Add only relevant events actually run and verified. Report each event with its real outcome; never imply a build or launch occurred when it did not.
 - **NEXT IMPROVEMENT SUGGESTIONS:** Show up to 7 distinct, actionable suggestions. Each entry contains the complete feature name and one short benefit. Do not add a fixed suggestion or a fake action button.
@@ -79,7 +79,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
   <tr><th colspan="6">BEFORE</th><th colspan="6">AFTER</th></tr>
   <tr><td colspan="6">[Dynamic verified value]</td><td colspan="6">[Dynamic verified value]</td></tr>
   <tr><th colspan="12">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="12">[Engineer Name]<br>[Short contribution], [Engineer Name]<br>[Short contribution], [Engineer Name]<br>[Short contribution]</td></tr>
+  <tr><td colspan="12">[Engineer Name — Short contribution], [Engineer Name — Short contribution], ...</td></tr>
   <tr><th colspan="12">TESTING SUMMARY</th></tr>
   <tr><th colspan="3">Testing Type</th><th colspan="3">Feature Test</th><th colspan="3">Metrics</th><th colspan="3">Status</th></tr>
   <tr><td colspan="3">[Dynamic actual value]</td><td colspan="3">[Dynamic actual value]</td><td colspan="3">[Dynamic measured value, if available]</td><td colspan="3">[Dynamic verified result]</td></tr>
