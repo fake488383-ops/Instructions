@@ -63,29 +63,54 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 
 ## 5 Task Final Report
 
-- **Report Trigger:** Report completed, failed, or blocked workspace tasks; skip planning, discussion, and read-only reviews.
-- **Layout:** Keep table width, column count, column widths, box widths, styling, alignment, and horizontal arrangement fixed. Add rows and increase table/box height as content grows; do not stretch or rearrange columns.
-- **Dynamic Data:** Generate content only from verified task evidence. Add rows or increase cell height as needed; omit unavailable/unperformed data and never display template placeholders or invented values.
-- **BEFORE / AFTER:** Show existing feature names or **MISSING** in BEFORE; show added/improved feature names in AFTER. Add rows vertically as needed; keep both columns unchanged.
-- **ENGINEER SUMMARY:** Show one centered bordered box per actual contributor, with **[Dynamic Engineer Name]** and **[Dynamic Contribution]**. Keep the same three-box row layout and box widths; add further rows of boxes for contributors 4, 5, 6, and onward. Let height grow; omit non-contributors.
-- **TESTING SUMMARY:** Keep **Testing Type**, **Feature Test**, **Metrics**, and **Status**. Add one row per actual test; show measured metrics with units and **PASS/FAIL** status. Omit unrun tests and unavailable metrics.
-- **EXECUTION SUMMARY:** Keep **Execution Check**, **Performance**, and **Result**; center Performance. Add observed execution events only, with captured metrics and actual outcomes. Keep debugging/fixes before finalization; list Final Build, EXE Generation, and EXE Launch last in that order. Do not repeat metrics already shown in TESTING SUMMARY.
-- **NEXT IMPROVEMENT SUGGESTIONS:** In the existing full-width cell, show 10 distinct actionable feature names with short benefits, followed by **Apply for All** as item 11. Let the cell grow vertically; keep the layout fixed.
+- **Trigger:** Generate for completed, failed, or blocked workspace tasks; skip planning, discussion, and read-only reviews.
+- **Format:** Use standard Markdown tables only, matching the visible table style below. Do not use HTML tables, CSS layouts, cards, bordered boxes, or nested boxes.
+- **Dynamic Rows:** Add Markdown table rows as needed. Keep column headings and order consistent; use normal Markdown row separators so every row is visibly divided.
+- **Evidence:** Use verified task data only. Clearly label simulated/demo data; never present it as actual implementation, testing, or execution.
+- **BEFORE / AFTER:** Keep two side-by-side columns. Show existing feature names or **MISSING** under BEFORE and added/improved feature names under AFTER.
+- **ENGINEER SUMMARY:** Use a simple two-column Markdown table (**Engineer**, **Contribution**). One contributor per row; no individual boxes.
+- **TESTING SUMMARY:** Use **Testing Type**, **Feature Test**, **Metrics**, **Status**. One test per row; include units and PASS/FAIL only for tests actually run.
+- **EXECUTION SUMMARY:** Use **Execution Check**, **Performance**, **Result**. One observed event per row; center Performance where supported. Do not repeat Testing Summary metrics. Keep debugging/fixes before Final Build, EXE Generation, and EXE Launch, in that order.
+- **NEXT IMPROVEMENT SUGGESTIONS:** Use **No.** and **Feature / Benefit** columns. Put each feature name in **bold** and its short description on the next line in the same cell. List 10 suggestions, then **Apply for All** as item 11.
 
-<p align="center"><strong>TASK FINAL REPORT</strong></p>
+### TASK FINAL REPORT — Markdown Blueprint
 
-<table align="center" width="100%" style="display:table; width:100%; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border-spacing:0; text-align:center;">
-  <colgroup><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"><col width="5%" style="width:5% !important; min-width:5%; max-width:5%;"></colgroup>
-  <tr><th align="center" colspan="10" width="50%" style="width:50% !important; min-width:50% !important; max-width:50% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">BEFORE</th><th align="center" colspan="10" width="50%" style="width:50% !important; min-width:50% !important; max-width:50% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; border-left:1px solid currentColor;">AFTER</th></tr>
-  <tr><td align="center" colspan="10" width="50%" style="width:50% !important; min-width:50% !important; max-width:50% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">[Dynamic verified value]</td><td align="center" colspan="10" width="50%" style="width:50% !important; min-width:50% !important; max-width:50% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; border-left:1px solid currentColor;">[Dynamic verified value]</td></tr>
-  <tr><th align="center" colspan="20" width="100%" style="width:100% !important; min-width:100% !important; max-width:100% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">ENGINEER SUMMARY</th></tr>
-  <tr><td align="center" colspan="7" width="35%" style="width:35% !important; min-width:35% !important; max-width:35% !important; box-sizing:border-box; padding:10px 12px !important; text-align:center !important; vertical-align:top;"><div style="border:1px solid currentColor; border-radius:8px; padding:10px; min-height:48px; text-align:center;"><strong>[Dynamic Engineer Name]</strong><div>[Dynamic Verified Value]</div></div></td><td align="center" colspan="6" width="30%" style="width:30% !important; min-width:30% !important; max-width:30% !important; box-sizing:border-box; padding:10px 12px !important; text-align:center !important; vertical-align:top;"><div style="border:1px solid currentColor; border-radius:8px; padding:10px; min-height:48px; text-align:center;"><strong>[Dynamic Engineer Name]</strong><div>[Dynamic Verified Value]</div></div></td><td align="center" colspan="7" width="35%" style="width:35% !important; min-width:35% !important; max-width:35% !important; box-sizing:border-box; padding:10px 12px !important; text-align:center !important; vertical-align:top;"><div style="border:1px solid currentColor; border-radius:8px; padding:10px; min-height:48px; text-align:center;"><strong>[Dynamic Engineer Name]</strong><div>[Dynamic Verified Value]</div></div></td></tr>
-  <tr><th align="center" colspan="20" width="100%" style="width:100% !important; min-width:100% !important; max-width:100% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">TESTING SUMMARY</th></tr>
-  <tr><th align="center" colspan="5" width="25%" style="width:25% !important; min-width:25% !important; max-width:25% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">Testing Type</th><th align="center" colspan="5" width="25%" style="width:25% !important; min-width:25% !important; max-width:25% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">Feature Test</th><th align="center" colspan="5" width="25%" style="width:25% !important; min-width:25% !important; max-width:25% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">Metrics</th><th align="center" colspan="5" width="25%" style="width:25% !important; min-width:25% !important; max-width:25% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">Status</th></tr>
-  <tr><td align="center" colspan="5" width="25%" style="width:25% !important; min-width:25% !important; max-width:25% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">[Actual testing method]</td><td align="center" colspan="5" width="25%" style="width:25% !important; min-width:25% !important; max-width:25% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">[One individually tested feature]</td><td align="center" colspan="5" width="25%" style="width:25% !important; min-width:25% !important; max-width:25% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">[Actual measured performance with unit]</td><td align="center" colspan="5" width="25%" style="width:25% !important; min-width:25% !important; max-width:25% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">[PASS / FAIL]</td></tr>
-  <tr><th align="center" colspan="20" width="100%" style="width:100% !important; min-width:100% !important; max-width:100% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">EXECUTION SUMMARY</th></tr>
-  <tr><th align="center" colspan="7" width="35%" style="width:35% !important; min-width:35% !important; max-width:35% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">Execution Check</th><th align="center" colspan="6" width="30%" style="width:30% !important; min-width:30% !important; max-width:30% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">Performance</th><th align="center" colspan="7" width="35%" style="width:35% !important; min-width:35% !important; max-width:35% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">Result</th></tr>
-  <tr><td align="center" colspan="7" width="35%" style="width:35% !important; min-width:35% !important; max-width:35% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">[Actual execution check]</td><td align="center" colspan="6" width="30%" style="width:30% !important; min-width:30% !important; max-width:30% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">[Measured performance or blank]</td><td align="center" colspan="7" width="35%" style="width:35% !important; min-width:35% !important; max-width:35% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">[Actual result/status]</td></tr>
-  <tr><th align="center" colspan="20" width="100%" style="width:100% !important; min-width:100% !important; max-width:100% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td align="center" colspan="20" width="100%" style="width:100% !important; min-width:100% !important; max-width:100% !important; box-sizing:border-box; padding:8px 12px !important; text-align:center !important; vertical-align:middle; ">[Dynamic complete feature name — short benefit]</td></tr>
-</table>
+**BEFORE / AFTER**
+
+| BEFORE | AFTER |
+|---|---|
+| [Existing feature name or MISSING] | [Added/improved feature name] |
+
+**ENGINEER SUMMARY**
+
+| Engineer | Contribution |
+|---|---|
+| [Actual contributor] | [Verified contribution] |
+
+**TESTING SUMMARY**
+
+| Testing Type | Feature Test | Metrics | Status |
+|---|---|---|---|
+| [Actual test type] | [Feature tested] | [Measured value and unit] | [PASS/FAIL] |
+
+**EXECUTION SUMMARY**
+
+| Execution Check | Performance | Result |
+|---|---|---|
+| [Observed execution check] | [Measured value and unit, if available] | [Actual result] |
+
+**NEXT IMPROVEMENT SUGGESTIONS**
+
+| No. | Feature / Benefit |
+|---:|---|
+| 1 | **[Feature name]**<br>[Short benefit] |
+| 2 | **[Feature name]**<br>[Short benefit] |
+| 3 | **[Feature name]**<br>[Short benefit] |
+| 4 | **[Feature name]**<br>[Short benefit] |
+| 5 | **[Feature name]**<br>[Short benefit] |
+| 6 | **[Feature name]**<br>[Short benefit] |
+| 7 | **[Feature name]**<br>[Short benefit] |
+| 8 | **[Feature name]**<br>[Short benefit] |
+| 9 | **[Feature name]**<br>[Short benefit] |
+| 10 | **[Feature name]**<br>[Short benefit] |
+| 11 | **Apply for All**<br>[Apply all listed improvements together] |
