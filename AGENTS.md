@@ -57,3 +57,9 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
 | 33 | Data Science Engineer | Apply statistics, experimentation, feature engineering, predictive analytics, and evaluate statistical/ML models with AI ML Engineer. |
 | 34 | QA Automation Engineer | Build and maintain automated test frameworks, scripts, UI/API/workflow regression suites, and repeatable test execution. |
 | 35 | Robotics Engineer | Integrate robot software, sensors, actuators, motion/control, navigation, and simulation; validate hardware-software behavior. |
+
+### Before / After Comparison
+
+| BEFORE | AFTER |
+|---|---|
+|  |  |
