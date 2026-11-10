@@ -60,16 +60,25 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
-- **Rendering:** Generate the report directly in the final AI-agent response as one standard GitHub-Flavored Markdown table. Write real Markdown table syntax in the response body, not inside a code block or quotation. Do not split the report into multiple tables or sections. Do not output HTML, CLI/ASCII, Unicode box-drawing tables, or a separate report file.
-- **Unified Layout:** Use the title **Task Final Report**, followed by exactly one table with these columns:
+- **Rendering:** Generate the report directly in the final AI-agent response as standard GitHub-Flavored Markdown. Use one continuous Markdown table, not separate tables, and do not put table syntax inside a code block or quotation. Do not output HTML, CLI/ASCII, Unicode box-drawing tables, or a separate report file.
+- **Exact Layout:** Use the title **Task Final Report** and preserve these three sections in this exact order within the same continuous table: **Before / After**, **Engineer Summary**, then **Testing Summary**. Each section must retain its own heading row and column layout as shown:
 
-  | Section | Name | Title / Testing Type | Before | After | Contribution / Testing Feature | Metric | Status |
-  |---|---|---|---|---|---|---|---|
-  | Feature | [Main feature name] | — | [Existing feature name, or Missing] | [Updated feature name] | — | — | — |
-  | Engineer | [Exact engineer name] | [Exact discipline title] | — | — | [Very short actual contribution] | — | — |
-  | Testing | — | [Actual test type] | — | — | [Actual tested child feature] | [Measured value with unit, or —] | [Pass/Fail] |
+  | **Before / After** | | |
+  |---|---|---|
+  | **Before** | **After** | |
+  | [Actual existing feature name, or Missing] | [Actual updated feature name] | |
 
-- **Feature Rows:** Show actual existing and changed main feature names only. Use **Missing** only when a feature did not exist before. Do not write added, improved, or updated explanations in the cells.
-- **Engineer Rows:** Include only actual contributing engineers from the 35-engineer **Engineering Disciplines** list. Use each exact listed name and discipline title; never invent names or include non-contributors. Keep contributions very short.
-- **Testing Rows:** Generate Testing Types dynamically from tests actually performed. List actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Show relevant measured Metrics as short real-time values with units (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); use **—** when no metric applies or is available. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates, and never mark unperformed tests as passed.
-- **Single-Table Rule:** Keep all Feature, Engineer, and Testing rows inside the same table, using the **Section** column to distinguish them. Do not create separate Before/After, Engineer Summary, or Testing Summary tables.
+  | **Engineer Summary** | | |
+  |---|---|---|
+  | **Engineer** | **Title** | **Contribution** |
+  | [Exact engineer name] | [Exact discipline title] | [Very short actual contribution] |
+
+  | **Testing Summary** | | | |
+  |---|---|---|---|
+  | **Testing Type** | **Testing Feature** | **Metric** | **Status** |
+  | [Actual test type] | [Actual tested child feature] | [Measured value with unit, or —] | [Pass/Fail] |
+
+- **Single Continuous Table:** Join all three sections into one Markdown table. Do not create independent tables or replace the three layouts with one generic set of columns. Keep the section heading rows and their respective column headings in the same table; use blank cells where a row has fewer columns.
+- **Before/After Rules:** Show actual existing and changed main feature names only. Use **Missing** only when a feature did not exist before. Do not write explanations such as added, improved, or updated in the cells.
+- **Engineer Summary Rules:** Include only actual contributing engineers from the 35-engineer **Engineering Disciplines** list. Use each exact listed name and title; never invent names or include non-contributors. Give each a very short contribution.
+- **Testing Summary Rules:** Generate Testing Types dynamically from tests actually performed. List actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Show relevant measured Metrics as short real-time values with units (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); use **—** when no metric applies or is available. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates, and never mark unperformed tests as passed.
