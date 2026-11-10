@@ -64,7 +64,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 - **Testing Summary:** Show actual tests, feature results, measured metrics, and Pass/Fail.
 - **Engineer Summary:** List actual contributors and brief contributions inline.
 - **Execution Summary:** Three equal horizontal columns: **Execution Details**, **Performance Metrics**, and **Execution Status**. Show actual build/launch details, measured resource usage, and verified Pass/Fail states only.
-- **Suggestion Summary:** Show exactly 7 dynamically generated suggestions, each with a main feature name and a short description explaining its purpose, followed by **Apply for All** as suggestion 8. Keep the content left-aligned, with each feature name and description sharing the same starting position and its number in a narrow left gutter. Use only one numbered example hint (1) in the template; generate all remaining suggestions from actual analysis instead of showing placeholder hints. Do not use nested tables, separate columns, or generic hint text.
+- **Suggestion Summary:** Generate 7 suggestions with a feature name and short purpose; suggestion 8 is **Apply for All**. Keep only hint 1 in the template; generate the rest dynamically.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
