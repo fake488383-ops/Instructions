@@ -61,9 +61,13 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 ## Task Completion Report
 
 - **Before/After:** Show only main feature names. Before: **Missing** if absent; otherwise the existing feature name. After: added feature name only.
-- **Testing Summary:** Show actual testing type names; child-level checks under Feature Test; numeric metrics with units only; and **Pass/Fail** status.
-- **Engineer Summary:** Show only each engineer's name and what they worked on, arranged horizontally.
-- **Execution Summary:** Keep three equal horizontal columns. Execution Details: completed action names only (e.g. Build, Launch, File Created). Performance Metrics: measured numbers with units only. Execution Status: **Pass/Fail** only, without action titles.
+- **Engineer Summary:** Show only actual contributing engineers and what each worked on. Arrange all engineer entries horizontally, separated by commas; do not use a vertical list or extra labels.
+- **Testing Summary:** Include all relevant testing, build, debug, launch, integration, and runtime performance results in this single section. Do not create a separate Execution Summary section or box. Use four columns: **Testing Type**, **Execution Details**, **Metric**, and **Status**.
+  - **Testing Type:** Show the actual applicable type, such as Unit Testing, Integration Testing, End-to-End Testing, Build Testing, Debug Testing, Launch Testing, or Performance Testing.
+  - **Execution Details:** Use concise, meaningful action or measurement titles, such as Build, Debug, EXE Launch, Application Startup Time, API Launch, Database Connection, Database Query Time, CPU Usage, RAM Usage, GPU Usage, Disk Usage, Network Speed, Rendering Performance, and Memory Consumption. For child-level feature checks, show the main feature name followed by its actual child check names.
+  - **Metric:** Show the corresponding real measured value with a concise unit where applicable (e.g. ms, s, FPS, %, MB, MB/s). For action outcomes such as Build or API Launch, show the actual result/configuration (e.g. Release Build, Debug Build, Launched, Connected) when useful; do not invent numeric measurements.
+  - **Status:** Show the actual outcome. Use **Successful/Failed** for actions such as build, debug, launch, and connection; use **Pass/Fail** for tests and performance checks. Never mark an unperformed or unverified item as successful or passed.
+  - Keep each execution detail, its matching metric, and its status aligned on the same row. Generate rows dynamically from work actually performed and measurements actually available. Omit irrelevant or unavailable metrics rather than inventing values. Do not add API Response, Test Coverage, or CI Pipeline Duration as default execution details; include them only when directly relevant and actually measured.
 - **Suggestion Summary:** Generate 7 suggestions with a feature name and short purpose; suggestion 8 is **Apply for All**. Keep only hint 1 in the template; generate the rest dynamically.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
@@ -91,31 +95,20 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Missing / Existing Feature Name Only</small></td>
       <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Added Main Feature Name Only</small></td>
     </tr>
+    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
+    <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;"><span style="display:inline-block; vertical-align:top; margin:6px 18px 6px 0;"><strong>[Engineer Name]</strong> — [What this engineer worked on]</span></td></tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
       <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Type</th>
-      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Feature Test</th>
+      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Details</th>
       <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Metric</th>
       <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Status</th>
     </tr>
     <tr>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Test Type Names</small></td>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Child Feature Checks</small></td>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Numbers + Units Only</small></td>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Pass / Fail Only</small></td>
-    </tr>
-    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
-    <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;"><span style="display:inline-block; vertical-align:top; margin:6px 18px 6px 0;"><strong>[Engineer Name]</strong><br>[What this engineer worked on]</span></td></tr>
-    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Summary</th></tr>
-    <tr>
-      <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Details</th>
-      <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Performance Metrics</th>
-      <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Status</th>
-    </tr>
-    <tr>
-      <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Dynamic: Completed Action Names Only</td>
-      <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Dynamic: Measured Numbers + Units Only</td>
-      <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Pass / Fail Only</td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Testing / Execution Type</small></td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Action Titles / Main Feature and Child Checks</small></td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Values + Units / Action Result</small></td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Successful / Failed or Pass / Fail</small></td>
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
     <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;">
