@@ -13,7 +13,6 @@ This is an enterprise-level, project-aware software engineering rulebook. Automa
 - **VS Code Reload:** When required, automatically restart VS Code or run **Developer: Reload Window**, then verify workspace readiness.
 - **Existing Project Standards & Architecture:** Detect and follow established architecture, technologies, folders/build outputs, naming, coding patterns, configurations, and workflows. Reuse and extend them; do not create unnecessary parallel structures. If evidence shows a serious limitation, improve it using the smallest safe change.
 - **Missing-File Recovery:** Check the exact path and perform one focused search. If no verified match exists, use an established equivalent, create only the minimum file supported by project conventions, or report the gap. Retry only with new evidence.
-- **Before/After Feature Reporting:** Compare every task feature against the project state before changes. In **BEFORE**, write only `Missing` for a feature that did not exist before; for a feature that already existed, show its existing feature name. In **AFTER**, show only the names of features newly added by the task—no descriptions, explanations, or extra text. Do not list unchanged or pre-existing features as newly added.
 - **Risk-Based Verification & Launch:** Run checks relevant to changed work. Before an EXE launch, inspect relevant VS Code Problems, debug, and terminal state; resolve task-related issues first. Build/debug/launch the EXE when runtime or build changes require it. Where tools permit, launch and verify actual UI rendering, visible controls, and their interactions—not just source code. Verify affected backend, voice, and database runtime behavior when changed. Fix and retest failures. Never claim unsupported or unperformed checks succeeded.
 
 ## 4 Engineering Disciplines
@@ -58,6 +57,10 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
 | 33 | Data Science Engineer | Apply statistics, experimentation, feature engineering, predictive analytics, and evaluate statistical/ML models with AI ML Engineer. |
 | 34 | QA Automation Engineer | Build and maintain automated test frameworks, scripts, UI/API/workflow regression suites, and repeatable test execution. |
 | 35 | Robotics Engineer | Integrate robot software, sensors, actuators, motion/control, navigation, and simulation; validate hardware-software behavior. |
+
+## Task Completion Report
+
+- **Before/After Feature Reporting:** Compare every task feature against the project state before changes. In **BEFORE**, write only `Missing` for a feature that did not exist before; for a feature that already existed, show its existing feature name. In **AFTER**, show only the names of features newly added by the task—no descriptions, explanations, or extra text. Do not list unchanged or pre-existing features as newly added.
 
 <table width="100%" align="center" style="width:100%; min-width:100%; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;" border="1">
   <colgroup>
