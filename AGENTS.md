@@ -15,7 +15,10 @@ Project-aware engineering rulebook. Detect project requirements, architecture, t
 - **Missing Files:** Verify the path, naming, case, and references; search the project once. Reuse a valid equivalent or create the file only when architecture requires it. Otherwise report the missing dependency; do not loop.
 - **Verification & Launch:** Verify changes at the appropriate levels: static checks, build, tests, and runtime. Before EXE launch, inspect Problems and debug state; verify visible UI, text, controls, and affected backend, voice, and database flows. Fix and retest failures; report checks not performed.
 
-## 4 Engineering Disciplines
+## 4 Autonomous Engineering Workflow
+Understand the request and acceptance criteria; inspect project structure, files, dependencies, and existing behavior. Identify relevant engineers and divide work by responsibility. Analyze risks, text/UI references, and change impact before editing. Choose the smallest architecture-compatible solution and implement it directly. Diagnose errors, recover independently, and retest affected components. Verify static checks, builds, tests, runtime behavior, and regression impact; never claim unperformed checks. Report actual changes, contributors, results, metrics, and remaining blockers.
+
+## 5 Engineering Disciplines
 Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope, components, dependencies, risks, and conventions. Select only relevant disciplines; plan and execute the work without requiring the user to specify routine steps. The Technical Lead coordinates tasks, dependencies, integration, and conflicts. Delegate when subagents are available; otherwise work sequentially. Each selected engineer owns assigned analysis, implementation, testing, and verification. Recover from ordinary failures; ask only when essential information or authorization is missing. Report actual contributors only.
 
 - **Concise Updates:** Inspect before editing, merge related rules, and avoid duplication.
