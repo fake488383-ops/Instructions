@@ -75,9 +75,9 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
 <p align="center"><strong>TASK FINAL REPORT</strong></p>
 
 <table align="center" width="100%" style="display:table; width:100%; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border-spacing:0; text-align:center;">
-  <colgroup><col width="25%" style="width:25%; box-sizing:border-box;"><col width="25%" style="width:25%; box-sizing:border-box;"><col width="25%" style="width:25%; box-sizing:border-box;"><col width="25%" style="width:25%; box-sizing:border-box;"></colgroup>
-  <tr><th colspan="2" style="padding:8px; text-align:center; vertical-align:middle; box-sizing:border-box; min-width:0;">BEFORE</th><th colspan="2" style="padding:8px; text-align:center; vertical-align:middle; box-sizing:border-box; min-width:0;">AFTER</th></tr>
-  <tr><td colspan="2" style="padding:8px; text-align:center; vertical-align:middle; box-sizing:border-box; min-width:0;">[Dynamic verified value]</td><td colspan="2" style="padding:8px; text-align:center; vertical-align:middle; box-sizing:border-box; min-width:0;">[Dynamic verified value]</td></tr>
+  <colgroup><col width="25%" style="width:25% !important; min-width:25%; max-width:25%;"><col width="25%" style="width:25% !important; min-width:25%; max-width:25%;"><col width="25%" style="width:25% !important; min-width:25%; max-width:25%;"><col width="25%" style="width:25% !important; min-width:25%; max-width:25%;"></colgroup>
+  <tr><th colspan="2" width="50%" style="width:50% !important; min-width:50%; max-width:50%; padding:8px; text-align:center; vertical-align:middle;">BEFORE</th><th colspan="2" width="50%" style="width:50% !important; min-width:50%; max-width:50%; padding:8px; text-align:center; vertical-align:middle;">AFTER</th></tr>
+  <tr><td colspan="2" width="50%" style="width:50% !important; min-width:50%; max-width:50%; padding:8px; text-align:center; vertical-align:middle;">[Dynamic verified value]</td><td colspan="2" width="50%" style="width:50% !important; min-width:50%; max-width:50%; padding:8px; text-align:center; vertical-align:middle;">[Dynamic verified value]</td></tr>
   <tr><th colspan="4" style="text-align:center; vertical-align:middle;">ENGINEER SUMMARY</th></tr>
   <tr><td colspan="4" style="text-align:center; vertical-align:middle;">[Engineer Name — Short contribution], [Engineer Name — Short contribution], ...</td></tr>
   <tr><th colspan="4" style="text-align:center; vertical-align:middle;">TESTING SUMMARY</th></tr>
