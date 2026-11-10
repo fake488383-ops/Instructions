@@ -58,17 +58,12 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 | 34 | QA Automation Engineer | Automated test frameworks, UI/API tests, and regression suites. |
 | 35 | Robotics Engineer | Robot software, sensors, actuators, control, navigation, and simulation. |
 
-## Task Completion Report
+## Task Final Report
 
-- **Before/After:** Show only main feature names. Before: **Missing** if absent; otherwise the existing feature name. After: added feature name only.
-- **Engineer Summary:** Show only actual contributing engineers and what each worked on. Arrange all engineer entries horizontally, separated by commas; do not use a vertical list or extra labels.
-- **Testing Summary:** Include all relevant testing, build, debug, launch, integration, and runtime performance results in this single section. Do not create a separate Execution Summary section or box. Use four columns: **Testing Type**, **Execution Details**, **Metric**, and **Status**.
-  - **Testing Type:** Show the actual applicable type, such as Unit Testing, Integration Testing, End-to-End Testing, Build Testing, Debug Testing, Launch Testing, or Performance Testing.
-  - **Execution Details:** Use concise, meaningful action or measurement titles, such as Build, Debug, EXE Launch, Application Startup Time, API Launch, Database Connection, Database Query Time, CPU Usage, RAM Usage, GPU Usage, Disk Usage, Network Speed, Rendering Performance, and Memory Consumption. For child-level feature checks, show the main feature name followed by its actual child check names.
-  - **Metric:** Show the corresponding real measured value with a concise unit where applicable (e.g. ms, s, FPS, %, MB, MB/s). For action outcomes such as Build or API Launch, show the actual result/configuration (e.g. Release Build, Debug Build, Launched, Connected) when useful; do not invent numeric measurements.
-  - **Status:** Show the actual outcome. Use **Successful/Failed** for actions such as build, debug, launch, and connection; use **Pass/Fail** for tests and performance checks. Never mark an unperformed or unverified item as successful or passed.
-  - Keep each execution detail, its matching metric, and its status aligned on the same row. Generate rows dynamically from work actually performed and measurements actually available. Omit irrelevant or unavailable metrics rather than inventing values. Do not add API Response, Test Coverage, or CI Pipeline Duration as default execution details; include them only when directly relevant and actually measured.
-- **Suggestion Summary:** Generate 7 suggestions with a feature name and short purpose; suggestion 8 is **Apply for All**. Keep only hint 1 in the template; generate the rest dynamically.
+- **Before/After:** Show actual existing and changed main feature names only. Use **Missing** only when the feature did not exist before.
+- **Engineer Summary:** Show only actual contributing engineers and what each worked on. Arrange entries horizontally, separated by commas.
+- **Testing Summary:** Use four columns: **Testing Type**, **Execution Details**, **Metric**, and **Status**. Populate every row dynamically from the work actually tested, executed, and measured. Do not predefine, hardcode, or repeatedly display example test names, action names, metrics, units, build modes, or outcomes. Include every relevant check and runtime measurement that was actually performed or captured. Each row must describe the real check, its actual measured value when available, and its actual result. Omit unavailable or irrelevant data; never invent values or mark unperformed checks as passed.
+- **Suggestion Summary:** Generate 7 relevant suggestions dynamically, each with a feature name and short purpose. Suggestion 8 is **Apply for All**.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
@@ -86,17 +81,17 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     <col style="width:8.3333%">
   </colgroup>
   <tbody>
-    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Final Task Report</th></tr>
+    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Task Final Report</th></tr>
     <tr>
       <th colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">BEFORE</th>
       <th colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER</th>
     </tr>
     <tr>
-      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Missing / Existing Feature Name Only</small></td>
-      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Added Main Feature Name Only</small></td>
+      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Actual Existing State</small></td>
+      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Actual Updated State</small></td>
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
-    <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;"><span style="display:inline-block; vertical-align:top; margin:6px 18px 6px 0;"><strong>[Engineer Name]</strong> — [What this engineer worked on]</span></td></tr>
+    <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;"><span style="display:inline-block; vertical-align:top; margin:6px 18px 6px 0;"><strong>[Actual Engineer]</strong> — [Actual Contribution]</span></td></tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
       <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Type</th>
@@ -108,11 +103,11 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Testing</small></td>
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Action Title</small></td>
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Value</small></td>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Fail / Pass</small></td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Status</small></td>
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
     <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;">
-<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">1.</span><strong>[Main Feature Name]</strong><br><span style="display:inline-block; margin-left:2em; text-align:left;">[Short description of the feature's purpose]</span>
+<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">1.</span><strong>[Actual Feature Name]</strong><br><span style="display:inline-block; margin-left:2em; text-align:left;">[Short Purpose]</span>
     </td></tr>
   </tbody>
 </table>
