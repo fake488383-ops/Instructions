@@ -67,9 +67,6 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
   </colgroup>
   <tbody>
     <tr>
-      <th colspan="2" align="center">Final Task Report</th>
-    </tr>
-    <tr>
       <th width="50%" align="center">BEFORE</th>
       <th width="50%" align="center">AFTER</th>
     </tr>
@@ -79,6 +76,14 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
     </tr>
     <tr>
       <th colspan="2" align="center">Testing Summary</th>
+    </tr>
+    <tr>
+      <td width="50%">&nbsp;</td>
+      <td width="50%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="50%">&nbsp;</td>
+      <td width="50%">&nbsp;</td>
     </tr>
     <tr>
       <td width="50%">&nbsp;</td>
