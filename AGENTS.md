@@ -63,7 +63,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 - **Before/After:** Show only dynamic main feature names. BEFORE lists relevant features missing before the task; AFTER lists features actually added by the task.
 - **Testing Summary:** Show only real, executed test types, feature test results, measured metrics, and actual Pass/Fail statuses. Generate every value dynamically; never show examples or placeholders.
 - **Engineer Summary:** List each contributing engineer inline as **Discipline Title** — short contribution, followed by a comma and the next engineer. Keep all entries in one continuous horizontal text flow; wrap naturally only when the row reaches its width. Never stack engineers in separate blocks or columns.
-- **Execution Summary:** Display exactly three equal-width columns side by side in one horizontal header row: **Metrics**, **Status**, and **Execution**, matching the horizontal Testing Summary columns. Put their dynamic content directly beneath the corresponding heading in one content row; do not stack these categories vertically. Metrics covers measured CPU, RAM, GPU, and storage usage; Status covers actual build, debug, application launch, and runtime states; Execution covers actual build duration and application execution time. Show only values genuinely measured or verified; omit unavailable metrics and never invent results.
+- **Execution Summary:** Display exactly three equal-width columns side by side in one horizontal header row: **Execution**, **Metrics**, and **Status**, matching the horizontal Testing Summary columns. Keep Execution on the left, Metrics in the center, and Status on the right. Put their dynamic content directly beneath the corresponding heading in one content row; do not stack these categories vertically. Execution covers actual build duration and application execution time; Metrics covers measured CPU, RAM, GPU, and storage usage; Status covers actual build, debug, application launch, and runtime states. Show only values genuinely measured or verified; omit unavailable metrics and never invent results.
 - **Alignment:** Center every report element from left to right, including all headings, dynamic hints, values, labels, and content in every table cell. Apply centered alignment to both the cell and its inner text; no report content may be left-aligned or right-aligned.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
@@ -108,14 +108,14 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual contributing engineers and contributions</small></td></tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Summary</th></tr>
     <tr>
+      <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution</th>
       <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Metrics</th>
       <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Status</th>
-      <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution</th>
     </tr>
     <tr>
+      <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual Build Duration / Application Execution Time</td>
       <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual CPU / RAM / GPU / Storage measurements</td>
       <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual Build / Debug / Launch / Runtime states</td>
-      <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual Build Duration / Application Execution Time</td>
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Next Improvements</th></tr>
     <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">&nbsp;</td></tr>
