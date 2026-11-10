@@ -64,7 +64,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 - **Testing Summary:** Show actual tests, feature results, measured metrics, and Pass/Fail.
 - **Engineer Summary:** List actual contributors and brief contributions inline.
 - **Execution Summary:** Three equal horizontal columns: **Execution Details**, **Performance Metrics**, and **Execution Status**. Show actual build/launch details, measured resource usage, and verified Pass/Fail states only.
-- **Suggestion Summary:** Show each implemented feature in one single content box/cell. Put its sequence number on the left, aligned vertically with the feature name. Start the feature name and its short Roman Urdu description at the exact same horizontal position, with the description directly underneath the name. Keep both in the main cell; do not create nested tables, inner boxes, or separate columns, and do not add generic hint text.
+- **Suggestion Summary:** Show each implemented feature directly in one main content cell, without nested tables, rows, or inner containers. Place the sequence number immediately before the feature name on the first line. Put the short Roman Urdu description on the next line, indented so its first character aligns exactly with the start of the feature name. Do not add generic hint text.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
@@ -119,7 +119,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
     <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">
-<span style="display:inline-block; vertical-align:top; padding-right:12px;"><strong>1.</strong></span><span style="display:inline-block; text-align:left;"><strong>[Main Feature Name]</strong><br>[Short Roman Urdu description]</span>
+<strong>1. [Main Feature Name]</strong><br><span style="display:inline-block; padding-left:2.2em; text-align:left;">[Short Roman Urdu description]</span>
     </td></tr>
   </tbody>
 </table>
