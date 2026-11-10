@@ -80,10 +80,10 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
       <th colspan="4" style="text-align:center; border:1px solid;">Testing Summary</th>
     </tr>
     <tr>
-      <td style="width:25%; border:1px solid;">&nbsp;</td>
-      <td style="width:25%; border:1px solid;">&nbsp;</td>
-      <td style="width:25%; border:1px solid;">&nbsp;</td>
-      <td style="width:25%; border:1px solid;">&nbsp;</td>
+      <th style="width:25%; text-align:center; border:1px solid;">Testing Type</th>
+      <th style="width:25%; text-align:center; border:1px solid;">Feature Test</th>
+      <th style="width:25%; text-align:center; border:1px solid;">Matrix</th>
+      <th style="width:25%; text-align:center; border:1px solid;">Status</th>
     </tr>
     <tr>
       <th colspan="4" style="text-align:center; border:1px solid;">Engineer Summary</th>
