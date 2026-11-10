@@ -63,58 +63,61 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 - **Before/After:** Show only dynamic main feature names. BEFORE lists relevant features missing before the task; AFTER lists features actually added by the task.
 - **Testing Summary:** Show only real, executed test types, feature test results, measured metrics, and actual Pass/Fail statuses. Generate every value dynamically; never show examples or placeholders.
 - **Engineer Summary:** List each contributing engineer inline as **Discipline Title** — short contribution, followed by a comma and the next engineer. Keep all entries in one continuous horizontal text flow; wrap naturally only when the row reaches its width. Never stack engineers in separate blocks or columns.
-- **Execution Summary:** Replace the old Build & Development section title with **Execution Summary**. Organize it into three labeled rows: **Metrics**, **Status**, and **Execution**. Each row has two equal side-by-side content cells. Metrics covers measured CPU, RAM, GPU, and storage usage; Status covers actual build, debug, application launch, and runtime states; Execution covers actual build duration and application execution time. Show only values genuinely measured or verified; omit unavailable metrics and never invent results.
+- **Execution Summary:** Display exactly three equal-width columns side by side in one horizontal header row: **Metrics**, **Status**, and **Execution**, matching the horizontal Testing Summary columns. Put their dynamic content directly beneath the corresponding heading in one content row; do not stack these categories vertically. Metrics covers measured CPU, RAM, GPU, and storage usage; Status covers actual build, debug, application launch, and runtime states; Execution covers actual build duration and application execution time. Show only values genuinely measured or verified; omit unavailable metrics and never invent results.
 - **Alignment:** Center every report element from left to right, including all headings, dynamic hints, values, labels, and content in every table cell. Apply centered alignment to both the cell and its inner text; no report content may be left-aligned or right-aligned.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
-    <col style="width:25%">
-    <col style="width:25%">
-    <col style="width:25%">
-    <col style="width:25%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
+    <col style="width:8.3333%">
   </colgroup>
   <tbody>
-    <tr><th colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Final Task Report</th></tr>
+    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Final Task Report</th></tr>
     <tr>
-      <th colspan="2" align="center" style="width:50%; min-width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">BEFORE</th>
-      <th colspan="2" align="center" style="width:50%; min-width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER</th>
+      <th colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">BEFORE</th>
+      <th colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER</th>
     </tr>
     <tr>
-      <td colspan="2" align="center" style="width:50%; min-width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Dynamic: missing main feature names</small></td>
-      <td colspan="2" align="center" style="width:50%; min-width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Dynamic: added main feature names</small></td>
+      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Dynamic: missing main feature names</small></td>
+      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Dynamic: added main feature names</small></td>
     </tr>
-    <tr><th colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
+    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
-      <th align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Type</th>
-      <th align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Feature Test</th>
-      <th align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Metric</th>
-      <th align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Status</th>
+      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Type</th>
+      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Feature Test</th>
+      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Metric</th>
+      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Status</th>
     </tr>
     <tr>
-      <td align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual test types run</small></td>
-      <td align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual feature test results</small></td>
-      <td align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Measured performance values</small></td>
-      <td align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Pass / Fail</small></td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual test types run</small></td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual feature test results</small></td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Measured performance values</small></td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Pass / Fail</small></td>
     </tr>
-    <tr><th colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
-    <tr><td colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual contributing engineers and contributions</small></td></tr>
-    <tr><th colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Summary</th></tr>
-    <tr><th colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:10px; border:1px solid;">Metrics</th></tr>
+    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual contributing engineers and contributions</small></td></tr>
+    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Summary</th></tr>
     <tr>
-      <td colspan="2" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual CPU / RAM usage</td>
-      <td colspan="2" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual GPU / Storage usage</td>
+      <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Metrics</th>
+      <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Status</th>
+      <th colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution</th>
     </tr>
-    <tr><th colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:10px; border:1px solid;">Status</th></tr>
     <tr>
-      <td colspan="2" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual build / debug status</td>
-      <td colspan="2" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual application launch / runtime status</td>
+      <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual CPU / RAM / GPU / Storage measurements</td>
+      <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual Build / Debug / Launch / Runtime states</td>
+      <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual Build Duration / Application Execution Time</td>
     </tr>
-    <tr><th colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:10px; border:1px solid;">Execution</th></tr>
-    <tr>
-      <td colspan="2" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual build duration</td>
-      <td colspan="2" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual application execution time</td>
-    </tr>
-    <tr><th colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Next Improvements</th></tr>
-    <tr><td colspan="4" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">&nbsp;</td></tr>
+    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Next Improvements</th></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">&nbsp;</td></tr>
   </tbody>
 </table>
