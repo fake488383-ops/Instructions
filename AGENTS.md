@@ -61,8 +61,9 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 ## Task Completion Report
 
 - **Before/After:** Show only dynamic main feature names. BEFORE lists relevant features missing before the task; AFTER lists features actually added by the task.
-- **Testing Summary:** Populate each column with actual test types, feature tests, measured metrics, and Pass/Fail status. Include only executed tests and measured results.
+- **Testing Summary:** Show only real, executed test types, feature test results, measured metrics, and actual Pass/Fail statuses. Generate every value dynamically; never show examples or placeholders.
 - **Engineer Summary:** List each contributing engineer inline as **Discipline Title** — short contribution, followed by a comma and the next engineer. Keep all entries in one continuous horizontal text flow; wrap naturally only when the row reaches its width. Never stack engineers in separate blocks or columns.
+- **Alignment:** Center-align all report headings, hints, and cell content horizontally and vertically.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;" border="1">
   <colgroup>
@@ -78,8 +79,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER</th>
     </tr>
     <tr>
-      <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small>Dynamic: main missing feature names</small></td>
-      <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small>Dynamic: main added feature names</small></td>
+      <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small>Dynamic: missing main feature names</small></td>
+      <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small>Dynamic: added main feature names</small></td>
     </tr>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
@@ -89,19 +90,19 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <th style="width:25%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Status</th>
     </tr>
     <tr>
-      <td style="width:25%; padding:12px; border:1px solid;"><small>Test types</small></td>
-      <td style="width:25%; padding:12px; border:1px solid;"><small>Feature tests</small></td>
-      <td style="width:25%; padding:12px; border:1px solid;"><small>Measured metrics</small></td>
-      <td style="width:25%; padding:12px; border:1px solid;"><small>Pass / Fail</small></td>
+      <td style="width:25%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;"><small>Actual test types run</small></td>
+      <td style="width:25%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;"><small>Actual feature test results</small></td>
+      <td style="width:25%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;"><small>Measured performance values</small></td>
+      <td style="width:25%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;"><small>Actual Pass / Fail</small></td>
     </tr>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
-    <tr><td colspan="4" style="padding:12px; border:1px solid;"><small>Contributing engineers and short contributions</small></td></tr>
+    <tr><td colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;"><small>Actual contributing engineers and contributions</small></td></tr>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Build &amp; Development</th></tr>
     <tr>
-      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;"><small>Build result</small></td>
-      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;"><small>Development result</small></td>
+      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;"><small>Actual build result</small></td>
+      <td colspan="2" style="width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid;"><small>Actual development result</small></td>
     </tr>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Next Improvements</th></tr>
-    <tr><td colspan="4" style="padding:12px; border:1px solid;">&nbsp;</td></tr>
+    <tr><td colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">&nbsp;</td></tr>
   </tbody>
 </table>
