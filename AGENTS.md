@@ -63,7 +63,6 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 - **Before/After:** Show actual existing and changed main feature names only. Use **Missing** only when the feature did not exist before.
 - **Engineer Summary:** Show each contributing engineer in a separate equal-width card. Display **Engineer Name — Title** and one very short contribution stating the single task handled. Keep it to one brief line; avoid explanations and extra details.
 - **Testing Summary:** Use four columns: **Testing Type**, **Testing Feature**, **Metric**, and **Status**. Automatically identify and generate each Testing Type from the tests actually performed; never use a predefined list or fixed examples. Populate rows dynamically with actual tested features, captured metrics, and results. Omit unavailable data; never invent values or mark unperformed tests as passed.
-- **Suggestion Summary:** Generate 7 relevant suggestions dynamically, each with a feature name and short purpose. Suggestion 8 is **Apply for All**.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
@@ -109,9 +108,5 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Value</small></td>
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Status</small></td>
     </tr>
-    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
-    <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;">
-<span style="display:inline-block; width:2em; vertical-align:middle; text-align:center;">1.</span><strong>[Actual Feature Name]</strong><br><span style="display:inline-block; margin-left:2em; text-align:left;">[Short Purpose]</span>
-    </td></tr>
-  </tbody>
+</tbody>
 </table>
