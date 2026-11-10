@@ -72,6 +72,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
 - **BUILD & DEVELOPMENT:** Use two columns: **Build / Development Event** and **Result**. Add only relevant events actually run and verified, such as compilation, integration, build, or EXE launch. Report each event separately with its real outcome; never imply a build or launch occurred when it did not.
 - **NEXT IMPROVEMENT SUGGESTIONS:** Show up to 7 distinct, actionable suggestions. Each entry contains the complete feature name and one short benefit. Do not add a fixed suggestion or a fake action button.
 
+<p align="center"><strong>TASK FINAL REPORT</strong></p>
+
 <table style="width:100%; table-layout:fixed; border-collapse:collapse; text-align:center;">
   <colgroup><col span="12" style="width:8.3333%;"></colgroup>
   <tr><th colspan="6">BEFORE</th><th colspan="6">AFTER</th></tr>
