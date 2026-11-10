@@ -64,7 +64,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 - **Testing Summary:** Show actual tests, feature results, measured metrics, and Pass/Fail.
 - **Engineer Summary:** List actual contributors and brief contributions inline.
 - **Execution Summary:** Three equal horizontal columns: **Execution Details**, **Performance Metrics**, and **Execution Status**. Show actual build/launch details, measured resource usage, and verified Pass/Fail states only.
-- **Suggestion Summary:** Keep the suggestion text left-aligned and vertically centered within its single main content cell. Place the sequence number immediately before the feature name. Start the description on the next line at the exact same horizontal position as the first character of the feature name—not under the number and not farther left or right. Use a fixed-width inline number span to keep this alignment consistent. Do not use nested tables, inner containers, separate columns, or generic hint text.
+- **Suggestion Summary:** Keep the suggestion content left-aligned and vertically centered in its single main content cell. Use one shared number marker positioned halfway between the left edge of the main feature name and the left edge of its description: the number must visually straddle those two alignment positions. Align the feature name and description to their respective edges, with the description starting at the same horizontal position as the content cell's left inset and the feature name starting after the number marker. Do not use nested tables, inner containers, separate columns, or generic hint text.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
@@ -119,7 +119,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
     <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;">
-<strong><span style="display:inline-block; width:2.2em;">1.</span>[Main Feature Name]</strong><br><span style="display:inline-block; padding-left:2.2em; text-align:left;">[Short Roman Urdu description]</span>
+<span style="display:inline-block; width:1.1em; text-align:center; vertical-align:middle;">1.</span><strong>[Main Feature Name]</strong><br><span style="display:inline-block; text-align:left; vertical-align:middle;">[Short Roman Urdu description]</span>
     </td></tr>
   </tbody>
 </table>
