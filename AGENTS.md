@@ -88,7 +88,6 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
     </div>
   </td></tr>
   <tr><th colspan="6" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
-  <tr><td colspan="6<tr><th colspan="6" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
   <tr><td colspan="6" align="center" valign="middle" style="padding:0; border:1px solid #888;">
     <table width="100%" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center; vertical-align:middle;">
       <colgroup><col style="width:25%;"><col style="width:35%;"><col style="width:20%;"><col style="width:20%;"></colgroup>
