@@ -58,7 +58,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Automatically det
 | 34 | QA Automation Engineer | Build and maintain automated test frameworks, scripts, UI/API/workflow regression suites, and repeatable test execution. |
 | 35 | Robotics Engineer | Integrate robot software, sensors, actuators, motion/control, navigation, and simulation; validate hardware-software behavior. |
 
-<table width="100%" style="width:100%; min-width:100%; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;" border="1">
+<table width="90%" align="center" style="width:90%; min-width:0; max-width:100%; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid;" border="1">
   <colgroup>
     <col style="width:25%">
     <col style="width:25%">
