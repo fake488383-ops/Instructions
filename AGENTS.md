@@ -64,7 +64,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
 ## 5 Task Final Report
 
 - **When to Report:** Show after each completed, failed, or blocked workspace task. Skip discussion, planning, advice, and read-only reviews.
-- **Layout:** Use one 12-column table with only these five sections, in order: BEFORE / AFTER, ENGINEER SUMMARY, TESTING SUMMARY, BUILD & DEVELOPMENT, NEXT IMPROVEMENT SUGGESTIONS. BEFORE and AFTER must be equal-width halves (6 columns each). ENGINEER SUMMARY and NEXT IMPROVEMENT SUGGESTIONS span all 12 columns; TESTING SUMMARY uses four equal groups of 3; BUILD & DEVELOPMENT uses two equal groups of 6.
+- **Layout:** Use one 4-column table with only these five sections, in order: BEFORE / AFTER, ENGINEER SUMMARY, TESTING SUMMARY, BUILD & DEVELOPMENT, NEXT IMPROVEMENT SUGGESTIONS. BEFORE and AFTER each span 2 equal columns; ENGINEER SUMMARY and NEXT IMPROVEMENT SUGGESTIONS span all 4; TESTING SUMMARY uses 4 equal columns; BUILD & DEVELOPMENT uses 2 equal halves.
 - **Live Evidence:** Generate every row and value dynamically from the current task and verified workspace evidence. Never use fixed/sample values, examples, guessed results, or duplicate rows. Omit unverified claims.
 - **BEFORE / AFTER:** Show only the main feature name. For a new feature, BEFORE = MISSING and AFTER = the verified feature name. For an update, show the previous and verified current name/version. Do not list child features or add descriptions.
 - **ENGINEER SUMMARY:** In one full-width cell, show each actual engineer as **name + short contribution**, then a comma and the next engineer's entry. Keep entries flowing horizontally and wrap only when space runs out; no separate columns or cards.
@@ -75,17 +75,17 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
 <p align="center"><strong>TASK FINAL REPORT</strong></p>
 
 <table width="100%" style="width:100%; table-layout:fixed; border-collapse:collapse; border-spacing:0; text-align:center;">
-  <colgroup><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"><col style="width:8.3333333333%;"></colgroup>
-  <tr><th colspan="6" width="50%" style="width:50%; padding:8px; text-align:center; vertical-align:middle;">BEFORE</th><th colspan="6" width="50%" style="width:50%; padding:8px; text-align:center; vertical-align:middle;">AFTER</th></tr>
-  <tr><td colspan="6" width="50%" style="width:50%; padding:8px; text-align:center; vertical-align:middle;">[Dynamic verified value]</td><td colspan="6" width="50%" style="width:50%; padding:8px; text-align:center; vertical-align:middle;">[Dynamic verified value]</td></tr>
-  <tr><th colspan="12" style="text-align:center; vertical-align:middle;">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="12" style="text-align:center; vertical-align:middle;">[Engineer Name — Short contribution], [Engineer Name — Short contribution], ...</td></tr>
-  <tr><th colspan="12" style="text-align:center; vertical-align:middle;">TESTING SUMMARY</th></tr>
-  <tr><th colspan="3" style="text-align:center; vertical-align:middle;">Testing Type</th><th colspan="3" style="text-align:center; vertical-align:middle;">Feature Test</th><th colspan="3" style="text-align:center; vertical-align:middle;">Metrics</th><th colspan="3" style="text-align:center; vertical-align:middle;">Status</th></tr>
-  <tr><td colspan="3" style="text-align:center; vertical-align:middle;">[Dynamic actual value]</td><td colspan="3" style="text-align:center; vertical-align:middle;">[Dynamic actual value]</td><td colspan="3" style="text-align:center; vertical-align:middle;">[Dynamic measured value, if available]</td><td colspan="3" style="text-align:center; vertical-align:middle;">[Dynamic verified result]</td></tr>
-  <tr><th colspan="12" style="text-align:center; vertical-align:middle;">BUILD &amp; DEVELOPMENT</th></tr>
-  <tr><th colspan="6" style="text-align:center; vertical-align:middle;">Build / Development Event</th><th colspan="6" style="text-align:center; vertical-align:middle;">Result</th></tr>
-  <tr><td colspan="6" style="text-align:center; vertical-align:middle;">[Dynamic actual event]</td><td colspan="6" style="text-align:center; vertical-align:middle;">[Dynamic verified result]</td></tr>
-  <tr><th colspan="12" style="text-align:center; vertical-align:middle;">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td colspan="12" style="text-align:center; vertical-align:middle;">[Dynamic complete feature name — short benefit]</td></tr>
+  <colgroup><col style="width:25%;"><col style="width:25%;"><col style="width:25%;"><col style="width:25%;"></colgroup>
+  <tr><th colspan="2" style="width:50%; padding:8px; text-align:center; vertical-align:middle;">BEFORE</th><th colspan="2" style="width:50%; padding:8px; text-align:center; vertical-align:middle;">AFTER</th></tr>
+  <tr><td colspan="2" style="width:50%; padding:8px; text-align:center; vertical-align:middle;">[Dynamic verified value]</td><td colspan="2" style="width:50%; padding:8px; text-align:center; vertical-align:middle;">[Dynamic verified value]</td></tr>
+  <tr><th colspan="4" style="text-align:center; vertical-align:middle;">ENGINEER SUMMARY</th></tr>
+  <tr><td colspan="4" style="text-align:center; vertical-align:middle;">[Engineer Name — Short contribution], [Engineer Name — Short contribution], ...</td></tr>
+  <tr><th colspan="4" style="text-align:center; vertical-align:middle;">TESTING SUMMARY</th></tr>
+  <tr><th style="text-align:center; vertical-align:middle;">Testing Type</th><th style="text-align:center; vertical-align:middle;">Feature Test</th><th style="text-align:center; vertical-align:middle;">Metrics</th><th style="text-align:center; vertical-align:middle;">Status</th></tr>
+  <tr><td style="text-align:center; vertical-align:middle;">[Dynamic actual value]</td><td style="text-align:center; vertical-align:middle;">[Dynamic actual value]</td><td style="text-align:center; vertical-align:middle;">[Dynamic measured value, if available]</td><td style="text-align:center; vertical-align:middle;">[Dynamic verified result]</td></tr>
+  <tr><th colspan="4" style="text-align:center; vertical-align:middle;">BUILD &amp; DEVELOPMENT</th></tr>
+  <tr><th colspan="2" style="text-align:center; vertical-align:middle;">Build / Development Event</th><th colspan="2" style="text-align:center; vertical-align:middle;">Result</th></tr>
+  <tr><td colspan="2" style="text-align:center; vertical-align:middle;">[Dynamic actual event]</td><td colspan="2" style="text-align:center; vertical-align:middle;">[Dynamic verified result]</td></tr>
+  <tr><th colspan="4" style="text-align:center; vertical-align:middle;">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
+  <tr><td colspan="4" style="text-align:center; vertical-align:middle;">[Dynamic complete feature name — short benefit]</td></tr>
 </table>
