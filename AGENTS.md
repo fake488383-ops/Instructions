@@ -60,7 +60,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 
 ## Task Completion Report
 
-- **Before/After:** Compare with the pre-task state. BEFORE: show only Missing or the existing feature name. AFTER: show only newly added feature names.
+- **Dynamic Before/After:** Generate both sections from the actual project state; never use fixed, sample, or placeholder content. BEFORE dynamically lists every relevant feature/component missing before the task (or its existing state when present). AFTER dynamically lists the features/components actually added by the task. Do not list unrelated missing items or claim additions that were not implemented.
 - **Testing Summary:** Show test categories, child-feature test names, performance metrics, and Pass or Fail. Include only tests actually run and measured results.
 - **Engineer Summary:** List each contributing engineer inline as **Discipline Title** — short contribution, followed by a comma and the next engineer. Keep all entries in one continuous horizontal text flow; wrap naturally only when the row reaches its width. Never stack engineers in separate blocks or columns.
 
@@ -74,8 +74,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
   <tbody>
     <tr><th colspan="4" style="text-align:center; vertical-align:middle; padding:12px; border:1px solid;">Final Task Report</th></tr>
     <tr>
-      <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">BEFORE</th>
-      <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER</th>
+      <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">BEFORE<br><small>Dynamic: project features/components missing before this task</small></th>
+      <th colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER<br><small>Dynamic: features/components actually added by this task</small></th>
     </tr>
     <tr>
       <td colspan="2" style="width:50%; min-width:50%; text-align:center; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">&nbsp;</td>
