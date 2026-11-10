@@ -60,6 +60,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
+- **CLI Display:** Render the complete Task Final Report table directly in CLI mode using a readable terminal/ASCII table layout; preserve all sections, columns, dynamic rows, and concise values. Do not write a separate report file instead of displaying it in the CLI.
+
 - **Before/After:** Show actual existing and changed main feature names only. Use **Missing** only when the feature did not exist before.
 - **Engineer Summary:** Show only the actual contributing engineers selected from the 35-engineer **Engineering Disciplines** list. Use each engineer's exact listed name and discipline title; never invent or use generic names/titles. Show each in a separate equal-width card with one very short contribution. Include no engineer who did not work on the task.
 - **Testing Summary:** Use four columns: **Testing Type**, **Testing Feature**, **Metric**, and **Status**. Generate Testing Types dynamically from tests actually performed. Under Testing Feature, list actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Show relevant, measured Metrics as short real-time values with units (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); omit unavailable metrics. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates, and never mark unperformed tests as passed.
