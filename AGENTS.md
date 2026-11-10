@@ -64,7 +64,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 - **Testing Summary:** Show actual tests, feature results, measured metrics, and Pass/Fail.
 - **Engineer Summary:** List actual contributors and brief contributions inline.
 - **Execution Summary:** Three equal horizontal columns: **Execution Details**, **Performance Metrics**, and **Execution Status**. Show actual build/launch details, measured resource usage, and verified Pass/Fail states only.
-- **Suggestion Summary:** Recommend exactly 7 useful, project-specific features not already present. Each numbered item shows its feature name and a short Roman Urdu benefit description beneath it. Add **8. Apply for All** to apply all 7 suggestions when selected. Keep all 8 items in one column; generate suggestions dynamically and avoid duplicates.
+- **Suggestion Summary:** Use one heading and one content box only. Show one concise dynamic hint for the 7 project-specific suggestions and the **Apply for All** option. Do not add numbered hint lines, repeated hints, or extra boxes.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
   <colgroup>
@@ -117,16 +117,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual CPU / RAM / GPU / Storage measurements</td>
       <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual Build / Debug / Launch / Runtime states</td>
     </tr>
-    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
-    <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;">
-      1. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
-      2. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
-      3. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
-      4. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
-      5. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
-      6. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
-      7. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
-      8. **Apply for All** — Tamam 7 suggestions apply karein.
-    </td></tr>
+    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; bor    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
+    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small>7 dynamic project-specific suggestions; Apply for All applies them together.</small></td></tr>
   </tbody>
 </table>
