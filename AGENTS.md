@@ -84,7 +84,10 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
   <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
   <tr><td colspan="6" align="center" valign="middle" style="padding:10px;">
     <div style="display:flex; flex-wrap:wrap; justify-content:space-around; align-items:stretch; gap:12px; width:100%;">
-      <div style="flex:1 1 160px; min-width:0; text-align:center; padding:8px;"><strong>[Engineer Name]</strong><br><tr><th colspan="6" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
+      <div style="flex:1 1 160px; min-width:0; text-align:center; padding:8px;"><strong>[Engineer Name]</strong><br>[Actual Contribution]</div>
+    </div>
+  </td></tr>
+  <tr><th colspan="6" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
   <tr>
     <td colspan="3" align="center" valign="middle" style="width:50%; height:36px; padding:12px; border:1px solid #888;"></td>
     <td colspan="3" align="center" valign="middle" style="width:50%; height:36px; padding:12px; border:1px solid #888;"></td>
