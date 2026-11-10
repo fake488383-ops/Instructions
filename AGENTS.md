@@ -68,7 +68,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
 - **Evidence & Brevity:** Use concise, task-specific evidence from actual changes, test runs, measurements, engineer work, and build/launch output. No fixed values, fake/sample data, guesses, placeholders in the actual report, or duplicate rows. Keep all main topics; shorten wording, not sections.
 - **BEFORE / AFTER:** Show only each task's actual **main feature name**, using its recognized industry-standard/domain name where one exists. Choose the top-level feature explicitly requested or implemented; do not split its child features, components, or internal operations into separate rows. No descriptions or benefits. New feature: BEFORE = **MISSING**, AFTER = its exact main feature name. Updated feature: BEFORE = its previous name/version, AFTER = its latest verified name/version. Derive names and versions from project evidence; never invent or list unchanged features.
 - **ENGINEER SUMMARY:** Use one full-width table row/cell spanning all six base columns, with no separate Engineer Name or Contribution columns/rows. Define one reusable engineer-item template only: engineer name on top and that engineer's actual contribution directly underneath. Dynamically repeat that single template once per actual contributing engineer, arranged horizontally left-to-right and naturally wrapping onto additional lines as needed. Do not pre-write duplicate/sample engineer items. Keep spacing and alignment consistent; never invent engineers or contributions.
-- **TESTING SUMMARY:** Place directly below ENGINEER SUMMARY as one full-width section spanning all six base columns. Under its heading, use exactly one outer bordered box containing a direct four-column CSS grid: **Quality Testing**, **Child Feature**, **Performance**, and **Status**. Put the four headers and each dynamic data row directly in that same grid. Do not use a nested table, nested bordered wrapper, or extra box inside the outer box. Define exactly one reusable data-row template and repeat it only for actual verified child-feature tests. Use actual testing categories and child-feature names, measured performance values with units (or **N/A** when not applicable), and the verified status **PASS**, **FAIL**, or **WORKING**. Use green for PASS, red for FAIL, and amber for WORKING. Never invent results, measurements, categories, or placeholder rows; do not show test-count, passed-count, failed-count, or blocked-count metrics.
+- **TESTING SUMMARY:** Place directly below ENGINEER SUMMARY as one full-width section spanning all six base columns. Render one clear four-column table with these headers, in order: **Quality Testing**, **Child Feature**, **Performance**, and **Status**. Show exactly four dynamic data rows beneath the header (one tested child feature per row); do not create separate nested boxes around rows. Use actual testing categories and child-feature names, measured performance values with units (or **N/A** when not applicable), and the verified status **PASS**, **FAIL**, or **WORKING**. Use green for PASS, red for FAIL, and amber for WORKING. Never invent results, measurements, categories, or placeholder rows; do not show test-count, passed-count, failed-count, or blocked-count metrics. If fewer than four tests were actually verified, show only the verified rows rather than fabricate the remaining rows.
 - **BUILD & DEVELOPMENT:** Keep **Build / Development Event** and **Result** columns. Dynamically include only events that actually ran and were verified (e.g. C++ Backend Compilation, Python Backend Initialization, QML UI Compilation, Debug/Release Build, EXE Launch). Result is **PASS** or **FAIL** only; no fixed rows or invented events.
 - **NEXT IMPROVEMENT SUGGESTIONS:** Dynamically show up to 7 distinct, actionable suggestions, each with a complete feature name and short benefit. **8. Apply for all** must execute all listed suggestions together only if the interface supports the action; check dependencies/conflicts/impact, verify each change, and report failures or blockers. Otherwise show plain text, not a fake button.
 
@@ -84,20 +84,23 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
   <tr><th colspan="6" align="center">ENGINEER SUMMARY</th></tr>
   <tr><td colspan="6" align="center" valign="middle" style="padding:10px;">
     <div style="display:flex; flex-wrap:wrap; justify-content:space-around; align-items:stretch; gap:12px; width:100%;">
-      <div style="flex:1 1 <tr><th colspan="6" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
-  <tr><td colspan="6" align="center" valign="middle" style="padding:0; border:1px solid #888;">
-    <div style="display:grid; grid-template-columns:25% 35% 20% 20%; width:100%; text-align:center; vertical-align:middle;">
-      <div style="padding:9px; border-right:1px solid #888; border-bottom:1px solid #888;"><strong>Quality Testing</strong></div>
-      <div style="padding:9px; border-right:1px solid #888; border-bottom:1px solid #888;"><strong>Child Feature</strong></div>
-      <div style="padding:9px; border-right:1px solid #888; border-bottom:1px solid #888;"><strong>Performance</strong></div>
-      <div style="padding:9px; border-bottom:1px solid #888;"><strong>Status</strong></div>
-      <div style="padding:9px; border-right:1px solid #888;">[Actual testing type]</div>
-      <div style="padding:9px; border-right:1px solid #888;">[Verified child feature]</div>
-      <div style="padding:9px; border-right:1px solid #888;">[Measured value + unit / N/A]</div>
-      <div style="padding:9px;">[PASS / FAIL / WORKING]</div>
+      <div style="flex:1 1 160px; min-width:0; text-align:center; padding:8px;"><strong>[Engineer Name]</strong><br>[Actual Contribution]</div>
     </div>
   </td></tr>
-ng:9px;">[Measured value + unit / N/A]</td><td align="center" style="padding:9px;">[PASS / FAIL / WORKING]</td></tr>
+  <tr><th colspan="6" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
+  <tr><td colspan="6" align="center" valign="middle" style="padding:0; border:1px solid #888;">
+    <table width="100%" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center; vertical-align:middle;">
+      <colgroup><col style="width:25%;"><col style="width:35%;"><col style="width:20%;"><col style="width:20%;"></colgroup>
+      <tr>
+        <th align="center" style="padding:9px;">Quality Testing</th>
+        <th align="center" style="padding:9px;">Child Feature</th>
+        <th align="center" style="padding:9px;">Performance</th>
+        <th align="center" style="padding:9px;">Status</th>
+      </tr>
+      <tr><td align="center" style="padding:9px;">[Actual testing type]</td><td align="center" style="padding:9px;">[Verified child feature]</td><td align="center" style="padding:9px;">[Measured value + unit / N/A]</td><td align="center" style="padding:9px;">[PASS / FAIL / WORKING]</td></tr>
+      <tr><td align="center" style="padding:9px;">[Actual testing type]</td><td align="center" style="padding:9px;">[Verified child feature]</td><td align="center" style="padding:9px;">[Measured value + unit / N/A]</td><td align="center" style="padding:9px;">[PASS / FAIL / WORKING]</td></tr>
+      <tr><td align="center" style="padding:9px;">[Actual testing type]</td><td align="center" style="padding:9px;">[Verified child feature]</td><td align="center" style="padding:9px;">[Measured value + unit / N/A]</td><td align="center" style="padding:9px;">[PASS / FAIL / WORKING]</td></tr>
+      <tr><td align="center" style="padding:9px;">[Actual testing type]</td><td align="center" style="padding:9px;">[Verified child feature]</td><td align="center" style="padding:9px;">[Measured value + unit / N/A]</td><td align="center" style="padding:9px;">[PASS / FAIL / WORKING]</td></tr>
     </table>
   </td></tr>
   <tr><th colspan="6" align="center">BUILD &amp; DEVELOPMENT</th></tr>
