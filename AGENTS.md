@@ -60,31 +60,3 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 | 33 | Data Science Engineer | Apply statistics, experimentation, feature engineering, predictive analytics, and evaluate statistical/ML models with AI ML Engineer. |
 | 34 | QA Automation Engineer | Build and maintain automated test frameworks, scripts, UI/API/workflow regression suites, and repeatable test execution. |
 | 35 | Robotics Engineer | Integrate robot software, sensors, actuators, motion/control, navigation, and simulation; validate hardware-software behavior. |
-
-## 5 Task Final Report
-
-- **Dynamic BEFORE / AFTER Placement:** Populate each side independently with real-time project data: existing features and their actual state go only in **BEFORE**; features added or improved by the current task go only in **AFTER**. Keep corresponding changes on the same row where applicable. Never place AFTER content in BEFORE or vice versa. Generate values from the live workspace/task evidence; do not use fixed examples or placeholders.
-- **Always Generate:** After every project task, show the report using this exact unified table blueprint. Keep all report information inside the table; add rows when needed.
-- **BEFORE / AFTER:** BEFORE shows relevant features already present or marked **MISSING**. AFTER shows features added or improved by this task.
-- **ENGINEER SUMMARY:** Include only actual contributors from the 35 disciplines. Each box contains the engineer's complete title and a short contribution beneath it.
-- **TESTING SUMMARY:** Testing Type lists actual test types (e.g. Unit, Integration, End-to-End); Feature Test lists the tested child feature/behavior; Metrics shows measured timing, duration, or load performance in concise units (e.g. ms, sec, min); Status is **PASS** or **FAIL**. Add a row for each test.
-- **EXECUTION SUMMARY:** Execution Check lists actual checks/artifacts (e.g. EXE Build, Debug Build, EXE Size, CPU, RAM, Startup Time); Performance shows the corresponding measured value; Result is **PASS** or **FAIL**. Add rows for each applicable check.
-- **NEXT IMPROVEMENT SUGGESTIONS:** Show exactly 10 numbered suggestions, each with a short feature title and benefit description. Item **11. APPLY FOR ALL** applies all 10; selecting 1–10 applies only the selected suggestion numbers. Do not apply suggestions unless the user selects them.
-- **Evidence Only:** Use actual project state, contributors, test outcomes, and measured metrics. Never invent results; mark unperformed checks clearly as **NOT TESTED**.
-
-<p align="center"><strong>TASK FINAL REPORT</strong></p>
-
-<table align="center" width="100%" style="width:100%; max-width:none; margin:0 auto; border:1px solid currentColor; border-collapse:collapse; border-spacing:0; text-align:center;">
-  <tr><th colspan="10" width="50%" align="center" style="padding:10px 14px; border-bottom:1px solid currentColor; border-right:1px solid currentColor;">BEFORE</th><th colspan="10" width="50%" align="center" style="padding:10px 14px; border-bottom:1px solid currentColor;">AFTER</th></tr>
-  <tr><td colspan="10" style="padding:10px 14px; border-right:1px solid currentColor;"></td><td colspan="10" style="padding:10px 14px;"></td></tr>
-  <tr><th colspan="20" align="center" style="padding:10px 14px; border-top:1px solid currentColor; border-bottom:1px solid currentColor;">ENGINEER SUMMARY</th></tr>
-  <tr><td colspan="7" width="35%" style="padding:12px 14px;"><strong></strong><br></td><td colspan="6" width="30%" style="padding:12px 14px;"><strong></strong><br></td><td colspan="7" width="35%" style="padding:12px 14px;"><strong></strong><br></td></tr>
-  <tr><th colspan="20" align="center" style="padding:10px 14px; border-top:1px solid currentColor; border-bottom:1px solid currentColor;">TESTING SUMMARY</th></tr>
-  <tr><th colspan="5" width="25%" style="padding:10px 12px;">Testing Type</th><th colspan="5" width="25%" style="padding:10px 12px;">Feature Test</th><th colspan="5" width="25%" style="padding:10px 12px;">Metrics</th><th colspan="5" width="25%" style="padding:10px 12px;">Status</th></tr>
-  <tr><td colspan="5" style="padding:10px 12px;"></td><td colspan="5" style="padding:10px 12px;"></td><td colspan="5" style="padding:10px 12px;"></td><td colspan="5" style="padding:10px 12px;"></td></tr>
-  <tr><th colspan="20" align="center" style="padding:10px 14px; border-top:1px solid currentColor; border-bottom:1px solid currentColor;">EXECUTION SUMMARY</th></tr>
-  <tr><th colspan="7" width="35%" style="padding:10px 12px;">Execution Check</th><th colspan="6" width="30%" style="padding:10px 12px;">Performance</th><th colspan="7" width="35%" style="padding:10px 12px;">Result</th></tr>
-  <tr><td colspan="7" style="padding:10px 12px;"></td><td colspan="6" style="padding:10px 12px;"></td><td colspan="7" style="padding:10px 12px;"></td></tr>
-  <tr><th colspan="20" align="center" style="padding:10px 14px; border-top:1px solid currentColor; border-bottom:1px solid currentColor;">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
-  <tr><td colspan="20" style="padding:10px 14px; text-align:left;"><strong>1.</strong></td></tr>
-</table>
