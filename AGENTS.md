@@ -88,10 +88,11 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
     </div>
   </td></tr>
   <tr><th colspan="6" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
-  <tr><td colspan="6" align="center" valign="middle" style="padding:0; border:1px solid #888;">
-    <table width="100%" style="width:100%; border-collapse:collapse; table-layout:fixed; text-align:center; vertical-align:middle;">
-      <colgroup><col style="width:25%;"><col style="width:35%;"><col style="width:20%;"><col style="width:20%;"></colgroup>
-      <tr>
-        <th align="center" style="padding:9px;">Quality Testing</th>
-        <th align="center" style="padding:9px;">Child Feature<<tr><th colspan="6" align="center" style="padding:10px;">TESTING SUMMARY</th></tr>
   <tr><td colspan="6" align="center" valign="middle" style="height:36px; padding:12px; border:1px solid #888;"></td></tr>
+  <tr><th colspan="6" align="center">BUILD &amp; DEVELOPMENT</th></tr>
+  <tr><th colspan="3" align="center">Build / Development Event</th><th colspan="3" align="center">Result</th></tr>
+  <tr><td colspan="3" align="center">[Actual verified event]</td><td colspan="3" align="center">[PASS / FAIL]</td></tr>
+  <tr><th colspan="6" align="center">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
+  <tr><td colspan="6" valign="middle">1&emsp;<strong>[Dynamic complete feature name]</strong><br>&emsp;&nbsp;&nbsp;[Short benefit]</td></tr>
+</table>
+</div>
