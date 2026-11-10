@@ -64,7 +64,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 ## 5 Task Final Report
 
 - **Report Trigger:** Report completed, failed, or blocked workspace tasks; skip planning, discussion, and read-only reviews.
-- **Layout:** Keep table width, column count, column widths, box widths, styling, alignment, and horizontal arrangement fixed. Add rows and increase table/box height as content grows; do not stretch or rearrange columns.
+- **Layout & Agent Display:** Treat the blueprint below as the exact, permanent report layout. Every VS Code extension agent must render the final report directly in its agent response using this same unified table, preserving its structure, dimensions, columns, boxes, styling, alignment, and arrangement. Never replace it with separate tables, plain text, cards, or another layout. Add rows and increase height only as content grows; do not redesign or rearrange it.
 - **Dynamic Data:** Generate content only from verified task evidence. Add rows or increase cell height as needed; omit unavailable/unperformed data and never display template placeholders or invented values.
 - **BEFORE / AFTER:** Show existing feature names or **MISSING** in BEFORE; show added/improved feature names in AFTER. Add rows vertically as needed; keep both columns unchanged.
 - **ENGINEER SUMMARY:** Show one centered bordered box per actual contributor, with **[Dynamic Engineer Name]** and **[Dynamic Contribution]**. Keep the same three-box row layout and box widths; add further rows of boxes for contributors 4, 5, 6, and onward. Let height grow; omit non-contributors.
