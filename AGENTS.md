@@ -64,12 +64,37 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
 ## 5 Task Final Report
 
 - **When to Report:** Show after each completed, failed, or blocked workspace task. Skip discussion, planning, advice, and read-only reviews.
-- **Layout:** Use one compact HTML table in this order: BEFORE / AFTER, ENGINEER SUMMARY, TESTING SUMMARY, BUILD & DEVELOPMENT, NEXT IMPROVEMENT SUGGESTIONS. Keep the layout clean and aligned; do not include layout/CSS measurements or nested tables.
-- **Live Evidence:** Populate all values dynamically from the current task and verified workspace evidence. Never invent results, metrics, contributors, or completed actions.
-- **BEFORE / AFTER:** BEFORE lists existing main feature names; show **MISSING** where a requested feature does not exist. AFTER lists newly added main feature names or the improved version of an existing feature. Keep feature hierarchy dynamic and show only relevant main feature names, not descriptions or examples.
-- **ENGINEER SUMMARY:** Show each actual engineer's name above their short contribution. Place entries horizontally, separated by commas, wrapping naturally when needed.
-- **TESTING SUMMARY:** Use four columns: **Testing Type**, **Feature Test**, **Metrics**, **Status**. Testing Type identifies Unit Testing, Integration Testing, or End-to-End Testing. Feature Test lists the child features of the relevant AFTER main feature that were actually tested. Metrics show concise measured performance (for example, ms, ping, or memory). Status shows **PASS** or **FAIL**. Include only tests and measurements actually performed; if no test ran, show headings only.
-- **BUILD & DEVELOPMENT:** Keep the existing **Build / Development Event** and **Result** columns. Show only events actually performed and their verified results.
-- **NEXT IMPROVEMENT SUGGESTIONS:** Show 10 distinct, actionable suggestions, each with a complete feature name and short benefit. Number 11 must be **Apply for All**.
+- **Layout:** Always render the HTML table blueprint below. Keep its sections and column structure; do not replace it with plain text or Markdown.
+- **Live Evidence:** Populate values dynamically from the current task and verified workspace evidence. Never invent results, metrics, contributors, or completed actions.
+- **BEFORE / AFTER:** BEFORE lists existing main feature names; show **MISSING** where a requested feature does not exist. AFTER lists newly added main feature names or improved versions of existing features. Keep hierarchy dynamic; show main feature names only.
+- **ENGINEER SUMMARY:** Show each actual engineer's name above a short contribution. Arrange entries horizontally, separated by commas, wrapping naturally.
+- **TESTING SUMMARY:** Use **Testing Type**, **Feature Test**, **Metrics**, and **Status**. Testing Type is Unit Testing, Integration Testing, or End-to-End Testing. Feature Test lists tested child features of the relevant AFTER feature. Metrics show concise measured performance with units. Status is **PASS** or **FAIL**. Include only tests and measurements actually performed; if no test ran, show headings only.
+- **BUILD & DEVELOPMENT:** Keep **Build / Development Event** and **Result** columns. Show only events actually performed and verified results.
+- **NEXT IMPROVEMENT SUGGESTIONS:** Show 10 distinct actionable suggestions with complete feature names and short benefits. Row 11 is **Apply for All**.
 
-Render the report with live task data only. Do not display sample values or explanatory layout specifications.
+<p align="center"><strong>TASK FINAL REPORT</strong></p>
+
+<table align="center" style="border-collapse:collapse; text-align:center;">
+  <tr><th colspan="10"><u>BEFORE</u></th><th colspan="10" style="border-left:1px solid currentColor;"><u>AFTER</u></th></tr>
+  <tr><td colspan="10">[Existing main feature names or MISSING]</td><td colspan="10" style="border-left:1px solid currentColor;">[New or improved main feature names]</td></tr>
+  <tr><th colspan="20">ENGINEER SUMMARY</th></tr>
+  <tr><td colspan="20">[Engineer name]<br>[Short contribution], [Next engineer name]<br>[Short contribution]</td></tr>
+  <tr><th colspan="20">TESTING SUMMARY</th></tr>
+  <tr><th colspan="5">Testing Type</th><th colspan="5">Feature Test</th><th colspan="5">Metrics</th><th colspan="5">Status</th></tr>
+  <tr><td colspan="5">[Unit / Integration / End-to-End]</td><td colspan="5">[Tested child feature]</td><td colspan="5">[Measured metric + unit]</td><td colspan="5">[PASS / FAIL]</td></tr>
+  <tr><th colspan="20">BUILD &amp; DEVELOPMENT</th></tr>
+  <tr><th colspan="10">Build / Development Event</th><th colspan="10">Result</th></tr>
+  <tr><td colspan="10">[Actual event]</td><td colspan="10">[Verified result]</td></tr>
+  <tr><th colspan="20">NEXT IMPROVEMENT SUGGESTIONS</th></tr>
+  <tr><td colspan="20">1. [Feature name] — [Short benefit]</td></tr>
+  <tr><td colspan="20">2. [Feature name] — [Short benefit]</td></tr>
+  <tr><td colspan="20">3. [Feature name] — [Short benefit]</td></tr>
+  <tr><td colspan="20">4. [Feature name] — [Short benefit]</td></tr>
+  <tr><td colspan="20">5. [Feature name] — [Short benefit]</td></tr>
+  <tr><td colspan="20">6. [Feature name] — [Short benefit]</td></tr>
+  <tr><td colspan="20">7. [Feature name] — [Short benefit]</td></tr>
+  <tr><td colspan="20">8. [Feature name] — [Short benefit]</td></tr>
+  <tr><td colspan="20">9. [Feature name] — [Short benefit]</td></tr>
+  <tr><td colspan="20">10. [Feature name] — [Short benefit]</td></tr>
+  <tr><td colspan="20">11. **Apply for All**</td></tr>
+</table>
