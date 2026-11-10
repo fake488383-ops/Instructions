@@ -63,14 +63,14 @@ Preserve all 35 engineer names, numbers, and responsibilities. For each task, th
 
 ## 5 Task Final Report
 
-- **When to Report:** Show after each completed, failed, or blocked workspace task. Skip discussion, planning, advice, and read-only reviews.
-- **Layout:** Preserve the HTML table blueprint below exactly as it is. Never alter its structure, markup, styling, alignment, spacing, columns, grid, or layout. Only update the report instructions and dynamic content rules when requested.
-- **Live Dynamic Tables:** Generate all report content and data rows from current task evidence. Add rows as information becomes available so each table grows vertically automatically; nothing is fixed or pre-filled. Omit unavailable or unperformed information. Never invent values or show placeholders.
-- **BEFORE / AFTER:** BEFORE shows existing main feature names, or **MISSING** for absent requested features. AFTER shows added or improved main feature names only.
-- **ENGINEER SUMMARY:** Use exactly three side-by-side bordered columns with all content horizontally centered. Show **[Dynamic Engineer Name]** with **[Dynamic Verified Value]** directly below; stack additional contributors in order down the columns. Omit non-contributors.
-- **TESTING SUMMARY:** Keep **Testing Type**, **Feature Test**, **Metrics**, and **Status**. Add one row per actual test. Show concise performance metrics using short labels/units (e.g., RT, PT, ms, MB, %, FPS) only when measured; keep **PASS/FAIL** in Status. Do not use test-case counts such as 9/10 as performance metrics. Omit unrun tests and unavailable measurements.
-- **EXECUTION SUMMARY:** Use three columns: **Execution Check**, **Performance**, and **Result**; center Performance. Add rows only for observed execution events. Show concise measured performance (e.g., build time, startup ms/s, EXE MB, RAM MB, CPU %) only when relevant and captured; leave Performance empty when not applicable. Result shows the actual outcome/status (e.g., COMPLETED, PASS, FAIL, SUCCESSFUL, GENERATED, LAUNCHED). Keep debugging/fixes before finalization; place Final Build, EXE Generation, and EXE Launch at the end in that order when performed, with EXE Launch last. Do not invent values or duplicate Testing Summary metrics.
-- **NEXT IMPROVEMENT SUGGESTIONS:** Inside the existing full-width suggestions cell, show 10 distinct actionable suggestions as separate vertically stacked entries, each with its complete feature name and short benefit. Place **Apply for All** as the 11th and final entry in that same cell. Let the cell and table grow vertically; do not add columns or change the table layout.
+- **Report Trigger:** Report completed, failed, or blocked workspace tasks; skip planning, discussion, and read-only reviews.
+- **Layout:** Keep table width, column count, column widths, box widths, styling, alignment, and horizontal arrangement fixed. Add rows and increase table/box height as content grows; do not stretch or rearrange columns.
+- **Dynamic Data:** Generate content only from verified task evidence. Add rows or increase cell height as needed; omit unavailable/unperformed data and never display template placeholders or invented values.
+- **BEFORE / AFTER:** Show existing feature names or **MISSING** in BEFORE; show added/improved feature names in AFTER. Add rows vertically as needed; keep both columns unchanged.
+- **ENGINEER SUMMARY:** Show one centered bordered box per actual contributor, with **[Dynamic Engineer Name]** and **[Dynamic Contribution]**. Keep the same three-box row layout and box widths; add further rows of boxes for contributors 4, 5, 6, and onward. Let height grow; omit non-contributors.
+- **TESTING SUMMARY:** Keep **Testing Type**, **Feature Test**, **Metrics**, and **Status**. Add one row per actual test; show measured metrics with units and **PASS/FAIL** status. Omit unrun tests and unavailable metrics.
+- **EXECUTION SUMMARY:** Keep **Execution Check**, **Performance**, and **Result**; center Performance. Add observed execution events only, with captured metrics and actual outcomes. Keep debugging/fixes before finalization; list Final Build, EXE Generation, and EXE Launch last in that order. Do not repeat metrics already shown in TESTING SUMMARY.
+- **NEXT IMPROVEMENT SUGGESTIONS:** In the existing full-width cell, show 10 distinct actionable feature names with short benefits, followed by **Apply for All** as item 11. Let the cell grow vertically; keep the layout fixed.
 
 <p align="center"><strong>TASK FINAL REPORT</strong></p>
 
