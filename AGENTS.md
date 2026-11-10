@@ -118,14 +118,15 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
       <td colspan="4" align="center" style="width:33.333%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Actual Build / Debug / Launch / Runtime states</td>
     </tr>
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Suggestion Summary</th></tr>
-    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small>7 naye project-specific features; har feature ke neeche short Roman Urdu benefit. #8 tamam suggestions apply karne ke liye.</small></td></tr>
-    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">1. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
-    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">2. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
-    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">3. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
-    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">4. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
-    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">5. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
-    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">6. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
-    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">7. **[Feature Name]**<br><small>[Is feature ka short Roman Urdu benefit.]</small></td></tr>
-    <tr><td colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">8. **Apply for All**<br><small>Saath ke 7 features apply karne ke liye.</small></td></tr>
+    <tr><td colspan="12" align="left" style="text-align:left !important; vertical-align:middle; padding:12px; border:1px solid;">
+      1. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
+      2. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
+      3. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
+      4. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
+      5. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
+      6. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
+      7. **[Feature Name]** — [Short Roman Urdu benefit.]<br>
+      8. **Apply for All** — Tamam 7 suggestions apply karein.
+    </td></tr>
   </tbody>
 </table>
