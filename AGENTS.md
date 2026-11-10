@@ -62,7 +62,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 
 - **Before/After:** Show actual existing and changed main feature names only. Use **Missing** only when the feature did not exist before.
 - **Engineer Summary:** Show each actual contributing engineer in a separate equal-width column/card. Place **Engineer Name — Title** at the top and a short **Contribution** underneath. Include only engineers who contributed; do not use generic status, metric, or testing labels in place of the engineer identity and contribution.
-- **Testing Summary:** Use four columns: **Testing Type**, **Execution Details**, **Metric**, and **Status**. Populate every row dynamically from the work actually tested, executed, and measured. Do not predefine, hardcode, or repeatedly display example test names, action names, metrics, units, build modes, or outcomes. Include every relevant check and runtime measurement that was actually performed or captured. Each row must describe the real check, its actual measured value when available, and its actual result. Omit unavailable or irrelevant data; never invent values or mark unperformed checks as passed.
+- **Testing Summary:** Use four columns: **Testing Type**, **Testing Feature**, **Metric**, and **Status**. Populate every row dynamically from the work actually tested, executed, and measured. Do not predefine, hardcode, or repeatedly display example test names, action names, metrics, units, build modes, or outcomes. Include every relevant check and runtime measurement that was actually performed or captured. Each row must describe the real check, its actual measured value when available, and its actual result. Omit unavailable or irrelevant data; never invent values or mark unperformed checks as passed.
 - **Suggestion Summary:** Generate 7 relevant suggestions dynamically, each with a feature name and short purpose. Suggestion 8 is **Apply for All**.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
@@ -99,7 +99,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
       <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Type</th>
-      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Details</th>
+      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Feature</th>
       <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Metric</th>
       <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Status</th>
     </tr>
