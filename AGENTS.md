@@ -60,55 +60,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
-- **CLI Display:** Render the complete Task Final Report table directly in CLI mode using a readable terminal/ASCII table layout; preserve all sections, columns, dynamic rows, and concise values. Do not write a separate report file instead of displaying it in the CLI.
-
-- **Before/After:** Show actual existing and changed main feature names only. Use **Missing** only when the feature did not exist before.
-- **Engineer Summary:** Show only the actual contributing engineers selected from the 35-engineer **Engineering Disciplines** list. Use each engineer's exact listed name and discipline title; never invent or use generic names/titles. Show each in a separate equal-width card with one very short contribution. Include no engineer who did not work on the task.
-- **Testing Summary:** Use four columns: **Testing Type**, **Testing Feature**, **Metric**, and **Status**. Generate Testing Types dynamically from tests actually performed. Under Testing Feature, list actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Show relevant, measured Metrics as short real-time values with units (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); omit unavailable metrics. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates, and never mark unperformed tests as passed.
-
-<table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
-  <colgroup>
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-    <col style="width:8.3333%">
-  </colgroup>
-  <tbody>
-    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Task Final Report</th></tr>
-    <tr>
-      <th colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">BEFORE</th>
-      <th colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;">AFTER</th>
-    </tr>
-    <tr>
-      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Actual Existing State</small></td>
-      <td colspan="6" align="center" style="width:50%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid; box-sizing:border-box;"><small style="display:block; width:100%; text-align:center !important;">Actual Updated State</small></td>
-    </tr>
-    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Engineer Summary</th></tr>
-    <tr>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[One Short Task]</small></td>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[One Short Task]</small></td>
-      <td colspan="4" align="center" style="text-align:center !important; vertical-align:top; padding:12px; border:1px solid;"><strong>[Engineer Name — Title]</strong><br><small>[One Short Task]</small></td>
-    </tr>
-    <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
-    <tr>
-      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Type</th>
-      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Feature</th>
-      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Metric</th>
-      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Status</th>
-    </tr>
-    <tr>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Testing</small></td>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Feature Title</small></td>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Value</small></td>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Status</small></td>
-    </tr>
-</tbody>
-</table>
+- **Output Format:** Generate and display the report directly in the AI agent's response using standard GitHub-flavored Markdown tables. Do not use CLI/ASCII/Unicode box-drawing tables, HTML tables, or separate report files.
+- **Before/After:** Use a Markdown table with **Before** and **After** columns. Show actual existing and changed main feature names only; use **Missing** only when a feature did not exist before.
+- **Engineer Summary:** Use a Markdown table with **Engineer** and **Contribution** columns. Include only actual contributing engineers from the 35-engineer **Engineering Disciplines** list, using each exact listed name and discipline title. Give each a very short contribution; never invent names or include non-contributors.
+- **Testing Summary:** Use a Markdown table with four columns: **Testing Type**, **Testing Feature**, **Metric**, and **Status**. Generate Testing Types dynamically from tests actually performed. List actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Show relevant, measured Metrics as short real-time values with units (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); omit unavailable metrics. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates, and never mark unperformed tests as passed.
