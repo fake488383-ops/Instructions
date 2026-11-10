@@ -89,7 +89,6 @@ Preserve all 35 engineer names, numbers, and responsibilities. For every task, a
     <td colspan="3" align="center" valign="middle" style="width:50%; height:36px; padding:12px; border:1px solid #888;"></td>
     <td colspan="3" align="center" valign="middle" style="width:50%; height:36px; padding:12px; border:1px solid #888;"></td>
   </tr>
-6px; padding:12px; border:1px solid #888;"></td></tr>
   <tr><th colspan="6" align="center">BUILD &amp; DEVELOPMENT</th></tr>
   <tr><th colspan="3" align="center">Build / Development Event</th><th colspan="3" align="center">Result</th></tr>
   <tr><td colspan="3" align="center">[Actual verified event]</td><td colspan="3" align="center">[PASS / FAIL]</td></tr>
