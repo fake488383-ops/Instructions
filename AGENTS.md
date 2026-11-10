@@ -62,7 +62,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
 
 - **Before/After:** Show actual existing and changed main feature names only. Use **Missing** only when the feature did not exist before.
 - **Engineer Summary:** Show only actual contributing engineers and what each worked on. Arrange entries horizontally, separated by commas.
-- **Testing Summary:** Use four columns: **Testing Type**, **Execution Details**, **Metric**, and **Status**. Populate every row dynamically from the work actually tested, executed, and measured. Do not predefine, hardcode, or repeatedly display example test names, action names, metrics, units, build modes, or outcomes. Include every relevant check and runtime measurement that was actually performed or captured. Each row must describe the real check, its actual measured value when available, and its actual result. Omit unavailable or irrelevant data; never invent values or mark unperformed checks as passed.
+- **Testing Summary:** Use four columns: **Testing Type**, **Execution Test**, **Metric**, and **Status**. Show every tested feature or data operation in its own separate box/row, based only on actual execution (for example, saving, retrieving, updating, or deleting data when those operations were tested). In **Execution Test**, show the actual feature/operation and its testing time. In **Metric**, show actual performance measurements such as response time in milliseconds, when captured. Populate rows dynamically; never hardcode examples or invent tests, times, metrics, or results. Omit unavailable data and never mark unperformed checks as passed.
 - **Suggestion Summary:** Generate 7 relevant suggestions dynamically, each with a feature name and short purpose. Suggestion 8 is **Apply for All**.
 
 <table width="100%" align="center" style="width:100%; min-width:900px; max-width:none; margin-left:auto; margin-right:auto; table-layout:fixed; border-collapse:collapse; border:1px solid; text-align:center;" border="1">
@@ -95,13 +95,13 @@ Preserve all 35 engineer names, numbers, and responsibilities. Detect task scope
     <tr><th colspan="12" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Summary</th></tr>
     <tr>
       <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Testing Type</th>
-      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Details</th>
+      <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Execution Test</th>
       <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Metric</th>
       <th colspan="3" align="center" style="width:25%; text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;">Status</th>
     </tr>
     <tr>
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Testing</small></td>
-      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Action Title</small></td>
+      <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Feature / Operation + Testing Time</small></td>
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Value</small></td>
       <td colspan="3" align="center" style="text-align:center !important; vertical-align:middle; padding:12px; border:1px solid;"><small style="display:block; width:100%; text-align:center !important;">Actual Status</small></td>
     </tr>
