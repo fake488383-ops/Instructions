@@ -64,6 +64,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 - **AFTER:** Show the added or replacement feature/version title only.
 - **Engineer Summary:** Show only the title/name of each actual contributing engineer from the 35 Engineering Disciplines. Place each engineer in a separate horizontal column, with their contribution directly underneath.
 - **Contribution:** Briefly state what that engineer actually worked on; keep it very short. Do not show inactive engineers or separate Engineer, Title, and Contribution columns.
+- **Build & Runtime Summary:** Keep it inside the same Task Final Report table, below Testing Summary, with two side-by-side columns: Build & Launch and System Performance. Show only actual build, debug, launch, timing, CPU, RAM, and GPU results; omit unavailable measurements.
 - Show one title per cell/row. No descriptions or repeated generic names.
 - Include only actual engineers and completed tests; show real results only.
 - Add rows dynamically and preserve the table layout.
@@ -104,26 +105,23 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <td>[Value / —]</td>
     <td>[Pass/Fail]</td>
   </tr>
-</table>
 
-### Build & Runtime Summary
-
-Show this separate vertical section directly below the Task Final Report table. Keep its title above two side-by-side columns. Populate all values dynamically from actual build and runtime checks; omit unavailable measurements.
-
-<table align="center">
   <tr>
-    <th align="center">Build & Launch</th>
-    <th align="center">System Performance</th>
+    <th colspan="4" align="center">Build & Runtime Summary</th>
   </tr>
   <tr>
-    <td>
+    <th colspan="2" align="center">Build & Launch</th>
+    <th colspan="2" align="center">System Performance</th>
+  </tr>
+  <tr>
+    <td colspan="2">
       Build Result: [Actual status]<br>
       Debug Result: [Actual status]<br>
       EXE Launch: [Actual status]<br>
       Build Duration: [Measured time]<br>
       Startup Time: [Measured time]
     </td>
-    <td>
+    <td colspan="2">
       CPU Usage: [Measured value]<br>
       RAM Usage: [Measured value]<br>
       Peak RAM: [Measured value]<br>
