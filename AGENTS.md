@@ -54,6 +54,8 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 ## 5 Task Final Report
 
+- **Background Color:** Always render the entire report and every table cell with a solid black background (`#000000`); never use another background color.
+
 - **Mandatory:** Generate this table after every completed task. Do not omit it.
 - **BEFORE / AFTER:** Show only the main feature title in both columns; never include versions or descriptions. Use **Missing** in BEFORE when the feature did not exist.
 - **Engineer Summary:** Show only contributing engineer titles, each followed by a short contribution.
