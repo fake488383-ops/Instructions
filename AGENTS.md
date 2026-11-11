@@ -7,18 +7,12 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
 ## 3 Golden Rules
-- **Platform Detection:** Detect targets from project folders and configuration.
-  Build and verify every supported target.
-- **Architecture:** Follow the existing architecture, folders, and build locations.
-  Avoid duplicate or unnecessary structures.
-- **Autonomous File Discovery:** Find and remember relevant files and paths.
-  Use alternatives when missing; do not repeat failed searches without new evidence.
-- **Workspace:** Make changes directly in the VS Code workspace.
-  Keep file updates visible as work progresses.
-- **Hidden Terminal:** Run commands in the background.
-  Capture results and report failures.
-- **Verification & Launch:** Build, launch, and test affected functionality.
-  Fix failures and retest; never claim checks not performed.
+- **Platform Detection:** Detect required targets from project folders and configuration; build and verify each supported target.
+- **Architecture:** Follow existing folders, architecture, and build locations. Avoid duplicate structures.
+- **Autonomous File Discovery:** Find and remember relevant files and paths. Use alternatives when missing; do not repeat failed searches without new evidence.
+- **Workspace:** Make changes directly in the VS Code workspace and keep updates visible.
+- **Hidden Terminal:** Run commands in the background; capture results and report failures.
+- **Verification & Launch:** Build, launch, and test affected functionality. Fix failures and retest; never claim checks that were not performed.
 ## 4 Engineering Disciplines
 
 - **Autonomous Engineering Instruction:** Activate all 36 listed disciplines for every task. Each engineer must independently discover its full professional responsibilities, assess the task and project, identify and execute all relevant contributions and improvements within its scope, and coordinate with the other engineers. No discipline may be silently skipped; avoid irrelevant changes, duplication, and conflicts. Do not wait for the user to define duties or steps.
