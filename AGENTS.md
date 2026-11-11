@@ -58,7 +58,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - **BEFORE / AFTER:** Show only the main feature title in both columns; never include versions or descriptions. Use **Missing** in BEFORE when the feature did not exist.
 - **Engineer Summary:** Show only contributing engineer titles, each followed by a short contribution.
 - **Testing Type / Feature:** Show only executed testing-type titles and the titles of child features actually tested; list each tested child feature under Testing Feature.
-- **Metric / Status:** Show actual performance measurements only, such as latency (ms), ping (ms), and response time (seconds), with units and **PASS** or **FAIL**. No descriptions.
+- **Metric / Status:** Show only actual numeric measurements with units (e.g., `150 ms`, `20 ms`, `1.5 sec`) and **PASS** or **FAIL**. Never show metric names or descriptions.
 - **Build & Launch:** Show only concise, actual build, debug, and launch results.
 - **System Performance:** Show only measured system metric names and values with units.
 - Never invent results or report unexecuted checks as completed.
@@ -76,7 +76,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
   </tr>
   <tr><th align="center" colspan="12" bgcolor="#D9EAF7">Testing Summary</th></tr>
   <tr><th align="center" colspan="3" bgcolor="#D9EAF7">Testing Type</th><th align="center" colspan="3" bgcolor="#D9EAF7">Testing Feature</th><th align="center" colspan="3" bgcolor="#D9EAF7">Metric</th><th align="center" colspan="3" bgcolor="#D9EAF7">Status</th></tr>
-  <tr><td align="center" colspan="3">[Executed test category]</td><td align="center" colspan="3">[Tested child feature title]</td><td align="center" colspan="3">[Performance metric + value + unit]</td><td align="center" colspan="3">[PASS / FAIL]</td></tr>
+  <tr><td align="center" colspan="3">[Executed test category]</td><td align="center" colspan="3">[Tested child feature title]</td><td align="center" colspan="3">[Numeric value + unit]</td><td align="center" colspan="3">[PASS / FAIL]</td></tr>
   <tr><th align="center" colspan="12" bgcolor="#D9EAF7">Build & Runtime Summary</th></tr>
   <tr><th align="center" colspan="6" bgcolor="#D9EAF7">Build & Launch</th><th align="center" colspan="6" bgcolor="#D9EAF7">System Performance</th></tr>
   <tr>
