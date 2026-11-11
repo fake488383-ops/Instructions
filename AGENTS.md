@@ -71,8 +71,8 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 - **Audit Selection:** When the user enters `0`, show all 36 engineers for selection. Each selected engineer audits the project independently according to their discipline and reports relevant problems, missing features, improvements, unnecessary items, and duplicates. Do not modify project files during the audit.
 - **Evidence:** Every finding must be supported by actual project evidence. Do not invent issues, improvements, or status values. Omit categories with no findings.
-- **BEFORE:** Show the issue title with a short description.
-- **AFTER:** Show the proposed fix title with a short description; recommendations only.
+- **BEFORE:** Show a clear, short problem title and one brief Roman Urdu sentence explaining the issue.
+- **AFTER:** Show a clear, short improvement/fix title and one brief Roman Urdu sentence explaining the benefit; recommendations only.
 - **STATUS:** Show a short category/severity, such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `SECURITY`, or `CRITICAL`.
 - **Dynamic Rows:** Add one finding per row. Keep entries short, specific, and relevant to the selected engineer. Do not show empty or placeholder rows.
 - **Report Title:** Display `Project Health Report` in the first full-width table header row, spanning all three columns above BEFORE, AFTER, and STATUS.
@@ -80,5 +80,5 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 <table align="center">
   <tr><th align="center" colspan="3">Project Health Report</th></tr>
   <tr><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr><td><strong>[Existing Issue Title]</strong><br>[Brief description of the current issue]</td><td><strong>[Proposed Fix Title]</strong><br>[Brief description of the recommended fix]</td><td>[Finding Category / Severity]</td></tr>
+  <tr><td><strong>[Short Problem Title]</strong><br>[Roman Urdu mein maslay ki aik mukhtasar, wazeh line]</td><td><strong>[Short Improvement Title]</strong><br>[Roman Urdu mein faiday ki aik mukhtasar, wazeh line]</td><td>[Finding Category / Severity]</td></tr>
 </table>
