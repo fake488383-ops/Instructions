@@ -54,18 +54,6 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 ## 5 Task Final Report
 
-- **Single Table:** Present the complete Task Final Report in one compact, blue-styled table. Put every report section and value inside that same table; do not create separate tables or add unnecessary text outside it.
-- **BEFORE:** Show only the affected feature title. If the feature did not exist before the task, show **Missing**. If it existed, show its existing feature title. Never show file names, paths, or explanations.
-- **AFTER:** Show only the added feature title or the improved feature title/version. Do not add explanations, file names, paths, or filler text.
-- **Engineer Summary:** Show only the exact titles of disciplines that materially contributed, with a very short contribution. Do not list idle engineers.
-- **Testing Type:** Show only testing categories actually executed, such as Unit Testing, Integration Testing, or End-to-End Testing.
-- **Testing Feature:** Show only the tested child-feature names; never repeat the main feature. Include only features actually tested.
-- **Metric & Status:** Show compact measured values with units (e.g. 120ms, 1.5s, 38%) and PASS or FAIL for each executed test. Never invent metrics or mark unexecuted tests PASS.
-- **Build & Launch:** Show concise actual build, debug, and EXE/application launch results. Mark only actions that actually occurred.
-- **System Performance:** Show only measured target-process metrics such as CPU, RAM, GPU, latency, or throughput, with units. Omit unavailable measurements; never estimate.
-- **Evidence:** Every reported value must come from the current task's actual project state, test output, build log, runtime, profiler, or monitoring data. Refresh evidence after changes and retest. Never use defaults, cached examples, or invented values.
-- Keep every label and value short. Include only information supported by actual work. If a check or measurement was unavailable, state the verification gap briefly inside the table.
-
 <table align="center">
   <tr><th colspan="4" align="center" bgcolor="#17365D">Task Final Report</th></tr>
   <tr><th align="center" colspan="2" bgcolor="#D9EAF7">BEFORE</th><th align="center" colspan="2" bgcolor="#D9EAF7">AFTER</th></tr>
