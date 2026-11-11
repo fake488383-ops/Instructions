@@ -76,16 +76,16 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th colspan="2">AFTER</th>
   </tr>
   <tr>
-    <td colspan="2" align="center">[Actual existing feature, or Missing]</td>
-    <td colspan="2" align="center">[Actual updated feature]</td>
+    <td colspan="2" align="center">[Feature name / Missing]</td>
+    <td colspan="2" align="center">[Updated feature]</td>
   </tr>
   <tr>
     <th colspan="4">Engineer Summary</th>
   </tr>
   <tr>
-    <td>[Actual contributing engineer]</td>
-    <td>[Discipline title]</td>
-    <td colspan="2">[Short actual contribution]</td>
+    <td>[Engineer name]</td>
+    <td>[Title]</td>
+    <td colspan="2">[Contribution]</td>
   </tr>
   <tr>
     <th colspan="4">Testing Summary</th>
@@ -97,9 +97,9 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th>Status</th>
   </tr>
   <tr>
-    <td>[Actual test type]</td>
-    <td>[Actual tested feature]</td>
-    <td>[Actual measured value, or —]</td>
+    <td>[Test type]</td>
+    <td>[Tested feature]</td>
+    <td>[Measured value / —]</td>
     <td>[Pass/Fail]</td>
   </tr>
 </table>
