@@ -54,34 +54,52 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 ## 5 Task Final Report
 
-- **Mandatory:** Generate this table after every completed task. Do not omit it.
+- **Mandatory Output:** After completing and verifying every task, generate and display the fully populated Task Final Report table in the final response. The blueprint alone is not the report.
+- **Dynamic Layout:** Create one separate column/cell for every actual feature, engineer, testing type, tested child feature, and reported result as applicable. Never combine multiple items into one cell. Add columns and rows automatically according to the actual data; allow the table height to grow naturally. Do not use fixed column counts, row counts, or heights.
 - **BEFORE / AFTER:** Show feature titles only. Use **Missing** in BEFORE when the feature did not exist.
-- **Engineer Summary:** Show only contributing engineer titles, each followed by a short contribution.
-- **Testing Type / Feature:** Show only executed testing-type titles and tested child-feature titles.
+- **Engineer Summary:** Show only contributing engineer titles, each in a separate cell with a short contribution.
+- **Testing Summary:** Show only executed testing-type titles and tested child-feature titles. Keep each item in its own cell.
 - **Metric / Status:** Show only short measured values with units and **PASS** or **FAIL**. No descriptions.
 - **Build & Launch:** Show only concise, actual build, debug, and launch results.
 - **System Performance:** Show only measured system metric names and values with units.
+- **Appearance:** Use a black table background (**#000000**), white text, and clear subtle borders. Keep section headers readable against the black background. Do not use a blue background.
 - Never invent results or report unexecuted checks as completed.
 
-<table align="center">
-  <tr><th colspan="4" align="center" bgcolor="#17365D">Task Final Report</th></tr>
-  <tr><th align="center" colspan="2" bgcolor="#D9EAF7">BEFORE</th><th align="center" colspan="2" bgcolor="#D9EAF7">AFTER</th></tr>
-  <tr><td align="center" colspan="2">[Feature title / Missing]</td><td align="center" colspan="2">[Added or improved feature title/version]</td></tr>
-  <tr><th align="center" colspan="4" bgcolor="#D9EAF7">Engineer Summary</th></tr>
+<table align="center" bgcolor="#000000" border="1">
+  <tr><th colspan="{DYNAMIC_TOTAL_COLUMNS}" align="center" bgcolor="#202020"><font color="#FFFFFF">Task Final Report</font></th></tr>
   <tr>
-    <td align="center">[Engineer Title]<br>[Short contribution]</td>
-    <td align="center">[Engineer Title]<br>[Short contribution]</td>
-    <td align="center">[Engineer Title]<br>[Short contribution]</td>
-    <td align="center">[Engineer Title]<br>[Short contribution]</td>
+    <th colspan="{BEFORE_FEATURE_COUNT}" align="center" bgcolor="#202020"><font color="#FFFFFF">BEFORE</font></th>
+    <th colspan="{AFTER_FEATURE_COUNT}" align="center" bgcolor="#202020"><font color="#FFFFFF">AFTER</font></th>
   </tr>
-  <tr><th align="center" colspan="4" bgcolor="#D9EAF7">Testing Summary</th></tr>
-  <tr><th align="center" bgcolor="#D9EAF7">Testing Type</th><th align="center" bgcolor="#D9EAF7">Testing Feature</th><th align="center" bgcolor="#D9EAF7">Metric</th><th align="center" bgcolor="#D9EAF7">Status</th></tr>
-  <tr><td align="center">[Executed test category]</td><td align="center">[Tested child feature]</td><td align="center">[Measured value + unit]</td><td align="center">[PASS / FAIL]</td></tr>
-  <tr><th align="center" colspan="4" bgcolor="#D9EAF7">Build & Runtime Summary</th></tr>
-  <tr><th align="center" colspan="2" bgcolor="#D9EAF7">Build & Launch</th><th align="center" colspan="2" bgcolor="#D9EAF7">System Performance</th></tr>
   <tr>
-    <td align="center" colspan="2">[Actual build / debug / EXE launch result]</td>
-    <td align="center" colspan="2">[Measured CPU / RAM / GPU / runtime metrics]</td>
+    <td>[One feature title per cell; use Missing if absent]</td>
+    <td>[One added/improved feature title per cell]</td>
+  </tr>
+  <tr><th colspan="{DYNAMIC_TOTAL_COLUMNS}" align="center" bgcolor="#202020"><font color="#FFFFFF">Engineer Summary</font></th></tr>
+  <tr>
+    <td>[Engineer title]<br>[Short contribution]</td>
+    <td>[Repeat one cell per contributing engineer]</td>
+  </tr>
+  <tr><th colspan="{DYNAMIC_TOTAL_COLUMNS}" align="center" bgcolor="#202020"><font color="#FFFFFF">Testing Summary</font></th></tr>
+  <tr>
+    <th><font color="#FFFFFF">Testing Type</font></th>
+    <th><font color="#FFFFFF">Testing Feature</font></th>
+    <th><font color="#FFFFFF">Metric</font></th>
+    <th><font color="#FFFFFF">Status</font></th>
+  </tr>
+  <tr>
+    <td>[One executed testing type per cell]</td>
+    <td>[One tested child feature per cell]</td>
+    <td>[One measured value per cell]</td>
+    <td>[PASS / FAIL per test]</td>
+  </tr>
+  <tr><th colspan="{DYNAMIC_TOTAL_COLUMNS}" align="center" bgcolor="#202020"><font color="#FFFFFF">Build & Runtime Summary</font></th></tr>
+  <tr>
+    <th colspan="{BUILD_RESULT_COLUMNS}" bgcolor="#202020"><font color="#FFFFFF">Build & Launch</font></th>
+    <th colspan="{PERFORMANCE_RESULT_COLUMNS}" bgcolor="#202020"><font color="#FFFFFF">System Performance</font></th>
+  </tr>
+  <tr>
+    <td>[One actual build/debug/launch result per cell]</td>
+    <td>[One measured performance metric per cell]</td>
   </tr>
 </table>
-
