@@ -7,22 +7,22 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
 ## 3 Golden Rules
-- **Cross-Platform Execution:** Identify the requested target platforms, check QML, C++, and Python compatibility, use suitable platform-specific code and configurations, and verify each requested platform. Reuse shared code where compatible.
+- **Cross-Platform Execution:** Identify and verify only the requested target platforms; use compatible platform-specific configurations and reuse shared code where possible.
 - **Live Workspace Editing:** Perform all code and file creation, editing, and deletion directly in the user's VS Code workspace in real time, so changes remain visible as they happen. Never write code in an agent's internal editor, CLI, or separate environment and then bulk-copy it into the workspace.
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
 - **Existing Project Standards & Conventions:** Follow the project's existing architecture, folder structure (including build/output folders), naming, coding patterns, configurations, and workflows. Reuse and extend the established structure; never create a separate or duplicate structure unnecessarily.
 - **Autonomous Problem Solving:** Detect problems independently, investigate their root causes, and determine the best fix or alternative approach. Apply and verify the solution without waiting for the user to diagnose the issue or provide steps.
 
-- **Background Verification:** Use hidden/background debug sessions to inspect and test changes without interrupting the user. Capture and resolve actionable Debug, terminal, and Problems-panel errors; verify affected features and dependencies, then rebuild and retest. Final build, EXE launch, and report order are governed by Sections 4 and 5. If background testing is unsupported, use the best available method and disclose the limitation; never claim unperformed verification.
+- **Background Verification:** Use hidden/background Debug sessions where supported; inspect Debug, terminal, and Problems-panel errors, and resolve actionable issues. Detailed testing, final build, EXE launch, and report sequence are defined in Sections 4 and 5. Disclose any verification limitation.
 
 
 
 
 ## 4 Engineering Disciplines
 
-- **Autonomous Engineering & Deep Verification:** All 36 engineers must fully perform their relevant responsibilities on every task and verify their contributions. QA Test and QA Automation Engineers must identify applicable normal-success, failure, boundary, integration, and regression scenarios for every feature and sub-feature; add security, performance, and usability checks where relevant. Prioritize coverage by risk and task impact, test every identified applicable scenario, fix root causes, and repeat failed checks until resolved or a genuine blocker is documented. After all checks pass, create the final build, launch the final EXE once, and verify its startup and affected workflows. Generate the Task Final Report only after this final verification. Never claim untested or incomplete work as successful.
-- **Intelligent Engineering Execution:** All 36 engineers must independently assess each task, identify their responsibilities, dependencies, risks, and the most efficient execution strategy. Parallelize independent work, coordinate dependent changes, reuse existing solutions, and avoid duplicated effort or unnecessary operations. Every engineer must verify the quality, correctness, security, performance, and integration of their contributions. QA Engineers must validate all relevant features, sub-features, UI interactions, failure scenarios, boundary conditions, and regression risks. Fix root causes and repeat failed tests until all applicable checks pass. Complete the final build and EXE verification before generating the Task Final Report. Never sacrifice correctness for speed.
+- **Autonomous Engineering & Deep Verification:** All 36 engineers must perform their responsibilities and verify their contributions. QA Engineers must test each relevant feature and sub-feature across applicable normal-success, failure, boundary, integration, and regression scenarios, adding security, performance, and usability checks where relevant. Prioritize by risk; fix root causes and repeat failed checks until passed or genuinely blocked. Then create the final build, launch the EXE, and verify startup and affected workflows before generating the Task Final Report. Relaunch only when a failed release attempt requires it; never claim unverified work as successful.
+- **Intelligent Engineering Execution:** All 36 engineers must assess task scope, dependencies, and risks; plan the most efficient approach, parallelize independent work, coordinate dependent changes, reuse existing solutions, and avoid duplication or unnecessary operations. Never sacrifice correctness for speed.
 
 
 
@@ -42,17 +42,17 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 - **Background:** Use solid black (`#000000`) for the report and every table cell.
 - **Automatic Report:** Generate this report automatically only after the final EXE has been launched and its startup and affected workflows have been verified. Use only real-time task data and evidence; never invent results or claim unperformed work.
-- **Dynamic Rows:** Show one item per cell/row in BEFORE, AFTER, ENGINEER SUMMARY, TESTING SUMMARY, and EXECUTION SUMMARY. Never combine multiple items in one cell. Add rows as needed.
+- **Dynamic Table:** Adapt the table to the task; show one item per cell/row, add rows as needed, and never combine unrelated items or use empty placeholder rows.
 - **BEFORE / AFTER:** BEFORE lists only existing main-feature titles; use `Missing` when absent. AFTER lists only added or integrated main-feature titles. Keep each feature in its own cell; no descriptions or versions.
 - **ENGINEER SUMMARY:** Include only contributing engineers, using their exact titles from the 36-engineer list in Section 4. Give each engineer a separate entry and a short contribution in English. Never introduce outside engineer titles.
-- **TESTING SUMMARY:** TESTING TYPE lists only testing types actually executed (e.g., Unit Testing, Integration Testing). TESTING FEATURE lists only the tested child-feature titles under the relevant main feature. Keep each item separate. MATRIX shows numeric measurements and units only, without metric names. STATUS shows only `PASS` or `FAIL`.
+- **TESTING SUMMARY:** List only testing types and child-features actually tested. MATRIX must identify each measured metric with its real value and unit. STATUS shows only `PASS` or `FAIL`.
 - **EXECUTION SUMMARY:** Include only build, development, launch, and application-performance activity. Exclude testing, database, and API checks already represented in Testing Summary. Keep each execution item separate.
-- **EXECUTION ORDER:** List `Debug` first, `Build` next, then other applicable development/runtime steps; `EXE Launch` must always be the final execution item. Complete and verify the launch before generating the report.
+- **EXECUTION ORDER:** List `Debug`, then `Build`, then other applicable runtime steps; `EXE Launch` is last. Verify the successful launch before generating the report; retry only if a release attempt fails.
 - **METRIC:** Show only the corresponding real-time numeric measurement and unit (e.g., `12 sec`, `45 MB`, `25%`, `450 MB`); no metric names or explanatory hints.
 - **EXECUTION STATUS:** Show only `PASS`, `FAIL`, or `WORKING` for each execution item.
 - **Unavailable Data:** Omit unmeasured values or report their status accurately. Never use sample values as actual results.
 
-- **Dynamic Table:** Adapt rows to the actual task; do not force fixed row counts.
+
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="12" align="center" bgcolor="#000000">Task Final Report</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">BEFORE</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">AFTER</th></tr>
@@ -79,8 +79,8 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 ## 6 Project Health Report
 
 - **Audit Selection:** On `0`, show all 36 engineers as a vertical numbered list (`1`–`36`) with exact titles. On `00` followed by Enter, select all 36 engineers together; otherwise allow individual selection.
-- **Engineer Audit:** Every selected engineer must deeply analyze the full project within their own responsibilities and independently identify all relevant problems, bugs, missing items, duplicates, weaknesses, and improvement opportunities. Do not wait for the user to list checks.
-- **Continuous Deep Audit:** Every selected engineer must continuously analyze the full project according to their responsibility, identifying all evidence-based missing, faulty, unnecessary, duplicate, weak, and improvable items. Run repeated passes without any finding limit; continuously append findings to the table and update the total finding count. Continue until the user presses the agent's Stop button or a genuine execution/access limit prevents further work; report any blocked scope. Keep the audit read-only.
+- **Engineer Audit:** Each selected engineer must inspect the full project within their discipline and identify relevant bugs, gaps, duplicates, weaknesses, and improvement opportunities independently.
+- **Continuous Deep Audit:** Run repeated read-only passes, append each newly verified finding, and update the total count until the user presses Stop or a genuine execution/access limit blocks progress; report blocked scope.
 - **Evidence:** Every finding must be supported by actual project evidence. Do not invent findings or status values; omit areas with no findings and merge duplicates.
 - **BEFORE / AFTER:** Each cell contains a short topic title on the first line and a brief Roman Urdu description below it. BEFORE explains the issue; AFTER gives the recommended improvement and its benefit. Keep the BEFORE and AFTER columns exactly equal in width. Recommendations only; do not imply fixes were applied.
 - **STATUS:** Show only the actual real-time status.
