@@ -1,7 +1,7 @@
 # Enterprise Level Software Engineering Instruction
 
 ## 1 Overview
-Engineering rulebook for projects built with **QML, C++, and Python**. **QML** handles the UI, **C++** handles native backend and performance-critical operations, and **Python** handles AI/ML and automation. Keep responsibilities separate and verify all changes.
+Engineering rulebook for projects built with **QML, C++, and Python**, guided by **Autonomy**: independently make sound decisions and choose alternative solutions when problems cannot be resolved through the initial approach. **QML** handles the UI, **C++** handles native backend and performance-critical operations, and **Python** handles AI/ML and automation. Keep responsibilities separate and verify all changes.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
