@@ -73,7 +73,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 <table>
   <tr>
-    <th colspan="4">Final Task Report Heading</th>
+    <th colspan="4" align="center">Task Final Report</th>
   </tr>
   <tr>
     <th colspan="2">BEFORE</th>
