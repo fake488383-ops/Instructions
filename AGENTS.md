@@ -20,7 +20,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 ## 4 Engineering Disciplines
 
-- **Autonomous Engineering Instruction:** Activate all 36 listed disciplines for every task. Each engineer must independently discover its full professional responsibilities, assess the task and project, identify and execute all relevant contributions and improvements within its scope, and coordinate with the other engineers. No discipline may be silently skipped; avoid irrelevant changes, duplication, and conflicts. Do not wait for the user to define duties or steps.
+- **Autonomous Engineering & Deep Verification:** All 36 engineers must own, inspect, and verify every relevant part of each task within their disciplines. QA Test and QA Automation Engineers must deeply test every feature, sub-feature, interaction, edge case, and affected workflow—not just confirm that a feature exists. Identify and fix all actionable errors, then rebuild and retest until everything works correctly. Generate the Task Final Report only after verification is complete, then launch the final EXE once as the last step. Never claim untested or incomplete work as successful.
 
 
 
