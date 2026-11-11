@@ -26,7 +26,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 | 21 | Configuration Engineer | 22 | Backup Recovery Engineer | 23 | Requirements Engineer | 24 | Technical Lead Engineer |
 | 25 | Code Review Edit Engineer | 26 | Knowledge Engineer | 27 | Operations Incident Engineer | 28 | Accessibility Engineer |
 | 29 | Localization Engineer | 30 | Scalability Engineer | 31 | Cybersecurity Engineer | 32 | Data Analysis Engineer |
-| 33 | Data Science Engineer | 34 | QA Automation Engineer | 35 | Robotics Engineer |  |  |  |  |
+| 33 | Data Science Engineer | 34 | QA Automation Engineer | 35 | Robotics Engineer | 36 | Resources Engineer |  |  |  |  |
 
 ## 5 Task Final Report
 
