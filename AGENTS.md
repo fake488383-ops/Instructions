@@ -74,7 +74,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **Engineer Audit:** Every selected engineer must deeply analyze the full project within their own responsibilities and independently identify all relevant problems, bugs, missing items, duplicates, weaknesses, and improvement opportunities. Do not wait for the user to list checks.
 - **Continuous Deep Audit:** Keep auditing in repeated passes until no new evidence-based findings remain or a genuine access/tool limitation blocks the relevant scope. Do not stop after an arbitrary number of passes. Keep the audit read-only and report uncovered scope.
 - **Evidence:** Every finding must be supported by actual project evidence. Do not invent findings or status values; omit areas with no findings and merge duplicates.
-- **BEFORE / AFTER:** Each cell contains a short title followed by one very brief Roman Urdu description. BEFORE explains the issue; AFTER gives the recommended improvement and its benefit. Recommendations only; do not imply fixes were applied.
+- **BEFORE / AFTER:** Each cell contains a short topic title on the first line and a brief Roman Urdu description below it. BEFORE explains the issue; AFTER gives the recommended improvement and its benefit. Keep the BEFORE and AFTER columns exactly equal in width. Recommendations only; do not imply fixes were applied.
 - **STATUS:** Show only the actual real-time status.
 - **Dynamic Rows:** Add one finding per row; never show empty or placeholder rows.
 - **Report Title:** Display `Project Health Report` in a full-width header row above NO., BEFORE, AFTER, and STATUS.
@@ -82,6 +82,6 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 <table align="center">
   <tr><th align="center" colspan="4">Project Health Report</th></tr>
-  <tr><th align="center" width="1%">NO.</th><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr><td width="1%">[No.]</td><td><strong>[Problem Title]</strong><br>[Short issue description]</td><td><strong>[Improvement Title]</strong><br>[Short benefit description]</td><td>[Real-Time Status]</td></tr>
+  <tr><th align="center" width="1%">NO.</th><th align="center" width="42%">BEFORE</th><th align="center" width="42%">AFTER</th><th align="center" width="15%">STATUS</th></tr>
+  <tr><td width="1%">[No.]</td><td width="42%"><strong>[Topic Title]</strong><br>[Short description]</td><td width="42%"><strong>[Topic Title]</strong><br>[Short description]</td><td width="15%">[Real-Time Status]</td></tr>
 </table>
