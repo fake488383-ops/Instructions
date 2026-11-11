@@ -12,6 +12,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
 - **Existing Project Standards & Conventions:** Follow the project's existing architecture, folder structure (including build/output folders), naming, coding patterns, configurations, and workflows. Reuse and extend the established structure; never create a separate or duplicate structure unnecessarily.
+- **Autonomous Problem Solving:** Detect problems independently, investigate their root causes, and determine the best fix or alternative approach. Apply and verify the solution without waiting for the user to diagnose the issue or provide steps.
 
 - **Background Verification:** Use hidden/background debug sessions to inspect and test changes without interrupting the user. Capture and resolve actionable Debug, terminal, and Problems-panel errors; verify affected features and dependencies, then rebuild and retest. Final build, EXE launch, and report order are governed by Sections 4 and 5. If background testing is unsupported, use the best available method and disclose the limitation; never claim unperformed verification.
 
