@@ -71,9 +71,9 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 - **Audit Selection:** When the user enters `0`, show all 36 engineers for selection. Each selected engineer audits the project independently according to their discipline and reports relevant problems, missing features, improvements, unnecessary items, and duplicates. Do not modify project files during the audit.
 - **Evidence:** Every finding must be supported by actual project evidence. Do not invent issues, improvements, or status values. Omit categories with no findings.
-- **BEFORE:** Each finding cell must show the main feature/issue title first, followed by its concise description underneath.
-- **AFTER:** Each recommendation cell must show the proposed feature/fix title first, followed by its concise description underneath. This is a recommendation only, not a claim that a change was applied.
-- **STATUS:** Show the finding category and severity where applicable, using concise values such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `USELESS`, `SECURITY`, `PERFORMANCE`, `CRITICAL`, `MAJOR`, or `MINOR`.
+- **BEFORE:** Show the issue title with a short description.
+- **AFTER:** Show the proposed fix title with a short description; recommendations only.
+- **STATUS:** Show a short category/severity, such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `SECURITY`, or `CRITICAL`.
 - **Dynamic Rows:** Add one finding per row. Keep entries short, specific, and relevant to the selected engineer. Do not show empty or placeholder rows.
 - **Report Title:** Display `Project Health Report` in the first full-width table header row, spanning all three columns above BEFORE, AFTER, and STATUS.
 
