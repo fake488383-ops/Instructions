@@ -82,9 +82,10 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th colspan="4">Engineer Summary</th>
   </tr>
   <tr>
-    <td>[Engineer]</td>
-    <td>[Title]</td>
-    <td colspan="2">[Contribution]</td>
+    <td align="center"><strong>[Engineer Title/Name]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title/Name]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title/Name]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title/Name]</strong><br>[Short contribution]</td>
   </tr>
   <tr>
     <th colspan="4">Testing Summary</th>
