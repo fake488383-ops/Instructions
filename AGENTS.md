@@ -60,60 +60,34 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
-- **BEFORE / AFTER:** Actual feature/version titles only; use **Missing** when absent.
-- **Engineer Summary:** Show only contributing engineer titles with a brief contribution. Hide inactive engineers.
-- **Testing Type:** Show the actual test category (e.g., Unit Testing, Integration Testing, End-to-End Testing).
-- **Testing Feature:** Show only tested child-feature names, each once in its own row. Never repeat the main feature title.
-- **Metric:** Actual child-feature performance, using compact values and abbreviated units.
-- **Status:** Actual child-feature result: PASS, FAIL, WARNING, SKIPPED, BLOCKED, or RUNNING.
-- **Build & Runtime Summary:** Keep inside the same table, below Testing Summary, with two side-by-side sections: Build & Launch and System Performance. Show measured results only.
-- Populate report values dynamically from real execution. Keep instructions concise; do not display hints, examples, or placeholders in generated reports.
+- **All values:** Dynamic, real-time, and based only on actual task state and execution. No fixed or invented values.
+- **BEFORE / AFTER:** Actual current and resulting feature/version values.
+- **Engineer Summary:** Only contributing engineer titles; show each contribution briefly.
+- **Testing Type:** Actual categories, e.g. Unit Testing, Integration Testing, End-to-End Testing.
+- **Testing Feature:** Actual tested child-feature names only; never repeat the main feature.
+- **Metric:** Actual compact values/units only, e.g. 120ms, 45ms, 1.5s, 2min, 38%, 42ping. No long unit labels.
+- **Status:** Actual result only: PASS or FAIL.
+- **Build & Launch / System Performance:** Show actual real-time results only; omit unavailable values. Keep both sections inside the same report table.
+- Keep labels and contributions short. Add only rows and values supported by actual work.
 
 <table align="center">
+  <tr><th colspan="4" align="center">Task Final Report</th></tr>
+  <tr><th colspan="2">BEFORE</th><th colspan="2">AFTER</th></tr>
+  <tr><td colspan="2">[Actual value]</td><td colspan="2">[Actual value]</td></tr>
+  <tr><th colspan="4">Engineer Summary</th></tr>
   <tr>
-    <th colspan="4" align="center">Task Final Report</th>
+    <td><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td><strong>[Engineer Title]</strong><br>[Short contribution]</td>
   </tr>
+  <tr><th colspan="4">Testing Summary</th></tr>
+  <tr><th>Testing Type</th><th>Testing Feature</th><th>Metric</th><th>Status</th></tr>
+  <tr><td>[Actual test category]</td><td>[Actual child feature]</td><td>[Short measured value]</td><td>[PASS / FAIL]</td></tr>
+  <tr><th colspan="4">Build & Runtime Summary</th></tr>
+  <tr><th colspan="2">Build & Launch</th><th colspan="2">System Performance</th></tr>
   <tr>
-    <th colspan="2">BEFORE</th>
-    <th colspan="2">AFTER</th>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">[Actual value]</td>
-    <td colspan="2" align="center">[Actual value]</td>
-  </tr>
-  <tr>
-    <th colspan="4">Engineer Summary</th>
-  </tr>
-  <tr>
-    <td align="center"><strong>[Engineer Title]</strong><br>[Contribution]</td>
-    <td align="center"><strong>[Engineer Title]</strong><br>[Contribution]</td>
-    <td align="center"><strong>[Engineer Title]</strong><br>[Contribution]</td>
-    <td align="center"><strong>[Engineer Title]</strong><br>[Contribution]</td>
-  </tr>
-  <tr>
-    <th colspan="4">Testing Summary</th>
-  </tr>
-  <tr>
-    <th>Testing Type</th>
-    <th>Testing Feature</th>
-    <th>Metric</th>
-    <th>Status</th>
-  </tr>
-  <tr>
-    <td>[Actual test category]</td>
-    <td>[Tested child feature]</td>
-    <td>[Measured value]</td>
-    <td>[Actual result]</td>
-  </tr>
-  <tr>
-    <th colspan="4" align="center">Build & Runtime Summary</th>
-  </tr>
-  <tr>
-    <th colspan="2" align="center">Build & Launch</th>
-    <th colspan="2" align="center">System Performance</th>
-  </tr>
-  <tr>
-    <td colspan="2">[Actual build, debug, launch and timing results]</td>
-    <td colspan="2">[Actual CPU, RAM and GPU measurements]</td>
+    <td colspan="2">[Actual build / debug / launch results]</td>
+    <td colspan="2">[Actual CPU / RAM / GPU results]</td>
   </tr>
 </table>
