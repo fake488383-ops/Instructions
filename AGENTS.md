@@ -61,11 +61,11 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 ## Task Final Report
 
 - **BEFORE / AFTER:** Show actual feature/version titles only; use **Missing** when the feature did not exist.
-- **Engineer Summary:** Show only actual contributing engineer titles/names from the 35 disciplines, each in its own horizontal column with a very short contribution underneath. Hide inactive engineers.
-- **Testing Type:** Dynamically show only test categories actually executed (e.g., Unit, Integration, End-to-End, Functional, Regression, Performance, Load, Stress, Security, Compatibility).
-- **Testing Feature:** Group results by main feature. Show its name once, then list only child features/operations actually tested, each with its own measured duration or relevant quality result (e.g., `Microphone Input — 120 ms`, `Speech Recognition — 320 ms`, `Voice Clarity — 98.5%`).
-- **Metric:** Show the main feature workflow's actual total elapsed duration, using an appropriate unit (ms/sec/min/hr), plus relevant measured metrics only when applicable. Sum child durations only for sequential operations; for parallel operations use actual wall-clock elapsed time. Do not place build status or CPU/RAM/GPU readings here.
-- **Status:** Show the real outcome for each tested feature/category: PASS, FAIL, WARNING, SKIPPED, BLOCKED, or RUNNING. Never invent tests, timings, or measurements; omit unavailable values and untested items.
+- **Engineer Summary:** Show only the exact titles of engineers who actually contributed, each in its own horizontal column with a very short contribution underneath. Use the heading **Engineer Title**; do not add a separate person-name field or name hint. Hide inactive engineers.
+- **Testing Type:** Show the full names of test categories actually executed (e.g., Unit Testing, Integration Testing, End-to-End Testing, Functional Testing, Regression Testing, Performance Testing, Load Testing, Stress Testing, Security Testing, Compatibility Testing).
+- **Testing Feature:** Show only the names of child features/operations actually tested inside the task's main feature. Never repeat the main feature title in this column; it appears only once in the report context. Give every tested child feature its own row and associate it with its actual Testing Type. Use full descriptive technical names and include recognized acronyms in brackets when genuinely implemented and tested (e.g., Speech-to-Text (STT), Text-to-Speech (TTS), Hypertext Transfer Protocol Secure (HTTPS)). Do not invent or add unrelated technologies.
+- **Metric:** Show the actual performance measurement for the corresponding child feature, using compact values and abbreviated units only (e.g., 120ms, 1.4s, 98.5%, 620MB, 42 tokens/s). Do not repeat child-feature names or use long explanatory metric labels. Do not show an unmeasured main-feature total. Do not place build status or CPU/RAM/GPU readings here.
+- **Status:** Show the real outcome for each tested child-feature row: PASS, FAIL, WARNING, SKIPPED, BLOCKED, or RUNNING. Never invent tests, timings, or measurements; omit unavailable values and untested items.
 - **Build & Runtime Summary:** Keep it inside this same table, below Testing Summary, with two side-by-side columns: Build & Launch and System Performance. Show only actual build, debug, launch, timing, CPU, RAM, and GPU results; omit unavailable measurements.
 - Add rows and child results dynamically. Keep the table compact and preserve its structure; no fixed sample values in actual reports.
 
@@ -85,10 +85,10 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th colspan="4">Engineer Summary</th>
   </tr>
   <tr>
-    <td align="center"><strong>[Engineer Title/Name]</strong><br>[Short contribution]</td>
-    <td align="center"><strong>[Engineer Title/Name]</strong><br>[Short contribution]</td>
-    <td align="center"><strong>[Engineer Title/Name]</strong><br>[Short contribution]</td>
-    <td align="center"><strong>[Engineer Title/Name]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
   </tr>
   <tr>
     <th colspan="4">Testing Summary</th>
@@ -100,17 +100,16 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th>Status</th>
   </tr>
   <tr>
-    <td>[Executed test category/categories]</td>
-    <td>
-      <strong>[Main feature]</strong><br>
-      [Tested child operation — measured duration/result]<br>
-      [Tested child operation — measured duration/result]
-    </td>
-    <td>
-      Total Elapsed: [Measured duration]<br>
-      [Relevant measured metric, if applicable]
-    </td>
-    <td>[Actual status]</td>
+    <td>[Full test category, e.g. Unit Testing]</td>
+    <td>[Tested child feature/operation only]</td>
+    <td>[Actual performance value with abbreviated unit]</td>
+    <td>[PASS / FAIL / actual status]</td>
+  </tr>
+  <tr>
+    <td>[Full test category, e.g. Integration Testing]</td>
+    <td>[Another tested child feature/operation only]</td>
+    <td>[Actual performance value with abbreviated unit]</td>
+    <td>[PASS / FAIL / actual status]</td>
   </tr>
   <tr>
     <th colspan="4" align="center">Build & Runtime Summary</th>
