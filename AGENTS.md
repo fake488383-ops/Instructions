@@ -65,24 +65,23 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 - **Dynamic Table:** Populate the table from actual task data; add rows and columns as needed, with no fixed dimensions. Let its width and height grow automatically to fit all generated content.
 <table align="center">
-  <tr><th colspan="4" align="center" bgcolor="#17365D">Task Final Report</th></tr>
-  <tr><th align="center" colspan="2" bgcolor="#D9EAF7">BEFORE</th><th align="center" colspan="2" bgcolor="#D9EAF7">AFTER</th></tr>
-  <tr><td align="center" colspan="2">[Feature title / Missing]</td><td align="center" colspan="2">[Added or improved feature title/version]</td></tr>
-  <tr><th align="center" colspan="4" bgcolor="#D9EAF7">Engineer Summary</th></tr>
+  <tr><th colspan="12" align="center" bgcolor="#17365D">Task Final Report</th></tr>
+  <tr><th align="center" colspan="6" bgcolor="#D9EAF7">BEFORE</th><th align="center" colspan="6" bgcolor="#D9EAF7">AFTER</th></tr>
+  <tr><td align="center" colspan="6">[Feature title / Missing]</td><td align="center" colspan="6">[Added or improved feature title/version]</td></tr>
+  <tr><th align="center" colspan="12" bgcolor="#D9EAF7">Engineer Summary</th></tr>
   <tr>
-    <td align="center">[Engineer Title]<br>[Short contribution]</td>
-    <td align="center">[Engineer Title]<br>[Short contribution]</td>
-    <td align="center">[Engineer Title]<br>[Short contribution]</td>
-    <td align="center">[Engineer Title]<br>[Short contribution]</td>
+    <td align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
+    <td align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
+    <td align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
   </tr>
-  <tr><th align="center" colspan="4" bgcolor="#D9EAF7">Testing Summary</th></tr>
-  <tr><th align="center" bgcolor="#D9EAF7">Testing Type</th><th align="center" bgcolor="#D9EAF7">Testing Feature</th><th align="center" bgcolor="#D9EAF7">Metric</th><th align="center" bgcolor="#D9EAF7">Status</th></tr>
-  <tr><td align="center">[Executed test category]</td><td align="center">[Tested child feature]</td><td align="center">[Measured value + unit]</td><td align="center">[PASS / FAIL]</td></tr>
-  <tr><th align="center" colspan="4" bgcolor="#D9EAF7">Build & Runtime Summary</th></tr>
-  <tr><th align="center" colspan="2" bgcolor="#D9EAF7">Build & Launch</th><th align="center" colspan="2" bgcolor="#D9EAF7">System Performance</th></tr>
+  <tr><th align="center" colspan="12" bgcolor="#D9EAF7">Testing Summary</th></tr>
+  <tr><th align="center" colspan="3" bgcolor="#D9EAF7">Testing Type</th><th align="center" colspan="3" bgcolor="#D9EAF7">Testing Feature</th><th align="center" colspan="3" bgcolor="#D9EAF7">Metric</th><th align="center" colspan="3" bgcolor="#D9EAF7">Status</th></tr>
+  <tr><td align="center" colspan="3">[Executed test category]</td><td align="center" colspan="3">[Tested child feature]</td><td align="center" colspan="3">[Measured value + unit]</td><td align="center" colspan="3">[PASS / FAIL]</td></tr>
+  <tr><th align="center" colspan="12" bgcolor="#D9EAF7">Build & Runtime Summary</th></tr>
+  <tr><th align="center" colspan="6" bgcolor="#D9EAF7">Build & Launch</th><th align="center" colspan="6" bgcolor="#D9EAF7">System Performance</th></tr>
   <tr>
-    <td align="center" colspan="2">[Actual build / debug / EXE launch result]</td>
-    <td align="center" colspan="2">[Measured CPU / RAM / GPU / runtime metrics]</td>
+    <td align="center" colspan="6">[Actual build / debug / EXE launch result]</td>
+    <td align="center" colspan="6">[Measured CPU / RAM / GPU / runtime metrics]</td>
   </tr>
 </table>
 
