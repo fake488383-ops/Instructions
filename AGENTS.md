@@ -36,8 +36,8 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - **ENGINEER SUMMARY:** Show each contributing engineer title and one short task-specific contribution.
 - **TESTING SUMMARY:** Show only executed testing types and tested child-feature titles. MATRIX contains actual numeric values and units. STATUS is `PASS` or `FAIL`.
 - **EXECUTION SUMMARY:** Show only build, development, launch, and application-performance activity. Do not repeat testing types, test features, database checks, or API tests already covered by Testing Summary.
-- **EXECUTION:** Use concise titles such as Build, Debug, EXE Launch, Application Startup, EXE Size, CPU Usage, RAM Usage, and GPU Usage.
-- **METRIC:** Show the corresponding real-time numeric measurement and unit only (e.g., `12 sec`, `45 MB`, `25%`, `450 MB`). Keep hints and labels minimal; populate values dynamically from actual measurements.
+- **EXECUTION ORDER:** List execution steps in actual sequence: Debug first, then Build, and EXE Launch last. Keep EXE Launch as the final execution item.
+- **METRIC:** Show real-time measured values and units only.
 - **EXECUTION STATUS:** Show `PASS`, `FAIL`, or `WORKING` for each execution item.
 - Never show sample values as real results. Omit unavailable measurements or mark their status accurately.
 
@@ -54,11 +54,11 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
   </tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Testing Summary</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING TYPE</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING FEATURE</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">MATRIX</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">STATUS</th></tr>
-  <tr><td color="#FFFFFF" align="center" colspan="3">[Test type]</td><td color="#FFFFFF" align="center" colspan="3">[Tested feature]</td><td color="#FFFFFF" align="center" colspan="3">[Value + unit]</td><td color="#FFFFFF" align="center" colspan="3">[PASS / FAIL]</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="3">[Test type]</td><td color="#FFFFFF" align="center" colspan="3">[Tested feature]</td><td color="#FFFFFF" align="center" colspan="3">[Real-time value + unit]</td><td color="#FFFFFF" align="center" colspan="3">[PASS / FAIL]</td></tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Execution Summary</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">EXECUTION</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">METRIC</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">STATUS</th></tr>
   <tr>
-    <td color="#FFFFFF" align="center" colspan="4">[Build / Debug / Launch / Performance item]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Execution title]</td>
     <td color="#FFFFFF" align="center" colspan="4">[Value + unit]</td>
     <td color="#FFFFFF" align="center" colspan="4">[PASS / FAIL / WORKING]</td>
   </tr>
