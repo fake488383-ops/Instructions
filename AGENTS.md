@@ -61,12 +61,13 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 ## Task Final Report
 
 - **BEFORE / AFTER:** Actual feature/version titles only; use **Missing** when absent.
-- **Engineer Summary:** Show only contributing engineer titles, each with a brief contribution. Hide inactive engineers.
-- **Testing:** Use one **Testing** column for the test category and its child-feature names. Show each tested child feature once under its actual category; never repeat the main feature title.
-- **Metric:** Actual child-feature performance only, in compact values with abbreviated units.
-- **Status:** Actual child-feature result only: PASS, FAIL, WARNING, SKIPPED, BLOCKED, or RUNNING.
-- **Build & Runtime Summary:** Keep within the same table, below Testing, using two side-by-side sections: Build & Launch and System Performance. Show measured results only.
-- Populate all values dynamically from real execution. Omit hints, examples, placeholders, untested items, and unavailable measurements from generated reports.
+- **Engineer Summary:** Show only contributing engineer titles with a brief contribution. Hide inactive engineers.
+- **Testing Type:** Show the actual test category (e.g., Unit Testing, Integration Testing, End-to-End Testing).
+- **Testing Feature:** Show only tested child-feature names, each once in its own row. Never repeat the main feature title.
+- **Metric:** Actual child-feature performance, using compact values and abbreviated units.
+- **Status:** Actual child-feature result: PASS, FAIL, WARNING, SKIPPED, BLOCKED, or RUNNING.
+- **Build & Runtime Summary:** Keep inside the same table, below Testing Summary, with two side-by-side sections: Build & Launch and System Performance. Show measured results only.
+- Populate report values dynamically from real execution. Keep instructions concise; do not display hints, examples, or placeholders in generated reports.
 
 <table align="center">
   <tr>
@@ -93,12 +94,14 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th colspan="4">Testing Summary</th>
   </tr>
   <tr>
-    <th colspan="2">Testing</th>
+    <th>Testing Type</th>
+    <th>Testing Feature</th>
     <th>Metric</th>
     <th>Status</th>
   </tr>
   <tr>
-    <td colspan="2">[Test category]<br>[Tested child feature]</td>
+    <td>[Actual test category]</td>
+    <td>[Tested child feature]</td>
     <td>[Measured value]</td>
     <td>[Actual result]</td>
   </tr>
