@@ -20,6 +20,8 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 
 
+| No. | Discipline | No. | Discipline | No. | Discipline | No. | Discipline |
+|---:|---|---:|---|---:|---|---:|---|
 | 1 | Architecture Engineer | 2 | Systems Engineer | 3 | Backend Engineer | 4 | Frontend Engineer |
 | 5 | UI UX Engineer | 6 | AI ML Engineer | 7 | Data Engineer | 8 | Database Engineer |
 | 9 | API Integration Engineer | 10 | Security Engineer | 11 | Privacy Engineer | 12 | Performance Engineer |
