@@ -30,36 +30,37 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 ## 5 Task Final Report
 
-- **Background:** Use solid black (`#000000`) for the report and all table cells.
-- **Automatic Report:** After every completed task, generate the Task Final Report with a concise summary and actual completion, verification, build, and launch results. Use real-time evidence only; never invent results or claim unperformed work.
-- **BEFORE / AFTER:** BEFORE shows existing main feature titles; if absent, show `Missing`. AFTER shows added or integrated main feature titles. No descriptions or versions.
-- **ENGINEER SUMMARY:** Show each contributing engineer title and one short task-specific contribution.
-- **TESTING SUMMARY:** Show only executed testing types and tested child-feature titles. MATRIX contains actual numeric values and units. STATUS is `PASS` or `FAIL`.
-- **EXECUTION SUMMARY:** Show only build, development, launch, and application-performance activity. Do not repeat testing types, test features, database checks, or API tests already covered by Testing Summary.
-- **EXECUTION ORDER:** List execution steps in actual sequence: Debug first, then Build, and EXE Launch last. Keep EXE Launch as the final execution item.
-- **METRIC:** Show real-time measured values and units only.
-- **EXECUTION STATUS:** Show `PASS`, `FAIL`, or `WORKING` for each execution item.
-- Never show sample values as real results. Omit unavailable measurements or mark their status accurately.
+- **Background:** Use solid black (`#000000`) for the report and every table cell.
+- **Automatic Report:** After every user-requested task is completed, generate this report automatically. Use only real-time task data and evidence; never invent results or claim unperformed work.
+- **Dynamic Rows:** Show one item per cell/row in BEFORE, AFTER, ENGINEER SUMMARY, TESTING SUMMARY, and EXECUTION SUMMARY. Never combine multiple items in one cell. Add rows as needed.
+- **BEFORE / AFTER:** BEFORE lists only existing main-feature titles; use `Missing` when absent. AFTER lists only added or integrated main-feature titles. Keep each feature in its own cell; no descriptions or versions.
+- **ENGINEER SUMMARY:** Include only contributing engineers, using their exact titles from the 36-engineer list in Section 4. Give each engineer a separate entry and a short contribution in English. Never introduce outside engineer titles.
+- **TESTING SUMMARY:** TESTING TYPE lists only testing types actually executed (e.g., Unit Testing, Integration Testing). TESTING FEATURE lists only the tested child-feature titles under the relevant main feature. Keep each item separate. MATRIX shows numeric measurements and units only, without metric names. STATUS shows only `PASS` or `FAIL`.
+- **EXECUTION SUMMARY:** Include only build, development, launch, and application-performance activity. Exclude testing, database, and API checks already represented in Testing Summary. Keep each execution item separate.
+- **EXECUTION ORDER:** List `Debug` first, `Build` next, then other applicable development/runtime steps; `EXE Launch` must always be the final execution item.
+- **METRIC:** Show only the corresponding real-time numeric measurement and unit (e.g., `12 sec`, `45 MB`, `25%`, `450 MB`); no metric names or explanatory hints.
+- **EXECUTION STATUS:** Show only `PASS`, `FAIL`, or `WORKING` for each execution item.
+- **Unavailable Data:** Omit unmeasured values or report their status accurately. Never use sample values as actual results.
 
-- **Dynamic Table:** Add or remove rows according to actual task data; do not force fixed dimensions.
+- **Dynamic Table:** Adapt rows to the actual task; do not force fixed row counts.
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="12" align="center" bgcolor="#000000">Task Final Report</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">BEFORE</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">AFTER</th></tr>
-  <tr><td color="#FFFFFF" align="center" colspan="6">[Existing Features] / Missing</td><td color="#FFFFFF" align="center" colspan="6">[Updated Features]</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="6">[Existing Features]</td><td color="#FFFFFF" align="center" colspan="6">[Updated Features]</td></tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">ENGINEER SUMMARY</th></tr>
   <tr>
-    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Contribution]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Contribution]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Contribution]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Short contribution in English]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Short contribution in English]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Short contribution in English]</td>
   </tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Testing Summary</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING TYPE</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING FEATURE</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">MATRIX</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">STATUS</th></tr>
-  <tr><td color="#FFFFFF" align="center" colspan="3">[Test Category]</td><td color="#FFFFFF" align="center" colspan="3">[Tested Component]</td><td color="#FFFFFF" align="center" colspan="3">[Performance Value]</td><td color="#FFFFFF" align="center" colspan="3">[Test Result]</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="3">[Test Category]</td><td color="#FFFFFF" align="center" colspan="3">[Tested Component]</td><td color="#FFFFFF" align="center" colspan="3">[Value + unit]</td><td color="#FFFFFF" align="center" colspan="3">[PASS / FAIL]</td></tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Execution Summary</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">EXECUTION</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">METRIC</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">STATUS</th></tr>
   <tr>
     <td color="#FFFFFF" align="center" colspan="4">[Execution Step]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[Measured Value]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[Execution Result]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Value + unit]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[PASS / FAIL / WORKING]</td>
   </tr>
 </table>
