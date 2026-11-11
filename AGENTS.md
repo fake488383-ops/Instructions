@@ -73,7 +73,6 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
     <td align="center">[Engineer Title]<br>[Short contribution]</td>
     <td align="center">[Engineer Title]<br>[Short contribution]</td>
     <td align="center">[Engineer Title]<br>[Short contribution]</td>
-    <td align="center">[Engineer Title]<br>[Short contribution]</td>
   </tr>
   <tr><th align="center" colspan="4" bgcolor="#D9EAF7">Testing Summary</th></tr>
   <tr><th align="center" bgcolor="#D9EAF7">Testing Type</th><th align="center" bgcolor="#D9EAF7">Testing Feature</th><th align="center" bgcolor="#D9EAF7">Metric</th><th align="center" bgcolor="#D9EAF7">Status</th></tr>
