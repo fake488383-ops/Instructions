@@ -60,41 +60,19 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
-- **Rendering:** Generate the report directly in the final AI-agent response as one complete HTML table with merged cells using `colspan`. The entire report must be one outer table, not separate tables, cards, or boxes. Do not use Markdown table syntax for this report because it cannot represent the required merged-cell layout.
-- **Unified Blueprint:** Use one 12-column grid so each section can have its required horizontal columns while remaining one continuous table. Preserve this exact order and structure:
+- **Rendering:** Generate the report directly in the final AI-agent response as one continuous standard GitHub-Flavored Markdown table. Do not create separate tables, cards, boxes, HTML, CLI/ASCII layouts, Unicode box-drawing tables, or separate report files.
+- **Unified Blueprint:** Combine all three report sections into this single four-column table, preserving the exact section order and each section's intended columns:
 
-  ```html
-  <table>
-    <tr><th colspan="6">BEFORE</th><th colspan="6">AFTER</th></tr>
-    <tr><td colspan="6">[Actual existing feature name, or Missing]</td><td colspan="6">[Actual updated feature name]</td></tr>
-    <tr><th colspan="12">Engineer Summary</th></tr>
-    <tr>
-      <th colspan="4">Engineer Name</th>
-      <th colspan="4">Title</th>
-      <th colspan="4">Actual Contribution</th>
-    </tr>
-    <tr>
-      <td colspan="4">[Exact contributing engineer name]</td>
-      <td colspan="4">[Exact discipline title]</td>
-      <td colspan="4">[Very short actual contribution]</td>
-    </tr>
-    <tr><th colspan="12">Testing Summary</th></tr>
-    <tr>
-      <th colspan="3">Testing Type</th>
-      <th colspan="3">Testing Feature</th>
-      <th colspan="3">Metric</th>
-      <th colspan="3">Status</th>
-    </tr>
-    <tr>
-      <td colspan="3">[Actual test type]</td>
-      <td colspan="3">[Actual tested child feature]</td>
-      <td colspan="3">[Measured value with unit, or —]</td>
-      <td colspan="3">[Pass/Fail]</td>
-    </tr>
-  </table>
-  ```
+  | Section | Column 1 | Column 2 | Column 3 | Column 4 |
+  |---|---|---|---|---|
+  | **BEFORE / AFTER** | **BEFORE** | **AFTER** | | |
+  | Feature | [Actual existing feature name, or Missing] | [Actual updated feature name] | | |
+  | **Engineer Summary** | **Engineer Name & Title** | **Actual Contribution** | | |
+  | Engineer | [Exact engineer name — discipline title] | [Very short actual contribution] | | |
+  | **Testing Summary** | **Testing Type** | **Testing Feature** | **Metric** | **Status** |
+  | Testing | [Actual test type] | [Actual tested child feature] | [Measured value with unit, or —] | [Pass/Fail] |
 
-- **Single-Table Rule:** Keep every section, heading, header, and data row inside the same outer table. Use `colspan="12"` for full-width section headings; use 6+6 spans for BEFORE/AFTER, 4+4+4 spans for Engineer Summary, and 3+3+3+3 spans for Testing Summary. Add dynamic data rows using the same column spans for their section. Never create nested or separate tables.
-- **Before/After Rules:** Keep BEFORE on the left and AFTER on the right, each occupying half the table width. Show actual existing and changed main feature names only. Use **Missing** only when a feature did not exist before. Do not write explanations such as added, improved, or updated in the cells.
-- **Engineer Summary Rules:** Keep exactly three equal horizontal columns: Engineer Name, Title, and Actual Contribution. Include only actual contributing engineers from the 35-engineer **Engineering Disciplines** list. Use each exact listed name and discipline title; keep the contribution very short. Never invent names or include non-contributors.
-- **Testing Summary Rules:** Keep exactly four equal horizontal columns: Testing Type, Testing Feature, Metric, and Status. Generate Testing Types dynamically from tests actually performed. List actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Show relevant measured Metrics as short real-time values with units (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); use **—** when no metric applies or is available. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates.
+- **Single-Table Rule:** All section headings, column headings, and data rows must remain inside this one continuous Markdown table. Keep the four columns consistent in every row; leave unused cells empty. Preserve this order: BEFORE / AFTER, Engineer Summary, Testing Summary.
+- **Before/After Rules:** Use the first two data columns for actual existing and changed main feature names only. Use **Missing** only when a feature did not exist before. Do not write explanations such as added, improved, or updated in the cells.
+- **Engineer Summary Rules:** Use the first two data columns for actual contributing engineers from the 35-engineer **Engineering Disciplines** list. Include each exact listed name and discipline title, plus a very short actual contribution. Never invent names or include non-contributors.
+- **Testing Summary Rules:** Use all four columns. Generate Testing Types dynamically from tests actually performed. List actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Show relevant measured Metrics as short real-time values with units (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); use **—** when no metric applies or is available. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates.
