@@ -76,10 +76,9 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - **STATUS:** Show a short category/severity, such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `SECURITY`, or `CRITICAL`.
 - **Dynamic Rows:** Add one finding per row. Keep entries short, specific, and relevant to the selected engineer. Do not show empty or placeholder rows.
 - **Report Title:** Display `Project Health Report` in the first full-width table header row, spanning all three columns above BEFORE, AFTER, and STATUS.
-- **Center Alignment:** Center-align the table, every heading, title, description, tag, and value inside its column. Apply center alignment to every generated cell so content never defaults to left alignment.
 
 <table align="center">
   <tr><th align="center" colspan="3">Project Health Report</th></tr>
   <tr><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr><td align="center"><strong>[Existing Issue Title]</strong><br>[Brief description of the current issue]</td><td align="center"><strong>[Proposed Fix Title]</strong><br>[Brief description of the recommended fix]</td><td align="center">[Finding Category / Severity]</td></tr>
+  <tr><td><strong>[Existing Issue Title]</strong><br>[Brief description of the current issue]</td><td><strong>[Proposed Fix Title]</strong><br>[Brief description of the recommended fix]</td><td>[Finding Category / Severity]</td></tr>
 </table>
