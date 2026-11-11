@@ -60,14 +60,14 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
-- **BEFORE:** Show the current feature/version title only; use **Missing** if it does not exist.
-- **AFTER:** Show the added or replacement feature/version title only.
-- **Engineer Summary:** Show only the title/name of each actual contributing engineer from the 35 Engineering Disciplines. Place each engineer in a separate horizontal column, with their contribution directly underneath.
-- **Contribution:** Briefly state what that engineer actually worked on; keep it very short. Do not show inactive engineers or separate Engineer, Title, and Contribution columns.
-- **Build & Runtime Summary:** Keep it inside the same Task Final Report table, below Testing Summary, with two side-by-side columns: Build & Launch and System Performance. Show only actual build, debug, launch, timing, CPU, RAM, and GPU results; omit unavailable measurements.
-- Show one title per cell/row. No descriptions or repeated generic names.
-- Include only actual engineers and completed tests; show real results only.
-- Add rows dynamically and preserve the table layout.
+- **BEFORE / AFTER:** Show actual feature/version titles only; use **Missing** when the feature did not exist.
+- **Engineer Summary:** Show only actual contributing engineer titles/names from the 35 disciplines, each in its own horizontal column with a very short contribution underneath. Hide inactive engineers.
+- **Testing Type:** Dynamically show only test categories actually executed (e.g., Unit, Integration, End-to-End, Functional, Regression, Performance, Load, Stress, Security, Compatibility).
+- **Testing Feature:** Group results by main feature. Show its name once, then list only child features/operations actually tested, each with its own measured duration or relevant quality result (e.g., `Microphone Input — 120 ms`, `Speech Recognition — 320 ms`, `Voice Clarity — 98.5%`).
+- **Metric:** Show the main feature workflow's actual total elapsed duration, using an appropriate unit (ms/sec/min/hr), plus relevant measured metrics only when applicable. Sum child durations only for sequential operations; for parallel operations use actual wall-clock elapsed time. Do not place build status or CPU/RAM/GPU readings here.
+- **Status:** Show the real outcome for each tested feature/category: PASS, FAIL, WARNING, SKIPPED, BLOCKED, or RUNNING. Never invent tests, timings, or measurements; omit unavailable values and untested items.
+- **Build & Runtime Summary:** Keep it inside this same table, below Testing Summary, with two side-by-side columns: Build & Launch and System Performance. Show only actual build, debug, launch, timing, CPU, RAM, and GPU results; omit unavailable measurements.
+- Add rows and child results dynamically. Keep the table compact and preserve its structure; no fixed sample values in actual reports.
 
 <table align="center">
   <tr>
@@ -100,12 +100,18 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th>Status</th>
   </tr>
   <tr>
-    <td>[Test type]</td>
-    <td>[Feature]</td>
-    <td>[Value / —]</td>
-    <td>[Pass/Fail]</td>
+    <td>[Executed test category/categories]</td>
+    <td>
+      <strong>[Main feature]</strong><br>
+      [Tested child operation — measured duration/result]<br>
+      [Tested child operation — measured duration/result]
+    </td>
+    <td>
+      Total Elapsed: [Measured duration]<br>
+      [Relevant measured metric, if applicable]
+    </td>
+    <td>[Actual status]</td>
   </tr>
-
   <tr>
     <th colspan="4" align="center">Build & Runtime Summary</th>
   </tr>
