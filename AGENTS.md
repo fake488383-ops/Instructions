@@ -72,22 +72,22 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 <table align="center">
   <tr><th colspan="4" align="center">Task Final Report</th></tr>
-  <tr><th colspan="2">BEFORE</th><th colspan="2">AFTER</th></tr>
-  <tr><td colspan="2">[Actual value]</td><td colspan="2">[Actual value]</td></tr>
-  <tr><th colspan="4">Engineer Summary</th></tr>
+  <tr><th align="center" colspan="2">BEFORE</th><th align="center" colspan="2">AFTER</th></tr>
+  <tr><td align="center" colspan="2">[Actual value]</td><td align="center" colspan="2">[Actual value]</td></tr>
+  <tr><th align="center" colspan="4">Engineer Summary</th></tr>
   <tr>
-    <td><strong>[Engineer Title]</strong><br>[Short contribution]</td>
-    <td><strong>[Engineer Title]</strong><br>[Short contribution]</td>
-    <td><strong>[Engineer Title]</strong><br>[Short contribution]</td>
-    <td><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
   </tr>
-  <tr><th colspan="4">Testing Summary</th></tr>
-  <tr><th>Testing Type</th><th>Testing Feature</th><th>Metric</th><th>Status</th></tr>
-  <tr><td>[Actual test category]</td><td>[Actual child feature]</td><td>[Short measured value]</td><td>[PASS / FAIL]</td></tr>
-  <tr><th colspan="4">Build & Runtime Summary</th></tr>
-  <tr><th colspan="2">Build & Launch</th><th colspan="2">System Performance</th></tr>
+  <tr><th align="center" colspan="4">Testing Summary</th></tr>
+  <tr><th align="center">Testing Type</th><th align="center">Testing Feature</th><th align="center">Metric</th><th align="center">Status</th></tr>
+  <tr><td align="center">[Actual test category]</td><td align="center">[Actual child feature]</td><td align="center">[Short measured value]</td><td align="center">[PASS / FAIL]</td></tr>
+  <tr><th align="center" colspan="4">Build & Runtime Summary</th></tr>
+  <tr><th align="center" colspan="2">Build & Launch</th><th align="center" colspan="2">System Performance</th></tr>
   <tr>
-    <td colspan="2">[Actual build / debug / launch results]</td>
-    <td colspan="2">[Actual CPU / RAM / GPU results]</td>
+    <td align="center" colspan="2">[Actual build / debug / launch results]</td>
+    <td align="center" colspan="2">[Actual CPU / RAM / GPU results]</td>
   </tr>
 </table>
