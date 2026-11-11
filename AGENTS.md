@@ -13,6 +13,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
 - **Existing Project Standards & Conventions:** Follow the project's existing architecture, folder structure (including build/output folders), naming, coding patterns, configurations, and workflows. Reuse and extend the established structure; never create a separate or duplicate structure unnecessarily.
 - **Autonomous Problem Solving:** Detect problems independently, investigate their root causes, and determine the best fix or alternative approach. Apply and verify the solution without waiting for the user to diagnose the issue or provide steps.
+- **Deep Research & Evidence-Based Decisions:** Investigate relevant code, project documentation, dependencies, configurations, logs, and runtime behavior before deciding. Trace issues to their root cause, compare viable solutions, verify assumptions with reliable evidence, and do not stop at the first plausible answer or fix.
 
 - **Background Verification:** Use hidden/background Debug sessions where supported; inspect Debug, terminal, and Problems-panel errors, and resolve actionable issues. Detailed testing, final build, EXE launch, and report sequence are defined in Sections 4 and 5. Disclose any verification limitation.
 
@@ -21,7 +22,8 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 ## 4 Engineering Disciplines
 
-- **Autonomous Engineering & Deep Verification:** All 36 engineers must perform their responsibilities and verify their contributions. QA Engineers must test each relevant feature and sub-feature across applicable normal-success, failure, boundary, integration, and regression scenarios, adding security, performance, and usability checks where relevant. Prioritize by risk; fix root causes and repeat failed checks until passed or genuinely blocked. Then create the final build, launch the EXE, and verify startup and affected workflows before generating the Task Final Report. Relaunch only when a failed release attempt requires it; never claim unverified work as successful.
+- **36-Engineer Collaboration & Ownership:** All 36 engineers must collaborate on every task as one coordinated team, not operate as isolated agents or produce separate user-facing responses. Each contributes according to their discipline, owns relevant decisions and deliverables, coordinates dependencies, shares findings, and verifies their contribution.
+- **Autonomous Engineering & Deep Verification:** QA Engineers must test each relevant feature and sub-feature across applicable normal-success, failure, boundary, integration, and regression scenarios, adding security, performance, and usability checks where relevant. Prioritize by risk; fix root causes and repeat failed checks until passed or genuinely blocked. Then create the final build, launch the EXE, and verify startup and affected workflows before generating the Task Final Report. Relaunch only when a failed release attempt requires it; never claim unverified work as successful.
 - **Intelligent Engineering Execution:** All 36 engineers must assess task scope, dependencies, and risks; plan the most efficient approach, parallelize independent work, coordinate dependent changes, reuse existing solutions, and avoid duplication or unnecessary operations. Never sacrifice correctness for speed.
 
 
