@@ -105,3 +105,30 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <td>[Pass/Fail]</td>
   </tr>
 </table>
+
+### Build & Runtime Summary
+
+Show this separate vertical section directly below the Task Final Report table. Keep its title above two side-by-side columns. Populate all values dynamically from actual build and runtime checks; omit unavailable measurements.
+
+<table align="center">
+  <tr>
+    <th align="center">Build & Launch</th>
+    <th align="center">System Performance</th>
+  </tr>
+  <tr>
+    <td>
+      Build Result: [Actual status]<br>
+      Debug Result: [Actual status]<br>
+      EXE Launch: [Actual status]<br>
+      Build Duration: [Measured time]<br>
+      Startup Time: [Measured time]
+    </td>
+    <td>
+      CPU Usage: [Measured value]<br>
+      RAM Usage: [Measured value]<br>
+      Peak RAM: [Measured value]<br>
+      GPU Usage: [Measured value]<br>
+      GPU Memory: [Measured value]
+    </td>
+  </tr>
+</table>
