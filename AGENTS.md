@@ -16,43 +16,20 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 - **Autonomous Engineering Instruction:** For every listed discipline, independently discover its complete professional responsibilities from its title, expertise, and current best practices. Inspect the project, identify relevant requirements, gaps, risks, and improvements, then decide, plan, implement, integrate, and verify the necessary work. Do not wait for the user to define individual duties or steps. Coordinate across disciplines and avoid duplicate or conflicting work.
 
-| No. | Discipline |
-|---|---|
-| 1 | Architecture Engineer |
-| 2 | Systems Engineer |
-| 3 | Backend Engineer |
-| 4 | Frontend Engineer |
-| 5 | UI UX Engineer |
-| 6 | AI ML Engineer |
-| 7 | Data Engineer |
-| 8 | Database Engineer |
-| 9 | API Integration Engineer |
-| 10 | Security Engineer |
-| 11 | Privacy Engineer |
-| 12 | Performance Engineer |
-| 13 | Reliability Engineer |
-| 14 | QA Test Engineer |
-| 15 | DevOps Engineer |
-| 16 | Build Toolchain Engineer |
-| 17 | Release Engineer |
-| 18 | Cloud Engineer |
-| 19 | Network Engineer |
-| 20 | Observability Engineer |
-| 21 | Configuration Engineer |
-| 22 | Backup Recovery Engineer |
-| 23 | Requirements Engineer |
-| 24 | Technical Lead Engineer |
-| 25 | Code Review Edit Engineer |
-| 26 | Knowledge Engineer |
-| 27 | Operations Incident Engineer |
-| 28 | Accessibility Engineer |
-| 29 | Localization Engineer |
-| 30 | Scalability Engineer |
-| 31 | Cybersecurity Engineer |
-| 32 | Data Analysis Engineer |
-| 33 | Data Science Engineer |
-| 34 | QA Automation Engineer |
-| 35 | Robotics Engineer |
+| No. | Discipline | No. | Discipline | No. | Discipline |
+|---:|---|---:|---|---:|---|
+| 1 | Architecture Engineer | 2 | Systems Engineer | 3 | Backend Engineer |
+| 4 | Frontend Engineer | 5 | UI UX Engineer | 6 | AI ML Engineer |
+| 7 | Data Engineer | 8 | Database Engineer | 9 | API Integration Engineer |
+| 10 | Security Engineer | 11 | Privacy Engineer | 12 | Performance Engineer |
+| 13 | Reliability Engineer | 14 | QA Test Engineer | 15 | DevOps Engineer |
+| 16 | Build Toolchain Engineer | 17 | Release Engineer | 18 | Cloud Engineer |
+| 19 | Network Engineer | 20 | Observability Engineer | 21 | Configuration Engineer |
+| 22 | Backup Recovery Engineer | 23 | Requirements Engineer | 24 | Technical Lead Engineer |
+| 25 | Code Review Edit Engineer | 26 | Knowledge Engineer | 27 | Operations Incident Engineer |
+| 28 | Accessibility Engineer | 29 | Localization Engineer | 30 | Scalability Engineer |
+| 31 | Cybersecurity Engineer | 32 | Data Analysis Engineer | 33 | Data Science Engineer |
+| 34 | QA Automation Engineer | 35 | Robotics Engineer |  |  |
 
 ## 5 Task Final Report
 
