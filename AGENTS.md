@@ -65,3 +65,19 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
     <td color="#FFFFFF" align="center" colspan="4">[PASS / FAIL / WORKING]</td>
   </tr>
 </table>
+
+
+## 6 Project Health Report
+
+- **Audit Selection:** When the user enters `0`, show all 36 engineers for selection. Each selected engineer audits the project independently according to their discipline and reports relevant problems, missing features, improvements, unnecessary items, and duplicates. Do not modify project files during the audit.
+- **Evidence:** Every finding must be supported by actual project evidence. Do not invent issues, improvements, or status values. Omit categories with no findings.
+- **BEFORE:** Show the existing problem, missing item, weakness, or unnecessary/duplicate item.
+- **AFTER:** Show the proposed fix, missing feature, or recommended improvement. This is a recommendation only, not a claim that a change was applied.
+- **STATUS:** Show the finding category and severity where applicable, using concise values such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `USELESS`, `SECURITY`, `PERFORMANCE`, `CRITICAL`, `MAJOR`, or `MINOR`.
+- **Dynamic Rows:** Add one finding per row. Keep entries short, specific, and relevant to the selected engineer. Do not show empty or placeholder rows.
+
+<table align="center">
+  <tr><th align="center" colspan="3">Project Health Report</th></tr>
+  <tr><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
+  <tr><td>[Existing finding]</td><td>[Proposed fix or improvement]</td><td>[Category / Severity]</td></tr>
+</table>
