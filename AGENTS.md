@@ -60,14 +60,17 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
-- **All values:** Dynamic, real-time, and based only on actual task state and execution. No fixed or invented values.
-- **BEFORE / AFTER:** Actual current and resulting feature/version values.
-- **Engineer Summary:** Only contributing engineer titles; show each contribution briefly.
-- **Testing Type:** Actual categories, e.g. Unit Testing, Integration Testing, End-to-End Testing.
-- **Testing Feature:** Actual tested child-feature names only; never repeat the main feature.
-- **Metric:** Actual compact values/units only, e.g. 120ms, 45ms, 1.5s, 2min, 38%, 42ping. No long unit labels.
-- **Status:** Actual result only: PASS or FAIL.
-- **Build & Launch / System Performance:** Show actual real-time results only; omit unavailable values. Keep both sections inside the same report table.
+- **All values:** Generate the report from captured task execution data after the work. Use live project, test, build, launch, and runtime results; never use defaults, estimates, cached examples, or invented values.
+- **Data Evidence:** Every reported value must be traceable to its actual source: project state or diff, test output, build log and exit code, application runtime, profiler, system monitor, or other relevant tool output. Keep evidence available for verification; identify the source briefly beside a metric when needed.
+- **BEFORE / AFTER:** Capture the actual project/feature state before changes and verify the resulting state after changes. Do not infer either value.
+- **Engineer Summary:** Show only the exact titles of disciplines that materially contributed; include each contribution briefly. Do not list merely selected or idle engineers.
+- **Testing Type:** Show actual executed categories, e.g. Unit Testing, Integration Testing, End-to-End Testing.
+- **Testing Feature:** Show only the actual tested child-feature names; never repeat the main feature. Include only tests that were actually executed.
+- **Metric:** Record measured values from the corresponding test output, profiler, benchmark, or monitoring tool. Keep values compact (e.g. 120ms, 1.5s, 38%, 42ping); add a short source tag when needed. Never estimate or derive unsupported measurements.
+- **Testing Status:** Mark an executed test PASS only when its assertions/checks succeed; mark it FAIL when any required check fails. Never mark an unexecuted or partially evidenced test as PASS. Report failures accurately and do not hide failed tests.
+- **Build & Launch:** Report build configuration/target, actual command or task, exit code, and result from build output. Report DEBUG only when a debug session actually ran. Report EXE/application launch only after the process starts and runtime/UI readiness is verified; a successful build alone is not a launch.
+- **System Performance:** Measure the running target with available runtime profiling or system-monitor data during a stated observation interval. Report only actually sampled CPU, RAM, GPU, latency, throughput, or other relevant metrics with units and source. Omit unavailable measurements; never substitute estimates or machine-wide values for target-process data without clearly identifying the scope.
+- **Real-Time Reporting:** Collect evidence during the current task execution and generate the report from that execution, not static templates or previous runs. Refresh measurements after relevant changes and retest. If a tool or measurement is unavailable, omit that value and identify the verification gap; never claim live integration that was not performed.
 - Keep labels and contributions short. Add only rows and values supported by actual work.
 
 <table align="center">
