@@ -60,32 +60,20 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
-- **Report Generation:** Generate the report only after the requested task has actually been applied and verified. Keep all values dynamic and based on the current task; never use sample, guessed, or fixed results. Do not generate a completion report for audit-only work or intermediate steps.
-- **Before/After Rules:** Show actual existing and changed main feature names only. Use **Missing** only when a feature did not exist before. Do not write explanations such as added, improved, or updated in the cells.
-- **Engineer Summary Rules:** Include only actual contributing engineers from the 35-engineer **Engineering Disciplines** list. Use each exact listed engineer name and discipline title. Show a very short, specific contribution for each engineer. Never invent names, titles, or contributions, and do not include engineers who did not contribute.
-- **Testing Summary Rules:** Generate Testing Types dynamically from tests actually performed. List actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Do not include tests that were not run.
-- **Metrics:** Show real measured values with units where applicable (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS). Use **—** when no metric applies or no measurement is available. Never estimate or fabricate a metric.
-- **Status:** Show only **Pass** or **Fail**, based on actual verification. Report blocked, skipped, or unperformed checks clearly in the report text without falsely marking them as passed.
-- **Execution Verification:** Record actual build, debug, launch, API, UI, voice, database, and other relevant execution outcomes only when those checks were performed. Verify the affected functionality and retest after fixing failures.
-- **Dynamic Rows:** Add only the rows required by the actual task, avoid duplicate features/tests, and keep each entry concise. Preserve the blueprint table below exactly; do not alter its structure, columns, headings, order, or merged cells.
-- **Accuracy:** Report actual contributing engineers, changed features, tests, execution outcomes, measured metrics, and remaining blockers. Never claim work or verification that did not happen.
-
 <table>
+  <tr>
+    <th colspan="4">Final Task Report Heading</th>
+  </tr>
   <tr>
     <th colspan="2">BEFORE</th>
     <th colspan="2">AFTER</th>
   </tr>
   <tr>
-    <td colspan="2">[Actual existing feature, or Missing]</td>
-    <td colspan="2">[Actual updated feature]</td>
+    <td colspan="2" align="center">[Actual existing feature, or Missing]</td>
+    <td colspan="2" align="center">[Actual updated feature]</td>
   </tr>
   <tr>
     <th colspan="4">Engineer Summary</th>
-  </tr>
-  <tr>
-    <th>Engineer Name</th>
-    <th>Title</th>
-    <th colspan="2">Actual Contribution</th>
   </tr>
   <tr>
     <td>[Actual contributing engineer]</td>
