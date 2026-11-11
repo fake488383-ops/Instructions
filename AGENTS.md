@@ -32,9 +32,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 - **Background Color:** Always render the entire report and every table cell with a solid black background (`#000000`); never use another background color.
 
-- **Task Completion:** After every completed task, provide a concise summary of what changed and the actual completion, verification, build, and launch status. Do not generate the report table automatically.
-- **Report Command:** When the user sends `R` as a standalone chat message and presses Enter, immediately generate the Task Final Report table for the most recently completed task. Do not require a second command or start/repeat the task.
-- **Current Task Record:** Keep the latest completed task's actual changes, contributing engineers, tests, measurements, and build/launch evidence available for the `R` command. Replace this record when a newer task is completed. Generate the report from that task's real-time recorded data only; never use an older task or invent missing evidence.
+- **Task Completion & Report:** After every completed task, automatically generate the Task Final Report table and provide a concise summary of what changed and the actual completion, verification, build, and launch status. Use only the current task's real-time data and evidence; never invent results or report unexecuted checks as completed.
 - **BEFORE / AFTER:** Show only the main feature title in both columns; never include versions or descriptions. Use **Missing** in BEFORE when the feature did not exist.
 - **Engineer Summary:** Show only contributing engineer titles, each followed by a short contribution.
 - **Testing Type / Feature:** Show only executed testing-type titles and the titles of child features actually tested; list each tested child feature under Testing Feature.
