@@ -39,8 +39,9 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - **TESTING FEATURE:** Show only the titles of child features actually tested under the relevant main feature. No descriptions.
 - **MATRIX:** Show only actual numeric measurements and units (e.g., `20 ms`, `120 ms`, `1.5 sec`, `95%`). Do not show metric names or descriptions.
 - **STATUS:** Show only the actual status: `PASS` or `FAIL`.
-- **BUILD & LAUNCH:** Show only actual build, debug, EXE launch, and startup-time titles/results.
-- **SYSTEM PERFORMANCE:** Show only measured system-performance metric names and their actual values with units. No descriptions.
+- **TITLE:** Show only actual build, debug, EXE launch, and startup-time item titles.
+- **METRIC:** Show only measured system-performance metric names and their actual values with units. No descriptions.
+- **STATUS:** Show only the actual build, launch, and performance status: `PASS` or `FAIL`.
 - Never invent results or report unexecuted checks as completed.
 
 - **Dynamic Table:** Populate the table from actual task data; add rows and columns as needed, with no fixed dimensions. Let its width and height grow automatically to fit all generated content.
@@ -58,9 +59,10 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
   <tr><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING TYPE</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING FEATURE</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">MATRIX</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">STATUS</th></tr>
   <tr><td color="#FFFFFF" align="center" colspan="3">[Executed test category]</td><td color="#FFFFFF" align="center" colspan="3">[Tested child feature title]</td><td color="#FFFFFF" align="center" colspan="3">[Numeric value + unit]</td><td color="#FFFFFF" align="center" colspan="3">[PASS / FAIL]</td></tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Build & Runtime Summary</th></tr>
-  <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">BUILD & LAUNCH</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">SYSTEM PERFORMANCE</th></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">TITLE</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">METRIC</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">STATUS</th></tr>
   <tr>
-    <td color="#FFFFFF" align="center" colspan="6">[Actual build / debug / EXE launch result]</td>
-    <td color="#FFFFFF" align="center" colspan="6">[Measured CPU / RAM / GPU / runtime metrics]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Build / Debug / EXE Launch / Startup Time titles]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Measured CPU / RAM / GPU / runtime metrics]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Actual PASS / FAIL status]</td>
   </tr>
 </table>
