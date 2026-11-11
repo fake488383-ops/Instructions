@@ -30,35 +30,38 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 ## 5 Task Final Report
 
-- **Background Color:** Always render the entire report and every table cell with a solid black background (`#000000`); never use another background color.
+- **Background:** Render the entire report and every table cell with a solid black background (`#000000`).
+- **Task Completion & Report:** After every completed task, automatically generate the Task Final Report and provide a concise task summary. Use only current-task evidence; never invent results or claim unexecuted checks.
+- **BEFORE ONLY / AFTER ONLY:** BEFORE shows only existing main feature titles; if absent, show only `Missing`. AFTER shows only the integrated or added main feature titles. No descriptions.
+- **ENGINEER SUMMARY ONLY:** Show each contributing engineer title with one short contribution describing its responsibility in this task.
+- **TESTING TYPE ONLY:** Show only executed testing-type titles, such as Unit Testing, Integration Testing, and End-to-End Testing.
+- **TESTING FEATURE ONLY:** Show only titles of child features actually tested. No descriptions.
+- **MATRIX ONLY:** Show only measured numeric values and units, such as `20 ms`, `1.5 sec`, or `95%`. Do not show metric names or descriptions.
+- **STATUS ONLY:** Show only the actual result: `PASS`, `FAIL`, or `WORKING`.
+- **BUILD & RUNTIME SUMMARY:** Use exactly three columns in this order: **TITLE ONLY**, **SYSTEM PERFORMANCE ONLY**, **STATUS ONLY**. Put operation titles such as EXE Build, Debug, EXE Launch, and Startup Time in the first column; measured values such as CPU, RAM, GPU, EXE Size, Disk Usage, and Startup Time in the middle column; and only `PASS`, `FAIL`, or `WORKING` in the rightmost column. Keep status on the far right. Include only relevant, actually measured or verified values.
+- **SYSTEM PERFORMANCE ONLY:** Show measured system-performance metric names with their actual values and units. Do not add descriptions.
+- **Dynamic Layout:** Add rows as required by actual task data; do not invent values or fill unmeasured fields.
 
-- **Task Completion & Report:** After every completed task, automatically generate the Task Final Report table and provide a concise summary of what changed and the actual completion, verification, build, and launch status. Use only the current task's real-time data and evidence; never invent results or report unexecuted checks as completed.
-- **BEFORE / AFTER:** Show only the main feature title in both columns; never include versions or descriptions. Use **Missing** in BEFORE when the feature did not exist.
-- **Engineer Summary:** Show only contributing engineer titles, each followed by a short contribution.
-- **Testing Type / Feature:** Show only executed testing-type titles and the titles of child features actually tested; list each tested child feature under Testing Feature.
-- **Metric / Status:** Show only actual numeric measurements with units (e.g., `150 ms`, `20 ms`, `1.5 sec`) and **PASS** or **FAIL**. Never show metric names or descriptions.
-- **Build & Launch:** Show only concise, actual build, debug, and launch results.
-- **System Performance:** Show only measured system metric names and values with units.
-- Never invent results or report unexecuted checks as completed.
-
-- **Dynamic Table:** Populate the table from actual task data; add rows and columns as needed, with no fixed dimensions. Let its width and height grow automatically to fit all generated content.
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="12" align="center" bgcolor="#000000">Task Final Report</th></tr>
-  <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">BEFORE</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">AFTER</th></tr>
-  <tr><td color="#FFFFFF" align="center" colspan="6">[Feature title / Missing]</td><td color="#FFFFFF" align="center" colspan="6">[Main feature title]</td></tr>
-  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Engineer Summary</th></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">BEFORE ONLY</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">AFTER ONLY</th></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="6">Missing</td><td color="#FFFFFF" align="center" colspan="6">AI Conversation</td></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">ENGINEER SUMMARY ONLY</th></tr>
   <tr>
-    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
+    <td color="#FFFFFF" align="center" colspan="4">AI/ML Engineer<br>AI conversation integration</td>
+    <td color="#FFFFFF" align="center" colspan="4">Frontend Engineer<br>Conversation UI implementation</td>
+    <td color="#FFFFFF" align="center" colspan="4">QA Test Engineer<br>Feature verification</td>
   </tr>
-  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Testing Summary</th></tr>
-  <tr><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">Testing Type</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">Testing Feature</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">Metric</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">Status</th></tr>
-  <tr><td color="#FFFFFF" align="center" colspan="3">[Executed test category]</td><td color="#FFFFFF" align="center" colspan="3">[Tested child feature title]</td><td color="#FFFFFF" align="center" colspan="3">[Numeric value + unit]</td><td color="#FFFFFF" align="center" colspan="3">[PASS / FAIL]</td></tr>
-  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Build & Runtime Summary</th></tr>
-  <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">Build & Launch</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">System Performance</th></tr>
-  <tr>
-    <td color="#FFFFFF" align="center" colspan="6">[Actual build / debug / EXE launch result]</td>
-    <td color="#FFFFFF" align="center" colspan="6">[Measured CPU / RAM / GPU / runtime metrics]</td>
-  </tr>
+  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">TESTING SUMMARY</th></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING TYPE ONLY</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING FEATURE ONLY</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">MATRIX ONLY</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">STATUS ONLY</th></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="3">Unit Testing</td><td color="#FFFFFF" align="center" colspan="3">Microphone Input</td><td color="#FFFFFF" align="center" colspan="3">20 ms</td><td color="#FFFFFF" align="center" colspan="3">PASS</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="3">Integration Testing</td><td color="#FFFFFF" align="center" colspan="3">Speaker Output</td><td color="#FFFFFF" align="center" colspan="3">120 ms</td><td color="#FFFFFF" align="center" colspan="3">PASS</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="3">End-to-End Testing</td><td color="#FFFFFF" align="center" colspan="3">AI Conversation</td><td color="#FFFFFF" align="center" colspan="3">1.5 sec</td><td color="#FFFFFF" align="center" colspan="3">WORKING</td></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">BUILD & RUNTIME SUMMARY</th></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">TITLE ONLY</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">SYSTEM PERFORMANCE ONLY</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">STATUS ONLY</th></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="4">EXE Build</td><td color="#FFFFFF" align="center" colspan="4">CPU: 18%</td><td color="#FFFFFF" align="center" colspan="4">PASS</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="4">Debug</td><td color="#FFFFFF" align="center" colspan="4">RAM: 250 MB</td><td color="#FFFFFF" align="center" colspan="4">PASS</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="4">EXE Launch</td><td color="#FFFFFF" align="center" colspan="4">EXE Size: 45 MB</td><td color="#FFFFFF" align="center" colspan="4">PASS</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="4">Startup Time</td><td color="#FFFFFF" align="center" colspan="4">1.2 sec</td><td color="#FFFFFF" align="center" colspan="4">PASS</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="4">Runtime</td><td color="#FFFFFF" align="center" colspan="4">Disk Usage: 120 MB</td><td color="#FFFFFF" align="center" colspan="4">WORKING</td></tr>
 </table>
