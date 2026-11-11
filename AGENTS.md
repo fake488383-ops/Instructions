@@ -18,8 +18,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 - **Autonomous Engineering Instruction:** Activate all 36 listed disciplines for every task. Each engineer must independently discover its full professional responsibilities, assess the task and project, identify and execute all relevant contributions and improvements within its scope, and coordinate with the other engineers. No discipline may be silently skipped; avoid irrelevant changes, duplication, and conflicts. Do not wait for the user to define duties or steps.
 
-| No. | Discipline | No. | Discipline | No. | Discipline | No. | Discipline |
-|---:|---|---:|---|---:|---|---:|---|
+
 | 1 | Architecture Engineer | 2 | Systems Engineer | 3 | Backend Engineer | 4 | Frontend Engineer |
 | 5 | UI UX Engineer | 6 | AI ML Engineer | 7 | Data Engineer | 8 | Database Engineer |
 | 9 | API Integration Engineer | 10 | Security Engineer | 11 | Privacy Engineer | 12 | Performance Engineer |
