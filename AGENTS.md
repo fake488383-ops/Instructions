@@ -93,16 +93,14 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th colspan="4">Testing Summary</th>
   </tr>
   <tr>
-    <th>Testing</th>
+    <th colspan="2">Testing</th>
     <th>Metric</th>
     <th>Status</th>
-    <th></th>
   </tr>
   <tr>
-    <td>[Test category]<br>[Tested child feature]</td>
+    <td colspan="2">[Test category]<br>[Tested child feature]</td>
     <td>[Measured value]</td>
     <td>[Actual result]</td>
-    <td></td>
   </tr>
   <tr>
     <th colspan="4" align="center">Build & Runtime Summary</th>
