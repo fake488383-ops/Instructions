@@ -45,21 +45,21 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="12" align="center" bgcolor="#000000">Task Final Report</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">BEFORE</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">AFTER</th></tr>
-  <tr><td color="#FFFFFF" align="center" colspan="6">[Feature / Missing]</td><td color="#FFFFFF" align="center" colspan="6">[Feature]</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="6">[Existing Features] / Missing</td><td color="#FFFFFF" align="center" colspan="6">[Updated Features]</td></tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">ENGINEER SUMMARY</th></tr>
   <tr>
-    <td color="#FFFFFF" align="center" colspan="4">[Engineer]<br>[Contribution]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[Engineer]<br>[Contribution]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[Engineer]<br>[Contribution]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Contribution]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Contribution]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Contribution]</td>
   </tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Testing Summary</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING TYPE</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING FEATURE</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">MATRIX</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">STATUS</th></tr>
-  <tr><td color="#FFFFFF" align="center" colspan="3">[Test type]</td><td color="#FFFFFF" align="center" colspan="3">[Tested feature]</td><td color="#FFFFFF" align="center" colspan="3">[Real-time value + unit]</td><td color="#FFFFFF" align="center" colspan="3">[PASS / FAIL]</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="3">[Test Category]</td><td color="#FFFFFF" align="center" colspan="3">[Tested Component]</td><td color="#FFFFFF" align="center" colspan="3">[Performance Value]</td><td color="#FFFFFF" align="center" colspan="3">[Test Result]</td></tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Execution Summary</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">EXECUTION</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">METRIC</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">STATUS</th></tr>
   <tr>
-    <td color="#FFFFFF" align="center" colspan="4">[Execution title]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[Value + unit]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[PASS / FAIL / WORKING]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Execution Step]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Measured Value]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Execution Result]</td>
   </tr>
 </table>
