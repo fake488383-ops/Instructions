@@ -69,31 +69,16 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 ## 6 Project Health Report
 
-- **Audit Selection:** When the user enters `0`, show all 36 engineers for selection. Each selected engineer audits the project independently according to their discipline. Do not modify project files during the audit.
-- **Audit Evidence:** Every reported issue or recommendation must be supported by actual project evidence. Never invent findings or status values. Omit empty findings.
-- **Report Header:** Use a two-column header table. The first column displays the centered title `PROJECT HEALTH REPORT`. The second column displays the selected engineer's exact number and title, the actual audit status, and the project name. Do not display a findings count or any separate findings summary.
-- **Findings Table:** Keep exactly three columns: `BEFORE`, `AFTER`, and `STATUS`. Do not add, remove, or rename these columns.
-- **BEFORE:** Each cell starts with the existing problem/feature title as a heading, followed by a concise, normal-length description of the current problem or condition.
-- **AFTER:** Each cell starts with the proposed solution/feature title as a heading, followed by a concise, normal-length description explaining the solution. This is a recommendation only, not a claim that a change was applied.
-- **STATUS:** Show the relevant finding category and severity, such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `USELESS`, `SECURITY`, `PERFORMANCE`, `CRITICAL`, `MAJOR`, or `MINOR`.
-- **Dynamic Rows:** Add one finding per row. Keep descriptions clear and moderate in length. Do not show empty or placeholder rows.
-
-<table align="center">
-  <tr>
-    <th align="center" width="50%">PROJECT HEALTH REPORT</th>
-    <td align="left" width="50%">
-      <strong>ENGINEER:</strong> [Engineer No. — Exact Engineer Title]<br>
-      <strong>AUDIT STATUS:</strong> [Actual Audit Status]<br>
-      <strong>PROJECT:</strong> [Actual Project Name]
-    </td>
-  </tr>
-</table>
+- **Audit Selection:** When the user enters `0`, show all 36 engineers for selection. Each selected engineer audits the project independently according to their discipline and reports relevant problems, missing features, improvements, unnecessary items, and duplicates. Do not modify project files during the audit.
+- **Evidence:** Every finding must be supported by actual project evidence. Do not invent issues, improvements, or status values. Omit categories with no findings.
+- **BEFORE:** Each finding cell must show the main feature/issue title first, followed by its concise description underneath.
+- **AFTER:** Each recommendation cell must show the proposed feature/fix title first, followed by its concise description underneath. This is a recommendation only, not a claim that a change was applied.
+- **STATUS:** Show the finding category and severity where applicable, using concise values such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `USELESS`, `SECURITY`, `PERFORMANCE`, `CRITICAL`, `MAJOR`, or `MINOR`.
+- **Dynamic Rows:** Add one finding per row. Keep entries short, specific, and relevant to the selected engineer. Do not show empty or placeholder rows.
+- **Report Title:** Display `Project Health Report` as a heading outside and above the table, not inside a table cell.
+**Project Health Report**
 
 <table align="center">
   <tr><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr>
-    <td><strong>[Existing Problem / Feature Title]</strong><br>[Concise description of the existing problem or condition]</td>
-    <td><strong>[Proposed Solution / Feature Title]</strong><br>[Concise description of the recommended solution]</td>
-    <td>[Finding Category / Severity]</td>
-  </tr>
+  <tr><td><strong>[Existing Feature / Issue Title]</strong><br>[Description of the existing problem]</td><td><strong>[Proposed Feature / Fix Title]</strong><br>[Description of the proposed improvement]</td><td>[Category / Severity]</td></tr>
 </table>
