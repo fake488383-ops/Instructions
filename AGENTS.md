@@ -61,18 +61,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 ## Task Final Report
 
 - **Rendering:** Generate the report directly in the final AI-agent response as one continuous standard GitHub-Flavored Markdown table. Do not create separate tables, cards, boxes, HTML, CLI/ASCII layouts, Unicode box-drawing tables, or separate report files.
-- **Unified Blueprint:** Combine all three report sections into this single four-column table, preserving the exact section order and each section's intended columns:
-
-  | Section | Column 1 | Column 2 | Column 3 | Column 4 |
-  |---|---|---|---|---|
-  | **BEFORE / AFTER** | **BEFORE** | **AFTER** | | |
-  | Feature | [Actual existing feature name, or Missing] | [Actual updated feature name] | | |
-  | **Engineer Summary** | **Engineer Name & Title** | **Actual Contribution** | | |
-  | Engineer | [Exact engineer name — discipline title] | [Very short actual contribution] | | |
-  | **Testing Summary** | **Testing Type** | **Testing Feature** | **Metric** | **Status** |
-  | Testing | [Actual test type] | [Actual tested child feature] | [Measured value with unit, or —] | [Pass/Fail] |
-
-- **Single-Table Rule:** All section headings, column headings, and data rows must remain inside this one continuous Markdown table. Keep the four columns consistent in every row; leave unused cells empty. Preserve this order: BEFORE / AFTER, Engineer Summary, Testing Summary.
+- **Layout Structure:** Remove the old fixed blueprint/example table. Keep the report content and its existing rules. At the top, place **BEFORE** in the left horizontal column and **AFTER** in the right horizontal column. Directly beneath both, add one full-width vertical section headed **Engineer Summary**. Keep the report as one continuous overall table/layout; do not create separate report boxes or files.
 - **Before/After Rules:** Use the first two data columns for actual existing and changed main feature names only. Use **Missing** only when a feature did not exist before. Do not write explanations such as added, improved, or updated in the cells.
 - **Engineer Summary Rules:** Use the first two data columns for actual contributing engineers from the 35-engineer **Engineering Disciplines** list. Include each exact listed name and discipline title, plus a very short actual contribution. Never invent names or include non-contributors.
 - **Testing Summary Rules:** Use all four columns. Generate Testing Types dynamically from tests actually performed. List actual tested child features first; place execution and system-performance checks (Build, Debug, Build & Run, CPU, Startup Time, Performance, Memory, etc.) at the end. Show relevant measured Metrics as short real-time values with units (e.g., 120 ms, 98%, 35%, 450 MB, 60 FPS); use **—** when no metric applies or is available. Status must show only **Pass** or **Fail**. Generate rows dynamically, avoid fixed lists and duplicates.
