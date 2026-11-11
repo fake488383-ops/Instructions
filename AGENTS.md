@@ -60,12 +60,11 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
-- Generate the report only after the task is applied and verified; skip audit-only and incomplete work.
-- Populate Before/After with actual feature names; use **Missing** only if the feature did not previously exist.
-- Include only actual contributing engineers, their exact discipline titles, and concise contributions.
-- Dynamically include only relevant tests and measurements that were actually collected. Never hardcode, guess, or fabricate values; use **—** when unavailable.
-- Show **Pass** or **Fail** only for checks actually performed. State blockers or unperformed checks accurately.
-- Add only necessary rows and preserve the blueprint table structure.
+- **BEFORE:** Show each existing feature's main title only; show **Missing** for each feature not present.
+- **AFTER:** Show each added or improved feature's latest main title only.
+- Put one feature title in each separate cell/row; never combine multiple feature titles in one cell. No descriptions.
+- Keep Engineer Summary and Testing Summary limited to actual contributors and checks. Use only real results; never invent values.
+- Add rows dynamically and preserve the table layout.
 
 <table align="center">
   <tr>
@@ -76,14 +75,14 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th colspan="2">AFTER</th>
   </tr>
   <tr>
-    <td colspan="2" align="center">[Feature name / Missing]</td>
-    <td colspan="2" align="center">[Updated feature]</td>
+    <td colspan="2" align="center">[Feature title / Missing]</td>
+    <td colspan="2" align="center">[Feature title]</td>
   </tr>
   <tr>
     <th colspan="4">Engineer Summary</th>
   </tr>
   <tr>
-    <td>[Engineer name]</td>
+    <td>[Engineer]</td>
     <td>[Title]</td>
     <td colspan="2">[Contribution]</td>
   </tr>
@@ -98,8 +97,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
   </tr>
   <tr>
     <td>[Test type]</td>
-    <td>[Tested feature]</td>
-    <td>[Measured value / —]</td>
+    <td>[Feature]</td>
+    <td>[Value / —]</td>
     <td>[Pass/Fail]</td>
   </tr>
 </table>
