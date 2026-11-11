@@ -63,6 +63,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - **System Performance:** Show only measured system metric names and values with units.
 - Never invent results or report unexecuted checks as completed.
 
+- **Dynamic Table:** Populate the table from actual task data; add rows and columns as needed, with no fixed dimensions. Let its width and height grow automatically to fit all generated content.
 <table align="center">
   <tr><th colspan="4" align="center" bgcolor="#17365D">Task Final Report</th></tr>
   <tr><th align="center" colspan="2" bgcolor="#D9EAF7">BEFORE</th><th align="center" colspan="2" bgcolor="#D9EAF7">AFTER</th></tr>
