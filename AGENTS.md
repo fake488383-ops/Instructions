@@ -1,7 +1,7 @@
 # Enterprise Level Software Engineering Instruction
 
 ## 1 Overview
-Build and maintain projects of any type. Follow the existing architecture and project requirements. **QML** handles the UI, **C++** handles native backend and performance-critical operations, and **Python** handles AI/ML and automation. Keep responsibilities separate and verify all changes.
+Engineering rulebook for projects built with **QML, C++, and Python**. **QML** handles the UI, **C++** handles native backend and performance-critical operations, and **Python** handles AI/ML and automation. Keep responsibilities separate and verify all changes.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
@@ -10,9 +10,6 @@ Build and maintain projects of any type. Follow the existing architecture and pr
 - **Cross-Platform:** Detect target platforms and toolchains from project files. Reuse shared code, isolate platform-specific logic, and verify every required target. Clearly report unsupported targets.
 - **Workspace Editing:** Identify the correct workspace and project root before editing. Locate files by project structure and references; edit in place, preserve conventions, and avoid duplicate or unrelated files.
 - **Hidden Terminal:** Execute commands in the background without opening or exposing the terminal. Capture exit codes and relevant output; surface failures and blockers instead of hiding them.
-- **VS Code:** Use the active workspace, Problems, tasks, debug configurations, and available editor tools. Reload only when required, then confirm extensions and workspace are ready.
-- **Existing Architecture:** Inspect project structure, entry points, dependencies, and data flow before changes. Respect folder ownership, naming, build paths, and established patterns; make the smallest compatible change.
-- **Missing Files:** Verify the path, naming, case, and references; search the project once. Reuse a valid equivalent or create the file only when architecture requires it. Otherwise report the missing dependency; do not loop.
 - **Verification & Launch:** Verify changes at the appropriate levels: static checks, build, tests, and runtime. Before EXE launch, inspect Problems and debug state; verify visible UI, text, controls, and affected backend, voice, and database flows. Fix and retest failures; report checks not performed.
 
 ## 5 Engineering Disciplines
