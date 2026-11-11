@@ -55,7 +55,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 ## 5 Task Final Report
 
 - **Mandatory:** Generate this table after every completed task. Do not omit it.
-- **BEFORE / AFTER:** Show feature titles only. Use **Missing** in BEFORE when the feature did not exist.
+- **BEFORE / AFTER:** Show only the main feature title in both columns; never include versions or descriptions. Use **Missing** in BEFORE when the feature did not exist.
 - **Engineer Summary:** Show only contributing engineer titles, each followed by a short contribution.
 - **Testing Type / Feature:** Show only executed testing-type titles and tested child-feature titles.
 - **Metric / Status:** Show only short measured values with units and **PASS** or **FAIL**. No descriptions.
@@ -67,7 +67,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 <table align="center">
   <tr><th colspan="12" align="center" bgcolor="#17365D">Task Final Report</th></tr>
   <tr><th align="center" colspan="6" bgcolor="#D9EAF7">BEFORE</th><th align="center" colspan="6" bgcolor="#D9EAF7">AFTER</th></tr>
-  <tr><td align="center" colspan="6">[Feature title / Missing]</td><td align="center" colspan="6">[Added or improved feature title/version]</td></tr>
+  <tr><td align="center" colspan="6">[Feature title / Missing]</td><td align="center" colspan="6">[Main feature title]</td></tr>
   <tr><th align="center" colspan="12" bgcolor="#D9EAF7">Engineer Summary</th></tr>
   <tr>
     <td align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
