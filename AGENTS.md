@@ -46,7 +46,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 | 28 | Accessibility Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
 | 29 | Localization Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
 | 30 | Scalability Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 31 | Resources Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
+| 31 | Cybersecurity Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
 | 32 | Data Analysis Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
 | 33 | Data Science Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
 | 34 | QA Automation Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
