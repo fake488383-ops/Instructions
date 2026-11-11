@@ -64,23 +64,23 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - Never invent results or report unexecuted checks as completed.
 
 - **Dynamic Table:** Populate the table from actual task data; add rows and columns as needed, with no fixed dimensions. Let its width and height grow automatically to fit all generated content.
-<table align="center">
-  <tr><th colspan="12" align="center" bgcolor="#17365D">Task Final Report</th></tr>
-  <tr><th align="center" colspan="6" bgcolor="#D9EAF7">BEFORE</th><th align="center" colspan="6" bgcolor="#D9EAF7">AFTER</th></tr>
-  <tr><td align="center" colspan="6">[Feature title / Missing]</td><td align="center" colspan="6">[Main feature title]</td></tr>
-  <tr><th align="center" colspan="12" bgcolor="#D9EAF7">Engineer Summary</th></tr>
+<table align="center" bgcolor="#000000">
+  <tr><th color="#FFFFFF" colspan="12" align="center" bgcolor="#000000">Task Final Report</th></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">BEFORE</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">AFTER</th></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="6">[Feature title / Missing]</td><td color="#FFFFFF" align="center" colspan="6">[Main feature title]</td></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Engineer Summary</th></tr>
   <tr>
-    <td align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
-    <td align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
-    <td align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Short contribution]</td>
   </tr>
-  <tr><th align="center" colspan="12" bgcolor="#D9EAF7">Testing Summary</th></tr>
-  <tr><th align="center" colspan="3" bgcolor="#D9EAF7">Testing Type</th><th align="center" colspan="3" bgcolor="#D9EAF7">Testing Feature</th><th align="center" colspan="3" bgcolor="#D9EAF7">Metric</th><th align="center" colspan="3" bgcolor="#D9EAF7">Status</th></tr>
-  <tr><td align="center" colspan="3">[Executed test category]</td><td align="center" colspan="3">[Tested child feature title]</td><td align="center" colspan="3">[Numeric value + unit]</td><td align="center" colspan="3">[PASS / FAIL]</td></tr>
-  <tr><th align="center" colspan="12" bgcolor="#D9EAF7">Build & Runtime Summary</th></tr>
-  <tr><th align="center" colspan="6" bgcolor="#D9EAF7">Build & Launch</th><th align="center" colspan="6" bgcolor="#D9EAF7">System Performance</th></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Testing Summary</th></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">Testing Type</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">Testing Feature</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">Metric</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">Status</th></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="3">[Executed test category]</td><td color="#FFFFFF" align="center" colspan="3">[Tested child feature title]</td><td color="#FFFFFF" align="center" colspan="3">[Numeric value + unit]</td><td color="#FFFFFF" align="center" colspan="3">[PASS / FAIL]</td></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Build & Runtime Summary</th></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">Build & Launch</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">System Performance</th></tr>
   <tr>
-    <td align="center" colspan="6">[Actual build / debug / EXE launch result]</td>
-    <td align="center" colspan="6">[Measured CPU / RAM / GPU / runtime metrics]</td>
+    <td color="#FFFFFF" align="center" colspan="6">[Actual build / debug / EXE launch result]</td>
+    <td color="#FFFFFF" align="center" colspan="6">[Measured CPU / RAM / GPU / runtime metrics]</td>
   </tr>
 </table>
