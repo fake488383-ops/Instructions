@@ -81,5 +81,5 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 <table align="center">
   <tr><th align="center" colspan="3">Project Health Report</th></tr>
   <tr><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr><td><strong>[Short Problem Title]</strong><br>[Roman Urdu mein maslay ki aik mukhtasar, wazeh line]</td><td><strong>[Short Improvement Title]</strong><br>[Roman Urdu mein faiday ki aik mukhtasar, wazeh line]</td><td>[Finding Category / Severity]</td></tr>
+  <tr><td><strong>[Problem Title]</strong><br>[Short issue description]</td><td><strong>[Improvement Title]</strong><br>[Short benefit description]</td><td>[Category: PROBLEM / MISSING / DUPLICATE / IMPROVEMENT]<br>[Severity: CRITICAL / HIGH / MEDIUM / LOW]</td></tr>
 </table>
