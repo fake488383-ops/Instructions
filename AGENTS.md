@@ -75,10 +75,12 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - **AFTER:** Show the proposed fix title with a short description; recommendations only.
 - **STATUS:** Show a short category/severity, such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `SECURITY`, or `CRITICAL`.
 - **Dynamic Rows:** Add one finding per row. Keep entries short, specific, and relevant to the selected engineer. Do not show empty or placeholder rows.
-- **Report Title:** Display `Project Health Report` in the first full-width table header row, spanning all three columns above BEFORE, AFTER, and STATUS.
+- **Report Header:** Show `Project Health Report` in the first full-width row. In the next row, show the detected project title on the left (spanning two columns) and each selected engineer's exact number and title on the right. Use Section 4 numbers/titles; never invent missing details.
+- **Finding Columns:** Place BEFORE, AFTER, and STATUS below the project/engineer header row.
 
 <table align="center">
   <tr><th align="center" colspan="3">Project Health Report</th></tr>
+  <tr><td align="left" colspan="2"><strong>Project:</strong> [Project Title]</td><td align="right"><strong>Engineer:</strong><br>#[Number] — [Engineer Title]</td></tr>
   <tr><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
   <tr><td><strong>[Existing Issue Title]</strong><br>[Brief description of the current issue]</td><td><strong>[Proposed Fix Title]</strong><br>[Brief description of the recommended fix]</td><td>[Finding Category / Severity]</td></tr>
 </table>
