@@ -75,9 +75,12 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - **AFTER:** Each recommendation cell must show the proposed feature/fix title first, followed by its concise description underneath. This is a recommendation only, not a claim that a change was applied.
 - **STATUS:** Show the finding category and severity where applicable, using concise values such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `USELESS`, `SECURITY`, `PERFORMANCE`, `CRITICAL`, `MAJOR`, or `MINOR`.
 - **Dynamic Rows:** Add one finding per row. Keep entries short, specific, and relevant to the selected engineer. Do not show empty or placeholder rows.
+- **Report Title:** Display `Project Health Report` as a heading outside and above the table, not inside a table cell.
+- **Engineer Column:** Show the selected engineer's exact title from Section 4 in the `ENGINEER` column. Repeat the title for each finding row attributed to that engineer.
+
+**Project Health Report**
 
 <table align="center">
-  <tr><th align="center" colspan="3">Project Health Report</th></tr>
-  <tr><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr><td><strong>[Existing Feature / Issue Title]</strong><br>[Description of the existing problem]</td><td><strong>[Proposed Feature / Fix Title]</strong><br>[Description of the proposed improvement]</td><td>[Category / Severity]</td></tr>
+  <tr><th align="center">ENGINEER</th><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
+  <tr><td>[Selected Engineer Title]</td><td><strong>[Existing Feature / Issue Title]</strong><br>[Description of the existing problem]</td><td><strong>[Proposed Feature / Fix Title]</strong><br>[Description of the proposed improvement]</td><td>[Category / Severity]</td></tr>
 </table>
