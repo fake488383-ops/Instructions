@@ -8,7 +8,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 ## 3 Golden Rules
 - **Cross-Platform:** Use QML's cross-platform capabilities to support the project's required platforms, including Windows and macOS. Detect each target platform and toolchain, reuse shared QML/C++ code wherever possible, isolate necessary platform-specific code, and build and verify every required target. Clearly report unsupported targets.
-- **Workspace:** Perform all code changes directly in the VS Code workspace/editor so edits, deletions, and updates are visible live. Do not write code through CLI or a separate workflow and integrate it later.
+- **Workspace:** Make all code changes directly in the VS Code workspace/editor, with live file updates and preview visible as work progresses. Never write code in CLI mode and paste or integrate it afterward.
 - **Hidden Terminal:** Execute commands in the background without opening or exposing the terminal. Capture exit codes and relevant output; surface failures and blockers instead of hiding them.
 - **Verification & Launch:** For every task, small or large, build and launch the project's EXE/application as a mandatory completion step. Verify the running UI and affected functionality, and independently test the backend and connected services through the running application or appropriate runtime checks. Run relevant tests, fix failures, and retest. Confirm the process starts and the application is ready; a successful build alone is not a launch. Do not mark the task complete without an actual launch. If a genuine technical blocker prevents launch, report the exact blocker and clearly mark launch as blocked; never claim an unperformed launch or test.
 
