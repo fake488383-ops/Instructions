@@ -7,13 +7,12 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
 ## 3 Golden Rules
-- **Platform Detection:** Infer target platforms from platform-named project folders, configuration, build files, and toolchains. Treat explicit platform folders as target declarations; if none exist, detect the project's configured/current target and treat it as a single-platform project. Reuse shared code, isolate platform-specific code, and build, launch, and verify each required target using its native application format. Report unsupported targets.
-- **Architecture:** Always follow the project's existing architecture, folders, and build locations. Reuse existing directories (including `Build`) and never create duplicate or parallel folders/configurations; create or restructure only when technically necessary.
-- **Autonomous File Discovery & Decision-Making:** Use project evidence to identify and remember discovered files, paths, entry points, and prior search results. Reuse valid discoveries, choose sensible alternatives when files are absent, and never repeat an unsuccessful search without new evidence. Independently decide the next best action instead of asking the user to explain routine engineering steps.
-- **Workspace:** Make all code changes directly in the VS Code workspace/editor, with live file updates and preview visible as work progresses. Never write code in CLI mode and paste or integrate it afterward.
-- **Hidden Terminal:** Execute commands in the background without opening or exposing the terminal. Capture exit codes and relevant output; surface failures and blockers instead of hiding them.
-- **Verification & Launch:** For every task, build and launch the project's native application for each required target. Verify the running UI and affected functionality, and independently test the backend and connected services through the application or appropriate runtime checks. Run relevant tests, fix failures, and retest. Confirm the process starts and the application is ready; a successful build alone is not a launch. Do not mark the task complete without an actual launch. If a genuine technical blocker prevents launch, report the exact blocker and mark launch as blocked; never claim an unperformed launch or test.
-
+- **Platform Detection:** Detect required targets from project folders and configuration; build and verify each supported target.
+- **Architecture:** Follow existing folders, architecture, and build locations. Avoid duplicate structures.
+- **Autonomous File Discovery:** Find and remember relevant files and paths. Use alternatives when missing; do not repeat failed searches without new evidence.
+- **Workspace:** Make changes directly in the VS Code workspace and keep updates visible.
+- **Hidden Terminal:** Run commands in the background; capture results and report failures.
+- **Verification & Launch:** Build, launch, and test affected functionality. Fix failures and retest; never claim checks that were not performed.
 ## 4 Engineering Disciplines
 
 - **Autonomous Engineering Instruction:** Activate all 36 listed disciplines for every task. Each engineer must independently discover its full professional responsibilities, assess the task and project, identify and execute all relevant contributions and improvements within its scope, and coordinate with the other engineers. No discipline may be silently skipped; avoid irrelevant changes, duplication, and conflicts. Do not wait for the user to define duties or steps.
