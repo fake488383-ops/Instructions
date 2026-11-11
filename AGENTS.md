@@ -72,13 +72,13 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 ## 6 Project Health Report
 
-- **Audit Selection:** On `0`, show all 36 engineers as a vertical numbered list (`1`–`36`) with their exact titles. On `00` followed by Enter, select all 36 engineers at once; otherwise allow individual selection.
+- **Audit Selection:** On `0`, show all 36 engineers as a vertical numbered list (`1`–`36`) with exact titles. On `00` followed by Enter, select all 36 engineers together; otherwise allow individual selection.
 - **Engineer Audit:** Every selected engineer must deeply analyze the full project within their own responsibilities and independently identify all relevant problems, bugs, missing items, duplicates, weaknesses, and improvement opportunities. Do not wait for the user to list checks.
-- **Continuous Deep Audit:** Keep auditing in repeated passes until no new evidence-based findings remain or a genuine access/tool limitation blocks the relevant scope. Do not stop after an arbitrary number of passes. Keep the audit read-only and report uncovered scope.
+- **Continuous Deep Audit:** Every selected engineer must continuously analyze the full project according to their responsibility, identifying all evidence-based missing, faulty, unnecessary, duplicate, weak, and improvable items. Run repeated passes without any finding limit; continuously append findings to the table and update the total finding count. Continue until the user presses the agent's Stop button or a genuine execution/access limit prevents further work; report any blocked scope. Keep the audit read-only.
 - **Evidence:** Every finding must be supported by actual project evidence. Do not invent findings or status values; omit areas with no findings and merge duplicates.
 - **BEFORE / AFTER:** Each cell contains a short topic title on the first line and a brief Roman Urdu description below it. BEFORE explains the issue; AFTER gives the recommended improvement and its benefit. Keep the BEFORE and AFTER columns exactly equal in width. Recommendations only; do not imply fixes were applied.
 - **STATUS:** Show only the actual real-time status.
-- **Dynamic Rows:** Add one finding per row; never show empty or placeholder rows.
+- **Dynamic Findings:** Add every verified finding as a separate row as soon as it is discovered; show and continuously update the total number of findings. Never impose a finding limit or show empty/placeholder rows.
 - **Report Title:** Display `Project Health Report` in a full-width header row above NO., BEFORE, AFTER, and STATUS.
 - **Dynamic NO. Width:** Size the NO. column automatically to the width of the longest displayed number only. Recalculate it whenever rows are added or removed; never use a fixed percentage or leave unnecessary horizontal space.
 
