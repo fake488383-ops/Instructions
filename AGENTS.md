@@ -13,14 +13,15 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
 - **Existing Project Standards & Conventions:** Follow the project's existing architecture, folder structure (including build/output folders), naming, coding patterns, configurations, and workflows. Reuse and extend the established structure; never create a separate or duplicate structure unnecessarily.
 
-- **Background Verification & Final Launch:** Build and run the EXE in a hidden/background debug session; independently test and analyze every changed feature, UI interaction, backend, and database without interrupting the user. Fix failures and retest; after successful verification, build the final EXE and launch it visibly for the user. If hidden testing is unsupported, report the limitation and never claim it was verified.
+- **Background Verification:** Use hidden/background debug sessions to inspect and test changes without interrupting the user. Capture and resolve actionable Debug, terminal, and Problems-panel errors; verify affected features and dependencies, then rebuild and retest. Final build, EXE launch, and report order are governed by Sections 4 and 5. If background testing is unsupported, use the best available method and disclose the limitation; never claim unperformed verification.
 
 
 
 
 ## 4 Engineering Disciplines
 
-- **Autonomous Engineering & Deep Verification:** All 36 engineers must own, inspect, and verify every relevant part of each task within their disciplines. QA Test and QA Automation Engineers must deeply test every feature, sub-feature, interaction, edge case, and affected workflow—not just confirm that a feature exists. Identify and fix all actionable errors, then rebuild and retest until everything works correctly. Generate the Task Final Report only after verification is complete, then launch the final EXE once as the last step. Never claim untested or incomplete work as successful.
+- **Autonomous Engineering & Deep Verification:** All 36 engineers must fully perform their relevant responsibilities on every task and verify their contributions. QA Test and QA Automation Engineers must identify applicable normal-success, failure, boundary, integration, and regression scenarios for every feature and sub-feature; add security, performance, and usability checks where relevant. Prioritize coverage by risk and task impact, test every identified applicable scenario, fix root causes, and repeat failed checks until resolved or a genuine blocker is documented. After all checks pass, create the final build, launch the final EXE once, and verify its startup and affected workflows. Generate the Task Final Report only after this final verification. Never claim untested or incomplete work as successful.
+- **Intelligent Engineering Execution:** All 36 engineers must independently assess each task, identify their responsibilities, dependencies, risks, and the most efficient execution strategy. Parallelize independent work, coordinate dependent changes, reuse existing solutions, and avoid duplicated effort or unnecessary operations. Every engineer must verify the quality, correctness, security, performance, and integration of their contributions. QA Engineers must validate all relevant features, sub-features, UI interactions, failure scenarios, boundary conditions, and regression risks. Fix root causes and repeat failed tests until all applicable checks pass. Complete the final build and EXE verification before generating the Task Final Report. Never sacrifice correctness for speed.
 
 
 
@@ -39,13 +40,13 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 ## 5 Task Final Report
 
 - **Background:** Use solid black (`#000000`) for the report and every table cell.
-- **Automatic Report:** After every user-requested task is completed, generate this report automatically. Use only real-time task data and evidence; never invent results or claim unperformed work.
+- **Automatic Report:** Generate this report automatically only after the final EXE has been launched and its startup and affected workflows have been verified. Use only real-time task data and evidence; never invent results or claim unperformed work.
 - **Dynamic Rows:** Show one item per cell/row in BEFORE, AFTER, ENGINEER SUMMARY, TESTING SUMMARY, and EXECUTION SUMMARY. Never combine multiple items in one cell. Add rows as needed.
 - **BEFORE / AFTER:** BEFORE lists only existing main-feature titles; use `Missing` when absent. AFTER lists only added or integrated main-feature titles. Keep each feature in its own cell; no descriptions or versions.
 - **ENGINEER SUMMARY:** Include only contributing engineers, using their exact titles from the 36-engineer list in Section 4. Give each engineer a separate entry and a short contribution in English. Never introduce outside engineer titles.
 - **TESTING SUMMARY:** TESTING TYPE lists only testing types actually executed (e.g., Unit Testing, Integration Testing). TESTING FEATURE lists only the tested child-feature titles under the relevant main feature. Keep each item separate. MATRIX shows numeric measurements and units only, without metric names. STATUS shows only `PASS` or `FAIL`.
 - **EXECUTION SUMMARY:** Include only build, development, launch, and application-performance activity. Exclude testing, database, and API checks already represented in Testing Summary. Keep each execution item separate.
-- **EXECUTION ORDER:** List `Debug` first, `Build` next, then other applicable development/runtime steps; `EXE Launch` must always be the final execution item.
+- **EXECUTION ORDER:** List `Debug` first, `Build` next, then other applicable development/runtime steps; `EXE Launch` must always be the final execution item. Complete and verify the launch before generating the report.
 - **METRIC:** Show only the corresponding real-time numeric measurement and unit (e.g., `12 sec`, `45 MB`, `25%`, `450 MB`); no metric names or explanatory hints.
 - **EXECUTION STATUS:** Show only `PASS`, `FAIL`, or `WORKING` for each execution item.
 - **Unavailable Data:** Omit unmeasured values or report their status accurately. Never use sample values as actual results.
