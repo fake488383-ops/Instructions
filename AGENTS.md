@@ -75,16 +75,10 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - **AFTER:** Each recommendation cell must show the proposed feature/fix title first, followed by its concise description underneath. This is a recommendation only, not a claim that a change was applied.
 - **STATUS:** Show the finding category and severity where applicable, using concise values such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `USELESS`, `SECURITY`, `PERFORMANCE`, `CRITICAL`, `MAJOR`, or `MINOR`.
 - **Dynamic Rows:** Add one finding per row. Keep entries short, specific, and relevant to the selected engineer. Do not show empty or placeholder rows.
-- **Report Header:** Place a single full-width header cell at the top of the same table, spanning all three columns. Show the selected engineer's list number and exact title on the left (e.g., `#10 Security Engineer`) and center `Project Health Report` in that header. When multiple engineers are selected, identify each selected engineer by their exact list number and title.
-- **BEFORE / AFTER:** Each finding must show a clear feature/issue or proposed fix title in bold, followed by a moderate-length description underneath. Keep descriptions informative and concise.
-- **STATUS:** Show categories and severity relevant to the selected engineer's discipline and actual finding, such as `SECURITY`, `PERFORMANCE`, `IMPROVEMENT`, `MISSING`, `PROBLEM`, `CRITICAL`, `MAJOR`, or `MINOR`. Use only values supported by evidence.
+- **Report Title:** Display `Project Health Report` as a heading outside and above the table, not inside a table cell.
+**Project Health Report**
+
 <table align="center">
-  <tr><th colspan="3">
-    <div style="position:relative;text-align:center">
-      <span style="position:absolute;left:0">[#Engineer Number] [Selected Engineer Title]</span>
-      <strong>Project Health Report</strong>
-    </div>
-  </th></tr>
   <tr><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr><td><strong>[Existing Feature / Issue Title]</strong><br>[Clear, moderate-length description of the existing problem]</td><td><strong>[Proposed Feature / Fix Title]</strong><br>[Clear, moderate-length description of the proposed improvement]</td><td>[Relevant Category / Severity]</td></tr>
+  <tr><td><strong>[Existing Feature / Issue Title]</strong><br>[Description of the existing problem]</td><td><strong>[Proposed Feature / Fix Title]</strong><br>[Description of the proposed improvement]</td><td>[Category / Severity]</td></tr>
 </table>
