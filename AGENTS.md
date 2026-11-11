@@ -62,6 +62,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 - **BEFORE:** Show the current feature/version title only; use **Missing** if it does not exist.
 - **AFTER:** Show the added or replacement feature/version title only.
+- **Engineer Summary:** Show only the title/name of each actual contributing engineer from the 35 Engineering Disciplines. Place each engineer in a separate horizontal column, with their contribution directly underneath.
+- **Contribution:** Briefly state what that engineer actually worked on; keep it very short. Do not show inactive engineers or separate Engineer, Title, and Contribution columns.
 - Show one title per cell/row. No descriptions or repeated generic names.
 - Include only actual engineers and completed tests; show real results only.
 - Add rows dynamically and preserve the table layout.
