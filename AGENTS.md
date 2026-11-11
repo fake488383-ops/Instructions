@@ -71,7 +71,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 - **Accuracy:** Report actual contributing engineers, changed features, tests, execution outcomes, measured metrics, and remaining blockers. Never claim work or verification that did not happen.
 
 
-<table>
+<table align="center">
   <tr>
     <th colspan="4" align="center">Task Final Report</th>
   </tr>
