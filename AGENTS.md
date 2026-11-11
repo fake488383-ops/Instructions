@@ -70,16 +70,17 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 ## 6 Project Health Report
 
-- **Audit Selection:** When the user enters `0`, show all 36 engineers for selection. Each selected engineer audits the project independently according to their discipline and reports relevant problems, missing features, improvements, unnecessary items, and duplicates. Do not modify project files during the audit.
-- **Continuous Deep Audit:** After selection, each engineer must continuously loop through the entire project within their own responsibilities, deeply checking every relevant component, file, dependency, behavior, weakness, and improvement opportunity. Continue repeated analysis passes until no new evidence-based findings remain; never stop after an arbitrary number of passes or findings. Stop only when the full relevant scope is exhausted or a genuine access/tool limitation blocks further analysis, and report any uncovered scope. Keep the audit read-only.
-- **Evidence:** Every finding must be supported by actual project evidence. Do not invent issues, improvements, or status values. Omit categories with no findings.
-- **BEFORE / AFTER:** In each cell, show only a short title on the first line and a very brief Roman Urdu description directly below it. Keep descriptions to one concise line; never use long explanations. AFTER contains recommendations only.
-- **STATUS:** Show a short category/severity, such as `PROBLEM`, `MISSING`, `IMPROVEMENT`, `DUPLICATE`, `SECURITY`, or `CRITICAL`.
-- **Dynamic Rows:** Add one finding per row. Keep entries short, specific, and relevant to the selected engineer. Do not show empty or placeholder rows.
-- **Report Title:** Display `Project Health Report` in the first full-width table header row, spanning all three columns above BEFORE, AFTER, and STATUS.
+- **Audit Selection:** On `0`, show all 36 engineers as a vertical numbered list (`1`–`36`) with their exact titles. On `00` followed by Enter, select all 36 engineers at once; otherwise allow individual selection.
+- **Engineer Audit:** Every selected engineer must deeply analyze the full project within their own responsibilities and independently identify all relevant problems, bugs, missing items, duplicates, weaknesses, and improvement opportunities. Do not wait for the user to list checks.
+- **Continuous Deep Audit:** Keep auditing in repeated passes until no new evidence-based findings remain or a genuine access/tool limitation blocks the relevant scope. Do not stop after an arbitrary number of passes. Keep the audit read-only and report uncovered scope.
+- **Evidence:** Every finding must be supported by actual project evidence. Do not invent findings or status values; omit areas with no findings and merge duplicates.
+- **BEFORE / AFTER:** Each cell contains a short title followed by one very brief Roman Urdu description. BEFORE explains the issue; AFTER gives the recommended improvement and its benefit. Recommendations only; do not imply fixes were applied.
+- **STATUS:** Show only the actual real-time status.
+- **Dynamic Rows:** Add one finding per row; never show empty or placeholder rows.
+- **Report Title:** Display `Project Health Report` in a full-width header row above FIND, BEFORE, AFTER, and STATUS.
 
 <table align="center">
-  <tr><th align="center" colspan="3">Project Health Report</th></tr>
-  <tr><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr><td><strong>[Problem Title]</strong><br>[Short issue description]</td><td><strong>[Improvement Title]</strong><br>[Short benefit description]</td><td>[Real-Time Status]</td></tr>
+  <tr><th align="center" colspan="4">Project Health Report</th></tr>
+  <tr><th align="center">FIND</th><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
+  <tr><td>[Finding No. 1, 2, 3...]</td><td><strong>[Problem Title]</strong><br>[Short issue description]</td><td><strong>[Improvement Title]</strong><br>[Short benefit description]</td><td>[Real-Time Status]</td></tr>
 </table>
