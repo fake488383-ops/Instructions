@@ -81,6 +81,6 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 <table align="center">
   <tr><th align="center" colspan="4">Project Health Report</th></tr>
-  <tr><th align="center" width="4%">FIND</th><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr><td width="4%">[No.]</td><td><strong>[Problem Title]</strong><br>[Short issue description]</td><td><strong>[Improvement Title]</strong><br>[Short benefit description]</td><td>[Real-Time Status]</td></tr>
+  <tr><th align="center" width="2%">NO.</th><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
+  <tr><td width="2%">[No.]</td><td><strong>[Problem Title]</strong><br>[Short issue description]</td><td><strong>[Improvement Title]</strong><br>[Short benefit description]</td><td>[Real-Time Status]</td></tr>
 </table>
