@@ -60,10 +60,10 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
-- **BEFORE:** Show each existing feature's main title only; show **Missing** for each feature not present.
-- **AFTER:** Show each added or improved feature's latest main title only.
-- Put one feature title in each separate cell/row; never combine multiple feature titles in one cell. No descriptions.
-- Keep Engineer Summary and Testing Summary limited to actual contributors and checks. Use only real results; never invent values.
+- **BEFORE:** Show the current feature/version title only; use **Missing** if it does not exist.
+- **AFTER:** Show the added or replacement feature/version title only.
+- Show one title per cell/row. No descriptions or repeated generic names.
+- Include only actual engineers and completed tests; show real results only.
 - Add rows dynamically and preserve the table layout.
 
 <table align="center">
@@ -75,8 +75,8 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th colspan="2">AFTER</th>
   </tr>
   <tr>
-    <td colspan="2" align="center">[Feature title / Missing]</td>
-    <td colspan="2" align="center">[Feature title]</td>
+    <td colspan="2" align="center">[Current feature/version or Missing]</td>
+    <td colspan="2" align="center">[Added/replacement feature/version]</td>
   </tr>
   <tr>
     <th colspan="4">Engineer Summary</th>
