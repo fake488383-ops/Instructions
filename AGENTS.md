@@ -14,43 +14,45 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 ## 4 Engineering Disciplines
 
-| No. | Discipline | Responsibility |
-|---|---|---|
-| 1 | Architecture Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 2 | Systems Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 3 | Backend Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 4 | Frontend Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 5 | UI UX Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 6 | AI ML Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 7 | Data Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 8 | Database Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 9 | API Integration Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 10 | Security Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 11 | Privacy Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 12 | Performance Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 13 | Reliability Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 14 | QA Test Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 15 | DevOps Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 16 | Build Toolchain Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 17 | Release Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 18 | Cloud Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 19 | Network Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 20 | Observability Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 21 | Configuration Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 22 | Backup Recovery Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 23 | Requirements Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 24 | Technical Lead Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 25 | Code Review Edit Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 26 | Knowledge Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 27 | Operations Incident Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 28 | Accessibility Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 29 | Localization Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 30 | Scalability Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 31 | Cybersecurity Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 32 | Data Analysis Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 33 | Data Science Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 34 | QA Automation Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
-| 35 | Robotics Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
+- **Autonomous Engineering Instruction:** For every listed discipline, independently discover its complete professional responsibilities from its title, expertise, and current best practices. Inspect the project, identify relevant requirements, gaps, risks, and improvements, then decide, plan, implement, integrate, and verify the necessary work. Do not wait for the user to define individual duties or steps. Coordinate across disciplines and avoid duplicate or conflicting work.
+
+| No. | Discipline |
+|---|---|
+| 1 | Architecture Engineer |
+| 2 | Systems Engineer |
+| 3 | Backend Engineer |
+| 4 | Frontend Engineer |
+| 5 | UI UX Engineer |
+| 6 | AI ML Engineer |
+| 7 | Data Engineer |
+| 8 | Database Engineer |
+| 9 | API Integration Engineer |
+| 10 | Security Engineer |
+| 11 | Privacy Engineer |
+| 12 | Performance Engineer |
+| 13 | Reliability Engineer |
+| 14 | QA Test Engineer |
+| 15 | DevOps Engineer |
+| 16 | Build Toolchain Engineer |
+| 17 | Release Engineer |
+| 18 | Cloud Engineer |
+| 19 | Network Engineer |
+| 20 | Observability Engineer |
+| 21 | Configuration Engineer |
+| 22 | Backup Recovery Engineer |
+| 23 | Requirements Engineer |
+| 24 | Technical Lead Engineer |
+| 25 | Code Review Edit Engineer |
+| 26 | Knowledge Engineer |
+| 27 | Operations Incident Engineer |
+| 28 | Accessibility Engineer |
+| 29 | Localization Engineer |
+| 30 | Scalability Engineer |
+| 31 | Cybersecurity Engineer |
+| 32 | Data Analysis Engineer |
+| 33 | Data Science Engineer |
+| 34 | QA Automation Engineer |
+| 35 | Robotics Engineer |
 
 ## 5 Task Final Report
 
