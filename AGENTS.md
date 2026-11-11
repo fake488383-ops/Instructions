@@ -12,7 +12,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - **Hidden Terminal:** Execute commands in the background without opening or exposing the terminal. Capture exit codes and relevant output; surface failures and blockers instead of hiding them.
 - **Verification & Launch:** Verify changes at the appropriate levels: static checks, build, tests, and runtime. Before EXE launch, inspect Problems and debug state; verify visible UI, text, controls, and affected backend, voice, and database flows. Fix and retest failures; report checks not performed.
 
-## 5 Engineering Disciplines
+## 4 Engineering Disciplines
 
 | No. | Discipline | Responsibility |
 |---|---|---|
@@ -52,7 +52,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 | 34 | QA Automation Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
 | 35 | Robotics Engineer | Independently understand your discipline's full scope, identify all relevant responsibilities, and perform all necessary work using your complete professional expertise. |
 
-## Task Final Report
+## 5 Task Final Report
 
 - **All values:** Generate the report from captured task execution data after the work. Use live project, test, build, launch, and runtime results; never use defaults, estimates, cached examples, or invented values.
 - **Data Evidence:** Every reported value must be traceable to its actual source: project state or diff, test output, build log and exit code, application runtime, profiler, system monitor, or other relevant tool output. Keep evidence available for verification; identify the source briefly beside a metric when needed.
