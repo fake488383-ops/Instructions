@@ -54,6 +54,15 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 
 ## 5 Task Final Report
 
+- **Mandatory:** Generate this table after every completed task. Do not omit it.
+- **BEFORE / AFTER:** Show feature titles only. Use **Missing** in BEFORE when the feature did not exist.
+- **Engineer Summary:** Show only contributing engineer titles, each followed by a short contribution.
+- **Testing Type / Feature:** Show only executed testing-type titles and tested child-feature titles.
+- **Metric / Status:** Show only short measured values with units and **PASS** or **FAIL**. No descriptions.
+- **Build & Launch:** Show only concise, actual build, debug, and launch results.
+- **System Performance:** Show only measured system metric names and values with units.
+- Never invent results or report unexecuted checks as completed.
+
 <table align="center">
   <tr><th colspan="4" align="center" bgcolor="#17365D">Task Final Report</th></tr>
   <tr><th align="center" colspan="2" bgcolor="#D9EAF7">BEFORE</th><th align="center" colspan="2" bgcolor="#D9EAF7">AFTER</th></tr>
