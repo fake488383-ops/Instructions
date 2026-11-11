@@ -87,6 +87,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **BEFORE / AFTER:** Each cell contains a short topic title on the first line and a brief Roman Urdu description below it. BEFORE explains the issue; AFTER gives the recommended improvement and its benefit. Keep the BEFORE and AFTER columns exactly equal in width. Recommendations only; do not imply fixes were applied.
 - **STATUS:** Show only the actual real-time status.
 - **Dynamic Findings:** Add every verified finding as a separate row as soon as it is discovered; show and continuously update the total number of findings. Never impose a finding limit or show empty/placeholder rows.
+- **Finding Selection & Apply:** Give every finding a unique number. When the user enters finding number(s) and presses Enter, apply only the selected finding(s), verify each change, and leave all unselected findings untouched. Auditing remains read-only until the user explicitly selects finding number(s) to apply.
 - **Report Title:** Display `Project Health Report` in a full-width header row above NO., BEFORE, AFTER, and STATUS.
 - **Dynamic NO. Width:** Size the NO. column automatically to the width of the longest displayed number only. Recalculate it whenever rows are added or removed; never use a fixed percentage or leave unnecessary horizontal space.
 
