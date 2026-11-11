@@ -60,14 +60,13 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
 
 ## Task Final Report
 
-- **BEFORE / AFTER:** Show actual feature/version titles only; use **Missing** when the feature did not exist.
-- **Engineer Summary:** Show only the exact titles of engineers who actually contributed, each in its own horizontal column with a very short contribution underneath. Use the heading **Engineer Title**; do not add a separate person-name field or name hint. Hide inactive engineers.
-- **Testing Type:** Show the full names of test categories actually executed (e.g., Unit Testing, Integration Testing, End-to-End Testing, Functional Testing, Regression Testing, Performance Testing, Load Testing, Stress Testing, Security Testing, Compatibility Testing).
-- **Testing Feature:** Show only the names of child features/operations actually tested inside the task's main feature. Never repeat the main feature title in this column; it appears only once in the report context. Give every tested child feature its own row and associate it with its actual Testing Type. Use full descriptive technical names and include recognized acronyms in brackets when genuinely implemented and tested (e.g., Speech-to-Text (STT), Text-to-Speech (TTS), Hypertext Transfer Protocol Secure (HTTPS)). Do not invent or add unrelated technologies.
-- **Metric:** Show the actual performance measurement for the corresponding child feature, using compact values and abbreviated units only (e.g., 120ms, 1.4s, 98.5%, 620MB, 42 tokens/s). Do not repeat child-feature names or use long explanatory metric labels. Do not show an unmeasured main-feature total. Do not place build status or CPU/RAM/GPU readings here.
-- **Status:** Show the real outcome for each tested child-feature row: PASS, FAIL, WARNING, SKIPPED, BLOCKED, or RUNNING. Never invent tests, timings, or measurements; omit unavailable values and untested items.
-- **Build & Runtime Summary:** Keep it inside this same table, below Testing Summary, with two side-by-side columns: Build & Launch and System Performance. Show only actual build, debug, launch, timing, CPU, RAM, and GPU results; omit unavailable measurements.
-- Add rows and child results dynamically. Keep the table compact and preserve its structure; no fixed sample values in actual reports.
+- **BEFORE / AFTER:** Actual feature/version titles only; use **Missing** when absent.
+- **Engineer Summary:** Show only contributing engineer titles, each with a brief contribution. Hide inactive engineers.
+- **Testing:** Use one **Testing** column for the test category and its child-feature names. Show each tested child feature once under its actual category; never repeat the main feature title.
+- **Metric:** Actual child-feature performance only, in compact values with abbreviated units.
+- **Status:** Actual child-feature result only: PASS, FAIL, WARNING, SKIPPED, BLOCKED, or RUNNING.
+- **Build & Runtime Summary:** Keep within the same table, below Testing, using two side-by-side sections: Build & Launch and System Performance. Show measured results only.
+- Populate all values dynamically from real execution. Omit hints, examples, placeholders, untested items, and unavailable measurements from generated reports.
 
 <table align="center">
   <tr>
@@ -78,38 +77,32 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th colspan="2">AFTER</th>
   </tr>
   <tr>
-    <td colspan="2" align="center">[Current feature/version or Missing]</td>
-    <td colspan="2" align="center">[Added/replacement feature/version]</td>
+    <td colspan="2" align="center">[Actual value]</td>
+    <td colspan="2" align="center">[Actual value]</td>
   </tr>
   <tr>
     <th colspan="4">Engineer Summary</th>
   </tr>
   <tr>
-    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
-    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
-    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
-    <td align="center"><strong>[Engineer Title]</strong><br>[Short contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Contribution]</td>
+    <td align="center"><strong>[Engineer Title]</strong><br>[Contribution]</td>
   </tr>
   <tr>
     <th colspan="4">Testing Summary</th>
   </tr>
   <tr>
-    <th>Testing Type</th>
-    <th>Testing Feature</th>
+    <th>Testing</th>
     <th>Metric</th>
     <th>Status</th>
+    <th></th>
   </tr>
   <tr>
-    <td>[Full test category, e.g. Unit Testing]</td>
-    <td>[Tested child feature/operation only]</td>
-    <td>[Actual performance value with abbreviated unit]</td>
-    <td>[PASS / FAIL / actual status]</td>
-  </tr>
-  <tr>
-    <td>[Full test category, e.g. Integration Testing]</td>
-    <td>[Another tested child feature/operation only]</td>
-    <td>[Actual performance value with abbreviated unit]</td>
-    <td>[PASS / FAIL / actual status]</td>
+    <td>[Test category]<br>[Tested child feature]</td>
+    <td>[Measured value]</td>
+    <td>[Actual result]</td>
+    <td></td>
   </tr>
   <tr>
     <th colspan="4" align="center">Build & Runtime Summary</th>
@@ -119,19 +112,7 @@ Preserve all 35 engineer names, numbers, and responsibilities. Understand the re
     <th colspan="2" align="center">System Performance</th>
   </tr>
   <tr>
-    <td colspan="2">
-      Build Result: [Actual status]<br>
-      Debug Result: [Actual status]<br>
-      EXE Launch: [Actual status]<br>
-      Build Duration: [Measured time]<br>
-      Startup Time: [Measured time]
-    </td>
-    <td colspan="2">
-      CPU Usage: [Measured value]<br>
-      RAM Usage: [Measured value]<br>
-      Peak RAM: [Measured value]<br>
-      GPU Usage: [Measured value]<br>
-      GPU Memory: [Measured value]
-    </td>
+    <td colspan="2">[Actual build, debug, launch and timing results]</td>
+    <td colspan="2">[Actual CPU, RAM and GPU measurements]</td>
   </tr>
 </table>
