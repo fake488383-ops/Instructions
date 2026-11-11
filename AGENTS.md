@@ -84,9 +84,3 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
     <td align="center" colspan="6">[Measured CPU / RAM / GPU / runtime metrics]</td>
   </tr>
 </table>
-
-## 6 Report Rendering Style
-
-- Render every Task Final Report as a clean, full-width engineering report: prominent title, BEFORE / AFTER side by side, three equal Engineer Summary columns, a structured Testing Summary table, and side-by-side Build & Launch / System Performance sections.
-- Keep section headers visually distinct, align columns evenly, use compact PASS / FAIL status labels, and expand rows or height automatically for all actual entries. Never leave unused empty columns or space.
-- Render the report directly in the final response using the richest table and layout format supported by the agent interface; if HTML layout is unsupported, use clean Markdown tables without omitting data.
