@@ -1,7 +1,7 @@
 # Enterprise Level Software Engineering Instruction
 
 ## 1 Overview
-Project-aware engineering rulebook. Detect project requirements, architecture, technologies, platforms, tools, and constraints. Follow existing conventions. For Jarvis and applicable native desktop projects, prefer **QML** for UI, **C++** for core logic, and **Python** for AI and automation. Complete relevant implementation, debugging, testing, and verification.
+Project-aware engineering rulebook for projects of any type. Detect project requirements, architecture, technologies, platforms, tools, and constraints. Follow existing conventions. For projects using this stack: **QML** handles the user interface and presentation; **C++** handles native backend logic, system operations, hardware access, performance-critical code, and integration; **Python** handles AI/ML, models, inference, NLP, speech processing, reasoning, and AI automation. Keep these responsibilities separate; use C++ to connect the QML application with Python AI services when needed. Complete relevant implementation, debugging, testing, and verification.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
