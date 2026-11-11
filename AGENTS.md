@@ -77,10 +77,11 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **BEFORE / AFTER:** Each cell contains a short title followed by one very brief Roman Urdu description. BEFORE explains the issue; AFTER gives the recommended improvement and its benefit. Recommendations only; do not imply fixes were applied.
 - **STATUS:** Show only the actual real-time status.
 - **Dynamic Rows:** Add one finding per row; never show empty or placeholder rows.
-- **Report Title:** Display `Project Health Report` in a full-width header row above FIND, BEFORE, AFTER, and STATUS.
+- **Report Title:** Display `Project Health Report` in a full-width header row above NO., BEFORE, AFTER, and STATUS.
+- **Dynamic NO. Width:** Size the NO. column automatically to the width of the longest displayed number only. Recalculate it whenever rows are added or removed; never use a fixed percentage or leave unnecessary horizontal space.
 
 <table align="center">
   <tr><th align="center" colspan="4">Project Health Report</th></tr>
-  <tr><th align="center" width="2%">NO.</th><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr><td width="2%">[No.]</td><td><strong>[Problem Title]</strong><br>[Short issue description]</td><td><strong>[Improvement Title]</strong><br>[Short benefit description]</td><td>[Real-Time Status]</td></tr>
+  <tr><th align="center" width="1%">NO.</th><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
+  <tr><td width="1%">[No.]</td><td><strong>[Problem Title]</strong><br>[Short issue description]</td><td><strong>[Improvement Title]</strong><br>[Short benefit description]</td><td>[Real-Time Status]</td></tr>
 </table>
