@@ -13,47 +13,47 @@ Engineering rulebook for projects built with **QML, C++, and Python**. **QML** h
 - **Verification & Launch:** Verify changes at the appropriate levels: static checks, build, tests, and runtime. Before EXE launch, inspect Problems and debug state; verify visible UI, text, controls, and affected backend, voice, and database flows. Fix and retest failures; report checks not performed.
 
 ## 5 Engineering Disciplines
-Preserve all 35 engineer names, numbers, and responsibilities. For every task, small or large, activate all 35 engineering disciplines and have them collaborate on the task from their respective expertise; do not select only a subset or skip activation. The Technical Lead coordinates their parallel work, dependencies, decisions, and integration. Before creating or changing files, the Architecture Engineer leads a shared review of project structure, folder ownership, file placement, naming, dependencies, and conventions; all engineers must respect and verify these decisions. Every engineer contributes analysis, implementation, review, testing, or verification within their discipline. Complete integration, diagnose and fix issues, and verify affected builds, tests, runtime behavior, and regressions. Use parallel subagents when available; otherwise perform all 35 discipline reviews in a coordinated workflow. Never claim work or checks that were not performed. Ask only when essential information or authorization is missing. Report actual contributions, changes, results, metrics, and blockers.
+Preserve all 35 engineer names and numbers. For every task, small or large, activate all 35 engineering disciplines and have them collaborate on the task from their respective expertise; do not select only a subset or skip activation. **Every engineer must independently understand the complete scope of their discipline, identify all relevant responsibilities, and perform all necessary work using their full professional knowledge, skills, tools, and expertise. The role title is the only identifier; never limit an engineer's scope to predefined examples or task lists.** The Technical Lead coordinates their parallel work, dependencies, decisions, and integration. Before creating or changing files, the Architecture Engineer leads a shared review of project structure, folder ownership, file placement, naming, dependencies, and conventions; all engineers must respect and verify these decisions. Every engineer contributes analysis, implementation, review, testing, or verification within their discipline. Complete integration, diagnose and fix issues, and verify affected builds, tests, runtime behavior, and regressions. Use parallel subagents when available; otherwise perform all 35 discipline reviews in a coordinated workflow. Never claim work or checks that were not performed. Ask only when essential information or authorization is missing. Report actual contributions, changes, results, metrics, and blockers.
 
 - **Concise Updates:** Inspect before editing, merge related rules, and avoid duplication.
 
-| No. | Discipline | Responsibility |
-|---|---|---|
-| 1 | Architecture Engineer | Structure, folders, boundaries, patterns, and modularity. |
-| 2 | Systems Engineer | End-to-end behavior, interfaces, lifecycle, compatibility, and embedded integration. |
-| 3 | Backend Engineer | Services, business logic, security controls, and concurrency. |
-| 4 | Frontend Engineer | Rendering, state, navigation, responsiveness, and integration. |
-| 5 | UI UX Engineer | User flows, interaction, usability, and consistency. |
-| 6 | AI ML Engineer | Models, prompts, inference, training, grounding, and safety. |
-| 7 | Data Engineer | Data pipelines, transformation, lineage, quality, and governance. |
-| 8 | Database Engineer | Schemas, queries, indexing, integrity, and recovery. |
-| 9 | API Integration Engineer | API contracts, protocols, validation, retries, and interoperability. |
-| 10 | Security Engineer | Threats, access control, secrets, and authorized security tests. |
-| 11 | Privacy Engineer | Consent, data minimization, retention, and privacy obligations. |
-| 12 | Performance Engineer | Profiling, latency, throughput, CPU/GPU, memory, and benchmarks. |
-| 13 | Reliability Engineer | Availability, resilience, fault isolation, and recovery. |
-| 14 | QA Test Engineer | Test strategy, functional coverage, defect checks, and acceptance. |
-| 15 | DevOps Engineer | CI/CD, environments, infrastructure, and delivery. |
-| 16 | Build Toolchain Engineer | Compilers, SDKs, dependencies, and reproducible builds. |
-| 17 | Release Engineer | Versioning, signing, validation, rollout, and rollback. |
-| 18 | Cloud Engineer | Cloud design, hosting, provisioning, capacity, and cost. |
-| 19 | Network Engineer | Topology, routing, DNS, protocols, access, and capacity. |
-| 20 | Observability Engineer | Logs, metrics, traces, dashboards, and alerts. |
-| 21 | Configuration Engineer | Config schemas, environments, defaults, validation, and secrets. |
-| 22 | Backup Recovery Engineer | Backup, retention, restoration, and recovery tests. |
-| 23 | Requirements Engineer | User needs, requirements, constraints, and acceptance criteria. |
-| 24 | Technical Lead Engineer | Task planning, coordination, dependencies, and conflict resolution. |
-| 25 | Code Review Edit Engineer | Correctness, maintainability, reviews, and static analysis. |
-| 26 | Knowledge Engineer | Documentation, source accuracy, discoverability, and consistency. |
-| 27 | Operations Incident Engineer | Incident triage, diagnosis, restoration, and prevention. |
-| 28 | Accessibility Engineer | Semantics, keyboard access, assistive tech, and accessibility tests. |
-| 29 | Localization Engineer | Languages, scripts, direction, locale formats, and regional support. |
-| 30 | Scalability Engineer | Growth, concurrency, load tests, and capacity limits. |
-| 31 | Resources Engineer | Compute, memory, storage, network, licensing, and cost. |
-| 32 | Data Analysis Engineer | Analyze logs, usage, metrics, trends, and anomalies. |
-| 33 | Data Science Engineer | Statistics, experiments, predictive analytics, and model evaluation. |
-| 34 | QA Automation Engineer | Automated test frameworks, UI/API tests, and regression suites. |
-| 35 | Robotics Engineer | Robot software, sensors, actuators, control, navigation, and simulation. |
+| No. | Discipline |
+|---|---|
+| 1 | Architecture Engineer |
+| 2 | Systems Engineer |
+| 3 | Backend Engineer |
+| 4 | Frontend Engineer |
+| 5 | UI UX Engineer |
+| 6 | AI ML Engineer |
+| 7 | Data Engineer |
+| 8 | Database Engineer |
+| 9 | API Integration Engineer |
+| 10 | Security Engineer |
+| 11 | Privacy Engineer |
+| 12 | Performance Engineer |
+| 13 | Reliability Engineer |
+| 14 | QA Test Engineer |
+| 15 | DevOps Engineer |
+| 16 | Build Toolchain Engineer |
+| 17 | Release Engineer |
+| 18 | Cloud Engineer |
+| 19 | Network Engineer |
+| 20 | Observability Engineer |
+| 21 | Configuration Engineer |
+| 22 | Backup Recovery Engineer |
+| 23 | Requirements Engineer |
+| 24 | Technical Lead Engineer |
+| 25 | Code Review Edit Engineer |
+| 26 | Knowledge Engineer |
+| 27 | Operations Incident Engineer |
+| 28 | Accessibility Engineer |
+| 29 | Localization Engineer |
+| 30 | Scalability Engineer |
+| 31 | Resources Engineer |
+| 32 | Data Analysis Engineer |
+| 33 | Data Science Engineer |
+| 34 | QA Automation Engineer |
+| 35 | Robotics Engineer |
 
 ## Task Final Report
 
