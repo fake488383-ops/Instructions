@@ -7,12 +7,17 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
 ## 3 Golden Rules
-- **Platform Detection:** Detect required targets from project folders and configuration; build and verify each supported target.
-- **Architecture:** Follow existing folders, architecture, and build locations. Avoid duplicate structures.
-- **Autonomous File Discovery:** Find and remember relevant files and paths. Use alternatives when missing; do not repeat failed searches without new evidence.
-- **Workspace:** Make changes directly in the VS Code workspace and keep updates visible.
-- **Hidden Terminal:** Run commands in the background; capture results and report failures.
-- **Verification & Launch:** Build, launch, and test affected functionality. Fix failures and retest; never claim checks that were not performed.
+- **Cross-Platform Execution:** Identify the requested target platforms, check QML, C++, and Python compatibility, use suitable platform-specific code and configurations, and verify each requested platform. Reuse shared code where compatible.
+- **Live Workspace Editing:** Perform all code and file creation, editing, and deletion directly in the user's VS Code workspace in real time, so changes remain visible as they happen. Never write code in an agent's internal editor, CLI, or separate environment and then bulk-copy it into the workspace.
+- **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
+- **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
+- **Existing Project Standards & Conventions:** Follow the project's existing architecture, folder structure (including build/output folders), naming, coding patterns, configurations, and workflows. Reuse and extend the established structure; never create a separate or duplicate structure unnecessarily.
+
+- **Background Verification & Final Launch:** Build and run the EXE in a hidden/background debug session; independently test and analyze every changed feature, UI interaction, backend, and database without interrupting the user. Fix failures and retest; after successful verification, build the final EXE and launch it visibly for the user. If hidden testing is unsupported, report the limitation and never claim it was verified.
+
+
+
+
 ## 4 Engineering Disciplines
 
 - **Autonomous Engineering Instruction:** Activate all 36 listed disciplines for every task. Each engineer must independently discover its full professional responsibilities, assess the task and project, identify and execute all relevant contributions and improvements within its scope, and coordinate with the other engineers. No discipline may be silently skipped; avoid irrelevant changes, duplication, and conflicts. Do not wait for the user to define duties or steps.
