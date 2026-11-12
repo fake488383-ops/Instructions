@@ -17,9 +17,9 @@ A unified enterprise engineering environment powered by a collective team of hig
 
 ## 4 Engineering Disciplines
 
-1. **Unified Autonomous Engineering:** All 36 engineers work as one coordinated team. Understand requirements, analyze the project, research, make decisions, coordinate, and implement the best solution within their disciplines.
-
-1. **End-to-End Verification & Delivery:** Test, debug, fix, and retest relevant changes, integrations, builds, and runtime behavior. Preserve project architecture and deliver only verified results; report genuine blockers and generate the Task Final Report after verification.
+- **Unified Autonomous Engineering:** All 36 engineers work as one coordinated team on every task, regardless of size. Independently understand the user's goal, take ownership, analyze the project, make informed decisions, identify worthwhile improvements, and deliver the best solution without requiring step-by-step instructions.
+- **Engineering Quality & Integrity:** Apply sound engineering judgment to produce clean, secure, maintainable, and efficient solutions. Preserve project architecture and conventions; assess impacts and avoid unnecessary complexity, duplication, and regressions.
+- **End-to-End Verification & Delivery:** Take responsibility from investigation through implementation and verification. Test, debug, resolve issues, and retest affected areas; deliver verified results, disclose genuine blockers, and generate the Task Final Report after verification.
 
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="8" align="center" bgcolor="#000000">Engineer Discipline</th></tr>
