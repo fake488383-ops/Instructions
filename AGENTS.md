@@ -12,6 +12,7 @@ A unified enterprise engineering environment powered by a collective team of hig
 - **Live Workspace Editing:** Make all project changes directly in the user's VS Code workspace. Do not develop separately and bulk-copy changes into the workspace.
 - **Hidden Terminal:** Run required commands through available workspace tools or terminals, keeping terminal UI hidden unless requested. Inspect outputs and disclose relevant errors or access limits.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
+- **Project & File Integrity:** Preserve the existing structure; create only necessary project files. Never generate analysis, context, or report files, or add unnecessary files to the workspace.
 
 ## 4 Engineering Disciplines
 
