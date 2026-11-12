@@ -38,10 +38,10 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 ## 5 Task Final Report
 
 - **Background:** Use solid black (`#000000`) throughout.
-- **Rendering Style:** Use one unified table with adjacent, equal-width BEFORE/AFTER columns.
+- **Rendering Style:** Use one unified table with adjacent, equal-width ORIGINAL STATE/UPDATED STATE columns.
 - **Automatic Report:** After every applied, added, integrated, or updated project change—including Project Health findings—test and verify, then generate/update this report. Include verified launch/runtime results when available.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. No unrelated items or empty placeholders.
-- **BEFORE / AFTER:** Show original feature titles in BEFORE and resulting titles in AFTER; use only `Missing` when no prior feature exists. One feature per cell; no descriptions or versions.
+- **ORIGINAL STATE / UPDATED STATE:** Show original feature titles under ORIGINAL STATE and resulting titles under UPDATED STATE; use only `Missing` when no prior feature exists. One feature per cell; no descriptions or versions.
 - **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 4 titles and a short English contribution.
 - **TESTING SUMMARY:** Show only tests actually run and features actually tested. MATRIX contains measured numbers/counts with units only; STATUS is the actual `PASS` or `FAIL`.
 - **EXECUTION SUMMARY:** List relevant build, development, launch, and runtime activities; do not repeat tests. Show only task-relevant metrics actually measured.
@@ -52,7 +52,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="12" align="center" bgcolor="#000000">Task Final Report</th></tr>
-  <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">BEFORE</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">AFTER</th></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">ORIGINAL STATE</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">UPDATED STATE</th></tr>
   <tr><td color="#FFFFFF" align="center" colspan="6">[Existing Features]</td><td color="#FFFFFF" align="center" colspan="6">[Updated Features]</td></tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">ENGINEER SUMMARY</th></tr>
   <tr>
@@ -76,20 +76,20 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 ## 6 Project Health Report
 
-- **Rendering Style:** Use one unified table with adjacent, equal-width BEFORE/AFTER columns.
+- **Rendering Style:** Use one unified table with adjacent, equal-width CURRENT STATE/RECOMMENDED STATE columns.
 - **Audit Selection:** `0` lists all 36 engineers vertically (`1`–`36`) for selection. `00` + Enter runs a coordinated, continuous, read-only audit until Stop or a genuine access/execution limit.
 - **Engineer Audit:** Each selected engineer audits the project within their discipline for missing or faulty features, improvements, bugs, risks, inefficiencies, and architecture, integration, compatibility, quality, or maintenance gaps. Check relevant requirements, code, dependencies, and runtime behavior; report evidence-backed findings only.
 - **Continuous Audit:** Repeat read-only passes; add each verified finding and refresh the count until Stop or a genuine limit. Disclose blocked scope.
 - **Evidence:** Every finding and status must be evidence-backed. No invented results; omit clean areas and merge duplicates.
-- **BEFORE / AFTER:** Use a short title plus brief Roman Urdu description. BEFORE states the issue; AFTER states the recommended fix and benefit. Keep columns equal-width; recommendations are not applied changes.
+- **CURRENT STATE / RECOMMENDED STATE:** Use a short title plus brief Roman Urdu description. CURRENT STATE states the issue; RECOMMENDED STATE states the suggested fix and benefit. Keep columns equal-width; recommendations are not applied changes.
 - **STATUS:** Show each finding's actual, currently verified status; refresh it when verification changes.
 - **Dynamic Findings:** Add each verified finding immediately and refresh the total. No arbitrary limit or empty rows.
 - **Finding Selection & Apply:** Number every finding uniquely. Apply only numbers the user selects, verify each change, and leave others untouched. Audit stays read-only until selection.
-- **Report Title:** Use a full-width `Project Health Report` header above NO., BEFORE, AFTER, and STATUS.
+- **Report Title:** Use a full-width `Project Health Report` header above NO., CURRENT STATE, RECOMMENDED STATE, and STATUS.
 - **Dynamic NO. Width:** Fit the NO. column to the longest number; recalculate as rows change. No fixed width or excess space.
 
 <table align="center">
   <tr><th align="center" colspan="4">Project Health Report</th></tr>
-  <tr><th align="center">NO.</th><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
+  <tr><th align="center">NO.</th><th align="center">CURRENT STATE</th><th align="center">RECOMMENDED STATE</th><th align="center">STATUS</th></tr>
   <tr><td>[No.]</td><td><strong>[Topic Title]</strong><br>[Short description]</td><td><strong>[Topic Title]</strong><br>[Short description]</td><td>[Real-Time Status]</td></tr>
 </table>
