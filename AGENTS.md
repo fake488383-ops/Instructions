@@ -45,7 +45,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 4 titles and a short English contribution.
 - **TESTING SUMMARY:** Show only tests actually run and features actually tested. MATRIX contains measured numbers/counts with units only; STATUS is the actual `PASS` or `FAIL`.
 - **EXECUTION SUMMARY:** List relevant build, development, launch, and runtime activities; do not repeat tests. Show only task-relevant metrics actually measured.
-- **SUGGESTION SUMMARY:** Show exactly five evidence-based recommendations in one full-width column and one cell. For each entry, place its number to the left of the feature title, with the short description directly below the title. Do not create additional columns or separate cells.
+- **SUGGESTION SUMMARY:** Use one full-width column and one cell. Align the feature title and its short description to the exact same left starting position; keep the recommendation number separately to their left. Do not add columns or separate cells.
 - **METRIC:** Show actual measured values and units only; keep the activity/test name in its own column. Omit unmeasured or irrelevant metrics.
 - **EXECUTION STATUS:** Show the verified current state only: `PASS`, `FAIL`, or `WORKING`.
 - **LIVE DATA:** Update the report as results are verified. All tests, features, statuses, counts, and metrics must reflect this task's actual execution and measurements—never fixed, cached, sample, estimated, or invented values. If unavailable or not measured, omit the value or state the limitation; never claim a test ran when it did not.
@@ -71,7 +71,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
     <td color="#FFFFFF" align="center" colspan="4">[PASS / FAIL / WORKING]</td>
   </tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">SUGGESTION SUMMARY</th></tr>
-  <tr><td color="#FFFFFF" align="left" colspan="12">1. <strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]</td></tr>
+  <tr><td color="#FFFFFF" align="left" colspan="12">1.&nbsp;&nbsp;<strong>[Feature Title]</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;[Short description of the recommended feature and its expected benefit]</td></tr>
 </table>
 
 ## 6 Project Health Report
