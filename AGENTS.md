@@ -81,7 +81,7 @@ A unified enterprise engineering environment powered by a collective team of hig
 
 ## 6 Project Health Report
 
-- **Rendering:** Use one unified table with equal-width OBSERVED STATE and TARGET STATE columns.
+- **Rendering:** Use one unified full-width table (`width="100%"`) matching the Task Final Report table's total width, with equal-width OBSERVED STATE and TARGET STATE columns.
 - **Engineer Selection:** `0` lists all 36 engineers vertically (`1`–`36`). Selecting a number + Enter starts that engineer's continuous audit, limited to their discipline and responsibilities.
 - **Full-Team Audit:** `00` + Enter activates all 36 engineers together. They coordinate a continuous, project-wide audit, covering their respective disciplines and sharing findings without duplicates.
 - **Audit Scope:** Inspect existing and missing features, issues, bugs, risks, useless/redundant parts, and improvement opportunities. Check project code, requirements, architecture, dependencies, integrations, compatibility, quality, maintenance, and runtime behavior. Compare relevant findings with reliable, current external documentation or standards when useful.
@@ -92,7 +92,7 @@ A unified enterprise engineering environment powered by a collective team of hig
 - **Finding Selection & Apply:** Give every finding a unique sequential ID. Audit remains read-only; apply only IDs selected by the user, then verify each applied change.
 - **Report:** Keep the full-width `Project Health Report` title above ID, OBSERVED STATE, TARGET STATE, and STATUS. Fit ID width dynamically to its longest value; do not reserve excess space.
 
-<table align="center">
+<table align="center" width="100%" style="table-layout: fixed;">
   <tr><th align="center" colspan="4">Project Health Report</th></tr>
   <tr><th align="center">ID</th><th align="center">OBSERVED STATE</th><th align="center">TARGET STATE</th><th align="center">STATUS</th></tr>
   <tr><td>[ID]</td><td><strong>FINDING TITLE</strong><br><strong>ISSUE DESCRIPTION</strong></td><td><strong>IMPROVEMENT TITLE</strong><br><strong>IMPROVEMENT DESCRIPTION</strong></td><td>[Real-Time Status]</td></tr>
