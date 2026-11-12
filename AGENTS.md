@@ -1,4 +1,4 @@
-# Enterprise Level Software Engineering Instruction
+# Enterprise Level Software Engineering AI Instruction
 
 ## 1 Overview
 Engineering rulebook for projects built with **QML, C++, and Python**, guided by **Autonomy**: independently make sound decisions and choose alternative solutions when problems cannot be resolved through the initial approach. **QML** handles the UI, **C++** handles native backend and performance-critical operations, and **Python** handles AI/ML and automation. Keep responsibilities separate and verify all changes.
