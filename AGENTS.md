@@ -38,7 +38,7 @@ A unified enterprise engineering environment powered by a collective team of hig
 ## 5 Task Final Report
 
 - **Background:** Use solid black (`#000000`) throughout.
-- **Rendering Style:** Use one unified table with adjacent, equal-width BEFORE/AFTER columns.
+- **Rendering Style:** Use one full-width table with fixed layout. BEFORE and AFTER must each occupy exactly 50% width, with both headings and contents center-aligned; content length must never change their widths.
 - **Automatic Report:** After every applied, added, integrated, or updated project change—including Project Health findings—test and verify, then generate/update this report. Include verified launch/runtime results when available.
 - **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. No unrelated items or empty placeholders.
@@ -52,10 +52,10 @@ A unified enterprise engineering environment powered by a collective team of hig
 - **EXECUTION STATUS:** Show the verified current state only: `PASS`, `FAIL`, or `WORKING`.
 - **LIVE DATA:** Update the report as results are verified. All tests, features, statuses, counts, and metrics must reflect this task's actual execution and measurements—never fixed, cached, sample, estimated, or invented values. If unavailable or not measured, omit the value or state the limitation; never claim a test ran when it did not.
 
-<table align="center" bgcolor="#000000">
+<table align="center" width="100%" bgcolor="#000000" style="table-layout: fixed;">
   <tr><th color="#FFFFFF" colspan="12" align="center" bgcolor="#000000">Task Final Report</th></tr>
-  <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">BEFORE</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">AFTER</th></tr>
-  <tr><td color="#FFFFFF" align="center" colspan="6">[Existing Features]</td><td color="#FFFFFF" align="center" colspan="6">[Updated Features]</td></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="6" width="50%" bgcolor="#000000">BEFORE</th><th color="#FFFFFF" align="center" colspan="6" width="50%" bgcolor="#000000">AFTER</th></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="6" width="50%">[Existing Features]</td><td color="#FFFFFF" align="center" colspan="6" width="50%">[Updated Features]</td></tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">ENGINEER SUMMARY</th></tr>
   <tr>
     <td color="#FFFFFF" align="center" colspan="4">[Engineer Title]<br>[Short contribution in English]</td>
