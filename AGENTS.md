@@ -45,7 +45,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 4 titles and a short English contribution.
 - **TESTING SUMMARY:** Show only tests actually run and features actually tested. MATRIX contains measured numbers/counts with units only; STATUS is the actual `PASS` or `FAIL`.
 - **EXECUTION SUMMARY:** List relevant build, development, launch, and runtime activities; do not repeat tests. Show only task-relevant metrics actually measured.
-- **SUGGESTION SUMMARY:** Add a full-width, single-column section after Execution Summary with up to five relevant, actionable improvements. Each suggestion has a short title aligned left and a brief description below explaining its expected benefit. Show only evidence-based suggestions; never use fixed or filler items.
+- **SUGGESTION SUMMARY:** After Execution Summary, show exactly five evidence-based, actionable feature recommendations in one full-width column. Center the section heading; number entries 1–5 in a narrow left column, with each feature title and brief expected-benefit description beside it. Never use fixed, sample, duplicate, or filler suggestions; select the five most valuable project improvements.
 - **METRIC:** Show actual measured values and units only; keep the activity/test name in its own column. Omit unmeasured or irrelevant metrics.
 - **EXECUTION STATUS:** Show the verified current state only: `PASS`, `FAIL`, or `WORKING`.
 - **LIVE DATA:** Update the report as results are verified. All tests, features, statuses, counts, and metrics must reflect this task's actual execution and measurements—never fixed, cached, sample, estimated, or invented values. If unavailable or not measured, omit the value or state the limitation; never claim a test ran when it did not.
@@ -70,8 +70,12 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
     <td color="#FFFFFF" align="center" colspan="4">[Value + unit]</td>
     <td color="#FFFFFF" align="center" colspan="4">[PASS / FAIL / WORKING]</td>
   </tr>
-  <tr><th color="#FFFFFF" align="left" colspan="12" bgcolor="#000000">SUGGESTION SUMMARY</th></tr>
-  <tr><td color="#FFFFFF" align="left" colspan="12"><strong>[Suggestion Title]</strong><br>[Short description of the improvement and its expected benefit]</td></tr>
+  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">SUGGESTION SUMMARY</th></tr>
+  <tr><td color="#FFFFFF" align="center">1</td><td color="#FFFFFF" align="left" colspan="11"><strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]</td></tr>
+  <tr><td color="#FFFFFF" align="center">2</td><td color="#FFFFFF" align="left" colspan="11"><strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]</td></tr>
+  <tr><td color="#FFFFFF" align="center">3</td><td color="#FFFFFF" align="left" colspan="11"><strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]</td></tr>
+  <tr><td color="#FFFFFF" align="center">4</td><td color="#FFFFFF" align="left" colspan="11"><strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]</td></tr>
+  <tr><td color="#FFFFFF" align="center">5</td><td color="#FFFFFF" align="left" colspan="11"><strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]</td></tr>
 </table>
 
 ## 6 Project Health Report
