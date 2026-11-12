@@ -49,7 +49,7 @@ A unified enterprise engineering environment powered by a collective team of hig
 - **PROBLEM AND SOLUTION:** Between EXECUTION SUMMARY and SUGGESTION SUMMARY, use two equal-width columns titled `PROBLEM` and `SOLUTION`. Pair each task-related implementation problem with the exact fix that addressed it, one per row. Keep both descriptions short and in Roman Urdu; center-align them. For unresolved issues, describe the genuine blocker in the solution column. Include only actual problems and evidence-backed outcomes.
 - **SUGGESTION SUMMARY:** Give exactly five actionable feature suggestions based on gaps or improvement opportunities found in the project. Number each suggestion 1–5 in the same single full-width cell; align every short description directly below its feature title.
 - **METRIC:** Show actual measured values and units only; keep the activity/test name in its own column. Omit unmeasured or irrelevant metrics.
-- **EXECUTION STATUS:** Show the verified current state only: `PASS`, `FAIL`, or `WORKING`.
+- **EXECUTION STATUS:** Show the verified current state only: `PASS` or `FAIL`.
 - **LIVE DATA:** Update the report as results are verified. All tests, features, statuses, counts, and metrics must reflect this task's actual execution and measurements—never fixed, cached, sample, estimated, or invented values. If unavailable or not measured, omit the value or state the limitation; never claim a test ran when it did not.
 
 <table align="center" width="100%" bgcolor="#000000" style="table-layout: fixed;">
@@ -70,7 +70,7 @@ A unified enterprise engineering environment powered by a collective team of hig
   <tr>
     <td color="#FFFFFF" align="center" colspan="4">[Execution Step]</td>
     <td color="#FFFFFF" align="center" colspan="4">[Value + unit]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[PASS / FAIL / WORKING]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[PASS / FAIL]</td>
   </tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">PROBLEM AND SOLUTION</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">PROBLEM</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">SOLUTION</th></tr>
