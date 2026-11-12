@@ -43,6 +43,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 ## 5 Task Final Report
 
 - **Background:** Use solid black (`#000000`) for the report and every table cell.
+- **Rendering Style:** Always use the **Side-by-Side BEFORE/AFTER** report layout, keeping BEFORE and AFTER as adjacent, equally sized columns within the same unified Task Final Report table.
 - **Automatic Report:** Generate this report automatically only after the final EXE has been launched and its startup and affected workflows have been verified. Use only real-time task data and evidence; never invent results or claim unperformed work.
 - **Dynamic Table:** Adapt the table to the task; show one item per cell/row, add rows as needed, and never combine unrelated items or use empty placeholder rows.
 - **BEFORE / AFTER:** BEFORE lists only existing main-feature titles; use `Missing` when absent. AFTER lists only added or integrated main-feature titles. Keep each feature in its own cell; no descriptions or versions.
