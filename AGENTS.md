@@ -44,7 +44,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 - **Background:** Use solid black (`#000000`) for the report and every table cell.
 - **Rendering Style:** Always use the **Side-by-Side BEFORE/AFTER** report layout, keeping BEFORE and AFTER as adjacent, equally sized columns within the same unified Task Final Report table.
-- **Automatic Report:** Generate a Task Final Report for every task outcome. Complete implementation, checks, testing, debugging, and build first; generate the report before EXE launch, then append the verified launch/runtime result and finalize the status.
+- **Automatic Report:** Whenever any project change is added, integrated, updated, or applied—including selected Project Health findings—complete testing and verification, then generate/update the Task Final Report table. Never skip it for small changes or when multiple findings are applied together; append verified launch/runtime results afterward.
 - **Dynamic Table:** Adapt the table to the task; show one item per cell/row, add rows as needed, and never combine unrelated items or use empty placeholder rows.
 - **BEFORE / AFTER:** BEFORE lists only existing main-feature titles; use only `Missing` when absent. AFTER lists only the resulting added, integrated, or updated main-feature titles. For an existing feature update, show its original title in BEFORE and its updated/resulting title in AFTER. Keep each feature in its own cell; no descriptions or versions.
 - **ENGINEER SUMMARY:** Include only contributing engineers, using their exact titles from the 36-engineer list in Section 4. Give each engineer a separate entry and a short contribution in English. Never introduce outside engineer titles.
