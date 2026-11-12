@@ -91,5 +91,5 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 <table align="center">
   <tr><th align="center" colspan="4">Project Health Report</th></tr>
   <tr><th align="center">ID</th><th align="center">OBSERVED STATE</th><th align="center">TARGET STATE</th><th align="center">STATUS</th></tr>
-  <tr><td>[ID]</td><td><strong>FINDING TITLE</strong><br>[Feature title]<br><strong>ISSUE DESCRIPTION</strong><br>[Short issue explanation]</td><td><strong>IMPROVEMENT TITLE</strong><br>[Feature title]<br><strong>IMPROVEMENT DESCRIPTION</strong><br>[Short improvement explanation]</td><td>[Real-Time Status]</td></tr>
+  <tr><td>[ID]</td><td><strong>FINDING TITLE</strong><br><strong>ISSUE DESCRIPTION</strong></td><td><strong>IMPROVEMENT TITLE</strong><br><strong>IMPROVEMENT DESCRIPTION</strong></td><td>[Real-Time Status]</td></tr>
 </table>
