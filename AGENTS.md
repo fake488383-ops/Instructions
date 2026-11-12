@@ -71,7 +71,6 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
     <td color="#FFFFFF" align="center" colspan="4">[PASS / FAIL / WORKING]</td>
   </tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">SUGGESTION SUMMARY</th></tr>
-  <tr><t  <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">SUGGESTION SUMMARY</th></tr>
   <tr><td color="#FFFFFF" align="left" colspan="12">1. <strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]<br><br>2. <strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]<br><br>3. <strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]<br><br>4. <strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]<br><br>5. <strong>[Feature Title]</strong><br>[Short description of the recommended feature and its expected benefit]</td></tr>
 </table>
 
