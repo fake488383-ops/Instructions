@@ -81,7 +81,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **Engineer Audit:** Each selected engineer audits the project within their discipline for missing or faulty features, improvements, bugs, risks, inefficiencies, and architecture, integration, compatibility, quality, or maintenance gaps. Check relevant requirements, code, dependencies, and runtime behavior; report evidence-backed findings only.
 - **Continuous Audit:** Repeat read-only passes; add each verified finding and refresh the count until Stop or a genuine limit. Disclose blocked scope.
 - **Evidence:** Every finding and status must be evidence-backed. No invented results; omit clean areas and merge duplicates.
-- **BEFORE / AFTER:** Use a short title plus brief Roman Urdu description. BEFORE states the issue; AFTER states the recommended fix and benefit. Keep columns equal-width; recommendations are not applied changes.
+- **BEFORE / AFTER:** Use `FEATURE TITLE` and `SHORT DESCRIPTION` in both columns. BEFORE states the issue; AFTER states the recommended fix and benefit. Keep columns equal-width; recommendations are not applied changes.
 - **STATUS:** Show each finding's actual, currently verified status; refresh it when verification changes.
 - **Dynamic Findings:** Add each verified finding immediately and refresh the total. No arbitrary limit or empty rows.
 - **Finding Selection & Apply:** Number every finding uniquely. Apply only numbers the user selects, verify each change, and leave others untouched. Audit stays read-only until selection.
@@ -91,5 +91,5 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 <table align="center">
   <tr><th align="center" colspan="4">Project Health Report</th></tr>
   <tr><th align="center">NO.</th><th align="center">BEFORE</th><th align="center">AFTER</th><th align="center">STATUS</th></tr>
-  <tr><td>[No.]</td><td><strong>[Topic Title]</strong><br>[Short description]</td><td><strong>[Topic Title]</strong><br>[Short description]</td><td>[Real-Time Status]</td></tr>
+  <tr><td>[No.]</td><td><strong>[Feature Title]</strong><br>[Short description]</td><td><strong>[Feature Title]</strong><br>[Short description]</td><td>[Real-Time Status]</td></tr>
 </table>
