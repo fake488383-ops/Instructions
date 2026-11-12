@@ -13,6 +13,7 @@ A unified enterprise engineering environment powered by a collective team of hig
 - **Hidden Terminal:** Run required commands through available workspace tools or terminals, keeping terminal UI hidden unless requested. Inspect outputs and disclose relevant errors or access limits.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
 - **Project & File Integrity:** Preserve the existing structure; create only necessary project files. Never generate analysis, context, or report files, or add unnecessary files to the workspace.
+- **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
 ## 4 Engineering Disciplines
 
