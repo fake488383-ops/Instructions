@@ -45,7 +45,7 @@ A unified enterprise engineering environment powered by a collective team of hig
 - **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 4 titles and a short English contribution.
 - **TESTING SUMMARY:** Show only tests actually run and features actually tested. MATRIX contains measured numbers/counts with units only; STATUS is the actual `PASS` or `FAIL`.
 - **EXECUTION SUMMARY:** List relevant build, development, launch, and runtime activities; do not repeat tests. Show only task-relevant metrics actually measured.
-- **PROBLEM AND SOLUTION:** Between EXECUTION SUMMARY and SUGGESTION SUMMARY, use two equal-width columns titled `PROBLEM` and `SOLUTION`. Under them, show only short descriptions, pairing each actual problem with its corresponding implemented and verified fix on the same row. Include only verified results; mark unresolved problems clearly and state the genuine blocker.
+- **PROBLEM AND SOLUTION:** Between EXECUTION SUMMARY and SUGGESTION SUMMARY, use two equal-width columns titled `PROBLEM` and `SOLUTION`. Pair each task-related implementation problem with the exact fix that addressed it, one per row. Keep both descriptions short and in Roman Urdu; center-align them. Show whether each fix is `FIXED` or `NOT FIXED`; for unresolved issues, state the genuine blocker. Include only actual problems and evidence-backed outcomes.
 - **SUGGESTION SUMMARY:** Give exactly five actionable feature suggestions based on gaps or improvement opportunities found in the project. Number each suggestion 1–5 in the same single full-width cell; align every short description directly below its feature title.
 - **METRIC:** Show actual measured values and units only; keep the activity/test name in its own column. Omit unmeasured or irrelevant metrics.
 - **EXECUTION STATUS:** Show the verified current state only: `PASS`, `FAIL`, or `WORKING`.
@@ -73,7 +73,7 @@ A unified enterprise engineering environment powered by a collective team of hig
   </tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">PROBLEM AND SOLUTION</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">PROBLEM</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">SOLUTION</th></tr>
-  <tr><td color="#FFFFFF" align="left" colspan="6">[Short description of verified problem]</td><td color="#FFFFFF" align="left" colspan="6">[Short description of implemented and verified fix]</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="6">[Short Roman Urdu problem description]</td><td color="#FFFFFF" align="center" colspan="6">[Short Roman Urdu fix description + FIXED / NOT FIXED]</td></tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">SUGGESTION SUMMARY</th></tr>
   <tr><td color="#FFFFFF" align="left" colspan="12">1.&nbsp;&nbsp;<strong>[Feature Title]</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;[Short description of the recommended feature and its expected benefit]</td></tr>
 </table>
