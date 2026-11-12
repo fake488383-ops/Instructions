@@ -39,6 +39,7 @@ A unified enterprise engineering environment powered by a collective team of hig
 - **Background:** Use solid black (`#000000`) throughout.
 - **Rendering Style:** Use one unified table with adjacent, equal-width BEFORE/AFTER columns.
 - **Automatic Report:** After every applied, added, integrated, or updated project change—including Project Health findings—test and verify, then generate/update this report. Include verified launch/runtime results when available.
+- **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. No unrelated items or empty placeholders.
 - **BEFORE / AFTER:** Show original feature titles in BEFORE and resulting titles in AFTER; use only `Missing` when no prior feature exists. One feature per cell; no descriptions or versions.
 - **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 4 titles and a short English contribution.
