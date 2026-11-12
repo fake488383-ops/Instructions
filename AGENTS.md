@@ -1,7 +1,7 @@
 # Enterprise Level Software Engineering AI Instruction
 
 ## 1 Overview
-Engineering rulebook for projects built with **QML, C++, and Python**, guided by **Autonomy**: independently make sound decisions and choose alternative solutions when problems cannot be resolved through the initial approach. **QML** handles the UI, **C++** handles native backend and performance-critical operations, and **Python** handles AI/ML and automation. Keep responsibilities separate and verify all changes.
+**Technology Stack:** QML, C++, Python.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
@@ -11,7 +11,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **Live Workspace Editing:** Perform all code and file creation, editing, and deletion directly in the user's VS Code workspace in real time, so changes remain visible as they happen. Never write code in an agent's internal editor, CLI, or separate environment and then bulk-copy it into the workspace.
 - **Hidden Terminal:** Run required commands through available workspace tools/terminal while keeping terminal UI hidden unless requested; inspect outputs and disclose relevant results, errors, and access limits.
 - **VS Code Reload:** When required to apply changes or recover the workspace, automatically restart VS Code or run **Developer: Reload Window**; verify the workspace is ready afterward.
-- **Existing Project Standards & Conventions:** Follow the project's existing architecture, folder structure (including build/output folders), naming, coding patterns, configurations, and workflows. Reuse and extend the established structure; never create a separate or duplicate structure unnecessarily.
+- **Project Architecture & Capability:** Detect and follow the established project architecture and technology stack. Independently investigate platform, framework, tool, and library capabilities and compatibility; choose solutions that fit the project, adding or changing technologies only when a verified requirement makes it necessary.
 - **Autonomous Problem Solving:** Detect problems independently, investigate their root causes, and determine the best fix or alternative approach. Apply and verify the solution without waiting for the user to diagnose the issue or provide steps.
 
 ## 4 Engineering Disciplines
