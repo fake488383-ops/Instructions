@@ -45,7 +45,7 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 4 titles and a short English contribution.
 - **TESTING SUMMARY:** Show only tests actually run and features actually tested. MATRIX contains measured numbers/counts with units only; STATUS is the actual `PASS` or `FAIL`.
 - **EXECUTION SUMMARY:** List relevant build, development, launch, and runtime activities; do not repeat tests. Show only task-relevant metrics actually measured.
-- **SUGGESTION SUMMARY:** Use one full-width column and one cell. Align the feature title and its short description to the exact same left starting position; keep the recommendation number separately to their left. Do not add columns or separate cells.
+- **SUGGESTION SUMMARY:** Give exactly five actionable feature suggestions based on gaps or improvement opportunities found in the project. Number each suggestion 1–5 in the same single full-width cell; align every short description directly below its feature title.
 - **METRIC:** Show actual measured values and units only; keep the activity/test name in its own column. Omit unmeasured or irrelevant metrics.
 - **EXECUTION STATUS:** Show the verified current state only: `PASS`, `FAIL`, or `WORKING`.
 - **LIVE DATA:** Update the report as results are verified. All tests, features, statuses, counts, and metrics must reflect this task's actual execution and measurements—never fixed, cached, sample, estimated, or invented values. If unavailable or not measured, omit the value or state the limitation; never claim a test ran when it did not.
