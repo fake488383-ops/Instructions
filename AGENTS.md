@@ -76,17 +76,16 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 ## 6 Project Health Report
 
-- **Rendering Style:** Use one unified table with adjacent, equal-width BEFORE/AFTER columns.
-- **Audit Selection:** `0` lists all 36 engineers vertically (`1`–`36`) for selection. `00` + Enter runs a coordinated, continuous, read-only audit until Stop or a genuine access/execution limit.
-- **Engineer Audit:** Each selected engineer audits the project within their discipline for missing or faulty features, improvements, bugs, risks, inefficiencies, and architecture, integration, compatibility, quality, or maintenance gaps. Check relevant requirements, code, dependencies, and runtime behavior; report evidence-backed findings only.
-- **Continuous Audit:** Repeat read-only passes; add each verified finding and refresh the count until Stop or a genuine limit. Disclose blocked scope.
-- **Evidence:** Every finding and status must be evidence-backed. No invented results; omit clean areas and merge duplicates.
-- **OBSERVED STATE / TARGET STATE:** OBSERVED STATE uses `FINDING TITLE` and `ISSUE DESCRIPTION` to describe the identified issue. TARGET STATE uses `IMPROVEMENT TITLE` and `IMPROVEMENT DESCRIPTION` to describe the recommended fix and expected benefit. Keep columns equal-width; recommendations are not applied changes.
-- **STATUS:** Show each finding's actual, currently verified status; refresh it when verification changes.
-- **Dynamic Findings:** Add each verified finding immediately and refresh the total. No arbitrary limit or empty rows.
-- **Finding Selection & Apply:** Number every finding uniquely. Apply only numbers the user selects, verify each change, and leave others untouched. Audit stays read-only until selection.
-- **Report Title:** Use a full-width `Project Health Report` header above ID, OBSERVED STATE, TARGET STATE, and STATUS.
-- **Dynamic ID Width:** Fit the ID column to the longest identifier; recalculate as rows change. No fixed width or excess space.
+- **Rendering:** Use one unified table with equal-width OBSERVED STATE and TARGET STATE columns.
+- **Engineer Selection:** `0` lists all 36 engineers vertically (`1`–`36`). Selecting a number + Enter starts that engineer's continuous audit, limited to their discipline and responsibilities.
+- **Full-Team Audit:** `00` + Enter activates all 36 engineers together. They coordinate a continuous, project-wide audit, covering their respective disciplines and sharing findings without duplicates.
+- **Audit Scope:** Inspect existing and missing features, issues, bugs, risks, useless/redundant parts, and improvement opportunities. Check project code, requirements, architecture, dependencies, integrations, compatibility, quality, maintenance, and runtime behavior. Compare relevant findings with reliable, current external documentation or standards when useful.
+- **Continuous Discovery:** Keep auditing and immediately append every newly verified finding; refresh IDs and total count continuously. Target at least 50 distinct, evidence-backed findings, then continue without an arbitrary cap until Stop or a genuine access/execution limit. Never fabricate or duplicate findings to reach 50; if fewer than 50 can be verified, state the actual count and blocker.
+- **Finding Fields:** OBSERVED STATE contains the actual `FINDING TITLE` and short `ISSUE DESCRIPTION`. TARGET STATE contains the recommended `IMPROVEMENT TITLE` and short `IMPROVEMENT DESCRIPTION`. Write descriptions in simple Roman Urdu; keep titles concise and columns equal-width.
+- **Status:** Show the current evidence-backed classification, such as `BUG`, `FIX REQUIRED`, `MISSING`, `IMPROVEMENT`, `USELESS`, or `RISK`; update it when verification changes. Do not mark a recommendation as implemented.
+- **Evidence & Quality:** Verify each finding against project evidence; omit clean areas and merge duplicates. Clearly disclose uninspected or blocked scope.
+- **Finding Selection & Apply:** Give every finding a unique sequential ID. Audit remains read-only; apply only IDs selected by the user, then verify each applied change.
+- **Report:** Keep the full-width `Project Health Report` title above ID, OBSERVED STATE, TARGET STATE, and STATUS. Fit ID width dynamically to its longest value; do not reserve excess space.
 
 <table align="center">
   <tr><th align="center" colspan="4">Project Health Report</th></tr>
