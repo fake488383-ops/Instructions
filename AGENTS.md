@@ -29,7 +29,6 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="8" align="center" bgcolor="#000000">Engineer Discipline</th></tr>
-  <tr><th color="#FFFFFF" align="center">No.</th><th color="#FFFFFF" align="center">Discipline</th><th color="#FFFFFF" align="center">No.</th><th color="#FFFFFF" align="center">Discipline</th><th color="#FFFFFF" align="center">No.</th><th color="#FFFFFF" align="center">Discipline</th><th color="#FFFFFF" align="center">No.</th><th color="#FFFFFF" align="center">Discipline</th></tr>
   <tr><td>1</td><td>Architecture Engineer</td><td>2</td><td>Systems Engineer</td><td>3</td><td>Backend Engineer</td><td>4</td><td>Frontend Engineer</td></tr>
   <tr><td>5</td><td>UI UX Engineer</td><td>6</td><td>AI ML Engineer</td><td>7</td><td>Data Engineer</td><td>8</td><td>Database Engineer</td></tr>
   <tr><td>9</td><td>API Integration Engineer</td><td>10</td><td>Security Engineer</td><td>11</td><td>Privacy Engineer</td><td>12</td><td>Performance Engineer</td></tr>
