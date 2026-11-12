@@ -27,18 +27,19 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 - **Mandatory Deep Research & Evidence-Based Decisions:** All 36 engineers must investigate relevant code, documentation, dependencies, configurations, logs, and runtime behavior before making decisions. Trace root causes, compare viable solutions, verify assumptions with reliable evidence, and never stop at the first plausible answer or fix.
 
 
-
-| No. | Discipline | No. | Discipline | No. | Discipline | No. | Discipline |
-|---:|---|---:|---|---:|---|---:|---|
-| 1 | Architecture Engineer | 2 | Systems Engineer | 3 | Backend Engineer | 4 | Frontend Engineer |
-| 5 | UI UX Engineer | 6 | AI ML Engineer | 7 | Data Engineer | 8 | Database Engineer |
-| 9 | API Integration Engineer | 10 | Security Engineer | 11 | Privacy Engineer | 12 | Performance Engineer |
-| 13 | Reliability Engineer | 14 | QA Test Engineer | 15 | DevOps Engineer | 16 | Build Toolchain Engineer |
-| 17 | Release Engineer | 18 | Cloud Engineer | 19 | Network Engineer | 20 | Observability Engineer |
-| 21 | Configuration Engineer | 22 | Backup Recovery Engineer | 23 | Requirements Engineer | 24 | Technical Lead Engineer |
-| 25 | Code Review Edit Engineer | 26 | Knowledge Engineer | 27 | Operations Incident Engineer | 28 | Accessibility Engineer |
-| 29 | Localization Engineer | 30 | Scalability Engineer | 31 | Cybersecurity Engineer | 32 | Data Analysis Engineer |
-| 33 | Data Science Engineer | 34 | QA Automation Engineer | 35 | Robotics Engineer | 36 | Resources Engineer |  |  |  |  |
+<table align="center" bgcolor="#000000">
+  <tr><th color="#FFFFFF" colspan="8" align="center" bgcolor="#000000">Engineer Discipline</th></tr>
+  <tr><th color="#FFFFFF" align="center">No.</th><th color="#FFFFFF" align="center">Discipline</th><th color="#FFFFFF" align="center">No.</th><th color="#FFFFFF" align="center">Discipline</th><th color="#FFFFFF" align="center">No.</th><th color="#FFFFFF" align="center">Discipline</th><th color="#FFFFFF" align="center">No.</th><th color="#FFFFFF" align="center">Discipline</th></tr>
+  <tr><td>1</td><td>Architecture Engineer</td><td>2</td><td>Systems Engineer</td><td>3</td><td>Backend Engineer</td><td>4</td><td>Frontend Engineer</td></tr>
+  <tr><td>5</td><td>UI UX Engineer</td><td>6</td><td>AI ML Engineer</td><td>7</td><td>Data Engineer</td><td>8</td><td>Database Engineer</td></tr>
+  <tr><td>9</td><td>API Integration Engineer</td><td>10</td><td>Security Engineer</td><td>11</td><td>Privacy Engineer</td><td>12</td><td>Performance Engineer</td></tr>
+  <tr><td>13</td><td>Reliability Engineer</td><td>14</td><td>QA Test Engineer</td><td>15</td><td>DevOps Engineer</td><td>16</td><td>Build Toolchain Engineer</td></tr>
+  <tr><td>17</td><td>Release Engineer</td><td>18</td><td>Cloud Engineer</td><td>19</td><td>Network Engineer</td><td>20</td><td>Observability Engineer</td></tr>
+  <tr><td>21</td><td>Configuration Engineer</td><td>22</td><td>Backup Recovery Engineer</td><td>23</td><td>Requirements Engineer</td><td>24</td><td>Technical Lead Engineer</td></tr>
+  <tr><td>25</td><td>Code Review Edit Engineer</td><td>26</td><td>Knowledge Engineer</td><td>27</td><td>Operations Incident Engineer</td><td>28</td><td>Accessibility Engineer</td></tr>
+  <tr><td>29</td><td>Localization Engineer</td><td>30</td><td>Scalability Engineer</td><td>31</td><td>Cybersecurity Engineer</td><td>32</td><td>Data Analysis Engineer</td></tr>
+  <tr><td>33</td><td>Data Science Engineer</td><td>34</td><td>QA Automation Engineer</td><td>35</td><td>Robotics Engineer</td><td>36</td><td>Resources Engineer</td></tr>
+</table>
 
 ## 5 Task Final Report
 
