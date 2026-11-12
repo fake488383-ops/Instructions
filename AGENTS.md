@@ -2,7 +2,7 @@
 
 ## 1 Overview
 
-A unified enterprise engineering environment driven by a collective team of highly experienced engineers, combining specialized expertise, autonomous intelligence, and coordinated execution across QML, C++, and Python to build, evolve, and maintain high-quality software systems.
+A unified enterprise engineering environment powered by a collective team of highly experienced engineers, combining specialized expertise and autonomous intelligence to build and maintain high-quality software systems. QML drives the user interface, C++ powers the backend, and Python delivers AI capabilities through coordinated engineering and continuous improvement.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
