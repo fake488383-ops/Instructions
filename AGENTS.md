@@ -42,17 +42,17 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 ## 5 Task Final Report
 
-- **Background:** Use solid black (`#000000`) for the report and every table cell.
-- **Rendering Style:** Always use the **Side-by-Side BEFORE/AFTER** report layout, keeping BEFORE and AFTER as adjacent, equally sized columns within the same unified Task Final Report table.
-- **Automatic Report:** Whenever any project change is added, integrated, updated, or applied—including selected Project Health findings—complete testing and verification, then generate/update the Task Final Report table. Never skip it for small changes or when multiple findings are applied together; append verified launch/runtime results afterward.
-- **Dynamic Table:** Adapt the table to the task; show one item per cell/row, add rows as needed, and never combine unrelated items or use empty placeholder rows.
-- **BEFORE / AFTER:** BEFORE lists only existing main-feature titles; use only `Missing` when absent. AFTER lists only the resulting added, integrated, or updated main-feature titles. For an existing feature update, show its original title in BEFORE and its updated/resulting title in AFTER. Keep each feature in its own cell; no descriptions or versions.
-- **ENGINEER SUMMARY:** Include only contributing engineers, using their exact titles from the 36-engineer list in Section 4. Give each engineer a separate entry and a short contribution in English. Never introduce outside engineer titles.
-- **TESTING SUMMARY:** List only testing types and child-features actually tested. MATRIX shows only numeric test count(s) and measured performance value(s) with units (e.g., `2 Tests · 1.2 sec`); never show metric names or explanatory words there. STATUS shows only `PASS` or `FAIL`.
-- **EXECUTION SUMMARY:** Show separate, relevant build, development, launch, and runtime activities. Exclude checks already listed in Testing Summary. Dynamically display only metrics actually measured and relevant to the current task; never use a fixed metric list or static/sample values.
-- **METRIC:** In every MATRIX cell, show only real-time numeric values and units (e.g., `1 Test · 120 ms`, `25% · 450 MB`, `1.5 sec`); never show metric names, labels, or explanatory words. Put the activity/test name in its own column. Omit unavailable or irrelevant measurements.
-- **EXECUTION STATUS:** Show only `PASS`, `FAIL`, or `WORKING` for each execution item.
-- **Unavailable Data:** Omit unmeasured values or report their status accurately. Never use sample values as actual results.
+- **Background:** Use solid black (`#000000`) throughout.
+- **Rendering Style:** Use one unified table with adjacent, equal-width BEFORE/AFTER columns.
+- **Automatic Report:** After every applied, added, integrated, or updated project change—including Project Health findings—test and verify, then generate/update this report. Include verified launch/runtime results when available.
+- **Dynamic Table:** Show only relevant, actual results; add rows as needed. No unrelated items or empty placeholders.
+- **BEFORE / AFTER:** Show original feature titles in BEFORE and resulting titles in AFTER; use only `Missing` when no prior feature exists. One feature per cell; no descriptions or versions.
+- **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 4 titles and a short English contribution.
+- **TESTING SUMMARY:** Show only tests actually run and features actually tested. MATRIX contains measured numbers/counts with units only; STATUS is the actual `PASS` or `FAIL`.
+- **EXECUTION SUMMARY:** List relevant build, development, launch, and runtime activities; do not repeat tests. Show only task-relevant metrics actually measured.
+- **METRIC:** Show actual measured values and units only; keep the activity/test name in its own column. Omit unmeasured or irrelevant metrics.
+- **EXECUTION STATUS:** Show the verified current state only: `PASS`, `FAIL`, or `WORKING`.
+- **LIVE DATA:** Update the report as results are verified. All tests, features, statuses, counts, and metrics must reflect this task's actual execution and measurements—never fixed, cached, sample, estimated, or invented values. If unavailable or not measured, omit the value or state the limitation; never claim a test ran when it did not.
 
 
 <table align="center" bgcolor="#000000">
@@ -80,17 +80,17 @@ Engineering rulebook for projects built with **QML, C++, and Python**, guided by
 
 ## 6 Project Health Report
 
-- **Rendering Style:** Use the same **Side-by-Side BEFORE/AFTER** layout as Section 5, with adjacent, equally sized columns in one unified Project Health Report table.
-- **Audit Selection:** `0` displays all 36 engineers vertically (`1`–`36`) with exact titles for individual selection. `00` + Enter activates all 36 as one coordinated team for a continuous, read-only full-project audit within their disciplines, until the user presses Stop or a genuine execution/access limit is reached.
-- **Engineer Audit:** Each selected engineer continuously audits the full project within their discipline: identify missing features; verify existing functionality and implementation; find improvement and optimization opportunities; and detect current or potential bugs, issues, risks, weaknesses, inefficiencies, and compatibility, quality, maintainability, or best-practice gaps. Verify relevant requirements, functionality, code, architecture, integrations, dependencies, and runtime behavior. Report only evidence-backed findings within assigned responsibilities.
-- **Continuous Deep Audit:** Run repeated read-only passes, append each newly verified finding, and update the total count until the user presses Stop or a genuine execution/access limit blocks progress; report blocked scope.
-- **Evidence:** Every finding must be supported by actual project evidence. Do not invent findings or status values; omit areas with no findings and merge duplicates.
-- **BEFORE / AFTER:** Each cell contains a short topic title on the first line and a brief Roman Urdu description below it. BEFORE explains the issue; AFTER gives the recommended improvement and its benefit. Keep the BEFORE and AFTER columns exactly equal in width. Recommendations only; do not imply fixes were applied.
-- **STATUS:** Show only the actual real-time status.
-- **Dynamic Findings:** Add every verified finding as a separate row as soon as it is discovered; show and continuously update the total number of findings. Never impose a finding limit or show empty/placeholder rows.
-- **Finding Selection & Apply:** Give every finding a unique number. When the user enters finding number(s) and presses Enter, apply only the selected finding(s), verify each change, and leave all unselected findings untouched. Auditing remains read-only until the user explicitly selects finding number(s) to apply.
-- **Report Title:** Display `Project Health Report` in a full-width header row above NO., BEFORE, AFTER, and STATUS.
-- **Dynamic NO. Width:** Size the NO. column automatically to the width of the longest displayed number only. Recalculate it whenever rows are added or removed; never use a fixed percentage or leave unnecessary horizontal space.
+- **Rendering Style:** Use one unified table with adjacent, equal-width BEFORE/AFTER columns.
+- **Audit Selection:** `0` lists all 36 engineers vertically (`1`–`36`) for selection. `00` + Enter runs a coordinated, continuous, read-only audit until Stop or a genuine access/execution limit.
+- **Engineer Audit:** Each selected engineer audits the project within their discipline for missing or faulty features, improvements, bugs, risks, inefficiencies, and architecture, integration, compatibility, quality, or maintenance gaps. Check relevant requirements, code, dependencies, and runtime behavior; report evidence-backed findings only.
+- **Continuous Audit:** Repeat read-only passes; add each verified finding and refresh the count until Stop or a genuine limit. Disclose blocked scope.
+- **Evidence:** Every finding and status must be evidence-backed. No invented results; omit clean areas and merge duplicates.
+- **BEFORE / AFTER:** Use a short title plus brief Roman Urdu description. BEFORE states the issue; AFTER states the recommended fix and benefit. Keep columns equal-width; recommendations are not applied changes.
+- **STATUS:** Show each finding's actual, currently verified status; refresh it when verification changes.
+- **Dynamic Findings:** Add each verified finding immediately and refresh the total. No arbitrary limit or empty rows.
+- **Finding Selection & Apply:** Number every finding uniquely. Apply only numbers the user selects, verify each change, and leave others untouched. Audit stays read-only until selection.
+- **Report Title:** Use a full-width `Project Health Report` header above NO., BEFORE, AFTER, and STATUS.
+- **Dynamic NO. Width:** Fit the NO. column to the longest number; recalculate as rows change. No fixed width or excess space.
 
 <table align="center">
   <tr><th align="center" colspan="4">Project Health Report</th></tr>
