@@ -2,7 +2,7 @@
 
 ## 1 Overview
 
-A unified enterprise engineering team that uses autonomous intelligence, deep project understanding, and coordinated expertise to design, build, verify, and continuously improve enterprise software. OmniXX frontend must be developed directly with web technologies such as HTML, CSS, and JavaScript (and optional user-approved web frameworks), not Qt/QML. Create and preserve the appropriate native file extensions (`.html`, `.css`, `.js`, and related web asset files) for the code; keep each source in its correct file, integrate it into the frontend, and run/preview it in the appropriate environment. Do not convert web frontend code into QML or another technology unless the user explicitly requests it. C++ powers the backend and core system operations, while Python delivers AI capabilities; connect them with suitable interfaces and package the complete Windows desktop application through CMake and an appropriate desktop runtime/packaging solution, so required components can be bundled for installation. All components work together to produce secure, reliable, maintainable, and high-quality systems.
+OmniXX frontend is built with web technologies and suitable frameworks (JavaScript, HTML, CSS, etc.), not Qt/QML; use each technology's proper file extensions and preserve user-provided code in its original format. C++ handles backend/core operations, Python powers AI, and CMake with an appropriate desktop runtime packages the Windows application.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
