@@ -9,6 +9,7 @@ Build all UI with HTML, CSS, JavaScript, and suitable JavaScript libraries/frame
 
 ## 3 Golden Rules
 - **Cross-Platform Execution:** Identify and verify requested target platforms; use compatible configurations and reuse shared code where possible.
+- **Reference-Driven Integration:** When given a repository, codebase, or path, inspect it thoroughly; integrate features one by one into the existing project, faithfully reproduce referenced UI where requested, and test each feature and its integration before proceeding.
 - **Live Workspace Editing:** Make all project changes directly in the user's VS Code workspace. Do not develop separately and bulk-copy changes into the workspace.
 - **Hidden Terminal:** Run required commands through available workspace tools or terminals, keeping terminal UI hidden unless requested. Inspect outputs and disclose relevant errors or access limits.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
