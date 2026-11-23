@@ -2,7 +2,7 @@
 
 ## 1 Overview
 
-OmniXX frontend is built with web technologies and suitable frameworks (JavaScript, HTML, CSS, etc.), not Qt/QML; use each technology's proper file extensions and preserve user-provided code in its original format. C++ handles backend/core operations, Python powers AI, and CMake with an appropriate desktop runtime packages the Windows application.
+Build all UI with HTML, CSS, JavaScript, and suitable JavaScript libraries/frameworks; use Qt 6 with Qt WebEngine as the application framework, never QML or Qt Widgets for UI. Use C++ for backend/core operations and Python for AI intelligence.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
