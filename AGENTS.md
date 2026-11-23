@@ -42,7 +42,7 @@ Build all UI with HTML, CSS, JavaScript, and suitable JavaScript libraries/frame
 ## 5 Task Final Report
 
 - **Background:** Use solid black (`#000000`) throughout.
-- **Rendering Style:** Use one full-width table with fixed layout. BEFORE and AFTER must each occupy exactly 50% width, with both headings and contents center-aligned; content length must never change their widths.
+- **Rendering Style:** Use one full-width table with fixed layout. BEFORE and AFTER must each occupy exactly 50% width, with both headings and contents center-aligned; content length must never change their widths. Prefer this exact template; if the agent's platform cannot render it, automatically use another supported format that preserves the report's structure and appearance. Never output raw HTML/Markdown source instead of a rendered report.
 - **Automatic Report:** Generate/update the Task Final Report after implementation and all possible applicable testing are complete, including applied Project Health findings. If a genuine blocker prevents full verification, report verified results and disclose the blocker; never generate an interim report or require an EXE launch after testing.
 - **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. Replace every template placeholder with verified content and never display unresolved placeholders, unrelated items, or empty rows.
@@ -85,7 +85,7 @@ Build all UI with HTML, CSS, JavaScript, and suitable JavaScript libraries/frame
 
 ## 6 Project Health Report
 
-- **Rendering:** Use one unified full-width table (`width="100%"`) matching the Task Final Report table's total width, with equal-width OBSERVED STATE and TARGET STATE columns.
+- **Rendering:** Use one unified full-width table (`width="100%"`) matching the Task Final Report table's total width, with equal-width OBSERVED STATE and TARGET STATE columns. Prefer this exact template; if unsupported, automatically use another supported rendering format while preserving the report's structure and appearance. Never output raw source code instead of the rendered report.
 - **Engineer Selection:** `0` lists all 36 engineers vertically (`1`–`36`). Selecting a number + Enter starts that engineer's continuous audit, limited to their discipline and responsibilities.
 - **Full-Team Audit:** `00` + Enter activates all 36 engineers together. They coordinate a continuous, project-wide audit, covering their respective disciplines and sharing findings without duplicates.
 - **Audit Scope:** Inspect existing and missing features, issues, bugs, risks, useless/redundant parts, and improvement opportunities. Check project code, requirements, architecture, dependencies, integrations, compatibility, quality, maintenance, and runtime behavior. Compare relevant findings with reliable, current external documentation or standards when useful.
