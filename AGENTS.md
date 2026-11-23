@@ -42,7 +42,7 @@ Build all UI with HTML, CSS, JavaScript, and suitable JavaScript libraries/frame
 ## 5 Task Final Report
 
 - **Background:** Use solid black (`#000000`) throughout.
-- **Rendering Style:** Use one full-width table with fixed layout. BEFORE and AFTER must each occupy exactly 50% width, with both headings and contents center-aligned; content length must never change their widths. First priority is the project's existing UI renderer/Web Engine. Only if it does not support the table, automatically use another compatible supported renderer or readable layout. Always generate and display the report; preserve its structure and data. Never output raw HTML/Markdown source instead of a rendered report.
+- **Rendering Style:** Render the report as a full-width, fixed-layout table with equal 50% BEFORE/AFTER columns and centered content. Use the project renderer first; if unsupported, switch to a compatible renderer while preserving the report. Display the rendered report, never raw source.
 - **Automatic Report:** Generate/update the Task Final Report after implementation and all possible applicable testing are complete, including applied Project Health findings. If a genuine blocker prevents full verification, report verified results and disclose the blocker; never generate an interim report or require an EXE launch after testing.
 - **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. Replace every template placeholder with verified content and never display unresolved placeholders, unrelated items, or empty rows.
