@@ -2,7 +2,7 @@
 
 ## 1 Overview
 
-Build all UI with HTML, CSS, JavaScript, and suitable JavaScript libraries/frameworks; use Qt 6 with Qt WebEngine as the application framework, never QML or Qt Widgets for UI. Use C++ for backend/core operations and Python for AI intelligence.
+Build all UI with HTML, CSS, JavaScript, and suitable JavaScript libraries/frameworks; use Qt 6 with Qt WebEngine as the application framework, never QML or Qt Widgets for UI. Use C++ for backend/core operations and Python for AI intelligence. Keep the architecture modular, secure, scalable, and performance-focused; maintain clear separation between frontend, backend, and AI, minimize unnecessary dependencies, and verify compatibility before implementation.
 
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
