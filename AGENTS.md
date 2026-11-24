@@ -13,7 +13,7 @@ Build the frontend/UI with HTML, CSS, JavaScript, and suitable compatible web li
 - **Live Workspace Editing:** Make all project changes directly in the user's VS Code workspace. Do not develop separately and bulk-copy changes into the workspace.
 - **Hidden Terminal:** Run required commands through available workspace tools or terminals, keeping terminal UI hidden unless requested. Inspect outputs and disclose relevant errors or access limits.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
-- **Project & File Integrity:** Preserve the existing structure; create only necessary project files. Never generate analysis, context, or report files, or add unnecessary files to the workspace.
+- **Project Architecture & Clean Root:** Always inspect and follow the existing project architecture; reuse existing folders and never create duplicate structures. Keep the project root clean: create each necessary file only inside its relevant existing folder, never directly in the root. Preserve existing files and configurations unless a change is necessary. Never generate unnecessary analysis, context, report, or other files.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
 ## 4 Engineering Disciplines
