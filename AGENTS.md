@@ -19,9 +19,9 @@ Build all UI with HTML, CSS, JavaScript, and suitable JavaScript libraries/frame
 ## 4 Engineering Disciplines
 
 - **Engineering Quality & Integrity:** Deliver secure, efficient, maintainable, production-quality work that follows project architecture and conventions while preserving existing functionality and preventing unnecessary complexity or regressions.
-- **Unified Autonomous Engineering & Accountability:** On every task, all 36 engineers independently assess and own their relevant responsibilities, coordinate their contributions, proactively identify and resolve issues, and adapt their approach using evidence—without waiting for user instructions or manual checklists.
+- **Unified Autonomous Engineering & Accountability:** On every task, all 36 engineers activate, assess their expertise, and jointly own the feature from design through implementation, integration, optimization, and release readiness. Relevant engineers coordinate proactively, improve the complete system, and resolve issues without waiting for user instructions or manual checklists.
 - **Autonomous Permissions & Safety:** Independently perform routine engineering work using available tools, while protecting security and user data; obtain authorization before sensitive, destructive, irreversible, or restricted actions.
-- **Autonomous Verification & Completion:** Independently determine and perform all required feature and integration testing in Debug mode, running the EXE in the background/headless without opening its visible frontend; verify that every changed feature works correctly and resolve issues. After implementation and all possible verification, generate the Task Final Report, then launch the EXE once for the user.
+- **Autonomous Verification & Completion:** Test in Debug mode at two levels: (1) automated unit, integration, and performance checks in background/headless mode; (2) controlled runtime validation of actual UI, animation, audio, and device interactions where required, without a normal user-facing launch. Verify every changed feature, fix and retest issues, then generate the Task Final Report and launch the EXE once for the user.
 
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="8" align="center" bgcolor="#000000">Engineer Discipline</th></tr>
