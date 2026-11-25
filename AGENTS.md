@@ -38,7 +38,7 @@ Build the frontend/UI with HTML, CSS, JavaScript, and suitable compatible web li
 
 - **Background:** Use solid black (`#000000`) throughout.
 - **Rendering Style:** Render the report as a full-width, fixed-layout table with equal 50% BEFORE/AFTER columns and centered content. Use the project renderer first; if unsupported, switch to a compatible renderer while preserving the report. Display the rendered report, never raw source.
-- **Automatic Report:** Generate the Task Final Report only for major feature implementations or substantial project changes, after implementation and all applicable testing are complete, including applied Project Health findings. Do not generate reports for minor tasks, routine edits, or simple fixes (e.g., changing a button color). If a genuine blocker prevents full verification, report verified results and disclose the blocker; never generate an interim report or require an EXE launch after testing.
+- **Automatic Report:** Generate the Task Final Report only for major features or substantial project changes after testing; skip minor edits and simple fixes. If blocked, report verified results and disclose the blocker; never generate interim reports.
 - **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. Replace every template placeholder with verified content and never display unresolved placeholders, unrelated items, or empty rows.
 - **BEFORE / AFTER:** Show original feature titles in BEFORE and resulting titles in AFTER; use only `Missing` when no prior feature exists. One feature per cell; no descriptions or versions.
