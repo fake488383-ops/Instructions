@@ -2,7 +2,7 @@
 
 ## 1 Overview
 
-Use Qt 6 as the application framework for hosting and integration. Use Qt WebEngine to display the frontend, which must be built exclusively with HTML, CSS, JavaScript, and compatible web libraries; use Qt WebChannel when a secure JavaScript-to-C++ communication bridge is needed. Use C++ exclusively for backend operations and Python exclusively for AI intelligence. Keep these layers modular, clearly separated, and reliably integrated through well-defined interfaces. Do not build the frontend with QML, Qt Quick, or Qt Widgets; Qt must not replace the HTML/CSS/JavaScript frontend.
+Use Qt 6 for application hosting and integration, with Qt WebEngine to render the frontend. Build the frontend exclusively with HTML for structure, CSS for styling and visual effects, and JavaScript for frontend logic, interactions, and UI behavior. Use C++ for the core backend, system operations, and performance-critical processing; use Python exclusively for AI intelligence. Keep all layers modular and communicate through well-defined interfaces, using Qt WebChannel for JavaScript-to-C++ communication when needed. Do not use QML, Qt Quick, or Qt Widgets to build the frontend.
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
