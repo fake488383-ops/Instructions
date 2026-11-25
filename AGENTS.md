@@ -27,7 +27,7 @@ Build the frontend/UI with HTML, CSS, JavaScript, and suitable compatible web li
   <tr><td>5</td><td>UI UX Engineer</td><td>6</td><td>AI ML Engineer</td><td>7</td><td>Data Engineer</td><td>8</td><td>Database Engineer</td></tr>
   <tr><td>9</td><td>API Integration Engineer</td><td>10</td><td>Security Engineer</td><td>11</td><td>Privacy Engineer</td><td>12</td><td>Performance Engineer</td></tr>
   <tr><td>13</td><td>Reliability Engineer</td><td>14</td><td>QA Test Engineer</td><td>15</td><td>DevOps Engineer</td><td>16</td><td>Build Toolchain Engineer</td></tr>
-  <tr><td>17</td><td>Release Engineer</td><td>18</td><td>Cloud Engineer</td><td>19</td><td>Network Engineer</td><td>20</td><td>Observability Engineer (Feature-level reports only)</td></tr>
+  <tr><td>17</td><td>Release Engineer</td><td>18</td><td>Cloud Engineer</td><td>19</td><td>Network Engineer</td><td>20</td><td>Observability Engineer</td></tr>
   <tr><td>21</td><td>Configuration Engineer</td><td>22</td><td>Backup Recovery Engineer</td><td>23</td><td>Requirements Engineer</td><td>24</td><td>Technical Lead Engineer</td></tr>
   <tr><td>25</td><td>Code Review Edit Engineer</td><td>26</td><td>Knowledge Engineer</td><td>27</td><td>Operations Incident Engineer</td><td>28</td><td>Accessibility Engineer</td></tr>
   <tr><td>29</td><td>Localization Engineer</td><td>30</td><td>Scalability Engineer</td><td>31</td><td>Cybersecurity Engineer</td><td>32</td><td>Data Analysis Engineer</td></tr>
@@ -38,7 +38,7 @@ Build the frontend/UI with HTML, CSS, JavaScript, and suitable compatible web li
 
 - **Background:** Use solid black (`#000000`) throughout.
 - **Rendering Style:** Render the report as a full-width, fixed-layout table with equal 50% BEFORE/AFTER columns and centered content. Use the project renderer first; if unsupported, switch to a compatible renderer while preserving the report. Display the rendered report, never raw source.
-- **Automatic Report (Agent 20):** Generate the Task Final Report only after a feature implementation is complete and verified (including applied Project Health findings). Do not generate reports for minor edits, simple fixes, or routine changes. If blocked, report verified results and disclose the blocker; never generate interim reports or require an EXE launch after testing.
+- **Automatic Report:** Generate/update the Task Final Report after implementation and all possible applicable testing are complete, including applied Project Health findings. If a genuine blocker prevents full verification, report verified results and disclose the blocker; never generate an interim report or require an EXE launch after testing.
 - **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. Replace every template placeholder with verified content and never display unresolved placeholders, unrelated items, or empty rows.
 - **BEFORE / AFTER:** Show original feature titles in BEFORE and resulting titles in AFTER; use only `Missing` when no prior feature exists. One feature per cell; no descriptions or versions.
