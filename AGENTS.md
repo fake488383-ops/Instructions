@@ -48,7 +48,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **SUGGESTION SUMMARY:** Give exactly seven actionable feature suggestions based on gaps or improvement opportunities found in the project. Number each suggestion 1–7 in the same single full-width cell; option 8 must be **Apply for All**, applying all seven suggestions. Align every short description directly below its feature title.
 - **METRIC:** Show actual measured values and units only; keep the activity/test name in its own column. Omit unmeasured or irrelevant metrics.
 - **EXECUTION STATUS:** Show the verified current state only: `PASS` or `FAIL`.
-- **LIVE DATA:** Update the report as results are verified. All tests, features, statuses, counts, and metrics must reflect this task's actual execution and measurements—never fixed, cached, sample, estimated, or invented values. If unavailable or not measured, omit the value or state the limitation; never claim a test ran when it did not.
+- **LIVE DATA & REAL-TIME METRICS:** All report values must be dynamic, sourced from actual execution, never static, hardcoded, cached, sample, estimated, or invented. During runtime, continuously refresh live metrics such as CPU, RAM, GPU, FPS, performance, and smoothness when measurable, especially in Release Mode. Testing metrics and PASS/FAIL must update from actual test execution/verification, not fixed values. If live collection or a metric is unavailable, disclose it instead of fabricating or freezing a value.
 
 <table align="center" width="100%" bgcolor="#000000" style="table-layout: fixed;">
   <tr><th color="#FFFFFF" colspan="12" align="center" bgcolor="#000000">Task Final Report</th></tr>
