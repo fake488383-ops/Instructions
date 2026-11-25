@@ -20,7 +20,7 @@ Build the frontend/UI with HTML, CSS, JavaScript, and suitable compatible web li
 
 ## 4 Engineering Disciplines
 
-- **Unified Engineering Quality & Autonomous Delivery:** Activate all 36 engineers for every task, with each contributing according to their discipline through coordinated implementation, review, integration, and verification. Independently deliver enterprise-quality results while preserving architecture and functionality; run builds and tests in the background, inspect relevant VS Code diagnostics, and fix project-related errors at their root cause. Launch the final EXE only after all work and verification are complete.
+- **Autonomous Engineering Workflow & Accountability:** Activate all 36 engineers for every task. Each independently owns their discipline: inspect the task and existing project, identify required work, plan and implement changes, coordinate dependencies, review and test their own work, verify integration, and fix defects without waiting for step-by-step instructions. QA Test Engineer independently plans and verifies end-to-end functionality; QA Automation Engineer automates repeatable tests where practical. Run checks in the background, resolve failures and relevant diagnostics, and launch the final EXE only after applicable verification passes. Disclose genuine blockers or tests that cannot be performed; never assume success.
 
 
 <table align="center" bgcolor="#000000">
