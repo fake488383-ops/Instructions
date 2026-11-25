@@ -42,9 +42,9 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. Replace every template placeholder with verified content and never display unresolved placeholders, unrelated items, or empty rows.
 - **BEFORE / AFTER:** Show original feature titles in BEFORE and resulting titles in AFTER; use only `Missing` when no prior feature exists. One feature per cell; no descriptions or versions.
 - **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 4 titles and a short English contribution.
-- **TESTING SUMMARY:** Show only tests actually run and features actually tested. MATRIX contains measured numbers/counts with units only; STATUS is the actual `PASS` or `FAIL`.
-- **EXECUTION SUMMARY:** List relevant build, development, launch, and runtime activities; do not repeat tests. Show only task-relevant metrics actually measured.
-- **PROBLEM AND SOLUTION:** Between EXECUTION SUMMARY and SUGGESTION SUMMARY, use two equal-width columns titled `PROBLEM` and `SOLUTION`. Pair each task-related implementation problem with the exact fix that addressed it, one per row. Keep both descriptions short and in Roman Urdu; center-align them. For unresolved issues, describe the genuine blocker in the solution column. Include only actual problems and evidence-backed outcomes.
+- **TESTING SUMMARY:** List each tested application feature/sub-feature separately, with the actual test method (e.g., Unit, Integration, UI, Functional, Regression, E2E, Performance), its short measured performance metric/value and unit (e.g., `12 ms`, `1.2 sec`, `60 FPS`, `%`), and real-time verified `PASS`/`FAIL`. Use concise metric values only; no long metric descriptions or arbitrary counts. Show only tests actually run and features actually tested; never list build tools, libraries, infrastructure, or technical components as testing features.
+- **EXECUTION SUMMARY:** Show only project-related build, application launch, and runtime/performance information; do not repeat feature tests or list implementation/integration activities. Include actual build result/duration, Debug and Release launch results and startup times, Release Mode runtime CPU/RAM/peak RAM/GPU usage, application size, FPS (when relevant), and runtime/stability measurements when available. Keep labels short and metrics as concise measured values with units (e.g., `0.9 sec`, `420 MB`, `12%`, `60 FPS`). Show only real measurements; omit unavailable values and disclose limitations. Status must reflect actual verification, using `PASS`/`FAIL` only when a valid criterion exists.
+- **PROBLEM AND SOLUTION:** Between EXECUTION SUMMARY and SUGGESTION SUMMARY, use two equal-width columns titled `PROBLEM` and `SOLUTION`. Report genuine project issues, bugs, limitations, conflicts, or blockers discovered while performing the task and the exact fix applied for each, one per row. Do not restate BEFORE/AFTER or describe the requested feature itself as a problem. Keep descriptions short in Roman Urdu and center-align. For unresolved issues, state the genuine blocker; include only evidence-backed outcomes.
 - **SUGGESTION SUMMARY:** Give exactly seven actionable feature suggestions based on gaps or improvement opportunities found in the project. Number each suggestion 1–7 in the same single full-width cell; option 8 must be **Apply for All**, applying all seven suggestions. Align every short description directly below its feature title.
 - **METRIC:** Show actual measured values and units only; keep the activity/test name in its own column. Omit unmeasured or irrelevant metrics.
 - **EXECUTION STATUS:** Show the verified current state only: `PASS` or `FAIL`.
@@ -62,13 +62,13 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
   </tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Testing Summary</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING TYPE</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">TESTING FEATURE</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">MATRIX</th><th color="#FFFFFF" align="center" colspan="3" bgcolor="#000000">STATUS</th></tr>
-  <tr><td color="#FFFFFF" align="center" colspan="3">[Test Category]</td><td color="#FFFFFF" align="center" colspan="3">[Tested Component]</td><td color="#FFFFFF" align="center" colspan="3">[Value + unit]</td><td color="#FFFFFF" align="center" colspan="3">[PASS / FAIL]</td></tr>
+  <tr><td color="#FFFFFF" align="center" colspan="3">[Actual test method]</td><td color="#FFFFFF" align="center" colspan="3">[Application feature/sub-feature]</td><td color="#FFFFFF" align="center" colspan="3">[Short measured value + unit]</td><td color="#FFFFFF" align="center" colspan="3">[Real-time PASS / FAIL]</td></tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">Execution Summary</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">EXECUTION</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">METRIC</th><th color="#FFFFFF" align="center" colspan="4" bgcolor="#000000">STATUS</th></tr>
   <tr>
-    <td color="#FFFFFF" align="center" colspan="4">[Execution Step]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[Value + unit]</td>
-    <td color="#FFFFFF" align="center" colspan="4">[PASS / FAIL]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Build / Debug Launch / Release Launch / Runtime Metric]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Short measured value + unit]</td>
+    <td color="#FFFFFF" align="center" colspan="4">[Verified PASS / FAIL, or omit if no valid criterion]</td>
   </tr>
   <tr><th color="#FFFFFF" align="center" colspan="12" bgcolor="#000000">PROBLEM AND SOLUTION</th></tr>
   <tr><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">PROBLEM</th><th color="#FFFFFF" align="center" colspan="6" bgcolor="#000000">SOLUTION</th></tr>
