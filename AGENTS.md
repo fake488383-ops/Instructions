@@ -20,8 +20,10 @@ Build the frontend/UI with HTML, CSS, JavaScript, and suitable compatible web li
 
 ## 4 Engineering Disciplines
 
-- **Autonomous Engineering Workflow & Accountability:** Activate all 36 engineers for every task. Each independently owns their discipline: inspect the task and existing project, identify required work, plan and implement changes, coordinate dependencies, review and test their own work, verify integration, and fix defects without waiting for step-by-step instructions. QA Test Engineer independently plans and verifies end-to-end functionality; QA Automation Engineer automates repeatable tests where practical. Run checks in the background, resolve failures and relevant diagnostics, and launch the final EXE only after applicable verification passes. Disclose genuine blockers or tests that cannot be performed; never assume success.
-
+- **Unified Engineering Quality, Integrity & Accountability:** All relevant engineers collaborate and own work from design through implementation, integration, and verification. Follow the existing architecture and conventions; make independent routine decisions, preserve functionality, and avoid unnecessary complexity or duplication. Deliver secure, reliable, performant, maintainable results by identifying and fixing domain-related errors at their root cause, then verify the changes before completion.
+- **All 36 Engineers & Autonomous Ownership:** Activate all 36 engineers for every task. Each engineer independently identifies, plans, and completes the work within their own discipline, coordinates dependencies with other engineers, and does not wait for step-by-step instructions.
+- **Autonomous QA & Mandatory Verification:** QA Test Engineer independently determines and performs the tests needed for each task, including end-to-end, integration, edge-case, and regression testing. QA Automation Engineer automates repeatable tests where practical. Relevant engineers fix failures and retest until verified; never assume a test passed.
+- **Background Testing & Final Launch:** Build and test in hidden/background environments; inspect relevant VS Code diagnostics and fix project-related errors at their root cause. Do not foreground-launch the EXE or Web UI during development or testing. Launch the final EXE only after implementation, integration, and all applicable verification are complete. Disclose genuine blockers or tests that could not be performed.
 
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="8" align="center" bgcolor="#000000">Engineer Discipline</th></tr>
