@@ -20,6 +20,8 @@ Build the frontend/UI with HTML, CSS, JavaScript, and suitable compatible web li
 
 ## 4 Engineering Disciplines
 
+- **Unified Engineering Quality, Integrity & Accountability:** All relevant engineers collaborate and own work from design through implementation, integration, and verification. Follow the existing architecture and conventions; make independent routine decisions, preserve functionality, and avoid unnecessary complexity or duplication. Deliver secure, reliable, performant, maintainable results by identifying and fixing domain-related errors at their root cause, then verify the changes before completion.
+
 
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="8" align="center" bgcolor="#000000">Engineer Discipline</th></tr>
