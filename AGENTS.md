@@ -45,7 +45,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 ## 6 Task Final Report
 
 - **Background:** Use solid black (`#000000`) throughout.
-- **Rendering Style:** Render the report as a full-width, fixed-layout table with equal 50% BEFORE/AFTER columns and centered content. Use the project renderer first; if unsupported, switch to a compatible renderer while preserving the report. Display the rendered report, never raw source.
+- **Rendering Style:** Render the report as a full-width, fixed-layout table with equal 50% BEFORE/AFTER columns and centered content. Prioritize the project table renderer; if unsupported, use the AI agent’s own supported table renderer. Always render a table—never raw source or non-table fallback.
 - **Automatic Report:** Generate the Task Final Report only for major features or substantial project changes after testing; skip minor edits and simple fixes. If blocked, report verified results and disclose the blocker; never generate interim reports.
 - **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. Replace every template placeholder with verified content and never display unresolved placeholders, unrelated items, or empty rows.
