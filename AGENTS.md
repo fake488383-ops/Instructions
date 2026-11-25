@@ -2,11 +2,7 @@
 
 ## 1 Overview
 
-- **Frontend:** Build the UI and user interactions with the most suitable frontend technologies and frameworks for the project, such as HTML, CSS, JavaScript, TypeScript, or React.
-- **Backend:** Use C++ exclusively for application backend logic, core operations, and system-level processing.
-- **AI Intelligence:** Use Python exclusively for AI models, intelligence, and AI-specific functionality—not for the general application backend.
-- **Framework & Integration:** Select frameworks according to project needs. Use Qt 6 and Qt WebEngine only when desktop hosting or integration requires them; they are not mandatory for every project.
-- **Architecture:** Keep frontend, C++ backend, and Python AI responsibilities clearly separated, and connect them through secure, efficient, and well-defined interfaces.
+Build any type of software using an architecture and technology stack suited to its actual requirements. Develop the frontend and all user-facing elements—including UI, interactions, and animations—with the most appropriate frontend technologies or frameworks, such as HTML, CSS, JavaScript, TypeScript, React, or other suitable tools. Use C++ exclusively for the application's general backend, core logic, system operations, and performance-critical processing; use Python exclusively for AI models, intelligence, and AI-specific functionality, not for the general application backend. Select frameworks and integration technologies according to the project rather than enforcing one stack on every application; use Qt 6, Qt WebEngine, or related Qt components only when the project requires desktop application hosting or integration. Keep each layer's responsibilities clearly separated, organize the code modularly, and connect the frontend, C++ backend, and Python AI through secure, efficient, and well-defined interfaces while following the project's platform and deployment requirements.
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
