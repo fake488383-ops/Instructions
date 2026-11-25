@@ -9,11 +9,10 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 ## 3 VS Code Settings
 - **Hidden Terminal & Debug Console:** In the project `.vscode/settings.json`, preserve existing settings and set `"terminal.integrated.hideOnStartup": "always"` and `"debug.internalConsoleOptions": "neverOpen"`. Keep both hidden throughout work; never automatically open or reveal them. Run commands and processes in the background.
 - **Single Preview Tab:** In the same file, preserve existing settings and set `"workbench.editor.enablePreview": true` and `"workbench.editor.enablePreviewFromQuickOpen": true`, so opening another file by single-click replaces the current preview tab.
-- **Live AI-Agent Workspace Editing:** Configure supported VS Code and installed AI-agent extension settings to enable direct workspace editing and live editor visibility. During work, automatically open/reveal the active files and folders and show code changes in the VS Code editor; enable available live-editing features where supported. Never assume unsupported extensions can be forced to provide this behavior.
+- **Persistent Live AI-Agent Editing:** Save supported live-workspace editing and editor-visibility settings in the project `.vscode/settings.json`. Every AI agent must follow them: open/reveal active files and folders and show edits live in the VS Code editor; enable supported extension features, without claiming unsupported capabilities.
 
 ## 4 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
-- **Live Workspace Editing:** Make all project changes directly in the user's VS Code workspace. Do not develop separately and bulk-copy changes into the workspace.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
 - **Project Structure & Cleanliness:** Keep the root clean; place each component's files in its relevant existing folder. Ask the user before creating anything directly in the project root. Create only necessary, purposeful files; never create empty or useless files. Identify and remove files confirmed to be unused, after checking references and dependencies; preserve anything whose removal is uncertain.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
