@@ -6,18 +6,18 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
-### 2.1 VS Code Settings
+## 3 VS Code Settings
 - **Hidden Terminal & Debug Console:** In the project `.vscode/settings.json`, preserve existing settings and set `"terminal.integrated.hideOnStartup": "always"` and `"debug.internalConsoleOptions": "neverOpen"`. Keep both hidden throughout work; never automatically open or reveal them. Run commands and processes in the background.
 - **Single Preview Tab:** In the same file, preserve existing settings and set `"workbench.editor.enablePreview": true` and `"workbench.editor.enablePreviewFromQuickOpen": true`, so opening another file by single-click replaces the current preview tab.
 
-## 3 Golden Rules
+## 4 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
 - **Live Workspace Editing:** Make all project changes directly in the user's VS Code workspace. Do not develop separately and bulk-copy changes into the workspace.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
 - **Project Structure & Cleanliness:** Keep the root clean; place each component's files in its relevant existing folder. Ask the user before creating anything directly in the project root. Create only necessary, purposeful files; never create empty or useless files. Identify and remove files confirmed to be unused, after checking references and dependencies; preserve anything whose removal is uncertain.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
-## 4 Engineering Disciplines
+## 5 Engineering Disciplines
 
 - **Task-Scoped Autonomy:** Match analysis, planning, engineers, and testing to task complexity. Inspect relevant files for small tasks; expand project-wide only when dependencies or a real issue require it. Keep all 36 disciplines available without unnecessary audits.
 - **Professional Role Ownership:** Each relevant engineer independently owns decisions, standards, implementation, and outcomes in their specialty; coordinate across disciplines when needed.
@@ -44,7 +44,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
   <tr><td>33</td><td>Data Science Engineer</td><td>34</td><td>QA Automation Engineer</td><td>35</td><td>Robotics Engineer</td><td>36</td><td>Resources Engineer</td></tr>
 </table>
 
-## 5 Task Final Report
+## 6 Task Final Report
 
 - **Background:** Use solid black (`#000000`) throughout.
 - **Rendering Style:** Render the report as a full-width, fixed-layout table with equal 50% BEFORE/AFTER columns and centered content. Use the project renderer first; if unsupported, switch to a compatible renderer while preserving the report. Display the rendered report, never raw source.
@@ -52,7 +52,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. Replace every template placeholder with verified content and never display unresolved placeholders, unrelated items, or empty rows.
 - **BEFORE / AFTER:** Show original feature titles in BEFORE and resulting titles in AFTER; use only `Missing` when no prior feature exists. One feature per cell; no descriptions or versions.
-- **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 4 titles and a short English contribution.
+- **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 5 titles and a short English contribution.
 - **TESTING SUMMARY:** For every AFTER feature, list its actual child-feature checks separately (e.g., microphone input/output, permissions, detection, playback, command execution). Show the actual test method (e.g., Unit, Integration, Functional, E2E, Performance, Security, Regression), relevant measured value and unit, and live `PASS`/`FAIL`. Include only tests actually run; exclude tools and technical components.
 - **EXECUTION SUMMARY:** Show actual build, launch, and runtime results in chronological execution order: earlier events first, later events last. Display only the Debug or Release launch that actually occurred; show startup time after launch completes, at the bottom. Include relevant live metrics (e.g., CPU, RAM, GPU, FPS, app size, stability) with actual values and units; omit unavailable or irrelevant items.
 - **PROBLEM AND SOLUTION:** Report verified problems found during the task—including unrelated, pre-existing project issues—and the actual fixes applied. Show unresolved issues as blockers. Use equal-width columns, one issue/fix per row, in short Roman Urdu.
@@ -88,7 +88,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
   <tr><td color="#FFFFFF" align="left" colspan="12">1.&nbsp;&nbsp;<strong>[Feature Title]</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;[Short description of the recommended feature and its expected benefit]</td></tr>
 </table>
 
-## 6 Project Health Report
+## 7 Project Health Report
 
 - **Rendering:** Use one unified full-width table (`width="100%"`) matching the Task Final Report table's total width, with equal-width OBSERVED STATE and TARGET STATE columns. Prefer this exact template; if unsupported, automatically use another supported rendering format while preserving the report's structure and appearance. Never output raw source code instead of the rendered report.
 - **Engineer Selection:** `0` lists all 36 engineers vertically (`1`–`36`). Selecting a number + Enter starts that engineer's continuous audit, limited to their discipline and responsibilities.
