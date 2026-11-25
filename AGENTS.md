@@ -9,6 +9,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 ## 3 VS Code Settings
 - **Hidden Terminal & Debug Console:** In the project `.vscode/settings.json`, preserve existing settings and set `"terminal.integrated.hideOnStartup": "always"` and `"debug.internalConsoleOptions": "neverOpen"`. Keep both hidden throughout work; never automatically open or reveal them. Run commands and processes in the background.
 - **Single Preview Tab:** In the same file, preserve existing settings and set `"workbench.editor.enablePreview": true` and `"workbench.editor.enablePreviewFromQuickOpen": true`, so opening another file by single-click replaces the current preview tab.
+- **Live AI-Agent Workspace Editing:** Configure supported VS Code and installed AI-agent extension settings to enable direct workspace editing and live editor visibility. During work, automatically open/reveal the active files and folders and show code changes in the VS Code editor; enable available live-editing features where supported. Never assume unsupported extensions can be forced to provide this behavior.
 
 ## 4 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
