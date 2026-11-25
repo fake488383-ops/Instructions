@@ -14,7 +14,6 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 ## 4 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
-- **Universal Table Rendering:** Whenever any AI agent or extension must generate a table, it must render an actual visual table. If its current renderer does not support tables, automatically use another available supported renderer; never omit the table or show only raw code/Markdown.
 - **Project Structure & Cleanliness:** Keep the root clean; place each component's files in its relevant existing folder. Ask the user before creating anything directly in the project root. Create only necessary, purposeful files; never create empty or useless files. Identify and remove files confirmed to be unused, after checking references and dependencies; preserve anything whose removal is uncertain.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
@@ -46,7 +45,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 ## 6 Task Final Report
 
 - **Background:** Use solid black (`#000000`) throughout.
-- **Rendering Style:** Render the report as a full-width, fixed-layout table with equal 50% BEFORE/AFTER columns and centered content. Prioritize the project table renderer; if unsupported, use the AI agent’s own supported table renderer. Always render a table—never raw source or non-table fallback.
+- **Rendering Style:** Always render an actual full-width, fixed-layout visual table with equal 50% BEFORE/AFTER columns and centered content. If the current renderer does not support tables, automatically use another available supported renderer; never omit the table or show only raw code/Markdown.
 - **Automatic Report:** Generate the Task Final Report only for major features or substantial project changes after testing; skip minor edits and simple fixes. If blocked, report verified results and disclose the blocker; never generate interim reports.
 - **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. Replace every template placeholder with verified content and never display unresolved placeholders, unrelated items, or empty rows.
@@ -89,7 +88,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 
 ## 7 Project Health Report
 
-- **Rendering:** Use one unified full-width table (`width="100%"`) matching the Task Final Report table's total width, with equal-width OBSERVED STATE and TARGET STATE columns. Prefer this exact template; if unsupported, automatically use another supported rendering format while preserving the report's structure and appearance. Never output raw source code instead of the rendered report.
+- **Rendering:** Always render an actual unified full-width visual table (`width="100%"`) with equal-width OBSERVED STATE and TARGET STATE columns. If the current renderer does not support tables, automatically use another available supported renderer while preserving the report's structure; never omit the table or show only raw code/Markdown.
 - **Engineer Selection:** `0` lists all 36 engineers vertically (`1`–`36`). Selecting a number + Enter starts that engineer's continuous audit, limited to their discipline and responsibilities.
 - **Full-Team Audit:** `00` + Enter activates all 36 engineers together. They coordinate a continuous, project-wide audit, covering their respective disciplines and sharing findings without duplicates.
 - **Audit Scope:** Inspect existing and missing features, issues, bugs, risks, useless/redundant parts, and improvement opportunities. Check project code, requirements, architecture, dependencies, integrations, compatibility, quality, maintenance, and runtime behavior. Compare relevant findings with reliable, current external documentation or standards when useful.
