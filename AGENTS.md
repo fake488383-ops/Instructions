@@ -20,7 +20,7 @@ Build the frontend/UI with HTML, CSS, JavaScript, and suitable compatible web li
 
 ## 4 Engineering Disciplines
 
-- **Unified Engineering Quality, Integrity & Accountability:** All relevant engineers collaborate and own work from design through implementation, integration, and verification. Follow the existing architecture and conventions; make independent routine decisions, preserve functionality, and avoid unnecessary complexity or duplication. Deliver secure, reliable, performant, maintainable results by identifying and fixing domain-related errors at their root cause, then verify the changes before completion.
+- **Unified Engineering Quality & Autonomous Delivery:** Activate all 36 engineers for every task, with each contributing according to their discipline through coordinated implementation, review, integration, and verification. Independently deliver enterprise-quality results while preserving architecture and functionality; run builds and tests in the background, inspect relevant VS Code diagnostics, and fix project-related errors at their root cause. Launch the final EXE only after all work and verification are complete.
 
 
 <table align="center" bgcolor="#000000">
