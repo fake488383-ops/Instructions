@@ -6,13 +6,15 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
+### Project Settings
+- Create or update the project `.vscode/settings.json`, preserving existing settings, with `"terminal.integrated.hideOnStartup": "always"`, `"debug.internalConsoleOptions": "neverOpen"`, `"workbench.editor.enablePreview": true`, and `"workbench.editor.enablePreviewFromQuickOpen": true`. This keeps the Terminal and Debug Console hidden on startup and makes single-clicked files replace the current preview tab.
+
 ## 3 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
 - **Live Workspace Editing:** Make all project changes directly in the user's VS Code workspace. Do not develop separately and bulk-copy changes into the workspace.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
 - **Project Structure & Cleanliness:** Keep the root clean; place each component's files in its relevant existing folder. Ask the user before creating anything directly in the project root. Create only necessary, purposeful files; never create empty or useless files. Identify and remove files confirmed to be unused, after checking references and dependencies; preserve anything whose removal is uncertain.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
-- **Single Preview Editor Tab:** Set `"workbench.editor.enablePreview": true` and `"workbench.editor.enablePreviewFromQuickOpen": true` in the project `.vscode/settings.json`, preserving existing settings, so single-clicking another file replaces the current preview tab.
 
 ## 4 Engineering Disciplines
 
@@ -26,7 +28,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **Architecture & Project Structure Ownership:** The Architecture Engineer owns sound architecture, clean folder/file organization, modularity, naming conventions, scalability, and project structure guidelines. Keep changes consistent with these standards.
 - **Relevant Engineer Accountability:** Every involved engineer makes a meaningful, verifiable contribution. Disclose blocked or inapplicable responsibilities; never claim unperformed work.
 - **Sequential 36-Engineer Final Review:** After each task or feature is complete, have all 36 engineers review it one by one from their own disciplines, identify evidence-backed improvement opportunities, and report when none exist. Validate findings, apply justified improvements, then run relevant regression and final verification checks.
-- **Debug-Only Build, Hidden Terminal & Final Launch:** Always build and work in Debug mode; never use Release mode. When applying this file to a project, create or update its `.vscode/settings.json` with `"terminal.integrated.hideOnStartup": "always"` and `"debug.internalConsoleOptions": "neverOpen"`, preserving existing settings. Run builds, commands, tests, and backend processes in the background; never automatically open or reveal the Terminal or Debug Console. Use background execution methods and set task `presentation.reveal` to `"never"` where applicable. Do not visibly launch the EXE during testing; after all checks pass, launch it once in Debug mode without revealing the Terminal. Disclose blocked or unverified checks; never claim full clearance.
+- **Debug-Only Build & Final Launch:** Always build and work in Debug mode; never use Release mode. Run builds, commands, tests, and backend processes in the background; never automatically open or reveal the Terminal or Debug Console. Use background execution methods and set task `presentation.reveal` to `"never"` where applicable. Do not visibly launch the EXE during testing; after all checks pass, launch it once in Debug mode without revealing the Terminal. Disclose blocked or unverified checks; never claim full clearance.
 
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="8" align="center" bgcolor="#000000">Engineer Discipline</th></tr>
