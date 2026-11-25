@@ -2,7 +2,7 @@
 
 ## 1 Overview
 
-Follow a strict three-layer architecture: build frontend UI with HTML, CSS, JavaScript, and compatible libraries; use C++ exclusively for backend operations; and use Python exclusively for AI intelligence. Keep the layers modular, clearly separated, and reliably integrated. Do not use Qt QML for frontend development.
+Use Qt 6 as the application framework for hosting and integration, with Qt WebEngine to display the frontend built exclusively with HTML, CSS, JavaScript, and compatible web libraries. Use C++ exclusively for backend operations and Python exclusively for AI intelligence. Keep these layers modular, clearly separated, and reliably integrated through well-defined interfaces. Do not build the frontend with QML, Qt Quick, or Qt Widgets; Qt must not replace the HTML/CSS/JavaScript frontend.
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
