@@ -2,7 +2,7 @@
 
 ## 1 Overview
 
-Build any type of software using an architecture and technology stack suited to its actual requirements. Develop the frontend and all user-facing elements—including UI, interactions, and animations—with the most appropriate frontend technologies or frameworks, such as HTML, CSS, JavaScript, TypeScript, React, or other suitable tools. Use C++ exclusively for the application's general backend, core logic, system operations, and performance-critical processing; use Python exclusively for AI models, intelligence, and AI-specific functionality, not for the general application backend. Select frameworks and integration technologies according to the project rather than enforcing one stack on every application; use Qt 6, Qt WebEngine, or related Qt components only when the project requires desktop application hosting or integration. Keep each layer's responsibilities clearly separated, organize the code modularly, and connect the frontend, C++ backend, and Python AI through secure, efficient, and well-defined interfaces while following the project's platform and deployment requirements.
+Build any type of software with a frontend technology or framework suited to the project. Use C++ exclusively for the general backend and core operations, and Python exclusively for AI intelligence and AI-specific features. Choose frameworks as needed; use Qt 6 only when desktop hosting or integration requires it, and keep all components modular, clearly separated, and securely integrated.
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
