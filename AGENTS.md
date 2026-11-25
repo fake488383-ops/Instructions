@@ -12,7 +12,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
 - **Project Structure & Cleanliness:** Keep the root clean; place each component's files in its relevant existing folder. Ask the user before creating anything directly in the project root. Create only necessary, purposeful files; never create empty or useless files. Identify and remove files confirmed to be unused, after checking references and dependencies; preserve anything whose removal is uncertain.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
-- **Single Preview Editor Tab:** When applying this file to a project, create or update `.vscode/settings.json` with `"workbench.editor.enablePreview": true` and `"workbench.editor.enablePreviewFromQuickOpen": true`, preserving existing settings. Open files in preview mode so single-clicking another file replaces the current preview tab instead of accumulating tabs. Do not pin files or open additional editor tabs unless the user explicitly asks; respect tabs the user has intentionally pinned.
+- **Single Preview Editor Tab:** Set `"workbench.editor.enablePreview": true` and `"workbench.editor.enablePreviewFromQuickOpen": true` in the project `.vscode/settings.json`, preserving existing settings, so single-clicking another file replaces the current preview tab.
 
 ## 4 Engineering Disciplines
 
