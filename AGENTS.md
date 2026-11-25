@@ -10,7 +10,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
 - **Live Workspace Editing:** Make all project changes directly in the user's VS Code workspace. Do not develop separately and bulk-copy changes into the workspace.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
-- **Project Architecture & Clean Root:** Follow the inspected project architecture, reuse existing folders, and avoid duplicate structures. Keep the root clean by placing files in their relevant folders. Preserve existing files and configurations unless changes are necessary, and do not generate unnecessary files.
+- **Project Architecture, Clean Root & Meaningful Files:** Follow the inspected architecture, reuse existing folders, and avoid duplicate structures. Keep the project root clean: never create new root-level folders or files (including hidden/configuration items such as `.vscode`) without asking the user and receiving permission first. New folders inside the existing project structure are allowed when required. Create only necessary, purposeful files; never create empty, placeholder, or useless files. Preserve existing files and configurations unless changes are necessary.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
 ## 4 Engineering Disciplines
