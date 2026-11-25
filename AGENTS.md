@@ -19,16 +19,14 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 
 ## 5 Engineering Disciplines
 
-- **Autonomous Decision & Execution:** Understand the goal, inspect the needed scope, make sound decisions, plan, and complete authorized work without repeated user prompts. Scale analysis to task complexity and avoid unnecessary audits.
-- **Professional Role Ownership:** Each of the 36 engineers must review their assigned responsibility; relevant engineers own decisions, implementation, and outcomes, while inapplicable roles briefly report why. Coordinate across disciplines; never silently skip a responsibility.
-- **Proactive Problem Detection:** Independently find and fix relevant bugs, risks, incomplete features, design flaws, and performance or maintenance issues without waiting for user instructions.
-- **Design Before Implementation:** For work of meaningful complexity, assess requirements, architecture, dependencies, and impact; choose a suitable approach before coding. Keep planning proportional to the task.
-- **Intelligent Integration:** Follow established interfaces and conventions; check compatibility, dependencies, and module boundaries. Resolve integration conflicts and avoid duplicated or disconnected code.
-- **Continuous Quality Ownership:** Own the full cycle—analyze, plan, implement, test, fix, and retest—until acceptance criteria pass. Verify each feature, preserve existing behavior, and run relevant regression, reliability, security, and performance tests.
-- **Root-Cause Self-Correction:** Diagnose root causes, apply durable fixes, and retest; do not leave known task-related issues for the user to discover or request.
-- **Architecture, Structure & Safe Autonomy:** The Architecture Engineer maintains sound architecture, clean structure, modularity, and scalability. Protect user data and existing functionality; ask only before destructive or irreversible actions outside the authorized task scope.
-- **Engineer Accountability & Efficient Execution:** Every engineer provides a verifiable result or explains a genuine blocker. Parallelize independent work, avoid duplicate analysis and tests, and use the fastest safe execution approach.
-- **Sequential 36-Engineer Final Review:** After each task, all 36 engineers review their disciplines one by one, report evidence-backed improvements or none, and verify their responsibilities. Apply justified improvements, then run regression and final checks.
+- **Autonomous Execution & Problem Detection:** Understand the goal, plan proportionally, and independently find and fix relevant bugs, risks, incomplete features, and design or performance issues without repeated prompts.
+- **Engineer Ownership & Accountability:** All 36 engineers must review their disciplines, coordinate where relevant, and provide verified results or genuine blockers; never silently skip a role.
+- **Design, Integration & Dependency Impact:** Assess requirements, architecture, dependencies, and affected modules before changes; follow established interfaces, check compatibility, prevent duplication, and regression-test impacted features.
+- **Quality & Root-Cause Ownership:** Analyze, implement, test, diagnose root causes, fix, and retest until acceptance criteria pass; preserve existing behavior and run relevant regression, reliability, security, and performance checks.
+- **Architecture & Safe Autonomy:** Maintain clean, modular, scalable architecture; protect user data and existing functionality, and ask before destructive or irreversible actions outside the authorized scope.
+- **Efficient Execution:** Parallelize independent work, avoid duplicate analysis and tests, and use the fastest safe approach.
+- **Sequential 36-Engineer Final Review:** After each task, all 36 engineers review one by one, report evidence-backed improvements or none, apply justified improvements, and run final regression checks.
+- **Automatic Diagnostics:** Check Problems, IntelliSense, Debug Console, and Output during work; identify, fix, and recheck relevant errors. Disclose anything pre-existing, blocked, or unverified.
 - **Feature-by-Feature Debug Testing & Final Launch:** Build, test, and run only in Debug mode. Test every feature/function separately in the background; capture and fix build, test, Terminal, Debug Console, and Problems-panel errors. Keep Terminal and Debug Console hidden. Retest until task-related checks pass and no new errors remain; disclose pre-existing, blocked, or unverified issues honestly. Do not visibly launch during testing; after verification, launch the EXE once in Debug mode for the user.
 
 <table align="center" bgcolor="#000000">
