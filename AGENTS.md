@@ -14,6 +14,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 ## 4 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
+- **Universal Table Rendering:** Whenever any AI agent or extension must generate a table, it must render an actual visual table. If its current renderer does not support tables, automatically use another available supported renderer; never omit the table or show only raw code/Markdown.
 - **Project Structure & Cleanliness:** Keep the root clean; place each component's files in its relevant existing folder. Ask the user before creating anything directly in the project root. Create only necessary, purposeful files; never create empty or useless files. Identify and remove files confirmed to be unused, after checking references and dependencies; preserve anything whose removal is uncertain.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
