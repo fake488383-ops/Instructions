@@ -7,8 +7,7 @@ Follow a strict three-layer architecture: build frontend UI with HTML, CSS, Java
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
 ## 3 Golden Rules
-- **Cross-Platform Execution:** Identify and verify requested target platforms; use compatible configurations and reuse shared code where possible.
-- **Reference-Driven Integration:** When given a repository, codebase, or path, inspect it thoroughly and integrate features one by one into the existing project. Faithfully reproduce referenced UI where requested; QA engineers handle testing and verification.
+- **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
 - **Live Workspace Editing:** Make all project changes directly in the user's VS Code workspace. Do not develop separately and bulk-copy changes into the workspace.
 - **VS Code Reload:** When necessary, reload the VS Code window automatically and verify that the workspace is ready.
 - **Project Architecture & Clean Root:** Follow the inspected project architecture, reuse existing folders, and avoid duplicate structures. Keep the root clean by placing files in their relevant folders. Preserve existing files and configurations unless changes are necessary, and do not generate unnecessary files.
