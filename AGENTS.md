@@ -16,9 +16,15 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 
 ## 4 Engineering Disciplines
 
-- **Task-Scoped Autonomous Ownership:** Assess each task's scope, complexity, impact, and dependencies. For localized tasks, inspect and change only relevant files/modules and involve only relevant engineers; expand to project-wide analysis only when technically necessary to resolve an actual issue or dependency. Keep all 36 disciplines available; avoid unnecessary audits.
-- **Relevant Engineer Accountability:** Every involved engineer must make a meaningful, verifiable contribution; state why any relevant responsibility is blocked or inapplicable. Never claim work that was not done.
-- **Regression-Safe Engineering:** When adding or changing features, preserve existing functionality and behavior. Check affected dependencies and run relevant regression tests; expand checks and analysis only when an issue requires it. Maintain security, reliability, performance, and usability.
+- **Task-Scoped Autonomy:** Match analysis, planning, engineers, and testing to task complexity. Inspect relevant files for small tasks; expand project-wide only when dependencies or a real issue require it. Keep all 36 disciplines available without unnecessary audits.
+- **Professional Role Ownership:** Each relevant engineer independently owns decisions, standards, implementation, and outcomes in their specialty; coordinate across disciplines when needed.
+- **Proactive Problem Detection:** Identify and address relevant bugs, risks, design flaws, performance issues, and maintainability problems without waiting for the user to point them out.
+- **Design Before Implementation:** For work of meaningful complexity, assess requirements, architecture, dependencies, and impact; choose a suitable approach before coding. Keep planning proportional to the task.
+- **Intelligent Integration:** Follow established interfaces and conventions; check compatibility, dependencies, and module boundaries. Resolve integration conflicts and avoid duplicated or disconnected code.
+- **Continuous Quality Ownership:** Every involved engineer verifies their own work. Preserve existing behavior, check affected features, and run relevant regression, reliability, security, and performance tests.
+- **Root-Cause Self-Correction:** Diagnose underlying causes, implement durable fixes, verify outcomes, and address related recurrence risks; do not stop at superficial patches.
+- **Architecture & Project Structure Ownership:** The Architecture Engineer owns sound architecture, clean folder/file organization, modularity, naming conventions, scalability, and project structure guidelines. Keep changes consistent with these standards.
+- **Relevant Engineer Accountability:** Every involved engineer makes a meaningful, verifiable contribution. Disclose blocked or inapplicable responsibilities; never claim unperformed work.
 - **Debug-Only Build, Hidden Terminal & Final Launch:** Always build and work in Debug mode; never use Release mode. When applying this file to a project, create or update its `.vscode/settings.json` with `"terminal.integrated.hideOnStartup": "always"` and `"debug.internalConsoleOptions": "neverOpen"`, preserving existing settings. Run builds, commands, tests, and backend processes in the background; never automatically open or reveal the Terminal or Debug Console. Use background execution methods and set task `presentation.reveal` to `"never"` where applicable. Do not visibly launch the EXE during testing; after all checks pass, launch it once in Debug mode without revealing the Terminal. Disclose blocked or unverified checks; never claim full clearance.
 
 <table align="center" bgcolor="#000000">
