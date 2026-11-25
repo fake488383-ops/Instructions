@@ -6,8 +6,9 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
-### Project Settings
-- Create or update the project `.vscode/settings.json`, preserving existing settings, with `"terminal.integrated.hideOnStartup": "always"`, `"debug.internalConsoleOptions": "neverOpen"`, `"workbench.editor.enablePreview": true`, and `"workbench.editor.enablePreviewFromQuickOpen": true`. This keeps the Terminal and Debug Console hidden on startup and makes single-clicked files replace the current preview tab.
+### 2.1 VS Code Settings
+- **Hidden Terminal & Debug Console:** In the project `.vscode/settings.json`, preserve existing settings and set `"terminal.integrated.hideOnStartup": "always"` and `"debug.internalConsoleOptions": "neverOpen"`. Keep both hidden throughout work; never automatically open or reveal them. Run commands and processes in the background.
+- **Single Preview Tab:** In the same file, preserve existing settings and set `"workbench.editor.enablePreview": true` and `"workbench.editor.enablePreviewFromQuickOpen": true`, so opening another file by single-click replaces the current preview tab.
 
 ## 3 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
