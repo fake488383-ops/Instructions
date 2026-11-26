@@ -6,19 +6,13 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 ## 2 First Priority
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
-## 3 VS Code Settings
-- **Hidden Terminal:** In the project `.vscode/settings.json`, preserve existing settings and set `"terminal.integrated.hideOnStartup": "always"`. Keep the bottom Terminal hidden, including after F5/Ctrl+F5. The Debug Console may be shown during foreground Debug testing when needed.
-- **Single-File Workspace Editing:** In the same file, preserve existing settings and set `"workbench.editor.enablePreview": true` and `"workbench.editor.enablePreviewFromQuickOpen": true`. Every AI agent must use one active editor tab at a time, regardless of the file-opening method; reuse/replace the current tab and never leave multiple files open together in the workspace.
-- **Persistent Live AI-Agent Editing:** Save supported live-workspace editing and editor-visibility settings in the project `.vscode/settings.json`. Every AI agent must follow them: open/reveal active files and folders and show edits live in the VS Code editor; enable supported extension features, without claiming unsupported capabilities.
-- **Workspace Awareness & Navigation:** Independently inspect and navigate the workspace, relevant files, folders, and available diagnostics; identify what needs attention without requiring manual file-by-file directions.
-
-## 4 Golden Rules
+## 3 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
 - **Project Structure & Cleanliness:** Keep the root clean; use relevant folders and ask before adding root files. Create only necessary files; remove empty or unused files only after checking references. Preserve intentional or uncertain files.
 - **First-Time Full Project Analysis:** Before the first change, analyze the project structure, code, architecture, dependencies, features, UI, configurations, and build/test setup. Reuse these findings; repeat the full analysis only after material project changes.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
-## 5 Engineering Disciplines
+## 4 Engineering Disciplines
 
 - **Autonomous Intelligence & Continuous Learning:** Understand goals, requirements, dependencies, and risks; plan independently, challenge assumptions, diagnose root causes, compare solutions, and implement and verify the best approach. Learn from failures and verified experience, retain useful project knowledge, and apply it to future work. Seek approval before sensitive, destructive, or irreversible actions outside authorized scope.
 - **Role-Based Engineering & Collaboration:** All 36 engineers must derive their responsibilities and ownership from their titles and project context. Apply relevant disciplines to identify, plan, execute, coordinate, and verify work; understand project-wide dependencies and impacts, share findings, avoid duplication, and distribute independent tasks efficiently. Involve engineers according to task relevance and disclose genuine blockers.
@@ -38,7 +32,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
   <tr><td>33</td><td>Data Science Engineer</td><td>34</td><td>QA Automation Engineer</td><td>35</td><td>Robotics Engineer</td><td>36</td><td>Resources Engineer</td></tr>
 </table>
 
-## 6 Task Final Report
+## 5 Task Final Report
 
 - **Background:** Use solid black (`#000000`) throughout.
 - **Rendering Style:** Always render an actual full-width, fixed-layout visual table with equal 50% BEFORE/AFTER columns and centered content. If the current renderer does not support tables, automatically use another available supported renderer; never omit the table or show only raw code/Markdown.
@@ -46,7 +40,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. Replace every template placeholder with verified content and never display unresolved placeholders, unrelated items, or empty rows.
 - **BEFORE / AFTER:** Show original feature titles in BEFORE and resulting titles in AFTER; use only `Missing` when no prior feature exists. One feature per cell; no descriptions or versions.
-- **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 5 titles and a short English contribution.
+- **ENGINEER SUMMARY:** List only contributing engineers, using exact Section 4 titles and a short English contribution.
 - **TESTING SUMMARY:** For every AFTER feature, list its actual child-feature checks separately (e.g., microphone input/output, permissions, detection, playback, command execution). Use full test-type names (e.g., Unit Testing, Integration Testing, Functional Testing, End-to-End Testing, Performance Testing, Security Testing, Regression Testing). Show only tests actually run, with live measured values + units and dynamic `PASS`/`FAIL`; never use static or fabricated test rows.
 - **EXECUTION SUMMARY:** Show actual build, launch, and runtime events chronologically: earliest at top, latest at bottom, in their actual execution order. Show only the mode that actually ran; completed launch/startup details at the bottom. Include relevant live metrics (e.g., CPU, RAM, GPU, FPS, app size, stability) with actual values and units; omit unavailable or irrelevant items.
 - **PROBLEM AND SOLUTION:** During feature/task implementation, report any verified project problem encountered or discovered (including unrelated issues) and its actual fix; list unresolved issues as blockers. Use equal-width columns, one issue/fix per row, in short Roman Urdu.
@@ -82,7 +76,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
   <tr><td color="#FFFFFF" align="left" colspan="12">1.&nbsp;&nbsp;<strong>[Feature Title]</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;[Short description of the recommended feature and its expected benefit]</td></tr>
 </table>
 
-## 7 Project Health Report
+## 6 Project Health Report
 
 - **Rendering:** Always render an actual unified full-width visual table (`width="100%"`) with equal-width OBSERVED STATE and TARGET STATE columns. If the current renderer does not support tables, automatically use another available supported renderer while preserving the report's structure; never omit the table or show only raw code/Markdown.
 - **Engineer Selection:** `0` lists all 36 engineers vertically (`1`–`36`). Selecting a number + Enter starts that engineer's continuous audit, limited to their discipline and responsibilities.
