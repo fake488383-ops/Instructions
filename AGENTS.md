@@ -7,8 +7,8 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
 ## 3 VS Code Settings
-- **Hidden Terminal & Debug Console:** In the project `.vscode/settings.json`, preserve existing settings and set `"terminal.integrated.hideOnStartup": "always"` and `"debug.internalConsoleOptions": "neverOpen"`. Keep both hidden throughout work; never automatically open or reveal them. Run commands and processes in the background.
-- **Single Preview Tab:** In the same file, preserve existing settings and set `"workbench.editor.enablePreview": true` and `"workbench.editor.enablePreviewFromQuickOpen": true`, so opening another file by single-click replaces the current preview tab.
+- **Hidden Terminal & Debug Console:** In the project `.vscode/settings.json`, preserve existing settings and set `"terminal.integrated.hideOnStartup": "always"` and `"debug.internalConsoleOptions": "neverOpen"`. Keep both hidden throughout work, including after F5/Ctrl+F5; configure launch tasks to run in the background where supported, and never automatically open or reveal the bottom Terminal or Debug Console.
+- **Single-File Workspace Editing:** In the same file, preserve existing settings and set `"workbench.editor.enablePreview": true` and `"workbench.editor.enablePreviewFromQuickOpen": true`. Every AI agent must use one active editor tab at a time, regardless of the file-opening method; reuse/replace the current tab and never leave multiple files open together in the workspace.
 - **Persistent Live AI-Agent Editing:** Save supported live-workspace editing and editor-visibility settings in the project `.vscode/settings.json`. Every AI agent must follow them: open/reveal active files and folders and show edits live in the VS Code editor; enable supported extension features, without claiming unsupported capabilities.
 
 ## 4 Golden Rules
