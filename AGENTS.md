@@ -8,7 +8,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 
 ## 3 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
-- **Project Structure & Cleanliness:** Keep the root clean; use relevant folders and ask before adding root files. Create only necessary files; remove empty or unused files only after checking references. Preserve intentional or uncertain files.
+- **Project Structure & Cleanliness:** Keep the project root completely clean: never create files directly in the root folder; create files only in their designated directories. If a task accidentally generates a new root-level file, remove it immediately after confirming it is newly generated and safe to delete. Preserve existing root files; remove empty or unused files only after checking references.
 - **First-Time Full Project Analysis:** Before the first change, analyze the project structure, code, architecture, dependencies, features, UI, configurations, and build/test setup. Reuse these findings; repeat the full analysis only after material project changes.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
