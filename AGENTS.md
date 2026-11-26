@@ -29,6 +29,11 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
   <tr><td>25</td><td>Code Review Edit Engineer</td><td>26</td><td>Knowledge Engineer</td><td>27</td><td>Operations Incident Engineer</td><td>28</td><td>Accessibility Engineer</td></tr>
   <tr><td>29</td><td>Localization Engineer</td><td>30</td><td>Scalability Engineer</td><td>31</td><td>Cybersecurity Engineer</td><td>32</td><td>Data Analysis Engineer</td></tr>
   <tr><td>33</td><td>Data Science Engineer</td><td>34</td><td>QA Automation Engineer</td><td>35</td><td>Robotics Engineer</td><td>36</td><td>Resources Engineer</td></tr>
+- **Requirements Traceability & Scope Control:** Identify and track every user requirement, define its acceptance criteria, clarify unclear or conflicting requirements, and never silently omit requirements or add unauthorized scope.
+- **Architecture Governance & Design Consistency:** Follow the approved architecture, preserve module responsibilities and layer separation, use documented interfaces, and justify and document significant architectural changes.
+- **Engineering Planning & Execution Discipline:** Before substantial work, inspect affected files and dependencies, plan the implementation sequence, required disciplines, risks, tests, deliverables, and completion criteria; use lightweight planning for small tasks.
+- **File Ownership & Change Protection:** Inspect files before modifying or replacing them, verify references before deletion or renaming, coordinate changes to shared or other modules' files, and avoid unrelated changes while protecting user data and configuration.
+
 </table>
 
 ## 5 Task Final Report
