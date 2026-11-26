@@ -23,43 +23,43 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **File Ownership & Change Protection:** Check references and ownership before modifying, replacing, renaming, or deleting files; avoid unrelated changes and protect user data.
 
 <table align="center" width="100%" bgcolor="#000000" style="table-layout: fixed;">
-  <tr><th color="#FFFFFF" align="center" bgcolor="#000000">Engineer</th><th color="#FFFFFF" align="center" bgcolor="#000000">Core Responsibility</th></tr>
-  <tr><td>1. Architecture Engineer</td><td>System architecture, design principles, modularity, interfaces, and architectural integrity.</td></tr>
-  <tr><td>2. Systems Engineer</td><td>End-to-end system behavior, component integration, system requirements, and technical coordination.</td></tr>
-  <tr><td>3. Backend Engineer</td><td>Backend implementation, business logic, services, APIs, and server-side operations.</td></tr>
-  <tr><td>4. Frontend Engineer</td><td>Frontend structure, client-side logic, interactions, responsiveness, and browser integration.</td></tr>
-  <tr><td>5. UI UX Engineer</td><td>User research, usability, interaction design, accessibility-aware UX, and visual consistency.</td></tr>
-  <tr><td>6. AI ML Engineer</td><td>AI/ML models, inference, reasoning pipelines, model evaluation, and intelligent capabilities.</td></tr>
-  <tr><td>7. Data Engineer</td><td>Data pipelines, ingestion, transformation, quality, and reliable data movement.</td></tr>
-  <tr><td>8. Database Engineer</td><td>Database architecture, schemas, queries, transactions, migrations, and data integrity.</td></tr>
-  <tr><td>9. API Integration Engineer</td><td>API contracts, external service integration, authentication flows, and interoperability.</td></tr>
-  <tr><td>10. Security Engineer</td><td>Application security, threat modeling, secure design, vulnerability assessment, and remediation.</td></tr>
-  <tr><td>11. Privacy Engineer</td><td>Personal-data protection, data minimization, consent, retention, and privacy controls.</td></tr>
-  <tr><td>12. Performance Engineer</td><td>Profiling, bottleneck analysis, latency, resource use, and performance optimization.</td></tr>
-  <tr><td>13. Reliability Engineer</td><td>Fault tolerance, resilience, availability, recovery behavior, and reliability improvement.</td></tr>
-  <tr><td>14. QA Test Engineer</td><td>Test strategy, functional and non-functional quality assurance, test coverage, defect verification, and acceptance testing.</td></tr>
-  <tr><td>15. DevOps Engineer</td><td>Development workflows, CI/CD, environment automation, operational tooling, and deployment pipelines.</td></tr>
-  <tr><td>16. Build Toolchain Engineer</td><td>Compilers, CMake, Qt kits, build systems, dependencies, and reproducible builds.</td></tr>
-  <tr><td>17. Release Engineer</td><td>Release readiness, versioning, packaging, signing, release validation, and delivery.</td></tr>
-  <tr><td>18. Cloud Engineer</td><td>Cloud architecture, hosted services, infrastructure, scalability, and cloud operations.</td></tr>
-  <tr><td>19. Network Engineer</td><td>Network architecture, connectivity, protocols, routing, and network troubleshooting.</td></tr>
-  <tr><td>20. Observability Engineer</td><td>Logs, metrics, traces, diagnostics, monitoring, and operational visibility.</td></tr>
-  <tr><td>21. Configuration Engineer</td><td>Application and environment configuration, settings management, and configuration consistency.</td></tr>
-  <tr><td>22. Backup Recovery Engineer</td><td>Backup strategy, restore validation, disaster recovery, and data recoverability.</td></tr>
-  <tr><td>23. Requirements Engineer</td><td>Requirement discovery, analysis, traceability, acceptance criteria, and scope clarity.</td></tr>
-  <tr><td>24. Technical Lead Engineer</td><td>Technical direction, engineering coordination, reviews, prioritization, and delivery alignment.</td></tr>
-  <tr><td>25. Code Review Edit Engineer</td><td>Code review, maintainability, coding standards, defect detection, and safe code improvements.</td></tr>
-  <tr><td>26. Knowledge Engineer</td><td>Knowledge structures, documentation systems, information organization, and knowledge retrieval.</td></tr>
-  <tr><td>27. Operations Incident Engineer</td><td>Incident detection, triage, root-cause analysis, response coordination, and prevention.</td></tr>
-  <tr><td>28. Accessibility Engineer</td><td>Accessibility standards, assistive-technology compatibility, inclusive interaction, and accessibility testing.</td></tr>
-  <tr><td>29. Localization Engineer</td><td>Internationalization, translation integration, locale behavior, formatting, and language quality.</td></tr>
-  <tr><td>30. Scalability Engineer</td><td>Capacity planning, load behavior, scaling strategies, and growth readiness.</td></tr>
-  <tr><td>31. Cybersecurity Engineer</td><td>Adversarial risk analysis, security testing, attack-surface assessment, and defensive validation.</td></tr>
-  <tr><td>32. Data Analysis Engineer</td><td>Data analysis, statistical investigation, reporting, and evidence-based insights.</td></tr>
-  <tr><td>33. Data Science Engineer</td><td>Statistical modeling, experimentation, predictive analysis, and data-driven methods.</td></tr>
-  <tr><td>34. QA Automation Engineer</td><td>Automated test design, test frameworks, repeatable execution, regression automation, and test reporting.</td></tr>
-  <tr><td>35. Robotics Engineer</td><td>Robotics software, control systems, sensors, actuation, and hardware-software integration.</td></tr>
-  <tr><td>36. Resources Engineer</td><td>Resource planning, asset utilization, capacity efficiency, and cost/resource optimization.</td></tr>
+  <tr><th color="#FFFFFF" align="center" bgcolor="#000000">No.</th><th color="#FFFFFF" align="center" bgcolor="#000000">Engineer Title</th><th color="#FFFFFF" align="center" bgcolor="#000000">Core Responsibility</th></tr>
+  <tr><td>1</td><td>Architecture Engineer</td><td>System architecture, design principles, modularity, interfaces, and architectural integrity.</td></tr>
+  <tr><td>2</td><td>Systems Engineer</td><td>End-to-end system behavior, component integration, system requirements, and technical coordination.</td></tr>
+  <tr><td>3</td><td>Backend Engineer</td><td>Backend implementation, business logic, services, APIs, and server-side operations.</td></tr>
+  <tr><td>4</td><td>Frontend Engineer</td><td>Frontend structure, client-side logic, interactions, responsiveness, and browser integration.</td></tr>
+  <tr><td>5</td><td>UI UX Engineer</td><td>User research, usability, interaction design, accessibility-aware UX, and visual consistency.</td></tr>
+  <tr><td>6</td><td>AI ML Engineer</td><td>AI/ML models, inference, reasoning pipelines, model evaluation, and intelligent capabilities.</td></tr>
+  <tr><td>7</td><td>Data Engineer</td><td>Data pipelines, ingestion, transformation, quality, and reliable data movement.</td></tr>
+  <tr><td>8</td><td>Database Engineer</td><td>Database architecture, schemas, queries, transactions, migrations, and data integrity.</td></tr>
+  <tr><td>9</td><td>API Integration Engineer</td><td>API contracts, external service integration, authentication flows, and interoperability.</td></tr>
+  <tr><td>10</td><td>Security Engineer</td><td>Application security, threat modeling, secure design, vulnerability assessment, and remediation.</td></tr>
+  <tr><td>11</td><td>Privacy Engineer</td><td>Personal-data protection, data minimization, consent, retention, and privacy controls.</td></tr>
+  <tr><td>12</td><td>Performance Engineer</td><td>Profiling, bottleneck analysis, latency, resource use, and performance optimization.</td></tr>
+  <tr><td>13</td><td>Reliability Engineer</td><td>Fault tolerance, resilience, availability, recovery behavior, and reliability improvement.</td></tr>
+  <tr><td>14</td><td>QA Test Engineer</td><td>Test strategy, functional and non-functional quality assurance, test coverage, defect verification, and acceptance testing.</td></tr>
+  <tr><td>15</td><td>DevOps Engineer</td><td>Development workflows, CI/CD, environment automation, operational tooling, and deployment pipelines.</td></tr>
+  <tr><td>16</td><td>Build Toolchain Engineer</td><td>Compilers, CMake, Qt kits, build systems, dependencies, and reproducible builds.</td></tr>
+  <tr><td>17</td><td>Release Engineer</td><td>Release readiness, versioning, packaging, signing, release validation, and delivery.</td></tr>
+  <tr><td>18</td><td>Cloud Engineer</td><td>Cloud architecture, hosted services, infrastructure, scalability, and cloud operations.</td></tr>
+  <tr><td>19</td><td>Network Engineer</td><td>Network architecture, connectivity, protocols, routing, and network troubleshooting.</td></tr>
+  <tr><td>20</td><td>Observability Engineer</td><td>Logs, metrics, traces, diagnostics, monitoring, and operational visibility.</td></tr>
+  <tr><td>21</td><td>Configuration Engineer</td><td>Application and environment configuration, settings management, and configuration consistency.</td></tr>
+  <tr><td>22</td><td>Backup Recovery Engineer</td><td>Backup strategy, restore validation, disaster recovery, and data recoverability.</td></tr>
+  <tr><td>23</td><td>Requirements Engineer</td><td>Requirement discovery, analysis, traceability, acceptance criteria, and scope clarity.</td></tr>
+  <tr><td>24</td><td>Technical Lead Engineer</td><td>Technical direction, engineering coordination, reviews, prioritization, and delivery alignment.</td></tr>
+  <tr><td>25</td><td>Code Review Edit Engineer</td><td>Code review, maintainability, coding standards, defect detection, and safe code improvements.</td></tr>
+  <tr><td>26</td><td>Knowledge Engineer</td><td>Knowledge structures, documentation systems, information organization, and knowledge retrieval.</td></tr>
+  <tr><td>27</td><td>Operations Incident Engineer</td><td>Incident detection, triage, root-cause analysis, response coordination, and prevention.</td></tr>
+  <tr><td>28</td><td>Accessibility Engineer</td><td>Accessibility standards, assistive-technology compatibility, inclusive interaction, and accessibility testing.</td></tr>
+  <tr><td>29</td><td>Localization Engineer</td><td>Internationalization, translation integration, locale behavior, formatting, and language quality.</td></tr>
+  <tr><td>30</td><td>Scalability Engineer</td><td>Capacity planning, load behavior, scaling strategies, and growth readiness.</td></tr>
+  <tr><td>31</td><td>Cybersecurity Engineer</td><td>Adversarial risk analysis, security testing, attack-surface assessment, and defensive validation.</td></tr>
+  <tr><td>32</td><td>Data Analysis Engineer</td><td>Data analysis, statistical investigation, reporting, and evidence-based insights.</td></tr>
+  <tr><td>33</td><td>Data Science Engineer</td><td>Statistical modeling, experimentation, predictive analysis, and data-driven methods.</td></tr>
+  <tr><td>34</td><td>QA Automation Engineer</td><td>Automated test design, test frameworks, repeatable execution, regression automation, and test reporting.</td></tr>
+  <tr><td>35</td><td>Robotics Engineer</td><td>Robotics software, control systems, sensors, actuation, and hardware-software integration.</td></tr>
+  <tr><td>36</td><td>Resources Engineer</td><td>Resource planning, asset utilization, capacity efficiency, and cost/resource optimization.</td></tr>
 </table>
 
 
