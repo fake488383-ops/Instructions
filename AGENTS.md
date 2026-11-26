@@ -13,7 +13,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 
 ## 4 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
-- **Project Structure & Cleanliness:** Keep the root clean; place each component's files in its relevant existing folder. Ask the user before creating anything directly in the project root. Create only necessary, purposeful files; never create empty or useless files. Identify and remove files confirmed to be unused, after checking references and dependencies; preserve anything whose removal is uncertain.
+- **Project Structure & Cleanliness:** Keep the root clean; place files in relevant folders. Ask before creating files in the root. Create only necessary files; delete empty files with no legitimate purpose and files confirmed unused after checking references and dependencies. Preserve intentional placeholders and anything whose removal is uncertain.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
 ## 5 Engineering Disciplines
