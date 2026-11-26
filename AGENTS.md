@@ -23,6 +23,9 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **Architecture Governance & Design Consistency:** Follow the approved architecture, preserve module boundaries and interfaces, and document significant design changes.
 - **Engineering Planning & Execution Discipline:** Plan substantial work, dependencies, risks, tests, deliverables, and completion criteria before implementation.
 - **File Ownership & Change Protection:** Check references and ownership before modifying, replacing, renaming, or deleting files; avoid unrelated changes and protect user data.
+- **Engineering Governance & Policy Enforcement:** Enforce approved engineering standards, architecture, security policies, and workflows; identify deviations and require correction or authorized exceptions.
+- **Technical Decision & Trade-off Management:** Compare options using performance, security, reliability, scalability, maintainability, and cost; record key decisions, trade-offs, and impacts.
+- **Engineering Governance & Quality Gates:** Set clear ownership, review checkpoints, acceptance criteria, and mandatory quality gates; prevent incomplete or non-compliant work from being approved or released.
 
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="8" align="center" bgcolor="#000000">Engineer Discipline</th></tr>
