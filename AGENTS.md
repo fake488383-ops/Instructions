@@ -7,11 +7,11 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **Roman Urdu:** Always communicate with the user in natural, simple Roman Urdu. Keep technical terms, code, commands, file names, and proper nouns unchanged. Never use Urdu or Hindi/Devanagari script unless requested.
 
 ## 3 Golden Rules
+- **First-Time & As-Needed Project Analysis:** Before making the first change, thoroughly analyze the project structure, code, architecture, dependencies, features, UI, configurations, and build/test setup. Reuse the findings throughout the work, and re-analyze the relevant project areas whenever needed to resolve uncertainty, investigate issues, assess impact, or safely continue; repeat the full analysis when material project changes make it necessary.
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
 - **Project Structure & Architecture:** Follow the existing project architecture and folder structure. Place files and any necessary subfolders only in their designated locations; do not introduce a new structure without a clear requirement.
 - **Naming Standards:** Use clear, consistent, and purpose-based names for files, folders, classes, functions, and other project elements.
 - **Project Root, File & Duplicate Cleanliness:** Keep the entire project root clean. Do not create extra files or folders directly in the root; create only files genuinely required for the task, and place them in their existing designated locations. Never create duplicate files anywhere in the project; reuse or update existing files when appropriate. Review project files when relevant to identify unused, obsolete, redundant, or unnecessary files. Verify references, dependencies, build configurations, and runtime use before classifying any file as unnecessary; remove a file only when its lack of need is confirmed and deletion is safe. Never delete required, user-owned, or uncertain files.
-- **First-Time Full Project Analysis:** Before the first change, analyze the project structure, code, architecture, dependencies, features, UI, configurations, and build/test setup. Reuse these findings; repeat the full analysis only after material project changes.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
 ## 4 Engineering Disciplines
