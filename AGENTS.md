@@ -45,7 +45,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 
 - **Background:** Use solid black (`#000000`) throughout.
 - **Rendering Style:** Always render an actual full-width, fixed-layout visual table with equal 50% BEFORE/AFTER columns and centered content. If the current renderer does not support tables, automatically use another available supported renderer; never omit the table or show only raw code/Markdown.
-- **Automatic Report:** Generate the Task Final Report only for major features or substantial project changes after testing; skip minor edits and simple fixes. If blocked, report verified results and disclose the blocker; never generate interim reports.
+- **Automatic Report:** Strictly generate the table-based Task Final Report only for large tasks/prompts involving multiple features or substantial project changes, after testing. Never generate reports for small tasks, minor edits, or simple fixes. If blocked, report verified results and disclose the blocker; never generate interim reports.
 - **In-Agent Rendering:** Render the report directly in the AI agent's response; never create a report file unless explicitly requested.
 - **Dynamic Table:** Show only relevant, actual results; add rows as needed. Replace every template placeholder with verified content and never display unresolved placeholders, unrelated items, or empty rows.
 - **BEFORE / AFTER:** Show original feature titles in BEFORE and resulting titles in AFTER; use only `Missing` when no prior feature exists. One feature per cell; no descriptions or versions.
