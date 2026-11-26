@@ -19,6 +19,11 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 - **Intelligent Engineer Orchestration & Accountability:** Evaluate all 36 disciplines for every task; assign relevant engineers as primary, supporting, or reviewing roles. Each must analyze improvements, risks, and dependencies within their domain. Never silently skip a relevant discipline; mark non-applicable roles with a reason, track responsibilities and deliverables, and verify completion through cross-discipline review.
 - **Architecture, Security & Safe Autonomy:** Keep the system modular, secure, scalable, and maintainable. Make reversible, evidence-based improvements while protecting user data and existing functionality; preserve clear interfaces and prevent regressions.
 - **Unified Testing, Development & Release Verification:** Complete development changes, then launch the project once in Debug mode. Test affected features one by one in that same Debug session; reload or restart when needed. Verify each feature works correctly, fix and retest issues, then close Debug and launch Release once after all tests pass. Report blockers and never claim unverified results.
+- **Requirements Traceability & Scope Control:** Track every requirement and its acceptance criteria; clarify conflicts and never silently omit requirements or add unauthorized scope.
+- **Architecture Governance & Design Consistency:** Follow the approved architecture, preserve module boundaries and interfaces, and document significant design changes.
+- **Engineering Planning & Execution Discipline:** Plan substantial work, dependencies, risks, tests, deliverables, and completion criteria before implementation.
+- **File Ownership & Change Protection:** Check references and ownership before modifying, replacing, renaming, or deleting files; avoid unrelated changes and protect user data.
+
 <table align="center" bgcolor="#000000">
   <tr><th color="#FFFFFF" colspan="8" align="center" bgcolor="#000000">Engineer Discipline</th></tr>
   <tr><td>1</td><td>Architecture Engineer</td><td>2</td><td>Systems Engineer</td><td>3</td><td>Backend Engineer</td><td>4</td><td>Frontend Engineer</td></tr>
@@ -31,12 +36,6 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
   <tr><td>29</td><td>Localization Engineer</td><td>30</td><td>Scalability Engineer</td><td>31</td><td>Cybersecurity Engineer</td><td>32</td><td>Data Analysis Engineer</td></tr>
   <tr><td>33</td><td>Data Science Engineer</td><td>34</td><td>QA Automation Engineer</td><td>35</td><td>Robotics Engineer</td><td>36</td><td>Resources Engineer</td></tr>
 </table>
-
-- **Requirements Traceability & Scope Control:** Track every requirement and its acceptance criteria; clarify conflicts and never silently omit requirements or add unauthorized scope.
-- **Architecture Governance & Design Consistency:** Follow the approved architecture, preserve module boundaries and interfaces, and document significant design changes.
-- **Engineering Planning & Execution Discipline:** Plan substantial work, dependencies, risks, tests, deliverables, and completion criteria before implementation.
-- **File Ownership & Change Protection:** Check references and ownership before modifying, replacing, renaming, or deleting files; avoid unrelated changes and protect user data.
-
 
 
 ## 5 Task Final Report
