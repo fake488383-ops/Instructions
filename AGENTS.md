@@ -8,7 +8,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 
 ## 3 Golden Rules
 - **Cross-Platform Execution:** Follow existing platform-specific folders (e.g., Windows and macOS), implementing each requested platform according to its designated folder and structure.
-- **Project Structure, Naming & Cleanliness:** Keep the project root completely clean; never create files directly in it. Use consistent, purpose-based names for folders and files (e.g., database work belongs in the `Database/` folder with clearly named database-related files). Before creating a folder or file, inspect the existing structure and place it in the appropriate existing folder; create a new folder only when no suitable one exists. If a task accidentally generates a new root-level file, remove it immediately after confirming it is newly generated and safe to delete. Preserve existing root files; remove empty or unused files only after checking references.
+- **Project Structure, Naming & Cleanliness:** Keep the root clean; use clear, purpose-based names and place files in the appropriate existing folders. Create folders only when needed, and safely remove accidental new root-level files.
 - **First-Time Full Project Analysis:** Before the first change, analyze the project structure, code, architecture, dependencies, features, UI, configurations, and build/test setup. Reuse these findings; repeat the full analysis only after material project changes.
 - **Meaningful Code Comments:** Add concise comments where they clarify non-obvious logic, decisions, or warnings; avoid comments that merely repeat the code.
 
@@ -30,12 +30,12 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
   <tr><td>25</td><td>Code Review Edit Engineer</td><td>26</td><td>Knowledge Engineer</td><td>27</td><td>Operations Incident Engineer</td><td>28</td><td>Accessibility Engineer</td></tr>
   <tr><td>29</td><td>Localization Engineer</td><td>30</td><td>Scalability Engineer</td><td>31</td><td>Cybersecurity Engineer</td><td>32</td><td>Data Analysis Engineer</td></tr>
   <tr><td>33</td><td>Data Science Engineer</td><td>34</td><td>QA Automation Engineer</td><td>35</td><td>Robotics Engineer</td><td>36</td><td>Resources Engineer</td></tr>
-- **Requirements Traceability & Scope Control:** Identify and track every user requirement, define its acceptance criteria, clarify unclear or conflicting requirements, and never silently omit requirements or add unauthorized scope.
-- **Architecture Governance & Design Consistency:** Follow the approved architecture, preserve module responsibilities and layer separation, use documented interfaces, and justify and document significant architectural changes.
-- **Engineering Planning & Execution Discipline:** Before substantial work, inspect affected files and dependencies, plan the implementation sequence, required disciplines, risks, tests, deliverables, and completion criteria; use lightweight planning for small tasks.
-- **File Ownership & Change Protection:** Inspect files before modifying or replacing them, verify references before deletion or renaming, coordinate changes to shared or other modules' files, and avoid unrelated changes while protecting user data and configuration.
+- **Requirements Traceability & Scope Control:** Track every requirement and its acceptance criteria; clarify conflicts and never silently omit requirements or add unauthorized scope.
+- **Architecture Governance & Design Consistency:** Follow the approved architecture, preserve module boundaries and interfaces, and document significant design changes.
+- **Engineering Planning & Execution Discipline:** Plan substantial work, dependencies, risks, tests, deliverables, and completion criteria before implementation.
+- **File Ownership & Change Protection:** Check references and ownership before modifying, replacing, renaming, or deleting files; avoid unrelated changes and protect user data.
 
-</table>
+<table align="center" bgcolor="#000000"></table>
 
 ## 5 Task Final Report
 
