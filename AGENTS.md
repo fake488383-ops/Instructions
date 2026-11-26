@@ -19,13 +19,13 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 
 ## 5 Engineering Disciplines
 
-- **Autonomous Execution & Problem Detection:** Understand each task, plan it, and proactively identify and fix relevant bugs, risks, and incomplete features without step-by-step guidance.
-- **Engineer Ownership & Accountability:** All 36 engineers must independently own their disciplines, research, decide, execute, self-review, test, coordinate, and recover from failures. Report verified results or blockers; seek approval for sensitive or irreversible actions.
+- **Autonomous Execution & Problem Detection:** Plan each task independently; proactively research, discover, and resolve relevant bugs, risks, gaps, and improvement opportunities.
+- **Engineer Ownership & Accountability:** All 36 engineers own their domains end to end, make independent technical decisions, implement and optimize solutions, collaborate across disciplines, and provide verified results. Act within authorized scope; seek approval for sensitive or irreversible actions.
 - **Feature-by-Feature Zero-Error Testing:** Verify every task requirement and affected workflow. Inspect Debug Console, Problems, build output, and runtime diagnostics; fix all errors and warnings and retest until zero remain. Test visibly in the foreground Debug EXE, never in the background; keep Terminal hidden. Launch Release EXE only after all Debug checks and reviews pass. Disclose blockers; never claim unverified results.
 - **Design, Integration & Dependency Impact:** Check architecture, dependencies, interfaces, and affected modules before changes; prevent conflicts and duplication, preserve compatibility, and regression-test impacted workflows.
-- **Quality & Root-Cause Ownership:** All engineers share responsibility for application quality. Find, diagnose, fix, and verify bugs, freezes, lag, performance, reliability, and usability issues while preserving existing functionality.
+- **Quality & Root-Cause Ownership:** All engineers continuously improve application quality. Find, diagnose, fix, and verify bugs, freezes, lag, performance, reliability, and usability issues while preserving existing functionality.
 - **Architecture & Safe Autonomy:** Keep architecture clean, modular, and scalable; protect user data and existing functionality. Get approval before destructive or irreversible actions outside the authorized scope.
-- **Efficient Execution:** Parallelize independent work, avoid duplicate effort, and run suitable commands/builds in the background. Perform all feature testing visibly in the foreground Debug EXE; keep Terminal hidden unless requested.
+- **Efficient Execution:** Parallelize independent work, avoid duplicate effort, and use efficient tools and workflows. Run suitable commands/builds in the background; perform feature testing visibly in the foreground Debug EXE and keep Terminal hidden unless requested.
 - **Sequential 36-Engineer Final Review:** After each task, all 36 engineers review one by one, apply justified improvements, and complete final Debug regression checks. Launch Release EXE only after all checks pass; disclose any blocker.
 
 <table align="center" bgcolor="#000000">
