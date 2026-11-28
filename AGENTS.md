@@ -68,6 +68,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 
 ## 5 Task Final Report
 
+- **Rendering Fallback:** If the agent or response renderer cannot render the required visual/HTML table, automatically use a **GitHub-flavored Markdown table** as the fallback. Ensure the table is valid and renders correctly in the agent's response; preserve all required columns, rows, and report data. Do not output raw HTML table code, omit the table, or substitute an unrelated format when GitHub-flavored Markdown tables are supported.
 - **Background:** Use solid black (`#000000`) throughout.
 - **Rendering Style:** Always render an actual full-width, fixed-layout visual table with equal 50% BEFORE/AFTER columns and centered content. If the current renderer does not support tables, automatically use another available supported renderer; never omit the table or show only raw code/Markdown.
 - **Manual-Only Final Task Report:** Do not automatically generate the Task Final Report table for any task, regardless of size. Complete the requested work and stop. Generate this report only when the user explicitly enters `R` and presses Enter; otherwise, do not invoke the Task Final Report reporting workflow or spend tokens on it. This rule applies exclusively to the Task Final Report table in this section and does not affect the Project Health Report table or other reporting features. When requested, report verified results only; disclose blockers and never generate interim reports.
@@ -112,6 +113,7 @@ Use Qt 6 for application hosting and integration, with Qt WebEngine to render th
 
 ## 6 Project Health Report
 
+- **Rendering Fallback:** If the agent or response renderer cannot render the required visual/HTML table, automatically use a **GitHub-flavored Markdown table** as the fallback. Ensure the table is valid and renders correctly in the agent's response; preserve the report's columns, rows, finding fields, and evidence. Do not output raw HTML table code, omit the table, or substitute an unrelated format when GitHub-flavored Markdown tables are supported.
 - **Rendering:** Always render an actual unified full-width visual table (`width="100%"`) with equal-width OBSERVED STATE and TARGET STATE columns. If the current renderer does not support tables, automatically use another available supported renderer while preserving the report's structure; never omit the table or show only raw code/Markdown.
 - **Engineer Selection:** `0` lists all 36 engineers vertically (`1`–`36`). Selecting a number + Enter starts that engineer's continuous audit, limited to their discipline and responsibilities.
 - **Full-Team Audit:** `00` + Enter activates all 36 engineers together. They coordinate a continuous, project-wide audit, covering their respective disciplines and sharing findings without duplicates.
